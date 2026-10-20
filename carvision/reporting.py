@@ -16,7 +16,7 @@ def report(args):
     train=json.loads(required[0].read_text(encoding='utf-8')); metrics=json.loads(required[1].read_text(encoding='utf-8'))
     analysis=json.loads(Path(args.analysis).read_text(encoding='utf-8'))
     detector=json.loads(required[4].read_text(encoding='utf-8'))
-    for key in ['brand_choice','collection_labelling','errors','chinese_brands','phone_tests','reflection']:
+    for key in ['brand_choice','collection_labelling','architecture_rationale','errors','chinese_brands','phone_tests','reflection']:
         if not analysis.get(key):raise ValueError('Analysis JSON must include actual '+key)
     styles=getSampleStyleSheet(); styles['BodyText'].fontSize=9; styles['BodyText'].leading=12
     from reportlab.pdfbase import pdfmetrics
@@ -53,6 +53,7 @@ def report(args):
         samples.append([Image(buf,width=im.width,height=im.height),Paragraph(escape(r['brand']+' '+r['colour']),styles['BodyText'])])
     if samples:story.append(Table([[Table([[s[0]],[s[1]]]) for s in samples]],colWidths=[160]*len(samples)))
     story.append(PageBreak());heading('3. Architecture and training')
+    para('Design rationale: '+analysis['architecture_rationale'])
     # An actual diagram made of cells/arrows, not an unrendered Mermaid block.
     for text in ['Phone photo (cable / offline transfer)','↓','Team-trained SSDLite320 MobileNetV3 Large → full view + overlapping tiles → NMS','↓','Per-car crop → MobileNetV3 Small → average + maximum pooling','↓','1152 → 256 Hardswish / dropout 0.3','↓','Brand head + eight-colour head → (brand, colour) list']:
         para(text)
@@ -75,5 +76,9 @@ def report(args):
     para('Network implementations use torchvision; no pretrained weights are loaded. Documentation: https://docs.pytorch.org/vision/stable/models.html . Library provenance and public example-photo licenses are recorded in THIRD_PARTY.md and samples/sources.json. Public examples are not automatically imported as training data.')
     para('Submit one PDF, no more than six pages, with the repository URL on its first page. The repository must contain code, labels, data or a data link, trained weights or a download link, and a meaningful real commit history. Tag the verified final commit midterm before 27 October 2026, 23:59 Tashkent time. Live test: 28 October 2026, NH311.')
     output=Path(args.output);output.parent.mkdir(parents=True,exist_ok=True)
-    SimpleDocTemplate(str(output),pagesize=A4,rightMargin=36,leftMargin=36,topMargin=30,bottomMargin=30).build(story)
+    temporary=output.with_name(output.stem+'.review.tmp.pdf')
+    document=SimpleDocTemplate(str(temporary),pagesize=A4,rightMargin=36,leftMargin=36,topMargin=30,bottomMargin=30)
+    document.build(story)
+    if document.page>6:raise ValueError(f'Report has {document.page} pages; limit is 6. Shorten analysis/tables and regenerate before submission.')
+    temporary.replace(output)
     print('Report generated. Render and visually inspect every page; verify <= 6 pages before submission: '+str(output))

@@ -32,12 +32,12 @@ class App:
         tk.Label(rail,text='TASHKENT\nCARVISION',font=('Segoe UI',14,'bold'),fg='white',bg=NAVY,justify='left').pack(anchor='w',padx=23)
         tk.Label(rail,text='OFFLINE STUDIO  /  1.1',font=('Segoe UI',8),fg='#8fa3bb',bg=NAVY).pack(anchor='w',padx=23,pady=(10,30))
         self.nav={};self.views={}
-        for key,title in [('infer','01   Анализ фото'),('labels','02   Разметка'),('training','03   Обучение'),('help','04   О проекте')]:
+        for key,title in [('infer','01   Анализ фото'),('labels','02   Учебная разметка'),('training','03   Обучение'),('help','04   О проекте')]:
             b=tk.Button(rail,text=title,command=lambda k=key:self.show(k),bg=NAVY,fg='#bbcadb',activebackground='#26445e',activeforeground='white',font=('Segoe UI',11),anchor='w',relief='flat',padx=18,pady=14,cursor='hand2');b.pack(fill='x',padx=10,pady=3);self.nav[key]=b
         tk.Label(rail,text='Владелец проекта\nСофия Рахматулаева',font=('Segoe UI',10),fg='#c4d3e4',bg=NAVY,justify='left').pack(side='bottom',anchor='w',padx=20,pady=22)
         main=ttk.Frame(root,padding=(24,18));main.pack(side='left',fill='both',expand=True)
         self.title=tk.StringVar();ttk.Label(main,textvariable=self.title,style='Title.TLabel').pack(anchor='w')
-        ttk.Label(main,text='Любые новые фотографии · локальная обработка · без API',style='Muted.TLabel').pack(anchor='w',pady=(5,15))
+        ttk.Label(main,text='Марка и цвет — автоматически после обучения · локально · без API',style='Muted.TLabel').pack(anchor='w',pady=(5,15))
         container=ttk.Frame(main);container.pack(fill='both',expand=True)
         for key in self.nav:self.views[key]=ttk.Frame(container)
         self.build_infer();self.build_labels();self.build_training();self.build_help()
@@ -51,14 +51,14 @@ class App:
         b=ttk.Button(parent,text=text,command=callback,style='Primary.TButton' if primary else 'TButton');b.pack(**pack);self.buttons[key]=b;return b
     def show(self,key):
         for name,view in self.views.items():view.pack_forget();self.nav[name].configure(bg='#26445e' if key==name else NAVY)
-        self.views[key].pack(fill='both',expand=True);self.current=key;self.title.set(dict(infer='Анализ фотографии',labels='Собственный набор данных',training='Обучение с нуля',help='О проекте')[key]);self.root.after_idle(self.redraw)
+        self.views[key].pack(fill='both',expand=True);self.current=key;self.title.set(dict(infer='Анализ фотографии',labels='Разметка для обучения',training='Обучение с нуля',help='О проекте')[key]);self.root.after_idle(self.redraw)
 
     def build_infer(self):
         view=self.views['infer'];bar=ttk.Frame(view);bar.pack(fill='x')
         self.button(bar,'open','Открыть фото',self.open_infer,True,side='left');self.button(bar,'samples','Примеры Ташкента',lambda:self.open_infer(ROOT/'samples/images'),side='left',padx=7);self.button(bar,'pdf','PDF с примерами',self.open_pdf,side='left')
         settings=ttk.Frame(view);settings.pack(fill='x',pady=12);self.mode=tk.StringVar(value=next(iter(MODES)))
         ttk.Combobox(settings,textvariable=self.mode,values=list(MODES),state='readonly',width=34).pack(side='left');self.det=tk.DoubleVar(value=.5);self.conf=tk.DoubleVar(value=.65)
-        for text,var in [('Рамка',self.det),('Марка',self.conf)]:ttk.Label(settings,text=text,style='Muted.TLabel').pack(side='left',padx=(10,4));ttk.Spinbox(settings,from_=.1,to=.99,increment=.05,textvariable=var,width=5).pack(side='left')
+        for text,var in [('Порог рамки',self.det),('Порог марки',self.conf)]:ttk.Label(settings,text=text,style='Muted.TLabel').pack(side='left',padx=(10,4));ttk.Spinbox(settings,from_=.1,to=.99,increment=.05,textvariable=var,width=5).pack(side='left')
         self.button(settings,'predict','Анализировать',self.predict,True,side='right')
         body=ttk.Frame(view);body.pack(fill='both',expand=True);self.preview=tk.Canvas(body,bg='#e4eaf2',highlightthickness=0);self.preview.pack(side='left',fill='both',expand=True)
         right=ttk.Frame(body,padding=(14,0,0,0),width=300);right.pack(side='right',fill='y');right.pack_propagate(False)
@@ -72,7 +72,7 @@ class App:
         ttk.Label(view,text='Ctrl+O — открыть фото · Ctrl+Enter — анализировать. Примеры не содержат ответов для модели.',style='Muted.TLabel').pack(anchor='w',pady=(9,0));self.preview.bind('<Configure>',lambda e:self.queue_redraw())
 
     def build_labels(self):
-        view=self.views['labels'];bar=ttk.Frame(view);bar.pack(fill='x')
+        view=self.views['labels'];ttk.Label(view,text='Только подготовка учебных ответов. При анализе нового фото марку и цвет выбирает обученная сеть.',style='Muted.TLabel',wraplength=850).pack(anchor='w',pady=(0,10));bar=ttk.Frame(view);bar.pack(fill='x')
         self.button(bar,'label_open','Добавить своё фото',self.open_label,True,side='left');self.button(bar,'label_save','Сохранить машину',self.save_label,side='left',padx=7);self.button(bar,'undo','Отменить последнюю',self.undo_label,side='left')
         fields=ttk.Frame(view);fields.pack(fill='x',pady=12);self.brand=tk.StringVar(value=BRANDS[0]);self.colour=tk.StringVar(value=COLOURS[0]);self.group=tk.StringVar();self.source=tk.StringVar(value='own');self.keep_group=tk.BooleanVar()
         for title,var,values in [('Марка',self.brand,BRANDS),('Цвет',self.colour,COLOURS)]:ttk.Label(fields,text=title).pack(side='left',padx=(0,6));ttk.Combobox(fields,textvariable=var,values=values,state='normal' if title=='Марка' else 'readonly',width=18).pack(side='left',padx=(0,18))

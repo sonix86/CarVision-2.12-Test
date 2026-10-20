@@ -19,6 +19,16 @@ class Checks(unittest.TestCase):
         self.assertEqual(photo_score([('Chevrolet','white')],[('Chevrolet','white'),('Kia','grey')]),4)
         self.assertEqual(photo_score([('Chevrolet','white'),('Chevrolet','white'),('BYD','blue')],[('Chevrolet','white'),('Chevrolet','white'),('BYD','black')]),4.3)
         self.assertEqual(photo_score([('BYD','blue'),('Kia','red')],[('Kia','red'),('BYD','blue')]),5)
+        self.assertEqual(photo_score([('Mercedes-Benz','white'),('Volkswagen','grey'),('Li Auto','black')],[('Mercedes','white'),('VW','grey'),('Lixiang','black')]),5)
+
+    def test_brand_and_colour_are_inferred_without_manual_brand_input(self):
+        with tempfile.TemporaryDirectory() as temp:
+            path=Path(temp)/'new-photo.jpg';Image.new('RGB',(400,300),'white').save(path)
+            pipeline=object.__new__(Pipeline);pipeline.mode='fast';pipeline.detection=.5;pipeline.brand_threshold=.65;pipeline.colour_mode='trained';pipeline.brands=['Kia','BYD']
+            pipeline.detector=lambda images:[dict(boxes=torch.tensor([[20.,30,320,260]]),scores=torch.tensor([.95]),labels=torch.tensor([1]))]
+            pipeline.classifier=lambda x:(torch.tensor([[0.,10.]]),torch.tensor([[0.,0.,0.,0.,10.,0.,0.,0.]]))
+            result=pipeline.predict(path)
+            self.assertEqual([(r['brand'],r['colour']) for r in result['cars']],[('BYD','blue')]);self.assertEqual(result['cars'][0]['colour_source'],'trained')
 
     def test_colour_palette(self):
         for name,rgb in [('white',(245,245,245)),('black',(10,10,10)),('grey',(110,110,110)),('red',(220,20,20)),('blue',(20,40,230)),('green',(20,160,30)),('brown',(120,70,30)),('yellow',(240,200,20))]:
