@@ -26,6 +26,25 @@ class InstanceChecks(unittest.TestCase):
         data=encode_mask(np.ones((5,5),bool));data['counts']=[-1,26]
         with self.assertRaises(ValueError):decode_mask(data)
 
+    def test_subthreshold_neighbour_cannot_steal_valid_foreground_pixels(self):
+        segmenter=object.__new__(InstanceSegmenter);masks=torch.zeros(2,1,40,80)
+        masks[0,0,5:35,5:30]=.9;masks[0,0,5:35,40:70]=.49
+        masks[1,0,5:35,40:70]=.6
+        segmenter.raw=lambda image:dict(scores=torch.tensor([.99,.55]),labels=torch.tensor([3,3]),boxes=torch.tensor([[5.,5,30,35],[40.,5,70,35]]),masks=masks)
+        rows,_=segmenter.instances(Image.new('RGB',(80,40)),.5)
+        self.assertEqual(len(rows),2)
+        self.assertEqual(sum(int(row['mask'].sum()) for row in rows),1650)
+        self.assertTrue(any(row['mask'][20,55] for row in rows))
+
+    def test_last_image_cache_is_pixel_based_and_does_not_share_mutable_masks(self):
+        from unittest.mock import Mock
+        segmenter=object.__new__(InstanceSegmenter);mask=torch.ones(1,1,40,80)*.9
+        segmenter.raw=Mock(return_value=dict(scores=torch.tensor([.99]),labels=torch.tensor([3]),boxes=torch.tensor([[0.,0,80,40]]),masks=mask))
+        first,_=segmenter.instances(Image.new('RGB',(80,40),'white'));first[0]['mask'][:]=False
+        second,_=segmenter.instances(Image.new('RGB',(80,40),'white'));self.assertTrue(second[0]['mask'].all());self.assertEqual(segmenter.raw.call_count,1)
+        segmenter.instances(Image.new('RGB',(80,40),'blue'));self.assertEqual(segmenter.raw.call_count,2)
+        segmenter.instances(Image.new('RGB',(80,40),'blue'),threshold=.6);self.assertEqual(segmenter.raw.call_count,3)
+
     def test_single_car_prompt_preserves_visible_mask_and_excludes_foreground_car(self):
         from types import SimpleNamespace
         from carvision.scene import predict_instances

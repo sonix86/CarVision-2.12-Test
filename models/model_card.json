@@ -1,6 +1,6 @@
 {
   "owner": "София Рахматулаева",
-  "release": "1.5",
+  "release": "1.6",
   "brand_parameters": 1228858,
   "brand_architecture": "MobileNetV3 Small, own avg/max pooled 18-brand head, regional fine-tuning, mirrored-view probability mean and development temperature",
   "detector": "Generic Faster R-CNN ResNet50 FPN v2 COCO, min800/max1333; default whole frame, optional tiles",
@@ -98,5 +98,14 @@
   "instance_colour_accuracy": 0.9166666666666666,
   "instance_colour_test_count": 240,
   "model_rejection_threshold": 0.65,
-  "visible_masks": true
+  "visible_masks": true,
+  "v16_changes": {
+    "weights_retrained": false,
+    "changes": [
+      "pixel ownership restricted to accepted instance masks",
+      "last-image pixel/settings segmentation cache",
+      "mask-accurate preview tint and selected vehicle evidence card"
+    ],
+    "evaluation_note": "Learned-head accuracy metrics are retained from v1.5 protocols; v1.6 has separate engineering and city regression checks, not a new street accuracy estimate."
+  }
 }

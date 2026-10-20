@@ -14,7 +14,8 @@ from .core import ROOT,BRANDS,COLOURS,Pipeline,read_image,save_prediction
 from .overlays import marker_positions
 from .vehicle_model import vehicle_name,detailed_answer
 
-BG='#f3f5f9';INK='#182a42';MUTED='#6e7d91';TEAL='#087f8c';NAVY='#14243a'
+BG='#f4f7fb';INK='#203249';MUTED='#738297';TEAL='#087f8c';NAVY='#17283e';CARD='#ffffff'
+PAINT={'white':'#f5f5f2','black':'#242a31','grey':'#9ca7b2','red':'#d85659','blue':'#4b84c4','green':'#59a382','brown':'#a18364','yellow':'#edc459'}
 MODES={'Обычный поиск':'fast','Мелкие машины · дольше':'balanced','Тщательный поиск · дольше':'detail'}
 SCOPES=['Весь кадр','Машины в области','Одна машина в области']
 COLOUR_RU=dict(zip(COLOURS,['Белый','Чёрный','Серый / серебро','Красный','Синий','Зелёный','Коричневый','Жёлтый']))
@@ -28,21 +29,30 @@ class App:
         style=ttk.Style();style.theme_use('clam');style.configure('.',font=('Segoe UI',10))
         style.configure('TFrame',background=BG);style.configure('TLabel',background=BG,foreground=INK)
         style.configure('Title.TLabel',font=('Segoe UI',24,'bold'));style.configure('Muted.TLabel',foreground=MUTED)
-        style.configure('TButton',padding=(12,9),borderwidth=0,background='#e4eaf2',foreground=INK)
+        style.configure('TButton',padding=(12,9),borderwidth=0,background='#e7edf4',foreground=INK,focusthickness=0)
+        style.map('TButton',background=[('active','#d8e4ee')],foreground=[('disabled','#98a6b7')])
+        style.configure('TCheckbutton',background=BG,foreground=MUTED,padding=4)
+        style.map('TCheckbutton',background=[('active',BG)])
+        style.configure('Card.TFrame',background=CARD)
+        style.configure('Card.TLabel',background=CARD,foreground=INK)
+        style.configure('CardMuted.TLabel',background=CARD,foreground=MUTED)
+        style.configure('Evidence.Horizontal.TProgressbar',background='#51b9b0',troughcolor='#edf2f6',borderwidth=0,lightcolor='#51b9b0',darkcolor='#51b9b0',thickness=4)
+        style.configure('TProgressbar',background=TEAL,troughcolor='#e7edf4',borderwidth=0)
         style.configure('Primary.TButton',background=TEAL,foreground='white');style.map('Primary.TButton',background=[('active','#066774'),('disabled','#bdd3d6')])
         style.configure('Treeview',rowheight=32,font=('Segoe UI',10),background='white',fieldbackground='white');style.configure('Treeview.Heading',background='#e4eaf2',font=('Segoe UI',9,'bold'))
         style.map('Treeview',background=[('selected','#cbece6')],foreground=[('selected',INK)])
-        rail=tk.Frame(root,bg=NAVY,width=210);rail.pack(side='left',fill='y');rail.pack_propagate(False)
-        tk.Label(rail,text='CV /',font=('Segoe UI',30,'bold'),fg='#45d4c2',bg=NAVY).pack(anchor='w',padx=23,pady=(25,6))
-        tk.Label(rail,text='TASHKENT\nCARVISION',font=('Segoe UI',14,'bold'),fg='white',bg=NAVY,justify='left').pack(anchor='w',padx=23)
-        tk.Label(rail,text='OFFLINE STUDIO  /  1.5',font=('Segoe UI',8),fg='#8fa3bb',bg=NAVY).pack(anchor='w',padx=23,pady=(10,30))
+        rail=tk.Frame(root,bg=NAVY,width=190);rail.pack(side='left',fill='y');rail.pack_propagate(False)
+        tk.Label(rail,text='CV',font=('Segoe UI',32,'bold'),fg='#6ed9c8',bg=NAVY).pack(anchor='w',padx=22,pady=(28,2))
+        tk.Label(rail,text='CarVision',font=('Segoe UI',18,'bold'),fg='white',bg=NAVY,justify='left').pack(anchor='w',padx=22)
+        tk.Label(rail,text='ТАШКЕНТ  /  1.6',font=('Segoe UI',8),fg='#a4b7cd',bg=NAVY).pack(anchor='w',padx=23,pady=(8,9))
+        tk.Label(rail,text='●  Работает без интернета',font=('Segoe UI',8),fg='#7dd5bf',bg=NAVY).pack(anchor='w',padx=22,pady=(0,29))
         self.nav={};self.views={}
-        for key,title in [('infer','01   Анализ фото'),('labels','02   Учебная разметка'),('training','03   Обучение'),('help','04   О проекте')]:
+        for key,title in [('infer','Анализ фото'),('labels','Учебная разметка'),('training','Обучение'),('help','О проекте')]:
             b=tk.Button(rail,text=title,command=lambda k=key:self.show(k),bg=NAVY,fg='#bbcadb',activebackground='#26445e',activeforeground='white',font=('Segoe UI',11),anchor='w',relief='flat',padx=18,pady=14,cursor='hand2');b.pack(fill='x',padx=10,pady=3);self.nav[key]=b
         tk.Label(rail,text='Владелец проекта\nСофия Рахматулаева',font=('Segoe UI',10),fg='#c4d3e4',bg=NAVY,justify='left').pack(side='bottom',anchor='w',padx=20,pady=22)
         main=ttk.Frame(root,padding=(24,18));main.pack(side='left',fill='both',expand=True)
         self.title=tk.StringVar();ttk.Label(main,textvariable=self.title,style='Title.TLabel').pack(anchor='w')
-        ttk.Label(main,text='Марка, модель и цвет — автоматически · локально · без API',style='Muted.TLabel').pack(anchor='w',pady=(5,15))
+        ttk.Label(main,text='Найдите машину. Узнайте марку, модель и цвет.',style='Muted.TLabel').pack(anchor='w',pady=(5,18))
         container=ttk.Frame(main);container.pack(fill='both',expand=True)
         for key in self.nav:self.views[key]=ttk.Frame(container)
         self.build_infer();self.build_labels();self.build_training();self.build_help()
@@ -80,16 +90,31 @@ class App:
         ttk.Label(self.advanced_controls,text='Поиск: больше значение — меньше сомнительных объектов. Марка: ниже выбранного значения показываются варианты вместо установленной марки. Значения 0.5 подходят для начала; проценты сети не гарантируют правильность.',wraplength=800,style='Muted.TLabel',font=('Segoe UI',9)).pack(anchor='w',pady=(4,0))
         self.model_status=tk.StringVar();ttk.Label(view,textvariable=self.model_status,foreground='#a66718',wraplength=850).pack(anchor='w',pady=(0,7))
         body=ttk.Frame(view);body.pack(fill='both',expand=True);self.infer_body=body
-        self.preview=tk.Canvas(body,bg='#e4eaf2',highlightthickness=0);self.preview.pack(side='left',fill='both',expand=True)
-        right=ttk.Frame(body,padding=(14,0,0,0),width=300);right.pack(side='right',fill='y');right.pack_propagate(False)
-        ttk.Label(right,text='Результаты',font=('Segoe UI',13,'bold')).pack(anchor='w');self.summary=tk.StringVar(value='Фотография ещё не выбрана');ttk.Label(right,textvariable=self.summary,style='Muted.TLabel',wraplength=275).pack(anchor='w',pady=(5,8))
+        self.preview=tk.Canvas(body,bg='#eaf0f6',highlightthickness=1,highlightbackground='#dfe7ef');self.preview.pack(side='left',fill='both',expand=True)
+        panel=ttk.Frame(body,padding=(14,0,0,0),width=320);panel.pack(side='right',fill='y');panel.pack_propagate(False)
+        self.results_view=tk.Canvas(panel,bg=BG,highlightthickness=0,width=285);self.results_view.pack(side='left',fill='both',expand=True)
+        panel_scroll=ttk.Scrollbar(panel,command=self.results_view.yview);panel_scroll.pack(side='right',fill='y');self.results_view.configure(yscrollcommand=panel_scroll.set)
+        right=ttk.Frame(self.results_view);right_window=self.results_view.create_window(0,0,window=right,anchor='nw')
+        right.bind('<Configure>',lambda e:self.results_view.configure(scrollregion=self.results_view.bbox('all')))
+        self.results_view.bind('<Configure>',lambda e:self.results_view.itemconfigure(right_window,width=e.width))
+        self.results_view.bind('<MouseWheel>',lambda e:self.results_view.yview_scroll(-int(e.delta/120),'units'))
+        ttk.Label(right,text='Найденные машины',font=('Segoe UI',13,'bold')).pack(anchor='w');self.summary=tk.StringVar(value='Добавьте фото, чтобы начать');ttk.Label(right,textvariable=self.summary,style='Muted.TLabel',wraplength=275).pack(anchor='w',pady=(5,8))
         tablebox=ttk.Frame(right);tablebox.pack(fill='x');self.table=ttk.Treeview(tablebox,columns=('id','brand','colour'),show='headings',height=3,selectmode='browse')
         for name,title,width in [('id','№',30),('brand','Автомобиль / вариант',160),('colour','Цвет',90)]:self.table.heading(name,text=title);self.table.column(name,width=width,minwidth=25,stretch=name!='id')
         self.table.pack(side='left',fill='x',expand=True);scroll=ttk.Scrollbar(tablebox,command=self.table.yview);scroll.pack(side='right',fill='y');self.table.configure(yscrollcommand=scroll.set);self.table.bind('<<TreeviewSelect>>',lambda e:self.redraw())
-        self.details=tk.StringVar(value='Нажмите на контур машины или строку. Здесь появятся три вероятных модели и оценка цвета.')
-        ttk.Label(right,textvariable=self.details,style='Muted.TLabel',font=('Segoe UI',9),wraplength=275).pack(anchor='w',pady=7)
+        self.evidence_card=ttk.Frame(right,style='Card.TFrame',padding=12);self.evidence_card.pack(fill='x',pady=(10,0))
+        self.selected_title=tk.StringVar(value='Выберите машину')
+        ttk.Label(self.evidence_card,textvariable=self.selected_title,style='Card.TLabel',font=('Segoe UI',11,'bold'),wraplength=248).pack(anchor='w')
+        self.colour_chip=tk.Label(self.evidence_card,text='  Цвет появится после анализа',bg=CARD,fg=MUTED,font=('Segoe UI',9),anchor='w',padx=5,pady=4);self.colour_chip.pack(fill='x',pady=(6,9))
+        ttk.Label(self.evidence_card,text='Варианты модели',style='CardMuted.TLabel',font=('Segoe UI',9)).pack(anchor='w',pady=(0,4))
+        self.variant_rows=[]
+        for _ in range(3):
+            label=ttk.Label(self.evidence_card,text='—',style='Card.TLabel',font=('Segoe UI',9),wraplength=248);label.pack(anchor='w',fill='x')
+            meter=ttk.Progressbar(self.evidence_card,style='Evidence.Horizontal.TProgressbar',maximum=1);meter.pack(fill='x',pady=(3,7));self.variant_rows.append((label,meter))
+        self.details=tk.StringVar(value='Нажмите на контур или строку результата. Варианты — предположения сети, их можно проверить на крупном изображении.')
+        ttk.Label(self.evidence_card,textvariable=self.details,style='CardMuted.TLabel',font=('Segoe UI',9),wraplength=248).pack(anchor='w',pady=(3,0))
         exports=ttk.Frame(view);exports.pack(fill='x',pady=(8,0))
-        for key,text,fn in [('copy','Марки / цвета для задания',self.copy),('copy_details','Копировать варианты',self.copy_details),('export','Сохранить TXT / JSON / JPG',self.export),('output','Папка результатов',lambda:self.open_folder(ROOT/'outputs'))]:self.button(exports,key,text,fn,side='left',padx=(0,7)).configure(padding=(9,6))
+        for key,text,fn in [('copy','Ответ для задания',self.copy),('copy_details','Копировать варианты',self.copy_details),('export','Сохранить результаты',self.export),('output','Открыть папку',lambda:self.open_folder(ROOT/'outputs'))]:self.button(exports,key,text,fn,side='left',padx=(0,7)).configure(padding=(9,6))
         self.preview.bind('<Configure>',lambda e:self.queue_redraw());self.preview.bind('<ButtonPress-1>',self.start_region);self.preview.bind('<B1-Motion>',self.drag_region);self.preview.bind('<ButtonRelease-1>',self.end_region);self.preview.bind('<Double-Button-1>',lambda e:self.zoom_car());self.table.bind('<Double-Button-1>',lambda e:self.zoom_car())
 
     def toggle_advanced(self):
@@ -101,10 +126,11 @@ class App:
         if self.busy or self.image is None:return
         self.scope.set(SCOPES[2]);self.region=None;self.scope_changed();self.status.set('Протяните мышью от одного угла нужной области до другого. Затем нажмите «Распознать в зоне».')
 
-    def result_details(self,row):
+    def result_details(self,row,include_variants=True):
         variants=row.get('model_alternatives',[])
         text='Возможные модели:\n'+'\n'.join(f"{r['brand']} {r['model']} — {r['confidence']:.0%}" for r in variants) if variants else 'Модель пока не определена.'
-        text+='\nМарка: '+('не установлена' if row['brand']=='unknown' else row['brand'])+f" · {row['brand_confidence']:.0%}"
+        if not include_variants:text=''
+        text+=('\n' if text else '')+'Марка: '+('не установлена' if row['brand']=='unknown' else row['brand'])+f" · {row['brand_confidence']:.0%}"
         colours=row.get('colour_alternatives',[])
         text+='\nЦвет: '+COLOUR_RU.get(row['colour'],row['colour'])+f" · {row.get('colour_confidence',0):.0%}"+(' · проверьте' if not row.get('colour_reliable',True) else '')
         if len(colours)>1:text+='\nЕщё: '+COLOUR_RU.get(colours[1]['colour'],colours[1]['colour'])+f" · {colours[1]['confidence']:.0%}"
@@ -112,6 +138,18 @@ class App:
         if row.get('approximate_mask'):text+='\nГраница приблизительная; наличие машины не подтверждено.'
         elif row.get('segmentation'):text+='\nРаспознана видимая форма машины.'
         return text
+
+    def show_evidence(self,row=None):
+        self.selected_title.set(vehicle_name(row) if row else 'Выберите машину')
+        for (label,meter),variant in zip(self.variant_rows,(row.get('model_alternatives',[]) if row else [])+[None]*3):
+            label.configure(text=f"{variant['brand']} {variant['model']} · {variant['confidence']:.0%}" if variant else '—');meter['value']=variant['confidence'] if variant else 0
+        if row:
+            colour=COLOUR_RU.get(row['colour'],row['colour']);uncertain=not row.get('colour_reliable',True)
+            self.colour_chip.configure(text=('≈ ' if uncertain else '')+colour,bg=PAINT.get(row['colour'],CARD),fg='white' if row['colour'] in ('black','blue','red','green','brown') else INK)
+            self.details.set(self.result_details(row,include_variants=False))
+        else:
+            self.colour_chip.configure(text='Цвет появится после анализа',bg=CARD,fg=MUTED)
+            self.details.set('Нажмите на контур или строку. Проценты сети не гарантируют правильность; неизвестная модель может получить похожий вариант.')
 
     def build_labels(self):
         view=self.views['labels'];ttk.Label(view,text='Подготовка учебных ответов. В «Анализе фото» программа определяет марку и цвет автоматически.',style='Muted.TLabel',wraplength=850).pack(anchor='w',pady=(0,10));bar=ttk.Frame(view);bar.pack(fill='x')
@@ -181,7 +219,7 @@ class App:
         try:image=read_image(path)
         except Exception as e:messagebox.showerror('Ошибка фото',str(e));return
         if self.zoom_window is not None and self.zoom_window.winfo_exists():self.zoom_window.destroy()
-        self.path=str(path);self.image=image;self.result=None;self.region=None;self.region_start=None;self.table.delete(*self.table.get_children());self.details.set('Выберите строку результата, чтобы выделить машину.');self.scope.set(SCOPES[0]);self.scope_changed()
+        self.path=str(path);self.image=image;self.result=None;self.region=None;self.region_start=None;self.table.delete(*self.table.get_children());self.show_evidence();self.scope.set(SCOPES[0]);self.scope_changed()
         self.summary.set(f'{Path(path).name}\n{image.width} × {image.height} пикселей');self.show('infer');self.status.set('Фото загружено. '+('Можно анализировать.' if (ROOT/'models/detector.pt').exists() else 'Сначала обучите детектор на своей разметке.'));self.refresh_buttons();self.redraw()
     def queue_redraw(self):
         if self.closed:return
@@ -200,7 +238,13 @@ class App:
         if any(row.get('contours') for row in rows or []):
             layer=Image.new('RGBA',im.size,(0,0,0,0));paint=ImageDraw.Draw(layer)
             for row in rows or []:
-                for contour in row.get('contours',[]):paint.polygon([(x*im.width/image.width,y*im.height/image.height) for x,y in contour],fill=(255,179,65,46) if row.get('id')==selected else (20,184,166,25))
+                tint=(255,179,65,46) if row.get('id')==selected else (20,184,166,25)
+                if row.get('segmentation'):
+                    from .segmentation import decode_mask
+                    encoded=row['segmentation'];mask=Image.fromarray(decode_mask(encoded).astype('uint8')*tint[3]);scale=encoded.get('scale',[1,1]);size=(max(1,round(mask.width*scale[0]*im.width/image.width)),max(1,round(mask.height*scale[1]*im.height/image.height)))
+                    patch=Image.new('RGBA',size,tint);patch.putalpha(mask.resize(size,Image.Resampling.NEAREST));position=(round(encoded['origin'][0]*im.width/image.width),round(encoded['origin'][1]*im.height/image.height));layer.alpha_composite(patch,position)
+                else:
+                    for contour in row.get('contours',[]):paint.polygon([(x*im.width/image.width,y*im.height/image.height) for x,y in contour],fill=tint)
             im=Image.alpha_composite(im.convert('RGBA'),layer).convert('RGB')
         photo=ImageTk.PhotoImage(im);canvas.photo=photo;canvas.create_image(ox,oy,image=photo,anchor='nw')
         sx,sy=im.width/image.width,im.height/image.height;self.transforms[canvas]=(sx,sy,ox,oy)
@@ -226,7 +270,7 @@ class App:
             selection=self.table.selection();selected=int(selection[0]) if selection else None;self.draw(self.preview,self.image,self.result['cars'] if self.result else [],selected)
             self.draw_region();self.refresh_buttons()
             if selected and self.result:
-                row=next(r for r in self.result['cars'] if r['id']==selected);self.details.set(self.result_details(row))
+                row=next(r for r in self.result['cars'] if r['id']==selected);self.show_evidence(row)
         elif self.current=='labels':self.draw(self.canvas,self.label_image,self.label_rows);self.draw_selection()
     def predict(self):
         if self.busy or not self.path:return
@@ -406,7 +450,7 @@ class App:
             while True:
                 kind,data=self.events.get_nowait()
                 if kind=='prediction':
-                    self.result=data;self.table.delete(*self.table.get_children())
+                    self.result=data;self.table.delete(*self.table.get_children());self.show_evidence()
                     for row in data['cars']:self.table.insert('','end',iid=str(row['id']),values=(row['id'],vehicle_name(row) if row['brand']!='unknown' or row.get('model_candidate','unknown')!='unknown' else 'Не уверен',('≈ ' if not row.get('colour_reliable',True) else '')+('Серый' if row['colour']=='grey' else COLOUR_RU.get(row['colour'],row['colour']))))
                     scope='Одна выбранная машина' if data.get('single_car_region') else 'Машины в области' if data.get('region') else 'Весь кадр'
                     self.summary.set(f"{scope} · машин: {len(data['cars'])}\nАнализ: {data['seconds']:.2f} с");self.set_busy(False,'Результаты сохранены в outputs.');self.redraw()

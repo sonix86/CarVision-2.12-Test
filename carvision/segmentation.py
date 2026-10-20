@@ -1,4 +1,5 @@
 """Visible-instance masks, disjoint colour evidence and compact portable geometry."""
+import hashlib
 import numpy as np
 import torch
 from PIL import Image,ImageOps
@@ -54,6 +55,12 @@ class InstanceSegmenter:
     @torch.inference_mode()
     def instances(self,image,threshold=.5,mode='fast'):
         from .core import detection_tiles
+        # Reuse only the last actual pixel image and identical search settings.
+        # Manual selection can then retain full-image occlusion context without
+        # running the same expensive detector again. Never key by file name.
+        key=(image.size,hashlib.sha256(image.tobytes()).digest(),float(threshold),mode)
+        if key==getattr(self,'_cache_key',None):
+            return [dict(r,mask=r['mask'].copy()) for r in self._cache_rows],self._cache_views
         tiles=[(0,0,*image.size)] if mode=='fast' else detection_tiles(*image.size);views=[(tile,False) for tile in tiles];records=[]
         if mode=='detail':views.append(((0,0,*image.size),True))
         for tile,mirrored in views:
@@ -79,6 +86,10 @@ class InstanceSegmenter:
         if kept:
             # Each visible pixel belongs to only one instance. This prevents colour
             # from being counted twice where uncertain boundary masks intersect.
-            evidence=np.stack([r['probability']*r['score'] for r in kept]);owner=evidence.argmax(0)
+            # A soft prediction outside a neighbour's accepted shape must not
+            # steal a pixel from a valid, lower-confidence vehicle mask.
+            evidence=np.stack([np.where(r['mask'],r['probability']*r['score'],-1.) for r in kept]);owner=evidence.argmax(0)
             for i,r in enumerate(kept):r['mask'] &= owner==i
-        return [r for r in kept if int(r['mask'].sum())>=60],len(views)
+        result=[dict(mask=r['mask'],score=r['score'],label=r['label']) for r in kept if int(r['mask'].sum())>=60]
+        self._cache_key=key;self._cache_rows=[dict(r,mask=r['mask'].copy()) for r in result];self._cache_views=len(views)
+        return result,len(views)

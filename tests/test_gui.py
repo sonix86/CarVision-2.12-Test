@@ -22,6 +22,7 @@ class GuiChecks(unittest.TestCase):
         self.root.geometry('1120x760');self.app.show('infer');self.root.update()
         for key in ['copy','export','output']:
             button=self.app.buttons[key];self.assertLessEqual(button.winfo_y()+button.winfo_height(),button.master.winfo_height())
+            self.assertLessEqual(button.winfo_x()+button.winfo_width(),button.master.winfo_width())
         self.app.set_busy(True,'test');self.assertTrue(self.app.buttons['open'].instate(['disabled']));self.app.set_busy(False,'done')
     def test_analysis_region_coordinates_survive_resize_and_clear_on_next_photo(self):
         app=self.app;app.load_photo(self.photo);self.root.update();app.redraw();app.scope.set(gui.SCOPES[2]);app.scope_changed();sx,sy,ox,oy=app.transforms[app.preview]
@@ -35,6 +36,18 @@ class GuiChecks(unittest.TestCase):
     def test_unknown_manufacturer_still_displays_ranked_models(self):
         text=self.app.result_details(dict(brand='unknown',brand_confidence=.3,colour='white',colour_confidence=.4,colour_reliable=False,model_alternatives=[dict(brand='Chevrolet',model='Spark',confidence=.45),dict(brand='Daewoo',model='Matiz',confidence=.3)]))
         self.assertIn('Spark',text);self.assertIn('Matiz',text);self.assertIn('45%',text);self.assertIn('проверьте',text)
+    def test_evidence_card_resets_when_loading_another_photo(self):
+        row=dict(brand='Chevrolet',model='Spark',model_confidence=.8,brand_confidence=.9,colour='white',colour_confidence=.6,colour_reliable=True,model_alternatives=[dict(brand='Chevrolet',model='Spark',confidence=.8)])
+        self.app.show_evidence(row);self.assertIn('Spark',self.app.selected_title.get());self.assertAlmostEqual(float(self.app.variant_rows[0][1]['value']),.8)
+        self.app.load_photo(self.photo);self.assertEqual(float(self.app.variant_rows[0][1]['value']),0);self.assertEqual(self.app.selected_title.get(),'Выберите машину')
+    def test_preview_tint_preserves_holes_in_the_actual_instance_mask(self):
+        import numpy as np
+        from carvision.segmentation import encode_mask
+        mask=np.zeros((100,100),bool);mask[10:90,10:90]=True;mask[40:60,40:60]=False
+        row=dict(id=1,box=[10,10,90,90],segmentation=encode_mask(mask),contours=[[[10,10],[90,10],[90,90],[10,90]]])
+        self.app.draw(self.app.preview,Image.new('RGB',(100,100),'white'),[row])
+        shown=gui.ImageTk.getimage(self.app.preview.photo).convert('RGB')
+        self.assertEqual(shown.getpixel((50,50)),(255,255,255));self.assertNotEqual(shown.getpixel((30,30)),(255,255,255))
     def test_small_analysis_region_is_rejected(self):
         app=self.app;app.load_photo(self.photo);self.root.update();app.redraw();app.scope.set(gui.SCOPES[2]);sx,sy,ox,oy=app.transforms[app.preview]
         app.start_region(SimpleNamespace(x=ox+20*sx,y=oy+20*sy));app.end_region(SimpleNamespace(x=ox+25*sx,y=oy+25*sy));self.assertIsNone(app.region)

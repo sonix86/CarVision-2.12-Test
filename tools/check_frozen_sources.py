@@ -10,5 +10,5 @@ for module in ['core','gui','training','detector_training','reporting','colour_m
     source=root/'carvision'/f'{module}.py';frozen=reader.extract('carvision.'+module);expected=compile(source.read_text(encoding='utf-8'),str(source),'exec')
     assert signature(frozen)==signature(expected),'Frozen code differs from source: '+module
     checked.append(module)
-(root/'outputs/frozen-v15-check.json').write_text(json.dumps(dict(passed=True,modules=checked),indent=2))
+(root/'outputs/frozen-v16-check.json').write_text(json.dumps(dict(passed=True,modules=checked),indent=2))
 print('Frozen code matches current sources:',', '.join(checked))

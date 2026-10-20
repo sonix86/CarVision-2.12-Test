@@ -1,5 +1,5 @@
-CARVISION 1.5 / София Рахматулаева
-Распаковать TashkentCarVision-v1.5-Portable.zip целиком; запустить CarVision/CarVision.exe.
+CARVISION 1.6 / София Рахматулаева
+Распаковать TashkentCarVision-v1.6-Portable.zip целиком; запустить CarVision/CarVision.exe.
 Переносить всю папку, включая _internal/models/data/samples.
 Фото → Анализировать фото. Зона → Выбрать зону мышью → обвести → Распознать в зоне.
 Модели и цвет определяются автоматически. Справа — три вероятные модели.
