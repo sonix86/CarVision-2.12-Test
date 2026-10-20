@@ -22,7 +22,7 @@ COLOUR_RU=dict(zip(COLOURS,['Белый','Чёрный','Серый / сереб
 
 class App:
     def __init__(self,root):
-        self.root=root;root.title('CarVision · София Рахматулаева');root.geometry('1320x860');root.minsize(1120,760)
+        self.root=root;root.title('CarVision · София Рахманкулова');root.geometry('1320x860');root.minsize(1120,760)
         self.events=queue.Queue();self.pipeline=None;self.image=None;self.path=None;self.result=None;self.busy=False;self.process=None;self.closed=False;self.cancelled=False
         self.label_image=None;self.box=None;self.start=None;self.label_rows=[];self.undo_rows=[];self.transforms={};self.resize_job=None;self.buttons={}
         self.region=None;self.region_start=None;self.zoom_window=None
@@ -44,12 +44,12 @@ class App:
         rail=tk.Frame(root,bg=NAVY,width=190);rail.pack(side='left',fill='y');rail.pack_propagate(False)
         tk.Label(rail,text='CV',font=('Segoe UI',32,'bold'),fg='#6ed9c8',bg=NAVY).pack(anchor='w',padx=22,pady=(28,2))
         tk.Label(rail,text='CarVision',font=('Segoe UI',18,'bold'),fg='white',bg=NAVY,justify='left').pack(anchor='w',padx=22)
-        tk.Label(rail,text='ТАШКЕНТ  /  1.7',font=('Segoe UI',8),fg='#a4b7cd',bg=NAVY).pack(anchor='w',padx=23,pady=(8,9))
+        tk.Label(rail,text='ТАШКЕНТ  /  1.8',font=('Segoe UI',8),fg='#a4b7cd',bg=NAVY).pack(anchor='w',padx=23,pady=(8,9))
         tk.Label(rail,text='●  Работает без интернета',font=('Segoe UI',8),fg='#7dd5bf',bg=NAVY).pack(anchor='w',padx=22,pady=(0,29))
         self.nav={};self.views={}
         for key,title in [('infer','Анализ фото'),('labels','Учебная разметка'),('training','Обучение'),('help','О проекте')]:
             b=tk.Button(rail,text=title,command=lambda k=key:self.show(k),bg=NAVY,fg='#bbcadb',activebackground='#26445e',activeforeground='white',font=('Segoe UI',11),anchor='w',relief='flat',padx=18,pady=14,cursor='hand2');b.pack(fill='x',padx=10,pady=3);self.nav[key]=b
-        tk.Label(rail,text='Владелец проекта\nСофия Рахматулаева',font=('Segoe UI',10),fg='#c4d3e4',bg=NAVY,justify='left').pack(side='bottom',anchor='w',padx=20,pady=22)
+        tk.Label(rail,text='Владелец проекта\nСофия Рахманкулова',font=('Segoe UI',10),fg='#c4d3e4',bg=NAVY,justify='left').pack(side='bottom',anchor='w',padx=20,pady=22)
         main=ttk.Frame(root,padding=(24,18));main.pack(side='left',fill='both',expand=True)
         self.title=tk.StringVar();ttk.Label(main,textvariable=self.title,style='Title.TLabel').pack(anchor='w')
         ttk.Label(main,text='Найдите машину. Узнайте марку, модель и цвет.',style='Muted.TLabel').pack(anchor='w',pady=(5,18))
@@ -195,7 +195,7 @@ class App:
         self.log=tk.Text(view,bg=NAVY,fg='#d6e4ef',font=('Consolas',10),relief='flat',wrap='word',padx=14,pady=14,state='disabled');self.log.pack(fill='both',expand=True);self.append_log('Обучение локально, без API. Общие веса уже включены в пакет.\nГотовые классификаторы марок и цветов не используются.\nОценка на вырезках не заменяет проверку полного конвейера на новых фото.\n')
 
     def build_help(self):
-        view=self.views['help'];ttk.Label(view,text='София Рахматулаева',font=('Segoe UI',15,'bold')).pack(anchor='w',pady=(0,15))
+        view=self.views['help'];ttk.Label(view,text='София Рахманкулова',font=('Segoe UI',15,'bold')).pack(anchor='w',pady=(0,15))
         text='Откройте новую фотографию во вкладке «Анализ фото» и нажмите «Анализировать». Программа находит машины, затем определяет марку и цвет каждой вырезки. Правильную марку при распознавании вводить не нужно. Модель определяется автоматически для изученных вариантов. Если уверенности недостаточно, отображается «модель не определена».\n\nПоставляемый прототип обучен на открытых фотографиях. Поддерживаемые марки и измерения качества перечислены в инструкции. Неуверенная марка отображается как unknown; неизвестная классу машина тоже может быть ошибочно отнесена к известной марке. Цвет определяется собственным алгоритмом, без готового классификатора.\n\nДля задания нужны также ваши фотографии Ташкента: добавляйте их в «Учебной разметке», сохраняйте марки, цвета и группы съёмки. Это отдельная подготовка данных для обучения.\n\nДля переноса скопируйте всю папку CarVision, включая models и _internal.'
         ttk.Label(view,text=text,wraplength=850,justify='left').pack(anchor='w',pady=(0,18))
         for key,text,fn in [('readme','Полная инструкция',lambda:self.open_document(ROOT/'README.md')),('checklist','Список требований',lambda:self.open_document(ROOT/'CHECKLIST.md')),('help_pdf','PDF с примерами',self.open_pdf),('folder','Папка проекта',lambda:self.open_folder(ROOT))]:self.button(view,key,text,fn,anchor='w',pady=4)

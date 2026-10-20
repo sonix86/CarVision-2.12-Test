@@ -1,5 +1,5 @@
 {
-  "owner": "София Рахматулаева",
+  "owner": "София Рахманкулова",
   "release": "1.7",
   "brand_parameters": 1228858,
   "brand_architecture": "MobileNetV3 Small, own avg/max pooled 18-brand head, regional fine-tuning, mirrored-view probability mean and development temperature",

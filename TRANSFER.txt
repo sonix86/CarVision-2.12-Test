@@ -1,4 +1,4 @@
-CARVISION 1.7 / София Рахматулаева
+CARVISION 1.7 / София Рахманкулова
 Распаковать TashkentCarVision-v1.7-Portable.zip целиком; запустить CarVision/CarVision.exe.
 Переносить всю папку, включая _internal/models/data/samples.
 Фото → Анализировать фото. Зона → Выбрать зону мышью → обвести → Распознать в зоне.

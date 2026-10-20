@@ -16,7 +16,7 @@ temp=ROOT/'tmp/pdfs/photo-book';temp.mkdir(parents=True,exist_ok=True)
 samples=ROOT/'samples';records=json.loads((samples/'sources.json').read_text(encoding='utf-8'))
 output=ROOT/'output/pdf/Tashkent_Photo_Examples.pdf';output.parent.mkdir(parents=True,exist_ok=True)
 pdfmetrics.registerFont(TTFont('Arial',r'C:\Windows\Fonts\arial.ttf'));pdfmetrics.registerFont(TTFont('ArialBold',r'C:\Windows\Fonts\arialbd.ttf'));pdfmetrics.registerFontFamily('Arial',normal='Arial',bold='ArialBold',italic='Arial',boldItalic='ArialBold')
-W,H=landscape(A4);c=canvas.Canvas(str(output),pagesize=(W,H));c.setTitle('Ташкент: фотографии для проверки CarVision');c.setAuthor('CarVision · София Рахматулаева (владелец проекта; авторы фото указаны отдельно)')
+W,H=landscape(A4);c=canvas.Canvas(str(output),pagesize=(W,H));c.setTitle('Ташкент: фотографии для проверки CarVision');c.setAuthor('CarVision · София Рахманкулова (владелец проекта; авторы фото указаны отдельно)')
 styles={name:ParagraphStyle(name,fontName='Arial',fontSize=size,leading=size*1.42,textColor=colour) for name,size,colour in [('body',11,'#34445a'),('small',8,'#536579')]}
 def text(s,x,y,width,style='body'):
     p=Paragraph(s,styles[style]);_,height=p.wrap(width,H);p.drawOn(c,x,y-height);return height
@@ -25,7 +25,7 @@ def page(number,kicker,title):
     c.setFillColorRGB(.055,.14,.23);c.rect(0,H-100,W,100,fill=1,stroke=0)
     c.setFillColorRGB(.25,.83,.75);c.setFont('ArialBold',9);c.drawString(35,H-28,kicker)
     c.setFillColorRGB(1,1,1);c.setFont('ArialBold',23);c.drawString(35,H-65,title)
-    c.setFillColorRGB(.4,.47,.56);c.setFont('Arial',8);c.drawString(35,20,'CARVISION / София Рахматулаева · примеры для проверки, не итоговый экзаменационный отчёт');c.drawRightString(W-35,20,f'{number:02d}')
+    c.setFillColorRGB(.4,.47,.56);c.setFont('Arial',8);c.drawString(35,20,'CARVISION / София Рахманкулова · примеры для проверки, не итоговый экзаменационный отчёт');c.drawRightString(W-35,20,f'{number:02d}')
 
 page(1,'TASHKENT / PHOTO TEST KIT','Фотографии для проверки приложения')
 text('Шесть реальных фотографий автомобилей в Ташкенте из Wikimedia Commons. Публичные примеры помогают проверить загрузку, рамки, разные масштабы, освещение и перенос фото с экрана телефона. Они не являются собственными фотографиями Софии и не заменяют обучающий набор.',35,H-128,W-70)

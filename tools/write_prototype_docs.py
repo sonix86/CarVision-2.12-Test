@@ -13,7 +13,7 @@ import torch,sys
 sys.path.insert(0,str(root))
 from carvision.core import Classifier
 classifier=Classifier(len(test['brands']))
-card=dict(owner='София Рахматулаева',release='1.2',brand_parameters=sum(p.numel() for p in classifier.parameters()),brand_architecture='MobileNetV3 Small + average/max pooling + 1152->256 Hardswish/dropout + 13-brand head',detector=detector_name,general_initialization='ImageNet/COCO explicitly authorized by owner; no ready-made car-brand classifier',supported_brands=test['brands'],image_size=160,colour='Original HSV body-region method; unused colour neural head is NOT trained',brand_test_accuracy=test['brand_top1_accuracy'],brand_test_images=test['images'],brand_scope=test['brand_scope'],own_tashkent_training_photos=0)
+card=dict(owner='София Рахманкулова',release='1.2',brand_parameters=sum(p.numel() for p in classifier.parameters()),brand_architecture='MobileNetV3 Small + average/max pooling + 1152->256 Hardswish/dropout + 13-brand head',detector=detector_name,general_initialization='ImageNet/COCO explicitly authorized by owner; no ready-made car-brand classifier',supported_brands=test['brands'],image_size=160,colour='Original HSV body-region method; unused colour neural head is NOT trained',brand_test_accuracy=test['brand_top1_accuracy'],brand_test_images=test['images'],brand_scope=test['brand_scope'],own_tashkent_training_photos=0)
 (root/'models/model_card.json').write_text(json.dumps(card,ensure_ascii=False,indent=2),encoding='utf-8')
 card.update(colour='Independently trained VCoR colour MLP over general ImageNet features and original RGB/HSV statistics',colour_test_accuracy=colour_training['test_accuracy'],colour_test_images=colour_training['test'],colour_classes=colour_training['classes'],colour_source=colour_training['source'],ready_made_colour_model_used=False)
 (root/'models/model_card.json').write_text(json.dumps(card,ensure_ascii=False,indent=2),encoding='utf-8')
@@ -26,7 +26,7 @@ scene=test.get('dominant_car_full_photo_check',{})
 scene_text=(f"На {scene['images']} целых публичных тестовых фото найдена основная размеченная машина в {scene['detected']} случаях; марка основной машины с учётом пропусков/unknown верна в {scene['correct_brand']} случаях. Это проверка основной машины с IoU≥0,5, а не точность всех объектов улицы; дополнительные машины в Stanford Cars не размечены." if scene else 'Отдельная проверка детектора целых фотографий отсутствует.')
 readme=f'''# Tashkent CarVision 1.2 — переносимый прототип
 
-Владелец: **София Рахматулаева**. Обученный классификатор включён в пакет. Откройте фотографию и нажмите «Анализировать»: марка и цвет определяются автоматически, выбирать правильную марку не нужно. Windows 10/11 x64, CPU, без API, ключей, подписок и интернета при работе.
+Владелец: **София Рахманкулова**. Обученный классификатор включён в пакет. Откройте фотографию и нажмите «Анализировать»: марка и цвет определяются автоматически, выбирать правильную марку не нужно. Windows 10/11 x64, CPU, без API, ключей, подписок и интернета при работе.
 
 ## Запуск и перенос
 
@@ -100,7 +100,7 @@ flowchart LR
 (root/'README.md').write_text(readme,encoding='utf-8')
 validation_doc=f'''# Реальные измерения прототипа 1.2
 
-София Рахматулаева · 20 октября 2026. Windows x64, CPU Intel Xeon E3-1230 v3, Python 3.12.14, torch 2.6.0+cpu, torchvision 0.21.0.
+София Рахманкулова · 20 октября 2026. Windows x64, CPU Intel Xeon E3-1230 v3, Python 3.12.14, torch 2.6.0+cpu, torchvision 0.21.0.
 
 - Обучение марки: {training['train_cars']} машин; dev-validation {training['validation_cars']}; {epochs} эпох; best epoch {training['best_epoch']}; dev accuracy {training['best_validation_accuracy']:.1%}.
 - Отдельный официальный test: {test['images']} эталонных вырезок; brand top-1 **{accuracy}**. Этот test не участвовал в градиентах, выборе checkpoint или настройке порога.
@@ -119,7 +119,7 @@ validation_doc=f'''# Реальные измерения прототипа 1.2
 (root/'PROTOTYPE_VALIDATION.md').write_text(validation_doc,encoding='utf-8')
 audit='''# Сверка с CSAI-3210 Midterm
 
-Владелец: София Рахматулаева. Источник: предоставленный PDF задания. Статус: обученный переносимый прототип готов для локального тестирования; полное выполнение учебного задания ещё не подтверждено.
+Владелец: София Рахманкулова. Источник: предоставленный PDF задания. Статус: обученный переносимый прототип готов для локального тестирования; полное выполнение учебного задания ещё не подтверждено.
 
 | Требование | Реализовано / что осталось |
 |---|---|
@@ -142,7 +142,7 @@ audit='''# Сверка с CSAI-3210 Midterm
 Пункты, требующие собственных данных, GitHub, подтверждения других команд и личного участия, нельзя честно считать завершёнными по наличию EXE.
 '''
 (root/'REQUIREMENTS_AUDIT.md').write_text(audit,encoding='utf-8');(root/'CHECKLIST.md').write_text(audit,encoding='utf-8')
-(root/'TRANSFER.txt').write_text('''CARVISION 1.2 / София Рахматулаева
+(root/'TRANSFER.txt').write_text('''CARVISION 1.2 / София Рахманкулова
 
 Распакуйте весь TashkentCarVision-Portable.zip на Windows 10/11 x64.
 Откройте CarVision/CarVision.exe или Start CarVision.cmd.
@@ -161,7 +161,7 @@ Python, API-ключи, подписки и интернет для анализ
 ''',encoding='utf-8')
 third='''# Libraries, general weights and public photographs
 
-Owner: София Рахматулаева. OpenAI Codex assisted with code, training, data preparation, visual colour review, tests, documentation and packaging. No student-collected data is claimed.
+Owner: София Рахманкулова. OpenAI Codex assisted with code, training, data preparation, visual colour review, tests, documentation and packaging. No student-collected data is claimed.
 
 ## Libraries
 

@@ -36,9 +36,9 @@ def report_asset(path):
 def figure(path,width,height):
  path=report_asset(path);im=read_image(path);s=min(width/im.width,height/im.height);story.append(Image(str(path),width=im.width*s,height=im.height*s,hAlign='LEFT'))
 def footer(canvas,document):
- canvas.setStrokeColor(colors.HexColor('#d6e0e8'));canvas.line(36,34,A4[0]-36,34);canvas.setFont('CV',7);canvas.drawString(36,22,'CarVision 1.5 / Sofia Rakhmatulaeva / prototype draft / 21.10.2026');canvas.drawRightString(A4[0]-36,22,str(document.page))
+ canvas.setStrokeColor(colors.HexColor('#d6e0e8'));canvas.line(36,34,A4[0]-36,34);canvas.setFont('CV',7);canvas.drawString(36,22,'CarVision 1.5 / Sofia Rakhmankulova / prototype draft / 21.10.2026');canvas.drawRightString(A4[0]-36,22,str(document.page))
 p('Tashkent\nCarVision 1.5','CVTitle');p('CSAI-3210 Midterm / локальный обученный прототип','Heading')
-p('Владелец: София Рахматулаева.\nGitHub: полный URL ещё не предоставлен владельцем.\nСтатус: ЧЕРНОВИК ПРОТОТИПА, НЕ ОКОНЧАТЕЛЬНАЯ СДАЧА.')
+p('Владелец: София Рахманкулова.\nGitHub: полный URL ещё не предоставлен владельцем.\nСтатус: ЧЕРНОВИК ПРОТОТИПА, НЕ ОКОНЧАТЕЛЬНАЯ СДАЧА.')
 p('По фотографии программа находит видимые контуры машин и выдаёт пары (марка, цвет). Дополнение владельца: до трёх вероятных конкретных моделей. Правильные ответы вводить не нужно. Windows x64, локальное выполнение, без платных сервисов, ключей и интернет-запросов при распознавании.')
 table([['Измерение','Результат'],['Марка / видимые маски Commons',f"{metrics['brand_test_accuracy']:.1%},80 вырезок,7 марок представлены"],['Модель / чистые вырезки',f"top-1 {model['metrics']['test']['clean']['top1']:.1%}; top-3 {model['metrics']['test']['clean']['top3']:.1%}; n80"],['Модель / искусственное перекрытие',f"top-1 {model['metrics']['test']['partial']['top1']:.1%}; top-3 {model['metrics']['test']['partial']['top3']:.1%}; n80"],['Цвет / маски VCoR',f"{paint['test_accuracy']:.1%};240 сбалансированных машин"],['Собственные учебные фото','0. Публичные данные не заменяют это требование.']], [205,315])
 p('Это разные публичные протоколы на вырезках; их проценты не являются общей точностью улиц Ташкента. Искусственное перекрытие не равно реальной окклюзии. Шесть городских примеров служат диагностикой разработки и не считаются независимым финальным тестом.')
@@ -105,7 +105,7 @@ p('План на ещё две недели, предложенный AI: соб
 p('Источники: Stanford Cars/Krause2013 (huggingface.co/datasets/tanganke/stanford_cars и github.com/jhpohovey/StanfordCars-Dataset); VCoR/Panetta2021, doi.org/10.3390/ai2040041, Kaggle landrykezebou/vcor-vehicle-color-recognition-dataset; torchvision0.21 COCO Mask R-CNN. Индивидуальные Commons URL/авторы/CC-лицензии - data/regional/source_manifest_snapshot.json и samples/sources.json.','Small')
 p('Срок:27.10.2026 23:59 Ташкент, tag midterm; live test28.10.2026, NH311. Данный черновик не выдаётся за полностью закрытое задание.','Small')
 out=ROOT/'output/pdf/CarVision_Prototype_Report.pdf';out.parent.mkdir(parents=True,exist_ok=True)
-doc=SimpleDocTemplate(str(out),pagesize=A4,leftMargin=36,rightMargin=36,topMargin=35,bottomMargin=47,title='CarVision1.5 prototype report - draft',author='Sofia Rakhmatulaeva; Codex assistance disclosed')
+doc=SimpleDocTemplate(str(out),pagesize=A4,leftMargin=36,rightMargin=36,topMargin=35,bottomMargin=47,title='CarVision1.5 prototype report - draft',author='Sofia Rakhmankulova; Codex assistance disclosed')
 doc.build(story,onFirstPage=footer,onLaterPages=footer)
 if doc.page!=6:raise ValueError('Expected exactly6 pages; got '+str(doc.page))
 print('Created',out,'pages',doc.page)

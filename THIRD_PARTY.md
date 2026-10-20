@@ -1,6 +1,6 @@
 # Libraries, general weights and public photographs
 
-Owner: София Рахматулаева. OpenAI Codex assisted with code, training, data preparation, visual colour review, tests, documentation and packaging. No student-collected data is claimed.
+Owner: София Рахманкулова. OpenAI Codex assisted with code, training, data preparation, visual colour review, tests, documentation and packaging. No student-collected data is claimed.
 
 ## Libraries
 
