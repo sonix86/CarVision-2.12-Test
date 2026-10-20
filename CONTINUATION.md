@@ -57,3 +57,5 @@ Expanded preparation COMPLETE:1170photos total,642train/134validation/394test,24
 ## Corrected startup augmentation error
 
 The first training launch stopped in its first batch because PIL.ImageOps.grayscale has no num_output_channels argument. Corrected to ImageOps.grayscale(im).convert('RGB'), checked its3channel result, then relaunched training and bounded follow-up with their logs truncated/reset and new PIDs in the same pid files. Dataset/cache remain complete; this is still the FIRST training round (no completed epoch/candidate from the failed startup). Watch logs for actual epochs. The previous follow-up exited on traceback; current follow-up was restarted after stderr reset.
+
+Training restart is healthy: epochs1–2 completed after the RGB fix, with empty stderr. Current launcher PIDs6056(training) and9896(follow-up), real child PIDs11180 and6484; no duplicate jobs remain. Early legacy guards are false, which is not a reason to promote or change thresholds prematurely; wait for all24epochs. Dataset and staged EXE are complete.
