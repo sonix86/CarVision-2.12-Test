@@ -1,0 +1,192 @@
+{
+  "selection": "Grouped Commons validation only; optimize mean clean and synthetic-occlusion accuracy, clean accuracy floor baseline minus2 percentage points. Temperature and source classifiers already project-trained. Donor images come only from training groups. Tests and city samples do not select fusion.",
+  "validation_count": 82,
+  "test_count": 80,
+  "synthetic_scope": "One lower left/right rectangle covering27% image area replaced by a different training vehicle; removed from visible mask. Artificial benchmark, not a real street occlusion test.",
+  "test_used_for_selection": false,
+  "brand_mask_weight": 1.0,
+  "brand_development_candidates": [
+    {
+      "weight": 0.0,
+      "clean": {
+        "accuracy": 0.7317073345184326,
+        "top3_recall": 0.9756097793579102,
+        "nll": 0.7243180274963379
+      },
+      "occluded": {
+        "accuracy": 0.5853658318519592,
+        "top3_recall": 0.8292682766914368,
+        "nll": 1.4125293493270874
+      }
+    },
+    {
+      "weight": 0.25,
+      "clean": {
+        "accuracy": 0.7317073345184326,
+        "top3_recall": 0.9634146094322205,
+        "nll": 0.7131227850914001
+      },
+      "occluded": {
+        "accuracy": 0.5853658318519592,
+        "top3_recall": 0.8536585569381714,
+        "nll": 1.2260358333587646
+      }
+    },
+    {
+      "weight": 0.5,
+      "clean": {
+        "accuracy": 0.7195122241973877,
+        "top3_recall": 0.9634146094322205,
+        "nll": 0.7156289219856262
+      },
+      "occluded": {
+        "accuracy": 0.5853658318519592,
+        "top3_recall": 0.8658536672592163,
+        "nll": 1.1677998304367065
+      }
+    },
+    {
+      "weight": 0.75,
+      "clean": {
+        "accuracy": 0.7317073345184326,
+        "top3_recall": 0.9390243887901306,
+        "nll": 0.7318040132522583
+      },
+      "occluded": {
+        "accuracy": 0.5975610017776489,
+        "top3_recall": 0.9024389982223511,
+        "nll": 1.1607087850570679
+      }
+    },
+    {
+      "weight": 1.0,
+      "clean": {
+        "accuracy": 0.7439024448394775,
+        "top3_recall": 0.9390243887901306,
+        "nll": 0.7730530500411987
+      },
+      "occluded": {
+        "accuracy": 0.5975610017776489,
+        "top3_recall": 0.8780487775802612,
+        "nll": 1.2226208448410034
+      }
+    }
+  ],
+  "brand_test": {
+    "clean": {
+      "accuracy": 0.7749999761581421,
+      "top3_recall": 0.9375,
+      "nll": 0.6728456020355225
+    },
+    "occluded": {
+      "accuracy": 0.637499988079071,
+      "top3_recall": 0.862500011920929,
+      "nll": 1.2116848230361938
+    }
+  },
+  "brand_baseline_test": {
+    "clean": {
+      "accuracy": 0.7749999761581421,
+      "top3_recall": 0.949999988079071,
+      "nll": 0.6685749292373657
+    },
+    "occluded": {
+      "accuracy": 0.625,
+      "top3_recall": 0.862500011920929,
+      "nll": 1.1549601554870605
+    }
+  },
+  "model_mask_weight": 0.25,
+  "model_development_candidates": [
+    {
+      "weight": 0.0,
+      "clean": {
+        "accuracy": 0.792682945728302,
+        "top3_recall": 0.9390243887901306,
+        "nll": 0.6096879243850708
+      },
+      "occluded": {
+        "accuracy": 0.45121949911117554,
+        "top3_recall": 0.707317054271698,
+        "nll": 1.9952532052993774
+      }
+    },
+    {
+      "weight": 0.25,
+      "clean": {
+        "accuracy": 0.8170731663703918,
+        "top3_recall": 0.9390243887901306,
+        "nll": 0.621474027633667
+      },
+      "occluded": {
+        "accuracy": 0.5121951103210449,
+        "top3_recall": 0.7317073345184326,
+        "nll": 1.6706973314285278
+      }
+    },
+    {
+      "weight": 0.5,
+      "clean": {
+        "accuracy": 0.8048780560493469,
+        "top3_recall": 0.9390243887901306,
+        "nll": 0.6448632478713989
+      },
+      "occluded": {
+        "accuracy": 0.5121951103210449,
+        "top3_recall": 0.7195122241973877,
+        "nll": 1.5991522073745728
+      }
+    },
+    {
+      "weight": 0.75,
+      "clean": {
+        "accuracy": 0.7804877758026123,
+        "top3_recall": 0.9146341681480408,
+        "nll": 0.6817424297332764
+      },
+      "occluded": {
+        "accuracy": 0.4878048896789551,
+        "top3_recall": 0.7682926654815674,
+        "nll": 1.613403558731079
+      }
+    },
+    {
+      "weight": 1.0,
+      "clean": {
+        "accuracy": 0.7317073345184326,
+        "top3_recall": 0.9390243887901306,
+        "nll": 0.7454450130462646
+      },
+      "occluded": {
+        "accuracy": 0.4390243887901306,
+        "top3_recall": 0.7317073345184326,
+        "nll": 1.7603538036346436
+      }
+    }
+  ],
+  "model_test": {
+    "clean": {
+      "accuracy": 0.737500011920929,
+      "top3_recall": 0.925000011920929,
+      "nll": 0.7555883526802063
+    },
+    "occluded": {
+      "accuracy": 0.42500001192092896,
+      "top3_recall": 0.7250000238418579,
+      "nll": 1.758408546447754
+    }
+  },
+  "model_baseline_test": {
+    "clean": {
+      "accuracy": 0.737500011920929,
+      "top3_recall": 0.8999999761581421,
+      "nll": 0.7620235681533813
+    },
+    "occluded": {
+      "accuracy": 0.4124999940395355,
+      "top3_recall": 0.675000011920929,
+      "nll": 2.082897663116455
+    }
+  },
+  "seconds": 145.5080240999996
+}

@@ -1,6 +1,6 @@
 {
   "owner": "София Рахматулаева",
-  "release": "1.4",
+  "release": "1.5",
   "brand_parameters": 1228858,
   "brand_architecture": "MobileNetV3 Small, own avg/max pooled 18-brand head, regional fine-tuning, mirrored-view probability mean and development temperature",
   "detector": "Generic Faster R-CNN ResNet50 FPN v2 COCO, min800/max1333; default whole frame, optional tiles",
@@ -68,5 +68,35 @@
   "vehicle_model_test_accuracy": 0.7749999761581421,
   "vehicle_model_test_count": 80,
   "vehicle_model_threshold": 0.5,
-  "colour_reliability_threshold": 0.6
+  "colour_reliability_threshold": 0.6,
+  "segmentation": {
+    "origin": "generic-coco-instance-segmenter",
+    "architecture": "Mask R-CNN ResNet50 FPN v2",
+    "parameters": 46359409,
+    "source": "https://download.pytorch.org/models/maskrcnn_resnet50_fpn_v2_coco-73cbd019.pth",
+    "scope": "General COCO car/truck visible-object masks only, no brand/model/colour classifier",
+    "authorization": "General ImageNet/COCO weights explicitly permitted by owner",
+    "documentation": "https://docs.pytorch.org/vision/0.21/models/generated/torchvision.models.detection.maskrcnn_resnet50_fpn_v2.html"
+  },
+  "instance_brand_accuracy": 0.7749999761581421,
+  "instance_model_metrics": {
+    "clean": {
+      "count": 80,
+      "top1": 0.737500011920929,
+      "top3": 0.9624999761581421,
+      "coverage": 0.7749999761581421,
+      "accuracy_when_accepted": 0.8870967626571655
+    },
+    "partial": {
+      "count": 80,
+      "top1": 0.574999988079071,
+      "top3": 0.824999988079071,
+      "coverage": 0.4375,
+      "accuracy_when_accepted": 0.9142857193946838
+    }
+  },
+  "instance_colour_accuracy": 0.9166666666666666,
+  "instance_colour_test_count": 240,
+  "model_rejection_threshold": 0.65,
+  "visible_masks": true
 }

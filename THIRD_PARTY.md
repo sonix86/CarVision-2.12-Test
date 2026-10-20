@@ -32,3 +32,9 @@ VCoR colour photographs and provided labels were obtained from https://www.kaggl
 ## Additional regional photographs / v1.3
 
 Supplementary Commons category-labelled vehicle photographs, locally resized and automatically cropped. Authors, source URLs, licence names/URLs, changes and hashes are preserved in data/regional/source_manifest_snapshot.json and labels.jsonl. They are public photographs, never attributed to the student; raw training photographs are excluded from the portable package. Author/date session split, near-dHash deduplication and development-demo exclusion are documented in provenance.json.
+
+## Instance contours and visible-paint training / v1.5
+
+Generic Mask R-CNN ResNet50 FPN v2 COCO weights are from the official torchvision distribution. Exact URL and metadata: models/segmenter.json. These weights locate visible objects; vehicle brand/model/colour heads are independently trained in this project. Preserve torchvision and COCO attribution bundled with the distribution.
+
+The visible-paint ExtraTrees head is trained locally on source-labelled VCoR samples. scikit-learn 1.6.1 is used only during training; the portable runtime evaluates exported arrays and excludes sklearn. Training recipes, experiments, splits and calibration results are included in source/tools and models/*.json.

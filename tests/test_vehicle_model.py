@@ -19,7 +19,8 @@ class ModelChecks(unittest.TestCase):
         image=Image.new('RGB',(64,48));pre=lambda im:torch.zeros(3,32,32)
         self.assertEqual(m.predict(image,'Chevrolet',Backbone(),pre)[0],'Cobalt')
         self.assertEqual(m.predict(image,'Daewoo',Backbone(),pre)[0],'unknown')
-        self.assertEqual(m.predict(image,'unknown',Backbone(),pre),('unknown',0.))
+        self.assertEqual(m.predict(image,'unknown',Backbone(),pre)[0],'unknown')
+        self.assertTrue(m.predict_details(image,'unknown',Backbone(),pre)['model_alternatives'])
     def test_ambiguous_models_do_not_become_certain_by_brand_filtering(self):
         c=self.checkpoint();c['state']['bias'].zero_();c['threshold']=.6
         m=VehicleModelClassifier(c)

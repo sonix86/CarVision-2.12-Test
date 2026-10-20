@@ -1,0 +1,461 @@
+{
+  "promoted": true,
+  "configuration": {
+    "depth": null,
+    "leaf": 3,
+    "weight": 0.5,
+    "gate": {
+      "base_ceiling": 0.5,
+      "paint_floor": 0.7,
+      "weight": 1.0
+    }
+  },
+  "validation_accuracy": 0.94375,
+  "baseline_validation_accuracy": 0.9375,
+  "test_count": 240,
+  "test_accuracy": 0.9166666666666666,
+  "test_coverage": 0.8875,
+  "test_accepted_accuracy": 0.9577464788732394,
+  "threshold": 0.5,
+  "trees": 64,
+  "train": 640,
+  "validation": 160,
+  "feature_count": 572,
+  "seconds": 3.7198174000004656,
+  "selection": "Coarse 6 own ExtraTrees ensembles and8 fixed fusion settings selected on validation only; no validation accuracy regression vs own MLP. No test or city example chooses weights.",
+  "test_used_for_selection": false,
+  "candidates": [
+    {
+      "depth": 5,
+      "leaf": 3,
+      "weight": 0.25,
+      "gate": null,
+      "validation_accuracy": 0.93125
+    },
+    {
+      "depth": 5,
+      "leaf": 3,
+      "weight": 0.25,
+      "gate": {
+        "base_ceiling": 0.5,
+        "paint_floor": 0.7,
+        "weight": 1.0
+      },
+      "validation_accuracy": 0.93125
+    },
+    {
+      "depth": 5,
+      "leaf": 3,
+      "weight": 0.5,
+      "gate": null,
+      "validation_accuracy": 0.93125
+    },
+    {
+      "depth": 5,
+      "leaf": 3,
+      "weight": 0.5,
+      "gate": {
+        "base_ceiling": 0.5,
+        "paint_floor": 0.7,
+        "weight": 1.0
+      },
+      "validation_accuracy": 0.93125
+    },
+    {
+      "depth": 5,
+      "leaf": 3,
+      "weight": 0.75,
+      "gate": null,
+      "validation_accuracy": 0.9
+    },
+    {
+      "depth": 5,
+      "leaf": 3,
+      "weight": 0.75,
+      "gate": {
+        "base_ceiling": 0.5,
+        "paint_floor": 0.7,
+        "weight": 1.0
+      },
+      "validation_accuracy": 0.9
+    },
+    {
+      "depth": 5,
+      "leaf": 3,
+      "weight": 1.0,
+      "gate": null,
+      "validation_accuracy": 0.825
+    },
+    {
+      "depth": 5,
+      "leaf": 3,
+      "weight": 1.0,
+      "gate": {
+        "base_ceiling": 0.5,
+        "paint_floor": 0.7,
+        "weight": 1.0
+      },
+      "validation_accuracy": 0.825
+    },
+    {
+      "depth": 5,
+      "leaf": 8,
+      "weight": 0.25,
+      "gate": null,
+      "validation_accuracy": 0.925
+    },
+    {
+      "depth": 5,
+      "leaf": 8,
+      "weight": 0.25,
+      "gate": {
+        "base_ceiling": 0.5,
+        "paint_floor": 0.7,
+        "weight": 1.0
+      },
+      "validation_accuracy": 0.925
+    },
+    {
+      "depth": 5,
+      "leaf": 8,
+      "weight": 0.5,
+      "gate": null,
+      "validation_accuracy": 0.91875
+    },
+    {
+      "depth": 5,
+      "leaf": 8,
+      "weight": 0.5,
+      "gate": {
+        "base_ceiling": 0.5,
+        "paint_floor": 0.7,
+        "weight": 1.0
+      },
+      "validation_accuracy": 0.91875
+    },
+    {
+      "depth": 5,
+      "leaf": 8,
+      "weight": 0.75,
+      "gate": null,
+      "validation_accuracy": 0.90625
+    },
+    {
+      "depth": 5,
+      "leaf": 8,
+      "weight": 0.75,
+      "gate": {
+        "base_ceiling": 0.5,
+        "paint_floor": 0.7,
+        "weight": 1.0
+      },
+      "validation_accuracy": 0.90625
+    },
+    {
+      "depth": 5,
+      "leaf": 8,
+      "weight": 1.0,
+      "gate": null,
+      "validation_accuracy": 0.81875
+    },
+    {
+      "depth": 5,
+      "leaf": 8,
+      "weight": 1.0,
+      "gate": {
+        "base_ceiling": 0.5,
+        "paint_floor": 0.7,
+        "weight": 1.0
+      },
+      "validation_accuracy": 0.81875
+    },
+    {
+      "depth": 9,
+      "leaf": 3,
+      "weight": 0.25,
+      "gate": null,
+      "validation_accuracy": 0.925
+    },
+    {
+      "depth": 9,
+      "leaf": 3,
+      "weight": 0.25,
+      "gate": {
+        "base_ceiling": 0.5,
+        "paint_floor": 0.7,
+        "weight": 1.0
+      },
+      "validation_accuracy": 0.925
+    },
+    {
+      "depth": 9,
+      "leaf": 3,
+      "weight": 0.5,
+      "gate": null,
+      "validation_accuracy": 0.9375
+    },
+    {
+      "depth": 9,
+      "leaf": 3,
+      "weight": 0.5,
+      "gate": {
+        "base_ceiling": 0.5,
+        "paint_floor": 0.7,
+        "weight": 1.0
+      },
+      "validation_accuracy": 0.9375
+    },
+    {
+      "depth": 9,
+      "leaf": 3,
+      "weight": 0.75,
+      "gate": null,
+      "validation_accuracy": 0.90625
+    },
+    {
+      "depth": 9,
+      "leaf": 3,
+      "weight": 0.75,
+      "gate": {
+        "base_ceiling": 0.5,
+        "paint_floor": 0.7,
+        "weight": 1.0
+      },
+      "validation_accuracy": 0.90625
+    },
+    {
+      "depth": 9,
+      "leaf": 3,
+      "weight": 1.0,
+      "gate": null,
+      "validation_accuracy": 0.88125
+    },
+    {
+      "depth": 9,
+      "leaf": 3,
+      "weight": 1.0,
+      "gate": {
+        "base_ceiling": 0.5,
+        "paint_floor": 0.7,
+        "weight": 1.0
+      },
+      "validation_accuracy": 0.88125
+    },
+    {
+      "depth": 9,
+      "leaf": 8,
+      "weight": 0.25,
+      "gate": null,
+      "validation_accuracy": 0.925
+    },
+    {
+      "depth": 9,
+      "leaf": 8,
+      "weight": 0.25,
+      "gate": {
+        "base_ceiling": 0.5,
+        "paint_floor": 0.7,
+        "weight": 1.0
+      },
+      "validation_accuracy": 0.925
+    },
+    {
+      "depth": 9,
+      "leaf": 8,
+      "weight": 0.5,
+      "gate": null,
+      "validation_accuracy": 0.9375
+    },
+    {
+      "depth": 9,
+      "leaf": 8,
+      "weight": 0.5,
+      "gate": {
+        "base_ceiling": 0.5,
+        "paint_floor": 0.7,
+        "weight": 1.0
+      },
+      "validation_accuracy": 0.9375
+    },
+    {
+      "depth": 9,
+      "leaf": 8,
+      "weight": 0.75,
+      "gate": null,
+      "validation_accuracy": 0.90625
+    },
+    {
+      "depth": 9,
+      "leaf": 8,
+      "weight": 0.75,
+      "gate": {
+        "base_ceiling": 0.5,
+        "paint_floor": 0.7,
+        "weight": 1.0
+      },
+      "validation_accuracy": 0.90625
+    },
+    {
+      "depth": 9,
+      "leaf": 8,
+      "weight": 1.0,
+      "gate": null,
+      "validation_accuracy": 0.8625
+    },
+    {
+      "depth": 9,
+      "leaf": 8,
+      "weight": 1.0,
+      "gate": {
+        "base_ceiling": 0.5,
+        "paint_floor": 0.7,
+        "weight": 1.0
+      },
+      "validation_accuracy": 0.8625
+    },
+    {
+      "depth": null,
+      "leaf": 3,
+      "weight": 0.25,
+      "gate": null,
+      "validation_accuracy": 0.9375
+    },
+    {
+      "depth": null,
+      "leaf": 3,
+      "weight": 0.25,
+      "gate": {
+        "base_ceiling": 0.5,
+        "paint_floor": 0.7,
+        "weight": 1.0
+      },
+      "validation_accuracy": 0.9375
+    },
+    {
+      "depth": null,
+      "leaf": 3,
+      "weight": 0.5,
+      "gate": null,
+      "validation_accuracy": 0.94375
+    },
+    {
+      "depth": null,
+      "leaf": 3,
+      "weight": 0.5,
+      "gate": {
+        "base_ceiling": 0.5,
+        "paint_floor": 0.7,
+        "weight": 1.0
+      },
+      "validation_accuracy": 0.94375
+    },
+    {
+      "depth": null,
+      "leaf": 3,
+      "weight": 0.75,
+      "gate": null,
+      "validation_accuracy": 0.90625
+    },
+    {
+      "depth": null,
+      "leaf": 3,
+      "weight": 0.75,
+      "gate": {
+        "base_ceiling": 0.5,
+        "paint_floor": 0.7,
+        "weight": 1.0
+      },
+      "validation_accuracy": 0.90625
+    },
+    {
+      "depth": null,
+      "leaf": 3,
+      "weight": 1.0,
+      "gate": null,
+      "validation_accuracy": 0.86875
+    },
+    {
+      "depth": null,
+      "leaf": 3,
+      "weight": 1.0,
+      "gate": {
+        "base_ceiling": 0.5,
+        "paint_floor": 0.7,
+        "weight": 1.0
+      },
+      "validation_accuracy": 0.86875
+    },
+    {
+      "depth": null,
+      "leaf": 8,
+      "weight": 0.25,
+      "gate": null,
+      "validation_accuracy": 0.925
+    },
+    {
+      "depth": null,
+      "leaf": 8,
+      "weight": 0.25,
+      "gate": {
+        "base_ceiling": 0.5,
+        "paint_floor": 0.7,
+        "weight": 1.0
+      },
+      "validation_accuracy": 0.925
+    },
+    {
+      "depth": null,
+      "leaf": 8,
+      "weight": 0.5,
+      "gate": null,
+      "validation_accuracy": 0.93125
+    },
+    {
+      "depth": null,
+      "leaf": 8,
+      "weight": 0.5,
+      "gate": {
+        "base_ceiling": 0.5,
+        "paint_floor": 0.7,
+        "weight": 1.0
+      },
+      "validation_accuracy": 0.93125
+    },
+    {
+      "depth": null,
+      "leaf": 8,
+      "weight": 0.75,
+      "gate": null,
+      "validation_accuracy": 0.90625
+    },
+    {
+      "depth": null,
+      "leaf": 8,
+      "weight": 0.75,
+      "gate": {
+        "base_ceiling": 0.5,
+        "paint_floor": 0.7,
+        "weight": 1.0
+      },
+      "validation_accuracy": 0.90625
+    },
+    {
+      "depth": null,
+      "leaf": 8,
+      "weight": 1.0,
+      "gate": null,
+      "validation_accuracy": 0.85625
+    },
+    {
+      "depth": null,
+      "leaf": 8,
+      "weight": 1.0,
+      "gate": {
+        "base_ceiling": 0.5,
+        "paint_floor": 0.7,
+        "weight": 1.0
+      },
+      "validation_accuracy": 0.85625
+    }
+  ]
+}

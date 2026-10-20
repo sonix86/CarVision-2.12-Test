@@ -28,6 +28,13 @@ class GuiChecks(unittest.TestCase):
         app.start_region(SimpleNamespace(x=ox+400*sx,y=oy+350*sy));app.end_region(SimpleNamespace(x=ox+100*sx,y=oy+80*sy));self.assertEqual(app.region,[100,80,400,350])
         self.root.geometry('1120x760');self.root.update();app.redraw();self.assertEqual(app.region,[100,80,400,350]);self.assertTrue(app.preview.find_withtag('region'))
         app.clear_region();self.assertIsNone(app.region);self.assertEqual(app.scope.get(),gui.SCOPES[0]);app.region=[20,20,200,200];app.load_photo(self.photo);self.assertIsNone(app.region)
+    def test_visible_zone_button_and_hidden_advanced_controls(self):
+        app=self.app;app.load_photo(self.photo);self.root.update()
+        self.assertFalse(app.advanced_controls.winfo_ismapped());app.buttons['choose_region'].invoke();self.assertEqual(app.scope.get(),gui.SCOPES[2]);self.assertEqual(app.preview.cget('cursor'),'crosshair')
+        app.advanced.set(True);app.toggle_advanced();self.root.update();self.assertTrue(app.advanced_controls.winfo_ismapped())
+    def test_unknown_manufacturer_still_displays_ranked_models(self):
+        text=self.app.result_details(dict(brand='unknown',brand_confidence=.3,colour='white',colour_confidence=.4,colour_reliable=False,model_alternatives=[dict(brand='Chevrolet',model='Spark',confidence=.45),dict(brand='Daewoo',model='Matiz',confidence=.3)]))
+        self.assertIn('Spark',text);self.assertIn('Matiz',text);self.assertIn('45%',text);self.assertIn('проверьте',text)
     def test_small_analysis_region_is_rejected(self):
         app=self.app;app.load_photo(self.photo);self.root.update();app.redraw();app.scope.set(gui.SCOPES[2]);sx,sy,ox,oy=app.transforms[app.preview]
         app.start_region(SimpleNamespace(x=ox+20*sx,y=oy+20*sy));app.end_region(SimpleNamespace(x=ox+25*sx,y=oy+25*sy));self.assertIsNone(app.region)
@@ -44,7 +51,7 @@ class GuiChecks(unittest.TestCase):
     def test_inference_copy_export_and_file_buttons(self):
         app=self.app;app.load_photo(self.photo);self.root.update()
         result=dict(cars=[dict(id=1,box=[50,50,350,300],brand='BYD',model='Song Plus',model_confidence=.85,colour='blue',brand_confidence=.8,detection_confidence=.9,colour_source='trained')],seconds=.2,detector_views=3,classifier_trained=True)
-        app.events.put(('prediction',result));app.poll();app.copy();self.assertEqual(self.root.clipboard_get(),'BYD Song Plus blue')
+        app.events.put(('prediction',result));app.poll();app.copy();self.assertEqual(self.root.clipboard_get(),'BYD blue')
         with patch.object(gui.filedialog,'askdirectory',return_value=str(self.folder/'export')):app.export()
         self.assertEqual(len(list((self.folder/'export').glob('*.json'))),1)
         (self.folder/'samples').mkdir(exist_ok=True);pdf=self.folder/'samples/Tashkent_Photo_Examples.pdf';pdf.write_bytes(b'%PDF-test-placeholder')

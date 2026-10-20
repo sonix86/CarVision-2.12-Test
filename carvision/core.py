@@ -128,25 +128,35 @@ class Pipeline:
         detector_file = self.directory/'detector.pt'
         if not detector_file.exists():
             raise FileNotFoundError('Детектор ещё не обучен. Добавьте свои фото, разметьте все машины и запустите обучение во вкладке «Обучение». Готовые веса не используются.')
-        detector_checkpoint=torch.load(detector_file,map_location='cpu',weights_only=True)
-        origin=detector_checkpoint.get('origin')
-        if origin not in ('team-trained-from-scratch','generic-coco-detector','team-trained-detector-coco-backbone'):raise ValueError('Unsupported detector origin.')
-        self.car_label=(3,8) if origin=='generic-coco-detector' else 1
-        self.detector_batch_size=1 if detector_checkpoint.get('architecture')=='fasterrcnn_resnet50_fpn_v2_coco_v1' else 4
-        if detector_checkpoint.get('architecture')=='hog_linear_multiscale_v1':
-            from .hog_detector import HOGCarDetector
-            self.detector=HOGCarDetector(detector_checkpoint)
-        elif detector_checkpoint.get('architecture')=='fasterrcnn_resnet50_fpn_v2_coco_v1':
-            self.detector=fasterrcnn_resnet50_fpn_v2(weights=None,weights_backbone=None,min_size=800,max_size=1333).eval()
-            self.detector.load_state_dict(detector_checkpoint['state'])
+        self.segmenter=None
+        if (self.directory/'segmenter.pt').exists():
+            from .segmentation import InstanceSegmenter
+            self.segmenter=InstanceSegmenter(torch.load(self.directory/'segmenter.pt',map_location='cpu',weights_only=True));self.detector=None
         else:
-            self.detector = ssdlite320_mobilenet_v3_large(weights=None, weights_backbone=None,num_classes=91 if origin=='generic-coco-detector' else 2).eval()
-            self.detector.load_state_dict(detector_checkpoint['state'])
+            detector_checkpoint=torch.load(detector_file,map_location='cpu',weights_only=True)
+            origin=detector_checkpoint.get('origin')
+            if origin not in ('team-trained-from-scratch','generic-coco-detector','team-trained-detector-coco-backbone'):raise ValueError('Unsupported detector origin.')
+            self.car_label=(3,8) if origin=='generic-coco-detector' else 1
+            self.detector_batch_size=1 if detector_checkpoint.get('architecture')=='fasterrcnn_resnet50_fpn_v2_coco_v1' else 4
+            if detector_checkpoint.get('architecture')=='hog_linear_multiscale_v1':
+                from .hog_detector import HOGCarDetector
+                self.detector=HOGCarDetector(detector_checkpoint)
+            elif detector_checkpoint.get('architecture')=='fasterrcnn_resnet50_fpn_v2_coco_v1':
+                self.detector=fasterrcnn_resnet50_fpn_v2(weights=None,weights_backbone=None,min_size=800,max_size=1333).eval()
+                self.detector.load_state_dict(detector_checkpoint['state'])
+            else:
+                self.detector = ssdlite320_mobilenet_v3_large(weights=None, weights_backbone=None,num_classes=91 if origin=='generic-coco-detector' else 2).eval()
+                self.detector.load_state_dict(detector_checkpoint['state'])
         self.classifier, self.brands = None, []
         self.colour_classifier=None
         self.vehicle_classifier=None
         calibration=self.directory/'colour_calibration.json'
         self.colour_reliability_threshold=json.loads(calibration.read_text(encoding='utf-8'))['threshold'] if calibration.exists() else .75
+        self.masked_colour=None
+        if (self.directory/'masked_colour.pt').exists():
+            from .masked_colour import MaskedColourClassifier
+            self.masked_colour=MaskedColourClassifier(torch.load(self.directory/'masked_colour.pt',map_location='cpu',weights_only=True))
+        self.mask_fusion=json.loads((self.directory/'mask_fusion.json').read_text(encoding='utf-8')) if (self.directory/'mask_fusion.json').exists() else dict(brand_mask_weight=.5,model_mask_weight=.5)
         self.public_prototype=False
         checkpoint = self.directory/'classifier.pt'
         if checkpoint.exists():
@@ -181,6 +191,9 @@ class Pipeline:
             region=[round(max(0,min(original.width,x))),round(max(0,min(original.height,y))),round(max(0,min(original.width,x2))),round(max(0,min(original.height,y2)))]
             if min(region[2]-region[0],region[3]-region[1])<16:raise ValueError('Analysis region must be at least 16 × 16 pixels')
         if single and region is None:raise ValueError('Select a single-car region first')
+        if getattr(self,'segmenter',None) is not None:
+            from .scene import predict_instances
+            return predict_instances(self,original,str(image),region,single,started)
         im = original.crop(region) if region is not None else original
         offset=region[:2] if region is not None else (0,0)
         # Bound memory for modern high-resolution phone photographs.
@@ -234,15 +247,18 @@ class Pipeline:
 
 def save_prediction(source, result, output):
     out=Path(output); out.mkdir(parents=True,exist_ok=True)
-    from .vehicle_model import vehicle_name
+    from .vehicle_model import vehicle_name,detailed_answer
     stem=Path(source).stem+'_'+datetime.now().strftime('%Y%m%d_%H%M%S_%f')
     (out/(stem+'.json')).write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
-    (out/(stem+'.txt')).write_text('; '.join(vehicle_name(r)+' '+r['colour']+(' (uncertain colour)' if not r.get('colour_reliable',True) else '') for r in result['cars']) or 'No cars detected',encoding='utf-8')
+    (out/(stem+'.txt')).write_text('; '.join(r['brand']+' '+r['colour'] for r in result['cars']) or 'No cars detected',encoding='utf-8')
+    (out/(stem+'.details.txt')).write_text('\n'.join(detailed_answer(r) for r in result['cars']) or 'No cars detected',encoding='utf-8')
     from .overlays import marker_positions
     im=read_image(source); draw=ImageDraw.Draw(im);font=ImageFont.load_default(size=max(14,im.width//90));size=max(24,im.width//60)
     markers=marker_positions([r['box'] for r in result['cars']],im.width,im.height,size)
     for r in result['cars']:
-        draw.rectangle(r['box'],outline='#14b8a6',width=max(2,im.width//400))
+        if r.get('contours'):
+            for contour in r['contours']:draw.line([tuple(v) for v in contour]+[tuple(contour[0])],fill='#14b8a6',width=max(2,im.width//400))
+        else:draw.rectangle(r['box'],outline='#14b8a6',width=max(2,im.width//400))
     for r,rect in zip(result['cars'],markers):
         draw.line((r['box'][0],r['box'][1],rect[0]+size/2,rect[1]+size/2),fill='#14b8a6',width=2)
         draw.rectangle(rect,fill='#14243a',outline='#14b8a6',width=2);draw.text((rect[0]+4,rect[1]+2),str(r['id']),font=font,fill='white')

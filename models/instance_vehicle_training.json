@@ -1,0 +1,205 @@
+{
+  "origin": "project-trained-regional-model-head",
+  "architecture": "Own MobileNet model network, fine-tuned on source-labelled visible-instance/whole-crop views and synthetic neighbour occlusion",
+  "labels": [
+    "Song Plus",
+    "Tiggo 7",
+    "Captiva",
+    "Cobalt",
+    "Damas",
+    "Lacetti",
+    "Malibu",
+    "Nexia",
+    "Onix",
+    "Spark",
+    "Tracker",
+    "Matiz",
+    "Nexia",
+    "Jolion",
+    "K5",
+    "2101"
+  ],
+  "brands": [
+    "BYD",
+    "Chery",
+    "Chevrolet",
+    "Chevrolet",
+    "Chevrolet",
+    "Chevrolet",
+    "Chevrolet",
+    "Chevrolet",
+    "Chevrolet",
+    "Chevrolet",
+    "Chevrolet",
+    "Daewoo",
+    "Daewoo",
+    "Haval",
+    "Kia",
+    "Lada"
+  ],
+  "train": 374,
+  "validation": 82,
+  "test": 80,
+  "epochs": 24,
+  "best_epoch": 22,
+  "baseline": {
+    "validation": {
+      "clean": 0.8170731663703918,
+      "partial": 0.5243902206420898
+    },
+    "test": {
+      "clean": 0.737500011920929,
+      "partial": 0.42500001192092896
+    }
+  },
+  "results": {
+    "validation": {
+      "clean": {
+        "accuracy": 0.8292682766914368,
+        "top3_recall": 0.9512194991111755
+      },
+      "partial": {
+        "accuracy": 0.6097561120986938,
+        "top3_recall": 0.8536585569381714
+      }
+    },
+    "test": {
+      "clean": {
+        "accuracy": 0.737500011920929,
+        "top3_recall": 0.9624999761581421
+      },
+      "partial": {
+        "accuracy": 0.574999988079071,
+        "top3_recall": 0.824999988079071
+      }
+    }
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "validation_clean": 0.8170731663703918,
+      "validation_synthetic_occlusion": 0.5365853905677795
+    },
+    {
+      "epoch": 2,
+      "validation_clean": 0.8048780560493469,
+      "validation_synthetic_occlusion": 0.5609756112098694
+    },
+    {
+      "epoch": 3,
+      "validation_clean": 0.8048780560493469,
+      "validation_synthetic_occlusion": 0.5853658318519592
+    },
+    {
+      "epoch": 4,
+      "validation_clean": 0.8048780560493469,
+      "validation_synthetic_occlusion": 0.5609756112098694
+    },
+    {
+      "epoch": 5,
+      "validation_clean": 0.792682945728302,
+      "validation_synthetic_occlusion": 0.5731707215309143
+    },
+    {
+      "epoch": 6,
+      "validation_clean": 0.8170731663703918,
+      "validation_synthetic_occlusion": 0.5609756112098694
+    },
+    {
+      "epoch": 7,
+      "validation_clean": 0.8048780560493469,
+      "validation_synthetic_occlusion": 0.5609756112098694
+    },
+    {
+      "epoch": 8,
+      "validation_clean": 0.792682945728302,
+      "validation_synthetic_occlusion": 0.5609756112098694
+    },
+    {
+      "epoch": 9,
+      "validation_clean": 0.8170731663703918,
+      "validation_synthetic_occlusion": 0.5609756112098694
+    },
+    {
+      "epoch": 10,
+      "validation_clean": 0.8292682766914368,
+      "validation_synthetic_occlusion": 0.5609756112098694
+    },
+    {
+      "epoch": 11,
+      "validation_clean": 0.8048780560493469,
+      "validation_synthetic_occlusion": 0.5731707215309143
+    },
+    {
+      "epoch": 12,
+      "validation_clean": 0.8292682766914368,
+      "validation_synthetic_occlusion": 0.5731707215309143
+    },
+    {
+      "epoch": 13,
+      "validation_clean": 0.8048780560493469,
+      "validation_synthetic_occlusion": 0.5853658318519592
+    },
+    {
+      "epoch": 14,
+      "validation_clean": 0.8048780560493469,
+      "validation_synthetic_occlusion": 0.6097561120986938
+    },
+    {
+      "epoch": 15,
+      "validation_clean": 0.8048780560493469,
+      "validation_synthetic_occlusion": 0.5853658318519592
+    },
+    {
+      "epoch": 16,
+      "validation_clean": 0.8170731663703918,
+      "validation_synthetic_occlusion": 0.5609756112098694
+    },
+    {
+      "epoch": 17,
+      "validation_clean": 0.8170731663703918,
+      "validation_synthetic_occlusion": 0.5853658318519592
+    },
+    {
+      "epoch": 18,
+      "validation_clean": 0.8170731663703918,
+      "validation_synthetic_occlusion": 0.5731707215309143
+    },
+    {
+      "epoch": 19,
+      "validation_clean": 0.8170731663703918,
+      "validation_synthetic_occlusion": 0.6097561120986938
+    },
+    {
+      "epoch": 20,
+      "validation_clean": 0.8170731663703918,
+      "validation_synthetic_occlusion": 0.6097561120986938
+    },
+    {
+      "epoch": 21,
+      "validation_clean": 0.8170731663703918,
+      "validation_synthetic_occlusion": 0.5975610017776489
+    },
+    {
+      "epoch": 22,
+      "validation_clean": 0.8292682766914368,
+      "validation_synthetic_occlusion": 0.6097561120986938
+    },
+    {
+      "epoch": 23,
+      "validation_clean": 0.8292682766914368,
+      "validation_synthetic_occlusion": 0.6097561120986938
+    },
+    {
+      "epoch": 24,
+      "validation_clean": 0.8292682766914368,
+      "validation_synthetic_occlusion": 0.6097561120986938
+    }
+  ],
+  "seconds": 556.7850786999998,
+  "optimizer": "AdamW feature .00006 / head .0003, wd .015, cosine24, smoothing.05, batch32",
+  "augmentation": "60% foreground-only views,50% lower-corner synthetic neighbour occlusion, crop65-100%, flip, mild colour jitter",
+  "selection": "Existing grouped validation only; maximize mean clean/occluded, clean floor baseline minus2pts. Test results computed after checkpoint selection. Six city examples and own photos excluded.",
+  "test_used_for_selection": false,
+  "model_mask_weight": 0.25
+}

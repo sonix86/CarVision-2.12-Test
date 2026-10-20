@@ -1,0 +1,40 @@
+{
+  "temperature": 0.75,
+  "threshold": 0.65,
+  "selection": "Combined clean/synthetic-occluded grouped validation logits only, minimum NLL temperature;90% accepted development accuracy target. No city or test calibration.",
+  "test_used_for_selection": false,
+  "metrics": {
+    "validation": {
+      "clean": {
+        "count": 82,
+        "top1": 0.8292682766914368,
+        "top3": 0.9512194991111755,
+        "coverage": 0.8292682766914368,
+        "accuracy_when_accepted": 0.9117646813392639
+      },
+      "partial": {
+        "count": 82,
+        "top1": 0.6097561120986938,
+        "top3": 0.8536585569381714,
+        "coverage": 0.4268292784690857,
+        "accuracy_when_accepted": 0.8857142925262451
+      }
+    },
+    "test": {
+      "clean": {
+        "count": 80,
+        "top1": 0.737500011920929,
+        "top3": 0.9624999761581421,
+        "coverage": 0.7749999761581421,
+        "accuracy_when_accepted": 0.8870967626571655
+      },
+      "partial": {
+        "count": 80,
+        "top1": 0.574999988079071,
+        "top3": 0.824999988079071,
+        "coverage": 0.4375,
+        "accuracy_when_accepted": 0.9142857193946838
+      }
+    }
+  }
+}

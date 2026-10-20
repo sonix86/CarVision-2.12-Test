@@ -22,8 +22,7 @@ class VehicleModelClassifier:
         self.head.load_state_dict(checkpoint['state'])
         self.temperature=checkpoint['temperature'];self.threshold=checkpoint['threshold']
     @torch.inference_mode()
-    def predict_details(self, image, brand, network, preprocess):
-        if brand=='unknown' or brand not in self.brands:return dict(model='unknown',model_candidate='unknown',model_confidence=0.,model_alternatives=[])
+    def probabilities(self,image,network,preprocess):
         if self.network is not None:
             from .core import make_preprocess
             base=make_preprocess(160,16)
@@ -33,13 +32,19 @@ class VehicleModelClassifier:
         else:
             x=pooled_features(network,views)
             logits=self.head((x-self.mean)/self.std)/self.temperature
-        # Global probabilities preserve uncertainty for unrepresented models;
-        # conditioning on a brand with a single class would falsely give 100%.
-        probabilities=logits.softmax(1).mean(0);confidence,index=probabilities.max(0)
-        index=int(index);confidence=float(confidence)
-        candidate=self.labels[index] if self.brands[index]==brand else 'unknown'
+        return logits.softmax(1).mean(0)
+
+    def describe(self,probabilities,brand):
+        if brand!='unknown' and brand not in self.brands:
+            return dict(model='unknown',model_candidate='unknown',model_confidence=0.,model_alternatives=[],model_reason='No model-name training examples for this manufacturer')
+        confidence,index=probabilities.max(0);index=int(index);confidence=float(confidence)
+        candidate=self.labels[index];candidate_brand=self.brands[index]
         alternatives=[dict(brand=self.brands[int(i)],model=self.labels[int(i)],confidence=float(probabilities[i])) for i in probabilities.topk(min(3,len(self.labels))).indices]
-        return dict(model=candidate if confidence>=self.threshold else 'unknown',model_candidate=candidate,model_confidence=confidence,model_alternatives=alternatives)
+        return dict(model=candidate if confidence>=self.threshold and candidate_brand==brand else 'unknown',model_candidate=candidate,model_candidate_brand=candidate_brand,model_confidence=confidence,model_alternatives=alternatives)
+
+    @torch.inference_mode()
+    def predict_details(self,image,brand,network,preprocess):
+        return self.describe(self.probabilities(image,network,preprocess),brand)
 
     def predict(self,image,brand,network,preprocess):
         result=self.predict_details(image,brand,network,preprocess)
@@ -48,5 +53,12 @@ class VehicleModelClassifier:
 def vehicle_name(row):
     model=row.get('model','unknown')
     if model!='unknown':return row['brand']+' '+model
-    candidate=row.get('model_candidate','unknown')
-    return row['brand']+(' '+candidate+'?' if candidate!='unknown' else '')
+    candidate=row.get('model_candidate','unknown');candidate_brand=row.get('model_candidate_brand',row['brand'])
+    if row['brand']=='unknown' and candidate!='unknown':return candidate_brand+' '+candidate+'?'
+    return row['brand']+(' '+candidate+'?' if candidate!='unknown' and candidate_brand==row['brand'] else '')
+
+def detailed_answer(row):
+    text=vehicle_name(row)+' '+row['colour']+(' (uncertain colour)' if not row.get('colour_reliable',True) else '')
+    alternatives=row.get('model_alternatives',[])
+    if alternatives:text+=' | models: '+', '.join(f"{r['brand']} {r['model']} {r['confidence']:.0%}" for r in alternatives)
+    return text

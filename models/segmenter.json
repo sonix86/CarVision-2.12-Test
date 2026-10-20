@@ -1,0 +1,9 @@
+{
+  "origin": "generic-coco-instance-segmenter",
+  "architecture": "Mask R-CNN ResNet50 FPN v2",
+  "parameters": 46359409,
+  "source": "https://download.pytorch.org/models/maskrcnn_resnet50_fpn_v2_coco-73cbd019.pth",
+  "scope": "General COCO car/truck visible-object masks only, no brand/model/colour classifier",
+  "authorization": "General ImageNet/COCO weights explicitly permitted by owner",
+  "documentation": "https://docs.pytorch.org/vision/0.21/models/generated/torchvision.models.detection.maskrcnn_resnet50_fpn_v2.html"
+}

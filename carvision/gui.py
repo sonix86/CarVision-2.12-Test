@@ -9,13 +9,13 @@ import threading
 import tkinter as tk
 from pathlib import Path
 from tkinter import ttk,filedialog,messagebox
-from PIL import ImageTk,Image
+from PIL import ImageTk,Image,ImageDraw
 from .core import ROOT,BRANDS,COLOURS,Pipeline,read_image,save_prediction
 from .overlays import marker_positions
-from .vehicle_model import vehicle_name
+from .vehicle_model import vehicle_name,detailed_answer
 
 BG='#f3f5f9';INK='#182a42';MUTED='#6e7d91';TEAL='#087f8c';NAVY='#14243a'
-MODES={'Баланс · фрагменты':'balanced','Быстрый · весь кадр':'fast','Детальный · фрагменты и отражение':'detail'}
+MODES={'Обычный поиск':'fast','Мелкие машины · дольше':'balanced','Тщательный поиск · дольше':'detail'}
 SCOPES=['Весь кадр','Машины в области','Одна машина в области']
 COLOUR_RU=dict(zip(COLOURS,['Белый','Чёрный','Серый / серебро','Красный','Синий','Зелёный','Коричневый','Жёлтый']))
 
@@ -35,7 +35,7 @@ class App:
         rail=tk.Frame(root,bg=NAVY,width=210);rail.pack(side='left',fill='y');rail.pack_propagate(False)
         tk.Label(rail,text='CV /',font=('Segoe UI',30,'bold'),fg='#45d4c2',bg=NAVY).pack(anchor='w',padx=23,pady=(25,6))
         tk.Label(rail,text='TASHKENT\nCARVISION',font=('Segoe UI',14,'bold'),fg='white',bg=NAVY,justify='left').pack(anchor='w',padx=23)
-        tk.Label(rail,text='OFFLINE STUDIO  /  1.4',font=('Segoe UI',8),fg='#8fa3bb',bg=NAVY).pack(anchor='w',padx=23,pady=(10,30))
+        tk.Label(rail,text='OFFLINE STUDIO  /  1.5',font=('Segoe UI',8),fg='#8fa3bb',bg=NAVY).pack(anchor='w',padx=23,pady=(10,30))
         self.nav={};self.views={}
         for key,title in [('infer','01   Анализ фото'),('labels','02   Учебная разметка'),('training','03   Обучение'),('help','04   О проекте')]:
             b=tk.Button(rail,text=title,command=lambda k=key:self.show(k),bg=NAVY,fg='#bbcadb',activebackground='#26445e',activeforeground='white',font=('Segoe UI',11),anchor='w',relief='flat',padx=18,pady=14,cursor='hand2');b.pack(fill='x',padx=10,pady=3);self.nav[key]=b
@@ -60,26 +60,58 @@ class App:
 
     def build_infer(self):
         view=self.views['infer'];bar=ttk.Frame(view);bar.pack(fill='x')
-        self.button(bar,'open','Открыть фото',self.open_infer,True,side='left');self.button(bar,'samples','Примеры Ташкента',lambda:self.open_infer(ROOT/'samples/images'),side='left',padx=7);self.button(bar,'pdf','PDF с примерами',self.open_pdf,side='left')
-        area=ttk.Frame(view);area.pack(fill='x',pady=(10,0));self.scope=tk.StringVar(value=SCOPES[0]);ttk.Label(area,text='Что распознать:').pack(side='left',padx=(0,8))
-        choice=ttk.Combobox(area,textvariable=self.scope,values=SCOPES,state='readonly',width=26);choice.pack(side='left');choice.bind('<<ComboboxSelected>>',lambda e:self.scope_changed());self.scope_choice=choice
-        self.button(area,'clear_region','Весь кадр',self.clear_region,side='left',padx=7);self.button(area,'zoom','Увеличить машину',self.zoom_car,side='left')
-        self.region_hint=tk.StringVar(value='Нажмите на рамку или строку результата, чтобы выбрать машину.');ttk.Label(view,textvariable=self.region_hint,style='Muted.TLabel',wraplength=850).pack(anchor='w',pady=(3,0))
-        settings=ttk.Frame(view);settings.pack(fill='x',pady=12);self.mode=tk.StringVar(value=next(iter(MODES)))
-        self.mode_choice=ttk.Combobox(settings,textvariable=self.mode,values=list(MODES),state='readonly',width=23);self.mode_choice.pack(side='left');self.mode.set('Быстрый · весь кадр');self.det=tk.DoubleVar(value=.5);self.conf=tk.DoubleVar(value=.5)
-        for text,var in [('Порог рамки',self.det),('Порог марки',self.conf)]:ttk.Label(settings,text=text,style='Muted.TLabel').pack(side='left',padx=(10,4));ttk.Spinbox(settings,from_=.1,to=.99,increment=.05,textvariable=var,width=5).pack(side='left')
-        self.button(settings,'predict','Анализировать',self.predict,True,side='right')
-        body=ttk.Frame(view);body.pack(fill='both',expand=True);self.preview=tk.Canvas(body,bg='#e4eaf2',highlightthickness=0);self.preview.pack(side='left',fill='both',expand=True)
+        self.button(bar,'open','Открыть фото',self.open_infer,True,side='left')
+        self.button(bar,'samples','Примеры фото',lambda:self.open_infer(ROOT/'samples/images'),side='left',padx=7)
+        self.button(bar,'choose_region','Выбрать зону мышью',self.choose_region,side='left')
+        self.button(bar,'clear_region','Вся фотография',self.clear_region,side='left',padx=7)
+        self.scope=tk.StringVar(value=SCOPES[0]);self.region_hint=tk.StringVar(value='Распознайте всё фото или нажмите «Выбрать зону мышью» и обведите нужную машину.')
+        ttk.Label(view,textvariable=self.region_hint,style='Muted.TLabel',wraplength=850).pack(anchor='w',pady=(7,0))
+        actions=ttk.Frame(view);actions.pack(fill='x',pady=8)
+        self.button(actions,'zoom','Крупнее / выбранная машина',self.zoom_car,side='left')
+        self.advanced=tk.BooleanVar(value=False);ttk.Checkbutton(actions,text='Подробные настройки',variable=self.advanced,command=self.toggle_advanced).pack(side='left',padx=12)
+        self.button(actions,'predict','Анализировать фото',self.predict,True,side='right')
+        self.advanced_controls=ttk.Frame(view,padding=(10,7))
+        line=ttk.Frame(self.advanced_controls);line.pack(fill='x')
+        ttk.Label(line,text='Где искать:').pack(side='left');self.scope_choice=ttk.Combobox(line,textvariable=self.scope,values=SCOPES,state='readonly',width=25);self.scope_choice.pack(side='left',padx=7);self.scope_choice.bind('<<ComboboxSelected>>',lambda e:self.scope_changed())
+        self.mode=tk.StringVar(value='Обычный поиск');self.mode_choice=ttk.Combobox(line,textvariable=self.mode,values=list(MODES),state='readonly',width=27);self.mode_choice.pack(side='left',padx=7)
+        scores=ttk.Frame(self.advanced_controls);scores.pack(fill='x',pady=(5,0));self.det=tk.DoubleVar(value=.5);self.conf=tk.DoubleVar(value=.5)
+        for text,var in [('Уверенность поиска',self.det),('Уверенность марки',self.conf)]:
+            ttk.Label(scores,text=text).pack(side='left',padx=(0,5));ttk.Spinbox(scores,from_=.1,to=.99,increment=.05,textvariable=var,width=5).pack(side='left',padx=(0,15))
+        ttk.Label(self.advanced_controls,text='Поиск: больше значение — меньше сомнительных объектов. Марка: ниже выбранного значения показываются варианты вместо установленной марки. Значения 0.5 подходят для начала; проценты сети не гарантируют правильность.',wraplength=800,style='Muted.TLabel',font=('Segoe UI',9)).pack(anchor='w',pady=(4,0))
+        self.model_status=tk.StringVar();ttk.Label(view,textvariable=self.model_status,foreground='#a66718',wraplength=850).pack(anchor='w',pady=(0,7))
+        body=ttk.Frame(view);body.pack(fill='both',expand=True);self.infer_body=body
+        self.preview=tk.Canvas(body,bg='#e4eaf2',highlightthickness=0);self.preview.pack(side='left',fill='both',expand=True)
         right=ttk.Frame(body,padding=(14,0,0,0),width=300);right.pack(side='right',fill='y');right.pack_propagate(False)
-        ttk.Label(right,text='Результаты',font=('Segoe UI',13,'bold')).pack(anchor='w');self.summary=tk.StringVar(value='Фотография ещё не выбрана');ttk.Label(right,textvariable=self.summary,style='Muted.TLabel',wraplength=275).pack(anchor='w',pady=(5,10))
+        ttk.Label(right,text='Результаты',font=('Segoe UI',13,'bold')).pack(anchor='w');self.summary=tk.StringVar(value='Фотография ещё не выбрана');ttk.Label(right,textvariable=self.summary,style='Muted.TLabel',wraplength=275).pack(anchor='w',pady=(5,8))
         tablebox=ttk.Frame(right);tablebox.pack(fill='x');self.table=ttk.Treeview(tablebox,columns=('id','brand','colour'),show='headings',height=3,selectmode='browse')
-        for name,title,width in [('id','№',30),('brand','Автомобиль',160),('colour','Цвет',90)]:self.table.heading(name,text=title);self.table.column(name,width=width,minwidth=25,stretch=name!='id')
+        for name,title,width in [('id','№',30),('brand','Автомобиль / вариант',160),('colour','Цвет',90)]:self.table.heading(name,text=title);self.table.column(name,width=width,minwidth=25,stretch=name!='id')
         self.table.pack(side='left',fill='x',expand=True);scroll=ttk.Scrollbar(tablebox,command=self.table.yview);scroll.pack(side='right',fill='y');self.table.configure(yscrollcommand=scroll.set);self.table.bind('<<TreeviewSelect>>',lambda e:self.redraw())
-        self.details=tk.StringVar(value='Выберите строку, чтобы выделить машину на фото.');ttk.Label(right,textvariable=self.details,style='Muted.TLabel',font=('Segoe UI',9),wraplength=275).pack(anchor='w',pady=6)
-        for key,text,fn in [('copy','Копировать ответ',self.copy),('export','Экспортировать файлы',self.export),('output','Открыть результаты',lambda:self.open_folder(ROOT/'outputs'))]:self.button(right,key,text,fn,fill='x',pady=(0,4)).configure(padding=(8,6))
-        self.model_status=tk.StringVar();ttk.Label(view,textvariable=self.model_status,foreground='#a66718',wraplength=850).pack(before=body,anchor='w',pady=(0,8))
-        ttk.Label(view,text='Ctrl+O — открыть фото · Ctrl+Enter — анализировать. Примеры не содержат ответов для модели.',style='Muted.TLabel').pack(anchor='w',pady=(9,0));self.preview.bind('<Configure>',lambda e:self.queue_redraw())
-        self.preview.bind('<ButtonPress-1>',self.start_region);self.preview.bind('<B1-Motion>',self.drag_region);self.preview.bind('<ButtonRelease-1>',self.end_region);self.preview.bind('<Double-Button-1>',lambda e:self.zoom_car());self.table.bind('<Double-Button-1>',lambda e:self.zoom_car())
+        self.details=tk.StringVar(value='Нажмите на контур машины или строку. Здесь появятся три вероятных модели и оценка цвета.')
+        ttk.Label(right,textvariable=self.details,style='Muted.TLabel',font=('Segoe UI',9),wraplength=275).pack(anchor='w',pady=7)
+        exports=ttk.Frame(view);exports.pack(fill='x',pady=(8,0))
+        for key,text,fn in [('copy','Марки / цвета для задания',self.copy),('copy_details','Копировать варианты',self.copy_details),('export','Сохранить TXT / JSON / JPG',self.export),('output','Папка результатов',lambda:self.open_folder(ROOT/'outputs'))]:self.button(exports,key,text,fn,side='left',padx=(0,7)).configure(padding=(9,6))
+        self.preview.bind('<Configure>',lambda e:self.queue_redraw());self.preview.bind('<ButtonPress-1>',self.start_region);self.preview.bind('<B1-Motion>',self.drag_region);self.preview.bind('<ButtonRelease-1>',self.end_region);self.preview.bind('<Double-Button-1>',lambda e:self.zoom_car());self.table.bind('<Double-Button-1>',lambda e:self.zoom_car())
+
+    def toggle_advanced(self):
+        if self.advanced.get():self.advanced_controls.pack(before=self.infer_body,fill='x',pady=(0,7))
+        else:self.advanced_controls.pack_forget()
+        self.queue_redraw()
+
+    def choose_region(self):
+        if self.busy or self.image is None:return
+        self.scope.set(SCOPES[2]);self.region=None;self.scope_changed();self.status.set('Протяните мышью от одного угла нужной области до другого. Затем нажмите «Распознать в зоне».')
+
+    def result_details(self,row):
+        variants=row.get('model_alternatives',[])
+        text='Возможные модели:\n'+'\n'.join(f"{r['brand']} {r['model']} — {r['confidence']:.0%}" for r in variants) if variants else 'Модель пока не определена.'
+        text+='\nМарка: '+('не установлена' if row['brand']=='unknown' else row['brand'])+f" · {row['brand_confidence']:.0%}"
+        colours=row.get('colour_alternatives',[])
+        text+='\nЦвет: '+COLOUR_RU.get(row['colour'],row['colour'])+f" · {row.get('colour_confidence',0):.0%}"+(' · проверьте' if not row.get('colour_reliable',True) else '')
+        if len(colours)>1:text+='\nЕщё: '+COLOUR_RU.get(colours[1]['colour'],colours[1]['colour'])+f" · {colours[1]['confidence']:.0%}"
+        if row.get('model_reason'):text+='\nДля этой марки модели ещё не обучены.'
+        if row.get('approximate_mask'):text+='\nГраница приблизительная; наличие машины не подтверждено.'
+        elif row.get('segmentation'):text+='\nРаспознана видимая форма машины.'
+        return text
 
     def build_labels(self):
         view=self.views['labels'];ttk.Label(view,text='Подготовка учебных ответов. В «Анализе фото» программа определяет марку и цвет автоматически.',style='Muted.TLabel',wraplength=850).pack(anchor='w',pady=(0,10));bar=ttk.Frame(view);bar.pack(fill='x')
@@ -115,14 +147,16 @@ class App:
         self.scope_choice.configure(state='disabled' if self.busy else 'readonly');self.mode_choice.configure(state='disabled' if self.busy else 'readonly')
         for key,b in self.buttons.items():
             enabled=not self.busy
+            if key=='choose_region':enabled=enabled and self.image is not None
             if key=='predict':enabled=enabled and self.path is not None and detector
-            if key in ('copy','export'):enabled=enabled and self.result is not None
+            if key in ('copy','copy_details','export'):enabled=enabled and self.result is not None
             if key=='zoom':enabled=enabled and (self.region is not None or bool(self.table.selection()))
             if key=='clear_region':enabled=enabled and (self.region is not None or self.scope.get()!=SCOPES[0])
             if key=='label_save':enabled=enabled and self.box is not None
             if key=='undo':enabled=enabled and bool(self.undo_rows)
             if key=='cancel':enabled=self.busy and self.process is not None
             b.configure(state='normal' if enabled else 'disabled')
+        self.buttons['predict'].configure(text='Распознать в зоне' if self.scope.get()!=SCOPES[0] else 'Анализировать фото')
         self.model_status.set('Готово. Выберите весь кадр или обведите нужную машину. Марка, модель и цвет определяются автоматически.' if detector and classifier else 'Обучение не завершено: '+('нужны детектор и классификатор.' if not detector and not classifier else 'нужен детектор.' if not detector else 'нужен классификатор.'))
     def evaluate(self):
         if (ROOT/'models/evaluation/public_test.json').exists() and not self.all_labels():
@@ -162,12 +196,21 @@ class App:
         if enlarge:
             scale=min(max(1,w-24)/image.width,max(1,h-24)/image.height,8);im=im.resize((max(1,round(image.width*scale)),max(1,round(image.height*scale))),Image.Resampling.LANCZOS)
         else:im.thumbnail((max(1,w-24),max(1,h-24)))
-        ox=(w-im.width)//2;oy=(h-im.height)//2;photo=ImageTk.PhotoImage(im);canvas.photo=photo;canvas.create_image(ox,oy,image=photo,anchor='nw')
+        ox=(w-im.width)//2;oy=(h-im.height)//2
+        if any(row.get('contours') for row in rows or []):
+            layer=Image.new('RGBA',im.size,(0,0,0,0));paint=ImageDraw.Draw(layer)
+            for row in rows or []:
+                for contour in row.get('contours',[]):paint.polygon([(x*im.width/image.width,y*im.height/image.height) for x,y in contour],fill=(255,179,65,46) if row.get('id')==selected else (20,184,166,25))
+            im=Image.alpha_composite(im.convert('RGBA'),layer).convert('RGB')
+        photo=ImageTk.PhotoImage(im);canvas.photo=photo;canvas.create_image(ox,oy,image=photo,anchor='nw')
         sx,sy=im.width/image.width,im.height/image.height;self.transforms[canvas]=(sx,sy,ox,oy)
         screen_boxes=[]
         for i,row in enumerate(rows or [],1):
             x,y,x2,y2=row['box'];coords=(ox+x*sx,oy+y*sy,ox+x2*sx,oy+y2*sy);ident=row.get('id',i)
-            canvas.create_rectangle(*coords,outline='#ffb341' if ident==selected else '#24c9ad',width=3 if ident==selected else 2)
+            colour='#ffb341' if ident==selected else '#24c9ad'
+            if row.get('contours'):
+                for contour in row['contours']:canvas.create_polygon(*[v for x,y in contour for v in (ox+x*sx,oy+y*sy)],outline=colour,fill='',width=3 if ident==selected else 2,tags=f'car-{ident}')
+            else:canvas.create_rectangle(*coords,outline=colour,width=3 if ident==selected else 2)
             screen_boxes.append(coords)
         for i,(row,rect) in enumerate(zip(rows or [],marker_positions(screen_boxes,w,h)),1):
             ident=row.get('id',i);x,y,x2,y2=rect;box=screen_boxes[i-1];canvas.create_line(box[0],box[1],(x+x2)/2,(y+y2)/2,fill='#24c9ad');canvas.create_rectangle(*rect,fill=TEAL if ident==selected else NAVY,outline='#ffb341' if ident==selected else '#24c9ad');canvas.create_text((x+x2)/2,(y+y2)/2,text=str(ident),fill='white',font=('Segoe UI',9,'bold'),tags='car-marker')
@@ -183,7 +226,7 @@ class App:
             selection=self.table.selection();selected=int(selection[0]) if selection else None;self.draw(self.preview,self.image,self.result['cars'] if self.result else [],selected)
             self.draw_region();self.refresh_buttons()
             if selected and self.result:
-                row=next(r for r in self.result['cars'] if r['id']==selected);self.details.set(f"{vehicle_name(row) if row['brand']!='unknown' else 'Марка не определена'} · {COLOUR_RU.get(row['colour'],row['colour'])}\nМодель: {row.get('model') if row.get('model','unknown')!='unknown' else 'не определена'} · {row.get('model_confidence',0):.0%}\nУверенность марки: {row['brand_confidence']:.0%}\nЦвет: {row.get('colour_confidence',0):.0%}{' — требует проверки' if not row.get('colour_reliable',True) else ''}\nДвойной щелчок — крупный просмотр.")
+                row=next(r for r in self.result['cars'] if r['id']==selected);self.details.set(self.result_details(row))
         elif self.current=='labels':self.draw(self.canvas,self.label_image,self.label_rows);self.draw_selection()
     def predict(self):
         if self.busy or not self.path:return
@@ -202,7 +245,7 @@ class App:
         threading.Thread(target=work,daemon=True).start()
     def scope_changed(self):
         self.preview.configure(cursor='arrow' if self.scope.get()==SCOPES[0] else 'crosshair')
-        self.region_hint.set('Нажмите на рамку или строку результата, чтобы выбрать машину.' if self.scope.get()==SCOPES[0] else 'Обведите нужный участок мышью. Марку и цвет программа выберет сама.')
+        self.region_hint.set('Нажмите на видимую форму машины или строку результата. В деталях — три вероятные модели.' if self.scope.get()==SCOPES[0] else 'Обведите нужную машину мышью. После анализа появится её видимый контур; скрытые части не восстанавливаются.')
         self.refresh_buttons();self.redraw()
     def clear_region(self):
         if self.busy:return
@@ -211,6 +254,12 @@ class App:
         if self.image is None or self.preview not in self.transforms:return None
         sx,sy,ox,oy=self.transforms[self.preview]
         return (max(0,min(self.image.width,(event.x-ox)/sx)),max(0,min(self.image.height,(event.y-oy)/sy)))
+    def hit_vehicle(self,row,x,y):
+        if row.get('segmentation'):
+            from .segmentation import contains_point
+            return contains_point(row['segmentation'],x,y)
+        return row['box'][0]<=x<=row['box'][2] and row['box'][1]<=y<=row['box'][3]
+
     def start_region(self,event):
         if self.busy:return
         point=self.region_position(event)
@@ -219,7 +268,7 @@ class App:
             for item in reversed(self.preview.find_overlapping(event.x,event.y,event.x,event.y)):
                 tag=next((t for t in self.preview.gettags(item) if t.startswith('car-') and t[4:].isdigit()),None)
                 if tag:self.select_car(int(tag[4:]));return
-            hits=[r for r in self.result['cars'] if r['box'][0]<=point[0]<=r['box'][2] and r['box'][1]<=point[1]<=r['box'][3]] if self.result else []
+            hits=[r for r in self.result['cars'] if self.hit_vehicle(r,*point)] if self.result else []
             if hits:
                 row=min(hits,key=lambda r:(r['box'][2]-r['box'][0])*(r['box'][3]-r['box'][1]));self.table.selection_set(str(row['id']));self.table.see(str(row['id']));self.redraw()
         else:self.region_start=point;self.region=None
@@ -247,6 +296,9 @@ class App:
         win=tk.Toplevel(self.root);self.zoom_window=win;win.title('Выбранная машина');win.geometry('820x640');win.minsize(480,360)
         caption=(f"№ {row['id']} · {vehicle_name(row)} · {COLOUR_RU.get(row['colour'],row['colour'])}" if row and box==row['box'] else 'Выделенная область')
         ttk.Label(win,text=caption,font=('Segoe UI',15,'bold'),padding=12).pack(fill='x');canvas=tk.Canvas(win,bg=NAVY,highlightthickness=0);canvas.pack(fill='both',expand=True);crop=self.image.crop(box)
+        if row and row.get('segmentation') and box==row['box']:
+            from .segmentation import decode_mask,isolate
+            crop=isolate(crop,decode_mask(row['segmentation']))
         canvas.bind('<Configure>',lambda e:self.draw(canvas,crop,enlarge=True));win.after_idle(lambda:self.draw(canvas,crop,enlarge=True));win.bind('<Destroy>',lambda e:self.transforms.pop(canvas,None) if e.widget==win else None)
         def use_region():
             if self.busy:return
@@ -254,7 +306,10 @@ class App:
         ttk.Button(win,text='Распознать эту машину отдельно',command=use_region).pack(pady=10)
     def copy(self):
         if self.result is None:return
-        text='; '.join(vehicle_name(r)+' '+r['colour']+(' (цвет требует проверки)' if not r.get('colour_reliable',True) else '') for r in self.result['cars']) or 'No cars detected';self.root.clipboard_clear();self.root.clipboard_append(text);self.status.set('Ответ скопирован.')
+        text='; '.join(r['brand']+' '+r['colour'] for r in self.result['cars']) or 'No cars detected';self.root.clipboard_clear();self.root.clipboard_append(text);self.status.set('Скопированы пары «марка цвет» в формате задания. Модели и варианты доступны отдельной кнопкой.')
+    def copy_details(self):
+        if self.result is None:return
+        text='\n'.join(detailed_answer(r) for r in self.result['cars']) or 'No cars detected';self.root.clipboard_clear();self.root.clipboard_append(text);self.status.set('Скопированы модели, варианты и уверенность.')
     def export(self):
         if self.result is None:return
         path=filedialog.askdirectory(title='Сохранить TXT, JSON и фото с рамками',initialdir=str(ROOT/'outputs'))
@@ -352,7 +407,7 @@ class App:
                 kind,data=self.events.get_nowait()
                 if kind=='prediction':
                     self.result=data;self.table.delete(*self.table.get_children())
-                    for row in data['cars']:self.table.insert('','end',iid=str(row['id']),values=(row['id'],'Не уверен' if row['brand']=='unknown' else vehicle_name(row)+(' · ?' if row.get('model','unknown')=='unknown' and row.get('model_candidate','unknown')=='unknown' else ''),('≈ ' if not row.get('colour_reliable',True) else '')+('Серый' if row['colour']=='grey' else COLOUR_RU.get(row['colour'],row['colour']))))
+                    for row in data['cars']:self.table.insert('','end',iid=str(row['id']),values=(row['id'],vehicle_name(row) if row['brand']!='unknown' or row.get('model_candidate','unknown')!='unknown' else 'Не уверен',('≈ ' if not row.get('colour_reliable',True) else '')+('Серый' if row['colour']=='grey' else COLOUR_RU.get(row['colour'],row['colour']))))
                     scope='Одна выбранная машина' if data.get('single_car_region') else 'Машины в области' if data.get('region') else 'Весь кадр'
                     self.summary.set(f"{scope} · машин: {len(data['cars'])}\nАнализ: {data['seconds']:.2f} с");self.set_busy(False,'Результаты сохранены в outputs.');self.redraw()
                     if data['cars']:

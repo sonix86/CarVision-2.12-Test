@@ -1,0 +1,15 @@
+{
+  "gate": {
+    "base_ceiling": 0.5,
+    "paint_floor": 0.6,
+    "weight": 1.0
+  },
+  "validation_accuracy": 0.9375,
+  "threshold": 0.5,
+  "test_accuracy": 0.9208333492279053,
+  "test_count": 240,
+  "test_coverage": 0.9666666388511658,
+  "test_accepted_accuracy": 0.9353448152542114,
+  "selection": "Fixed coarse confidence gates: choose on160 validation only, no validation accuracy regression vs fixed fusion. Test240 and city scenes excluded from gate selection.",
+  "test_used_for_selection": false
+}

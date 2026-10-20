@@ -1,2 +1,5 @@
 -r requirements.txt
 pyarrow==19.0.1
+
+# Only training the independently learned tree head; inference uses exported plain arrays.
+scikit-learn==1.6.1

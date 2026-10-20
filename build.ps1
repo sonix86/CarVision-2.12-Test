@@ -2,7 +2,7 @@ $ErrorActionPreference = 'Stop'
 Set-Location $PSScriptRoot
 $taskPython = Join-Path $PSScriptRoot '.venv\Scripts\python.exe'
 if (-not (Test-Path -LiteralPath $taskPython)) { throw 'Create .venv and install requirements first. See README.md.' }
-& $taskPython -m PyInstaller --noconfirm --clean --onedir --console --name CarVision --collect-data torchvision --collect-data matplotlib --exclude-module pyarrow --hidden-import PIL._tkinter_finder launch.py
+& $taskPython -m PyInstaller --noconfirm --clean --onedir --console --name CarVision --collect-data torchvision --collect-data matplotlib --exclude-module pyarrow --exclude-module sklearn --hidden-import PIL._tkinter_finder launch.py
 if ($LASTEXITCODE -ne 0) { throw 'PyInstaller failed' }
 $taskTarget = Join-Path $PSScriptRoot 'dist\CarVision'
 Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'samples') -Destination $taskTarget -Recurse -Force
