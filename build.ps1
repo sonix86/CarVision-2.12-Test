@@ -5,7 +5,7 @@ if (-not (Test-Path -LiteralPath $taskPython)) { throw 'Create .venv and install
 & $taskPython -m PyInstaller --noconfirm --clean --onedir --console --name CarVision --collect-data torchvision --collect-data matplotlib --hidden-import PIL._tkinter_finder launch.py
 if ($LASTEXITCODE -ne 0) { throw 'PyInstaller failed' }
 $taskTarget = Join-Path $PSScriptRoot 'dist\CarVision'
-foreach ($taskFolder in @('models','cache','data')) {
+foreach ($taskFolder in @('models','data','samples')) {
     Copy-Item -LiteralPath (Join-Path $PSScriptRoot $taskFolder) -Destination $taskTarget -Recurse -Force
 }
 Copy-Item -LiteralPath 'README.md','THIRD_PARTY.md','CHECKLIST.md' -Destination $taskTarget -Force
