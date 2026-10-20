@@ -12,3 +12,5 @@ cache/
 *.spec
 tmp/
 samples/images/*.jpg
+datasets/
+data/public_prototype/images/

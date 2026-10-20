@@ -1,0 +1,42 @@
+{
+  "source": "Stanford Cars, Krause et al. 2013",
+  "image_mirror": "https://huggingface.co/datasets/tanganke/stanford_cars",
+  "annotation_mirror": "https://github.com/jhpohovey/StanfordCars-Dataset",
+  "mapping": "Exact Git blob SHA1 join, verified brand and official split; duplicate original SHA256 removed. Model-level disagreements within a brand do not change brand labels; brand/split conflicts excluded.",
+  "own_tashkent_photos": 0,
+  "counts": {
+    "train": {
+      "Ford": 521,
+      "Audi": 587,
+      "Honda": 161,
+      "Hyundai": 438,
+      "Mercedes-Benz": 261,
+      "Nissan": 171,
+      "Tesla": 39,
+      "Toyota": 168,
+      "Volkswagen": 132,
+      "Volvo": 131,
+      "BMW": 531,
+      "Chevrolet": 600,
+      "Daewoo": 45
+    },
+    "test": {
+      "Ford": 514,
+      "Audi": 574,
+      "Honda": 160,
+      "Hyundai": 433,
+      "Mercedes-Benz": 257,
+      "Nissan": 170,
+      "Tesla": 38,
+      "Toyota": 163,
+      "Volkswagen": 131,
+      "Volvo": 129,
+      "BMW": 523,
+      "Chevrolet": 889,
+      "Daewoo": 45
+    }
+  },
+  "unmatched_images": 0,
+  "excluded_conflicts": 3,
+  "colour_truth": "No human colour ground truth. Stored colour is an explicit heuristic pseudo-label; do not report its self-agreement as colour accuracy."
+}
