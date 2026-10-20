@@ -1,0 +1,6 @@
+{
+  "source": "https://www.kaggle.com/datasets/landrykezebou/vcor-vehicle-color-recognition-dataset",
+  "archive_sha256": "760075f48d7415946bcb1f65173e8f572b423ee722402e191b4137a8edd0d685",
+  "ready_made_model_used": false,
+  "purpose": "Research/education; original public provided colour annotations. No student-collected photographs claimed."
+}

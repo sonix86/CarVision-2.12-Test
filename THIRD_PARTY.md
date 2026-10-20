@@ -1,21 +1,29 @@
-# Libraries and public photo examples
+# Libraries, general weights and public photographs
 
-Owner: София Рахматулаева. OpenAI Codex assisted with implementation, design, tests, documentation and packaging. No student-collected dataset or measured real-world accuracy is claimed.
+Owner: София Рахматулаева. OpenAI Codex assisted with code, training, data preparation, visual colour review, tests, documentation and packaging. No student-collected data is claimed.
 
 ## Libraries
 
-- Python 3.12: PSF license, https://docs.python.org/3/license.html
-- PyTorch 2.6.0 CPU: BSD-style, https://github.com/pytorch/pytorch/blob/v2.6.0/LICENSE
-- torchvision 0.21.0: BSD-3-Clause, https://github.com/pytorch/vision/blob/v0.21.0/LICENSE
-- NumPy/SciPy: BSD-3-Clause; Matplotlib: PSF-based; Pillow: HPND; ReportLab: BSD; PyInstaller: GPL with bootloader exception.
-- Installed license notices accompany the portable distribution in `licenses/`.
+Python 3.12 (PSF), PyTorch 2.6.0 CPU (BSD-style), torchvision 0.21.0 (BSD-3-Clause), NumPy/SciPy (BSD), Pillow (HPND), Matplotlib (PSF-based), ReportLab (BSD), OpenCV (Apache-2.0), PyInstaller (GPL with bootloader exception). Installed license notices are included in licenses/. PyArrow is used only for optional public-data preparation, not required by inference.
 
-## No pretrained model weights in release 1.1
+## General pretrained parameters
 
-The source uses torchvision network architectures, not pretrained parameters. Both SSDLite320 MobileNetV3 Large and the MobileNetV3 Small dual-head classifier start from random initialization. Constructors explicitly use `weights=None`, `weights_backbone=None` as applicable. COCO and ImageNet weights from the initial prototype are not included or loaded. The team's resulting checkpoints record `origin=team-trained-from-scratch`.
+The owner explicitly authorized general ImageNet/COCO weights on 2026-10-20. The assignment allows them. Official torchvision Faster R-CNN ResNet50 FPN v2 COCO_V1 supplies generic car/truck boxes. A separate SSDLite general backbone is included for optional local training on personal annotations. Official MobileNetV3 Small IMAGENET1K_V1 supplies the feature initialization. Its original ImageNet classification head is not used. The 13-brand decision head is initialized randomly and trained by this project on real labelled photographs. The colour algorithm is original code; no ready-made brand or colour model is used.
 
-## Public photographs
+- https://docs.pytorch.org/vision/0.21/models/generated/torchvision.models.detection.fasterrcnn_resnet50_fpn_v2.html
+- https://docs.pytorch.org/vision/0.21/models/generated/torchvision.models.detection.ssdlite320_mobilenet_v3_large.html
+- https://docs.pytorch.org/vision/0.21/models/generated/torchvision.models.mobilenet_v3_small.html
 
-Six original public images in `samples/images` are from Wikimedia Commons. `samples/sources.json` records exact source page URLs, authors, original descriptions/dates, license names and license URLs. The separately authored photo booklet reproduces proportionally resized images and identifies their individual licenses on each page. The collection does not claim ownership of photographs. CC BY / CC BY-SA terms continue to apply to each photo; retain source and license credits on redistribution. Photographs are not automatically used as training data or prewritten inference answers.
+## Public training data
 
-Network architecture documentation: https://docs.pytorch.org/vision/0.21/models.html . Own training photographs, badge labels and final report analysis remain the responsibility of the actual contributors.
+Stanford Cars, Krause et al. 2013, used as a public research dataset. Image mirror: https://huggingface.co/datasets/tanganke/stanford_cars . Original-image and annotation mirror: https://github.com/jhpohovey/StanfordCars-Dataset . Exact file hashes and original human bounding boxes were joined; split/brand conflicts excluded; original SHA256 duplicates removed. data/public_prototype/provenance.json records counts and mapping. This project does not own those photographs; raw public training images are excluded from the portable distribution. Research use does not establish unrestricted commercial image rights. Brand labels are original dataset labels; colour pseudo-labels are explicitly not human truth.
+
+## City examples
+
+Six photographs in samples/images come from Wikimedia Commons; exact authors, source pages, dates, license names and license URLs are in samples/sources.json. Preserve those credits and the applicable CC BY / CC BY-SA terms when redistributing photographs. They were not used to train or choose the brand model, and are not student-collected photos. The supplementary PDF contains resized reproductions with credits, not a final academic report.
+
+## Independently trained colour decision
+
+VCoR colour photographs and provided labels were obtained from https://www.kaggle.com/datasets/landrykezebou/vcor-vehicle-color-recognition-dataset . The authors permit research and education use and request citation: Panetta, K., Kezebou, L., Oludare, V., Intriligator, J., Agaian, S. (2021), Artificial Intelligence for Text-Based Vehicle Search, Recognition, and Continuous Localization in Traffic Videos, AI 2(4), 684–704, https://doi.org/10.3390/ai2040041 . The dataset authors describe images collected from Google and subsequently cleaned/annotated. This project does not own or redistribute those raw training images in the portable package. Source metadata, archive SHA256, retained image hashes and exact colour mappings are preserved in data/public_prototype and source/data/public_prototype.
+
+An MLP colour head was independently initialized and trained in this project over frozen general ImageNet features and original RGB/HSV spatial statistics. No ready-made vehicle-colour weights were obtained. Original train/validation/test folders are retained after removing exact SHA256 or identical dHash duplicates; vehicle identities are not available, so identity-separated generalization is not certified. Beige/gold/tan map to brown, silver to grey, orange to yellow; pink/purple are excluded. All eight required colours are represented. Reported VCoR test accuracy is a dataset benchmark, not a guarantee for Tashkent streets.

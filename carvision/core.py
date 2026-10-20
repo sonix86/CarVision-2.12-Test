@@ -102,7 +102,7 @@ def restore_tile_boxes(detection, tile, width, height, threshold, car_label=1):
     return boxes,scores
 
 class Pipeline:
-    def __init__(self, directory=None, detection=.5, brand_threshold=.65, colour_mode='trained', mode='balanced'):
+    def __init__(self, directory=None, detection=.5, brand_threshold=.5, colour_mode='trained', mode='balanced'):
         torch.set_num_threads(max(1,min(4,torch.get_num_threads())))
         self.directory = Path(directory or ROOT/'models')
         self.detection, self.brand_threshold, self.colour_mode = detection, brand_threshold, colour_mode
@@ -126,6 +126,7 @@ class Pipeline:
             self.detector = ssdlite320_mobilenet_v3_large(weights=None, weights_backbone=None,num_classes=91 if origin=='generic-coco-detector' else 2).eval()
             self.detector.load_state_dict(detector_checkpoint['state'])
         self.classifier, self.brands = None, []
+        self.colour_classifier=None
         self.public_prototype=False
         checkpoint = self.directory/'classifier.pt'
         if checkpoint.exists():
@@ -138,6 +139,10 @@ class Pipeline:
             self.classifier.load_state_dict(ck['state'])
             self.preprocess=make_preprocess(int(ck.get('image_size',224)),16 if self.public_prototype else 0)
             if ck.get('colour_mode')=='body_histogram':self.colour_mode='heuristic'
+        separate_colour=self.directory/'colour_model.pt'
+        if separate_colour.exists() and self.colour_mode!='trained':
+            from .colour_model import ColourClassifier
+            self.colour_classifier=ColourClassifier(torch.load(separate_colour,map_location='cpu',weights_only=True))
 
     @torch.inference_mode()
     def predict(self, image):
@@ -176,11 +181,13 @@ class Pipeline:
                 brand = self.brands[int(bi)] if bp>=self.brand_threshold else 'unknown'
                 if self.colour_mode=='trained':
                     cp,ci=c.softmax(1).max(1); cp=float(cp); colour=COLOURS[int(ci)]; colour_source='trained'
+            if getattr(self,'colour_classifier',None) is not None:
+                colour,cp=self.colour_classifier.predict(crop);colour_source='project-trained VCoR colour head'
             result.append(dict(brand=brand,colour=colour,brand_confidence=bp,colour_confidence=cp,colour_source=colour_source,detection_confidence=float(scores[k]),box=[round(v) for v in box]))
         result.sort(key=lambda r:(r['box'][1],r['box'][0]))
         for i,r in enumerate(result,1): r['id']=i
         warnings=[] if self.classifier is not None else ['Brand classifier not trained; unknown is expected. Colour is an unvalidated HSV baseline.']
-        if getattr(self,'public_prototype',False):warnings.append('Public-data prototype. Coverage is limited to supported_brands; full Tashkent-street accuracy has not been established. Colour uses an original non-learned method.')
+        if getattr(self,'public_prototype',False):warnings.append('Public-data prototype. Coverage is limited to supported_brands; full Tashkent-street accuracy has not been established. Colour uses a separately project-trained head.' if self.colour_classifier is not None else 'Public-data prototype. Coverage is limited to supported_brands; full Tashkent-street accuracy has not been established. Colour uses an original non-learned method.')
         return dict(image=str(image),cars=result,seconds=round(time.perf_counter()-started,3),classifier_trained=self.classifier is not None,supported_brands=getattr(self,'brands',[]),mode=self.mode,detector_views=len(tiles)+(self.mode=='detail'),warnings=warnings)
 
 def save_prediction(source, result, output):

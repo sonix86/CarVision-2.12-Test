@@ -1,0 +1,12 @@
+{
+  "recommended_brand_threshold": 0.5,
+  "reason": "Development tradeoff: accept useful known-brand predictions with over 91 percent precision; stricter thresholds remain available. Not an unknown-brand benchmark.",
+  "validation_images": 683,
+  "measurement": {
+    "threshold": 0.5,
+    "accepted": 609,
+    "coverage": 0.8916544655929722,
+    "accuracy_when_accepted": 0.916256157635468
+  },
+  "chosen_before_official_test": true
+}

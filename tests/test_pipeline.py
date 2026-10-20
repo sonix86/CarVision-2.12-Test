@@ -34,6 +34,21 @@ class Checks(unittest.TestCase):
         for name,rgb in [('white',(245,245,245)),('black',(10,10,10)),('grey',(110,110,110)),('red',(220,20,20)),('blue',(20,40,230)),('green',(20,160,30)),('brown',(120,70,30)),('yellow',(240,200,20))]:
             self.assertEqual(heuristic_colour(Image.new('RGB',(100,100),rgb))[0],name)
 
+    def test_separate_trained_colour_head_is_used_for_public_prototype(self):
+        from types import SimpleNamespace
+        with tempfile.TemporaryDirectory() as temp:
+            path=Path(temp)/'new-photo.png';Image.new('RGB',(320,240),'white').save(path)
+            p=object.__new__(Pipeline);p.mode='fast';p.detection=.5;p.brand_threshold=.5;p.colour_mode='heuristic';p.brands=['Chevrolet'];p.classifier=lambda x:(torch.tensor([[10.]]),torch.zeros((1,8)))
+            p.detector=lambda images:[dict(boxes=torch.tensor([[20.,20,280,210]]),scores=torch.tensor([.95]),labels=torch.tensor([1]))]
+            p.colour_classifier=SimpleNamespace(predict=lambda image:('green',.93))
+            result=p.predict(path);self.assertEqual([(r['brand'],r['colour']) for r in result['cars']],[('Chevrolet','green')]);self.assertEqual(result['cars'][0]['colour_source'],'project-trained VCoR colour head')
+
+    def test_colour_features_are_finite_for_greyscale_and_small_crops(self):
+        from carvision.colour_model import colour_statistics,ColourClassifier
+        for image in [Image.new('L',(16,16),100),Image.new('RGB',(400,200),'red')]:
+            features=colour_statistics(image);self.assertEqual(features.shape,(261,));self.assertTrue(torch.isfinite(features).all())
+        with self.assertRaisesRegex(ValueError,'project-trained'):ColourClassifier(dict(origin='ready-made-colour-classifier'))
+
     def test_inference_has_no_network_and_no_untrained_brands(self):
         with tempfile.TemporaryDirectory() as temp:
             path=Path(temp)/'blank.png';Image.new('RGB',(640,480),'white').save(path)
@@ -50,6 +65,18 @@ class Checks(unittest.TestCase):
         d=dict(boxes=torch.tensor([[30.,40,160,140],[0.,50,60,110]]),scores=torch.tensor([.8,.9]),labels=torch.tensor([1,1]))
         boxes,scores=restore_tile_boxes(d,(500,0,1268,768),1600,1000,.5)
         self.assertEqual(boxes.tolist(),[[530,40,660,140]])
+
+    def test_generic_coco_car_and_truck_include_vans_but_exclude_bus(self):
+        detection=dict(boxes=torch.tensor([[10.,10,80,80],[90.,10,160,80],[170.,10,240,80]]),scores=torch.tensor([.9,.8,.95]),labels=torch.tensor([3,8,6]))
+        boxes,scores=restore_tile_boxes(detection,(0,0,300,200),300,200,.5,(3,8))
+        self.assertEqual(boxes.tolist(),[[10,10,80,80],[90,10,160,80]])
+
+    def test_generic_class_mapping_is_used_in_photo_pipeline(self):
+        with tempfile.TemporaryDirectory() as temp:
+            path=Path(temp)/'van.jpg';Image.new('RGB',(320,240),'white').save(path)
+            p=object.__new__(Pipeline);p.mode='fast';p.detection=.5;p.brand_threshold=.65;p.classifier=None;p.colour_mode='heuristic';p.car_label=(3,8)
+            p.detector=lambda images:[dict(boxes=torch.tensor([[20.,20,250,200],[10.,10,300,230]]),scores=torch.tensor([.8,.9]),labels=torch.tensor([8,6]))]
+            result=p.predict(path);self.assertEqual(len(result['cars']),1);self.assertEqual(result['cars'][0]['box'],[20,20,250,200])
 
     def test_tiled_predictions_deduplicate_and_keep_coordinates(self):
         with tempfile.TemporaryDirectory() as temp:

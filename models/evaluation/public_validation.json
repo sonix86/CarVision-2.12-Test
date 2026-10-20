@@ -1,0 +1,329 @@
+{
+  "split": "validation",
+  "images": 683,
+  "brand_top1_accuracy": 0.8682284040995608,
+  "brand_scope": "13 known brands, human annotated ground-truth car crops; not full-scene accuracy and not unknown-brand accuracy",
+  "brands": [
+    "Audi",
+    "BMW",
+    "Chevrolet",
+    "Daewoo",
+    "Ford",
+    "Honda",
+    "Hyundai",
+    "Mercedes-Benz",
+    "Nissan",
+    "Tesla",
+    "Toyota",
+    "Volkswagen",
+    "Volvo"
+  ],
+  "confusion_matrix": [
+    [
+      97,
+      1,
+      3,
+      0,
+      2,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      89,
+      1,
+      0,
+      3,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      2,
+      97,
+      0,
+      3,
+      0,
+      2,
+      1,
+      0,
+      0,
+      2,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      6,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      2,
+      0,
+      85,
+      0,
+      3,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      2,
+      1,
+      0,
+      2,
+      21,
+      2,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      2,
+      3,
+      1,
+      3,
+      0,
+      67,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      4,
+      2,
+      0,
+      0,
+      3,
+      0,
+      1,
+      37,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      3,
+      1,
+      2,
+      0,
+      1,
+      0,
+      22,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      2,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      28,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      23,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      2,
+      0,
+      0,
+      1,
+      18
+    ]
+  ],
+  "per_brand": {
+    "Audi": {
+      "count": 106,
+      "accuracy": 0.9150943396226415
+    },
+    "BMW": {
+      "count": 96,
+      "accuracy": 0.9270833333333334
+    },
+    "Chevrolet": {
+      "count": 108,
+      "accuracy": 0.8981481481481481
+    },
+    "Daewoo": {
+      "count": 8,
+      "accuracy": 0.75
+    },
+    "Ford": {
+      "count": 94,
+      "accuracy": 0.9042553191489362
+    },
+    "Honda": {
+      "count": 29,
+      "accuracy": 0.7241379310344828
+    },
+    "Hyundai": {
+      "count": 79,
+      "accuracy": 0.8481012658227848
+    },
+    "Mercedes-Benz": {
+      "count": 47,
+      "accuracy": 0.7872340425531915
+    },
+    "Nissan": {
+      "count": 31,
+      "accuracy": 0.7096774193548387
+    },
+    "Tesla": {
+      "count": 7,
+      "accuracy": 0.42857142857142855
+    },
+    "Toyota": {
+      "count": 30,
+      "accuracy": 0.9333333333333333
+    },
+    "Volkswagen": {
+      "count": 24,
+      "accuracy": 0.9583333333333334
+    },
+    "Volvo": {
+      "count": 24,
+      "accuracy": 0.75
+    }
+  },
+  "thresholds": [
+    {
+      "threshold": 0.2,
+      "accepted": 681,
+      "coverage": 0.9970717423133236,
+      "accuracy_when_accepted": 0.8678414096916299
+    },
+    {
+      "threshold": 0.3,
+      "accepted": 668,
+      "coverage": 0.9780380673499268,
+      "accuracy_when_accepted": 0.8787425149700598
+    },
+    {
+      "threshold": 0.4,
+      "accepted": 634,
+      "coverage": 0.9282576866764275,
+      "accuracy_when_accepted": 0.9053627760252366
+    },
+    {
+      "threshold": 0.5,
+      "accepted": 595,
+      "coverage": 0.8711566617862372,
+      "accuracy_when_accepted": 0.9226890756302522
+    },
+    {
+      "threshold": 0.6,
+      "accepted": 562,
+      "coverage": 0.8228404099560761,
+      "accuracy_when_accepted": 0.9448398576512456
+    },
+    {
+      "threshold": 0.65,
+      "accepted": 538,
+      "coverage": 0.787701317715959,
+      "accuracy_when_accepted": 0.9553903345724907
+    },
+    {
+      "threshold": 0.7,
+      "accepted": 517,
+      "coverage": 0.7569546120058566,
+      "accuracy_when_accepted": 0.9593810444874274
+    },
+    {
+      "threshold": 0.8,
+      "accepted": 458,
+      "coverage": 0.6705710102489019,
+      "accuracy_when_accepted": 0.9737991266375546
+    },
+    {
+      "threshold": 0.9,
+      "accepted": 368,
+      "coverage": 0.5387994143484627,
+      "accuracy_when_accepted": 0.9891304347826086
+    }
+  ],
+  "seconds": 6.88
+}

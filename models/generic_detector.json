@@ -1,0 +1,8 @@
+{
+  "architecture": "fasterrcnn_resnet50_fpn_v2_coco_v1",
+  "origin": "generic-coco-detector",
+  "source": "torchvision official COCO_V1; general object boxes only; car/truck classes 3/8",
+  "authorization": "Owner explicitly allowed general ImageNet/COCO weights on 2026-10-20. Brand head must be independently trained.",
+  "brand_classifier": false,
+  "parameters": 43712278
+}

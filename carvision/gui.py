@@ -30,14 +30,14 @@ class App:
         rail=tk.Frame(root,bg=NAVY,width=210);rail.pack(side='left',fill='y');rail.pack_propagate(False)
         tk.Label(rail,text='CV /',font=('Segoe UI',30,'bold'),fg='#45d4c2',bg=NAVY).pack(anchor='w',padx=23,pady=(25,6))
         tk.Label(rail,text='TASHKENT\nCARVISION',font=('Segoe UI',14,'bold'),fg='white',bg=NAVY,justify='left').pack(anchor='w',padx=23)
-        tk.Label(rail,text='OFFLINE STUDIO  /  1.1',font=('Segoe UI',8),fg='#8fa3bb',bg=NAVY).pack(anchor='w',padx=23,pady=(10,30))
+        tk.Label(rail,text='OFFLINE STUDIO  /  1.2',font=('Segoe UI',8),fg='#8fa3bb',bg=NAVY).pack(anchor='w',padx=23,pady=(10,30))
         self.nav={};self.views={}
         for key,title in [('infer','01   Анализ фото'),('labels','02   Учебная разметка'),('training','03   Обучение'),('help','04   О проекте')]:
             b=tk.Button(rail,text=title,command=lambda k=key:self.show(k),bg=NAVY,fg='#bbcadb',activebackground='#26445e',activeforeground='white',font=('Segoe UI',11),anchor='w',relief='flat',padx=18,pady=14,cursor='hand2');b.pack(fill='x',padx=10,pady=3);self.nav[key]=b
         tk.Label(rail,text='Владелец проекта\nСофия Рахматулаева',font=('Segoe UI',10),fg='#c4d3e4',bg=NAVY,justify='left').pack(side='bottom',anchor='w',padx=20,pady=22)
         main=ttk.Frame(root,padding=(24,18));main.pack(side='left',fill='both',expand=True)
         self.title=tk.StringVar();ttk.Label(main,textvariable=self.title,style='Title.TLabel').pack(anchor='w')
-        ttk.Label(main,text='Марка и цвет — автоматически после обучения · локально · без API',style='Muted.TLabel').pack(anchor='w',pady=(5,15))
+        ttk.Label(main,text='Марка и цвет — автоматически · локально · без API',style='Muted.TLabel').pack(anchor='w',pady=(5,15))
         container=ttk.Frame(main);container.pack(fill='both',expand=True)
         for key in self.nav:self.views[key]=ttk.Frame(container)
         self.build_infer();self.build_labels();self.build_training();self.build_help()
@@ -51,13 +51,13 @@ class App:
         b=ttk.Button(parent,text=text,command=callback,style='Primary.TButton' if primary else 'TButton');b.pack(**pack);self.buttons[key]=b;return b
     def show(self,key):
         for name,view in self.views.items():view.pack_forget();self.nav[name].configure(bg='#26445e' if key==name else NAVY)
-        self.views[key].pack(fill='both',expand=True);self.current=key;self.title.set(dict(infer='Анализ фотографии',labels='Разметка для обучения',training='Обучение с нуля',help='О проекте')[key]);self.root.after_idle(self.redraw)
+        self.views[key].pack(fill='both',expand=True);self.current=key;self.title.set(dict(infer='Анализ фотографии',labels='Разметка для обучения',training='Обучение на своих данных',help='О проекте')[key]);self.root.after_idle(self.redraw)
 
     def build_infer(self):
         view=self.views['infer'];bar=ttk.Frame(view);bar.pack(fill='x')
         self.button(bar,'open','Открыть фото',self.open_infer,True,side='left');self.button(bar,'samples','Примеры Ташкента',lambda:self.open_infer(ROOT/'samples/images'),side='left',padx=7);self.button(bar,'pdf','PDF с примерами',self.open_pdf,side='left')
         settings=ttk.Frame(view);settings.pack(fill='x',pady=12);self.mode=tk.StringVar(value=next(iter(MODES)))
-        ttk.Combobox(settings,textvariable=self.mode,values=list(MODES),state='readonly',width=34).pack(side='left');self.det=tk.DoubleVar(value=.5);self.conf=tk.DoubleVar(value=.65)
+        ttk.Combobox(settings,textvariable=self.mode,values=list(MODES),state='readonly',width=34).pack(side='left');self.det=tk.DoubleVar(value=.5);self.conf=tk.DoubleVar(value=.5)
         for text,var in [('Порог рамки',self.det),('Порог марки',self.conf)]:ttk.Label(settings,text=text,style='Muted.TLabel').pack(side='left',padx=(10,4));ttk.Spinbox(settings,from_=.1,to=.99,increment=.05,textvariable=var,width=5).pack(side='left')
         self.button(settings,'predict','Анализировать',self.predict,True,side='right')
         body=ttk.Frame(view);body.pack(fill='both',expand=True);self.preview=tk.Canvas(body,bg='#e4eaf2',highlightthickness=0);self.preview.pack(side='left',fill='both',expand=True)
@@ -72,7 +72,7 @@ class App:
         ttk.Label(view,text='Ctrl+O — открыть фото · Ctrl+Enter — анализировать. Примеры не содержат ответов для модели.',style='Muted.TLabel').pack(anchor='w',pady=(9,0));self.preview.bind('<Configure>',lambda e:self.queue_redraw())
 
     def build_labels(self):
-        view=self.views['labels'];ttk.Label(view,text='Только подготовка учебных ответов. При анализе нового фото марку и цвет выбирает обученная сеть.',style='Muted.TLabel',wraplength=850).pack(anchor='w',pady=(0,10));bar=ttk.Frame(view);bar.pack(fill='x')
+        view=self.views['labels'];ttk.Label(view,text='Подготовка учебных ответов. В «Анализе фото» программа определяет марку и цвет автоматически.',style='Muted.TLabel',wraplength=850).pack(anchor='w',pady=(0,10));bar=ttk.Frame(view);bar.pack(fill='x')
         self.button(bar,'label_open','Добавить своё фото',self.open_label,True,side='left');self.button(bar,'label_save','Сохранить машину',self.save_label,side='left',padx=7);self.button(bar,'undo','Отменить последнюю',self.undo_label,side='left')
         fields=ttk.Frame(view);fields.pack(fill='x',pady=12);self.brand=tk.StringVar(value=BRANDS[0]);self.colour=tk.StringVar(value=COLOURS[0]);self.group=tk.StringVar();self.source=tk.StringVar(value='own');self.keep_group=tk.BooleanVar()
         for title,var,values in [('Марка',self.brand,BRANDS),('Цвет',self.colour,COLOURS)]:ttk.Label(fields,text=title).pack(side='left',padx=(0,6));ttk.Combobox(fields,textvariable=var,values=values,state='normal' if title=='Марка' else 'readonly',width=18).pack(side='left',padx=(0,18))
@@ -85,16 +85,16 @@ class App:
 
     def build_training(self):
         view=self.views['training'];ttk.Label(view,text='Разметка  →  Проверка данных  →  Обучение двух сетей  →  Проверка новых фото',font=('Segoe UI',12,'bold'),wraplength=850).pack(anchor='w',pady=(0,12))
-        ttk.Label(view,text='Нужны минимум две марки и независимые группы. Детектор и классификатор обучаются с нуля, без готовых весов. Для полезной точности потребуется большой и разнообразный набор; примеров из PDF недостаточно.',style='Muted.TLabel',wraplength=850).pack(anchor='w',pady=(0,15))
+        ttk.Label(view,text='Нужны минимум две марки и независимые группы. Используется локальная ImageNet/COCO-основа; новые головы обучаются на вашей разметке. Предыдущие модели сохраняются в models/backups. Нужен большой и разнообразный набор.',style='Muted.TLabel',wraplength=850).pack(anchor='w',pady=(0,15))
         fields=ttk.Frame(view);fields.pack(fill='x');self.epochs=tk.IntVar(value=25);self.detector_epochs=tk.IntVar(value=25)
         for title,var in [('Эпохи классификатора',self.epochs),('Эпохи детектора',self.detector_epochs)]:ttk.Label(fields,text=title).pack(side='left',padx=(0,7));ttk.Spinbox(fields,from_=1,to=1000,textvariable=var,width=6).pack(side='left',padx=(0,20))
         bar=ttk.Frame(view);bar.pack(fill='x',pady=12)
-        self.button(bar,'audit','Проверить данные',lambda:self.command(['audit','--labels',str(ROOT/'data/labels.jsonl')]),side='left');self.button(bar,'train','Обучить обе сети',self.train,True,side='left',padx=7);self.button(bar,'evaluate','Оценить классификатор',lambda:self.command(['evaluate','--labels',str(ROOT/'data/labels.jsonl'),'--models',str(ROOT/'models'),'--output',str(ROOT/'models/evaluation')]),side='left');self.button(bar,'cancel','Остановить',self.cancel,side='right')
-        self.log=tk.Text(view,bg=NAVY,fg='#d6e4ef',font=('Consolas',10),relief='flat',wrap='word',padx=14,pady=14,state='disabled');self.log.pack(fill='both',expand=True);self.append_log('Обучение локально, без API и скачивания готовых весов.\nЖурнал покажет отдельные этапы классификатора и детектора.\nОценка на вырезках не заменяет проверку полного конвейера на новых фото.\n')
+        self.button(bar,'audit','Проверить данные',lambda:self.command(['audit','--labels',str(ROOT/'data/labels.jsonl')]),side='left');self.button(bar,'train','Обучить обе сети',self.train,True,side='left',padx=7);self.button(bar,'evaluate','Проверка качества',self.evaluate,side='left');self.button(bar,'cancel','Остановить',self.cancel,side='right')
+        self.log=tk.Text(view,bg=NAVY,fg='#d6e4ef',font=('Consolas',10),relief='flat',wrap='word',padx=14,pady=14,state='disabled');self.log.pack(fill='both',expand=True);self.append_log('Обучение локально, без API. Общие веса уже включены в пакет.\nГотовые классификаторы марок и цветов не используются.\nОценка на вырезках не заменяет проверку полного конвейера на новых фото.\n')
 
     def build_help(self):
         view=self.views['help'];ttk.Label(view,text='София Рахматулаева',font=('Segoe UI',15,'bold')).pack(anchor='w',pady=(0,15))
-        text='Приложение принимает любые новые фотографии. Здесь нет заранее записанных ответов. Для распознавания нужно обучить сети на вашей разметке. Марка определяется по эмблеме; точная модель автомобиля не требуется.\n\n1. Добавьте свои фото во вкладке «Разметка».\n2. Отметьте все различимые машины, марки, цвета и группы съёмки.\n3. Обучите обе сети и изучите ошибки. Добавляйте трудные ракурсы.\n4. Проверьте новые снимки во вкладке «Анализ фото».\n5. Для переноса скопируйте всю папку, включая models и _internal.'
+        text='Откройте новую фотографию во вкладке «Анализ фото» и нажмите «Анализировать». Программа находит машины, затем определяет марку и цвет каждой вырезки. Правильную марку при распознавании вводить не нужно. Точная модель автомобиля не требуется.\n\nПоставляемый прототип обучен на открытых фотографиях. Поддерживаемые марки и измерения качества перечислены в инструкции. Неуверенная марка отображается как unknown; неизвестная классу машина тоже может быть ошибочно отнесена к известной марке. Цвет определяется собственным алгоритмом, без готового классификатора.\n\nДля задания нужны также ваши фотографии Ташкента: добавляйте их в «Учебной разметке», сохраняйте марки, цвета и группы съёмки. Это отдельная подготовка данных для обучения.\n\nДля переноса скопируйте всю папку CarVision, включая models и _internal.'
         ttk.Label(view,text=text,wraplength=850,justify='left').pack(anchor='w',pady=(0,18))
         for key,text,fn in [('readme','Полная инструкция',lambda:self.open_document(ROOT/'README.md')),('checklist','Список требований',lambda:self.open_document(ROOT/'CHECKLIST.md')),('help_pdf','PDF с примерами',self.open_pdf),('folder','Папка проекта',lambda:self.open_folder(ROOT))]:self.button(view,key,text,fn,anchor='w',pady=4)
         ttk.Label(view,text='Публичные примеры в samples не являются собственным обучающим набором Софии. Авторы, ссылки и лицензии сохранены. GitHub будет подключён после передачи ссылки владельцем.',style='Muted.TLabel',wraplength=850).pack(anchor='w',pady=20)
@@ -109,7 +109,11 @@ class App:
             if key=='undo':enabled=enabled and bool(self.undo_rows)
             if key=='cancel':enabled=self.busy and self.process is not None
             b.configure(state='normal' if enabled else 'disabled')
-        self.model_status.set('Обе сети обучены. Проверьте качество на новых снимках.' if detector and classifier else 'Обучение не завершено: '+('нужны детектор и классификатор.' if not detector and not classifier else 'нужен детектор.' if not detector else 'нужен классификатор.'))
+        self.model_status.set('Детектор и классификатор доступны. Марка определяется автоматически; охват и ограничения — в инструкции.' if detector and classifier else 'Обучение не завершено: '+('нужны детектор и классификатор.' if not detector and not classifier else 'нужен детектор.' if not detector else 'нужен классификатор.'))
+    def evaluate(self):
+        if (ROOT/'models/evaluation/public_test.json').exists() and not self.all_labels():
+            self.open_document(ROOT/'PROTOTYPE_VALIDATION.md')
+        else:self.command(['evaluate','--labels',str(ROOT/'data/labels.jsonl'),'--models',str(ROOT/'models'),'--output',str(ROOT/'models/evaluation')])
     def set_busy(self,value,text):
         self.busy=value;self.status.set(text);self.progress.start(12) if value else self.progress.stop();self.refresh_buttons()
     def open_folder(self,path):

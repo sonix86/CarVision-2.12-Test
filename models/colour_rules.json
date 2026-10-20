@@ -1,0 +1,15 @@
+{
+  "score": 0.8607660455486542,
+  "accuracy": 0.7391304347826086,
+  "macro_accuracy": 0.8238095238095238,
+  "images": 23,
+  "rules": {
+    "saturation": 0.22,
+    "black": 0.26,
+    "white": 0.72,
+    "top": 0.35,
+    "bottom": 0.8
+  },
+  "preference": 0.18000000000000002,
+  "scope": "Threshold selection on AI-reviewed development crops, not final accuracy. No test images used."
+}

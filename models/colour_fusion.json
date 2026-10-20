@@ -1,0 +1,11 @@
+{
+  "selection": {
+    "score": 0.8118139565547022,
+    "validation_accuracy": 0.9279757391963609,
+    "cross_domain_dev_accuracy": 0.6956521739130435,
+    "guard": null
+  },
+  "baseline_validation_accuracy": 0.9279757391963609,
+  "baseline_cross_domain_dev_accuracy": 0.6956521739130435,
+  "test_used_for_selection": false
+}

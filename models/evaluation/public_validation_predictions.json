@@ -1,0 +1,4100 @@
+[
+  {
+    "image": "images/stanford_0c7ae39411cc789aa3b98b17.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9736819863319397
+  },
+  {
+    "image": "images/stanford_6cdff376876d867845fc0b23.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.986419141292572
+  },
+  {
+    "image": "images/stanford_9ec27dfe9916868892374a41.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9916336536407471
+  },
+  {
+    "image": "images/stanford_55bf45810753ccec3d356178.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9837890863418579
+  },
+  {
+    "image": "images/stanford_4fdfedae8bd52dfcd0f2845e.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.2863912284374237
+  },
+  {
+    "image": "images/stanford_c16e47d29df717219ad9ffe5.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.965370237827301
+  },
+  {
+    "image": "images/stanford_7c9a4d0f62511eadb6fa13f8.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9674006700515747
+  },
+  {
+    "image": "images/stanford_6d2493ae81171e34a28340df.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9937857389450073
+  },
+  {
+    "image": "images/stanford_20e0036d7e07ab3c275a93c0.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.1953897923231125
+  },
+  {
+    "image": "images/stanford_33efaa25428ed68c01237f57.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9508979916572571
+  },
+  {
+    "image": "images/stanford_3c44bf24c423c397503926af.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.4075401723384857
+  },
+  {
+    "image": "images/stanford_362e2d47407327497fcd6438.jpg",
+    "reference": "Ford",
+    "prediction": "BMW",
+    "confidence": 0.44080179929733276
+  },
+  {
+    "image": "images/stanford_01fa1ce01e147d11abe902ec.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9023510217666626
+  },
+  {
+    "image": "images/stanford_dfa3b7b56157010e7ff4a7ae.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9806815981864929
+  },
+  {
+    "image": "images/stanford_864aa37bd6ccf8eb4468e680.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9567708373069763
+  },
+  {
+    "image": "images/stanford_4b7bc8aaf9fdb696321961a1.jpg",
+    "reference": "Ford",
+    "prediction": "Chevrolet",
+    "confidence": 0.7353492379188538
+  },
+  {
+    "image": "images/stanford_fedead694244eb422f0f39b4.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.8518027663230896
+  },
+  {
+    "image": "images/stanford_c56891fc8045ddbb4928eb3c.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.6915577054023743
+  },
+  {
+    "image": "images/stanford_0ae625f1657a876fbaf78a50.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.5512658953666687
+  },
+  {
+    "image": "images/stanford_c60615468c8f43a025da1f0d.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.34928831458091736
+  },
+  {
+    "image": "images/stanford_ed35f92898e9727e5d714943.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9841986894607544
+  },
+  {
+    "image": "images/stanford_697f837560fe2c1dad613951.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.40170955657958984
+  },
+  {
+    "image": "images/stanford_ab8032f35448b0d12d6ba410.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9550418257713318
+  },
+  {
+    "image": "images/stanford_9a1b0a3abafebdb689c18303.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.8407422304153442
+  },
+  {
+    "image": "images/stanford_0bac9e999a464a0461c762fc.jpg",
+    "reference": "Ford",
+    "prediction": "Toyota",
+    "confidence": 0.34330493211746216
+  },
+  {
+    "image": "images/stanford_176afbad15bede66240838f3.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9789133667945862
+  },
+  {
+    "image": "images/stanford_e629199f671364f60cf197cd.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.5993604063987732
+  },
+  {
+    "image": "images/stanford_2076746a79c8ecbb3cece7a9.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9653331637382507
+  },
+  {
+    "image": "images/stanford_31d348090a4fefd49c3c12e1.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.2813110649585724
+  },
+  {
+    "image": "images/stanford_4ca176b12539e07dcefafbac.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.6482850313186646
+  },
+  {
+    "image": "images/stanford_af872a71d1f000879fd4b20d.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.8855604529380798
+  },
+  {
+    "image": "images/stanford_3267321c4c2cd9ea27fc5b3a.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9913052916526794
+  },
+  {
+    "image": "images/stanford_f42881f4f78156864fc2fb9b.jpg",
+    "reference": "Ford",
+    "prediction": "Hyundai",
+    "confidence": 0.46473053097724915
+  },
+  {
+    "image": "images/stanford_8425240ada53ed685cafc0f3.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.983250081539154
+  },
+  {
+    "image": "images/stanford_ef1db934fdbabd46e15ef0e8.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.7624170780181885
+  },
+  {
+    "image": "images/stanford_9fe5e1813546e95c2f5937a5.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9750072956085205
+  },
+  {
+    "image": "images/stanford_cdc6c254a86b566390bb4389.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.8918418884277344
+  },
+  {
+    "image": "images/stanford_ae0917b1871b04cfaf5d0545.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.6950746774673462
+  },
+  {
+    "image": "images/stanford_233f6bf6da4056ecce3a5fb3.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9458268284797668
+  },
+  {
+    "image": "images/stanford_9c359ce76ffc97cd20b0bff4.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.955186665058136
+  },
+  {
+    "image": "images/stanford_89ba8e2279704cf40a4d5fe6.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9833455085754395
+  },
+  {
+    "image": "images/stanford_72131fa2ad7683e81c38da52.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9108909368515015
+  },
+  {
+    "image": "images/stanford_969d3b59989d8fffa3b46598.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9774487614631653
+  },
+  {
+    "image": "images/stanford_d38f6ad1dbdab64f29b2f9a4.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9412642121315002
+  },
+  {
+    "image": "images/stanford_7b33889811a1197f1408c2a8.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9515599608421326
+  },
+  {
+    "image": "images/stanford_fa3e336fe2d5d2aca5a74ca7.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.6365113258361816
+  },
+  {
+    "image": "images/stanford_017b9da25c93e0890d022bc0.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9602744579315186
+  },
+  {
+    "image": "images/stanford_0cd2442e8f80712492741f23.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9759125113487244
+  },
+  {
+    "image": "images/stanford_88e6581378c34fed7cfd46a4.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.68914794921875
+  },
+  {
+    "image": "images/stanford_e2694dc7264caa8fd6f278bd.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.7421762943267822
+  },
+  {
+    "image": "images/stanford_e34a8106a24cf023aead510e.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9824235439300537
+  },
+  {
+    "image": "images/stanford_2c060630e3ec5a0b4cd4ecdb.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.98623126745224
+  },
+  {
+    "image": "images/stanford_300ce6eb19fe7717e0e3305b.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.7487905621528625
+  },
+  {
+    "image": "images/stanford_4d9c6c2620adfb456d6ea6ce.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9066367149353027
+  },
+  {
+    "image": "images/stanford_8a9eff63e72e2291b9b6217e.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.987505316734314
+  },
+  {
+    "image": "images/stanford_1c6c7d6be2b021c9501fc599.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.7901473641395569
+  },
+  {
+    "image": "images/stanford_e1de7f04dce24e9ea966b58c.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.6953651309013367
+  },
+  {
+    "image": "images/stanford_5dfcdf8c59570333dea2ebe3.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.4240167438983917
+  },
+  {
+    "image": "images/stanford_c03cdd5c10c8f9b95db26a04.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9949467778205872
+  },
+  {
+    "image": "images/stanford_e21b25faaf2f46b434f3422f.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9714199900627136
+  },
+  {
+    "image": "images/stanford_7bbc85784a59a5108c32d1c8.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9629729986190796
+  },
+  {
+    "image": "images/stanford_f626a7e84bb6c393063fffd6.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9618720412254333
+  },
+  {
+    "image": "images/stanford_67eedd7109f61ff7e330a66e.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9853696823120117
+  },
+  {
+    "image": "images/stanford_8d63b93de897a3b44e6249a2.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9894977807998657
+  },
+  {
+    "image": "images/stanford_95f4d72f8b6f613fd916914e.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9728310108184814
+  },
+  {
+    "image": "images/stanford_e6c404f358611a980cdabc22.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9850148558616638
+  },
+  {
+    "image": "images/stanford_76d105bdf8a473d97d1f6dc6.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9486154913902283
+  },
+  {
+    "image": "images/stanford_48584e03c8c56e8a81c2eaad.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9602769613265991
+  },
+  {
+    "image": "images/stanford_660cac2453dc097ad1dbf2d1.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9871260523796082
+  },
+  {
+    "image": "images/stanford_24898d87f15846cf6b85ccd0.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9920507073402405
+  },
+  {
+    "image": "images/stanford_cfe43f0cd09ff57605e854bd.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9125384092330933
+  },
+  {
+    "image": "images/stanford_0465c4a85163b4f481a5c4cc.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.8046524524688721
+  },
+  {
+    "image": "images/stanford_aa73329ba2ef72a1d4936fae.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9529988169670105
+  },
+  {
+    "image": "images/stanford_bd4879149df1ac93daa7f6bd.jpg",
+    "reference": "Ford",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.25107911229133606
+  },
+  {
+    "image": "images/stanford_6cb7137d559b0f38bd7bc508.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.986568808555603
+  },
+  {
+    "image": "images/stanford_457cfd106ca79eb65816a2bd.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9919350147247314
+  },
+  {
+    "image": "images/stanford_b452d904a5b54f2d76233be6.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9773356914520264
+  },
+  {
+    "image": "images/stanford_0e14d64f2f04598b7c0328b3.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.893850564956665
+  },
+  {
+    "image": "images/stanford_8c4fac21ee29f48e5d2be7f3.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9477599263191223
+  },
+  {
+    "image": "images/stanford_cb32fa44e6fd6fa70f21b998.jpg",
+    "reference": "Ford",
+    "prediction": "Audi",
+    "confidence": 0.2707201838493347
+  },
+  {
+    "image": "images/stanford_be0e5dba42e1c96e64a1c0cf.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9921401143074036
+  },
+  {
+    "image": "images/stanford_615cc5cf73a9feda8ed512af.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.636326789855957
+  },
+  {
+    "image": "images/stanford_7abbd3bcffc57253ec5479b8.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.5961317420005798
+  },
+  {
+    "image": "images/stanford_22d23e3ada28de143d8bf203.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9752620458602905
+  },
+  {
+    "image": "images/stanford_6f396162b52f09c12dfa7358.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9487050771713257
+  },
+  {
+    "image": "images/stanford_fc50fe9b13a894e7d4f177c0.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9710823893547058
+  },
+  {
+    "image": "images/stanford_39ca464491cecee1bf7f45c4.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.8910496830940247
+  },
+  {
+    "image": "images/stanford_7a2c4419ae799bc77ab98696.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9791675806045532
+  },
+  {
+    "image": "images/stanford_d5a96465956ff9d7666a44d0.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9553875923156738
+  },
+  {
+    "image": "images/stanford_a864240b86e2e88ea4db0af3.jpg",
+    "reference": "Ford",
+    "prediction": "Hyundai",
+    "confidence": 0.3421907126903534
+  },
+  {
+    "image": "images/stanford_63462cde66f4f81e6358538b.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9768257141113281
+  },
+  {
+    "image": "images/stanford_c589489e7efc68b8fcd19e03.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.8213157057762146
+  },
+  {
+    "image": "images/stanford_b008d587e62e2162d2508683.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9635811448097229
+  },
+  {
+    "image": "images/stanford_eca06d8f4f3d6fcfc7f6a868.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.46233561635017395
+  },
+  {
+    "image": "images/stanford_fa411bc8641c0b9afdcf7758.jpg",
+    "reference": "Ford",
+    "prediction": "Hyundai",
+    "confidence": 0.4820535480976105
+  },
+  {
+    "image": "images/stanford_02e0450001e2dba3b64af69b.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9385736584663391
+  },
+  {
+    "image": "images/stanford_ec865137d5685e749c545574.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9180924296379089
+  },
+  {
+    "image": "images/stanford_67c7538726a0a96039adf90d.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.8930237889289856
+  },
+  {
+    "image": "images/stanford_02fbf4a58022215579c380b6.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.7981066107749939
+  },
+  {
+    "image": "images/stanford_2a83aa8774357507d3fdce5f.jpg",
+    "reference": "Ford",
+    "prediction": "Chevrolet",
+    "confidence": 0.3077128529548645
+  },
+  {
+    "image": "images/stanford_b4974a398ab3c9ac80871afc.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.4622310996055603
+  },
+  {
+    "image": "images/stanford_362972bcead35f079276f835.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.9808467030525208
+  },
+  {
+    "image": "images/stanford_1bbe20a5c6cd446567af689c.jpg",
+    "reference": "Ford",
+    "prediction": "Ford",
+    "confidence": 0.958329975605011
+  },
+  {
+    "image": "images/stanford_eba12c15c25dc085c51af4d6.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9664612412452698
+  },
+  {
+    "image": "images/stanford_79c2faec7a597256bd39246d.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9870938658714294
+  },
+  {
+    "image": "images/stanford_49e371710646ab49afc3cf0f.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9630860090255737
+  },
+  {
+    "image": "images/stanford_45d01afd654167ed25af7d78.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9219403266906738
+  },
+  {
+    "image": "images/stanford_640d7e217532d000b2e5f05c.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9642359614372253
+  },
+  {
+    "image": "images/stanford_458081f2009dd0cbd5fb42b2.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.945101261138916
+  },
+  {
+    "image": "images/stanford_febd52a1034e820f37e32474.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9415634274482727
+  },
+  {
+    "image": "images/stanford_f9a34c5a515ae10c1173c4cb.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9690417647361755
+  },
+  {
+    "image": "images/stanford_8046fff86584d7529b412262.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.8204126954078674
+  },
+  {
+    "image": "images/stanford_a02d0fe9adbdb7c49d50f1e6.jpg",
+    "reference": "Honda",
+    "prediction": "Honda",
+    "confidence": 0.9519165754318237
+  },
+  {
+    "image": "images/stanford_58de7ddc4ae0e6b926fa2edc.jpg",
+    "reference": "Honda",
+    "prediction": "Honda",
+    "confidence": 0.8768334984779358
+  },
+  {
+    "image": "images/stanford_65c2a993998ba5e453b2f5f1.jpg",
+    "reference": "Honda",
+    "prediction": "Honda",
+    "confidence": 0.9580346345901489
+  },
+  {
+    "image": "images/stanford_5fa6e700dc7e0f834d1d801f.jpg",
+    "reference": "Honda",
+    "prediction": "Honda",
+    "confidence": 0.5711080431938171
+  },
+  {
+    "image": "images/stanford_de12ab794eb256789a212bd2.jpg",
+    "reference": "Honda",
+    "prediction": "Honda",
+    "confidence": 0.8813826441764832
+  },
+  {
+    "image": "images/stanford_81dd9e508bcb700080e86375.jpg",
+    "reference": "Honda",
+    "prediction": "Honda",
+    "confidence": 0.9767724871635437
+  },
+  {
+    "image": "images/stanford_40df37a37ca83c04eaecf0fb.jpg",
+    "reference": "Honda",
+    "prediction": "Honda",
+    "confidence": 0.9609194993972778
+  },
+  {
+    "image": "images/stanford_fd6a4c165b71719817151ea5.jpg",
+    "reference": "Honda",
+    "prediction": "Honda",
+    "confidence": 0.9980302453041077
+  },
+  {
+    "image": "images/stanford_27947b6500297c29835627c2.jpg",
+    "reference": "Honda",
+    "prediction": "Ford",
+    "confidence": 0.23980660736560822
+  },
+  {
+    "image": "images/stanford_97b80ec521e0e04d2af4498e.jpg",
+    "reference": "Honda",
+    "prediction": "Honda",
+    "confidence": 0.9881908893585205
+  },
+  {
+    "image": "images/stanford_6f6915fbd6f8e63403f879c1.jpg",
+    "reference": "Honda",
+    "prediction": "BMW",
+    "confidence": 0.3162136673927307
+  },
+  {
+    "image": "images/stanford_1c325a593a056b7ed40bbb6a.jpg",
+    "reference": "Honda",
+    "prediction": "Hyundai",
+    "confidence": 0.5041016340255737
+  },
+  {
+    "image": "images/stanford_fb226cb510bef6be0242ce68.jpg",
+    "reference": "Honda",
+    "prediction": "Honda",
+    "confidence": 0.7835147976875305
+  },
+  {
+    "image": "images/stanford_654ff7fafd2573ac49600f5d.jpg",
+    "reference": "Honda",
+    "prediction": "Honda",
+    "confidence": 0.9895867109298706
+  },
+  {
+    "image": "images/stanford_f116d84d2060a39a6004389c.jpg",
+    "reference": "Honda",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.5181184411048889
+  },
+  {
+    "image": "images/stanford_a3d35642ed0c3819c2aecdcb.jpg",
+    "reference": "Honda",
+    "prediction": "Hyundai",
+    "confidence": 0.5800744891166687
+  },
+  {
+    "image": "images/stanford_292d86cdec5e1236a03c05d4.jpg",
+    "reference": "Honda",
+    "prediction": "Honda",
+    "confidence": 0.9093024730682373
+  },
+  {
+    "image": "images/stanford_0bd9150bef29ff5d1963d033.jpg",
+    "reference": "Honda",
+    "prediction": "Honda",
+    "confidence": 0.6038100123405457
+  },
+  {
+    "image": "images/stanford_6765fb1b8cafd510b13066f8.jpg",
+    "reference": "Honda",
+    "prediction": "Honda",
+    "confidence": 0.9954493641853333
+  },
+  {
+    "image": "images/stanford_2f7f89ccf97bfbee630bcab3.jpg",
+    "reference": "Honda",
+    "prediction": "Honda",
+    "confidence": 0.9870010614395142
+  },
+  {
+    "image": "images/stanford_ad1d9ff0fe8c102e1a0ff1e6.jpg",
+    "reference": "Honda",
+    "prediction": "Honda",
+    "confidence": 0.9841852784156799
+  },
+  {
+    "image": "images/stanford_b15397a68055055142cf79ba.jpg",
+    "reference": "Honda",
+    "prediction": "Ford",
+    "confidence": 0.5881578326225281
+  },
+  {
+    "image": "images/stanford_a02712b5b105dad65222ffbf.jpg",
+    "reference": "Honda",
+    "prediction": "Honda",
+    "confidence": 0.9765507578849792
+  },
+  {
+    "image": "images/stanford_2bc1e210df0ca07929073e49.jpg",
+    "reference": "Honda",
+    "prediction": "Honda",
+    "confidence": 0.9798822999000549
+  },
+  {
+    "image": "images/stanford_31533b03e8ab51bfe5ea40e7.jpg",
+    "reference": "Honda",
+    "prediction": "Honda",
+    "confidence": 0.9505104422569275
+  },
+  {
+    "image": "images/stanford_9357e99a62a7ccf867e16c4a.jpg",
+    "reference": "Honda",
+    "prediction": "Honda",
+    "confidence": 0.863101601600647
+  },
+  {
+    "image": "images/stanford_d6b275cb12d9250756f364fa.jpg",
+    "reference": "Honda",
+    "prediction": "Honda",
+    "confidence": 0.972500205039978
+  },
+  {
+    "image": "images/stanford_9a1832b50637ed09a61a84e2.jpg",
+    "reference": "Honda",
+    "prediction": "BMW",
+    "confidence": 0.5257368087768555
+  },
+  {
+    "image": "images/stanford_6425af187806370e4497388d.jpg",
+    "reference": "Honda",
+    "prediction": "Chevrolet",
+    "confidence": 0.6497277021408081
+  },
+  {
+    "image": "images/stanford_9796e8f146e3f6d1191bc355.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.8616471290588379
+  },
+  {
+    "image": "images/stanford_a36a21e1e49e3368242e5c29.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.5808961391448975
+  },
+  {
+    "image": "images/stanford_5384c36b37c86dcf2803a49f.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.7888607382774353
+  },
+  {
+    "image": "images/stanford_a069b86c5ce099f4ac8f41d8.jpg",
+    "reference": "Hyundai",
+    "prediction": "Audi",
+    "confidence": 0.6131218075752258
+  },
+  {
+    "image": "images/stanford_6084515dbd1b4dc02832bf11.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9522678256034851
+  },
+  {
+    "image": "images/stanford_65827a8a34f6df010c0f546d.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9832315444946289
+  },
+  {
+    "image": "images/stanford_aed8e5879da26487227689c7.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.932828962802887
+  },
+  {
+    "image": "images/stanford_9720cd81893f042a65196bb7.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.48082172870635986
+  },
+  {
+    "image": "images/stanford_039bf2e07346c4295fe9d887.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.4719943404197693
+  },
+  {
+    "image": "images/stanford_83402410a0bb7afa2963b102.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.929778516292572
+  },
+  {
+    "image": "images/stanford_2e401fcead45ae84608f4f43.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.6354907155036926
+  },
+  {
+    "image": "images/stanford_676987bd9130a05fde3802eb.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9321936368942261
+  },
+  {
+    "image": "images/stanford_5ede38c82d3555bc9d2a7efe.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9749377369880676
+  },
+  {
+    "image": "images/stanford_a59da6448be7deba12a6b703.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9703590869903564
+  },
+  {
+    "image": "images/stanford_7f4feab72dd41ad4090fa051.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.9653488993644714
+  },
+  {
+    "image": "images/stanford_76a6d571e9b76a2fa5feca44.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.8959193825721741
+  },
+  {
+    "image": "images/stanford_ecfc8c17f58393d8834c5858.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.9571714997291565
+  },
+  {
+    "image": "images/stanford_c3b8c280f20797ba7079e3f0.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.9916866421699524
+  },
+  {
+    "image": "images/stanford_6f829d621f86010fd6607e48.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.982685923576355
+  },
+  {
+    "image": "images/stanford_5abd2310a405e231b3d847e3.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.8707041144371033
+  },
+  {
+    "image": "images/stanford_53c4ade4c6848828a5be79dc.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.978857696056366
+  },
+  {
+    "image": "images/stanford_ee3007c153b0ef1c1482616c.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.9374101758003235
+  },
+  {
+    "image": "images/stanford_0ee9dbc534f2e69b552efeca.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.8778038024902344
+  },
+  {
+    "image": "images/stanford_07d373a8c2221f014504e0de.jpg",
+    "reference": "Hyundai",
+    "prediction": "Nissan",
+    "confidence": 0.739227831363678
+  },
+  {
+    "image": "images/stanford_d2862f1513caf451e263c013.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.9810491800308228
+  },
+  {
+    "image": "images/stanford_de6f1650b58ac87b1d09a418.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.7206230163574219
+  },
+  {
+    "image": "images/stanford_a73f206610c06c6c061853f9.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.9645795822143555
+  },
+  {
+    "image": "images/stanford_6302d12ff82c135f84b063a4.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.9838385581970215
+  },
+  {
+    "image": "images/stanford_137f76ec14ca10a876581fba.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.8380540013313293
+  },
+  {
+    "image": "images/stanford_ce2d864743fbc823cfc438fb.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.6382375359535217
+  },
+  {
+    "image": "images/stanford_f49ff6f303dd9a835e08e8af.jpg",
+    "reference": "Hyundai",
+    "prediction": "Chevrolet",
+    "confidence": 0.21205055713653564
+  },
+  {
+    "image": "images/stanford_52b45f14de127f1220edc8e3.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.9262446761131287
+  },
+  {
+    "image": "images/stanford_d1e4b85631d10653d7f4afd4.jpg",
+    "reference": "Hyundai",
+    "prediction": "Ford",
+    "confidence": 0.5196597576141357
+  },
+  {
+    "image": "images/stanford_2c7beb473a36b5e73c5b4a45.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.5560584664344788
+  },
+  {
+    "image": "images/stanford_b11d36d162b1b6a3a630ebf2.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.9600663185119629
+  },
+  {
+    "image": "images/stanford_715a904b44f2f1d41b1fec4f.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.8164489269256592
+  },
+  {
+    "image": "images/stanford_20f871f467dc8aa30d823468.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.8851321339607239
+  },
+  {
+    "image": "images/stanford_a358252d7796c093391db80a.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.8938938975334167
+  },
+  {
+    "image": "images/stanford_66d760421749bffdc8c1fda9.jpg",
+    "reference": "Hyundai",
+    "prediction": "Ford",
+    "confidence": 0.8427424430847168
+  },
+  {
+    "image": "images/stanford_4b5d1f146639946e3909e1e9.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.782381534576416
+  },
+  {
+    "image": "images/stanford_ecc56581c337fafe9935dd9e.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.7708597183227539
+  },
+  {
+    "image": "images/stanford_4fad1568f3f8408b1e4ab585.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.9862950444221497
+  },
+  {
+    "image": "images/stanford_792cd3e9eb0c99ac6896368f.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.7987954616546631
+  },
+  {
+    "image": "images/stanford_f371453f3828427c5a387a96.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.9822360277175903
+  },
+  {
+    "image": "images/stanford_2e39281196be7d982a216567.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.8180440068244934
+  },
+  {
+    "image": "images/stanford_597b3727c9ab4f49f2234951.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.8822313547134399
+  },
+  {
+    "image": "images/stanford_559c9a2bf5f79dc4d9bc680d.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.9943804144859314
+  },
+  {
+    "image": "images/stanford_0b05fef55ce8f8a02f69c578.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.857286274433136
+  },
+  {
+    "image": "images/stanford_ab66776b4e00c2b614e97c93.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.5787426829338074
+  },
+  {
+    "image": "images/stanford_9d827c5a5569d6bb67429e46.jpg",
+    "reference": "Hyundai",
+    "prediction": "Chevrolet",
+    "confidence": 0.6655431985855103
+  },
+  {
+    "image": "images/stanford_b9cb25a087d6984b0c3a10a8.jpg",
+    "reference": "Hyundai",
+    "prediction": "Ford",
+    "confidence": 0.5334720611572266
+  },
+  {
+    "image": "images/stanford_9210ca236480a41a7c5d712c.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.8515989184379578
+  },
+  {
+    "image": "images/stanford_0b81e13603804cf93121c4d4.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.9843326807022095
+  },
+  {
+    "image": "images/stanford_17bc0701bac33fd247e07494.jpg",
+    "reference": "Hyundai",
+    "prediction": "Chevrolet",
+    "confidence": 0.34636756777763367
+  },
+  {
+    "image": "images/stanford_4267a042f274a4afd5b433a2.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.6873612999916077
+  },
+  {
+    "image": "images/stanford_58570afca40aed550f31f05a.jpg",
+    "reference": "Hyundai",
+    "prediction": "Toyota",
+    "confidence": 0.5661812424659729
+  },
+  {
+    "image": "images/stanford_572e98f28250c58be84847b5.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.8762582540512085
+  },
+  {
+    "image": "images/stanford_921733008432c201cb45ee9d.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.9806725382804871
+  },
+  {
+    "image": "images/stanford_a85189a69bda25ce8f6b6ce8.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.8413551449775696
+  },
+  {
+    "image": "images/stanford_8f2ae17b660a51456be60b99.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.9292514324188232
+  },
+  {
+    "image": "images/stanford_d2b9dec196b20f71318b7881.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.6356176137924194
+  },
+  {
+    "image": "images/stanford_09eb729b5f4601c961ba3e2c.jpg",
+    "reference": "Hyundai",
+    "prediction": "BMW",
+    "confidence": 0.8743923306465149
+  },
+  {
+    "image": "images/stanford_a34507c2093d1a0d46328a4b.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.836693525314331
+  },
+  {
+    "image": "images/stanford_cb391b4cb5ceb392b0afe06d.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.4100673198699951
+  },
+  {
+    "image": "images/stanford_15bf9224fdfcd8c7230b4d2c.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.9657135605812073
+  },
+  {
+    "image": "images/stanford_27a7822e25ca81f64351c313.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.4828529953956604
+  },
+  {
+    "image": "images/stanford_677a79e86dd66147719c3191.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.8502485156059265
+  },
+  {
+    "image": "images/stanford_0970f501d50645323afea421.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.7687029838562012
+  },
+  {
+    "image": "images/stanford_60a5e21a4ec14cc975d764e4.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.9795880317687988
+  },
+  {
+    "image": "images/stanford_5235d342561ff22057add68e.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.9830933809280396
+  },
+  {
+    "image": "images/stanford_4281d297b9a963b9ae14d309.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.9942920207977295
+  },
+  {
+    "image": "images/stanford_d57397ad73a30961f9817e6c.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.9642894864082336
+  },
+  {
+    "image": "images/stanford_890fa4d1cc16a6b9452f8962.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.9805768132209778
+  },
+  {
+    "image": "images/stanford_f9575233ecb70b775f6c1bd8.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.6640762686729431
+  },
+  {
+    "image": "images/stanford_ba2a4d2d56021a4f7709e63d.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.4462103247642517
+  },
+  {
+    "image": "images/stanford_c9967616e1e59b4ecab45572.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.1799004226922989
+  },
+  {
+    "image": "images/stanford_ffed7b617ab1be6aec9f870a.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.9483337998390198
+  },
+  {
+    "image": "images/stanford_f76b83820ac8d0499ddeb9cf.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.5160399675369263
+  },
+  {
+    "image": "images/stanford_683348afc624ada9b32e802a.jpg",
+    "reference": "Hyundai",
+    "prediction": "BMW",
+    "confidence": 0.3358961343765259
+  },
+  {
+    "image": "images/stanford_077fdae30b70c4ac9295a7cb.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.6510732173919678
+  },
+  {
+    "image": "images/stanford_447ccbbce619d7cf25a359ee.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.858655571937561
+  },
+  {
+    "image": "images/stanford_1783f7d5433c3f34b03ebc41.jpg",
+    "reference": "Hyundai",
+    "prediction": "Daewoo",
+    "confidence": 0.41710105538368225
+  },
+  {
+    "image": "images/stanford_37a8b01632dfcb6f519cebd7.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.9458855986595154
+  },
+  {
+    "image": "images/stanford_ab0b210928cc3fdabd1e6deb.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.612423837184906
+  },
+  {
+    "image": "images/stanford_5b138f68866ce580547c798c.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.9691739678382874
+  },
+  {
+    "image": "images/stanford_4c6c8577e199b78cd21bdaf3.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.9525442123413086
+  },
+  {
+    "image": "images/stanford_b3bb6812520d1b4499a3fc06.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.8749966025352478
+  },
+  {
+    "image": "images/stanford_c05cd2c5abd099f148cb5a65.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.9840116500854492
+  },
+  {
+    "image": "images/stanford_4bde103b1b22c8fc00dbddbc.jpg",
+    "reference": "Hyundai",
+    "prediction": "Hyundai",
+    "confidence": 0.8257208466529846
+  },
+  {
+    "image": "images/stanford_847dc10c28e9ca0eac02e0c6.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9758421182632446
+  },
+  {
+    "image": "images/stanford_d50fd46b96657c93a4805431.jpg",
+    "reference": "Audi",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.32283446192741394
+  },
+  {
+    "image": "images/stanford_7929e23b6a13023e8b4c5281.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.7381316423416138
+  },
+  {
+    "image": "images/stanford_3db2d871c16d572a79dcfc81.jpg",
+    "reference": "Audi",
+    "prediction": "Nissan",
+    "confidence": 0.6220358610153198
+  },
+  {
+    "image": "images/stanford_8ec9e6aa91b82394f908cea5.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9234480857849121
+  },
+  {
+    "image": "images/stanford_54e8eaf4364e107b07cb71fc.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.916267454624176
+  },
+  {
+    "image": "images/stanford_c5585887b54c441fc417bca8.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9134060740470886
+  },
+  {
+    "image": "images/stanford_9747dae75eb28ca5c8d0e28e.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9554261565208435
+  },
+  {
+    "image": "images/stanford_35b81d0472cc5aeb561eb8f3.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.7740609049797058
+  },
+  {
+    "image": "images/stanford_b68263eb931bc8580652e5ed.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9836517572402954
+  },
+  {
+    "image": "images/stanford_232d165f1ba5fbc2a3e95d6f.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.8611370325088501
+  },
+  {
+    "image": "images/stanford_8eafc57ea32cded545b6130b.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9129871129989624
+  },
+  {
+    "image": "images/stanford_efe0e18a7daa41e66153d868.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.7966412305831909
+  },
+  {
+    "image": "images/stanford_fbc0c84187e3179dbb9902f3.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9012278318405151
+  },
+  {
+    "image": "images/stanford_2eb3815a5cd0d274d6e1bbb1.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.925312340259552
+  },
+  {
+    "image": "images/stanford_81dbb0fe402212027d61c263.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.7015109658241272
+  },
+  {
+    "image": "images/stanford_aef5ff49bc134615e53b5c7f.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.8531453609466553
+  },
+  {
+    "image": "images/stanford_dcb67cf923cba21be2407af4.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.7312250137329102
+  },
+  {
+    "image": "images/stanford_605e08639a6ddded9a2d7554.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.7258743643760681
+  },
+  {
+    "image": "images/stanford_c7c826159a2d5c553a354961.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.986435055732727
+  },
+  {
+    "image": "images/stanford_49471fd45dbbf15bbfc33d12.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.9460176229476929
+  },
+  {
+    "image": "images/stanford_55775937e768b8950e7fa262.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.9753727912902832
+  },
+  {
+    "image": "images/stanford_327ba3066351db330313b230.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Ford",
+    "confidence": 0.6596789360046387
+  },
+  {
+    "image": "images/stanford_a838d22d6cbc6352d8afc803.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Ford",
+    "confidence": 0.41325798630714417
+  },
+  {
+    "image": "images/stanford_f299ba2d6fd99e7606a0b121.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.9444507956504822
+  },
+  {
+    "image": "images/stanford_5e59dbb1c2325dd9347853b6.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Audi",
+    "confidence": 0.39989328384399414
+  },
+  {
+    "image": "images/stanford_25f4e6b07da3d4b31b570abb.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Audi",
+    "confidence": 0.8710159063339233
+  },
+  {
+    "image": "images/stanford_36e8b3fd1235ec4c40a9c2d9.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Audi",
+    "confidence": 0.934139609336853
+  },
+  {
+    "image": "images/stanford_3bbe9026ef26127960fa7dc8.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.9060202836990356
+  },
+  {
+    "image": "images/stanford_706fb8e8a2cb018375c2adde.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.962247371673584
+  },
+  {
+    "image": "images/stanford_d51054d4c5903ea54528dff6.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Ford",
+    "confidence": 0.32279860973358154
+  },
+  {
+    "image": "images/stanford_ed90e8a16e824ee2a1d297a0.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Hyundai",
+    "confidence": 0.7968087196350098
+  },
+  {
+    "image": "images/stanford_ae3a48c8ec1a06f006446611.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.6534723043441772
+  },
+  {
+    "image": "images/stanford_4f74254da3d863f51b20d975.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "BMW",
+    "confidence": 0.7081629037857056
+  },
+  {
+    "image": "images/stanford_b91b4ae7ab4f7f7329f20ade.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.9658315181732178
+  },
+  {
+    "image": "images/stanford_246f22e047b8dda0186adcaa.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.9713559746742249
+  },
+  {
+    "image": "images/stanford_0e9ade864c7f72b2cea9a453.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.5179572105407715
+  },
+  {
+    "image": "images/stanford_ddff0ba61e8c490d02264690.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.7348452806472778
+  },
+  {
+    "image": "images/stanford_f47dd7a13732f89924b59ebe.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.7912431359291077
+  },
+  {
+    "image": "images/stanford_01a7bb1d99984e28dbe44773.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.3907961845397949
+  },
+  {
+    "image": "images/stanford_e933ef3a723bc672674dbc21.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.710034966468811
+  },
+  {
+    "image": "images/stanford_7edc615c197b59abf1a6904b.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.9501855969429016
+  },
+  {
+    "image": "images/stanford_b22dacbca769a3b637b62f04.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.32170209288597107
+  },
+  {
+    "image": "images/stanford_af93e96f3597e90d5f4ea345.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.6770671606063843
+  },
+  {
+    "image": "images/stanford_6eab250d4220bdfb27eb39e7.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "BMW",
+    "confidence": 0.3579140305519104
+  },
+  {
+    "image": "images/stanford_31b7901277a6d4883c9a05a5.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.9940699934959412
+  },
+  {
+    "image": "images/stanford_7c63f359eef239f3ccda4014.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.9108893871307373
+  },
+  {
+    "image": "images/stanford_538d0e14e5708ceace9b01e8.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.47702842950820923
+  },
+  {
+    "image": "images/stanford_b7deb34be03ba7330bc9135c.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.9573028087615967
+  },
+  {
+    "image": "images/stanford_4606db02d6b3f3e052b47b69.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.813935399055481
+  },
+  {
+    "image": "images/stanford_7a252d67be63e0d061b680b0.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.9534034729003906
+  },
+  {
+    "image": "images/stanford_ab0cce4306136d36ed2eafed.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.9807640314102173
+  },
+  {
+    "image": "images/stanford_7ddc2d72adabf02a228f6795.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.6780540347099304
+  },
+  {
+    "image": "images/stanford_538008df5489c1e09e4643b2.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.9451823830604553
+  },
+  {
+    "image": "images/stanford_371730092cb9adc846fe383d.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.9702170491218567
+  },
+  {
+    "image": "images/stanford_5519b3ecfa20e52f89867316.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.3856333792209625
+  },
+  {
+    "image": "images/stanford_5ec0b4c6b8ebab45a03b8a8f.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.7820924520492554
+  },
+  {
+    "image": "images/stanford_d8c0b40184672e1d90485a42.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Audi",
+    "confidence": 0.43323397636413574
+  },
+  {
+    "image": "images/stanford_f1105901742dc7a39473721d.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.8783109188079834
+  },
+  {
+    "image": "images/stanford_d6f18d07a67807d10b64b9be.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.9841256141662598
+  },
+  {
+    "image": "images/stanford_3275a36e774ca89ef3095c6e.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.9607418775558472
+  },
+  {
+    "image": "images/stanford_50196220255ddaf6767d206a.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.9292746782302856
+  },
+  {
+    "image": "images/stanford_0950f4c8bffd0fdb3edd27d0.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.998325765132904
+  },
+  {
+    "image": "images/stanford_9bac9ee03144d54577e4dc3e.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.9780859351158142
+  },
+  {
+    "image": "images/stanford_99c72b28865a15d9acc9ca2d.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.7845538258552551
+  },
+  {
+    "image": "images/stanford_811c9519782ef9cb0d5c3313.jpg",
+    "reference": "Mercedes-Benz",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.7631323933601379
+  },
+  {
+    "image": "images/stanford_b0ca73e56805951408b2b1e8.jpg",
+    "reference": "Nissan",
+    "prediction": "Nissan",
+    "confidence": 0.9654963612556458
+  },
+  {
+    "image": "images/stanford_6938ab3c477d9a8267fb4b83.jpg",
+    "reference": "Nissan",
+    "prediction": "Nissan",
+    "confidence": 0.9030998945236206
+  },
+  {
+    "image": "images/stanford_f580467f1367745e3be9704a.jpg",
+    "reference": "Nissan",
+    "prediction": "Hyundai",
+    "confidence": 0.3442945182323456
+  },
+  {
+    "image": "images/stanford_73c5da1c118487d323506130.jpg",
+    "reference": "Nissan",
+    "prediction": "Nissan",
+    "confidence": 0.9454086422920227
+  },
+  {
+    "image": "images/stanford_9832cde9ba99bb9212e846e8.jpg",
+    "reference": "Nissan",
+    "prediction": "Nissan",
+    "confidence": 0.3654864728450775
+  },
+  {
+    "image": "images/stanford_2deabc7957a91021978e14d3.jpg",
+    "reference": "Nissan",
+    "prediction": "Nissan",
+    "confidence": 0.9982607960700989
+  },
+  {
+    "image": "images/stanford_4ef2a14bad8dfba7945f396d.jpg",
+    "reference": "Nissan",
+    "prediction": "Nissan",
+    "confidence": 0.9417551755905151
+  },
+  {
+    "image": "images/stanford_40c1a56cd61947347655ce98.jpg",
+    "reference": "Nissan",
+    "prediction": "Nissan",
+    "confidence": 0.9897841811180115
+  },
+  {
+    "image": "images/stanford_af3708c4ce3623327e246bb9.jpg",
+    "reference": "Nissan",
+    "prediction": "Nissan",
+    "confidence": 0.6648138165473938
+  },
+  {
+    "image": "images/stanford_df81e53b50c1c8ea29179baa.jpg",
+    "reference": "Nissan",
+    "prediction": "Nissan",
+    "confidence": 0.9911127686500549
+  },
+  {
+    "image": "images/stanford_9c34b244626d2ac33bc44b38.jpg",
+    "reference": "Nissan",
+    "prediction": "Chevrolet",
+    "confidence": 0.6419820189476013
+  },
+  {
+    "image": "images/stanford_fa143ec4dac9306ac72e4347.jpg",
+    "reference": "Nissan",
+    "prediction": "Ford",
+    "confidence": 0.8711020350456238
+  },
+  {
+    "image": "images/stanford_98413821f1014a9a432de484.jpg",
+    "reference": "Nissan",
+    "prediction": "Chevrolet",
+    "confidence": 0.8516220450401306
+  },
+  {
+    "image": "images/stanford_34428ab9b23a6d993b6effd4.jpg",
+    "reference": "Nissan",
+    "prediction": "Nissan",
+    "confidence": 0.740348219871521
+  },
+  {
+    "image": "images/stanford_316fe39f199037005da73cae.jpg",
+    "reference": "Nissan",
+    "prediction": "Nissan",
+    "confidence": 0.8803026080131531
+  },
+  {
+    "image": "images/stanford_10ff4b07900f9a899e9312df.jpg",
+    "reference": "Nissan",
+    "prediction": "Nissan",
+    "confidence": 0.9665980935096741
+  },
+  {
+    "image": "images/stanford_c5f02d0f0d742d803f737db6.jpg",
+    "reference": "Nissan",
+    "prediction": "Nissan",
+    "confidence": 0.9808425903320312
+  },
+  {
+    "image": "images/stanford_731a82abd4e7337f434e3c6b.jpg",
+    "reference": "Nissan",
+    "prediction": "Volvo",
+    "confidence": 0.7002344727516174
+  },
+  {
+    "image": "images/stanford_8374dfa6b22c503882c303f4.jpg",
+    "reference": "Nissan",
+    "prediction": "BMW",
+    "confidence": 0.34372493624687195
+  },
+  {
+    "image": "images/stanford_ed792b4d37fdc4b290ef5b50.jpg",
+    "reference": "Nissan",
+    "prediction": "Nissan",
+    "confidence": 0.9256678819656372
+  },
+  {
+    "image": "images/stanford_679ba60be967b5bf0f1e1c8c.jpg",
+    "reference": "Nissan",
+    "prediction": "Nissan",
+    "confidence": 0.9576596021652222
+  },
+  {
+    "image": "images/stanford_1865061aa0d80319e5a407d0.jpg",
+    "reference": "Nissan",
+    "prediction": "Nissan",
+    "confidence": 0.9780362248420715
+  },
+  {
+    "image": "images/stanford_132637d3d966ccfacdb8a4d8.jpg",
+    "reference": "Audi",
+    "prediction": "Volvo",
+    "confidence": 0.4716305732727051
+  },
+  {
+    "image": "images/stanford_8482c1165473ec1e0807411b.jpg",
+    "reference": "Audi",
+    "prediction": "Chevrolet",
+    "confidence": 0.8053040504455566
+  },
+  {
+    "image": "images/stanford_48c62f318e0790a7087b52ec.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.4707155227661133
+  },
+  {
+    "image": "images/stanford_331846647fd0fc060e201faf.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.8613488674163818
+  },
+  {
+    "image": "images/stanford_a9f64f0e01b189f87b1fe9c8.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.7725808024406433
+  },
+  {
+    "image": "images/stanford_27215e39051fc6bfe98f0716.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9638247489929199
+  },
+  {
+    "image": "images/stanford_f9cc095e0860f10ff373ba93.jpg",
+    "reference": "Nissan",
+    "prediction": "Nissan",
+    "confidence": 0.7704745531082153
+  },
+  {
+    "image": "images/stanford_60e0aa252900f9bff38fe35b.jpg",
+    "reference": "Nissan",
+    "prediction": "Nissan",
+    "confidence": 0.9071516394615173
+  },
+  {
+    "image": "images/stanford_26e4f8b95e16dbed6bf76a74.jpg",
+    "reference": "Nissan",
+    "prediction": "Nissan",
+    "confidence": 0.8405963182449341
+  },
+  {
+    "image": "images/stanford_bc44bfe44efc339aa4cb38c2.jpg",
+    "reference": "Nissan",
+    "prediction": "Nissan",
+    "confidence": 0.9787982106208801
+  },
+  {
+    "image": "images/stanford_e73f191ae233780393503d3a.jpg",
+    "reference": "Nissan",
+    "prediction": "Nissan",
+    "confidence": 0.9060404300689697
+  },
+  {
+    "image": "images/stanford_7248f1611ea1c50ce992c3d2.jpg",
+    "reference": "Nissan",
+    "prediction": "Nissan",
+    "confidence": 0.44487109780311584
+  },
+  {
+    "image": "images/stanford_296f9962e4884e40527b4307.jpg",
+    "reference": "Nissan",
+    "prediction": "Ford",
+    "confidence": 0.3713160753250122
+  },
+  {
+    "image": "images/stanford_9760a177979882654e344f77.jpg",
+    "reference": "Nissan",
+    "prediction": "Daewoo",
+    "confidence": 0.34873166680336
+  },
+  {
+    "image": "images/stanford_bffd119f4bec9f2acc597763.jpg",
+    "reference": "Nissan",
+    "prediction": "Chevrolet",
+    "confidence": 0.5841773748397827
+  },
+  {
+    "image": "images/stanford_658b255f191e2732cffaf9aa.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9618659615516663
+  },
+  {
+    "image": "images/stanford_0c90257afafafa9cfc9bc9d7.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.961499035358429
+  },
+  {
+    "image": "images/stanford_69818a3366543e77ddc72f22.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9214649796485901
+  },
+  {
+    "image": "images/stanford_ff228f7c14371b8c6259ccb2.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.8843308091163635
+  },
+  {
+    "image": "images/stanford_f2684de7081b8a769533e71a.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9198512434959412
+  },
+  {
+    "image": "images/stanford_16450e1f91b771020bea14d9.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9565489292144775
+  },
+  {
+    "image": "images/stanford_8e6a0498a803203e37eb8cce.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.7527581453323364
+  },
+  {
+    "image": "images/stanford_597760121e14e354968f4665.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9403673410415649
+  },
+  {
+    "image": "images/stanford_c71c1bddd13307662bb80a6a.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9556691646575928
+  },
+  {
+    "image": "images/stanford_40e4e6f53e5d6c06bcfadde7.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.959385097026825
+  },
+  {
+    "image": "images/stanford_dc9363468e6dec7cb638d29d.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9909199476242065
+  },
+  {
+    "image": "images/stanford_adde754cc2d8e20400ce74cf.jpg",
+    "reference": "Tesla",
+    "prediction": "BMW",
+    "confidence": 0.6479275226593018
+  },
+  {
+    "image": "images/stanford_c77352cfdbe5939313ed3a0b.jpg",
+    "reference": "Tesla",
+    "prediction": "Audi",
+    "confidence": 0.35609516501426697
+  },
+  {
+    "image": "images/stanford_eb75b920fc60cd0fa3783902.jpg",
+    "reference": "Tesla",
+    "prediction": "Tesla",
+    "confidence": 0.9738543629646301
+  },
+  {
+    "image": "images/stanford_1131544d6644fb339c038690.jpg",
+    "reference": "Tesla",
+    "prediction": "BMW",
+    "confidence": 0.46636784076690674
+  },
+  {
+    "image": "images/stanford_40875ed94c00e046462a1b27.jpg",
+    "reference": "Tesla",
+    "prediction": "Chevrolet",
+    "confidence": 0.4118400514125824
+  },
+  {
+    "image": "images/stanford_2a9ed0d1f3a3d8f8d241164c.jpg",
+    "reference": "Tesla",
+    "prediction": "Tesla",
+    "confidence": 0.957557737827301
+  },
+  {
+    "image": "images/stanford_a827179b960f02739e9e5028.jpg",
+    "reference": "Tesla",
+    "prediction": "Tesla",
+    "confidence": 0.9386796951293945
+  },
+  {
+    "image": "images/stanford_7411d0ccc2cb1ec0acd471f7.jpg",
+    "reference": "Toyota",
+    "prediction": "Ford",
+    "confidence": 0.719157874584198
+  },
+  {
+    "image": "images/stanford_c1e2bab496928e4c27c4dbf3.jpg",
+    "reference": "Toyota",
+    "prediction": "Toyota",
+    "confidence": 0.942475438117981
+  },
+  {
+    "image": "images/stanford_857ba981d8aca0aebcde3978.jpg",
+    "reference": "Toyota",
+    "prediction": "Toyota",
+    "confidence": 0.5630161166191101
+  },
+  {
+    "image": "images/stanford_a3c5c1b39f1ba6155b599766.jpg",
+    "reference": "Toyota",
+    "prediction": "Toyota",
+    "confidence": 0.9147487282752991
+  },
+  {
+    "image": "images/stanford_9b558a6225a61b39a9022381.jpg",
+    "reference": "Toyota",
+    "prediction": "Toyota",
+    "confidence": 0.987510085105896
+  },
+  {
+    "image": "images/stanford_61cced96bc5990ff3ae43f96.jpg",
+    "reference": "Toyota",
+    "prediction": "Toyota",
+    "confidence": 0.3325687348842621
+  },
+  {
+    "image": "images/stanford_0cd0b638f083115485f004ca.jpg",
+    "reference": "Toyota",
+    "prediction": "Toyota",
+    "confidence": 0.9963639378547668
+  },
+  {
+    "image": "images/stanford_f7101e2537573cc96e16c8cc.jpg",
+    "reference": "Toyota",
+    "prediction": "Toyota",
+    "confidence": 0.5155683159828186
+  },
+  {
+    "image": "images/stanford_354d0ac6084dfa8d01dcf114.jpg",
+    "reference": "Toyota",
+    "prediction": "Toyota",
+    "confidence": 0.9549155235290527
+  },
+  {
+    "image": "images/stanford_1fafb5fa80484d088830b681.jpg",
+    "reference": "Toyota",
+    "prediction": "Toyota",
+    "confidence": 0.9830918908119202
+  },
+  {
+    "image": "images/stanford_34bf915b3f1be53e8f17d7ef.jpg",
+    "reference": "Toyota",
+    "prediction": "Toyota",
+    "confidence": 0.7765617966651917
+  },
+  {
+    "image": "images/stanford_2adbc2134f03d32f1d57992e.jpg",
+    "reference": "Toyota",
+    "prediction": "Toyota",
+    "confidence": 0.9658492207527161
+  },
+  {
+    "image": "images/stanford_5646ec2a7248d491a1369dbf.jpg",
+    "reference": "Toyota",
+    "prediction": "Toyota",
+    "confidence": 0.9959709048271179
+  },
+  {
+    "image": "images/stanford_6b977fd3c8c2c686c00f56b7.jpg",
+    "reference": "Toyota",
+    "prediction": "Toyota",
+    "confidence": 0.9115330576896667
+  },
+  {
+    "image": "images/stanford_94aeab813c7536a21049955d.jpg",
+    "reference": "Toyota",
+    "prediction": "Toyota",
+    "confidence": 0.9930292963981628
+  },
+  {
+    "image": "images/stanford_ce0e7dd04cf8f21fd0905e9a.jpg",
+    "reference": "Toyota",
+    "prediction": "Toyota",
+    "confidence": 0.783157229423523
+  },
+  {
+    "image": "images/stanford_5f7e7b97b85c5961cbd94a75.jpg",
+    "reference": "Toyota",
+    "prediction": "Toyota",
+    "confidence": 0.9926440119743347
+  },
+  {
+    "image": "images/stanford_3588790982122bd78a32bb2b.jpg",
+    "reference": "Toyota",
+    "prediction": "Toyota",
+    "confidence": 0.7514173984527588
+  },
+  {
+    "image": "images/stanford_620f54c1b0d3b61f530e56db.jpg",
+    "reference": "Toyota",
+    "prediction": "Toyota",
+    "confidence": 0.4250873923301697
+  },
+  {
+    "image": "images/stanford_917b9510ddbb291fbc87453c.jpg",
+    "reference": "Toyota",
+    "prediction": "Honda",
+    "confidence": 0.499363511800766
+  },
+  {
+    "image": "images/stanford_27479b72f9bd34e16889ad6e.jpg",
+    "reference": "Toyota",
+    "prediction": "Toyota",
+    "confidence": 0.6349074244499207
+  },
+  {
+    "image": "images/stanford_6744472f414fcfd3daea5ece.jpg",
+    "reference": "Toyota",
+    "prediction": "Toyota",
+    "confidence": 0.9271575212478638
+  },
+  {
+    "image": "images/stanford_a2a1622b3c0559b751feb98e.jpg",
+    "reference": "Toyota",
+    "prediction": "Toyota",
+    "confidence": 0.9972096085548401
+  },
+  {
+    "image": "images/stanford_a83bdecebcfa239d0f8e70f7.jpg",
+    "reference": "Toyota",
+    "prediction": "Toyota",
+    "confidence": 0.8179004788398743
+  },
+  {
+    "image": "images/stanford_a7a4b31067ad3e7294b03aae.jpg",
+    "reference": "Toyota",
+    "prediction": "Toyota",
+    "confidence": 0.9971262812614441
+  },
+  {
+    "image": "images/stanford_40e137de019e05b6bf112642.jpg",
+    "reference": "Toyota",
+    "prediction": "Toyota",
+    "confidence": 0.9906105399131775
+  },
+  {
+    "image": "images/stanford_cfefb31ac568b5e80eca159c.jpg",
+    "reference": "Toyota",
+    "prediction": "Toyota",
+    "confidence": 0.8544929027557373
+  },
+  {
+    "image": "images/stanford_60afb94dee8da345d34647a4.jpg",
+    "reference": "Toyota",
+    "prediction": "Toyota",
+    "confidence": 0.43147900700569153
+  },
+  {
+    "image": "images/stanford_2881983984ae4703737d1cf3.jpg",
+    "reference": "Toyota",
+    "prediction": "Toyota",
+    "confidence": 0.9179657697677612
+  },
+  {
+    "image": "images/stanford_c0f75f2d759611198e0abc0f.jpg",
+    "reference": "Toyota",
+    "prediction": "Toyota",
+    "confidence": 0.9923050999641418
+  },
+  {
+    "image": "images/stanford_35abe88105a444a38cf30576.jpg",
+    "reference": "Volkswagen",
+    "prediction": "Volkswagen",
+    "confidence": 0.3760623037815094
+  },
+  {
+    "image": "images/stanford_26d6fa0ed4af5002da048169.jpg",
+    "reference": "Volkswagen",
+    "prediction": "Toyota",
+    "confidence": 0.2268311083316803
+  },
+  {
+    "image": "images/stanford_b7afbe6fe3a2922aa1c8c507.jpg",
+    "reference": "Volkswagen",
+    "prediction": "Volkswagen",
+    "confidence": 0.9808752536773682
+  },
+  {
+    "image": "images/stanford_5aafa8dcd82884350f2d1e99.jpg",
+    "reference": "Volkswagen",
+    "prediction": "Volkswagen",
+    "confidence": 0.9887872338294983
+  },
+  {
+    "image": "images/stanford_46e536767e3ed280a9fca74f.jpg",
+    "reference": "Volkswagen",
+    "prediction": "Volkswagen",
+    "confidence": 0.8492236137390137
+  },
+  {
+    "image": "images/stanford_809edd178857d2f298623df4.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.7905431985855103
+  },
+  {
+    "image": "images/stanford_dd3aebed751d9d80a1377217.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9671656489372253
+  },
+  {
+    "image": "images/stanford_d9d2005cad751efbce048a54.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9488224983215332
+  },
+  {
+    "image": "images/stanford_822a37d4d2060de2437bf664.jpg",
+    "reference": "Volkswagen",
+    "prediction": "Volkswagen",
+    "confidence": 0.9803621768951416
+  },
+  {
+    "image": "images/stanford_bb3616a8c3d673134dd25c99.jpg",
+    "reference": "Volkswagen",
+    "prediction": "Volkswagen",
+    "confidence": 0.9555190801620483
+  },
+  {
+    "image": "images/stanford_d37274f51a8fa552f12c5920.jpg",
+    "reference": "Volkswagen",
+    "prediction": "Volkswagen",
+    "confidence": 0.63935786485672
+  },
+  {
+    "image": "images/stanford_87b9e963390110c00801b3b2.jpg",
+    "reference": "Volkswagen",
+    "prediction": "Volkswagen",
+    "confidence": 0.9703904390335083
+  },
+  {
+    "image": "images/stanford_3da0879f9232c8aeb65963ab.jpg",
+    "reference": "Volkswagen",
+    "prediction": "Volkswagen",
+    "confidence": 0.9578477144241333
+  },
+  {
+    "image": "images/stanford_045f172739ac91cd9296e987.jpg",
+    "reference": "Volkswagen",
+    "prediction": "Volkswagen",
+    "confidence": 0.9973886609077454
+  },
+  {
+    "image": "images/stanford_ef4ce8ecbf4cee0f9ecc5540.jpg",
+    "reference": "Volkswagen",
+    "prediction": "Volkswagen",
+    "confidence": 0.46984100341796875
+  },
+  {
+    "image": "images/stanford_f6ef004da908ec9164e54f60.jpg",
+    "reference": "Volkswagen",
+    "prediction": "Volkswagen",
+    "confidence": 0.693059504032135
+  },
+  {
+    "image": "images/stanford_f4b8ab298b5d23680f42276d.jpg",
+    "reference": "Volkswagen",
+    "prediction": "Volkswagen",
+    "confidence": 0.6108936071395874
+  },
+  {
+    "image": "images/stanford_b76c71b400225b024b78f28e.jpg",
+    "reference": "Volkswagen",
+    "prediction": "Volkswagen",
+    "confidence": 0.8628259897232056
+  },
+  {
+    "image": "images/stanford_17c11f2ef231a3678a065aa4.jpg",
+    "reference": "Volkswagen",
+    "prediction": "Volkswagen",
+    "confidence": 0.9642194509506226
+  },
+  {
+    "image": "images/stanford_d93532fff4180fe57c8f8ae8.jpg",
+    "reference": "Volkswagen",
+    "prediction": "Volkswagen",
+    "confidence": 0.38745883107185364
+  },
+  {
+    "image": "images/stanford_e1e5bd7f7be0c16446d02f9e.jpg",
+    "reference": "Volkswagen",
+    "prediction": "Volkswagen",
+    "confidence": 0.6289040446281433
+  },
+  {
+    "image": "images/stanford_40597f8b7307f61bed2a9d63.jpg",
+    "reference": "Volkswagen",
+    "prediction": "Volkswagen",
+    "confidence": 0.9908255934715271
+  },
+  {
+    "image": "images/stanford_d2c524e3072d7913d5eb1105.jpg",
+    "reference": "Volkswagen",
+    "prediction": "Volkswagen",
+    "confidence": 0.9417321085929871
+  },
+  {
+    "image": "images/stanford_3fadc89bfd00ab6f932cf1df.jpg",
+    "reference": "Volkswagen",
+    "prediction": "Volkswagen",
+    "confidence": 0.6484978795051575
+  },
+  {
+    "image": "images/stanford_293ba5e3c50b81fb1721c4fa.jpg",
+    "reference": "Volkswagen",
+    "prediction": "Volkswagen",
+    "confidence": 0.9885983467102051
+  },
+  {
+    "image": "images/stanford_f4a12e3e7881b97e72775eb4.jpg",
+    "reference": "Volkswagen",
+    "prediction": "Volkswagen",
+    "confidence": 0.6745476126670837
+  },
+  {
+    "image": "images/stanford_dbb42c246f437dafa6b89429.jpg",
+    "reference": "Volkswagen",
+    "prediction": "Volkswagen",
+    "confidence": 0.9936756491661072
+  },
+  {
+    "image": "images/stanford_e6a04262909d834517b4fa6a.jpg",
+    "reference": "Volvo",
+    "prediction": "Volvo",
+    "confidence": 0.7359321713447571
+  },
+  {
+    "image": "images/stanford_e7746331f7126373ed929776.jpg",
+    "reference": "Volvo",
+    "prediction": "Volvo",
+    "confidence": 0.88316810131073
+  },
+  {
+    "image": "images/stanford_d197257b5a532954d54cb840.jpg",
+    "reference": "Volvo",
+    "prediction": "Nissan",
+    "confidence": 0.36661297082901
+  },
+  {
+    "image": "images/stanford_de08bdc0aaecd3ab40a20a4e.jpg",
+    "reference": "Volvo",
+    "prediction": "Nissan",
+    "confidence": 0.8270949721336365
+  },
+  {
+    "image": "images/stanford_07afd8c4500c6bddfdf77c55.jpg",
+    "reference": "Volvo",
+    "prediction": "Volkswagen",
+    "confidence": 0.30770784616470337
+  },
+  {
+    "image": "images/stanford_4a20805edfb08e668f9ea4bb.jpg",
+    "reference": "Volvo",
+    "prediction": "Volvo",
+    "confidence": 0.9796314835548401
+  },
+  {
+    "image": "images/stanford_3c9efc7b56b02e3f922b78fd.jpg",
+    "reference": "Volvo",
+    "prediction": "Volvo",
+    "confidence": 0.9659193754196167
+  },
+  {
+    "image": "images/stanford_af37a25015f6bb727be4c775.jpg",
+    "reference": "Volvo",
+    "prediction": "Hyundai",
+    "confidence": 0.5499693751335144
+  },
+  {
+    "image": "images/stanford_d6811354156e58da14b8c8b2.jpg",
+    "reference": "Volvo",
+    "prediction": "Volvo",
+    "confidence": 0.9934757351875305
+  },
+  {
+    "image": "images/stanford_46ce51a2ebf94a87935f6ae6.jpg",
+    "reference": "Volvo",
+    "prediction": "Volvo",
+    "confidence": 0.9865707755088806
+  },
+  {
+    "image": "images/stanford_805cd378ab2afc099dcb0082.jpg",
+    "reference": "Volvo",
+    "prediction": "Volvo",
+    "confidence": 0.9504382610321045
+  },
+  {
+    "image": "images/stanford_d1a3693e64ac25b240203c16.jpg",
+    "reference": "Volvo",
+    "prediction": "Volvo",
+    "confidence": 0.9610865116119385
+  },
+  {
+    "image": "images/stanford_30361472211a7b37ab456b91.jpg",
+    "reference": "Volvo",
+    "prediction": "Volvo",
+    "confidence": 0.4466945230960846
+  },
+  {
+    "image": "images/stanford_5117e3ea9e45c2b03ccd4f76.jpg",
+    "reference": "Volvo",
+    "prediction": "Volvo",
+    "confidence": 0.9872692823410034
+  },
+  {
+    "image": "images/stanford_482b1436beb251b9c66e7edf.jpg",
+    "reference": "Volvo",
+    "prediction": "Volvo",
+    "confidence": 0.9067006707191467
+  },
+  {
+    "image": "images/stanford_7c74b8a584e259b76f986cdc.jpg",
+    "reference": "Volvo",
+    "prediction": "Ford",
+    "confidence": 0.524744987487793
+  },
+  {
+    "image": "images/stanford_d42d82e311a25b9c434ffa8e.jpg",
+    "reference": "Volvo",
+    "prediction": "Volvo",
+    "confidence": 0.7573151588439941
+  },
+  {
+    "image": "images/stanford_b54ffa03583b479594b0b919.jpg",
+    "reference": "Volvo",
+    "prediction": "Volvo",
+    "confidence": 0.9093531370162964
+  },
+  {
+    "image": "images/stanford_e66b8ec26e7827a4d930ed87.jpg",
+    "reference": "Volvo",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.22319558262825012
+  },
+  {
+    "image": "images/stanford_2f350a9ab6fbb9643e98a02d.jpg",
+    "reference": "Volvo",
+    "prediction": "Volvo",
+    "confidence": 0.9477402567863464
+  },
+  {
+    "image": "images/stanford_fc5e72684bb92e5032d76bc8.jpg",
+    "reference": "Volvo",
+    "prediction": "Volvo",
+    "confidence": 0.9949352145195007
+  },
+  {
+    "image": "images/stanford_1db6e6dca171de5735b49dcb.jpg",
+    "reference": "Volvo",
+    "prediction": "Volvo",
+    "confidence": 0.9762899279594421
+  },
+  {
+    "image": "images/stanford_67a8bc903f76cffdc7a843b8.jpg",
+    "reference": "Volvo",
+    "prediction": "Volvo",
+    "confidence": 0.8426513671875
+  },
+  {
+    "image": "images/stanford_e2a76c9548610169daa20447.jpg",
+    "reference": "Volvo",
+    "prediction": "Volvo",
+    "confidence": 0.8527740836143494
+  },
+  {
+    "image": "images/stanford_e283b11f66bbde16c1267ac0.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.7070090174674988
+  },
+  {
+    "image": "images/stanford_56b197a52afc37a29d4c9486.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9766198396682739
+  },
+  {
+    "image": "images/stanford_075bf33e703e7039ad935b87.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9844485521316528
+  },
+  {
+    "image": "images/stanford_aab869ff23b7881f24f299a7.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.984673261642456
+  },
+  {
+    "image": "images/stanford_156711e9a59a038a94cc599e.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.7300451993942261
+  },
+  {
+    "image": "images/stanford_b63d15847c81cf79389dd72d.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9671638011932373
+  },
+  {
+    "image": "images/stanford_a2dea78287c335c676226c3a.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9274929761886597
+  },
+  {
+    "image": "images/stanford_ad5563a428dc7b0169a0432c.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.8908533453941345
+  },
+  {
+    "image": "images/stanford_458f5bdb1e9d1906bbad1ade.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9209116101264954
+  },
+  {
+    "image": "images/stanford_fceed21860d55fa1498cf08b.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9866487383842468
+  },
+  {
+    "image": "images/stanford_7a8ccf5f19b3e8568fd9bea1.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9157530069351196
+  },
+  {
+    "image": "images/stanford_1be1ac83ecbbf8ac076a83cf.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9567812085151672
+  },
+  {
+    "image": "images/stanford_ef609306fb7d9452fa789e5e.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9574549198150635
+  },
+  {
+    "image": "images/stanford_e167007537722b59ee51330d.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9046378135681152
+  },
+  {
+    "image": "images/stanford_2d474ed8e455ecd8fb4c7067.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9825611710548401
+  },
+  {
+    "image": "images/stanford_6ffc75c027689b15a73f20c8.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9618580341339111
+  },
+  {
+    "image": "images/stanford_83dfbf112a2ff965eda4a738.jpg",
+    "reference": "Audi",
+    "prediction": "BMW",
+    "confidence": 0.9757460951805115
+  },
+  {
+    "image": "images/stanford_9bd58e7457bf1274a3e591d4.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9685441255569458
+  },
+  {
+    "image": "images/stanford_812831b9004ccb6742834dd5.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.975136399269104
+  },
+  {
+    "image": "images/stanford_141326fe600a3cb6e3e35e02.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.49177423119544983
+  },
+  {
+    "image": "images/stanford_7a76b0f0c0823d1bfb61a01d.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9399279356002808
+  },
+  {
+    "image": "images/stanford_fa6b6b1b62bfe0e03cde11a8.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.7833577394485474
+  },
+  {
+    "image": "images/stanford_298afa68b6e75f2d564fbc76.jpg",
+    "reference": "Audi",
+    "prediction": "Ford",
+    "confidence": 0.5350984930992126
+  },
+  {
+    "image": "images/stanford_f46d90c3d1ccfe72a87bb114.jpg",
+    "reference": "Audi",
+    "prediction": "Chevrolet",
+    "confidence": 0.44629770517349243
+  },
+  {
+    "image": "images/stanford_b0f8318fb8e16b02b6adc578.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.8404029607772827
+  },
+  {
+    "image": "images/stanford_7c0f7938eab34db81ec77912.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.8554691076278687
+  },
+  {
+    "image": "images/stanford_17398f34e31b2813de706e3c.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.8204866647720337
+  },
+  {
+    "image": "images/stanford_aeef13fb9411f3ab9fd32270.jpg",
+    "reference": "Audi",
+    "prediction": "Ford",
+    "confidence": 0.56380695104599
+  },
+  {
+    "image": "images/stanford_0294191ceb3a2ed4615f8e46.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9084502458572388
+  },
+  {
+    "image": "images/stanford_7f8dd3502213a6f874ca9c65.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9837994575500488
+  },
+  {
+    "image": "images/stanford_3c65fdbabd6fa2a0dae076ab.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.8041834235191345
+  },
+  {
+    "image": "images/stanford_0104d0e681b823915ff53784.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9219114780426025
+  },
+  {
+    "image": "images/stanford_3c462d65a7f5022e4f69ff6e.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9709326028823853
+  },
+  {
+    "image": "images/stanford_f5e7a34cfd2cbbfddd9b99ab.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.7478784918785095
+  },
+  {
+    "image": "images/stanford_b7df993b24804926453e89ac.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.970099687576294
+  },
+  {
+    "image": "images/stanford_ad26770b5cfd1f8df5d8b77f.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9513171315193176
+  },
+  {
+    "image": "images/stanford_a79896c7f19c574aa26f2fdc.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.8821935057640076
+  },
+  {
+    "image": "images/stanford_75b3b85cd840cc4d91f434d3.jpg",
+    "reference": "Audi",
+    "prediction": "Chevrolet",
+    "confidence": 0.629547119140625
+  },
+  {
+    "image": "images/stanford_5b180843cd6f60ac55fa8b3c.jpg",
+    "reference": "Audi",
+    "prediction": "Audi",
+    "confidence": 0.9871224164962769
+  },
+  {
+    "image": "images/stanford_a456ea426c3ef6970ac8540b.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.8965125679969788
+  },
+  {
+    "image": "images/stanford_d48322595fa3be413f10c04c.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9858412742614746
+  },
+  {
+    "image": "images/stanford_2313d3510bae9781c9ba7440.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.23124541342258453
+  },
+  {
+    "image": "images/stanford_d16ff0df94d0bb19e93c353d.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9799824953079224
+  },
+  {
+    "image": "images/stanford_44aaa7eb94891b35095d5146.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9879943132400513
+  },
+  {
+    "image": "images/stanford_2d52510644ecdd206658f240.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9850307106971741
+  },
+  {
+    "image": "images/stanford_5c3fdf3f9ad84cd61beb0ef7.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9789305925369263
+  },
+  {
+    "image": "images/stanford_36f29b016ca44fdda5753189.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.608928918838501
+  },
+  {
+    "image": "images/stanford_bf21b2316934052e3c76fdd8.jpg",
+    "reference": "BMW",
+    "prediction": "Audi",
+    "confidence": 0.38967466354370117
+  },
+  {
+    "image": "images/stanford_b7f2fa4568a04acbd43b14eb.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9492332935333252
+  },
+  {
+    "image": "images/stanford_263e0032644a015495039017.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.4455893337726593
+  },
+  {
+    "image": "images/stanford_21034d40822b4a74c5c649d6.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9809330701828003
+  },
+  {
+    "image": "images/stanford_696db6a2526f1f1f05165aaf.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9583013653755188
+  },
+  {
+    "image": "images/stanford_fd9e776b18c6ed2e4c2ba467.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.8739146590232849
+  },
+  {
+    "image": "images/stanford_e08760095450fb47b57e3432.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9242835640907288
+  },
+  {
+    "image": "images/stanford_6eb150e690728549381958e4.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9170572757720947
+  },
+  {
+    "image": "images/stanford_88168949f41bb9558e8776ba.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.5931763052940369
+  },
+  {
+    "image": "images/stanford_8548b997db33f94796e0159d.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9365987181663513
+  },
+  {
+    "image": "images/stanford_cbef3682338eadb01b4b677c.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.8269113302230835
+  },
+  {
+    "image": "images/stanford_a546454118aa1382c84fa168.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.8974588513374329
+  },
+  {
+    "image": "images/stanford_ea909b2a7ef8d77cabcbc57a.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.34297552704811096
+  },
+  {
+    "image": "images/stanford_d023119505666003e32b44a9.jpg",
+    "reference": "BMW",
+    "prediction": "Ford",
+    "confidence": 0.3880229592323303
+  },
+  {
+    "image": "images/stanford_7b805a40258d1445c7222b0a.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9800286293029785
+  },
+  {
+    "image": "images/stanford_66ea7b90b6e8c00e7b3e6991.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.6119070649147034
+  },
+  {
+    "image": "images/stanford_ea15a0367ed9e364641b30ef.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.8664520382881165
+  },
+  {
+    "image": "images/stanford_728491526bcb5f5a42ddcf3c.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9294822812080383
+  },
+  {
+    "image": "images/stanford_228efcd2d2b2b7c307adf722.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9288856983184814
+  },
+  {
+    "image": "images/stanford_a5cc5ef69da6e5aac1834124.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.8851759433746338
+  },
+  {
+    "image": "images/stanford_d36ed0472f41794f66c875ea.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.7111697196960449
+  },
+  {
+    "image": "images/stanford_f93bf3b2dff83f2e7805b69a.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9773995876312256
+  },
+  {
+    "image": "images/stanford_e92a880ec32cc3008f9d28c1.jpg",
+    "reference": "BMW",
+    "prediction": "Honda",
+    "confidence": 0.4290105402469635
+  },
+  {
+    "image": "images/stanford_4b5c89ecde829c5f8c7fecc2.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9212040305137634
+  },
+  {
+    "image": "images/stanford_dbf0489b830d14d2f142d931.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.8733924031257629
+  },
+  {
+    "image": "images/stanford_201379fac90e4aef25923fb9.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9826823472976685
+  },
+  {
+    "image": "images/stanford_65532936f749eda8b678f45d.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.6949301958084106
+  },
+  {
+    "image": "images/stanford_617a62129c4e3329eec21611.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9758220911026001
+  },
+  {
+    "image": "images/stanford_eb5b43b8a37ac0641b36bd9c.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9862557053565979
+  },
+  {
+    "image": "images/stanford_32c92c8b24c3231d80bada65.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9585038423538208
+  },
+  {
+    "image": "images/stanford_81dbb48e1f094a1482cc44ae.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9709537029266357
+  },
+  {
+    "image": "images/stanford_f315b0387863fb153335ce41.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9525628089904785
+  },
+  {
+    "image": "images/stanford_8082109227b9734ae3b7940c.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.7100033760070801
+  },
+  {
+    "image": "images/stanford_a715e95f6d7d783441f9b393.jpg",
+    "reference": "BMW",
+    "prediction": "Hyundai",
+    "confidence": 0.3343750536441803
+  },
+  {
+    "image": "images/stanford_0e3cebde2f47c629deef81f2.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.8842615485191345
+  },
+  {
+    "image": "images/stanford_b0b3b17218a0893aa8170b70.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9929403066635132
+  },
+  {
+    "image": "images/stanford_9044d0ccaf80dc78a07d3cbf.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.4905054271221161
+  },
+  {
+    "image": "images/stanford_95e4feb3bb5d2a2ae1e313a0.jpg",
+    "reference": "BMW",
+    "prediction": "Ford",
+    "confidence": 0.583045482635498
+  },
+  {
+    "image": "images/stanford_8874cc9aa206d846a43f1bc8.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.8865028619766235
+  },
+  {
+    "image": "images/stanford_e213ccb27307808f18f94d50.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9562524557113647
+  },
+  {
+    "image": "images/stanford_3823eb3950c142b812f699be.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.8803645372390747
+  },
+  {
+    "image": "images/stanford_2758fb66365b040e96185da2.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.862485945224762
+  },
+  {
+    "image": "images/stanford_f9f2e68a8e1041f431e0cf9a.jpg",
+    "reference": "BMW",
+    "prediction": "Ford",
+    "confidence": 0.47001516819000244
+  },
+  {
+    "image": "images/stanford_564e22b7beb8aaf31c6a6346.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9594900012016296
+  },
+  {
+    "image": "images/stanford_cbed470f3e5b1d2a188d69bb.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9668943285942078
+  },
+  {
+    "image": "images/stanford_38ad86239c7495a5e4d9d706.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9888736009597778
+  },
+  {
+    "image": "images/stanford_4fb79b5a97a57f8a28433b70.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9670500755310059
+  },
+  {
+    "image": "images/stanford_9e9bf8f627d6dcc1934be353.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.850520133972168
+  },
+  {
+    "image": "images/stanford_951eeefad483256dd30d1dfd.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9598352909088135
+  },
+  {
+    "image": "images/stanford_74315195401d177bff6d5229.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.900847852230072
+  },
+  {
+    "image": "images/stanford_7af15c9bf9c2a3397adb42bd.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9875392913818359
+  },
+  {
+    "image": "images/stanford_5a867b60557b5ca051501b82.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.7820838689804077
+  },
+  {
+    "image": "images/stanford_80e3f4f25d77a06d497781ae.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9796756505966187
+  },
+  {
+    "image": "images/stanford_c4308159a1f23dc8084de40c.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9897770285606384
+  },
+  {
+    "image": "images/stanford_ea7c720ee5a54cb0d1e84979.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9551050066947937
+  },
+  {
+    "image": "images/stanford_119f8e4650a4885763c86439.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.48154154419898987
+  },
+  {
+    "image": "images/stanford_c50101d440d02bf1fa321377.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9144505858421326
+  },
+  {
+    "image": "images/stanford_ce492b95ec1817f54f3eb0b0.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.8564001321792603
+  },
+  {
+    "image": "images/stanford_1d4196f91d329f0c7ce3dbd8.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9720097184181213
+  },
+  {
+    "image": "images/stanford_97327b3beac6d4b6ce0abc2c.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9864346981048584
+  },
+  {
+    "image": "images/stanford_7fa4a7787d2cc0b3d459b462.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.8555363416671753
+  },
+  {
+    "image": "images/stanford_9821ece5aa2cef3229138447.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9064154028892517
+  },
+  {
+    "image": "images/stanford_a407bc8dba142362aa3f9b49.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.3051159977912903
+  },
+  {
+    "image": "images/stanford_2e20ac242f7be02a5ef56f99.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.96366286277771
+  },
+  {
+    "image": "images/stanford_af81405f4ac5c42051724b2a.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9908199906349182
+  },
+  {
+    "image": "images/stanford_3353c04af8b75b64456af4d5.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9741593599319458
+  },
+  {
+    "image": "images/stanford_062cbad1a55a6b0ccfa2e9d1.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9804387092590332
+  },
+  {
+    "image": "images/stanford_139e87a7051b6e36976234a3.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9450063705444336
+  },
+  {
+    "image": "images/stanford_84e259ac842ec106d66d414e.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9012858271598816
+  },
+  {
+    "image": "images/stanford_ac7515410adb74c4cd0544d1.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9875407814979553
+  },
+  {
+    "image": "images/stanford_6d376d4f44a88084df81e3b7.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.932993471622467
+  },
+  {
+    "image": "images/stanford_44eb6e1fbdf5e697ee6021cd.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9894435405731201
+  },
+  {
+    "image": "images/stanford_0981934c57a5251b0064bc99.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9559071063995361
+  },
+  {
+    "image": "images/stanford_868182fb8cc6df8fc4adcb39.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9329036474227905
+  },
+  {
+    "image": "images/stanford_888b65b954796d10521e1298.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9854457378387451
+  },
+  {
+    "image": "images/stanford_048fdd8467ff510ca8708675.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9342864751815796
+  },
+  {
+    "image": "images/stanford_36760d56ba8296815c0e0727.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.8477901220321655
+  },
+  {
+    "image": "images/stanford_56f431bd00d7f1cd91bbdcf5.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9553051590919495
+  },
+  {
+    "image": "images/stanford_72f6aa2eb624b6d36e0d7516.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.8693531155586243
+  },
+  {
+    "image": "images/stanford_cc5806826a01ed1d89e397f8.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9790961742401123
+  },
+  {
+    "image": "images/stanford_7aceb5cbeafa330eec43b1b3.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.7899044752120972
+  },
+  {
+    "image": "images/stanford_8671bf7e491e4680351fc344.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.8750631213188171
+  },
+  {
+    "image": "images/stanford_1ab375e85b588177fd723e4a.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.6686298251152039
+  },
+  {
+    "image": "images/stanford_991a0aadb2026fc6ec4acb76.jpg",
+    "reference": "BMW",
+    "prediction": "Chevrolet",
+    "confidence": 0.9195318818092346
+  },
+  {
+    "image": "images/stanford_40fdc06492b0070cd5afc7cf.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9812899231910706
+  },
+  {
+    "image": "images/stanford_74fa128a61a6179dfd55a8c9.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9261372685432434
+  },
+  {
+    "image": "images/stanford_3004711782426826d012db4b.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.945086658000946
+  },
+  {
+    "image": "images/stanford_0eee76ba4b9f9114e1bc0e7e.jpg",
+    "reference": "BMW",
+    "prediction": "BMW",
+    "confidence": 0.9776048064231873
+  },
+  {
+    "image": "images/stanford_1befca1e94b4fb497d31f413.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.8353790044784546
+  },
+  {
+    "image": "images/stanford_43569b34fd15e3b9a5400d30.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9402492046356201
+  },
+  {
+    "image": "images/stanford_683490473be4a3bf1db389b8.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.932898759841919
+  },
+  {
+    "image": "images/stanford_39d5821b59f70a00dd3b2339.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9768834710121155
+  },
+  {
+    "image": "images/stanford_7032cb53432d444c6bbdcb7a.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.7002265453338623
+  },
+  {
+    "image": "images/stanford_ee820296ee6705984e7441db.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9841237664222717
+  },
+  {
+    "image": "images/stanford_0d21cd390e1858f1d3b6e56d.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.911613404750824
+  },
+  {
+    "image": "images/stanford_b59e9ce1571fb609248babda.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9892719984054565
+  },
+  {
+    "image": "images/stanford_726cce464d4091a4971c8991.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.950872004032135
+  },
+  {
+    "image": "images/stanford_bf1b0e6d8eb631fe628d8b1a.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9903371334075928
+  },
+  {
+    "image": "images/stanford_f5a863de10047fce57935c33.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9854491353034973
+  },
+  {
+    "image": "images/stanford_9aa251da04755d17dd6b986e.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.8845989108085632
+  },
+  {
+    "image": "images/stanford_6672bd34fdd73b8e04336fa8.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9622405171394348
+  },
+  {
+    "image": "images/stanford_4d27701f240d9aef14744900.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9242966771125793
+  },
+  {
+    "image": "images/stanford_147f512b55371359b15105bf.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.6961877346038818
+  },
+  {
+    "image": "images/stanford_50e19bd299daa5094d5cc931.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.957256019115448
+  },
+  {
+    "image": "images/stanford_72df780bde0729b75a80eabe.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9836508631706238
+  },
+  {
+    "image": "images/stanford_2d968c84ee2e7a0fd1ad7fb7.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.7229441404342651
+  },
+  {
+    "image": "images/stanford_73e15b97e65a3768965faf97.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9570531249046326
+  },
+  {
+    "image": "images/stanford_1350809dd8bc34be4a244bad.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9154626727104187
+  },
+  {
+    "image": "images/stanford_88293e0b723672513ae92230.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.8911665081977844
+  },
+  {
+    "image": "images/stanford_6edbaea4a89e1e1cddc36822.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.8455864191055298
+  },
+  {
+    "image": "images/stanford_0a821346f3dfda4e65eda0c7.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9797548651695251
+  },
+  {
+    "image": "images/stanford_467ee3d49188eddbf4237ed6.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.8405390977859497
+  },
+  {
+    "image": "images/stanford_b997bb51b14426b71665f845.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.6323995590209961
+  },
+  {
+    "image": "images/stanford_d0e5f70586dc59bc368cdf13.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.969417154788971
+  },
+  {
+    "image": "images/stanford_c9c03a6792735b626ebbf787.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9013665318489075
+  },
+  {
+    "image": "images/stanford_e86730a7b3d128939623961e.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9789755940437317
+  },
+  {
+    "image": "images/stanford_f1e81bc481cd8913a168aa45.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9580994248390198
+  },
+  {
+    "image": "images/stanford_f734a2c5620afc4c20f2a7a8.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9140593409538269
+  },
+  {
+    "image": "images/stanford_e07cce99be2880a43f2b7a21.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9696444869041443
+  },
+  {
+    "image": "images/stanford_7911b36885baaf15fd29828d.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9958665370941162
+  },
+  {
+    "image": "images/stanford_73c76fe3253e2f7dac103359.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.8431267738342285
+  },
+  {
+    "image": "images/stanford_607a7e8a2d8080c7ac134e8b.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.23832960426807404
+  },
+  {
+    "image": "images/stanford_7b30c812aebb58a3374ef164.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9625542163848877
+  },
+  {
+    "image": "images/stanford_7d4df64751731c0106e7341f.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.8383378386497498
+  },
+  {
+    "image": "images/stanford_d3c5193ecc89e4fabbf7ef10.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Toyota",
+    "confidence": 0.2884838581085205
+  },
+  {
+    "image": "images/stanford_4b4b48b2d45d268a929e3a06.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.8584883213043213
+  },
+  {
+    "image": "images/stanford_664ac91596042b28dd2b8bb1.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.8832154273986816
+  },
+  {
+    "image": "images/stanford_f393911447290a251f931638.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9818644523620605
+  },
+  {
+    "image": "images/stanford_e71bcf26de4ccc46a83f9dbd.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Ford",
+    "confidence": 0.9116870164871216
+  },
+  {
+    "image": "images/stanford_bde8b28969e46bbb689fe038.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9597725868225098
+  },
+  {
+    "image": "images/stanford_3b52431f4174f5261f7d8db5.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.5180116891860962
+  },
+  {
+    "image": "images/stanford_15be38d268d21690ce50bdb2.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.761124849319458
+  },
+  {
+    "image": "images/stanford_3f80c801207b11a1d6ef90bd.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.962810218334198
+  },
+  {
+    "image": "images/stanford_3f4066494f66c2b71264aba1.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Ford",
+    "confidence": 0.3365338146686554
+  },
+  {
+    "image": "images/stanford_acccd9497be5019564faca1f.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9455813765525818
+  },
+  {
+    "image": "images/stanford_7f6bf7a02b8c34101099dceb.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.7152323126792908
+  },
+  {
+    "image": "images/stanford_a544f25680d1ded34cf06747.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9565105438232422
+  },
+  {
+    "image": "images/stanford_dfeaf739bd9ca878e55f94b4.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9790105819702148
+  },
+  {
+    "image": "images/stanford_f0faa8199aba10461e654334.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9062845706939697
+  },
+  {
+    "image": "images/stanford_152b6959592de939eb274d1f.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.5260857939720154
+  },
+  {
+    "image": "images/stanford_661104f337952117f22afdfe.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9002792835235596
+  },
+  {
+    "image": "images/stanford_26eeff31f033c27c698da855.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.6814660429954529
+  },
+  {
+    "image": "images/stanford_f34e2beac4a7654b340fa053.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9388715624809265
+  },
+  {
+    "image": "images/stanford_edfd4e9e98b431dfc82c1769.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9363653659820557
+  },
+  {
+    "image": "images/stanford_c2a2e5f7242195c78940c936.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9431387186050415
+  },
+  {
+    "image": "images/stanford_61dc4fed2b315dcf157f609b.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.6680704951286316
+  },
+  {
+    "image": "images/stanford_b4b054c7146b78aaffdf6fad.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9510565400123596
+  },
+  {
+    "image": "images/stanford_bdaadad3e69e0fabf25d52e8.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Hyundai",
+    "confidence": 0.7374064922332764
+  },
+  {
+    "image": "images/stanford_80ca79a14452b302f79dd4ae.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9756098985671997
+  },
+  {
+    "image": "images/stanford_7fb3de6035dea3354a3e2841.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9527815580368042
+  },
+  {
+    "image": "images/stanford_a0486b903ec038756a86dc3c.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9502737522125244
+  },
+  {
+    "image": "images/stanford_e29b9890eb5a27b94834c769.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9496264457702637
+  },
+  {
+    "image": "images/stanford_b608e1055d656955a1539666.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9819595217704773
+  },
+  {
+    "image": "images/stanford_bf0f1b1fe54ce2d1f802abba.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.5172851085662842
+  },
+  {
+    "image": "images/stanford_e0675e02c740f01362f1fd70.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.31912484765052795
+  },
+  {
+    "image": "images/stanford_220001281c7b370c92fcff25.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.966206967830658
+  },
+  {
+    "image": "images/stanford_b912051bcdd7264b0384c0e4.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Hyundai",
+    "confidence": 0.6614200472831726
+  },
+  {
+    "image": "images/stanford_553a48d03689ded0a7ef2710.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.438290536403656
+  },
+  {
+    "image": "images/stanford_14549843d0915775e16ef6a9.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.6001855731010437
+  },
+  {
+    "image": "images/stanford_cb351f8fc733caac2b21aa91.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.722054123878479
+  },
+  {
+    "image": "images/stanford_5f4d05eb3730b1e249d5b0f9.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Toyota",
+    "confidence": 0.21820569038391113
+  },
+  {
+    "image": "images/stanford_9a124fc697261280b7aab37d.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.7076464295387268
+  },
+  {
+    "image": "images/stanford_fd7af31c9e7de749eab2230a.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.33225443959236145
+  },
+  {
+    "image": "images/stanford_40a68b6efa076d7f25ba640b.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9667397737503052
+  },
+  {
+    "image": "images/stanford_4103d776ab35699e9c2920ff.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Mercedes-Benz",
+    "confidence": 0.7263534665107727
+  },
+  {
+    "image": "images/stanford_720c95b81da48a30720b1837.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.5762157440185547
+  },
+  {
+    "image": "images/stanford_03fee902a38b7658bbdc55a6.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9859345555305481
+  },
+  {
+    "image": "images/stanford_18f91f23056c3e3c2aee54b1.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9784881472587585
+  },
+  {
+    "image": "images/stanford_6f08e0c2768b497fa8e6731b.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.94487065076828
+  },
+  {
+    "image": "images/stanford_60ad911a938ead0b2ffb46e4.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9951353669166565
+  },
+  {
+    "image": "images/stanford_8bbc71a6718473ea6d1ec638.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.5814903378486633
+  },
+  {
+    "image": "images/stanford_be85fa3811eea891df3fe140.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9680086374282837
+  },
+  {
+    "image": "images/stanford_733ac105759d67a74ab79885.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9728198647499084
+  },
+  {
+    "image": "images/stanford_99b538704b3a7ade82a02c49.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.4697217047214508
+  },
+  {
+    "image": "images/stanford_7fec45154ba7d132eead20ed.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9591143727302551
+  },
+  {
+    "image": "images/stanford_2b5bd0601e1f4ecd40b960b2.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9930570125579834
+  },
+  {
+    "image": "images/stanford_b016e92b50d091949840c5e7.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9618579149246216
+  },
+  {
+    "image": "images/stanford_a8f95934413ce440afc891d0.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9816287755966187
+  },
+  {
+    "image": "images/stanford_162db08ec35ff0b2edcfca71.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9289720058441162
+  },
+  {
+    "image": "images/stanford_02bccfd55f731894bdd111fc.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.982201874256134
+  },
+  {
+    "image": "images/stanford_fc9ada3f43e893d48b364010.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.975406289100647
+  },
+  {
+    "image": "images/stanford_c94c42e2cb63f2480c1d7412.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.931434154510498
+  },
+  {
+    "image": "images/stanford_e78b2186bfb9df06c7617c78.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.980044424533844
+  },
+  {
+    "image": "images/stanford_5cc74f31a254966716b3626f.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Ford",
+    "confidence": 0.552748441696167
+  },
+  {
+    "image": "images/stanford_7c4d96649de55b468dad3142.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.8239608407020569
+  },
+  {
+    "image": "images/stanford_a0dc1bb83dcd78d7f5c41659.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.8386751413345337
+  },
+  {
+    "image": "images/stanford_85009a9c3b58f32608da7875.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9664033055305481
+  },
+  {
+    "image": "images/stanford_ce28589797588a906796b078.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Volkswagen",
+    "confidence": 0.7702399492263794
+  },
+  {
+    "image": "images/stanford_614c2b14f7fe2d28ca54b73b.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.7300901412963867
+  },
+  {
+    "image": "images/stanford_71409d7198489b7a0d72e8b7.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.9712094664573669
+  },
+  {
+    "image": "images/stanford_e36eb79b0ca78dedf0a5ee04.jpg",
+    "reference": "Chevrolet",
+    "prediction": "BMW",
+    "confidence": 0.618323802947998
+  },
+  {
+    "image": "images/stanford_554e804f8f99e7406a4e196d.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.5309387445449829
+  },
+  {
+    "image": "images/stanford_262bcaf7087036213a1a827b.jpg",
+    "reference": "Chevrolet",
+    "prediction": "BMW",
+    "confidence": 0.4000381529331207
+  },
+  {
+    "image": "images/stanford_b19ac3afc4868fc29f375875.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.941493034362793
+  },
+  {
+    "image": "images/stanford_34d384bdcd3b64137233fd13.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.7136059403419495
+  },
+  {
+    "image": "images/stanford_2e90547f1b0b991296e4b9fe.jpg",
+    "reference": "Chevrolet",
+    "prediction": "Chevrolet",
+    "confidence": 0.8516338467597961
+  },
+  {
+    "image": "images/stanford_4e929a9be5ec7100a10e0fb5.jpg",
+    "reference": "Daewoo",
+    "prediction": "Daewoo",
+    "confidence": 0.9780463576316833
+  },
+  {
+    "image": "images/stanford_3733c33d47ab4158ee4a3f52.jpg",
+    "reference": "Daewoo",
+    "prediction": "Daewoo",
+    "confidence": 0.3606988489627838
+  },
+  {
+    "image": "images/stanford_ce69effe28b2c88d6b1f6040.jpg",
+    "reference": "Daewoo",
+    "prediction": "Daewoo",
+    "confidence": 0.9187012910842896
+  },
+  {
+    "image": "images/stanford_146521dc75787c42fa06af42.jpg",
+    "reference": "Daewoo",
+    "prediction": "Daewoo",
+    "confidence": 0.9931631088256836
+  },
+  {
+    "image": "images/stanford_c8f820502dd15c153605cc4e.jpg",
+    "reference": "Daewoo",
+    "prediction": "Ford",
+    "confidence": 0.8822102546691895
+  },
+  {
+    "image": "images/stanford_1b57949130910b7d1f47115a.jpg",
+    "reference": "Daewoo",
+    "prediction": "Ford",
+    "confidence": 0.29578065872192383
+  },
+  {
+    "image": "images/stanford_dcea00793a77158c2b2b8646.jpg",
+    "reference": "Daewoo",
+    "prediction": "Daewoo",
+    "confidence": 0.40882083773612976
+  },
+  {
+    "image": "images/stanford_5cfdec2fe75e673b17228729.jpg",
+    "reference": "Daewoo",
+    "prediction": "Daewoo",
+    "confidence": 0.4404747486114502
+  }
+]

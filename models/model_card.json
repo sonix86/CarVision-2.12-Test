@@ -1,0 +1,43 @@
+{
+  "owner": "София Рахматулаева",
+  "release": "1.2",
+  "brand_parameters": 1227573,
+  "brand_architecture": "MobileNetV3 Small + average/max pooling + 1152->256 Hardswish/dropout + 13-brand head",
+  "detector": "Faster R-CNN ResNet50 FPN v2 COCO (640/1024 px)",
+  "general_initialization": "ImageNet/COCO explicitly authorized by owner; no ready-made car-brand classifier",
+  "supported_brands": [
+    "Audi",
+    "BMW",
+    "Chevrolet",
+    "Daewoo",
+    "Ford",
+    "Honda",
+    "Hyundai",
+    "Mercedes-Benz",
+    "Nissan",
+    "Tesla",
+    "Toyota",
+    "Volkswagen",
+    "Volvo"
+  ],
+  "image_size": 160,
+  "colour": "Independently trained VCoR colour MLP over general ImageNet features and original RGB/HSV statistics",
+  "brand_test_accuracy": 0.8460009935419771,
+  "brand_test_images": 4026,
+  "brand_scope": "13 known brands, human annotated ground-truth car crops; not full-scene accuracy and not unknown-brand accuracy",
+  "own_tashkent_training_photos": 0,
+  "colour_test_accuracy": 0.9155251383781433,
+  "colour_test_images": 1314,
+  "colour_classes": [
+    "white",
+    "black",
+    "grey",
+    "red",
+    "blue",
+    "green",
+    "brown",
+    "yellow"
+  ],
+  "colour_source": "https://www.kaggle.com/datasets/landrykezebou/vcor-vehicle-color-recognition-dataset",
+  "ready_made_colour_model_used": false
+}

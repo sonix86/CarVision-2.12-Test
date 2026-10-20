@@ -1,0 +1,335 @@
+{
+  "source": "https://www.kaggle.com/datasets/landrykezebou/vcor-vehicle-color-recognition-dataset",
+  "classes": [
+    "white",
+    "black",
+    "grey",
+    "red",
+    "blue",
+    "green",
+    "brown",
+    "yellow"
+  ],
+  "train": 6210,
+  "validation": 1319,
+  "test": 1314,
+  "counts": {
+    "train": {
+      "brown": 1585,
+      "black": 404,
+      "blue": 738,
+      "green": 558,
+      "grey": 785,
+      "yellow": 1108,
+      "red": 633,
+      "white": 399
+    },
+    "validation": {
+      "brown": 337,
+      "black": 86,
+      "blue": 154,
+      "green": 120,
+      "grey": 167,
+      "yellow": 236,
+      "red": 135,
+      "white": 84
+    },
+    "test": {
+      "brown": 339,
+      "black": 84,
+      "blue": 156,
+      "green": 119,
+      "grey": 164,
+      "yellow": 237,
+      "red": 133,
+      "white": 82
+    }
+  },
+  "best_epoch": 16,
+  "best_validation_accuracy": 0.9279757142066956,
+  "test_accuracy": 0.9155251383781433,
+  "confusion_matrix": [
+    [
+      73,
+      1,
+      4,
+      0,
+      0,
+      0,
+      4,
+      0
+    ],
+    [
+      0,
+      75,
+      3,
+      0,
+      2,
+      0,
+      4,
+      0
+    ],
+    [
+      8,
+      4,
+      129,
+      0,
+      4,
+      1,
+      18,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      126,
+      0,
+      0,
+      0,
+      6
+    ],
+    [
+      1,
+      2,
+      0,
+      0,
+      152,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      2,
+      1,
+      0,
+      2,
+      112,
+      1,
+      1
+    ],
+    [
+      5,
+      4,
+      11,
+      0,
+      2,
+      3,
+      312,
+      2
+    ],
+    [
+      0,
+      0,
+      0,
+      4,
+      0,
+      0,
+      9,
+      224
+    ]
+  ],
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 0.6761696759821328,
+      "train_accuracy": 0.8293075684380032,
+      "validation_accuracy": 0.9067475199699402
+    },
+    {
+      "epoch": 2,
+      "loss": 0.4397461772732881,
+      "train_accuracy": 0.9127214170692431,
+      "validation_accuracy": 0.9067475199699402
+    },
+    {
+      "epoch": 3,
+      "loss": 0.38872967403676006,
+      "train_accuracy": 0.936231884057971,
+      "validation_accuracy": 0.9082638621330261
+    },
+    {
+      "epoch": 4,
+      "loss": 0.3543810160263725,
+      "train_accuracy": 0.9500805152979066,
+      "validation_accuracy": 0.9188779592514038
+    },
+    {
+      "epoch": 5,
+      "loss": 0.31913881290841983,
+      "train_accuracy": 0.9673107890499195,
+      "validation_accuracy": 0.9173616170883179
+    },
+    {
+      "epoch": 6,
+      "loss": 0.2915467253629712,
+      "train_accuracy": 0.9808373590982287,
+      "validation_accuracy": 0.9158453345298767
+    },
+    {
+      "epoch": 7,
+      "loss": 0.27531833966381114,
+      "train_accuracy": 0.9867954911433172,
+      "validation_accuracy": 0.9188779592514038
+    },
+    {
+      "epoch": 8,
+      "loss": 0.2648061486162041,
+      "train_accuracy": 0.9927536231884058,
+      "validation_accuracy": 0.9257012605667114
+    },
+    {
+      "epoch": 9,
+      "loss": 0.2587187413816099,
+      "train_accuracy": 0.9916264090177134,
+      "validation_accuracy": 0.9211524128913879
+    },
+    {
+      "epoch": 10,
+      "loss": 0.25002064373758104,
+      "train_accuracy": 0.996135265700483,
+      "validation_accuracy": 0.9158453345298767
+    },
+    {
+      "epoch": 11,
+      "loss": 0.24860087763668068,
+      "train_accuracy": 0.9962962962962963,
+      "validation_accuracy": 0.9226686954498291
+    },
+    {
+      "epoch": 12,
+      "loss": 0.24275311316077067,
+      "train_accuracy": 0.9967793880837359,
+      "validation_accuracy": 0.9226686954498291
+    },
+    {
+      "epoch": 13,
+      "loss": 0.24036866123645587,
+      "train_accuracy": 0.998389694041868,
+      "validation_accuracy": 0.920394241809845
+    },
+    {
+      "epoch": 14,
+      "loss": 0.2361342051466882,
+      "train_accuracy": 0.9988727858293076,
+      "validation_accuracy": 0.9181197881698608
+    },
+    {
+      "epoch": 15,
+      "loss": 0.23347019703875801,
+      "train_accuracy": 0.9987117552334943,
+      "validation_accuracy": 0.9234268665313721
+    },
+    {
+      "epoch": 16,
+      "loss": 0.22983188815834826,
+      "train_accuracy": 0.999194847020934,
+      "validation_accuracy": 0.9279757142066956
+    },
+    {
+      "epoch": 17,
+      "loss": 0.22864676163968256,
+      "train_accuracy": 0.9988727858293076,
+      "validation_accuracy": 0.9173616170883179
+    },
+    {
+      "epoch": 18,
+      "loss": 0.22602182703509616,
+      "train_accuracy": 1.0,
+      "validation_accuracy": 0.9234268665313721
+    },
+    {
+      "epoch": 19,
+      "loss": 0.22438026818292345,
+      "train_accuracy": 0.9995169082125603,
+      "validation_accuracy": 0.9249431490898132
+    },
+    {
+      "epoch": 20,
+      "loss": 0.22522169628964914,
+      "train_accuracy": 0.999194847020934,
+      "validation_accuracy": 0.9272176027297974
+    },
+    {
+      "epoch": 21,
+      "loss": 0.23188869616739607,
+      "train_accuracy": 0.9982286634460548,
+      "validation_accuracy": 0.9219105243682861
+    },
+    {
+      "epoch": 22,
+      "loss": 0.22380776908278657,
+      "train_accuracy": 0.9990338164251208,
+      "validation_accuracy": 0.9219105243682861
+    },
+    {
+      "epoch": 23,
+      "loss": 0.22621039415135283,
+      "train_accuracy": 0.9993558776167472,
+      "validation_accuracy": 0.920394241809845
+    },
+    {
+      "epoch": 24,
+      "loss": 0.22258139891900877,
+      "train_accuracy": 0.9995169082125603,
+      "validation_accuracy": 0.9188779592514038
+    },
+    {
+      "epoch": 25,
+      "loss": 0.2228658444063675,
+      "train_accuracy": 0.9995169082125603,
+      "validation_accuracy": 0.919636070728302
+    },
+    {
+      "epoch": 26,
+      "loss": 0.2205298352356694,
+      "train_accuracy": 0.9993558776167472,
+      "validation_accuracy": 0.9211524128913879
+    },
+    {
+      "epoch": 27,
+      "loss": 0.2201729409792573,
+      "train_accuracy": 0.9996779388083736,
+      "validation_accuracy": 0.9211524128913879
+    },
+    {
+      "epoch": 28,
+      "loss": 0.2182416037996802,
+      "train_accuracy": 0.9998389694041868,
+      "validation_accuracy": 0.9241849780082703
+    },
+    {
+      "epoch": 29,
+      "loss": 0.2175281590309696,
+      "train_accuracy": 0.9996779388083736,
+      "validation_accuracy": 0.9249431490898132
+    },
+    {
+      "epoch": 30,
+      "loss": 0.21734952585900655,
+      "train_accuracy": 1.0,
+      "validation_accuracy": 0.9249431490898132
+    },
+    {
+      "epoch": 31,
+      "loss": 0.2153390896157174,
+      "train_accuracy": 1.0,
+      "validation_accuracy": 0.9249431490898132
+    }
+  ],
+  "seconds": 8.27238109999962,
+  "split": "Original VCoR splits; exact/identical-dHash duplicates removed, no vehicle identity grouping available",
+  "ready_made_colour_model_used": false,
+  "method": "Frozen general ImageNet MobileNetV3 features + original RGB/HSV statistics + independently trained MLP decision head",
+  "test_used_for_checkpoint_selection": false,
+  "head_parameters": 182024,
+  "general_backbone_parameters": 927008,
+  "feature_dimensions": 1413,
+  "input_size": 128,
+  "epochs_completed": 31,
+  "optimizer": "AdamW lr=0.001 weight_decay=0.01; cosine decay over max100 epochs; early stop after15 unimproved epochs, minimum30",
+  "batch": 64,
+  "loss": "Weighted cross entropy; inverse-sqrt class counts; label smoothing 0.03",
+  "timing_scope": "seconds measures MLP training/validation, excluding data preparation and frozen feature extraction"
+}

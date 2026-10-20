@@ -1,0 +1,1290 @@
+{
+  "split": "test",
+  "images": 4026,
+  "brand_top1_accuracy": 0.8460009935419771,
+  "brand_scope": "13 known brands, human annotated ground-truth car crops; not full-scene accuracy and not unknown-brand accuracy",
+  "brands": [
+    "Audi",
+    "BMW",
+    "Chevrolet",
+    "Daewoo",
+    "Ford",
+    "Honda",
+    "Hyundai",
+    "Mercedes-Benz",
+    "Nissan",
+    "Tesla",
+    "Toyota",
+    "Volkswagen",
+    "Volvo"
+  ],
+  "confusion_matrix": [
+    [
+      521,
+      12,
+      10,
+      3,
+      6,
+      2,
+      3,
+      8,
+      6,
+      0,
+      0,
+      2,
+      1
+    ],
+    [
+      9,
+      476,
+      8,
+      2,
+      9,
+      1,
+      5,
+      6,
+      2,
+      1,
+      0,
+      1,
+      3
+    ],
+    [
+      8,
+      9,
+      765,
+      1,
+      49,
+      9,
+      15,
+      7,
+      15,
+      0,
+      8,
+      2,
+      1
+    ],
+    [
+      0,
+      1,
+      1,
+      37,
+      1,
+      0,
+      1,
+      2,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      7,
+      8,
+      22,
+      1,
+      437,
+      5,
+      10,
+      6,
+      5,
+      0,
+      8,
+      2,
+      3
+    ],
+    [
+      3,
+      3,
+      6,
+      0,
+      3,
+      122,
+      15,
+      2,
+      2,
+      0,
+      3,
+      0,
+      1
+    ],
+    [
+      4,
+      3,
+      15,
+      3,
+      7,
+      7,
+      367,
+      11,
+      7,
+      3,
+      3,
+      2,
+      1
+    ],
+    [
+      11,
+      12,
+      2,
+      0,
+      12,
+      0,
+      6,
+      210,
+      0,
+      2,
+      0,
+      1,
+      1
+    ],
+    [
+      2,
+      6,
+      12,
+      0,
+      10,
+      0,
+      7,
+      1,
+      126,
+      0,
+      0,
+      2,
+      4
+    ],
+    [
+      1,
+      1,
+      4,
+      0,
+      0,
+      0,
+      3,
+      0,
+      1,
+      27,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      6,
+      6,
+      0,
+      10,
+      4,
+      8,
+      1,
+      2,
+      0,
+      123,
+      3,
+      0
+    ],
+    [
+      8,
+      6,
+      6,
+      0,
+      0,
+      1,
+      2,
+      1,
+      4,
+      0,
+      5,
+      97,
+      1
+    ],
+    [
+      6,
+      6,
+      2,
+      0,
+      7,
+      2,
+      1,
+      2,
+      2,
+      0,
+      0,
+      3,
+      98
+    ]
+  ],
+  "per_brand": {
+    "Audi": {
+      "count": 574,
+      "accuracy": 0.9076655052264808
+    },
+    "BMW": {
+      "count": 523,
+      "accuracy": 0.9101338432122371
+    },
+    "Chevrolet": {
+      "count": 889,
+      "accuracy": 0.8605174353205849
+    },
+    "Daewoo": {
+      "count": 45,
+      "accuracy": 0.8222222222222222
+    },
+    "Ford": {
+      "count": 514,
+      "accuracy": 0.8501945525291829
+    },
+    "Honda": {
+      "count": 160,
+      "accuracy": 0.7625
+    },
+    "Hyundai": {
+      "count": 433,
+      "accuracy": 0.8475750577367206
+    },
+    "Mercedes-Benz": {
+      "count": 257,
+      "accuracy": 0.8171206225680934
+    },
+    "Nissan": {
+      "count": 170,
+      "accuracy": 0.7411764705882353
+    },
+    "Tesla": {
+      "count": 38,
+      "accuracy": 0.7105263157894737
+    },
+    "Toyota": {
+      "count": 163,
+      "accuracy": 0.754601226993865
+    },
+    "Volkswagen": {
+      "count": 131,
+      "accuracy": 0.7404580152671756
+    },
+    "Volvo": {
+      "count": 129,
+      "accuracy": 0.7596899224806202
+    }
+  },
+  "thresholds": [
+    {
+      "threshold": 0.2,
+      "accepted": 4016,
+      "coverage": 0.9975161450571287,
+      "accuracy_when_accepted": 0.8473605577689243
+    },
+    {
+      "threshold": 0.3,
+      "accepted": 3893,
+      "coverage": 0.9669647292598113,
+      "accuracy_when_accepted": 0.8669406627279733
+    },
+    {
+      "threshold": 0.4,
+      "accepted": 3660,
+      "coverage": 0.9090909090909091,
+      "accuracy_when_accepted": 0.8953551912568306
+    },
+    {
+      "threshold": 0.5,
+      "accepted": 3406,
+      "coverage": 0.8460009935419771,
+      "accuracy_when_accepted": 0.9210217263652378
+    },
+    {
+      "threshold": 0.6,
+      "accepted": 3146,
+      "coverage": 0.7814207650273224,
+      "accuracy_when_accepted": 0.9418308963763509
+    },
+    {
+      "threshold": 0.65,
+      "accepted": 3032,
+      "coverage": 0.7531048186785891,
+      "accuracy_when_accepted": 0.9468997361477572
+    },
+    {
+      "threshold": 0.7,
+      "accepted": 2914,
+      "coverage": 0.7237953303527074,
+      "accuracy_when_accepted": 0.9540150995195608
+    },
+    {
+      "threshold": 0.8,
+      "accepted": 2582,
+      "coverage": 0.641331346249379,
+      "accuracy_when_accepted": 0.97714949651433
+    },
+    {
+      "threshold": 0.9,
+      "accepted": 2027,
+      "coverage": 0.5034773969200199,
+      "accuracy_when_accepted": 0.9911198815984213
+    }
+  ],
+  "seconds": 40.08,
+  "colour_visual_review": {
+    "images": 46,
+    "accuracy": 0.6086956521739131,
+    "annotator": "Codex visual development diagnostic, not independent human ground truth; this diagnostic informed subsequent development",
+    "details": [
+      {
+        "id": 1,
+        "reference": "white",
+        "prediction": "white",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "reference": "red",
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "reference": "blue",
+        "prediction": "blue",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "reference": "grey",
+        "prediction": "grey",
+        "correct": true
+      },
+      {
+        "id": 7,
+        "reference": "brown",
+        "prediction": "brown",
+        "correct": true
+      },
+      {
+        "id": 8,
+        "reference": "grey",
+        "prediction": "white",
+        "correct": false
+      },
+      {
+        "id": 9,
+        "reference": "white",
+        "prediction": "white",
+        "correct": true
+      },
+      {
+        "id": 10,
+        "reference": "white",
+        "prediction": "white",
+        "correct": true
+      },
+      {
+        "id": 11,
+        "reference": "white",
+        "prediction": "white",
+        "correct": true
+      },
+      {
+        "id": 12,
+        "reference": "grey",
+        "prediction": "brown",
+        "correct": false
+      },
+      {
+        "id": 13,
+        "reference": "grey",
+        "prediction": "brown",
+        "correct": false
+      },
+      {
+        "id": 14,
+        "reference": "blue",
+        "prediction": "black",
+        "correct": false
+      },
+      {
+        "id": 15,
+        "reference": "green",
+        "prediction": "black",
+        "correct": false
+      },
+      {
+        "id": 17,
+        "reference": "black",
+        "prediction": "black",
+        "correct": true
+      },
+      {
+        "id": 18,
+        "reference": "blue",
+        "prediction": "brown",
+        "correct": false
+      },
+      {
+        "id": 19,
+        "reference": "white",
+        "prediction": "white",
+        "correct": true
+      },
+      {
+        "id": 20,
+        "reference": "grey",
+        "prediction": "brown",
+        "correct": false
+      },
+      {
+        "id": 23,
+        "reference": "grey",
+        "prediction": "grey",
+        "correct": true
+      },
+      {
+        "id": 24,
+        "reference": "grey",
+        "prediction": "grey",
+        "correct": true
+      },
+      {
+        "id": 25,
+        "reference": "red",
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": 26,
+        "reference": "brown",
+        "prediction": "brown",
+        "correct": true
+      },
+      {
+        "id": 27,
+        "reference": "white",
+        "prediction": "brown",
+        "correct": false
+      },
+      {
+        "id": 28,
+        "reference": "red",
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": 29,
+        "reference": "red",
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": 30,
+        "reference": "white",
+        "prediction": "black",
+        "correct": false
+      },
+      {
+        "id": 31,
+        "reference": "white",
+        "prediction": "white",
+        "correct": true
+      },
+      {
+        "id": 32,
+        "reference": "grey",
+        "prediction": "white",
+        "correct": false
+      },
+      {
+        "id": 33,
+        "reference": "red",
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": 34,
+        "reference": "white",
+        "prediction": "brown",
+        "correct": false
+      },
+      {
+        "id": 35,
+        "reference": "blue",
+        "prediction": "black",
+        "correct": false
+      },
+      {
+        "id": 36,
+        "reference": "red",
+        "prediction": "brown",
+        "correct": false
+      },
+      {
+        "id": 37,
+        "reference": "grey",
+        "prediction": "blue",
+        "correct": false
+      },
+      {
+        "id": 38,
+        "reference": "black",
+        "prediction": "black",
+        "correct": true
+      },
+      {
+        "id": 39,
+        "reference": "red",
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": 40,
+        "reference": "white",
+        "prediction": "grey",
+        "correct": false
+      },
+      {
+        "id": 41,
+        "reference": "grey",
+        "prediction": "grey",
+        "correct": true
+      },
+      {
+        "id": 42,
+        "reference": "grey",
+        "prediction": "grey",
+        "correct": true
+      },
+      {
+        "id": 43,
+        "reference": "blue",
+        "prediction": "black",
+        "correct": false
+      },
+      {
+        "id": 44,
+        "reference": "black",
+        "prediction": "black",
+        "correct": true
+      },
+      {
+        "id": 45,
+        "reference": "red",
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": 46,
+        "reference": "white",
+        "prediction": "brown",
+        "correct": false
+      },
+      {
+        "id": 47,
+        "reference": "blue",
+        "prediction": "blue",
+        "correct": true
+      },
+      {
+        "id": 48,
+        "reference": "red",
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": 49,
+        "reference": "white",
+        "prediction": "brown",
+        "correct": false
+      },
+      {
+        "id": 50,
+        "reference": "red",
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": 52,
+        "reference": "red",
+        "prediction": "red",
+        "correct": true
+      }
+    ]
+  },
+  "dominant_car_full_photo_check": {
+    "images": 26,
+    "detected": 26,
+    "detection_recall": 1.0,
+    "correct_brand": 17,
+    "end_to_end_known_brand_accuracy": 0.6538461538461539,
+    "threshold": 0.5,
+    "seconds": 11365.2,
+    "scope": "Fixed stratified official-test photos; dominant labelled car only, IoU>=0.5, fast whole-frame mode. Other cars are unannotated: full-scene precision cannot be inferred. Not a Tashkent phone test.",
+    "details": [
+      {
+        "image": "images/stanford_908fe67d7f3dda6cc62241ca.jpg",
+        "reference": "Audi",
+        "detected": true,
+        "predicted_brand": "Audi",
+        "correct": true,
+        "seconds": 4.928,
+        "proposals": 1
+      },
+      {
+        "image": "images/stanford_5cf99a5ef3f18e9120e22bf9.jpg",
+        "reference": "Audi",
+        "detected": true,
+        "predicted_brand": "Audi",
+        "correct": true,
+        "seconds": 3.886,
+        "proposals": 1
+      },
+      {
+        "image": "images/stanford_63ea22ab22e162fb93c9c810.jpg",
+        "reference": "BMW",
+        "detected": true,
+        "predicted_brand": "BMW",
+        "correct": true,
+        "seconds": 3.201,
+        "proposals": 1
+      },
+      {
+        "image": "images/stanford_92a127a63e55ac84458e207d.jpg",
+        "reference": "BMW",
+        "detected": true,
+        "predicted_brand": "BMW",
+        "correct": true,
+        "seconds": 3.904,
+        "proposals": 1
+      },
+      {
+        "image": "images/stanford_f4e942b094901ffdc5e58a74.jpg",
+        "reference": "Chevrolet",
+        "detected": true,
+        "predicted_brand": "Chevrolet",
+        "correct": true,
+        "seconds": 3.718,
+        "proposals": 2
+      },
+      {
+        "image": "images/stanford_1870491109bd9a245a24cc27.jpg",
+        "reference": "Chevrolet",
+        "detected": true,
+        "predicted_brand": "Chevrolet",
+        "correct": true,
+        "seconds": 4.225,
+        "proposals": 7
+      },
+      {
+        "image": "images/stanford_02f918c96aef8c062decd33c.jpg",
+        "reference": "Daewoo",
+        "detected": true,
+        "predicted_brand": "unknown",
+        "correct": false,
+        "seconds": 4.182,
+        "proposals": 5
+      },
+      {
+        "image": "images/stanford_bf847631b08bef85e398cdfb.jpg",
+        "reference": "Daewoo",
+        "detected": true,
+        "predicted_brand": "Daewoo",
+        "correct": true,
+        "seconds": 3.89,
+        "proposals": 5
+      },
+      {
+        "image": "images/stanford_c079fcd2e3fdfc094a593814.jpg",
+        "reference": "Ford",
+        "detected": true,
+        "predicted_brand": "Ford",
+        "correct": true,
+        "seconds": 3.308,
+        "proposals": 4
+      },
+      {
+        "image": "images/stanford_ce55cffbf571703189918972.jpg",
+        "reference": "Ford",
+        "detected": true,
+        "predicted_brand": "Ford",
+        "correct": true,
+        "seconds": 3.471,
+        "proposals": 2
+      },
+      {
+        "image": "images/stanford_55a6a886b7b4e326a4975c7a.jpg",
+        "reference": "Honda",
+        "detected": true,
+        "predicted_brand": "Honda",
+        "correct": true,
+        "seconds": 3.233,
+        "proposals": 2
+      },
+      {
+        "image": "images/stanford_da7b2e0f61f51b6dca668682.jpg",
+        "reference": "Honda",
+        "detected": true,
+        "predicted_brand": "Hyundai",
+        "correct": false,
+        "seconds": 3.773,
+        "proposals": 1
+      },
+      {
+        "image": "images/stanford_1a28b3b393d38cab384c3af7.jpg",
+        "reference": "Hyundai",
+        "detected": true,
+        "predicted_brand": "Hyundai",
+        "correct": true,
+        "seconds": 11264.892,
+        "proposals": 1
+      },
+      {
+        "image": "images/stanford_f345d926db460ca4818041e2.jpg",
+        "reference": "Hyundai",
+        "detected": true,
+        "predicted_brand": "Hyundai",
+        "correct": true,
+        "seconds": 3.449,
+        "proposals": 3
+      },
+      {
+        "image": "images/stanford_a4c73244a4cca2506188b94e.jpg",
+        "reference": "Mercedes-Benz",
+        "detected": true,
+        "predicted_brand": "Mercedes-Benz",
+        "correct": true,
+        "seconds": 2.906,
+        "proposals": 1
+      },
+      {
+        "image": "images/stanford_76e74eb2788123ef1235e9b6.jpg",
+        "reference": "Mercedes-Benz",
+        "detected": true,
+        "predicted_brand": "unknown",
+        "correct": false,
+        "seconds": 5.003,
+        "proposals": 1
+      },
+      {
+        "image": "images/stanford_e03bf40d3f34c1dd4400f614.jpg",
+        "reference": "Nissan",
+        "detected": true,
+        "predicted_brand": "BMW",
+        "correct": false,
+        "seconds": 3.978,
+        "proposals": 1
+      },
+      {
+        "image": "images/stanford_a7eb4c387d3d343797384bdd.jpg",
+        "reference": "Nissan",
+        "detected": true,
+        "predicted_brand": "Nissan",
+        "correct": true,
+        "seconds": 3.731,
+        "proposals": 1
+      },
+      {
+        "image": "images/stanford_805dfc74552215f85622f0a0.jpg",
+        "reference": "Tesla",
+        "detected": true,
+        "predicted_brand": "Chevrolet",
+        "correct": false,
+        "seconds": 4.411,
+        "proposals": 2
+      },
+      {
+        "image": "images/stanford_ae63973622fbbba574633a35.jpg",
+        "reference": "Tesla",
+        "detected": true,
+        "predicted_brand": "Tesla",
+        "correct": true,
+        "seconds": 4.685,
+        "proposals": 4
+      },
+      {
+        "image": "images/stanford_f149e17b8cbc933e0c7d57b7.jpg",
+        "reference": "Toyota",
+        "detected": true,
+        "predicted_brand": "unknown",
+        "correct": false,
+        "seconds": 3.764,
+        "proposals": 3
+      },
+      {
+        "image": "images/stanford_3278cce8729881f7671169e4.jpg",
+        "reference": "Toyota",
+        "detected": true,
+        "predicted_brand": "Ford",
+        "correct": false,
+        "seconds": 4.443,
+        "proposals": 1
+      },
+      {
+        "image": "images/stanford_ca6b9d0d6b65fbc247e286e4.jpg",
+        "reference": "Volkswagen",
+        "detected": true,
+        "predicted_brand": "Volkswagen",
+        "correct": true,
+        "seconds": 4.672,
+        "proposals": 2
+      },
+      {
+        "image": "images/stanford_ddaba225906e0283b818a8eb.jpg",
+        "reference": "Volkswagen",
+        "detected": true,
+        "predicted_brand": "unknown",
+        "correct": false,
+        "seconds": 3.867,
+        "proposals": 3
+      },
+      {
+        "image": "images/stanford_30c2e4e727683afe471fba29.jpg",
+        "reference": "Volvo",
+        "detected": true,
+        "predicted_brand": "unknown",
+        "correct": false,
+        "seconds": 4.158,
+        "proposals": 1
+      },
+      {
+        "image": "images/stanford_ff2df2019311975f1443d2d4.jpg",
+        "reference": "Volvo",
+        "detected": true,
+        "predicted_brand": "Volvo",
+        "correct": true,
+        "seconds": 5.5,
+        "proposals": 1
+      }
+    ],
+    "wall_timing_valid": false,
+    "timing_note": "Wall time includes a long session interruption. Use per-image runtime checks rather than this elapsed wall clock."
+  },
+  "colour_visual_review_hsv": {
+    "images": 46,
+    "accuracy": 0.5869565217391305,
+    "annotator": "OpenAI Codex visual review, not independent human ground truth; ambiguous examples excluded",
+    "details": [
+      {
+        "id": 1,
+        "reference": "white",
+        "prediction": "white",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "reference": "red",
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "reference": "blue",
+        "prediction": "blue",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "reference": "grey",
+        "prediction": "black",
+        "correct": false
+      },
+      {
+        "id": 7,
+        "reference": "brown",
+        "prediction": "brown",
+        "correct": true
+      },
+      {
+        "id": 8,
+        "reference": "grey",
+        "prediction": "white",
+        "correct": false
+      },
+      {
+        "id": 9,
+        "reference": "white",
+        "prediction": "white",
+        "correct": true
+      },
+      {
+        "id": 10,
+        "reference": "white",
+        "prediction": "black",
+        "correct": false
+      },
+      {
+        "id": 11,
+        "reference": "white",
+        "prediction": "white",
+        "correct": true
+      },
+      {
+        "id": 12,
+        "reference": "grey",
+        "prediction": "grey",
+        "correct": true
+      },
+      {
+        "id": 13,
+        "reference": "grey",
+        "prediction": "grey",
+        "correct": true
+      },
+      {
+        "id": 14,
+        "reference": "blue",
+        "prediction": "black",
+        "correct": false
+      },
+      {
+        "id": 15,
+        "reference": "green",
+        "prediction": "black",
+        "correct": false
+      },
+      {
+        "id": 17,
+        "reference": "black",
+        "prediction": "black",
+        "correct": true
+      },
+      {
+        "id": 18,
+        "reference": "blue",
+        "prediction": "black",
+        "correct": false
+      },
+      {
+        "id": 19,
+        "reference": "white",
+        "prediction": "white",
+        "correct": true
+      },
+      {
+        "id": 20,
+        "reference": "grey",
+        "prediction": "grey",
+        "correct": true
+      },
+      {
+        "id": 23,
+        "reference": "grey",
+        "prediction": "grey",
+        "correct": true
+      },
+      {
+        "id": 24,
+        "reference": "grey",
+        "prediction": "white",
+        "correct": false
+      },
+      {
+        "id": 25,
+        "reference": "red",
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": 26,
+        "reference": "brown",
+        "prediction": "black",
+        "correct": false
+      },
+      {
+        "id": 27,
+        "reference": "white",
+        "prediction": "white",
+        "correct": true
+      },
+      {
+        "id": 28,
+        "reference": "red",
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": 29,
+        "reference": "red",
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": 30,
+        "reference": "white",
+        "prediction": "white",
+        "correct": true
+      },
+      {
+        "id": 31,
+        "reference": "white",
+        "prediction": "grey",
+        "correct": false
+      },
+      {
+        "id": 32,
+        "reference": "grey",
+        "prediction": "grey",
+        "correct": true
+      },
+      {
+        "id": 33,
+        "reference": "red",
+        "prediction": "black",
+        "correct": false
+      },
+      {
+        "id": 34,
+        "reference": "white",
+        "prediction": "grey",
+        "correct": false
+      },
+      {
+        "id": 35,
+        "reference": "blue",
+        "prediction": "black",
+        "correct": false
+      },
+      {
+        "id": 36,
+        "reference": "red",
+        "prediction": "black",
+        "correct": false
+      },
+      {
+        "id": 37,
+        "reference": "grey",
+        "prediction": "blue",
+        "correct": false
+      },
+      {
+        "id": 38,
+        "reference": "black",
+        "prediction": "black",
+        "correct": true
+      },
+      {
+        "id": 39,
+        "reference": "red",
+        "prediction": "black",
+        "correct": false
+      },
+      {
+        "id": 40,
+        "reference": "white",
+        "prediction": "black",
+        "correct": false
+      },
+      {
+        "id": 41,
+        "reference": "grey",
+        "prediction": "black",
+        "correct": false
+      },
+      {
+        "id": 42,
+        "reference": "grey",
+        "prediction": "grey",
+        "correct": true
+      },
+      {
+        "id": 43,
+        "reference": "blue",
+        "prediction": "black",
+        "correct": false
+      },
+      {
+        "id": 44,
+        "reference": "black",
+        "prediction": "black",
+        "correct": true
+      },
+      {
+        "id": 45,
+        "reference": "red",
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": 46,
+        "reference": "white",
+        "prediction": "grey",
+        "correct": false
+      },
+      {
+        "id": 47,
+        "reference": "blue",
+        "prediction": "blue",
+        "correct": true
+      },
+      {
+        "id": 48,
+        "reference": "red",
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": 49,
+        "reference": "white",
+        "prediction": "white",
+        "correct": true
+      },
+      {
+        "id": 50,
+        "reference": "red",
+        "prediction": "red",
+        "correct": true
+      },
+      {
+        "id": 52,
+        "reference": "red",
+        "prediction": "red",
+        "correct": true
+      }
+    ]
+  },
+  "colour_benchmark": {
+    "source": "https://www.kaggle.com/datasets/landrykezebou/vcor-vehicle-color-recognition-dataset",
+    "classes": [
+      "white",
+      "black",
+      "grey",
+      "red",
+      "blue",
+      "green",
+      "brown",
+      "yellow"
+    ],
+    "train": 6210,
+    "validation": 1319,
+    "test": 1314,
+    "counts": {
+      "train": {
+        "brown": 1585,
+        "black": 404,
+        "blue": 738,
+        "green": 558,
+        "grey": 785,
+        "yellow": 1108,
+        "red": 633,
+        "white": 399
+      },
+      "validation": {
+        "brown": 337,
+        "black": 86,
+        "blue": 154,
+        "green": 120,
+        "grey": 167,
+        "yellow": 236,
+        "red": 135,
+        "white": 84
+      },
+      "test": {
+        "brown": 339,
+        "black": 84,
+        "blue": 156,
+        "green": 119,
+        "grey": 164,
+        "yellow": 237,
+        "red": 133,
+        "white": 82
+      }
+    },
+    "best_epoch": 16,
+    "best_validation_accuracy": 0.9279757142066956,
+    "test_accuracy": 0.9155251383781433,
+    "confusion_matrix": [
+      [
+        73,
+        1,
+        4,
+        0,
+        0,
+        0,
+        4,
+        0
+      ],
+      [
+        0,
+        75,
+        3,
+        0,
+        2,
+        0,
+        4,
+        0
+      ],
+      [
+        8,
+        4,
+        129,
+        0,
+        4,
+        1,
+        18,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        126,
+        0,
+        0,
+        0,
+        6
+      ],
+      [
+        1,
+        2,
+        0,
+        0,
+        152,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        2,
+        1,
+        0,
+        2,
+        112,
+        1,
+        1
+      ],
+      [
+        5,
+        4,
+        11,
+        0,
+        2,
+        3,
+        312,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        9,
+        224
+      ]
+    ],
+    "seconds": 8.27238109999962,
+    "split": "Original VCoR splits; exact/identical-dHash duplicates removed, no vehicle identity grouping available",
+    "ready_made_colour_model_used": false,
+    "method": "Frozen general ImageNet MobileNetV3 features + original RGB/HSV statistics + independently trained MLP decision head",
+    "test_used_for_checkpoint_selection": false,
+    "head_parameters": 182024,
+    "general_backbone_parameters": 927008,
+    "feature_dimensions": 1413,
+    "input_size": 128,
+    "epochs_completed": 31,
+    "optimizer": "AdamW lr=0.001 weight_decay=0.01; cosine decay over max100 epochs; early stop after15 unimproved epochs, minimum30",
+    "batch": 64,
+    "loss": "Weighted cross entropy; inverse-sqrt class counts; label smoothing 0.03",
+    "timing_scope": "seconds measures MLP training/validation, excluding data preparation and frozen feature extraction"
+  }
+}

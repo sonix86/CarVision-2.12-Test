@@ -1,0 +1,688 @@
+{
+  "purpose": "Small fixed held-out colour diagnostic, not a statistically representative human-labelled colour benchmark",
+  "reference_selection": "Four official-test images per brand, fixed seed 510, selected before viewing algorithm predictions",
+  "references": [
+    {
+      "id": 1,
+      "image": "images/stanford_29231e087bf7980cc35e0632.jpg",
+      "box": [
+        24.0,
+        56.0,
+        281.0,
+        164.0
+      ],
+      "brand": "Audi",
+      "reference_colour": "white",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 2,
+      "image": "images/stanford_4a915f774bec3556cac9730e.jpg",
+      "box": [
+        12.0,
+        94.0,
+        611.0,
+        387.0
+      ],
+      "brand": "Audi",
+      "reference_colour": "red",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 3,
+      "image": "images/stanford_3d02f9791bce9481656767a3.jpg",
+      "box": [
+        26.0,
+        58.0,
+        556.0,
+        308.0
+      ],
+      "brand": "Audi",
+      "reference_colour": "blue",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 4,
+      "image": "images/stanford_0672d2552162952040297db0.jpg",
+      "box": [
+        18.0,
+        62.0,
+        349.0,
+        196.0
+      ],
+      "brand": "Audi",
+      "reference_colour": null,
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation",
+      "excluded_reason": "Monochrome photograph: original paint colour cannot be established."
+    },
+    {
+      "id": 5,
+      "image": "images/stanford_52d728658f02494ec71e747e.jpg",
+      "box": [
+        136.8,
+        169.7405462184874,
+        723.0,
+        565.6018907563025
+      ],
+      "brand": "BMW",
+      "reference_colour": "grey",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 6,
+      "image": "images/stanford_2839f29fa23685a66c82b958.jpg",
+      "box": [
+        31.0,
+        40.0,
+        203.0,
+        151.0
+      ],
+      "brand": "BMW",
+      "reference_colour": null,
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation",
+      "excluded_reason": "Ambiguous brown/burgundy paint and lighting."
+    },
+    {
+      "id": 7,
+      "image": "images/stanford_573fd0935953bbb1117f7972.jpg",
+      "box": [
+        73.5,
+        81.08307692307692,
+        705.75,
+        426.43692307692305
+      ],
+      "brand": "BMW",
+      "reference_colour": "brown",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 8,
+      "image": "images/stanford_bfe6b3a1e3b72a78f92eafb1.jpg",
+      "box": [
+        41.28,
+        76.24907063197026,
+        737.76,
+        449.34200743494426
+      ],
+      "brand": "BMW",
+      "reference_colour": "grey",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 9,
+      "image": "images/stanford_f38c5ded4de4c8eaf2090c69.jpg",
+      "box": [
+        67.65957446808511,
+        259.3325,
+        602.8085106382979,
+        485.7055
+      ],
+      "brand": "Chevrolet",
+      "reference_colour": "white",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 10,
+      "image": "images/stanford_34646d8c3f793079601695b9.jpg",
+      "box": [
+        4.5,
+        123.75,
+        755.25,
+        555.0
+      ],
+      "brand": "Chevrolet",
+      "reference_colour": "white",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 11,
+      "image": "images/stanford_273307c223f4ad900ea8008d.jpg",
+      "box": [
+        7.0,
+        69.0,
+        248.0,
+        186.0
+      ],
+      "brand": "Chevrolet",
+      "reference_colour": "white",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 12,
+      "image": "images/stanford_17b1f5197410a720ac0d5ded.jpg",
+      "box": [
+        84.75,
+        7.5,
+        706.5,
+        531.75
+      ],
+      "brand": "Chevrolet",
+      "reference_colour": "grey",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 13,
+      "image": "images/stanford_02da545a84556ac10eb2fd74.jpg",
+      "box": [
+        10.0,
+        32.0,
+        397.0,
+        251.0
+      ],
+      "brand": "Daewoo",
+      "reference_colour": "grey",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 14,
+      "image": "images/stanford_940e16ca9ad0f519eb99fdae.jpg",
+      "box": [
+        8.0,
+        96.0,
+        677.0,
+        492.0
+      ],
+      "brand": "Daewoo",
+      "reference_colour": "blue",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 15,
+      "image": "images/stanford_a515846f3f319b9885c8cd93.jpg",
+      "box": [
+        37.48685857321652,
+        112.515,
+        724.7459324155194,
+        474.1016666666667
+      ],
+      "brand": "Daewoo",
+      "reference_colour": "green",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 16,
+      "image": "images/stanford_e45b3f6d474c7089a2acb260.jpg",
+      "box": [
+        13.0,
+        0.0,
+        253.0,
+        165.0
+      ],
+      "brand": "Daewoo",
+      "reference_colour": null,
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation",
+      "excluded_reason": "Ambiguous mint blue/green."
+    },
+    {
+      "id": 17,
+      "image": "images/stanford_1d0d2bc1211cb7a8ff00657d.jpg",
+      "box": [
+        39.0,
+        62.0,
+        265.0,
+        195.0
+      ],
+      "brand": "Ford",
+      "reference_colour": "black",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 18,
+      "image": "images/stanford_628ba08105b59e354a1da901.jpg",
+      "box": [
+        35.0,
+        84.0,
+        459.0,
+        278.0
+      ],
+      "brand": "Ford",
+      "reference_colour": "blue",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 19,
+      "image": "images/stanford_7d9fdc79072c615c651eb2df.jpg",
+      "box": [
+        14.0,
+        65.0,
+        618.0,
+        354.0
+      ],
+      "brand": "Ford",
+      "reference_colour": "white",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 20,
+      "image": "images/stanford_229f753bec215743da5d690b.jpg",
+      "box": [
+        35.0,
+        70.0,
+        394.0,
+        307.0
+      ],
+      "brand": "Ford",
+      "reference_colour": "grey",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 21,
+      "image": "images/stanford_5abc619c594444bc48ac9a16.jpg",
+      "box": [
+        92.0,
+        19.0,
+        374.0,
+        260.0
+      ],
+      "brand": "Honda",
+      "reference_colour": null,
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation",
+      "excluded_reason": "Purple/brown shade does not map unambiguously to the eight required classes."
+    },
+    {
+      "id": 22,
+      "image": "images/stanford_566b42638d1ad80cc06614d7.jpg",
+      "box": [
+        21.0,
+        175.0,
+        604.0,
+        406.0
+      ],
+      "brand": "Honda",
+      "reference_colour": null,
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation",
+      "excluded_reason": "Strong warm light makes grey/brown ambiguous."
+    },
+    {
+      "id": 23,
+      "image": "images/stanford_d4401184fe4ff93e1a41818c.jpg",
+      "box": [
+        11.4,
+        247.8,
+        759.6,
+        484.2
+      ],
+      "brand": "Honda",
+      "reference_colour": "grey",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 24,
+      "image": "images/stanford_7656a83c82a20a7e0e9557b9.jpg",
+      "box": [
+        23.0,
+        120.0,
+        610.0,
+        409.0
+      ],
+      "brand": "Honda",
+      "reference_colour": "grey",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 25,
+      "image": "images/stanford_4485f940f4745e92a988ef4e.jpg",
+      "box": [
+        94.0,
+        0.0,
+        553.0,
+        258.0
+      ],
+      "brand": "Hyundai",
+      "reference_colour": "red",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 26,
+      "image": "images/stanford_c641a423a032e7476d664655.jpg",
+      "box": [
+        32.0,
+        191.0,
+        608.0,
+        441.0
+      ],
+      "brand": "Hyundai",
+      "reference_colour": "brown",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 27,
+      "image": "images/stanford_6ac346e8b546926ee7b7bedc.jpg",
+      "box": [
+        95.25,
+        118.5,
+        638.25,
+        510.75
+      ],
+      "brand": "Hyundai",
+      "reference_colour": "white",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 28,
+      "image": "images/stanford_5b9eee20ae837b44b9c0b6f6.jpg",
+      "box": [
+        39.0,
+        81.0,
+        713.25,
+        525.0
+      ],
+      "brand": "Hyundai",
+      "reference_colour": "red",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 29,
+      "image": "images/stanford_c17a24dec646275e2873e093.jpg",
+      "box": [
+        9.0,
+        19.0,
+        294.0,
+        155.0
+      ],
+      "brand": "Mercedes-Benz",
+      "reference_colour": "red",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 30,
+      "image": "images/stanford_340b97adb76fe8be3a94fa38.jpg",
+      "box": [
+        160.32,
+        41.28,
+        587.52,
+        539.52
+      ],
+      "brand": "Mercedes-Benz",
+      "reference_colour": "white",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 31,
+      "image": "images/stanford_a7162fa4c65335ac7908f417.jpg",
+      "box": [
+        67.0,
+        51.0,
+        576.0,
+        399.0
+      ],
+      "brand": "Mercedes-Benz",
+      "reference_colour": "white",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 32,
+      "image": "images/stanford_5cac75885d26a1bacd911ad4.jpg",
+      "box": [
+        21.0,
+        56.0,
+        292.0,
+        175.0
+      ],
+      "brand": "Mercedes-Benz",
+      "reference_colour": "grey",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 33,
+      "image": "images/stanford_b093527a0e68dceb0bce5507.jpg",
+      "box": [
+        30.0,
+        127.0,
+        398.0,
+        302.0
+      ],
+      "brand": "Nissan",
+      "reference_colour": "red",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 34,
+      "image": "images/stanford_3673d1dc06d11ef887233e81.jpg",
+      "box": [
+        65.28,
+        33.14071294559099,
+        711.84,
+        438.03377110694186
+      ],
+      "brand": "Nissan",
+      "reference_colour": "white",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 35,
+      "image": "images/stanford_c0982aed25f81551e3e432f1.jpg",
+      "box": [
+        43.0,
+        119.0,
+        538.0,
+        366.0
+      ],
+      "brand": "Nissan",
+      "reference_colour": "blue",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 36,
+      "image": "images/stanford_6d0a1fa395d274aac869b6ef.jpg",
+      "box": [
+        54.0,
+        77.0,
+        534.0,
+        352.0
+      ],
+      "brand": "Nissan",
+      "reference_colour": "red",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 37,
+      "image": "images/stanford_7de52b58fcd2a06bfcdef160.jpg",
+      "box": [
+        322.048,
+        212.36673773987206,
+        677.888,
+        391.47121535181236
+      ],
+      "brand": "Tesla",
+      "reference_colour": "grey",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 38,
+      "image": "images/stanford_aff28d72b59713d5846acbb3.jpg",
+      "box": [
+        30.0,
+        37.0,
+        627.0,
+        349.0
+      ],
+      "brand": "Tesla",
+      "reference_colour": "black",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 39,
+      "image": "images/stanford_0c0541704da9836dacf56b26.jpg",
+      "box": [
+        75.0,
+        49.0,
+        431.0,
+        340.0
+      ],
+      "brand": "Tesla",
+      "reference_colour": "red",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 40,
+      "image": "images/stanford_a069a7eeb2ee923cd9a27a82.jpg",
+      "box": [
+        43.52,
+        46.1,
+        737.28,
+        420.8759259259259
+      ],
+      "brand": "Tesla",
+      "reference_colour": "white",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 41,
+      "image": "images/stanford_2fee706ad0138a21f3bb4dc1.jpg",
+      "box": [
+        25.0,
+        141.0,
+        525.0,
+        378.0
+      ],
+      "brand": "Toyota",
+      "reference_colour": "grey",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 42,
+      "image": "images/stanford_7121fdf0223df8cdc9628700.jpg",
+      "box": [
+        48.0,
+        61.0,
+        585.0,
+        428.0
+      ],
+      "brand": "Toyota",
+      "reference_colour": "grey",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 43,
+      "image": "images/stanford_180a3d347fec72d7aaa0bf12.jpg",
+      "box": [
+        47.0,
+        182.0,
+        626.0,
+        410.0
+      ],
+      "brand": "Toyota",
+      "reference_colour": "blue",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 44,
+      "image": "images/stanford_6e22ad879f47534ae58615fb.jpg",
+      "box": [
+        47.0,
+        113.0,
+        547.0,
+        432.0
+      ],
+      "brand": "Toyota",
+      "reference_colour": "black",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 45,
+      "image": "images/stanford_10a4ff41fe0bd56031a771a0.jpg",
+      "box": [
+        49.0,
+        130.0,
+        605.0,
+        351.0
+      ],
+      "brand": "Volkswagen",
+      "reference_colour": "red",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 46,
+      "image": "images/stanford_a56616eacf80d7c42209ef36.jpg",
+      "box": [
+        26.0,
+        122.0,
+        613.0,
+        456.0
+      ],
+      "brand": "Volkswagen",
+      "reference_colour": "white",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 47,
+      "image": "images/stanford_09618000a29fa22bc4cf56e7.jpg",
+      "box": [
+        12.0,
+        98.0,
+        627.0,
+        389.0
+      ],
+      "brand": "Volkswagen",
+      "reference_colour": "blue",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 48,
+      "image": "images/stanford_0c865520ddf5922e1e32cb55.jpg",
+      "box": [
+        47.0,
+        66.0,
+        621.0,
+        463.0
+      ],
+      "brand": "Volkswagen",
+      "reference_colour": "red",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 49,
+      "image": "images/stanford_fb2cf521510d6d8a234c9cb1.jpg",
+      "box": [
+        14.441025641025641,
+        15.74736842105263,
+        758.8102564102564,
+        364.1578947368421
+      ],
+      "brand": "Volvo",
+      "reference_colour": "white",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 50,
+      "image": "images/stanford_96ea7a44bd23c04947485c7a.jpg",
+      "box": [
+        96.0,
+        265.2899287894201,
+        487.2,
+        516.7751780264497
+      ],
+      "brand": "Volvo",
+      "reference_colour": "red",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    },
+    {
+      "id": 51,
+      "image": "images/stanford_04c510360f496bf67f4ec33c.jpg",
+      "box": [
+        125.25,
+        214.5,
+        711.0,
+        503.25
+      ],
+      "brand": "Volvo",
+      "reference_colour": null,
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation",
+      "excluded_reason": "Blue/green/grey cast makes the eight-class reference uncertain."
+    },
+    {
+      "id": 52,
+      "image": "images/stanford_07fcff5c71cd08caf9070909.jpg",
+      "box": [
+        74.496,
+        88.725,
+        675.84,
+        442.8568181818182
+      ],
+      "brand": "Volvo",
+      "reference_colour": "red",
+      "annotator": "OpenAI Codex visual review of contact sheets, not student or independent human annotation"
+    }
+  ]
+}

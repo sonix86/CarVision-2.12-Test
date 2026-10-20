@@ -8,7 +8,7 @@ def main():
     sub=p.add_subparsers(dest='command')
     sub.add_parser('gui')
     sub.add_parser('setup',help='Create local data/model directories; no pretrained weights are downloaded')
-    pred=sub.add_parser('predict'); pred.add_argument('image'); pred.add_argument('--output',default='outputs'); pred.add_argument('--models'); pred.add_argument('--detection',type=float,default=.5); pred.add_argument('--threshold',type=float,default=.65); pred.add_argument('--mode',choices=['fast','balanced','detail'],default='balanced')
+    pred=sub.add_parser('predict'); pred.add_argument('image'); pred.add_argument('--output',default='outputs'); pred.add_argument('--models'); pred.add_argument('--detection',type=float,default=.5); pred.add_argument('--threshold',type=float,default=.5); pred.add_argument('--mode',choices=['fast','balanced','detail'],default='balanced')
     tr=sub.add_parser('train'); tr.add_argument('--labels',required=True); tr.add_argument('--output',default='models'); tr.add_argument('--epochs',type=int,default=25); tr.add_argument('--detector-epochs',type=int,default=25); tr.add_argument('--batch',type=int,default=16); tr.add_argument('--lr',type=float,default=.0003); tr.add_argument('--seed',type=int,default=3210)
     ev=sub.add_parser('evaluate'); ev.add_argument('--labels',required=True); ev.add_argument('--models',default='models'); ev.add_argument('--output',default='outputs/evaluation')
     audit=sub.add_parser('audit'); audit.add_argument('--labels',required=True)
@@ -16,6 +16,13 @@ def main():
     args=p.parse_args()
     from carvision.core import ROOT
     if args.command in [None,'gui']:
+        import sys
+        if sys.platform=='win32' and getattr(sys,'frozen',False):
+            import ctypes
+            ctypes.windll.kernel32.FreeConsole()
+            (ROOT/'outputs').mkdir(parents=True,exist_ok=True)
+            log=(ROOT/'outputs/gui.log').open('a',encoding='utf-8',buffering=1)
+            sys.stdout=sys.stderr=log
         from carvision.gui import run
         run()
     elif args.command=='setup':
