@@ -1,6 +1,6 @@
 {
   "owner": "София Рахматулаева",
-  "release": "1.6",
+  "release": "1.7",
   "brand_parameters": 1228858,
   "brand_architecture": "MobileNetV3 Small, own avg/max pooled 18-brand head, regional fine-tuning, mirrored-view probability mean and development temperature",
   "detector": "Generic Faster R-CNN ResNet50 FPN v2 COCO, min800/max1333; default whole frame, optional tiles",
@@ -107,5 +107,132 @@
       "mask-accurate preview tint and selected vehicle evidence card"
     ],
     "evaluation_note": "Learned-head accuracy metrics are retained from v1.5 protocols; v1.6 has separate engineering and city regression checks, not a new street accuracy estimate."
-  }
+  },
+  "visual_parts": {
+    "origin": "project-trained-visible-part-references",
+    "selection": "Grouped validation only; mean whole/upper55/upper35 top1 + half top3, whole top1 floor baseline minus2pts. Test and city images excluded from selection.",
+    "model_sha256": "459512e17d6637d559da601945692727abf1ce9872fd3ea9432f9c2dc758b8e6",
+    "train_photos": 374,
+    "reference_views": 3740,
+    "scopes": [
+      "whole",
+      "upper55",
+      "upper35",
+      "left65",
+      "right65"
+    ],
+    "selected": {
+      "temperature": 0.03,
+      "aspect_penalty": 0.05,
+      "neighbours": 3,
+      "weight": 1.0,
+      "validation": {
+        "whole": {
+          "top1": 0.8414633870124817,
+          "top3": 0.9756097793579102
+        },
+        "upper55": {
+          "top1": 0.45121949911117554,
+          "top3": 0.707317054271698
+        },
+        "upper35": {
+          "top1": 0.2804878056049347,
+          "top3": 0.5243902206420898
+        }
+      },
+      "score": 0.892276406288147,
+      "clean_floor": true
+    },
+    "results": {
+      "validation": {
+        "whole": {
+          "baseline": {
+            "top1": 0.8292682766914368,
+            "top3": 0.9512194991111755
+          },
+          "combined": {
+            "top1": 0.8414633870124817,
+            "top3": 0.9756097793579102
+          },
+          "count": 82,
+          "accepted_count": 68,
+          "accepted_accuracy": 0.9411764740943909
+        },
+        "upper55": {
+          "baseline": {
+            "top1": 0.4146341383457184,
+            "top3": 0.6707317233085632
+          },
+          "combined": {
+            "top1": 0.45121949911117554,
+            "top3": 0.707317054271698
+          },
+          "count": 82,
+          "accepted_count": 13,
+          "accepted_accuracy": 0.7692307829856873
+        },
+        "upper35": {
+          "baseline": {
+            "top1": 0.15853658318519592,
+            "top3": 0.31707316637039185
+          },
+          "combined": {
+            "top1": 0.2804878056049347,
+            "top3": 0.5243902206420898
+          },
+          "count": 82,
+          "accepted_count": 0,
+          "accepted_accuracy": null
+        }
+      },
+      "test": {
+        "whole": {
+          "baseline": {
+            "top1": 0.737500011920929,
+            "top3": 0.9624999761581421
+          },
+          "combined": {
+            "top1": 0.7875000238418579,
+            "top3": 0.9375
+          },
+          "count": 80,
+          "accepted_count": 67,
+          "accepted_accuracy": 0.8358209133148193
+        },
+        "upper55": {
+          "baseline": {
+            "top1": 0.3375000059604645,
+            "top3": 0.550000011920929
+          },
+          "combined": {
+            "top1": 0.42500001192092896,
+            "top3": 0.6499999761581421
+          },
+          "count": 80,
+          "accepted_count": 15,
+          "accepted_accuracy": 0.7333333492279053
+        },
+        "upper35": {
+          "baseline": {
+            "top1": 0.16249999403953552,
+            "top3": 0.36250001192092896
+          },
+          "combined": {
+            "top1": 0.22499999403953552,
+            "top3": 0.4625000059604645
+          },
+          "count": 80,
+          "accepted_count": 0,
+          "accepted_accuracy": null
+        }
+      }
+    },
+    "seconds": 2.6152660000007018,
+    "test_used_for_selection": false,
+    "limitations": "Closed set of 16 model names. Upper crops simulate missing body parts; they are not a real street occlusion test. Source categories and sparse Cobalt/Damas examples remain limitations.",
+    "probability_temperature": 1.0,
+    "confidence_threshold": 0.6,
+    "calibration": "NLL temperature and >=90% accepted accuracy with >=20 examples, grouped validation whole+upper55+upper35 only; geometry-quality gate is separate."
+  },
+  "v17_scope": "Own train-only part reference classifier; no pretrained vehicle-model classifier. Fragment geometry gates confirmation; full16 ranking exposed. Personal training colour head connected. Historical benchmark fields remain protocol-specific."
 }

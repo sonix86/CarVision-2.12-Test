@@ -170,9 +170,12 @@ class Pipeline:
             self.classifier = constructor(len(self.brands)).eval()
             self.classifier.load_state_dict(ck['state'])
             self.preprocess=make_preprocess(int(ck.get('image_size',224)),16 if self.public_prototype else 0)
+            if ck.get('joint_colour_head'):
+                from .colour_model import JointColourClassifier
+                self.colour_classifier=JointColourClassifier(self.classifier,self.preprocess);self.masked_colour=None;self.colour_reliability_threshold=.75
             if ck.get('colour_mode')=='body_histogram':self.colour_mode='heuristic'
         separate_colour=self.directory/'colour_model.pt'
-        if separate_colour.exists() and self.colour_mode!='trained':
+        if separate_colour.exists() and self.colour_mode!='trained' and self.colour_classifier is None:
             from .colour_model import ColourClassifier
             self.colour_classifier=ColourClassifier(torch.load(separate_colour,map_location='cpu',weights_only=True))
 
@@ -180,6 +183,13 @@ class Pipeline:
         if model_file.exists() and self.classifier is not None:
             from .vehicle_model import VehicleModelClassifier
             self.vehicle_classifier=VehicleModelClassifier(torch.load(model_file,map_location='cpu',weights_only=True))
+            reference_file=self.directory/'visual_references.pt'
+            if reference_file.exists():
+                import hashlib
+                from .visual_parts import VisualReferences
+                reference=torch.load(reference_file,map_location='cpu',weights_only=True)
+                if reference['source_model_sha256']==hashlib.sha256(model_file.read_bytes()).hexdigest() and reference['labels']==self.vehicle_classifier.labels and reference['brands']==self.vehicle_classifier.brands:
+                    self.vehicle_classifier.references=VisualReferences(reference)
 
     @torch.inference_mode()
     def predict(self, image, region=None, single=False):

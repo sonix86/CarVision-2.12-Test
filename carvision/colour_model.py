@@ -7,6 +7,15 @@ from .core import COLOURS
 
 PREPROCESS=transforms.Compose([transforms.Resize((128,128)),transforms.ToTensor(),transforms.Normalize([.485,.456,.406],[.229,.224,.225])])
 
+class JointColourClassifier:
+    """Use the colour head actually learned by the personal-data training button."""
+    def __init__(self,network,preprocess):self.network=network;self.preprocess=preprocess
+    @torch.inference_mode()
+    def probabilities(self,image):
+        from PIL import ImageOps
+        views=torch.stack([self.preprocess(image),self.preprocess(ImageOps.mirror(image))])
+        return self.network(views)[1].softmax(1).mean(0)
+
 def colour_statistics(image):
     image=image.convert('RGB').resize((128,128));features=[]
     for box in [(.05,.15,.95,.9),(.15,.35,.85,.85),(.1,.55,.9,.85)]:

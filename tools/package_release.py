@@ -29,7 +29,7 @@ def included(path):return not path.relative_to(app).as_posix().startswith(('outp
 files=sorted(p for p in app.rglob('*') if p.is_file() and p.name!='SHA256SUMS.txt' and included(p))
 manifest='\n'.join(hashlib.sha256(p.read_bytes()).hexdigest()+'  '+p.relative_to(app).as_posix() for p in files)+'\n'
 (app/'SHA256SUMS.txt').write_text(manifest,encoding='utf-8')
-output=root/'TashkentCarVision-v1.6-Portable.zip'
+output=root/'TashkentCarVision-v1.7-Portable.zip'
 with zipfile.ZipFile(output,'w',zipfile.ZIP_DEFLATED,compresslevel=5) as z:
     for p in sorted(app.rglob('*')):
         if p.is_file() and included(p):z.write(p,'CarVision/'+p.relative_to(app).as_posix())

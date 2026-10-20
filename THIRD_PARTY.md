@@ -38,3 +38,7 @@ Supplementary Commons category-labelled vehicle photographs, locally resized and
 Generic Mask R-CNN ResNet50 FPN v2 COCO weights are from the official torchvision distribution. Exact URL and metadata: models/segmenter.json. These weights locate visible objects; vehicle brand/model/colour heads are independently trained in this project. Preserve torchvision and COCO attribution bundled with the distribution.
 
 The visible-paint ExtraTrees head is trained locally on source-labelled VCoR samples. scikit-learn 1.6.1 is used only during training; the portable runtime evaluates exported arrays and excludes sklearn. Training recipes, experiments, splits and calibration results are included in source/tools and models/*.json.
+
+## Visible-part references / v1.7
+
+The 3,740 descriptors come exclusively from the existing 374 regional training photographs and their whole/upper/left/right views. The descriptor network is our own previously trained model-name network; no ready-made vehicle-model or brand classifier was obtained. Public source categories, authors, image changes, licences and group splits remain in data/regional metadata. Validation and test images, city examples and filenames are not references. The portable package distributes learned descriptors, not the raw regional training images. Relative scores only compare the sixteen learned classes; they are not an open-world probability of correctness.

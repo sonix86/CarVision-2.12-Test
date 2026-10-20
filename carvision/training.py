@@ -67,7 +67,7 @@ def train(args):
         score=.6*row['brand_accuracy']+.4*row['colour_accuracy']
         if score>best:
             best=score
-            torch.save(dict(state={k:v.detach().cpu() for k,v in model.state_dict().items()},brands=brands,architecture='mobilenet_v3_small_avgmax_dualhead_v1',seed=args.seed,origin='team-trained-brand-head-imagenet-backbone' if pretrained else 'team-trained-from-scratch'),out/'classifier.tmp')
+            torch.save(dict(state={k:v.detach().cpu() for k,v in model.state_dict().items()},brands=brands,architecture='mobilenet_v3_small_avgmax_dualhead_v1',joint_colour_head=True,seed=args.seed,origin='team-trained-brand-head-imagenet-backbone' if pretrained else 'team-trained-from-scratch'),out/'classifier.tmp')
             (out/'classifier.tmp').replace(out/'classifier.pt')
     metadata=dict(history=history,data=statistics(rows),train=statistics(tr),validation=statistics(va),parameters=sum(p.numel() for p in model.parameters()),seconds=time.perf_counter()-started,hardware=device,torch_version=str(torch.__version__),epochs=args.epochs,lr=args.lr,batch=args.batch,seed=args.seed,loss='weighted CE brand + 0.5 CE colour; label smoothing 0.05',optimizer='AdamW, weight_decay=0.01, cosine LR',augmentation='resize224, horizontal flip, affine8deg/4percent/scale0.9-1.1, brightness/contrast0.15',pretrained=False)
     metadata['pretrained']=pretrained;metadata['initialization']='General ImageNet backbone; brand/colour heads independently trained' if pretrained else 'random'

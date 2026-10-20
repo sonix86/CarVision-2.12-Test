@@ -36,6 +36,17 @@ class GuiChecks(unittest.TestCase):
     def test_unknown_manufacturer_still_displays_ranked_models(self):
         text=self.app.result_details(dict(brand='unknown',brand_confidence=.3,colour='white',colour_confidence=.4,colour_reliable=False,model_alternatives=[dict(brand='Chevrolet',model='Spark',confidence=.45),dict(brand='Daewoo',model='Matiz',confidence=.3)]))
         self.assertIn('Spark',text);self.assertIn('Matiz',text);self.assertIn('45%',text);self.assertIn('проверьте',text)
+    def test_training_guide_explains_scope_and_current_own_dataset(self):
+        self.app.show('training');self.root.update()
+        self.assertIn('сама по себе ничего не обучает',self.app.training_guide)
+        self.assertIn('не добавляет имена новых моделей',self.app.training_guide)
+        self.assertIn('0 машин',self.app.training_data_summary.get())
+        self.root.geometry('1120x760');self.root.update();button=self.app.buttons['train'];self.assertLessEqual(button.master.winfo_y()+button.master.winfo_height(),self.app.views['training'].winfo_height())
+    def test_full_model_ranking_can_be_opened_for_a_selected_car(self):
+        self.app.result=dict(cars=[dict(id=1,brand='unknown',model_ranking=[dict(brand='Chevrolet',model='Cobalt',confidence=.4)])])
+        self.app.table.insert('','end',iid='1',values=(1,'Фрагмент','Белый'));self.app.table.selection_set('1');self.app.show_model_ranking()
+        windows=[w for w in self.root.winfo_children() if isinstance(w,tk.Toplevel)]
+        self.assertEqual(len(windows),1);self.assertIn('Сравнение',windows[0].title());windows[0].destroy()
     def test_evidence_card_resets_when_loading_another_photo(self):
         row=dict(brand='Chevrolet',model='Spark',model_confidence=.8,brand_confidence=.9,colour='white',colour_confidence=.6,colour_reliable=True,model_alternatives=[dict(brand='Chevrolet',model='Spark',confidence=.8)])
         self.app.show_evidence(row);self.assertIn('Spark',self.app.selected_title.get());self.assertAlmostEqual(float(self.app.variant_rows[0][1]['value']),.8)

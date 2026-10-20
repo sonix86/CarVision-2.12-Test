@@ -44,7 +44,7 @@ class App:
         rail=tk.Frame(root,bg=NAVY,width=190);rail.pack(side='left',fill='y');rail.pack_propagate(False)
         tk.Label(rail,text='CV',font=('Segoe UI',32,'bold'),fg='#6ed9c8',bg=NAVY).pack(anchor='w',padx=22,pady=(28,2))
         tk.Label(rail,text='CarVision',font=('Segoe UI',18,'bold'),fg='white',bg=NAVY,justify='left').pack(anchor='w',padx=22)
-        tk.Label(rail,text='ТАШКЕНТ  /  1.6',font=('Segoe UI',8),fg='#a4b7cd',bg=NAVY).pack(anchor='w',padx=23,pady=(8,9))
+        tk.Label(rail,text='ТАШКЕНТ  /  1.7',font=('Segoe UI',8),fg='#a4b7cd',bg=NAVY).pack(anchor='w',padx=23,pady=(8,9))
         tk.Label(rail,text='●  Работает без интернета',font=('Segoe UI',8),fg='#7dd5bf',bg=NAVY).pack(anchor='w',padx=22,pady=(0,29))
         self.nav={};self.views={}
         for key,title in [('infer','Анализ фото'),('labels','Учебная разметка'),('training','Обучение'),('help','О проекте')]:
@@ -67,6 +67,8 @@ class App:
     def show(self,key):
         for name,view in self.views.items():view.pack_forget();self.nav[name].configure(bg='#26445e' if key==name else NAVY)
         self.views[key].pack(fill='both',expand=True);self.current=key;self.title.set(dict(infer='Анализ фотографии',labels='Разметка для обучения',training='Обучение на своих данных',help='О проекте')[key]);self.root.after_idle(self.redraw)
+        if key=='training':
+            rows=self.all_labels();self.training_data_summary.set(f"Ваш набор: {len(rows)} машин · {len({r['image'] for r in rows})} фото · {len({r['brand'] for r in rows})} марок · {len({r['group'] for r in rows})} групп съёмки")
 
     def build_infer(self):
         view=self.views['infer'];bar=ttk.Frame(view);bar.pack(fill='x')
@@ -106,11 +108,12 @@ class App:
         self.selected_title=tk.StringVar(value='Выберите машину')
         ttk.Label(self.evidence_card,textvariable=self.selected_title,style='Card.TLabel',font=('Segoe UI',11,'bold'),wraplength=248).pack(anchor='w')
         self.colour_chip=tk.Label(self.evidence_card,text='  Цвет появится после анализа',bg=CARD,fg=MUTED,font=('Segoe UI',9),anchor='w',padx=5,pady=4);self.colour_chip.pack(fill='x',pady=(6,9))
-        ttk.Label(self.evidence_card,text='Варианты модели',style='CardMuted.TLabel',font=('Segoe UI',9)).pack(anchor='w',pady=(0,4))
+        ttk.Label(self.evidence_card,text='Сходство с изученными моделями',style='CardMuted.TLabel',font=('Segoe UI',9)).pack(anchor='w',pady=(0,4))
         self.variant_rows=[]
         for _ in range(3):
             label=ttk.Label(self.evidence_card,text='—',style='Card.TLabel',font=('Segoe UI',9),wraplength=248);label.pack(anchor='w',fill='x')
             meter=ttk.Progressbar(self.evidence_card,style='Evidence.Horizontal.TProgressbar',maximum=1);meter.pack(fill='x',pady=(3,7));self.variant_rows.append((label,meter))
+        self.button(self.evidence_card,'ranking','Все изученные варианты',self.show_model_ranking,fill='x',pady=(0,6)).configure(padding=(7,5))
         self.details=tk.StringVar(value='Нажмите на контур или строку результата. Варианты — предположения сети, их можно проверить на крупном изображении.')
         ttk.Label(self.evidence_card,textvariable=self.details,style='CardMuted.TLabel',font=('Segoe UI',9),wraplength=248).pack(anchor='w',pady=(3,0))
         exports=ttk.Frame(view);exports.pack(fill='x',pady=(8,0))
@@ -135,6 +138,8 @@ class App:
         text+='\nЦвет: '+COLOUR_RU.get(row['colour'],row['colour'])+f" · {row.get('colour_confidence',0):.0%}"+(' · проверьте' if not row.get('colour_reliable',True) else '')
         if len(colours)>1:text+='\nЕщё: '+COLOUR_RU.get(colours[1]['colour'],colours[1]['colour'])+f" · {colours[1]['confidence']:.0%}"
         if row.get('model_reason'):text+='\nДля этой марки модели ещё не обучены.'
+        for reason in row.get('visual_limitations',[]):text+='\n'+reason
+        if row.get('reference_comparison'):text+='\nСравнение с целыми машинами и фрагментами учебного набора. Проценты относительны; неизвестные модели могут быть похожи.'
         if row.get('approximate_mask'):text+='\nГраница приблизительная; наличие машины не подтверждено.'
         elif row.get('segmentation'):text+='\nРаспознана видимая форма машины.'
         return text
@@ -151,6 +156,20 @@ class App:
             self.colour_chip.configure(text='Цвет появится после анализа',bg=CARD,fg=MUTED)
             self.details.set('Нажмите на контур или строку. Проценты сети не гарантируют правильность; неизвестная модель может получить похожий вариант.')
 
+    def show_model_ranking(self):
+        selection=self.table.selection()
+        if not selection or not self.result:return
+        row=next(r for r in self.result['cars'] if r['id']==int(selection[0]));ranking=row.get('model_ranking',row.get('model_alternatives',[]))
+        window=tk.Toplevel(self.root);window.title('Сравнение видимых деталей');window.geometry('670x600')
+        frame=ttk.Frame(window,padding=20);frame.pack(fill='both',expand=True)
+        ttk.Label(frame,text=f'Изученные варианты: {len(ranking)}',font=('Segoe UI',17,'bold')).pack(anchor='w')
+        ttk.Label(frame,text='Это ранжирование обученных классов, а не список всех существующих автомобилей. Одинаковая крыша или фара может встречаться у разных моделей. Уверенный вариант ещё не доказывает, что машина известна сети.',style='Muted.TLabel',wraplength=620).pack(anchor='w',pady=10)
+        table=ttk.Treeview(frame,columns=('rank','model','score'),show='headings',height=12)
+        for key,title,width in [('rank','№',40),('model','Марка и модель',350),('score','Сходство',100)]:table.heading(key,text=title);table.column(key,width=width)
+        table.pack(fill='both',expand=True)
+        for i,r in enumerate(ranking,1):table.insert('','end',values=(i,r['brand']+' '+r['model'],f"{r['confidence']:.1%}"))
+        ttk.Label(frame,text='\n'.join(row.get('visual_limitations',[])) or 'Для проверки загрузите более крупный кадр машины с другого ракурса.',style='Muted.TLabel',wraplength=620).pack(anchor='w',pady=(10,0))
+
     def build_labels(self):
         view=self.views['labels'];ttk.Label(view,text='Подготовка учебных ответов. В «Анализе фото» программа определяет марку и цвет автоматически.',style='Muted.TLabel',wraplength=850).pack(anchor='w',pady=(0,10));bar=ttk.Frame(view);bar.pack(fill='x')
         self.button(bar,'label_open','Добавить своё фото',self.open_label,True,side='left');self.button(bar,'label_save','Сохранить машину',self.save_label,side='left',padx=7);self.button(bar,'undo','Отменить последнюю',self.undo_label,side='left')
@@ -165,12 +184,14 @@ class App:
         self.canvas.bind('<Configure>',lambda e:self.queue_redraw());self.label_status=tk.StringVar(value='Обведите каждую машину. Зелёные рамки сохранены, жёлтая рамка — новая.');ttk.Label(view,textvariable=self.label_status,style='Muted.TLabel',wraplength=850).pack(anchor='w',pady=(10,0))
 
     def build_training(self):
-        view=self.views['training'];ttk.Label(view,text='Разметка  →  Проверка данных  →  Обучение двух сетей  →  Проверка новых фото',font=('Segoe UI',12,'bold'),wraplength=850).pack(anchor='w',pady=(0,12))
-        ttk.Label(view,text='Нужны минимум две марки и независимые группы. Используется локальная ImageNet/COCO-основа; новые головы обучаются на вашей разметке. Предыдущие модели сохраняются в models/backups. Нужен большой и разнообразный набор.',style='Muted.TLabel',wraplength=850).pack(anchor='w',pady=(0,15))
+        view=self.views['training'];ttk.Label(view,text='Научить программу на своих фотографиях',font=('Segoe UI',14,'bold'),wraplength=850).pack(anchor='w',pady=(0,8))
+        self.training_guide='Для распознавания уже есть обученные веса — просто откройте «Анализ фото». Этот раздел нужен для собственного набора Ташкента по заданию. Загрузка фото на анализ сама по себе ничего не обучает.\n\n1. Учебная разметка: добавьте свои снимки, обведите машины и укажите правильные марки и цвета. Серию одной машины сохраняйте одной группой, чтобы она не попала одновременно в обучение и проверку.\n2. Проверить данные: проверяет файлы, координаты, подписи и независимость групп. Нужны как минимум две марки в обучении и две независимые группы; для качества требуется значительно больше.\n3. Обучить: обновляет классификатор марок/цветов и резервный детектор рамок. Эпоха — один проход по учебным данным; больше проходов не всегда лучше. Старые веса сохраняются в models/backups.\n4. Проверка качества: показывает ошибки на сохранённой проверочной части. Затем проверьте новые фото, которых не было в обучении.\n\nКонтурный COCO-сегментатор здесь не переобучается. Конкретные модели (Cobalt, Spark и другие) и сравнение фрагментов обучаются отдельными рецептами source/tools; эта кнопка не добавляет имена новых моделей.'
+        ttk.Label(view,text=self.training_guide,style='Muted.TLabel',wraplength=850,justify='left',font=('Segoe UI',9)).pack(anchor='w',pady=(0,10))
+        self.training_data_summary=tk.StringVar();ttk.Label(view,textvariable=self.training_data_summary,font=('Segoe UI',10,'bold')).pack(anchor='w',pady=(0,10))
         fields=ttk.Frame(view);fields.pack(fill='x');self.epochs=tk.IntVar(value=25);self.detector_epochs=tk.IntVar(value=25)
         for title,var in [('Эпохи классификатора',self.epochs),('Эпохи детектора',self.detector_epochs)]:ttk.Label(fields,text=title).pack(side='left',padx=(0,7));ttk.Spinbox(fields,from_=1,to=1000,textvariable=var,width=6).pack(side='left',padx=(0,20))
         bar=ttk.Frame(view);bar.pack(fill='x',pady=12)
-        self.button(bar,'audit','Проверить данные',lambda:self.command(['audit','--labels',str(ROOT/'data/labels.jsonl')]),side='left');self.button(bar,'train','Обучить обе сети',self.train,True,side='left',padx=7);self.button(bar,'evaluate','Проверка качества',self.evaluate,side='left');self.button(bar,'cancel','Остановить',self.cancel,side='right')
+        self.button(bar,'audit','Проверить данные',lambda:self.command(['audit','--labels',str(ROOT/'data/labels.jsonl')]),side='left');self.button(bar,'train','Обучить марку и цвет / поиск',self.train,True,side='left',padx=7);self.button(bar,'evaluate','Проверка качества',self.evaluate,side='left');self.button(bar,'cancel','Остановить',self.cancel,side='right')
         self.log=tk.Text(view,bg=NAVY,fg='#d6e4ef',font=('Consolas',10),relief='flat',wrap='word',padx=14,pady=14,state='disabled');self.log.pack(fill='both',expand=True);self.append_log('Обучение локально, без API. Общие веса уже включены в пакет.\nГотовые классификаторы марок и цветов не используются.\nОценка на вырезках не заменяет проверку полного конвейера на новых фото.\n')
 
     def build_help(self):
@@ -189,6 +210,7 @@ class App:
             if key=='predict':enabled=enabled and self.path is not None and detector
             if key in ('copy','copy_details','export'):enabled=enabled and self.result is not None
             if key=='zoom':enabled=enabled and (self.region is not None or bool(self.table.selection()))
+            if key=='ranking':enabled=enabled and self.result is not None and bool(self.table.selection())
             if key=='clear_region':enabled=enabled and (self.region is not None or self.scope.get()!=SCOPES[0])
             if key=='label_save':enabled=enabled and self.box is not None
             if key=='undo':enabled=enabled and bool(self.undo_rows)

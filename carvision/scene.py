@@ -61,6 +61,15 @@ def predict_instances(p,original,path,region,single,started):
         if box is None:continue
         x,y,r,b=box;global_box=[round(x*sx+offset[0]),round(y*sy+offset[1]),round(r*sx+offset[0]),round(b*sy+offset[1])]
         local=mask[y:b,x:r];crop=original.crop(global_box);crop.thumbnail((640,640));cm=np.asarray(Image.fromarray(local).resize(crop.size,Image.Resampling.NEAREST));row=classify(p,crop,cm)
+        from .visual_parts import quality_of_fragment
+        reasons=quality_of_fragment(local)
+        if global_box[0]<=1 or global_box[1]<=1 or global_box[2]>=original.width-1 or global_box[3]>=original.height-1:
+            reasons.append('Машина обрезана границей фотографии: показаны варианты без подтверждения модели.')
+        row['visual_limitations']=reasons;row['model_limited']=bool(reasons)
+        if reasons:
+            row['brand_candidate']=row['brand'];row['brand']='unknown';row['model']='unknown'
+        elif row.get('reference_comparison') and row['brand']!='unknown' and row.get('model_candidate_brand')!=row['brand'] and row.get('model_confidence',0)>=.5:
+            row['brand_candidate']=row['brand'];row['brand']='unknown';row['model']='unknown';row['visual_limitations']=['Классификатор марки и сравнение деталей расходятся: название не подтверждено.']
         encoded=encode_mask(local,global_box[:2]);encoded['scale']=[(global_box[2]-global_box[0])/local.shape[1],(global_box[3]-global_box[1])/local.shape[0]]
         contours=[[[round((px+x)*sx+offset[0]),round((py+y)*sy+offset[1])] for px,py in contour] for contour in polygons(local)]
         result.append(dict(row,box=global_box,segmentation=encoded,contours=contours,mask_pixels=int(local.sum()),mask_box_fraction=float(local.mean()),detection_confidence=record['score'],box_source='approximate GrabCut selected foreground' if record.get('approximate') else 'user region + visible-instance mask' if single else 'COCO visible-instance mask',approximate_mask=bool(record.get('approximate'))))
