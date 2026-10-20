@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+build/
+dist/
+*.zip
+data/images/*
+!data/images/.gitkeep
+models/*.pth
+models/*.pt
+outputs/
+cache/
+*.spec

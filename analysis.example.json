@@ -1,0 +1,8 @@
+{
+  "brand_choice": "REPLACE: actual brands covered by the trained model and why they were selected",
+  "collection_labelling": "REPLACE: actual dates/locations, own/shared/public sources and citations, badge verification, labelling process, grouping and split",
+  "errors": "REPLACE: measured validation errors and reasons, detector misses and extra predictions, limitations",
+  "chinese_brands": "REPLACE: actual confusion patterns for BYD, Chery, Haval, Changan, Geely, Jetour and other covered Chinese brands",
+  "phone_tests": "REPLACE: dates, number of independent photos, phone model, screen recapture conditions, measured brand/colour scores and full transfer-to-answer times",
+  "reflection": "REPLACE: what two more weeks would improve, actual individual contributions and verified AI-use disclosure"
+}
