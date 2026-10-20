@@ -41,3 +41,11 @@ Started .venv/Scripts/python.exe -m PyInstaller --noconfirm --distpath dist-v18 
 ## Constraints and caution
 
 General ImageNet/COCO permitted; no downloaded automotive brand/model/colour classifiers, paid APIs, filenames as answers, fabricated own photos or data leakage. User wants separation by visible shape, useful alternatives for partial cars, clear training tab. v1.7 already has disjoint COCO masks, full-context manualROI, model-ranking popup, fragment warnings and personal colour-head fix. Existing model-quality issue: partial and cropped cars can still rank wrong with high relative closed-set scores. All learned classes must be compared; unknowns cannot be forced to known names. Do not hard-code model answers or discard candidates just because paint colour differs.
+
+## Additional prepared follow-up (same turn)
+
+Name correction/preparation was committed as e0b25c1. `tools/fit_expanded_references.py` now exists: adapted v1.7 fitter to expanded candidate/cache, true source aspect ratios and24classes; validation guards legacy whole top1/top3 + upper55/35 top3 within2pp of the v1.7 reference baseline. It raises rejection if no configuration passes, never promotes. Syntax-checked, but not yet run because training is in progress. Evaluate/test report includes legacy/new separately.
+
+`tools/finish_expanded_experiment.py` is RUNNING hidden, PID in outputs/fit-expanded-v18.pid; logs outputs/fit-expanded-v18.log/.err. It waits at most90minutes for COMPLETE training.json, verifies best_epoch>0, then calls the fitter exactly once (20minute subprocess timeout). It stops on training traceback or failure. Do not launch duplicate fit/train jobs. Neither script installs candidate weights. Review its result and rejection json before deciding second round/promotion. First-round candidate directory had no stale training.json when launched; for any second round use a new output directory or explicitly avoid stale completion markers.
+
+Source name-only tests55 passed again in outputs/tests-owner-v18.log. Staged EXE build log outputs/build-owner-v18.log is still running as of this checkpoint. Ordinary account quota showed6% remaining at the last check; automatic continuation configured, no paid reset/credits used.
