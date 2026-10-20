@@ -1,0 +1,80 @@
+[
+  {
+    "id": "01",
+    "title": "Chevrolet cars, Toshkent.jpg",
+    "purpose": "Несколько машин: перекрытия и разные расстояния",
+    "image": "images/01.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Chevrolet_cars,_Toshkent.jpg",
+    "author": "Raf24~commonswiki",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "date": "2025-09-28 13:01:43",
+    "description": "Chevrolet Tracker and Chevrolet Malibu in Tashkent",
+    "changes": "No edits to downloaded photo; scaled proportionally in PDF."
+  },
+  {
+    "id": "02",
+    "title": "BYD Seagull, UZ.jpg",
+    "purpose": "Китайская марка: вечерний снимок",
+    "image": "images/02.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:BYD_Seagull,_UZ.jpg",
+    "author": "Raf24~commonswiki",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "date": "2025-09-28 19:08:21",
+    "description": "BYD Seagull in Tashkent",
+    "changes": "No edits to downloaded photo; scaled proportionally in PDF."
+  },
+  {
+    "id": "03",
+    "title": "Chevrolet Cobalt. Chilonzor-5 avenue, Tashkent, Uzbekistan.jpg",
+    "purpose": "Одиночный автомобиль: проверьте рамку и цвет",
+    "image": "images/03.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Chevrolet_Cobalt._Chilonzor-5_avenue,_Tashkent,_Uzbekistan.jpg",
+    "author": "Jamshid Nurkulov",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "date": "2025-06-13 16:55:35",
+    "description": "Chevrolet Cobalt. Chilonzor-5 avenue, Tashkent, Uzbekistan",
+    "changes": "No edits to downloaded photo; scaled proportionally in PDF."
+  },
+  {
+    "id": "04",
+    "title": "Chevrolet Malibu in Beshchinar Mahallah, Tashkent.jpg",
+    "purpose": "Уличный кадр: ракурс и фон",
+    "image": "images/04.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Chevrolet_Malibu_in_Beshchinar_Mahallah,_Tashkent.jpg",
+    "author": "Ayqironlik",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "date": "2024-11-06 13:53:15",
+    "description": "Chevrolet Malibu in Beshchinar Mahallah, Tashkent",
+    "changes": "No edits to downloaded photo; scaled proportionally in PDF."
+  },
+  {
+    "id": "05",
+    "title": "Nexia-3 vehicle (Tashkent, Uzbekistan).jpg",
+    "purpose": "Проверка марки по эмблеме: название модели не заменяет марку",
+    "image": "images/05.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Nexia-3_vehicle_(Tashkent,_Uzbekistan).jpg",
+    "author": "Shuhrataxmedov",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "date": "Taken on 6 February 2019, 15:53:52",
+    "description": "Модель нового автомобиля GM Uzbekistan в 2019 году Nexia-3",
+    "changes": "No edits to downloaded photo; scaled proportionally in PDF."
+  },
+  {
+    "id": "06",
+    "title": "Ташкент, ВАЗ-2101 на Нуронийлар.jpg",
+    "purpose": "Другой тип кузова и возраст автомобиля",
+    "image": "images/06.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82,_%D0%92%D0%90%D0%97-2101_%D0%BD%D0%B0_%D0%9D%D1%83%D1%80%D0%BE%D0%BD%D0%B8%D0%B9%D0%BB%D0%B0%D1%80.jpg",
+    "author": "Nikolai Bulykin",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "date": "2025-04-18 10:30:36",
+    "description": "VAZ-2101 at Nuroniylar street. Tashkent, Uzbekistan.",
+    "changes": "No edits to downloaded photo; scaled proportionally in PDF."
+  }
+]
