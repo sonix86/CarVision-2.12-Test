@@ -7,6 +7,9 @@ data/images/*
 !data/images/.gitkeep
 models/*.pth
 models/*.pt
+models/**/*.pt
+models/**/*.pth
+models/backups/
 outputs/
 cache/
 *.spec
@@ -14,3 +17,4 @@ tmp/
 samples/images/*.jpg
 datasets/
 data/public_prototype/images/
+data/regional/images/

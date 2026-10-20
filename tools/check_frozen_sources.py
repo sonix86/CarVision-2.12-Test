@@ -6,9 +6,9 @@ root=Path(__file__).resolve().parents[1];reader=ZlibArchiveReader(str(root/'buil
 def signature(code):
     return (code.co_code,tuple(signature(v) if isinstance(v,types.CodeType) else v for v in code.co_consts),code.co_names,code.co_varnames,code.co_freevars,code.co_cellvars)
 checked=[]
-for module in ['core','gui','training','detector_training','reporting','colour_model']:
+for module in ['core','gui','training','detector_training','reporting','colour_model','overlays']:
     source=root/'carvision'/f'{module}.py';frozen=reader.extract('carvision.'+module);expected=compile(source.read_text(encoding='utf-8'),str(source),'exec')
     assert signature(frozen)==signature(expected),'Frozen code differs from source: '+module
     checked.append(module)
-(root/'outputs/frozen-v12-check.json').write_text(json.dumps(dict(passed=True,modules=checked),indent=2))
+(root/'outputs/frozen-v13-check.json').write_text(json.dumps(dict(passed=True,modules=checked),indent=2))
 print('Frozen code matches current sources:',', '.join(checked))

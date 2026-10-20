@@ -1,0 +1,50 @@
+{
+  "source": "Wikimedia Commons explicit brand/model categories plus matching file title; detector crops; no pretrained brand weights",
+  "counts": {
+    "BYD": {
+      "train": 17,
+      "validation": 4,
+      "test": 4
+    },
+    "Chery": {
+      "train": 20,
+      "validation": 5,
+      "test": 4
+    },
+    "Chevrolet": {
+      "train": 222,
+      "validation": 48,
+      "test": 47
+    },
+    "Daewoo": {
+      "train": 64,
+      "validation": 14,
+      "test": 14
+    },
+    "Haval": {
+      "train": 18,
+      "validation": 4,
+      "test": 4
+    },
+    "Kia": {
+      "train": 17,
+      "validation": 4,
+      "test": 4
+    },
+    "Lada": {
+      "train": 16,
+      "validation": 3,
+      "test": 3
+    }
+  },
+  "excluded": {
+    "too_small": 25,
+    "no_confident_car": 64,
+    "ambiguous_title": 13,
+    "near_duplicate_crop": 2,
+    "multiple_comparable_cars": 7
+  },
+  "split": "Author/date sessions grouped; crop dHash distance<=5 duplicates removed; true vehicle identities unavailable",
+  "six_demo_photos_excluded": true,
+  "own_student_photos": 0
+}

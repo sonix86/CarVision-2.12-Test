@@ -7,7 +7,9 @@ from carvision.core import ROOT,read_image
 from carvision.colour_model import ColourClassifier
 torch.set_num_threads(4)
 checkpoint=torch.load(ROOT/'models/colour_model.pt',weights_only=True);model=ColourClassifier(checkpoint)
-metrics=json.loads((ROOT/'models/colour_training.json').read_text());metrics.update(head_parameters=sum(p.numel() for p in model.head.parameters()),general_backbone_parameters=sum(p.numel() for p in model.features.parameters()),feature_dimensions=len(checkpoint['mean']),input_size=128,epochs_completed=len(metrics['history']),optimizer='AdamW lr=0.001 weight_decay=0.01; cosine decay over max100 epochs; early stop after15 unimproved epochs, minimum30',batch=64,loss='Weighted cross entropy; inverse-sqrt class counts; label smoothing 0.03',timing_scope='seconds measures MLP training/validation, excluding data preparation and frozen feature extraction')
+metrics=json.loads((ROOT/'models/colour_training.json').read_text(encoding='utf-8'))
+if checkpoint.get('architecture') not in ('colour_cnn_avgmax_v2','colour_evidence_ensemble_v3') and checkpoint.get('feature_mode')!='paint_statistics':
+    metrics.update(head_parameters=sum(p.numel() for p in model.head.parameters()),general_backbone_parameters=sum(p.numel() for p in model.features.parameters()),feature_dimensions=len(checkpoint['mean']),input_size=128,epochs_completed=len(metrics['history']),optimizer='AdamW lr=0.001 weight_decay=0.01; cosine decay over max100 epochs; early stop after15 unimproved epochs, minimum30',batch=64,loss='Weighted cross entropy; inverse-sqrt class counts; label smoothing 0.03',timing_scope='seconds measures MLP training/validation, excluding data preparation and frozen feature extraction')
 (ROOT/'models/colour_training.json').write_text(json.dumps(metrics,indent=2))
 path=ROOT/'models/evaluation/public_test.json';result=json.loads(path.read_text());result.setdefault('colour_visual_review_hsv',result.get('colour_visual_review'))
 refs=json.loads((ROOT/'data/public_prototype/colour_reference_review.json').read_text())['references'];scored=[]

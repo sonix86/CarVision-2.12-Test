@@ -1,0 +1,54 @@
+{
+  "candidates": [
+    {
+      "candidate": "robust_colour_candidate",
+      "epoch": 20,
+      "loss": 0.37857181052654837,
+      "train_accuracy": 0.9396135265700483,
+      "validation_accuracy": 0.9370735287666321,
+      "cross_domain_development_accuracy": 0.8260869383811951,
+      "selection_score": 0.8815802335739136,
+      "seconds": 75.7848290999973
+    },
+    {
+      "candidate": "paint_colour_candidate",
+      "seed": 13210,
+      "epoch": 11,
+      "validation_accuracy": 0.8885519504547119,
+      "cross_domain_development_accuracy": 0.695652186870575,
+      "selection_score": 0.7921020686626434
+    },
+    {
+      "candidate": "colour_ensemble_candidate",
+      "weights": [
+        0.25,
+        0.0,
+        0.5,
+        0.25,
+        0.0,
+        0.0
+      ],
+      "validation_accuracy": 0.9416224360466003,
+      "cross_domain_development_accuracy": 0.8695651888847351,
+      "selection_score": 0.9055938124656677
+    },
+    {
+      "candidate": "colour_panels_candidate",
+      "weights": [
+        0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.5,
+        0.0,
+        0.0,
+        0.25
+      ],
+      "validation_accuracy": 0.9423806071281433,
+      "cross_domain_development_accuracy": 0.9130434989929199,
+      "selection_score": 0.9277120530605316
+    }
+  ],
+  "selected": "colour_panels_candidate",
+  "selection": "Mean VCoR validation and 23 separate Stanford development reviews; VCoR validation>=88%; tests never select architecture/checkpoint"
+}

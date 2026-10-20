@@ -15,10 +15,14 @@ def main():
         for r in batch:
             im=read_image(root/r['image']);x,y,x2,y2=r['box'];px=(x2-x)*.04;py=(y2-y)*.04
             crops.append(pipeline.preprocess(im.crop((max(0,x-px),max(0,y-py),min(im.width,x2+px),min(im.height,y2+py)))))
-        with torch.inference_mode():b,_=pipeline.classifier(torch.stack(crops));prob=b.softmax(1);values,indices=prob.max(1)
+        with torch.inference_mode():
+            x=torch.stack(crops);b,_=pipeline.classifier(x);prob=(b/getattr(pipeline,'brand_temperature',1.)).softmax(1)
+            if getattr(pipeline,'multiview_brand',False):
+                b,_=pipeline.classifier(x.flip(3));prob=(prob+(b/getattr(pipeline,'brand_temperature',1.)).softmax(1))/2
+            values,indices=prob.max(1)
         for r,value,index in zip(batch,values.tolist(),indices.tolist()):
             truth=pipeline.brands.index(r['brand']);matrix[truth,index]+=1;correct.append(truth==index);conf.append(value);preds.append(dict(image=r['image'],reference=r['brand'],prediction=pipeline.brands[index],confidence=value))
-    result=dict(split=args.split,images=len(rows),brand_top1_accuracy=float(np.mean(correct)),brand_scope='13 known brands, human annotated ground-truth car crops; not full-scene accuracy and not unknown-brand accuracy',brands=pipeline.brands,confusion_matrix=matrix.tolist(),per_brand={b:dict(count=int(matrix[i].sum()),accuracy=float(matrix[i,i]/max(1,matrix[i].sum()))) for i,b in enumerate(pipeline.brands)},thresholds=[],seconds=round(time.perf_counter()-started,2))
+    result=dict(split=args.split,images=len(rows),brand_top1_accuracy=float(np.mean(correct)),brand_scope=f"{len(set(r['brand'] for r in rows))} brands represented in this Stanford benchmark; human annotated crops, not full-scene/unknown-brand accuracy",brands=pipeline.brands,confusion_matrix=matrix.tolist(),per_brand={b:dict(count=int(matrix[i].sum()),accuracy=float(matrix[i,i]/max(1,matrix[i].sum()))) for i,b in enumerate(pipeline.brands)},thresholds=[],seconds=round(time.perf_counter()-started,2))
     for threshold in [.2,.3,.4,.5,.6,.65,.7,.8,.9]:
         accepted=np.asarray(conf)>=threshold;n=int(accepted.sum());result['thresholds'].append(dict(threshold=threshold,accepted=n,coverage=n/len(rows),accuracy_when_accepted=float(np.asarray(correct)[accepted].mean()) if n else None))
     refs=root/'colour_reference_review.json'
@@ -33,7 +37,7 @@ def main():
     if args.split=='test' and args.detector_images>0:
         from torchvision.ops import box_iou
         selected=[]
-        for brand in pipeline.brands:
+        for brand in sorted({r['brand'] for r in rows}):
             pool=[r for r in rows if r['brand']==brand];random.Random(3211).shuffle(pool);selected.extend(pool[:max(1,args.detector_images//len(pipeline.brands))])
         measured=[];scene_started=time.perf_counter()
         for i,r in enumerate(selected):

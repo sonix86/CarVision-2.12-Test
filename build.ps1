@@ -5,11 +5,15 @@ if (-not (Test-Path -LiteralPath $taskPython)) { throw 'Create .venv and install
 & $taskPython -m PyInstaller --noconfirm --clean --onedir --console --name CarVision --collect-data torchvision --collect-data matplotlib --exclude-module pyarrow --hidden-import PIL._tkinter_finder launch.py
 if ($LASTEXITCODE -ne 0) { throw 'PyInstaller failed' }
 $taskTarget = Join-Path $PSScriptRoot 'dist\CarVision'
-foreach ($taskFolder in @('models','samples')) {
-    Copy-Item -LiteralPath (Join-Path $PSScriptRoot $taskFolder) -Destination $taskTarget -Recurse -Force
-}
+Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'samples') -Destination $taskTarget -Recurse -Force
+# Training candidates, historical weights and downloaded datasets are not runtime assets.
+$taskModels = Join-Path $taskTarget 'models'
+New-Item -ItemType Directory -Path $taskModels -Force | Out-Null
+Get-ChildItem -LiteralPath (Join-Path $PSScriptRoot 'models') -File | ForEach-Object { Copy-Item -LiteralPath $_.FullName -Destination $taskModels -Force }
+Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'models\evaluation') -Destination $taskModels -Recurse -Force
 $taskData = Join-Path $taskTarget 'data'
 New-Item -ItemType Directory -Path (Join-Path $taskData 'images') -Force | Out-Null
+Get-ChildItem -LiteralPath (Join-Path $PSScriptRoot 'data\images') -Force | ForEach-Object { Copy-Item -LiteralPath $_.FullName -Destination (Join-Path $taskData 'images') -Recurse -Force }
 Copy-Item -LiteralPath 'data\labels.jsonl' -Destination $taskData -Force
 # Public training images and downloaded parquet shards are development assets, not runtime dependencies.
 New-Item -ItemType Directory -Path (Join-Path $taskData 'public_prototype') -Force | Out-Null
