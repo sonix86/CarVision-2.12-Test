@@ -36,6 +36,7 @@ class GuiChecks(unittest.TestCase):
         sx,sy,ox,oy=app.transforms[app.canvas]
         app.start_box(SimpleNamespace(x=ox+100*sx,y=oy+80*sy));app.end_box(SimpleNamespace(x=ox+500*sx,y=oy+350*sy));self.assertEqual(app.box,[100,80,500,350])
         app.save_label();self.assertEqual(len(app.all_labels()),1);self.assertEqual(app.all_labels()[0]['box'],[100,80,500,350])
+        app.redraw();marker=app.canvas.find_withtag('car-1')[0];x,y,x2,y2=app.canvas.bbox(marker);app.hover_label(SimpleNamespace(x=(x+x2)/2,y=(y+y2)/2));self.assertIn(app.label_rows[0]['brand'],app.label_status.get())
         self.root.geometry('1160x780');self.root.update();app.redraw();sx,sy,ox,oy=app.transforms[app.canvas]
         app.start_box(SimpleNamespace(x=ox+20*sx,y=oy+20*sy));app.end_box(SimpleNamespace(x=ox+180*sx,y=oy+200*sy));self.assertEqual(app.box,[20,20,180,200])
         app.undo_label();self.assertEqual(app.all_labels(),[])

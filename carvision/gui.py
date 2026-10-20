@@ -90,6 +90,7 @@ class App:
         ttk.Checkbutton(meta,text='Одна группа для серии',variable=self.keep_group).pack(side='left')
         self.canvas=tk.Canvas(view,bg='#e4eaf2',highlightthickness=0);self.canvas.pack(fill='both',expand=True)
         for event,fn in [('<ButtonPress-1>',self.start_box),('<B1-Motion>',self.drag_box),('<ButtonRelease-1>',self.end_box)]:self.canvas.bind(event,fn)
+        self.canvas.bind('<Motion>',self.hover_label)
         self.canvas.bind('<Configure>',lambda e:self.queue_redraw());self.label_status=tk.StringVar(value='Обведите каждую машину. Зелёные рамки сохранены, жёлтая рамка — новая.');ttk.Label(view,textvariable=self.label_status,style='Muted.TLabel',wraplength=850).pack(anchor='w',pady=(10,0))
 
     def build_training(self):
@@ -169,8 +170,7 @@ class App:
             screen_boxes.append(coords)
         for i,(row,rect) in enumerate(zip(rows or [],marker_positions(screen_boxes,w,h)),1):
             ident=row.get('id',i);x,y,x2,y2=rect;box=screen_boxes[i-1];canvas.create_line(box[0],box[1],(x+x2)/2,(y+y2)/2,fill='#24c9ad');canvas.create_rectangle(*rect,fill=TEAL if ident==selected else NAVY,outline='#ffb341' if ident==selected else '#24c9ad');canvas.create_text((x+x2)/2,(y+y2)/2,text=str(ident),fill='white',font=('Segoe UI',9,'bold'),tags='car-marker')
-            if canvas==self.preview:
-                tag=f'car-{ident}';canvas.addtag_withtag(tag,canvas.find_all()[-1]);canvas.addtag_withtag(tag,canvas.find_all()[-2]);canvas.tag_bind(tag,'<Button-1>',lambda event,k=ident:self.select_car(k))
+            tag=f'car-{ident}';canvas.addtag_withtag(tag,canvas.find_all()[-1]);canvas.addtag_withtag(tag,canvas.find_all()[-2])
 
     def select_car(self,ident):
         if not self.busy and self.scope.get()==SCOPES[0] and self.table.exists(str(ident)):
@@ -215,6 +215,9 @@ class App:
         point=self.region_position(event)
         if point is None:return
         if self.scope.get()==SCOPES[0]:
+            for item in reversed(self.preview.find_overlapping(event.x,event.y,event.x,event.y)):
+                tag=next((t for t in self.preview.gettags(item) if t.startswith('car-') and t[4:].isdigit()),None)
+                if tag:self.select_car(int(tag[4:]));return
             hits=[r for r in self.result['cars'] if r['box'][0]<=point[0]<=r['box'][2] and r['box'][1]<=point[1]<=r['box'][3]] if self.result else []
             if hits:
                 row=min(hits,key=lambda r:(r['box'][2]-r['box'][0])*(r['box'][3]-r['box'][1]));self.table.selection_set(str(row['id']));self.table.see(str(row['id']));self.redraw()
@@ -274,7 +277,12 @@ class App:
         path=ROOT/'data/labels.jsonl';return [json.loads(s) for s in path.read_text(encoding='utf-8-sig').splitlines() if s.strip()] if path.exists() else []
     def write_labels(self,rows):
         path=ROOT/'data/labels.jsonl';path.parent.mkdir(parents=True,exist_ok=True);temp=path.with_suffix('.tmp');temp.write_text(''.join(json.dumps(r,ensure_ascii=False)+'\n' for r in rows),encoding='utf-8');temp.replace(path)
-    def reload_labels(self):self.label_rows=[r for r in self.all_labels() if r['image']=='images/'+self.label_file.name];self.label_status.set(f'Сохранено машин на фото: {len(self.label_rows)}. Зелёные рамки уже сохранены; можно обвести следующую машину.')
+    def reload_labels(self):self.label_rows=[r for r in self.all_labels() if r['image']=='images/'+self.label_file.name];self.label_status.set(f'Сохранено машин: {len(self.label_rows)}. Наведите на номер, чтобы посмотреть марку и цвет. Можно обвести следующую машину.')
+    def hover_label(self,event):
+        for item in reversed(self.canvas.find_overlapping(event.x,event.y,event.x,event.y)):
+            tag=next((t for t in self.canvas.gettags(item) if t.startswith('car-') and t[4:].isdigit()),None)
+            if tag and 0<int(tag[4:])<=len(self.label_rows):
+                row=self.label_rows[int(tag[4:])-1];self.label_status.set(f"Машина № {tag[4:]}: {row['brand']} · {COLOUR_RU.get(row['colour'],row['colour'])}. Сохранённая учебная метка.");return
     def position(self,event):
         if self.canvas not in self.transforms:return None
         sx,sy,ox,oy=self.transforms[self.canvas];return max(0,min(self.label_image.width,(event.x-ox)/sx)),max(0,min(self.label_image.height,(event.y-oy)/sy))
