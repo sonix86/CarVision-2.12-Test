@@ -6,7 +6,8 @@ import socket
 from pathlib import Path
 from unittest.mock import patch
 from PIL import Image
-from carvision.core import Pipeline, heuristic_colour, Classifier, ROOT
+import torch
+from carvision.core import Pipeline, heuristic_colour, Classifier, ROOT,detection_tiles,restore_tile_boxes,save_prediction
 from carvision.data import load_records,split_records
 from carvision.scoring import photo_score
 
@@ -26,9 +27,39 @@ class Checks(unittest.TestCase):
     def test_inference_has_no_network_and_no_untrained_brands(self):
         with tempfile.TemporaryDirectory() as temp:
             path=Path(temp)/'blank.png';Image.new('RGB',(640,480),'white').save(path)
-            with patch.object(socket.socket,'connect',side_effect=AssertionError('Network forbidden')):
-                pipeline=Pipeline(); result=pipeline.predict(path)
+            pipeline=object.__new__(Pipeline);pipeline.mode='balanced';pipeline.detection=.5;pipeline.classifier=None;pipeline.brand_threshold=.65;pipeline.colour_mode='trained'
+            pipeline.detector=lambda images:[dict(boxes=torch.empty((0,4)),scores=torch.empty(0),labels=torch.empty(0,dtype=torch.long)) for _ in images]
+            with patch.object(socket.socket,'connect',side_effect=AssertionError('Network forbidden')):result=pipeline.predict(path)
             self.assertFalse(result['classifier_trained']);self.assertEqual(result['cars'],[])
+
+    def test_team_detector_required(self):
+        with tempfile.TemporaryDirectory() as temp:
+            with self.assertRaises(FileNotFoundError):Pipeline(temp)
+
+    def test_tile_mapping_and_seam_rejection(self):
+        d=dict(boxes=torch.tensor([[30.,40,160,140],[0.,50,60,110]]),scores=torch.tensor([.8,.9]),labels=torch.tensor([1,1]))
+        boxes,scores=restore_tile_boxes(d,(500,0,1268,768),1600,1000,.5)
+        self.assertEqual(boxes.tolist(),[[530,40,660,140]])
+
+    def test_tiled_predictions_deduplicate_and_keep_coordinates(self):
+        with tempfile.TemporaryDirectory() as temp:
+            path=Path(temp)/'street.png';Image.new('RGB',(1600,900),'white').save(path);tiles=detection_tiles(1600,900);remaining=iter(tiles)
+            def detect(images):
+                results=[]
+                for image in images:
+                    x,y,r,b=next(remaining);global_box=[800,300,1100,500]
+                    if x<=800 and y<=300 and r>=1100 and b>=500:results.append(dict(boxes=torch.tensor([[800-x,300-y,1100-x,500-y]],dtype=torch.float32),scores=torch.tensor([.85]),labels=torch.tensor([1])))
+                    else:results.append(dict(boxes=torch.empty((0,4)),scores=torch.empty(0),labels=torch.empty(0,dtype=torch.long)))
+                return results
+            p=object.__new__(Pipeline);p.mode='balanced';p.detection=.5;p.brand_threshold=.65;p.classifier=None;p.colour_mode='trained';p.detector=detect
+            result=p.predict(path);self.assertEqual(len(result['cars']),1);self.assertEqual(result['cars'][0]['box'],[800,300,1100,500]);self.assertGreater(result['detector_views'],1)
+
+    def test_exports_do_not_overwrite_same_names(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp);photo=root/'same.png';Image.new('RGB',(32,32),'white').save(photo)
+            result=dict(cars=[],classifier_trained=False)
+            a=save_prediction(photo,result,root/'out');b=save_prediction(photo,result,root/'out')
+            self.assertNotEqual(a,b);self.assertTrue(a.exists() and b.exists())
 
     def test_duplicate_images_stay_together(self):
         rows=[dict(brand='BYD' if i%2 else 'Kia',group=str(i//2),hash=str(i//2),image=str(i)) for i in range(20)]

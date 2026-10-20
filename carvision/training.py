@@ -25,7 +25,7 @@ def train(args):
     rows=load_records(args.labels); tr,va=split_records(rows,args.seed)
     brands=sorted({r['brand'] for r in tr})
     out=Path(args.output); out.mkdir(parents=True,exist_ok=True)
-    model=Classifier(len(brands),pretrained=not args.scratch)
+    model=Classifier(len(brands))
     device='cuda' if torch.cuda.is_available() else 'cpu'; model.to(device)
     train_loader=DataLoader(Cars(tr,brands,True),batch_size=args.batch,shuffle=True,num_workers=0)
     val_loader=DataLoader(Cars(va,brands),batch_size=args.batch,num_workers=0)
@@ -58,10 +58,13 @@ def train(args):
         score=.6*row['brand_accuracy']+.4*row['colour_accuracy']
         if score>best:
             best=score
-            torch.save(dict(state={k:v.detach().cpu() for k,v in model.state_dict().items()},brands=brands,architecture='mobilenet_v3_small_avgmax_dualhead_v1',seed=args.seed),out/'classifier.pt')
-    metadata=dict(history=history,data=statistics(rows),train=statistics(tr),validation=statistics(va),parameters=sum(p.numel() for p in model.parameters()),seconds=time.perf_counter()-started,hardware=device,torch_version=str(torch.__version__),epochs=args.epochs,lr=args.lr,batch=args.batch,seed=args.seed,loss='weighted CE brand + 0.5 CE colour; label smoothing 0.05',optimizer='AdamW, weight_decay=0.01, cosine LR',augmentation='resize224, horizontal flip, affine8deg/4percent/scale0.9-1.1, brightness/contrast0.15',pretrained=not args.scratch)
+            torch.save(dict(state={k:v.detach().cpu() for k,v in model.state_dict().items()},brands=brands,architecture='mobilenet_v3_small_avgmax_dualhead_v1',seed=args.seed,origin='team-trained-from-scratch'),out/'classifier.tmp')
+            (out/'classifier.tmp').replace(out/'classifier.pt')
+    metadata=dict(history=history,data=statistics(rows),train=statistics(tr),validation=statistics(va),parameters=sum(p.numel() for p in model.parameters()),seconds=time.perf_counter()-started,hardware=device,torch_version=str(torch.__version__),epochs=args.epochs,lr=args.lr,batch=args.batch,seed=args.seed,loss='weighted CE brand + 0.5 CE colour; label smoothing 0.05',optimizer='AdamW, weight_decay=0.01, cosine LR',augmentation='resize224, horizontal flip, affine8deg/4percent/scale0.9-1.1, brightness/contrast0.15',pretrained=False)
     (out/'training.json').write_text(json.dumps(metadata,indent=2),encoding='utf-8')
     evaluate(args.labels,out,out/'evaluation',args.seed)
+    from .detector_training import train_detector
+    train_detector(tr,va,out,getattr(args,'detector_epochs',25),args.seed,args.lr)
 
 def evaluate(labels,models_dir,output,seed=3210):
     rows=load_records(labels); directory=Path(models_dir)

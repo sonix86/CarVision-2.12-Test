@@ -9,12 +9,13 @@ from reportlab.lib.pagesizes import A4
 from .core import ROOT, COLOURS
 
 def report(args):
-    required=[ROOT/'models/training.json',ROOT/'models/evaluation/metrics.json',ROOT/'data/labels.jsonl',Path(args.analysis)]
+    required=[ROOT/'models/training.json',ROOT/'models/evaluation/metrics.json',ROOT/'data/labels.jsonl',Path(args.analysis),ROOT/'models/detector_training.json']
     for f in required:
         if not f.exists():raise FileNotFoundError(f'Report requires actual evidence: {f}')
     if not args.repo.startswith('https://github.com/'):raise ValueError('Provide a full real GitHub repository URL')
     train=json.loads(required[0].read_text(encoding='utf-8')); metrics=json.loads(required[1].read_text(encoding='utf-8'))
     analysis=json.loads(Path(args.analysis).read_text(encoding='utf-8'))
+    detector=json.loads(required[4].read_text(encoding='utf-8'))
     for key in ['brand_choice','collection_labelling','errors','chinese_brands','phone_tests','reflection']:
         if not analysis.get(key):raise ValueError('Analysis JSON must include actual '+key)
     styles=getSampleStyleSheet(); styles['BodyText'].fontSize=9; styles['BodyText'].leading=12
@@ -53,10 +54,11 @@ def report(args):
     if samples:story.append(Table([[Table([[s[0]],[s[1]]]) for s in samples]],colWidths=[160]*len(samples)))
     story.append(PageBreak());heading('3. Architecture and training')
     # An actual diagram made of cells/arrows, not an unrendered Mermaid block.
-    for text in ['Phone photo (cable / offline transfer)','↓','COCO SSDLite320 MobileNetV3 Large → car boxes + NMS','↓','Per-car crop → MobileNetV3 Small → average + maximum pooling','↓','1152 → 256 Hardswish / dropout 0.3','↓','Brand head + eight-colour head → (brand, colour) list']:
+    for text in ['Phone photo (cable / offline transfer)','↓','Team-trained SSDLite320 MobileNetV3 Large → full view + overlapping tiles → NMS','↓','Per-car crop → MobileNetV3 Small → average + maximum pooling','↓','1152 → 256 Hardswish / dropout 0.3','↓','Brand head + eight-colour head → (brand, colour) list']:
         para(text)
-    para('Backbone is fine-tuned on team data. Low-confidence brand outputs unknown (threshold 0.65 by default). Detector threshold 0.6; NMS IoU 0.45. A central-body HSV baseline is available before training and is explicitly labelled as baseline. Parameters: '+str(train['parameters'])+'. The detector is generic, not a ready-made car-brand model.')
+    para('Both networks are trained from random initialization on team data, without COCO or ImageNet weights. Low-confidence brand outputs unknown (threshold 0.65). Detector threshold 0.5; NMS IoU 0.45. Balanced mode uses 768-pixel overlapping tiles; detail mode also uses a mirrored full view. Classifier parameters: '+str(train['parameters'])+'; detector parameters: '+str(detector['parameters'])+'.')
     para('Training: '+train['loss']+'; '+train['optimizer']);para('Learning rate '+str(train['lr'])+'; epochs '+str(train['epochs'])+'; batch '+str(train['batch'])+'; hardware '+train['hardware']+'; '+str(round(train['seconds'],1))+' seconds.');para('Augmentation: '+train['augmentation'])
+    para('Detector: AdamW, LR '+str(train['lr'])+', batch 2, '+str(detector['epochs'])+' epochs, '+str(round(detector['seconds'],1))+' seconds; SSD classification and box-regression losses, horizontal flips. Detector held-out metrics: '+json.dumps(detector['history'][-1]))
     story.append(PageBreak());heading('4. Evaluation')
     para(f"Held-out car crops: {metrics['validation_cars']}. Brand accuracy {metrics['brand_accuracy']:.3f}; colour accuracy {metrics['colour_accuracy']:.3f}.")
     para(metrics['scope'])
@@ -70,7 +72,7 @@ def report(args):
     story.append(PageBreak());heading('6. Reflection, provenance and integrity')
     para(analysis['reflection'])
     para('The architecture must be checked against other teams by the students/instructor; software alone cannot certify uniqueness. Only original team code and team-trained brand/colour weights are submitted. No fabricated student commits or contributions are generated.')
-    para('Generic pretrained weights: torchvision SSDLite320 MobileNetV3 Large (COCO) and MobileNetV3 Small (ImageNet). Documentation: https://docs.pytorch.org/vision/stable/models.html . Library and model provenance is recorded in THIRD_PARTY.md.')
+    para('Network implementations use torchvision; no pretrained weights are loaded. Documentation: https://docs.pytorch.org/vision/stable/models.html . Library provenance and public example-photo licenses are recorded in THIRD_PARTY.md and samples/sources.json. Public examples are not automatically imported as training data.')
     para('Submit one PDF, no more than six pages, with the repository URL on its first page. The repository must contain code, labels, data or a data link, trained weights or a download link, and a meaningful real commit history. Tag the verified final commit midterm before 27 October 2026, 23:59 Tashkent time. Live test: 28 October 2026, NH311.')
     output=Path(args.output);output.parent.mkdir(parents=True,exist_ok=True)
     SimpleDocTemplate(str(output),pagesize=A4,rightMargin=36,leftMargin=36,topMargin=30,bottomMargin=30).build(story)

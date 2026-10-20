@@ -1,6 +1,7 @@
 import json
 import sys
 import time
+from datetime import datetime
 from pathlib import Path
 
 import numpy as np
@@ -22,9 +23,9 @@ def read_image(path):
 
 class Classifier(nn.Module):
     """MobileNetV3 Small + concatenated average/max pooling + two heads."""
-    def __init__(self, classes, pretrained=False):
+    def __init__(self, classes):
         super().__init__()
-        m = models.mobilenet_v3_small(weights=models.MobileNet_V3_Small_Weights.DEFAULT if pretrained else None)
+        m = models.mobilenet_v3_small(weights=None)
         self.features = m.features
         self.neck = nn.Sequential(nn.Linear(1152, 256), nn.Hardswish(), nn.Dropout(.3))
         self.brand = nn.Linear(256, classes)
@@ -44,20 +45,56 @@ def heuristic_colour(crop):
     counts = np.array([m.sum() for m in masks])
     return COLOURS[int(counts.argmax())], float(counts.max()/max(1,counts.sum()))
 
+def detection_tiles(width, height, size=768, overlap=.25):
+    """Full view followed by overlapping crops; coordinates are in working-image pixels."""
+    result=[(0,0,width,height)]
+    if max(width,height)<=size:return result
+    def starts(length):
+        if length<=size:return [0]
+        values=list(range(0,length-size+1,max(1,round(size*(1-overlap)))))
+        if values[-1]!=length-size:values.append(length-size)
+        return values
+    for y in starts(height):
+        for x in starts(width):
+            rect=(x,y,min(x+size,width),min(y+size,height))
+            if rect not in result:result.append(rect)
+    return result
+
+def restore_tile_boxes(detection, tile, width, height, threshold, car_label=1):
+    """Map local boxes to full coordinates, excluding objects cut at internal seams."""
+    x,y,right,bottom=tile
+    mask=(detection['labels']==car_label)&(detection['scores']>=threshold)
+    boxes=detection['boxes'][mask].clone();scores=detection['scores'][mask]
+    if not len(boxes):return boxes,scores
+    margin=3
+    valid=torch.ones(len(boxes),dtype=torch.bool)
+    if x>0:valid &= boxes[:,0]>margin
+    if y>0:valid &= boxes[:,1]>margin
+    if right<width:valid &= boxes[:,2]<right-x-margin
+    if bottom<height:valid &= boxes[:,3]<bottom-y-margin
+    boxes=boxes[valid];scores=scores[valid]
+    boxes+=torch.tensor([x,y,x,y],dtype=boxes.dtype)
+    return boxes,scores
+
 class Pipeline:
-    def __init__(self, directory=None, detection=.6, brand_threshold=.65, colour_mode='trained'):
+    def __init__(self, directory=None, detection=.5, brand_threshold=.65, colour_mode='trained', mode='balanced'):
         torch.set_num_threads(max(1,min(4,torch.get_num_threads())))
         self.directory = Path(directory or ROOT/'models')
         self.detection, self.brand_threshold, self.colour_mode = detection, brand_threshold, colour_mode
-        detector_file = self.directory/'detector.pth'
+        if mode not in ('fast','balanced','detail'):raise ValueError('Unknown detection mode')
+        self.mode=mode
+        detector_file = self.directory/'detector.pt'
         if not detector_file.exists():
-            raise FileNotFoundError('Missing models/detector.pth. Run: CarVision.exe setup (internet needed once).')
-        self.detector = ssdlite320_mobilenet_v3_large(weights=None, weights_backbone=None).eval()
-        self.detector.load_state_dict(torch.load(detector_file,map_location='cpu',weights_only=True))
+            raise FileNotFoundError('Детектор ещё не обучен. Добавьте свои фото, разметьте все машины и запустите обучение во вкладке «Обучение». Готовые веса не используются.')
+        detector_checkpoint=torch.load(detector_file,map_location='cpu',weights_only=True)
+        if detector_checkpoint.get('origin')!='team-trained-from-scratch':raise ValueError('Expected an original detector trained from scratch.')
+        self.detector = ssdlite320_mobilenet_v3_large(weights=None, weights_backbone=None,num_classes=2).eval()
+        self.detector.load_state_dict(detector_checkpoint['state'])
         self.classifier, self.brands = None, []
         checkpoint = self.directory/'classifier.pt'
         if checkpoint.exists():
             ck = torch.load(checkpoint,map_location='cpu',weights_only=True)
+            if ck.get('origin')!='team-trained-from-scratch':raise ValueError('Expected an original classifier trained from scratch.')
             self.brands = ck['brands']
             self.classifier = Classifier(len(self.brands)).eval()
             self.classifier.load_state_dict(ck['state'])
@@ -68,9 +105,20 @@ class Pipeline:
         im = read_image(image)
         # Bound memory for modern high-resolution phone photographs.
         work = im.copy(); work.thumbnail((1920,1920))
-        d = self.detector([transforms.functional.to_tensor(work)])[0]
-        mask = (d['labels']==3)&(d['scores']>=self.detection)
-        boxes, scores = d['boxes'][mask], d['scores'][mask]
+        tiles=detection_tiles(*work.size) if self.mode!='fast' else [(0,0,*work.size)]
+        all_boxes=[];all_scores=[]
+        for start in range(0,len(tiles),4):
+            batch=tiles[start:start+4]
+            detections=self.detector([transforms.functional.to_tensor(work.crop(tile)) for tile in batch])
+            for d,tile in zip(detections,batch):
+                b,s=restore_tile_boxes(d,tile,work.width,work.height,self.detection)
+                all_boxes.append(b);all_scores.append(s)
+        if self.mode=='detail':
+            d=self.detector([transforms.functional.to_tensor(ImageOps.mirror(work))])[0]
+            b,s=restore_tile_boxes(d,(0,0,*work.size),*work.size,self.detection)
+            left=b[:,0].clone();b[:,0]=work.width-b[:,2];b[:,2]=work.width-left
+            all_boxes.append(b);all_scores.append(s)
+        boxes,scores=torch.cat(all_boxes),torch.cat(all_scores)
         keep = nms(boxes,scores,.45)
         result = []
         for k in keep:
@@ -90,11 +138,11 @@ class Pipeline:
             result.append(dict(brand=brand,colour=colour,brand_confidence=bp,colour_confidence=cp,colour_source=colour_source,detection_confidence=float(scores[k]),box=[round(v) for v in box]))
         result.sort(key=lambda r:(r['box'][1],r['box'][0]))
         for i,r in enumerate(result,1): r['id']=i
-        return dict(image=str(image),cars=result,seconds=round(time.perf_counter()-started,3),classifier_trained=self.classifier is not None)
+        return dict(image=str(image),cars=result,seconds=round(time.perf_counter()-started,3),classifier_trained=self.classifier is not None,mode=self.mode,detector_views=len(tiles)+(self.mode=='detail'),warnings=[] if self.classifier is not None else ['Brand classifier not trained; unknown is expected. Colour is an unvalidated HSV baseline.'])
 
 def save_prediction(source, result, output):
     out=Path(output); out.mkdir(parents=True,exist_ok=True)
-    stem=Path(source).stem
+    stem=Path(source).stem+'_'+datetime.now().strftime('%Y%m%d_%H%M%S_%f')
     (out/(stem+'.json')).write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
     (out/(stem+'.txt')).write_text('; '.join(r['brand']+' '+r['colour'] for r in result['cars']) or 'No cars detected',encoding='utf-8')
     im=read_image(source); draw=ImageDraw.Draw(im)

@@ -9,7 +9,7 @@ from carvision.core import ROOT
 
 fixture=ROOT/'outputs/report-fixture';(fixture/'models/evaluation').mkdir(parents=True,exist_ok=True);(fixture/'data').mkdir(exist_ok=True)
 import shutil
-for name in ['training.json']:
+for name in ['training.json','detector_training.json']:
     shutil.copy2(ROOT/'outputs/smoke-models'/name,fixture/'models'/name)
 for name in ['metrics.json','brand_confusion.png']:
     shutil.copy2(ROOT/'outputs/smoke-models/evaluation'/name,fixture/'models/evaluation'/name)
