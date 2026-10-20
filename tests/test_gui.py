@@ -43,8 +43,8 @@ class GuiChecks(unittest.TestCase):
         other=self.folder/'other.png';Image.new('RGB',(800,500),'green').save(other);app.load_label_photo(other);self.assertNotEqual(app.group.get(),first_group)
     def test_inference_copy_export_and_file_buttons(self):
         app=self.app;app.load_photo(self.photo);self.root.update()
-        result=dict(cars=[dict(id=1,box=[50,50,350,300],brand='BYD',colour='blue',brand_confidence=.8,detection_confidence=.9,colour_source='trained')],seconds=.2,detector_views=3,classifier_trained=True)
-        app.events.put(('prediction',result));app.poll();app.copy();self.assertEqual(self.root.clipboard_get(),'BYD blue')
+        result=dict(cars=[dict(id=1,box=[50,50,350,300],brand='BYD',model='Song Plus',model_confidence=.85,colour='blue',brand_confidence=.8,detection_confidence=.9,colour_source='trained')],seconds=.2,detector_views=3,classifier_trained=True)
+        app.events.put(('prediction',result));app.poll();app.copy();self.assertEqual(self.root.clipboard_get(),'BYD Song Plus blue')
         with patch.object(gui.filedialog,'askdirectory',return_value=str(self.folder/'export')):app.export()
         self.assertEqual(len(list((self.folder/'export').glob('*.json'))),1)
         (self.folder/'samples').mkdir(exist_ok=True);pdf=self.folder/'samples/Tashkent_Photo_Examples.pdf';pdf.write_bytes(b'%PDF-test-placeholder')

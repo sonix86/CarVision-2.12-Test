@@ -1,6 +1,6 @@
-CARVISION 1.3 / София Рахматулаева
+CARVISION 1.4 / София Рахматулаева
 
-Полностью распаковать TashkentCarVision-v1.3-Portable.zip.
+Полностью распаковать TashkentCarVision-v1.4-Portable.zip.
 Запустить CarVision/CarVision.exe.
 Переносить всю папку CarVision; не отделять EXE от _internal/models/data/samples.
 Windows10/11 x64, папка с правом записи; Python/API/ключи/сеть не нужны для анализа.

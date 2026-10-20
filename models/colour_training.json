@@ -1796,14 +1796,14 @@
     }
   },
   "seconds": 214.1557439999997,
-  "method": "\u0421\u043e\u0431\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0435 \u043e\u0431\u0443\u0447\u0435\u043d\u043d\u044b\u0435 \u0446\u0432\u0435\u0442\u043e\u0432\u044b\u0435 \u0433\u043e\u043b\u043e\u0432\u044b: \u043f\u043e\u043b\u043d\u0430\u044f \u0432\u044b\u0440\u0435\u0437\u043a\u0430 \u0438 \u0443\u0447\u0430\u0441\u0442\u043a\u0438 \u043a\u0443\u0437\u043e\u0432\u0430; \u0432\u0435\u0441\u0430 \u0432\u0438\u0434\u043e\u0432 \u0432\u044b\u0431\u0440\u0430\u043d\u044b \u043f\u043e development. \u0413\u043e\u0442\u043e\u0432\u044b\u0435 vehicle-colour classifiers \u043d\u0435 \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u044e\u0442\u0441\u044f.",
+  "method": "Own VCoR heads; validated full/body panel mixture retained from v1.3; calibrated uncertain-colour indication in v1.4.",
   "architecture": "colour_evidence_ensemble_v3",
-  "optimizer": "\u0418\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0435\u043c\u044b\u0435 \u0433\u043e\u043b\u043e\u0432\u044b: CNN AdamW backbone0.00008/head0.001, MLP AdamW0.001. \u0421\u043c\u0435\u0441\u044c: \u0441\u0435\u0442\u043a\u0430 \u0432\u0435\u0441\u043e\u04320.25 \u043f\u043e development, \u0431\u0435\u0437 \u0433\u0440\u0430\u0434\u0438\u0435\u043d\u0442\u043d\u043e\u0433\u043e \u043e\u0431\u0443\u0447\u0435\u043d\u0438\u044f.",
-  "batch": "48 / 64 (\u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0435\u043c\u044b\u0435 \u0433\u043e\u043b\u043e\u0432\u044b)",
-  "loss": "Weighted CE, smoothing0.03 \u0432 \u0433\u043e\u043b\u043e\u0432\u0430\u0445; \u0441\u043c\u0435\u0441\u044c \u0432\u044b\u0431\u0438\u0440\u0430\u0435\u0442\u0441\u044f \u043f\u043e development",
+  "optimizer": "Используемые головы: CNN AdamW backbone0.00008/head0.001, MLP AdamW0.001. Смесь: сетка весов0.25 по development, без градиентного обучения.",
+  "batch": "48 / 64 (используемые головы)",
+  "loss": "Weighted CE, smoothing0.03 в головах; смесь выбирается по development",
   "head_parameters": 330640,
   "general_backbone_parameters": 1854016,
-  "feature_dimensions": "1152 / 1413 (\u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0435\u043c\u044b\u0435 \u0433\u043e\u043b\u043e\u0432\u044b)",
+  "feature_dimensions": "1152 / 1413 (используемые головы)",
   "input_size": 128,
   "epochs_completed": 0,
   "timing_scope": "Mixture evidence extraction/selection only; actual component histories/timings are in component_training",
@@ -1887,5 +1887,114 @@
       "cross_domain_development_accuracy": 0.9130434989929199,
       "selection_score": 0.9277120530605316
     }
-  ]
+  ],
+  "v14_calibration": {
+    "best": {
+      "weights": [
+        0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.5,
+        0.0,
+        0.0,
+        0.25
+      ],
+      "confidence_power": 0.0,
+      "validation_accuracy": 0.9423806071281433,
+      "development_accuracy": 0.9130434989929199
+    },
+    "threshold": 0.6,
+    "validation_count": 1319,
+    "validation_reliable_coverage": 0.9173616170883179,
+    "validation_reliable_accuracy": 0.9719008207321167,
+    "selection": "Full/body panel mixture, confidence power in 0/1/2/4; VCoR validation accuracy must not fall below v1.3. Maximize mean validation and declared 23-image development accuracy. No city photo or test used for selection.",
+    "test_used_for_selection": false,
+    "test_confusion_matrix": [
+      [
+        73,
+        0,
+        5,
+        0,
+        0,
+        0,
+        4,
+        0
+      ],
+      [
+        0,
+        76,
+        4,
+        0,
+        2,
+        0,
+        2,
+        0
+      ],
+      [
+        3,
+        3,
+        148,
+        0,
+        1,
+        0,
+        9,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        128,
+        0,
+        0,
+        0,
+        4
+      ],
+      [
+        1,
+        3,
+        1,
+        0,
+        149,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        2,
+        114,
+        0,
+        1
+      ],
+      [
+        2,
+        1,
+        13,
+        0,
+        0,
+        2,
+        320,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        5,
+        0,
+        3,
+        7,
+        222
+      ]
+    ],
+    "test_count": 1314,
+    "test_accuracy": 0.9360730648040771,
+    "test_reliable_coverage": 0.9041095972061157,
+    "test_reliable_accuracy": 0.9755892157554626
+  }
 }

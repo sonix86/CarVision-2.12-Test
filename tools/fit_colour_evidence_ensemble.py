@@ -29,7 +29,7 @@ def main():
     view=image.crop(tuple(round(v*(image.width if k%2==0 else image.height)) for k,v in enumerate(region))) if region else image
     predictions.append(model.probabilities(view))
    views.append(torch.stack(predictions));descriptions.append(dict(component=component,region=region));print('EXTRACTED',component,region,flush=True)
- x=torch.stack(views);candidates=[];best=None
+ x=torch.stack(views);torch.save(dict(probabilities=x,truth=y,validation_count=n,descriptions=descriptions),ROOT/'cache/colour_panel_probabilities.pt');candidates=[];best=None
  # Coarse simplex, declared before inspecting any test results. Full-view single
  # models are included, so a mixture must actually improve development evidence.
  for counts in itertools.product(range(5),repeat=len(views)):

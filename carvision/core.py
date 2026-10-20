@@ -144,6 +144,9 @@ class Pipeline:
             self.detector.load_state_dict(detector_checkpoint['state'])
         self.classifier, self.brands = None, []
         self.colour_classifier=None
+        self.vehicle_classifier=None
+        calibration=self.directory/'colour_calibration.json'
+        self.colour_reliability_threshold=json.loads(calibration.read_text(encoding='utf-8'))['threshold'] if calibration.exists() else .75
         self.public_prototype=False
         checkpoint = self.directory/'classifier.pt'
         if checkpoint.exists():
@@ -162,6 +165,11 @@ class Pipeline:
         if separate_colour.exists() and self.colour_mode!='trained':
             from .colour_model import ColourClassifier
             self.colour_classifier=ColourClassifier(torch.load(separate_colour,map_location='cpu',weights_only=True))
+
+        model_file=self.directory/'vehicle_model.pt'
+        if model_file.exists() and self.classifier is not None:
+            from .vehicle_model import VehicleModelClassifier
+            self.vehicle_classifier=VehicleModelClassifier(torch.load(model_file,map_location='cpu',weights_only=True))
 
     @torch.inference_mode()
     def predict(self, image, region=None, single=False):
@@ -213,8 +221,11 @@ class Pipeline:
                     cp,ci=c.softmax(1).mean(0).max(0); cp=float(cp); colour=COLOURS[int(ci)]; colour_source='trained'
             if getattr(self,'colour_classifier',None) is not None:
                 colour,cp=self.colour_classifier.predict(crop);colour_source='project-trained VCoR colour head'
+            model_result=dict(model='unknown',model_candidate='unknown',model_confidence=0.,model_alternatives=[])
+            if getattr(self,'vehicle_classifier',None) is not None:
+                model_result=self.vehicle_classifier.predict_details(crop,brand,self.classifier,self.preprocess)
             global_box=[round(box[0]+offset[0]),round(box[1]+offset[1]),round(box[2]+offset[0]),round(box[3]+offset[1])]
-            result.append(dict(brand=brand,colour=colour,brand_confidence=bp,colour_confidence=cp,colour_source=colour_source,detection_confidence=None if single else float(scores[k]),box_source='user region' if single else 'detector',box=global_box))
+            result.append(dict(brand=brand,**model_result,colour=colour,colour_reliable=cp>=getattr(self,'colour_reliability_threshold',.75),brand_confidence=bp,colour_confidence=cp,colour_source=colour_source,detection_confidence=None if single else float(scores[k]),box_source='user region' if single else 'detector',box=global_box))
         result.sort(key=lambda r:(r['box'][1],r['box'][0]))
         for i,r in enumerate(result,1): r['id']=i
         warnings=[] if self.classifier is not None else ['Brand classifier not trained; unknown is expected. Colour is an unvalidated HSV baseline.']
@@ -223,9 +234,10 @@ class Pipeline:
 
 def save_prediction(source, result, output):
     out=Path(output); out.mkdir(parents=True,exist_ok=True)
+    from .vehicle_model import vehicle_name
     stem=Path(source).stem+'_'+datetime.now().strftime('%Y%m%d_%H%M%S_%f')
     (out/(stem+'.json')).write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
-    (out/(stem+'.txt')).write_text('; '.join(r['brand']+' '+r['colour'] for r in result['cars']) or 'No cars detected',encoding='utf-8')
+    (out/(stem+'.txt')).write_text('; '.join(vehicle_name(r)+' '+r['colour']+(' (uncertain colour)' if not r.get('colour_reliable',True) else '') for r in result['cars']) or 'No cars detected',encoding='utf-8')
     from .overlays import marker_positions
     im=read_image(source); draw=ImageDraw.Draw(im);font=ImageFont.load_default(size=max(14,im.width//90));size=max(24,im.width//60)
     markers=marker_positions([r['box'] for r in result['cars']],im.width,im.height,size)
@@ -237,7 +249,7 @@ def save_prediction(source, result, output):
     # A separate legend cannot cover vehicles or other captions.
     if result['cars']:
         line=max(25,im.width//60);annotated=Image.new('RGB',(im.width,im.height+line*(len(result['cars'])+1)), '#14243a');annotated.paste(im,(0,0));draw=ImageDraw.Draw(annotated)
-        for i,r in enumerate(result['cars']):draw.text((12,im.height+line*(i+.5)),f"{r['id']}: {r['brand']} | {r['colour']}",font=font,fill='white')
+        for i,r in enumerate(result['cars']):draw.text((12,im.height+line*(i+.5)),f"{r['id']}: {vehicle_name(r)} | {r['colour']}{' (uncertain)' if not r.get('colour_reliable',True) else ''}",font=font,fill='white')
         im=annotated
     im.save(out/(stem+'_annotated.jpg'))
     return out/(stem+'_annotated.jpg')

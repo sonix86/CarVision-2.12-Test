@@ -1,0 +1,109 @@
+{
+  "best": {
+    "weights": [
+      0.25,
+      0.0,
+      0.0,
+      0.0,
+      0.5,
+      0.0,
+      0.0,
+      0.25
+    ],
+    "confidence_power": 0.0,
+    "validation_accuracy": 0.9423806071281433,
+    "development_accuracy": 0.9130434989929199
+  },
+  "threshold": 0.6,
+  "validation_count": 1319,
+  "validation_reliable_coverage": 0.9173616170883179,
+  "validation_reliable_accuracy": 0.9719008207321167,
+  "selection": "Full/body panel mixture, confidence power in 0/1/2/4; VCoR validation accuracy must not fall below v1.3. Maximize mean validation and declared 23-image development accuracy. No city photo or test used for selection.",
+  "test_used_for_selection": false,
+  "test_confusion_matrix": [
+    [
+      73,
+      0,
+      5,
+      0,
+      0,
+      0,
+      4,
+      0
+    ],
+    [
+      0,
+      76,
+      4,
+      0,
+      2,
+      0,
+      2,
+      0
+    ],
+    [
+      3,
+      3,
+      148,
+      0,
+      1,
+      0,
+      9,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      128,
+      0,
+      0,
+      0,
+      4
+    ],
+    [
+      1,
+      3,
+      1,
+      0,
+      149,
+      2,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      1,
+      0,
+      2,
+      114,
+      0,
+      1
+    ],
+    [
+      2,
+      1,
+      13,
+      0,
+      0,
+      2,
+      320,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      5,
+      0,
+      3,
+      7,
+      222
+    ]
+  ],
+  "test_count": 1314,
+  "test_accuracy": 0.9360730648040771,
+  "test_reliable_coverage": 0.9041095972061157,
+  "test_reliable_accuracy": 0.9755892157554626
+}

@@ -1,0 +1,338 @@
+{
+  "origin": "project-trained-regional-model-head",
+  "architecture": "MobileNetV3 Small avg/max + 256 hidden + independently trained 16-model head; fine-tuned features",
+  "labels": [
+    "Song Plus",
+    "Tiggo 7",
+    "Captiva",
+    "Cobalt",
+    "Damas",
+    "Lacetti",
+    "Malibu",
+    "Nexia",
+    "Onix",
+    "Spark",
+    "Tracker",
+    "Matiz",
+    "Nexia",
+    "Jolion",
+    "K5",
+    "2101"
+  ],
+  "brands": [
+    "BYD",
+    "Chery",
+    "Chevrolet",
+    "Chevrolet",
+    "Chevrolet",
+    "Chevrolet",
+    "Chevrolet",
+    "Chevrolet",
+    "Chevrolet",
+    "Chevrolet",
+    "Chevrolet",
+    "Daewoo",
+    "Daewoo",
+    "Haval",
+    "Kia",
+    "Lada"
+  ],
+  "counts": {
+    "BYD Song Plus": {
+      "train": 17,
+      "validation": 4,
+      "test": 4
+    },
+    "Chery Tiggo 7": {
+      "train": 20,
+      "test": 4,
+      "validation": 5
+    },
+    "Chevrolet Captiva": {
+      "train": 32,
+      "test": 11,
+      "validation": 8
+    },
+    "Chevrolet Cobalt": {
+      "train": 12,
+      "test": 2
+    },
+    "Chevrolet Damas": {
+      "train": 3
+    },
+    "Chevrolet Lacetti": {
+      "train": 32,
+      "test": 5,
+      "validation": 8
+    },
+    "Chevrolet Malibu": {
+      "train": 38,
+      "validation": 6,
+      "test": 10
+    },
+    "Chevrolet Nexia": {
+      "train": 4,
+      "test": 1
+    },
+    "Chevrolet Onix": {
+      "train": 32,
+      "validation": 2,
+      "test": 2
+    },
+    "Chevrolet Spark": {
+      "test": 14,
+      "validation": 19,
+      "train": 49
+    },
+    "Chevrolet Tracker": {
+      "train": 20,
+      "test": 2,
+      "validation": 5
+    },
+    "Daewoo Matiz": {
+      "train": 27,
+      "validation": 6,
+      "test": 4
+    },
+    "Daewoo Nexia": {
+      "train": 37,
+      "test": 10,
+      "validation": 8
+    },
+    "Haval Jolion": {
+      "train": 18,
+      "validation": 4,
+      "test": 4
+    },
+    "Kia K5": {
+      "validation": 4,
+      "train": 17,
+      "test": 4
+    },
+    "Lada 2101": {
+      "train": 16,
+      "test": 3,
+      "validation": 3
+    }
+  },
+  "best_epoch": 17,
+  "temperature": 0.75,
+  "threshold": 0.5,
+  "validation_accuracy": 0.8292682766914368,
+  "test_count": 80,
+  "test_accuracy": 0.7749999761581421,
+  "test_coverage": 0.7875000238418579,
+  "test_accepted_accuracy": 0.8253968358039856,
+  "history": [
+    {
+      "epoch": 1,
+      "validation_accuracy": 0.5609756112098694,
+      "nll": 1.6983659267425537
+    },
+    {
+      "epoch": 2,
+      "validation_accuracy": 0.5487805008888245,
+      "nll": 1.3483422994613647
+    },
+    {
+      "epoch": 3,
+      "validation_accuracy": 0.7439024448394775,
+      "nll": 1.0246659517288208
+    },
+    {
+      "epoch": 4,
+      "validation_accuracy": 0.6829268336296082,
+      "nll": 1.0502270460128784
+    },
+    {
+      "epoch": 5,
+      "validation_accuracy": 0.6951219439506531,
+      "nll": 1.068400502204895
+    },
+    {
+      "epoch": 6,
+      "validation_accuracy": 0.7560975551605225,
+      "nll": 0.9708850383758545
+    },
+    {
+      "epoch": 7,
+      "validation_accuracy": 0.7804877758026123,
+      "nll": 0.9147050380706787
+    },
+    {
+      "epoch": 8,
+      "validation_accuracy": 0.7195122241973877,
+      "nll": 0.9026216864585876
+    },
+    {
+      "epoch": 9,
+      "validation_accuracy": 0.7682926654815674,
+      "nll": 0.8553893566131592
+    },
+    {
+      "epoch": 10,
+      "validation_accuracy": 0.8170731663703918,
+      "nll": 0.8030217885971069
+    },
+    {
+      "epoch": 11,
+      "validation_accuracy": 0.792682945728302,
+      "nll": 0.8669642210006714
+    },
+    {
+      "epoch": 12,
+      "validation_accuracy": 0.7804877758026123,
+      "nll": 0.8323276042938232
+    },
+    {
+      "epoch": 13,
+      "validation_accuracy": 0.792682945728302,
+      "nll": 0.8127630352973938
+    },
+    {
+      "epoch": 14,
+      "validation_accuracy": 0.7682926654815674,
+      "nll": 0.8225266337394714
+    },
+    {
+      "epoch": 15,
+      "validation_accuracy": 0.7682926654815674,
+      "nll": 0.867742121219635
+    },
+    {
+      "epoch": 16,
+      "validation_accuracy": 0.7804877758026123,
+      "nll": 0.8423957824707031
+    },
+    {
+      "epoch": 17,
+      "validation_accuracy": 0.8292682766914368,
+      "nll": 0.7729027271270752
+    },
+    {
+      "epoch": 18,
+      "validation_accuracy": 0.8048780560493469,
+      "nll": 0.8234568238258362
+    },
+    {
+      "epoch": 19,
+      "validation_accuracy": 0.7804877758026123,
+      "nll": 0.7891475558280945
+    },
+    {
+      "epoch": 20,
+      "validation_accuracy": 0.7804877758026123,
+      "nll": 0.8296346068382263
+    },
+    {
+      "epoch": 21,
+      "validation_accuracy": 0.7804877758026123,
+      "nll": 0.8007940649986267
+    },
+    {
+      "epoch": 22,
+      "validation_accuracy": 0.8048780560493469,
+      "nll": 0.7919469475746155
+    },
+    {
+      "epoch": 23,
+      "validation_accuracy": 0.792682945728302,
+      "nll": 0.7982524633407593
+    },
+    {
+      "epoch": 24,
+      "validation_accuracy": 0.792682945728302,
+      "nll": 0.7956277132034302
+    },
+    {
+      "epoch": 25,
+      "validation_accuracy": 0.7804877758026123,
+      "nll": 0.7814813256263733
+    },
+    {
+      "epoch": 26,
+      "validation_accuracy": 0.8048780560493469,
+      "nll": 0.7918353080749512
+    },
+    {
+      "epoch": 27,
+      "validation_accuracy": 0.792682945728302,
+      "nll": 0.8138752579689026
+    },
+    {
+      "epoch": 28,
+      "validation_accuracy": 0.792682945728302,
+      "nll": 0.8029999136924744
+    },
+    {
+      "epoch": 29,
+      "validation_accuracy": 0.7682926654815674,
+      "nll": 0.8071616291999817
+    },
+    {
+      "epoch": 30,
+      "validation_accuracy": 0.7804877758026123,
+      "nll": 0.8063802123069763
+    },
+    {
+      "epoch": 31,
+      "validation_accuracy": 0.7682926654815674,
+      "nll": 0.7837198972702026
+    },
+    {
+      "epoch": 32,
+      "validation_accuracy": 0.7804877758026123,
+      "nll": 0.7898441553115845
+    },
+    {
+      "epoch": 33,
+      "validation_accuracy": 0.8048780560493469,
+      "nll": 0.7846819162368774
+    },
+    {
+      "epoch": 34,
+      "validation_accuracy": 0.792682945728302,
+      "nll": 0.7926344275474548
+    },
+    {
+      "epoch": 35,
+      "validation_accuracy": 0.7804877758026123,
+      "nll": 0.796232283115387
+    },
+    {
+      "epoch": 36,
+      "validation_accuracy": 0.7804877758026123,
+      "nll": 0.7831152081489563
+    },
+    {
+      "epoch": 37,
+      "validation_accuracy": 0.792682945728302,
+      "nll": 0.7842199802398682
+    },
+    {
+      "epoch": 38,
+      "validation_accuracy": 0.792682945728302,
+      "nll": 0.7898473143577576
+    },
+    {
+      "epoch": 39,
+      "validation_accuracy": 0.792682945728302,
+      "nll": 0.7884624600410461
+    },
+    {
+      "epoch": 40,
+      "validation_accuracy": 0.792682945728302,
+      "nll": 0.7894279956817627
+    }
+  ],
+  "seconds": 512.2999548000007,
+  "limitations": "Public category labels; sparse Damas/Nexia/Cobalt samples; no own photographs. Existing grouped train/validation/test preserved. Backbone initialized from own brand network trained on regional training only. No open-set model benchmark. Demo photos excluded.",
+  "optimizer": "AdamW features 0.00012, neck/head 0.001; weight decay .02; cosine 40 epochs",
+  "augmentation": "65-100% crop, flip, mild colour jitter; balanced replacement sampling",
+  "runtime_preprocessing": "RGB; BICUBIC resize176x176; CenterCrop160; ImageNet normalize, original/mirrored probability mean; exactly matches cached validation/test transform",
+  "rejected_experiments": [
+    "Frozen linear head",
+    "Generic ImageNet ResNet18 + own linear head; no validation improvement",
+    "Additional colour confidence fusion and paint-statistics gate; no validation improvement"
+  ]
+}

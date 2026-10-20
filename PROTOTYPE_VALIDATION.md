@@ -1,3 +1,5 @@
+Актуальные дополнения и измерения версии 1.4: MODEL_AND_COLOUR.md. Ниже сохранено сравнение выпуска 1.3.
+
 # Измерения CarVision 1.3
 
 Все значения относятся к фактически поставляемым весам; готовый классификатор марок/цветов не использован. Генератор: tools/write_v13_docs.py. Подробные записи: models/evaluation/public_test.json, models/regional_brand_training.json, models/colour_training.json.

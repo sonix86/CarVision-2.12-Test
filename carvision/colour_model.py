@@ -60,7 +60,7 @@ class ColourClassifier:
         self.network=None
         self.components=None
         if checkpoint.get('architecture')=='colour_evidence_ensemble_v3':
-            self.components=[ColourClassifier(c) for c in checkpoint['components']];self.mixture=checkpoint['mixture'];return
+            self.components=[ColourClassifier(c) for c in checkpoint['components']];self.mixture=checkpoint['mixture'];self.confidence_power=float(checkpoint.get('confidence_power',0.));return
         if checkpoint.get('architecture')=='colour_cnn_avgmax_v2':
             self.network=ColourCNN().eval();self.network.load_state_dict(checkpoint['state']);return
         self.feature_mode=checkpoint.get('feature_mode','combined')
@@ -77,7 +77,7 @@ class ColourClassifier:
                 if key not in cache:
                     view=image.crop(tuple(round(v*(image.width if i%2==0 else image.height)) for i,v in enumerate(entry['region']))) if entry['region'] else image
                     cache[key]=self.components[entry['component']].probabilities(view)
-                prob+=cache[key]*entry['weight']
+                prob+=cache[key]*entry['weight']*cache[key].max().pow(getattr(self,'confidence_power',0.))
             return prob/prob.sum().clamp_min(1e-8)
         if self.network is not None:
             return self.network(PREPROCESS(image.convert('RGB')).unsqueeze(0)).softmax(1)[0]

@@ -1,6 +1,6 @@
 {
   "owner": "София Рахматулаева",
-  "release": "1.3",
+  "release": "1.4",
   "brand_parameters": 1228858,
   "brand_architecture": "MobileNetV3 Small, own avg/max pooled 18-brand head, regional fine-tuning, mirrored-view probability mean and development temperature",
   "detector": "Generic Faster R-CNN ResNet50 FPN v2 COCO, min800/max1333; default whole frame, optional tiles",
@@ -46,5 +46,27 @@
     "yellow"
   ],
   "colour_source": "VCoR: https://www.kaggle.com/datasets/landrykezebou/vcor-vehicle-color-recognition-dataset",
-  "ready_made_colour_model_used": false
+  "ready_made_colour_model_used": false,
+  "supported_vehicle_models": [
+    "BYD Song Plus",
+    "Chery Tiggo 7",
+    "Chevrolet Captiva",
+    "Chevrolet Cobalt",
+    "Chevrolet Damas",
+    "Chevrolet Lacetti",
+    "Chevrolet Malibu",
+    "Chevrolet Nexia",
+    "Chevrolet Onix",
+    "Chevrolet Spark",
+    "Chevrolet Tracker",
+    "Daewoo Matiz",
+    "Daewoo Nexia",
+    "Haval Jolion",
+    "Kia K5",
+    "Lada 2101"
+  ],
+  "vehicle_model_test_accuracy": 0.7749999761581421,
+  "vehicle_model_test_count": 80,
+  "vehicle_model_threshold": 0.5,
+  "colour_reliability_threshold": 0.6
 }

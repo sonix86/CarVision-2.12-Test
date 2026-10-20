@@ -1,0 +1,16 @@
+{
+  "best_epoch": 32,
+  "validation_accuracy": 0.8048780560493469,
+  "resnet_weight": 0.0,
+  "temperature": 1.0,
+  "threshold": 0.5,
+  "test_accuracy": 0.762499988079071,
+  "test_count": 80,
+  "test_coverage": 0.8125,
+  "test_accepted_accuracy": 0.8307692408561707,
+  "seconds": 60.387696500001766,
+  "initialization": "Official torchvision ResNet18 IMAGENET1K_V1 only; original ImageNet head removed, our model head trained from scratch on regional training groups",
+  "head_optimizer": "AdamW 0.003 wd .2; 200 epochs; weighted CE smoothing .1; features frozen",
+  "selection": "Grouped validation only for head epoch, temperature, mixture and rejection. Six city images excluded.",
+  "test_used_for_selection": false
+}
