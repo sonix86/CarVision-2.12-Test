@@ -1,13 +1,15 @@
 import json
 import random
 import time
+import shutil
+from datetime import datetime
 from pathlib import Path
 import numpy as np
 import torch
 from torch import nn
 from torch.utils.data import Dataset, DataLoader
 from torchvision import transforms
-from .core import Classifier, COLOURS, PREPROCESS, read_image
+from .core import Classifier, COLOURS, PREPROCESS, read_image, ROOT
 from .data import load_records, split_records, statistics
 
 class Cars(Dataset):
@@ -25,7 +27,14 @@ def train(args):
     rows=load_records(args.labels); tr,va=split_records(rows,args.seed)
     brands=sorted({r['brand'] for r in tr})
     out=Path(args.output); out.mkdir(parents=True,exist_ok=True)
+    previous=[out/name for name in ['classifier.pt','detector.pt','training.json','detector_training.json','split.json','dataset.sha256'] if (out/name).exists()]
+    if previous:
+        backup=out/'backups'/datetime.now().strftime('%Y%m%d_%H%M%S_%f');backup.mkdir(parents=True)
+        for file in previous:shutil.copy2(file,backup/file.name)
+        print('Previous models backed up to '+str(backup),flush=True)
     model=Classifier(len(brands))
+    general_backbone=ROOT/'models/generic_brand_backbone.pt';pretrained=general_backbone.exists()
+    if pretrained:model.features.load_state_dict(torch.load(general_backbone,map_location='cpu',weights_only=True)['state'])
     device='cuda' if torch.cuda.is_available() else 'cpu'; model.to(device)
     train_loader=DataLoader(Cars(tr,brands,True),batch_size=args.batch,shuffle=True,num_workers=0)
     val_loader=DataLoader(Cars(va,brands),batch_size=args.batch,num_workers=0)
@@ -58,9 +67,10 @@ def train(args):
         score=.6*row['brand_accuracy']+.4*row['colour_accuracy']
         if score>best:
             best=score
-            torch.save(dict(state={k:v.detach().cpu() for k,v in model.state_dict().items()},brands=brands,architecture='mobilenet_v3_small_avgmax_dualhead_v1',seed=args.seed,origin='team-trained-from-scratch'),out/'classifier.tmp')
+            torch.save(dict(state={k:v.detach().cpu() for k,v in model.state_dict().items()},brands=brands,architecture='mobilenet_v3_small_avgmax_dualhead_v1',seed=args.seed,origin='team-trained-brand-head-imagenet-backbone' if pretrained else 'team-trained-from-scratch'),out/'classifier.tmp')
             (out/'classifier.tmp').replace(out/'classifier.pt')
     metadata=dict(history=history,data=statistics(rows),train=statistics(tr),validation=statistics(va),parameters=sum(p.numel() for p in model.parameters()),seconds=time.perf_counter()-started,hardware=device,torch_version=str(torch.__version__),epochs=args.epochs,lr=args.lr,batch=args.batch,seed=args.seed,loss='weighted CE brand + 0.5 CE colour; label smoothing 0.05',optimizer='AdamW, weight_decay=0.01, cosine LR',augmentation='resize224, horizontal flip, affine8deg/4percent/scale0.9-1.1, brightness/contrast0.15',pretrained=False)
+    metadata['pretrained']=pretrained;metadata['initialization']='General ImageNet backbone; brand/colour heads independently trained' if pretrained else 'random'
     (out/'training.json').write_text(json.dumps(metadata,indent=2),encoding='utf-8')
     evaluate(args.labels,out,out/'evaluation',args.seed)
     from .detector_training import train_detector

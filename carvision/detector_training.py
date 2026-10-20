@@ -9,7 +9,7 @@ from torch.utils.data import Dataset,DataLoader
 from torchvision.transforms.functional import to_tensor,hflip
 from torchvision.models.detection import ssdlite320_mobilenet_v3_large
 from torchvision.ops import box_iou
-from .core import read_image
+from .core import read_image,ROOT
 
 class Scenes(Dataset):
     def __init__(self,records,augment=False):
@@ -47,6 +47,8 @@ def train_detector(tr,va,out,epochs,seed,lr):
     torch.manual_seed(seed);random.seed(seed)
     device='cuda' if torch.cuda.is_available() else 'cpu'
     model=ssdlite320_mobilenet_v3_large(weights=None,weights_backbone=None,num_classes=2).to(device)
+    generic=ROOT/'models/generic_detector_backbone.pt';pretrained=generic.exists()
+    if pretrained:model.backbone.load_state_dict(torch.load(generic,map_location=device,weights_only=True)['state'])
     loader=DataLoader(Scenes(tr,True),batch_size=2,shuffle=True,num_workers=0,collate_fn=collate)
     validation=DataLoader(Scenes(va),batch_size=2,num_workers=0,collate_fn=collate)
     optimizer=torch.optim.AdamW(model.parameters(),lr=lr,weight_decay=.001)
@@ -63,5 +65,5 @@ def train_detector(tr,va,out,epochs,seed,lr):
         metrics=measure(model,validation,device)
         row=dict(stage='detector',epoch=epoch+1,loss=total/max(1,len(loader)),**metrics);history.append(row);print(json.dumps(row),flush=True)
         if metrics['f1']>best:
-            best=metrics['f1'];torch.save(dict(state={k:v.detach().cpu() for k,v in model.state_dict().items()},origin='team-trained-from-scratch',architecture='ssdlite320_mobilenet_v3_large_two_classes',seed=seed,parameters=sum(p.numel() for p in model.parameters())),out/'detector.tmp');(out/'detector.tmp').replace(out/'detector.pt')
-    (out/'detector_training.json').write_text(json.dumps(dict(history=history,epochs=epochs,seconds=time.perf_counter()-started,pretrained=False,hardware=device,parameters=sum(p.numel() for p in model.parameters())),indent=2),encoding='utf-8')
+            best=metrics['f1'];torch.save(dict(state={k:v.detach().cpu() for k,v in model.state_dict().items()},origin='team-trained-detector-coco-backbone' if pretrained else 'team-trained-from-scratch',architecture='ssdlite320_mobilenet_v3_large_two_classes',seed=seed,parameters=sum(p.numel() for p in model.parameters())),out/'detector.tmp');(out/'detector.tmp').replace(out/'detector.pt')
+    (out/'detector_training.json').write_text(json.dumps(dict(history=history,epochs=epochs,seconds=time.perf_counter()-started,pretrained=pretrained,hardware=device,parameters=sum(p.numel() for p in model.parameters())),indent=2),encoding='utf-8')
