@@ -23,6 +23,14 @@ class GuiChecks(unittest.TestCase):
         for key in ['copy','export','output']:
             button=self.app.buttons[key];self.assertLessEqual(button.winfo_y()+button.winfo_height(),button.master.winfo_height())
         self.app.set_busy(True,'test');self.assertTrue(self.app.buttons['open'].instate(['disabled']));self.app.set_busy(False,'done')
+    def test_analysis_region_coordinates_survive_resize_and_clear_on_next_photo(self):
+        app=self.app;app.load_photo(self.photo);self.root.update();app.redraw();app.scope.set(gui.SCOPES[2]);app.scope_changed();sx,sy,ox,oy=app.transforms[app.preview]
+        app.start_region(SimpleNamespace(x=ox+400*sx,y=oy+350*sy));app.end_region(SimpleNamespace(x=ox+100*sx,y=oy+80*sy));self.assertEqual(app.region,[100,80,400,350])
+        self.root.geometry('1120x760');self.root.update();app.redraw();self.assertEqual(app.region,[100,80,400,350]);self.assertTrue(app.preview.find_withtag('region'))
+        app.clear_region();self.assertIsNone(app.region);self.assertEqual(app.scope.get(),gui.SCOPES[0]);app.region=[20,20,200,200];app.load_photo(self.photo);self.assertIsNone(app.region)
+    def test_small_analysis_region_is_rejected(self):
+        app=self.app;app.load_photo(self.photo);self.root.update();app.redraw();app.scope.set(gui.SCOPES[2]);sx,sy,ox,oy=app.transforms[app.preview]
+        app.start_region(SimpleNamespace(x=ox+20*sx,y=oy+20*sy));app.end_region(SimpleNamespace(x=ox+25*sx,y=oy+25*sy));self.assertIsNone(app.region)
     def test_annotation_resizes_save_undo_and_group_reset(self):
         app=self.app;app.load_label_photo(self.photo);self.root.update();app.redraw();first_group=app.group.get()
         sx,sy,ox,oy=app.transforms[app.canvas]

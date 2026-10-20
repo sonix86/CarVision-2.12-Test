@@ -5,7 +5,7 @@ from datetime import datetime
 from pathlib import Path
 
 import numpy as np
-from PIL import Image, ImageOps, ImageDraw
+from PIL import Image, ImageOps, ImageDraw, ImageFont
 import torch
 from torch import nn
 from torchvision import models, transforms
@@ -101,6 +101,23 @@ def restore_tile_boxes(detection, tile, width, height, threshold, car_label=1):
     boxes+=torch.tensor([x,y,x,y],dtype=boxes.dtype)
     return boxes,scores
 
+def merge_vehicle_boxes(boxes,scores,full_count=0):
+    """Prefer complete full-frame objects over nested tile fragments.
+
+    Applies containment suppression only across full/tile views, not two cars
+    found together. Ordinary overlapping cars remain eligible for standard NMS.
+    """
+    valid=torch.ones(len(boxes),dtype=torch.bool)
+    if full_count:
+        anchors=boxes[:full_count]
+        anchor_area=(anchors[:,2]-anchors[:,0])*(anchors[:,3]-anchors[:,1])
+        for i in range(full_count,len(boxes)):
+            box=boxes[i];area=(box[2]-box[0])*(box[3]-box[1])
+            intersection=(torch.minimum(anchors[:,2:],box[2:])-torch.maximum(anchors[:,:2],box[:2])).clamp_min(0).prod(1)
+            nested=(intersection/area.clamp_min(1)>.92)&(area/anchor_area.clamp_min(1)<.75)&(scores[:full_count]>.85)
+            if bool(nested.any()):valid[i]=False
+    indices=torch.where(valid)[0];return indices[nms(boxes[indices],scores[indices],.45)]
+
 class Pipeline:
     def __init__(self, directory=None, detection=.5, brand_threshold=.5, colour_mode='trained', mode='balanced'):
         torch.set_num_threads(max(1,min(4,torch.get_num_threads())))
@@ -120,7 +137,7 @@ class Pipeline:
             from .hog_detector import HOGCarDetector
             self.detector=HOGCarDetector(detector_checkpoint)
         elif detector_checkpoint.get('architecture')=='fasterrcnn_resnet50_fpn_v2_coco_v1':
-            self.detector=fasterrcnn_resnet50_fpn_v2(weights=None,weights_backbone=None,min_size=640,max_size=1024).eval()
+            self.detector=fasterrcnn_resnet50_fpn_v2(weights=None,weights_backbone=None,min_size=800,max_size=1333).eval()
             self.detector.load_state_dict(detector_checkpoint['state'])
         else:
             self.detector = ssdlite320_mobilenet_v3_large(weights=None, weights_backbone=None,num_classes=91 if origin=='generic-coco-detector' else 2).eval()
@@ -133,6 +150,8 @@ class Pipeline:
             ck = torch.load(checkpoint,map_location='cpu',weights_only=True)
             if ck.get('origin') not in ('team-trained-from-scratch','team-trained-brand-head-imagenet-backbone'):raise ValueError('Expected a team-trained brand classifier.')
             self.brands = ck['brands']
+            self.brand_temperature=float(ck.get('temperature',1.))
+            self.multiview_brand=bool(ck.get('regional_training',False))
             self.public_prototype='public Stanford' in ck.get('source','')
             constructor=CompactResidualClassifier if ck.get('architecture')=='compact_residual_avgmax_v1' else Classifier
             self.classifier = constructor(len(self.brands)).eval()
@@ -145,27 +164,36 @@ class Pipeline:
             self.colour_classifier=ColourClassifier(torch.load(separate_colour,map_location='cpu',weights_only=True))
 
     @torch.inference_mode()
-    def predict(self, image):
+    def predict(self, image, region=None, single=False):
         started = time.perf_counter()
-        im = read_image(image)
+        original = read_image(image)
+        if region is not None:
+            if len(region)!=4 or not all(np.isfinite(v) for v in region):raise ValueError('Invalid analysis region')
+            x,y,x2,y2=region
+            region=[round(max(0,min(original.width,x))),round(max(0,min(original.height,y))),round(max(0,min(original.width,x2))),round(max(0,min(original.height,y2)))]
+            if min(region[2]-region[0],region[3]-region[1])<16:raise ValueError('Analysis region must be at least 16 × 16 pixels')
+        if single and region is None:raise ValueError('Select a single-car region first')
+        im = original.crop(region) if region is not None else original
+        offset=region[:2] if region is not None else (0,0)
         # Bound memory for modern high-resolution phone photographs.
         work = im.copy(); work.thumbnail((1920,1920))
-        tiles=detection_tiles(*work.size) if self.mode!='fast' else [(0,0,*work.size)]
-        all_boxes=[];all_scores=[]
+        tiles=[] if single else detection_tiles(*work.size) if self.mode!='fast' else [(0,0,*work.size)]
+        all_boxes=[];all_scores=[];full_count=0
         batch_size=getattr(self,'detector_batch_size',4)
         for start in range(0,len(tiles),batch_size):
             batch=tiles[start:start+batch_size]
             detections=self.detector([transforms.functional.to_tensor(work.crop(tile)) for tile in batch])
             for d,tile in zip(detections,batch):
                 b,s=restore_tile_boxes(d,tile,work.width,work.height,self.detection,getattr(self,'car_label',1))
+                if tile==(0,0,*work.size):full_count=len(b)
                 all_boxes.append(b);all_scores.append(s)
-        if self.mode=='detail':
+        if self.mode=='detail' and not single:
             d=self.detector([transforms.functional.to_tensor(ImageOps.mirror(work))])[0]
             b,s=restore_tile_boxes(d,(0,0,*work.size),*work.size,self.detection,getattr(self,'car_label',1))
             left=b[:,0].clone();b[:,0]=work.width-b[:,2];b[:,2]=work.width-left
             all_boxes.append(b);all_scores.append(s)
-        boxes,scores=torch.cat(all_boxes),torch.cat(all_scores)
-        keep = nms(boxes,scores,.45)
+        boxes,scores=(torch.tensor([[0.,0.,*work.size]]),torch.tensor([1.])) if single else (torch.cat(all_boxes),torch.cat(all_scores))
+        keep = merge_vehicle_boxes(boxes,scores,full_count)
         result = []
         for k in keep:
             box = boxes[k].tolist()
@@ -176,28 +204,40 @@ class Pipeline:
             colour, cp = heuristic_colour(crop)
             colour_source = 'original HSV body histogram'
             if self.classifier is not None:
-                b,c = self.classifier(getattr(self,'preprocess',PREPROCESS)(crop).unsqueeze(0))
-                bp,bi = b.softmax(1).max(1); bp=float(bp)
+                preprocess=getattr(self,'preprocess',PREPROCESS)
+                views=[crop,ImageOps.mirror(crop)] if getattr(self,'multiview_brand',False) else [crop]
+                b,c = self.classifier(torch.stack([preprocess(v) for v in views]))
+                probabilities=(b/getattr(self,'brand_temperature',1.)).softmax(1).mean(0);bp,bi=probabilities.max(0); bp=float(bp)
                 brand = self.brands[int(bi)] if bp>=self.brand_threshold else 'unknown'
                 if self.colour_mode=='trained':
-                    cp,ci=c.softmax(1).max(1); cp=float(cp); colour=COLOURS[int(ci)]; colour_source='trained'
+                    cp,ci=c.softmax(1).mean(0).max(0); cp=float(cp); colour=COLOURS[int(ci)]; colour_source='trained'
             if getattr(self,'colour_classifier',None) is not None:
                 colour,cp=self.colour_classifier.predict(crop);colour_source='project-trained VCoR colour head'
-            result.append(dict(brand=brand,colour=colour,brand_confidence=bp,colour_confidence=cp,colour_source=colour_source,detection_confidence=float(scores[k]),box=[round(v) for v in box]))
+            global_box=[round(box[0]+offset[0]),round(box[1]+offset[1]),round(box[2]+offset[0]),round(box[3]+offset[1])]
+            result.append(dict(brand=brand,colour=colour,brand_confidence=bp,colour_confidence=cp,colour_source=colour_source,detection_confidence=None if single else float(scores[k]),box_source='user region' if single else 'detector',box=global_box))
         result.sort(key=lambda r:(r['box'][1],r['box'][0]))
         for i,r in enumerate(result,1): r['id']=i
         warnings=[] if self.classifier is not None else ['Brand classifier not trained; unknown is expected. Colour is an unvalidated HSV baseline.']
         if getattr(self,'public_prototype',False):warnings.append('Public-data prototype. Coverage is limited to supported_brands; full Tashkent-street accuracy has not been established. Colour uses a separately project-trained head.' if self.colour_classifier is not None else 'Public-data prototype. Coverage is limited to supported_brands; full Tashkent-street accuracy has not been established. Colour uses an original non-learned method.')
-        return dict(image=str(image),cars=result,seconds=round(time.perf_counter()-started,3),classifier_trained=self.classifier is not None,supported_brands=getattr(self,'brands',[]),mode=self.mode,detector_views=len(tiles)+(self.mode=='detail'),warnings=warnings)
+        return dict(image=str(image),cars=result,seconds=round(time.perf_counter()-started,3),classifier_trained=self.classifier is not None,supported_brands=getattr(self,'brands',[]),mode=self.mode,region=region,single_car_region=single,detector_views=len(tiles)+(self.mode=='detail' and not single),warnings=warnings)
 
 def save_prediction(source, result, output):
     out=Path(output); out.mkdir(parents=True,exist_ok=True)
     stem=Path(source).stem+'_'+datetime.now().strftime('%Y%m%d_%H%M%S_%f')
     (out/(stem+'.json')).write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
     (out/(stem+'.txt')).write_text('; '.join(r['brand']+' '+r['colour'] for r in result['cars']) or 'No cars detected',encoding='utf-8')
-    im=read_image(source); draw=ImageDraw.Draw(im)
+    from .overlays import marker_positions
+    im=read_image(source); draw=ImageDraw.Draw(im);font=ImageFont.load_default(size=max(14,im.width//90));size=max(24,im.width//60)
+    markers=marker_positions([r['box'] for r in result['cars']],im.width,im.height,size)
     for r in result['cars']:
         draw.rectangle(r['box'],outline='#14b8a6',width=max(2,im.width//400))
-        draw.text((r['box'][0]+3,r['box'][1]+3),f"{r['id']}: {r['brand']} {r['colour']}",fill='white',stroke_width=2,stroke_fill='black')
+    for r,rect in zip(result['cars'],markers):
+        draw.line((r['box'][0],r['box'][1],rect[0]+size/2,rect[1]+size/2),fill='#14b8a6',width=2)
+        draw.rectangle(rect,fill='#14243a',outline='#14b8a6',width=2);draw.text((rect[0]+4,rect[1]+2),str(r['id']),font=font,fill='white')
+    # A separate legend cannot cover vehicles or other captions.
+    if result['cars']:
+        line=max(25,im.width//60);annotated=Image.new('RGB',(im.width,im.height+line*(len(result['cars'])+1)), '#14243a');annotated.paste(im,(0,0));draw=ImageDraw.Draw(annotated)
+        for i,r in enumerate(result['cars']):draw.text((12,im.height+line*(i+.5)),f"{r['id']}: {r['brand']} | {r['colour']}",font=font,fill='white')
+        im=annotated
     im.save(out/(stem+'_annotated.jpg'))
     return out/(stem+'_annotated.jpg')

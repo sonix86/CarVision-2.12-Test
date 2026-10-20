@@ -7,11 +7,47 @@ from pathlib import Path
 from unittest.mock import patch
 from PIL import Image
 import torch
-from carvision.core import Pipeline, heuristic_colour, Classifier, ROOT,detection_tiles,restore_tile_boxes,save_prediction
+from carvision.core import Pipeline, heuristic_colour, Classifier, ROOT,detection_tiles,restore_tile_boxes,save_prediction,merge_vehicle_boxes
 from carvision.data import load_records,split_records
 from carvision.scoring import photo_score
 
 class Checks(unittest.TestCase):
+    def test_single_region_bypasses_detector_and_keeps_original_coordinates(self):
+        with tempfile.TemporaryDirectory() as temp:
+            path=Path(temp)/'photo.png';Image.new('RGB',(600,400),'white').save(path)
+            p=object.__new__(Pipeline);p.mode='detail';p.classifier=None;p.colour_mode='heuristic';p.detection=.5
+            p.detector=lambda x: self.fail('Single-car selection must not depend on a detector finding it')
+            result=p.predict(path,region=[100,80,420,350],single=True)
+            self.assertEqual(result['cars'][0]['box'],[100,80,420,350]);self.assertEqual(result['detector_views'],0);self.assertIsNone(result['cars'][0]['detection_confidence'])
+            self.assertEqual(result['region'],[100,80,420,350])
+    def test_region_detection_uses_crop_and_restores_coordinates(self):
+        with tempfile.TemporaryDirectory() as temp:
+            path=Path(temp)/'photo.png';Image.new('RGB',(600,400),'white').save(path)
+            p=object.__new__(Pipeline);p.mode='fast';p.classifier=None;p.colour_mode='heuristic';p.detection=.5
+            def detect(images):
+                self.assertEqual(tuple(images[0].shape), (3,270,320))
+                return [dict(boxes=torch.tensor([[10.,20.,200.,220.]]),scores=torch.tensor([.9]),labels=torch.tensor([1]))]
+            p.detector=detect;result=p.predict(path,region=[100,80,420,350]);self.assertEqual(result['cars'][0]['box'],[110,100,300,300])
+            for region in [[0,0,8,200],[200,0,100,100],[0,0,float('nan'),100]]:
+                with self.assertRaises(ValueError):p.predict(path,region=region)
+    def test_cross_view_fragments_removed_but_nested_full_view_cars_preserved(self):
+        boxes=torch.tensor([[10.,10,300,250],[200.,20,280,100],[40.,40,140,150],[200.,20,280,100]])
+        scores=torch.tensor([.99,.94,.96,.92]);keep=merge_vehicle_boxes(boxes,scores,2)
+        self.assertEqual(keep.tolist(),[0,1])
+        # Two genuinely overlapping complete cars are not removed by containment.
+        keep=merge_vehicle_boxes(boxes[:2],scores[:2],2);self.assertEqual(keep.tolist(),[0,1])
+    def test_dense_numeric_markers_stay_inside_canvas_and_do_not_overlap(self):
+        from carvision.overlays import marker_positions
+        positions=marker_positions([[100,100,200,180]]*18,640,480)
+        for i,(x,y,x2,y2) in enumerate(positions):
+            self.assertTrue(0<=x<x2<=640 and 0<=y<y2<=480)
+            for a,b,a2,b2 in positions[:i]:self.assertFalse(x<a2 and x2>a and y<b2 and y2>b)
+    def test_export_keeps_names_in_separate_legend(self):
+        with tempfile.TemporaryDirectory() as temp:
+            path=Path(temp)/'photo.png';Image.new('RGB',(600,400),'white').save(path)
+            cars=[dict(id=i+1,box=[10,10,400,300],brand='Chevrolet',colour='white') for i in range(10)]
+            output=save_prediction(path,dict(cars=cars),Path(temp)/'out')
+            with Image.open(output) as image:self.assertGreater(image.height,400);self.assertEqual(image.width,600)
     def test_assignment_scoring(self):
         self.assertEqual(photo_score([('Chevrolet','white')],[('Chevrolet','white')]),5)
         self.assertEqual(photo_score([('Chevrolet','white')],[('Chevrolet','black')]),3)
@@ -48,6 +84,14 @@ class Checks(unittest.TestCase):
         for image in [Image.new('L',(16,16),100),Image.new('RGB',(400,200),'red')]:
             features=colour_statistics(image);self.assertEqual(features.shape,(261,));self.assertTrue(torch.isfinite(features).all())
         with self.assertRaisesRegex(ValueError,'project-trained'):ColourClassifier(dict(origin='ready-made-colour-classifier'))
+    def test_paint_evidence_retains_joint_features_without_a_pretrained_classifier(self):
+        from carvision.colour_model import paint_statistics,colour_head,ColourClassifier
+        from carvision.core import COLOURS
+        x=paint_statistics(Image.new('RGB',(25,20),'black'));self.assertEqual(x.shape,(929,));self.assertTrue(torch.isfinite(x).all())
+        checkpoint=dict(origin='team-trained-colour-statistics',classes=COLOURS,feature_mode='paint_statistics',mean=torch.zeros(929),std=torch.ones(929),head=colour_head(929).state_dict())
+        model=ColourClassifier(checkpoint);self.assertIsNone(model.features);colour,probability=model.predict(Image.new('RGB',(50,70),'blue'));self.assertIn(colour,COLOURS);self.assertTrue(0<=probability<=1)
+        mixture=ColourClassifier(dict(origin='team-trained-colour-ensemble',architecture='colour_evidence_ensemble_v3',classes=COLOURS,components=[checkpoint],mixture=[dict(component=0,region=None,weight=.5),dict(component=0,region=[.08,.4,.92,.9],weight=.5)]))
+        probabilities=mixture.probabilities(Image.new('RGB',(120,90),'grey'));self.assertAlmostEqual(float(probabilities.sum()),1.,places=5);self.assertTrue(torch.isfinite(probabilities).all())
 
     def test_inference_has_no_network_and_no_untrained_brands(self):
         with tempfile.TemporaryDirectory() as temp:
