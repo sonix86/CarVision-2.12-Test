@@ -99,7 +99,7 @@ for epoch in range(24):
    im=im.resize((160,160),Image.Resampling.BICUBIC)
    if random.random()<.5:im=ImageOps.mirror(im)
    im=jitter(im)
-   if random.random()<.25:im=ImageOps.grayscale(im,num_output_channels=3)
+   if random.random()<.25:im=ImageOps.grayscale(im).convert('RGB')
    xs.append(normal(im))
   optimizer.zero_grad();logits=model(torch.stack(xs))[0];loss=torch.nn.functional.cross_entropy(logits,train_y[batch],label_smoothing=.05);loss.backward();torch.nn.utils.clip_grad_norm_(model.parameters(),10);optimizer.step()
  scheduler.step();model.eval();m=measure('validation');score=sum(v['all']['top1']+.5*v['all']['top3'] for v in m.values())/3

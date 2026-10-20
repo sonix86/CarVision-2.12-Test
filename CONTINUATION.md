@@ -53,3 +53,7 @@ Source name-only tests55 passed again in outputs/tests-owner-v18.log. Staged EXE
 ## Last verified live state before yield
 
 Expanded preparation COMPLETE:1170photos total,642train/134validation/394test,24classes. Old536rows/groups/splits preserved,634new exact-annotation photos. Training has started (wait for epoch progress). No traceback as of last inspection. Staged owner build COMPLETE at dist-v18/CarVision; all12 frozen modules match current source (including GUI1.8/new surname), output outputs/frozen-owner-v18-check.json. Reuse this staged build if runtime sources stay unchanged. Still no selected/promoted1.8weights or packaged1.8ZIP; v1.7 remains last verified full release.
+
+## Corrected startup augmentation error
+
+The first training launch stopped in its first batch because PIL.ImageOps.grayscale has no num_output_channels argument. Corrected to ImageOps.grayscale(im).convert('RGB'), checked its3channel result, then relaunched training and bounded follow-up with their logs truncated/reset and new PIDs in the same pid files. Dataset/cache remain complete; this is still the FIRST training round (no completed epoch/candidate from the failed startup). Watch logs for actual epochs. The previous follow-up exited on traceback; current follow-up was restarted after stderr reset.
