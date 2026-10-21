@@ -4,6 +4,15 @@ from PIL import Image
 from carvision.badge_evidence import BadgeEvidence,fuse_badge
 
 class BadgeEvidenceTests(unittest.TestCase):
+    def test_disabled_badge_does_not_run_or_crash_on_unmatched_image(self):
+        detector=BadgeEvidence(dict(templates=[dict(brand='Chevrolet',descriptor=torch.ones(8,20))],enabled=False,threshold=.9))
+        detector.scores=lambda *args: (_ for _ in ()).throw(AssertionError('Disabled detector executed'))
+        self.assertIsNone(detector.predict(Image.new('RGB',(80,80))))
+
+    def test_fully_excluded_mask_returns_no_candidate(self):
+        import numpy as np
+        detector=BadgeEvidence(dict(templates=[dict(brand='Chevrolet',descriptor=torch.ones(8,20))],enabled=True,threshold=.9))
+        self.assertIsNone(detector.predict(Image.new('RGB',(100,100)),np.zeros((100,100),bool)))
     def test_unaccepted_cannot_change_answer(self):
         p=torch.tensor([.1,.9]);q=fuse_badge(p,[('Chevrolet','Cobalt'),('BMW','3')],dict(brand='Chevrolet',accepted=False))
         self.assertTrue(torch.equal(p,q))

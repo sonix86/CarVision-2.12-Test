@@ -1,5 +1,5 @@
-CARVISION 2.0 / София Рахманкулова
-Распакуйте TashkentCarVision-v2.0-Portable.zip целиком.
+CARVISION 2.1 / София Рахманкулова
+Распакуйте TashkentCarVision-v2.1-Portable.zip целиком.
 Запустите CarVision/CarVision.exe. Переносите всю папку CarVision,
 включая _internal, models, data и samples. Один EXE отдельно не работает.
 Windows10/11 x64, папка должна разрешать запись. Python для анализа не нужен.

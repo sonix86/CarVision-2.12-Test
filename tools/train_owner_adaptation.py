@@ -55,7 +55,7 @@ for epoch in range(12):
 if best:
  expert['state']['fc.weight']=best['weight'];expert['state']['fc.bias']=best['bias'];torch.save(expert,out/'expert.pt')
 # Badge acceptance is fitted ONLY to public validation make labels, no test.
-badge=BadgeEvidence(dict(templates=templates,threshold=1.,enabled=False));scores=[]
+badge=BadgeEvidence(dict(templates=templates,threshold=1.,enabled=True));scores=[]
 for r in val:
  im=Image.fromarray(r['body_rgb'].numpy());s=badge.predict(im,r['body_mask'].numpy())
  if s:scores.append(dict(**s,truth=pairs[r['y']][0],image=r['image']))

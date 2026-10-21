@@ -23,7 +23,7 @@ for i in range(1,11):
  manifest.append(dict(image='images/'+name,sha256=hashlib.sha256(src.read_bytes()).hexdigest(),group='owner-phone-outing-2026-10-21',split='train',source='User supplied phone photograph; use for local training explicitly authorized in chat',license='User-provided; not assigned a public redistribution licence',annotation_status='partial: only visually identifiable vehicles labelled; remaining objects require review'))
  for photo,box,brand,model,colour in annotations:
   if photo!=i:continue
-  row=dict(image='images/'+name,box=box,brand=brand,model=model,colour=colour,group=manifest[-1]['group'],split='train',label_source='Manual visual review, no classifier-generated labels',review='Model-level label omitted when not certain')
+  row=dict(image='images/'+name,box=box,brand=brand,model=model,colour=colour,source='Owner phone photos,21October2026',group=manifest[-1]['group'],split='train',label_source='Manual visual review, no classifier-generated labels',review='Model-level label omitted when not certain')
   if i in badges:row['badge_box']=badges[i] if i!=1 or model=='Cobalt' else None
   rows.append(row)
 (out/'labels.jsonl').write_text(''.join(json.dumps(r,ensure_ascii=False)+'\n' for r in rows),encoding='utf-8')

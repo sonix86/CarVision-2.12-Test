@@ -62,6 +62,14 @@ def classify(p,crop,mask):
             brand=body_make;bp=body_make_confidence
             brand_alternatives=[dict(brand=b,confidence=score) for b,score in sorted(make_scores.items(),key=lambda item:item[1],reverse=True)[:3]]
             model=p.vehicle_classifier.describe(prob,brand);brand_source='own body-detail expert, high-confidence calibrated correction of older make head'
+    # A make head and a model head have different score distributions. Never
+    # present one make as settled while the displayed leading model disagrees.
+    classifier_brand=brand;classifier_brand_confidence=bp
+    conflict=bool(brand!='unknown' and model.get('model_candidate_brand')
+                  and model['model_candidate_brand']!=brand)
+    if conflict:
+        brand='unknown';model['model']='unknown'
+        brand_source='conflicting make and model evidence; abstained'
     colour,cp=heuristic_colour(focused);source='foreground HSV fallback';threshold=p.colour_reliability_threshold
     if p.colour_classifier is not None:
         prob=p.colour_classifier.probabilities(focused);source='own colour head on isolated visible instance'
@@ -69,7 +77,7 @@ def classify(p,crop,mask):
             prob=p.masked_colour.blend(prob,p.masked_colour.probabilities(crop,mask));threshold=p.masked_colour.threshold;source='own source-labelled visible-paint head + isolated-instance colour evidence'
         cp,index=prob.max(0);cp=float(cp);colour=COLOURS[int(index)];alternatives=[dict(colour=COLOURS[int(i)],confidence=float(prob[i])) for i in prob.topk(2).indices]
     else:alternatives=[dict(colour=colour,confidence=cp)]
-    return dict(brand=brand,brand_confidence=bp,brand_alternatives=brand_alternatives,brand_source=brand_source,badge_evidence=badge,**model,colour=colour,colour_confidence=cp,colour_reliable=cp>=threshold,colour_alternatives=alternatives,colour_source=source)
+    return dict(brand=brand,brand_confidence=bp,brand_alternatives=brand_alternatives,brand_source=brand_source,brand_model_conflict=conflict,classifier_brand=classifier_brand,classifier_brand_confidence=classifier_brand_confidence,badge_evidence=badge,**model,colour=colour,colour_confidence=cp,colour_reliable=cp>=threshold,colour_alternatives=alternatives,colour_source=source)
 
 @torch.inference_mode()
 def predict_instances(p,original,path,region,single,started):

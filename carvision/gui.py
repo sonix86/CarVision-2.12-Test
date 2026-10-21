@@ -44,7 +44,7 @@ class App:
         rail=tk.Frame(root,bg=NAVY,width=190);rail.pack(side='left',fill='y');rail.pack_propagate(False)
         tk.Label(rail,text='CV',font=('Segoe UI',32,'bold'),fg='#6ed9c8',bg=NAVY).pack(anchor='w',padx=22,pady=(28,2))
         tk.Label(rail,text='CarVision',font=('Segoe UI',18,'bold'),fg='white',bg=NAVY,justify='left').pack(anchor='w',padx=22)
-        tk.Label(rail,text='ТАШКЕНТ  /  2.0',font=('Segoe UI',8),fg='#a4b7cd',bg=NAVY).pack(anchor='w',padx=23,pady=(8,9))
+        tk.Label(rail,text='ТАШКЕНТ  /  2.1',font=('Segoe UI',8),fg='#a4b7cd',bg=NAVY).pack(anchor='w',padx=23,pady=(8,9))
         tk.Label(rail,text='●  Работает без интернета',font=('Segoe UI',8),fg='#7dd5bf',bg=NAVY).pack(anchor='w',padx=22,pady=(0,29))
         self.nav={};self.views={}
         for key,title in [('infer','Анализ фото'),('labels','Учебная разметка'),('training','Обучение'),('help','О проекте')]:
@@ -161,7 +161,9 @@ class App:
         variants=row.get('model_alternatives',[])
         text='Возможные модели:\n'+'\n'.join(f"{r['brand']} {r['model']} — {r['confidence']:.0%}" for r in variants) if variants else 'Модель пока не определена.'
         if not include_variants:text=''
-        text+=('\n' if text else '')+'Марка: '+('не установлена' if row['brand']=='unknown' else row['brand'])+f" · {row['brand_confidence']:.0%}"
+        text+=('\n' if text else '')+'Марка: '+('не установлена' if row['brand']=='unknown' else row['brand']+f" · {row['brand_confidence']:.0%}")
+        if row.get('brand_model_conflict'):
+            text+='\nЕсть противоречие: отдельная сеть марки предлагает '+row['classifier_brand']+'; сеть моделей — '+row.get('model_candidate_brand','?')+'. Название с ? — первый вариант, не подтверждённый ответ.'
         colours=row.get('colour_alternatives',[])
         text+='\nЦвет: '+COLOUR_RU.get(row['colour'],row['colour'])+f" · {row.get('colour_confidence',0):.0%}"+(' · проверьте' if not row.get('colour_reliable',True) else '')
         if len(colours)>1:text+='\nЕщё: '+COLOUR_RU.get(colours[1]['colour'],colours[1]['colour'])+f" · {colours[1]['confidence']:.0%}"
@@ -220,6 +222,7 @@ class App:
     def build_training(self):
         view=self.views['training'];ttk.Label(view,text='Научить программу на своих фотографиях',font=('Segoe UI',14,'bold'),wraplength=850).pack(anchor='w',pady=(0,8))
         self.training_guide='Для распознавания уже есть обученные веса — просто откройте «Анализ фото». Этот раздел нужен для собственного набора Ташкента по заданию. Загрузка фото на анализ сама по себе ничего не обучает.\n\n1. Учебная разметка: добавьте свои снимки, обведите машины и укажите правильные марки и цвета. Серию одной машины сохраняйте одной группой, чтобы она не попала одновременно в обучение и проверку.\n2. Проверить данные: проверяет файлы, координаты, подписи и независимость групп. Нужны как минимум две марки в обучении и две независимые группы; для качества требуется значительно больше.\n3. Обучить: обновляет классификатор марок/цветов и резервный детектор рамок. Эпоха — один проход по учебным данным; больше проходов не всегда лучше. Старые веса сохраняются в models/backups.\n4. Проверка качества: показывает ошибки на сохранённой проверочной части. Затем проверьте новые фото, которых не было в обучении.\n\nКонтурный COCO-сегментатор здесь не переобучается. Конкретные модели (Cobalt, Spark и другие) и сравнение фрагментов обучаются отдельными рецептами source/tools; эта кнопка не добавляет имена новых моделей.'
+        self.training_guide+='\n\nУчебная версия сохраняется отдельно в models/own_training_candidate. Рабочее распознавание не заменяется автоматически: сначала сравните качество. «Проверка качества» проверяет именно эту учебную версию. Полученные10 фото и частичная разметка лежат отдельно в data/own_oct21; одной поездки недостаточно для независимых train/validation.'
         ttk.Label(view,text=self.training_guide,style='Muted.TLabel',wraplength=850,justify='left',font=('Segoe UI',9)).pack(anchor='w',pady=(0,10))
         self.training_data_summary=tk.StringVar();ttk.Label(view,textvariable=self.training_data_summary,font=('Segoe UI',10,'bold')).pack(anchor='w',pady=(0,10))
         fields=ttk.Frame(view);fields.pack(fill='x');self.epochs=tk.IntVar(value=25);self.detector_epochs=tk.IntVar(value=25)
@@ -257,7 +260,11 @@ class App:
     def evaluate(self):
         if (ROOT/'models/evaluation/public_test.json').exists() and not self.all_labels():
             self.open_document(ROOT/'PROTOTYPE_VALIDATION.md')
-        else:self.command(['evaluate','--labels',str(ROOT/'data/labels.jsonl'),'--models',str(ROOT/'models'),'--output',str(ROOT/'models/evaluation')])
+        else:
+            directory=ROOT/'models/own_training_candidate'
+            if not (directory/'training.json').exists():
+                messagebox.showinfo('Проверка учебной версии','Сначала завершите обучение на размеченном наборе. Результаты текущего выпуска находятся в VALIDATION.md.');return
+            self.command(['evaluate','--labels',str(ROOT/'data/labels.jsonl'),'--models',str(directory),'--output',str(directory/'evaluation')])
     def set_busy(self,value,text):
         self.busy=value;self.status.set(text);self.progress.start(12) if value else self.progress.stop();self.refresh_buttons()
     def open_folder(self,path):
@@ -486,7 +493,7 @@ class App:
             epochs,detector_epochs=self.epochs.get(),self.detector_epochs.get()
             if min(epochs,detector_epochs)<1:raise ValueError()
         except Exception:messagebox.showerror('Эпохи','Введите положительные целые числа для обеих сетей.');return
-        self.command(['train','--labels',str(ROOT/'data/labels.jsonl'),'--output',str(ROOT/'models'),'--epochs',str(epochs),'--detector-epochs',str(detector_epochs)])
+        self.command(['train','--labels',str(ROOT/'data/labels.jsonl'),'--output',str(ROOT/'models/own_training_candidate'),'--epochs',str(epochs),'--detector-epochs',str(detector_epochs)])
     def append_log(self,text):self.log.configure(state='normal');self.log.insert('end',text);self.log.see('end');self.log.configure(state='disabled')
     def command(self,args):
         if self.busy:return

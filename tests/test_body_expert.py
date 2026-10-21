@@ -51,10 +51,13 @@ class BodyExpertTests(unittest.TestCase):
         row=self.classify_make_conflict('BMW',.95)
         self.assertEqual(row['brand'],'Chevrolet');self.assertEqual(row['model'],'Cobalt')
         self.assertIn('calibrated correction',row['brand_source'])
-        self.assertEqual(self.classify_make_conflict('BMW',.89)['brand'],'BMW')
+        self.assertEqual(self.classify_make_conflict('BMW',.89)['brand'],'unknown')
 
     def test_closed_model_vocabulary_does_not_erase_unrepresented_make(self):
-        self.assertEqual(self.classify_make_conflict('Audi',.95)['brand'],'Audi')
+        row=self.classify_make_conflict('Audi',.95)
+        self.assertEqual(row['brand'],'unknown')
+        self.assertEqual(row['classifier_brand'],'Audi')
+        self.assertTrue(row['brand_model_conflict'])
 
     def test_make_can_be_confident_while_exact_chevrolet_model_is_uncertain(self):
         from types import SimpleNamespace

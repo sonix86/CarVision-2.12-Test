@@ -1,0 +1,1330 @@
+{
+  "scope": "Existing validation, manually/source-labelled body crops, no detector metric and not a fresh blind test",
+  "count": 161,
+  "brand_accuracy": 0.7018633540372671,
+  "unknown": 42,
+  "conflicts": 20,
+  "brands": [
+    "BMW",
+    "BYD",
+    "Chery",
+    "Chevrolet",
+    "Daewoo",
+    "Geely",
+    "Haval",
+    "Honda",
+    "Hyundai",
+    "Kia",
+    "Lada",
+    "Toyota",
+    "Zeekr"
+  ],
+  "columns": [
+    "Audi",
+    "BMW",
+    "BYD",
+    "Chery",
+    "Chevrolet",
+    "Daewoo",
+    "Ford",
+    "Geely",
+    "Haval",
+    "Honda",
+    "Hyundai",
+    "Kia",
+    "Lada",
+    "Mercedes-Benz",
+    "Nissan",
+    "Tesla",
+    "Toyota",
+    "Volkswagen",
+    "Volvo",
+    "Zeekr",
+    "unknown"
+  ],
+  "confusion": [
+    [
+      0,
+      7,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      8,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      7
+    ],
+    [
+      0,
+      0,
+      0,
+      4,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      40,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      8
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      2,
+      6,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      5
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      4,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      21,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      13,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      3
+    ]
+  ],
+  "records": [
+    {
+      "image": "images/3360c414c30752e0af44.jpg",
+      "truth": "Chevrolet",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/a695bf8588d2b60bb2d9.jpg",
+      "truth": "Chevrolet",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/2e0271fc3edb0043073a.jpg",
+      "truth": "Chevrolet",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/205b2432a87032a40057.jpg",
+      "truth": "Kia",
+      "prediction": "Kia",
+      "conflict": false
+    },
+    {
+      "image": "images/237611cc4843e784c534.jpg",
+      "truth": "Kia",
+      "prediction": "Kia",
+      "conflict": false
+    },
+    {
+      "image": "images/388495b03f937fe69458.jpg",
+      "truth": "Daewoo",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/09f5e628bdcf918bb940.jpg",
+      "truth": "Chevrolet",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/bd594679bbb01b050714.jpg",
+      "truth": "Daewoo",
+      "prediction": "Daewoo",
+      "conflict": false
+    },
+    {
+      "image": "images/3a6593be073979a6eb6f.jpg",
+      "truth": "Daewoo",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/2fae5eae12e6fa25ee31.jpg",
+      "truth": "Daewoo",
+      "prediction": "unknown",
+      "conflict": true
+    },
+    {
+      "image": "images/12a3cf1db306a7e05102.jpg",
+      "truth": "Daewoo",
+      "prediction": "unknown",
+      "conflict": true
+    },
+    {
+      "image": "images/2dcf56a1a0103cd35f5a.jpg",
+      "truth": "Daewoo",
+      "prediction": "Daewoo",
+      "conflict": false
+    },
+    {
+      "image": "images/15ad167bd4304a06afa8.jpg",
+      "truth": "Chevrolet",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/4f48bbd2d7deb14ad1fb.jpg",
+      "truth": "Chevrolet",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/39ce5fbdc501c42e49e5.jpg",
+      "truth": "Chevrolet",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/3e96ccde69c87319e751.jpg",
+      "truth": "Chevrolet",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/341ace93c8868dbccb5a.jpg",
+      "truth": "Chevrolet",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/42c5840dba05d0aa009a.jpg",
+      "truth": "Chevrolet",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/83d2e11ff04d10118339.jpg",
+      "truth": "Chevrolet",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/3f45724ad1e1a16007f9.jpg",
+      "truth": "Chevrolet",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/cf26d23a0bc4348edc98.jpg",
+      "truth": "Chevrolet",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/42ad54768191cbc14eff.jpg",
+      "truth": "Chevrolet",
+      "prediction": "unknown",
+      "conflict": false
+    },
+    {
+      "image": "images/01e12f5160a38e96ece6.jpg",
+      "truth": "BYD",
+      "prediction": "BYD",
+      "conflict": false
+    },
+    {
+      "image": "images/228e9577ca99457bdb16.jpg",
+      "truth": "Chevrolet",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/3c74f5d92fb8d0ce18e8.jpg",
+      "truth": "Haval",
+      "prediction": "Haval",
+      "conflict": false
+    },
+    {
+      "image": "images/44e65f120bc95b002b8d.jpg",
+      "truth": "Chevrolet",
+      "prediction": "unknown",
+      "conflict": false
+    },
+    {
+      "image": "images/313d8fb76721a0e69a6a.jpg",
+      "truth": "Haval",
+      "prediction": "Haval",
+      "conflict": false
+    },
+    {
+      "image": "images/0732aad3124b4f9c1c32.jpg",
+      "truth": "Kia",
+      "prediction": "unknown",
+      "conflict": false
+    },
+    {
+      "image": "images/7835211a57f87f37f01d.jpg",
+      "truth": "BYD",
+      "prediction": "BYD",
+      "conflict": false
+    },
+    {
+      "image": "images/418f13426c11e863999c.jpg",
+      "truth": "Chevrolet",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/0feae1f4a2429a50936d.jpg",
+      "truth": "Chery",
+      "prediction": "Chery",
+      "conflict": false
+    },
+    {
+      "image": "images/23dc483ff11dd4e1f988.jpg",
+      "truth": "Chery",
+      "prediction": "unknown",
+      "conflict": false
+    },
+    {
+      "image": "images/22d06e025387c038c8e8.jpg",
+      "truth": "Chery",
+      "prediction": "Chery",
+      "conflict": false
+    },
+    {
+      "image": "images/21aa340b3d36feccd02f.jpg",
+      "truth": "Chery",
+      "prediction": "Chery",
+      "conflict": false
+    },
+    {
+      "image": "images/2696c69b3ce19a2b0f74.jpg",
+      "truth": "Chevrolet",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/10f4f9f17f56941ff7b7.jpg",
+      "truth": "Chevrolet",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/1cd7c29e49b3a61537d4.jpg",
+      "truth": "Chevrolet",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/43666053e89f341cb9db.jpg",
+      "truth": "Chevrolet",
+      "prediction": "unknown",
+      "conflict": true
+    },
+    {
+      "image": "images/2f2b3b3d3ff4f0a74f0b.jpg",
+      "truth": "Chevrolet",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/5f7dedd83791405abc76.jpg",
+      "truth": "Chevrolet",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/66641e59758a172a9b75.jpg",
+      "truth": "Chevrolet",
+      "prediction": "unknown",
+      "conflict": false
+    },
+    {
+      "image": "images/9f8529e8251979f0cd9a.jpg",
+      "truth": "Chevrolet",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/93f6426ab2f61f36d346.jpg",
+      "truth": "Chevrolet",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/fe08184f2ff2a35204c0.jpg",
+      "truth": "Chevrolet",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/6197ea1fcaa9428e6085.jpg",
+      "truth": "Chevrolet",
+      "prediction": "unknown",
+      "conflict": false
+    },
+    {
+      "image": "images/2c368c460c010d5c796f.jpg",
+      "truth": "Chevrolet",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/416328d0af421dfe0192.jpg",
+      "truth": "Chevrolet",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/40d98c7a88318c259c07.jpg",
+      "truth": "Chevrolet",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/2b5196555dd5079011e9.jpg",
+      "truth": "Chevrolet",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/722c67bf6c0bfc806256.jpg",
+      "truth": "Chevrolet",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/05a132ed892f01e1ea4e.jpg",
+      "truth": "Chevrolet",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/81fc7b6038191a799e00.jpg",
+      "truth": "Chevrolet",
+      "prediction": "unknown",
+      "conflict": true
+    },
+    {
+      "image": "images/2ab11f81b8ee56715dcb.jpg",
+      "truth": "Chevrolet",
+      "prediction": "unknown",
+      "conflict": true
+    },
+    {
+      "image": "images/72583571a267a33137d7.jpg",
+      "truth": "Chevrolet",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/1730d49c8b6c689c4a6b.jpg",
+      "truth": "Chevrolet",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/03595a6ab9452b05c6d2.jpg",
+      "truth": "Chevrolet",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/2e046c108aa0f461d02d.jpg",
+      "truth": "Chevrolet",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/215277377f2759194b2f.jpg",
+      "truth": "Chevrolet",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/3b5ce9092d1cbf3d2063.jpg",
+      "truth": "Chevrolet",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/409071f5268fd6c6c72a.jpg",
+      "truth": "Chevrolet",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/2b6386deec48ed99aff1.jpg",
+      "truth": "Chevrolet",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/122c3c560fd76a3373af.jpg",
+      "truth": "Chevrolet",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/8a8a90d621cfb44e88a1.jpg",
+      "truth": "Daewoo",
+      "prediction": "Daewoo",
+      "conflict": false
+    },
+    {
+      "image": "images/95609b63fb50dbdd636b.jpg",
+      "truth": "Daewoo",
+      "prediction": "unknown",
+      "conflict": false
+    },
+    {
+      "image": "images/b234e45f8f076aec2826.jpg",
+      "truth": "Daewoo",
+      "prediction": "Daewoo",
+      "conflict": false
+    },
+    {
+      "image": "images/797737f6872b70e99844.jpg",
+      "truth": "Daewoo",
+      "prediction": "Daewoo",
+      "conflict": false
+    },
+    {
+      "image": "images/35fa4814c1db7b7ed137.jpg",
+      "truth": "Daewoo",
+      "prediction": "unknown",
+      "conflict": false
+    },
+    {
+      "image": "images/4ee17d68854333f491b9.jpg",
+      "truth": "Daewoo",
+      "prediction": "Daewoo",
+      "conflict": false
+    },
+    {
+      "image": "images/28c9afe66cf2a1bfc961.jpg",
+      "truth": "Haval",
+      "prediction": "unknown",
+      "conflict": false
+    },
+    {
+      "image": "images/36c5d92056c2f92a3257.jpg",
+      "truth": "Haval",
+      "prediction": "Haval",
+      "conflict": false
+    },
+    {
+      "image": "images/21c1faaccc69cfbb7d37.jpg",
+      "truth": "Kia",
+      "prediction": "unknown",
+      "conflict": true
+    },
+    {
+      "image": "images/0f374a1c5669ff379ea7.jpg",
+      "truth": "Lada",
+      "prediction": "Lada",
+      "conflict": false
+    },
+    {
+      "image": "images/286146c5b9fd31859775.jpg",
+      "truth": "Chevrolet",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/040150ee78d0a731165c.jpg",
+      "truth": "Chevrolet",
+      "prediction": "unknown",
+      "conflict": true
+    },
+    {
+      "image": "images/3ac67b05953647c08e85.jpg",
+      "truth": "Chery",
+      "prediction": "Haval",
+      "conflict": false
+    },
+    {
+      "image": "images/dc969e116335be9e7ea4.jpg",
+      "truth": "Chevrolet",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "images/20be742fbec47d3de012.jpg",
+      "truth": "Lada",
+      "prediction": "Lada",
+      "conflict": false
+    },
+    {
+      "image": "images/0a58a5c881e005c08955.jpg",
+      "truth": "Lada",
+      "prediction": "unknown",
+      "conflict": true
+    },
+    {
+      "image": "images/91f9e9e78301f814e99c.jpg",
+      "truth": "Daewoo",
+      "prediction": "unknown",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_2bc1e210df0ca07929073e49.jpg",
+      "truth": "Honda",
+      "prediction": "Honda",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_31533b03e8ab51bfe5ea40e7.jpg",
+      "truth": "Honda",
+      "prediction": "Honda",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_9357e99a62a7ccf867e16c4a.jpg",
+      "truth": "Honda",
+      "prediction": "Honda",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_d6b275cb12d9250756f364fa.jpg",
+      "truth": "Honda",
+      "prediction": "Honda",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_9a1832b50637ed09a61a84e2.jpg",
+      "truth": "Honda",
+      "prediction": "unknown",
+      "conflict": true
+    },
+    {
+      "image": "stanford/images/stanford_6425af187806370e4497388d.jpg",
+      "truth": "Honda",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_7f4feab72dd41ad4090fa051.jpg",
+      "truth": "Hyundai",
+      "prediction": "Hyundai",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_76a6d571e9b76a2fa5feca44.jpg",
+      "truth": "Hyundai",
+      "prediction": "Hyundai",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_ecfc8c17f58393d8834c5858.jpg",
+      "truth": "Hyundai",
+      "prediction": "Hyundai",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_c3b8c280f20797ba7079e3f0.jpg",
+      "truth": "Hyundai",
+      "prediction": "Hyundai",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_6f829d621f86010fd6607e48.jpg",
+      "truth": "Hyundai",
+      "prediction": "Hyundai",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_5abd2310a405e231b3d847e3.jpg",
+      "truth": "Hyundai",
+      "prediction": "unknown",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_53c4ade4c6848828a5be79dc.jpg",
+      "truth": "Hyundai",
+      "prediction": "Hyundai",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_ee3007c153b0ef1c1482616c.jpg",
+      "truth": "Hyundai",
+      "prediction": "Hyundai",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_0ee9dbc534f2e69b552efeca.jpg",
+      "truth": "Hyundai",
+      "prediction": "Hyundai",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_07d373a8c2221f014504e0de.jpg",
+      "truth": "Hyundai",
+      "prediction": "unknown",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_d2862f1513caf451e263c013.jpg",
+      "truth": "Hyundai",
+      "prediction": "Hyundai",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_de6f1650b58ac87b1d09a418.jpg",
+      "truth": "Hyundai",
+      "prediction": "Hyundai",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_a73f206610c06c6c061853f9.jpg",
+      "truth": "Hyundai",
+      "prediction": "Hyundai",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_6302d12ff82c135f84b063a4.jpg",
+      "truth": "Hyundai",
+      "prediction": "Hyundai",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_137f76ec14ca10a876581fba.jpg",
+      "truth": "Hyundai",
+      "prediction": "Hyundai",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_572e98f28250c58be84847b5.jpg",
+      "truth": "Hyundai",
+      "prediction": "Hyundai",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_921733008432c201cb45ee9d.jpg",
+      "truth": "Hyundai",
+      "prediction": "Hyundai",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_a85189a69bda25ce8f6b6ce8.jpg",
+      "truth": "Hyundai",
+      "prediction": "Hyundai",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_60a5e21a4ec14cc975d764e4.jpg",
+      "truth": "Hyundai",
+      "prediction": "Hyundai",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_5235d342561ff22057add68e.jpg",
+      "truth": "Hyundai",
+      "prediction": "Hyundai",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_4281d297b9a963b9ae14d309.jpg",
+      "truth": "Hyundai",
+      "prediction": "Hyundai",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_d57397ad73a30961f9817e6c.jpg",
+      "truth": "Hyundai",
+      "prediction": "Hyundai",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_890fa4d1cc16a6b9452f8962.jpg",
+      "truth": "Hyundai",
+      "prediction": "Hyundai",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_f7101e2537573cc96e16c8cc.jpg",
+      "truth": "Toyota",
+      "prediction": "Chevrolet",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_354d0ac6084dfa8d01dcf114.jpg",
+      "truth": "Toyota",
+      "prediction": "Toyota",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_1fafb5fa80484d088830b681.jpg",
+      "truth": "Toyota",
+      "prediction": "Toyota",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_34bf915b3f1be53e8f17d7ef.jpg",
+      "truth": "Toyota",
+      "prediction": "Toyota",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_2adbc2134f03d32f1d57992e.jpg",
+      "truth": "Toyota",
+      "prediction": "Toyota",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_5646ec2a7248d491a1369dbf.jpg",
+      "truth": "Toyota",
+      "prediction": "Toyota",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_6b977fd3c8c2c686c00f56b7.jpg",
+      "truth": "Toyota",
+      "prediction": "Toyota",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_94aeab813c7536a21049955d.jpg",
+      "truth": "Toyota",
+      "prediction": "Toyota",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_ce0e7dd04cf8f21fd0905e9a.jpg",
+      "truth": "Toyota",
+      "prediction": "Toyota",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_5f7e7b97b85c5961cbd94a75.jpg",
+      "truth": "Toyota",
+      "prediction": "Toyota",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_3588790982122bd78a32bb2b.jpg",
+      "truth": "Toyota",
+      "prediction": "Toyota",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_620f54c1b0d3b61f530e56db.jpg",
+      "truth": "Toyota",
+      "prediction": "Toyota",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_917b9510ddbb291fbc87453c.jpg",
+      "truth": "Toyota",
+      "prediction": "Toyota",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_27479b72f9bd34e16889ad6e.jpg",
+      "truth": "Toyota",
+      "prediction": "unknown",
+      "conflict": true
+    },
+    {
+      "image": "stanford/images/stanford_6744472f414fcfd3daea5ece.jpg",
+      "truth": "Toyota",
+      "prediction": "Toyota",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_7b805a40258d1445c7222b0a.jpg",
+      "truth": "BMW",
+      "prediction": "BMW",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_66ea7b90b6e8c00e7b3e6991.jpg",
+      "truth": "BMW",
+      "prediction": "BMW",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_ea15a0367ed9e364641b30ef.jpg",
+      "truth": "BMW",
+      "prediction": "BMW",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_728491526bcb5f5a42ddcf3c.jpg",
+      "truth": "BMW",
+      "prediction": "BMW",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_228efcd2d2b2b7c307adf722.jpg",
+      "truth": "BMW",
+      "prediction": "BMW",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_a5cc5ef69da6e5aac1834124.jpg",
+      "truth": "BMW",
+      "prediction": "BMW",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_d36ed0472f41794f66c875ea.jpg",
+      "truth": "BMW",
+      "prediction": "BMW",
+      "conflict": false
+    },
+    {
+      "image": "stanford/images/stanford_f93bf3b2dff83f2e7805b69a.jpg",
+      "truth": "BMW",
+      "prediction": "unknown",
+      "conflict": true
+    },
+    {
+      "image": "ev_v19/thumb_data/248b762bc0b7f44239cf.jpg",
+      "truth": "BYD",
+      "prediction": "BYD",
+      "conflict": false
+    },
+    {
+      "image": "ev_v19/thumb_data/2fbcdc4087196fc8d056.jpg",
+      "truth": "BYD",
+      "prediction": "unknown",
+      "conflict": true
+    },
+    {
+      "image": "ev_v19/thumb_data/8906c2b99429e56bb223.jpg",
+      "truth": "BYD",
+      "prediction": "unknown",
+      "conflict": true
+    },
+    {
+      "image": "ev_v19/thumb_data/03ecc2124dfc1180f90f.jpg",
+      "truth": "BYD",
+      "prediction": "BYD",
+      "conflict": false
+    },
+    {
+      "image": "ev_v19/thumb_data/09c8f4506ca29d800159.jpg",
+      "truth": "BYD",
+      "prediction": "unknown",
+      "conflict": true
+    },
+    {
+      "image": "ev_v19/thumb_data/20cb07dffab2213ff153.jpg",
+      "truth": "BYD",
+      "prediction": "unknown",
+      "conflict": false
+    },
+    {
+      "image": "ev_v19/thumb_data/041147aa402f29c9a702.jpg",
+      "truth": "BYD",
+      "prediction": "unknown",
+      "conflict": true
+    },
+    {
+      "image": "ev_v19/thumb_data/1ffe7f336342ee659008.jpg",
+      "truth": "BYD",
+      "prediction": "BYD",
+      "conflict": false
+    },
+    {
+      "image": "ev_v19/thumb_data/241a24dc8551c5a94769.jpg",
+      "truth": "BYD",
+      "prediction": "BYD",
+      "conflict": false
+    },
+    {
+      "image": "ev_v19/thumb_data/2c5188e3ecfe47f62d05.jpg",
+      "truth": "BYD",
+      "prediction": "BYD",
+      "conflict": false
+    },
+    {
+      "image": "ev_v19/thumb_data/46b8353539d97a0f12e7.jpg",
+      "truth": "BYD",
+      "prediction": "BYD",
+      "conflict": false
+    },
+    {
+      "image": "ev_v19/thumb_data/e63d72e3a59c19a8b944.jpg",
+      "truth": "BYD",
+      "prediction": "unknown",
+      "conflict": false
+    },
+    {
+      "image": "ev_v19/thumb_data/f09da371b494b4761826.jpg",
+      "truth": "BYD",
+      "prediction": "unknown",
+      "conflict": true
+    },
+    {
+      "image": "ev_v19/a3d24f9afcf645fccc37.jpg",
+      "truth": "Chery",
+      "prediction": "unknown",
+      "conflict": true
+    },
+    {
+      "image": "ev_v19/thumb_data/20c51b4491d0ebf698df.jpg",
+      "truth": "Chery",
+      "prediction": "unknown",
+      "conflict": true
+    },
+    {
+      "image": "ev_v19/thumb_data/3065bf94b7736ef5c256.jpg",
+      "truth": "Chery",
+      "prediction": "Chery",
+      "conflict": false
+    },
+    {
+      "image": "ev_v19/thumb_data/932c7f871b530413e04a.jpg",
+      "truth": "Chery",
+      "prediction": "unknown",
+      "conflict": true
+    },
+    {
+      "image": "ev_v19/thumb_data/319d72a913df7d200f90.jpg",
+      "truth": "Geely",
+      "prediction": "Chery",
+      "conflict": false
+    },
+    {
+      "image": "ev_v19/thumb_data/7937f7c67c2a2cfb005b.jpg",
+      "truth": "Geely",
+      "prediction": "unknown",
+      "conflict": false
+    },
+    {
+      "image": "ev_v19/thumb_data/8b8249f1d223de9d659c.jpg",
+      "truth": "Geely",
+      "prediction": "unknown",
+      "conflict": false
+    },
+    {
+      "image": "ev_v19/thumb_data/a5b646735cff826b5cba.jpg",
+      "truth": "Geely",
+      "prediction": "unknown",
+      "conflict": false
+    },
+    {
+      "image": "ev_v19/thumb_data/01514605b5b53182c7cd.jpg",
+      "truth": "Haval",
+      "prediction": "unknown",
+      "conflict": false
+    },
+    {
+      "image": "ev_v19/thumb_data/190a36fabe3c16fd91c3.jpg",
+      "truth": "Haval",
+      "prediction": "unknown",
+      "conflict": false
+    },
+    {
+      "image": "ev_v19/thumb_data/474f569725468af279ec.jpg",
+      "truth": "Haval",
+      "prediction": "unknown",
+      "conflict": false
+    },
+    {
+      "image": "ev_v19/72ca16a35c6b8ef7e2b8.jpg",
+      "truth": "Haval",
+      "prediction": "Haval",
+      "conflict": false
+    },
+    {
+      "image": "ev_v19/thumb_data/0099cf7f8ce0da7968bf.jpg",
+      "truth": "Zeekr",
+      "prediction": "unknown",
+      "conflict": false
+    },
+    {
+      "image": "ev_v19/thumb_data/0402e7a8f562748e47d2.jpg",
+      "truth": "Zeekr",
+      "prediction": "Zeekr",
+      "conflict": false
+    },
+    {
+      "image": "ev_v19/thumb_data/1ee379b5b555e1f25b89.jpg",
+      "truth": "Zeekr",
+      "prediction": "Zeekr",
+      "conflict": false
+    },
+    {
+      "image": "ev_v19/thumb_data/23bdaef7cf62dd12befe.jpg",
+      "truth": "Zeekr",
+      "prediction": "unknown",
+      "conflict": false
+    },
+    {
+      "image": "ev_v19/thumb_data/27e7fcb4c13a5dd3bf9c.jpg",
+      "truth": "Zeekr",
+      "prediction": "unknown",
+      "conflict": true
+    }
+  ],
+  "seconds": 95.6658501625061,
+  "training_brand_counts": {
+    "Chevrolet": 222,
+    "Daewoo": 64,
+    "Kia": 17,
+    "Chery": 38,
+    "Haval": 37,
+    "BYD": 79,
+    "Lada": 16,
+    "Honda": 33,
+    "Hyundai": 127,
+    "Toyota": 73,
+    "BMW": 35,
+    "Geely": 16,
+    "Zeekr": 22
+  }
+}

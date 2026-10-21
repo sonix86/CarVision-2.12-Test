@@ -1,0 +1,14 @@
+{
+  "loaded_torch_parameters": 63428707,
+  "components": {
+    "pipeline.segmenter.network": 46359409,
+    "pipeline.classifier": 1228858,
+    "pipeline.colour_classifier.components.0.features": 927008,
+    "pipeline.colour_classifier.components.0.head": 182024,
+    "pipeline.colour_classifier.components.1.network": 1075624,
+    "pipeline.vehicle_classifier.body_expert.network": 11192928,
+    "pipeline.vehicle_classifier.legacy_model.network": 1230400,
+    "pipeline.vehicle_classifier.network": 1232456
+  },
+  "scope": "Loaded neural networks with unique parameter tensors; excludes non-neural forest/reference data"
+}

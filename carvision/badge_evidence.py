@@ -38,10 +38,12 @@ class BadgeEvidence:
                 _,score,_,location=cv2.minMaxLoc(response)
                 if score>best['similarity']:
                     x,y=location;best=dict(similarity=float(score),box=[x,y+y0,x+width,y+y0+height],brand=brand)
-            results[brand]=best
+            if best.get('brand') and best['similarity']>-1:
+                results[brand]=best
         return results
 
     def predict(self,image,mask=None):
+        if not self.enabled:return None
         ranked=sorted(self.scores(image,mask).values(),key=lambda r:r['similarity'],reverse=True)
         if not ranked:return None
         best=dict(ranked[0]);margin=best['similarity']-ranked[1]['similarity'] if len(ranked)>1 else 1.

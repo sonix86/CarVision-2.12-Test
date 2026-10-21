@@ -87,8 +87,12 @@ class GuiChecks(unittest.TestCase):
     def test_training_audit_evaluate_commands(self):
         with patch.object(self.app,'command') as command:
             self.app.buttons['audit'].invoke();self.assertEqual(command.call_args.args[0][0],'audit')
-            self.app.buttons['evaluate'].invoke();self.assertIn(str(self.folder/'models/evaluation'),command.call_args.args[0])
+            with patch.object(gui.messagebox,'showinfo') as info:
+                self.app.buttons['evaluate'].invoke();self.assertTrue(info.called)
+            candidate=self.folder/'models/own_training_candidate';candidate.mkdir(parents=True,exist_ok=True);(candidate/'training.json').write_text('{}')
+            self.app.buttons['evaluate'].invoke();self.assertIn(str(candidate/'evaluation'),command.call_args.args[0])
             self.app.buttons['train'].invoke();self.assertIn('--detector-epochs',command.call_args.args[0])
+            self.assertIn(str(candidate),command.call_args.args[0]);self.assertNotIn(str(self.folder/'models'),command.call_args.args[0])
 
     def test_merge_controls_disable_when_busy_and_clear_for_a_new_photo(self):
         from carvision.segmentation import encode_mask

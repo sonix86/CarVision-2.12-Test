@@ -1,6 +1,6 @@
 {
   "owner": "София Рахманкулова",
-  "release": "2.0",
+  "release": "2.1",
   "brand_parameters": 1228858,
   "brand_architecture": "MobileNetV3 Small, own avg/max pooled 18-brand head, regional fine-tuning, mirrored-view probability mean and development temperature",
   "detector": "General COCO Mask R-CNN visible-instance masks, instance bridge association, duplicate consolidation and person-pixel exclusion; Faster R-CNN is a fallback. Segmentation neural weights are unchanged this round.",
@@ -18459,5 +18459,14 @@
     "reason": "No validation improvement under predeclared guards",
     "badge_enabled": false,
     "report": "owner_adaptation_training.json"
+  },
+  "v21_changes": {
+    "neural_weights_changed": false,
+    "conflict_abstention": true,
+    "disabled_badge_crash_fixed": true,
+    "training_output": "models/own_training_candidate",
+    "brand_validation_accuracy": 0.7018633540372671,
+    "validation_crops": 161,
+    "validation_report": "release_v21_validation.json"
   }
 }
