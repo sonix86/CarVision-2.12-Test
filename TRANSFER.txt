@@ -1,5 +1,6 @@
 CARVISION 2.1 / София Рахманкулова
-Распакуйте TashkentCarVision-v2.1-Portable.zip целиком.
+Распакуйте CarVision-2.1-Full-Transfer.zip целиком.
+Полная инструкция: HANDOFF_GUIDE_RU.txt. Проверка: CHECK_ON_NEW_PC.cmd.
 Запустите CarVision/CarVision.exe. Переносите всю папку CarVision,
 включая _internal, models, data и samples. Один EXE отдельно не работает.
 Windows10/11 x64, папка должна разрешать запись. Python для анализа не нужен.
