@@ -1,0 +1,42 @@
+{
+  "test": {
+    "whole": {
+      "count": 389,
+      "top1": 0.7814909815788269,
+      "top3": 0.9331619739532471
+    },
+    "upper55": {
+      "count": 389,
+      "top1": 0.47043702006340027,
+      "top3": 0.714652955532074
+    },
+    "upper35": {
+      "count": 389,
+      "top1": 0.19794344902038574,
+      "top3": 0.49614396691322327
+    }
+  },
+  "audit": {
+    "conflicting_sessions": 7,
+    "excluded_validation": 3,
+    "excluded_test": 5,
+    "excluded_images": [
+      "images/027e4746a44cd5f2e7a1.jpg",
+      "images/0ad342fc3c6819d4a406.jpg",
+      "images/0f9b08636ab5f5d2d622.jpg",
+      "images/2843044f1d4a795e0d6d.jpg",
+      "images/44c85ded0c53806ac0aa.jpg",
+      "images/4dcb9bed32ff10d029db.jpg",
+      "images/55f9dc073e21e004862b.jpg",
+      "images/adebe6441b90f775d65f.jpg"
+    ],
+    "policy": "Keep old files/splits immutable. Exclude non-training members of cross-brand author/date sessions from all new validation/test views. No old heldout photo is moved into training.",
+    "remaining_old_counts": {
+      "train": 642,
+      "validation": 131,
+      "test": 389
+    },
+    "limitations": "Author/date is an approximate session. True vehicle identity labels are unavailable for these public sources."
+  },
+  "parameters": "Fixed shipped1.8 reference parameters, no candidate or test tuning"
+}

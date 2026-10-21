@@ -45,10 +45,54 @@ def tight_box(mask):
     y,x=np.nonzero(mask)
     return [int(x.min()),int(y.min()),int(x.max()+1),int(y.max()+1)] if len(x) else None
 
+def resolve_instances(records):
+    """Consolidate alternative proposals, retaining disconnected visible parts.
+
+    A bridge is evidence from a SINGLE detector instance, never a proximity rule.
+    Two neighbouring masks cannot merge merely because their boxes intersect.
+    """
+    import cv2
+    records=[dict(r,mask=r['mask'].copy(),probability=r['probability'].copy(),proposals=1) for r in records]
+    for bridge in sorted(records,key=lambda r:r['score'],reverse=True):
+        if not any(bridge is r for r in records) or bridge['score']<.7:continue
+        area=int(bridge['mask'].sum())
+        _,_,stats,_=cv2.connectedComponentsWithStats(bridge['mask'].astype('uint8'))
+        if sum(int(a)>=max(60,area*.1) for a in stats[1:,4])<2:continue
+        matches=[]
+        for other in records:
+            if other is bridge:continue
+            overlap=int(np.count_nonzero(bridge['mask']&other['mask']))
+            fraction=overlap/max(1,int(other['mask'].sum()))
+            if fraction>=.5:matches.append((other,fraction))
+        # Only combine complementary proposals supported by this one instance.
+        # Independent strongly overlapping masks are handled by deduplication.
+        for a,fa in matches:
+            for b,fb in matches:
+                if a is b or max(fa,fb)<.8:continue
+                common=np.count_nonzero(a['mask']&b['mask'])/max(1,min(int(a['mask'].sum()),int(b['mask'].sum())))
+                if common>.15:continue
+                union=bridge['mask']|a['mask']|b['mask']
+                if area/int(union.sum())<.5:continue
+                for part in [a,b]:
+                    if any(part is r for r in records):
+                        bridge['mask']|=part['mask'];bridge['probability']=np.maximum(bridge['probability'],part['probability']);bridge['proposals']+=part['proposals'];records=[r for r in records if r is not part]
+                bridge['score']=max(bridge['score'],a['score'],b['score'])
+                break
+            else:continue
+            break
+    kept=[]
+    for r in sorted(records,key=lambda r:r['score']*int(r['mask'].sum())**.5,reverse=True):
+        for old in kept:
+            overlap=int(np.count_nonzero(r['mask']&old['mask']));small=min(int(r['mask'].sum()),int(old['mask'].sum()));union=int(np.count_nonzero(r['mask']|old['mask']))
+            if overlap/max(1,union)>.55 or overlap/max(1,small)>.92:
+                old['mask']|=r['mask'];old['probability']=np.maximum(old['probability'],r['probability']);old['proposals']+=r['proposals'];break
+        else:kept.append(r)
+    return kept
+
 class InstanceSegmenter:
     def __init__(self,checkpoint,small=False):
         if checkpoint.get('origin')!='generic-coco-instance-segmenter':raise ValueError('Expected generic COCO masks, not vehicle-brand weights')
-        self.network=maskrcnn_resnet50_fpn_v2(weights=None,weights_backbone=None,min_size=256 if small else 800,max_size=384 if small else 1333,box_score_thresh=.3,box_detections_per_img=3 if small else 40,rpn_pre_nms_top_n_test=200 if small else 1000,rpn_post_nms_top_n_test=50 if small else 300).eval()
+        self.network=maskrcnn_resnet50_fpn_v2(weights=None,weights_backbone=None,min_size=256 if small else 800,max_size=384 if small else 1333,box_score_thresh=.3,box_detections_per_img=3 if small else 80,rpn_pre_nms_top_n_test=200 if small else 1000,rpn_post_nms_top_n_test=50 if small else 300).eval()
         self.network.load_state_dict(checkpoint['state'])
     @torch.inference_mode()
     def raw(self,image):return self.network([to_tensor(image)])[0]
@@ -61,10 +105,15 @@ class InstanceSegmenter:
         key=(image.size,hashlib.sha256(image.tobytes()).digest(),float(threshold),mode)
         if key==getattr(self,'_cache_key',None):
             return [dict(r,mask=r['mask'].copy()) for r in self._cache_rows],self._cache_views
-        tiles=[(0,0,*image.size)] if mode=='fast' else detection_tiles(*image.size);views=[(tile,False) for tile in tiles];records=[]
+        tiles=[(0,0,*image.size)] if mode=='fast' else detection_tiles(*image.size);views=[(tile,False) for tile in tiles];records=[];people=np.zeros((image.height,image.width),dtype=np.float32)
         if mode=='detail':views.append(((0,0,*image.size),True))
         for tile,mirrored in views:
             crop=image.crop(tile);d=self.raw(ImageOps.mirror(crop) if mirrored else crop)
+            for i in range(len(d['scores'])):
+                if int(d['labels'][i])==1 and float(d['scores'][i])>=.85:
+                    local=d['masks'][i,0].numpy()
+                    if mirrored:local=local[:,::-1]
+                    patch=people[tile[1]:tile[3],tile[0]:tile[2]];np.maximum(patch,local*float(d['scores'][i]),out=patch)
             for i in range(len(d['scores'])):
                 score=float(d['scores'][i]);label=int(d['labels'][i]);box=d['boxes'][i].tolist()
                 if label not in (3,8) or score<threshold:continue
@@ -75,14 +124,10 @@ class InstanceSegmenter:
                 binary=m>=.5
                 if int(binary.sum())<60:continue
                 records.append(dict(mask=binary,probability=m,score=score,label=label))
-        # Suppress duplicate masks, not genuinely overlapping vehicle rectangles.
-        kept=[]
-        for r in sorted(records,key=lambda r:r['score']*int(r['mask'].sum())**.5,reverse=True):
-            duplicate=False
-            for old in kept:
-                overlap=int(np.count_nonzero(r['mask']&old['mask']));small=min(int(r['mask'].sum()),int(old['mask'].sum()));union=int(np.count_nonzero(r['mask']|old['mask']))
-                if overlap/max(1,union)>.55 or overlap/max(1,small)>.92:duplicate=True;break
-            if not duplicate:kept.append(r)
+        for r in records:
+            r['mask'] &= ~((people>.65)&(people>r['probability']*r['score']))
+        records=[r for r in records if int(r['mask'].sum())>=60]
+        kept=resolve_instances(records)
         if kept:
             # Each visible pixel belongs to only one instance. This prevents colour
             # from being counted twice where uncertain boundary masks intersect.
@@ -90,6 +135,6 @@ class InstanceSegmenter:
             # steal a pixel from a valid, lower-confidence vehicle mask.
             evidence=np.stack([np.where(r['mask'],r['probability']*r['score'],-1.) for r in kept]);owner=evidence.argmax(0)
             for i,r in enumerate(kept):r['mask'] &= owner==i
-        result=[dict(mask=r['mask'],score=r['score'],label=r['label']) for r in kept if int(r['mask'].sum())>=60]
+        result=[dict(mask=r['mask'],score=r['score'],label=r['label'],merged_proposals=r['proposals']) for r in kept if int(r['mask'].sum())>=60]
         self._cache_key=key;self._cache_rows=[dict(r,mask=r['mask'].copy()) for r in result];self._cache_views=len(views)
         return result,len(views)

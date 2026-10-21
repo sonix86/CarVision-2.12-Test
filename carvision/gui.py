@@ -11,7 +11,7 @@ from pathlib import Path
 from tkinter import ttk,filedialog,messagebox
 from PIL import ImageTk,Image,ImageDraw
 from .core import ROOT,BRANDS,COLOURS,Pipeline,read_image,save_prediction
-from .overlays import marker_positions
+from .overlays import marker_positions,instance_colour
 from .vehicle_model import vehicle_name,detailed_answer
 
 BG='#f4f7fb';INK='#203249';MUTED='#738297';TEAL='#087f8c';NAVY='#17283e';CARD='#ffffff'
@@ -25,7 +25,7 @@ class App:
         self.root=root;root.title('CarVision · София Рахманкулова');root.geometry('1320x860');root.minsize(1120,760)
         self.events=queue.Queue();self.pipeline=None;self.image=None;self.path=None;self.result=None;self.busy=False;self.process=None;self.closed=False;self.cancelled=False
         self.label_image=None;self.box=None;self.start=None;self.label_rows=[];self.undo_rows=[];self.transforms={};self.resize_job=None;self.buttons={}
-        self.region=None;self.region_start=None;self.zoom_window=None
+        self.region=None;self.region_start=None;self.zoom_window=None;self.before_merge=None
         style=ttk.Style();style.theme_use('clam');style.configure('.',font=('Segoe UI',10))
         style.configure('TFrame',background=BG);style.configure('TLabel',background=BG,foreground=INK)
         style.configure('Title.TLabel',font=('Segoe UI',24,'bold'));style.configure('Muted.TLabel',foreground=MUTED)
@@ -44,7 +44,7 @@ class App:
         rail=tk.Frame(root,bg=NAVY,width=190);rail.pack(side='left',fill='y');rail.pack_propagate(False)
         tk.Label(rail,text='CV',font=('Segoe UI',32,'bold'),fg='#6ed9c8',bg=NAVY).pack(anchor='w',padx=22,pady=(28,2))
         tk.Label(rail,text='CarVision',font=('Segoe UI',18,'bold'),fg='white',bg=NAVY,justify='left').pack(anchor='w',padx=22)
-        tk.Label(rail,text='ТАШКЕНТ  /  1.8',font=('Segoe UI',8),fg='#a4b7cd',bg=NAVY).pack(anchor='w',padx=23,pady=(8,9))
+        tk.Label(rail,text='ТАШКЕНТ  /  1.9',font=('Segoe UI',8),fg='#a4b7cd',bg=NAVY).pack(anchor='w',padx=23,pady=(8,9))
         tk.Label(rail,text='●  Работает без интернета',font=('Segoe UI',8),fg='#7dd5bf',bg=NAVY).pack(anchor='w',padx=22,pady=(0,29))
         self.nav={};self.views={}
         for key,title in [('infer','Анализ фото'),('labels','Учебная разметка'),('training','Обучение'),('help','О проекте')]:
@@ -73,10 +73,10 @@ class App:
     def build_infer(self):
         view=self.views['infer'];bar=ttk.Frame(view);bar.pack(fill='x')
         self.button(bar,'open','Открыть фото',self.open_infer,True,side='left')
-        self.button(bar,'samples','Примеры фото',lambda:self.open_infer(ROOT/'samples/images'),side='left',padx=7)
+        self.button(bar,'samples','Примеры фото',lambda:self.open_infer(ROOT/'samples'),side='left',padx=7)
         self.button(bar,'choose_region','Выбрать зону мышью',self.choose_region,side='left')
         self.button(bar,'clear_region','Вся фотография',self.clear_region,side='left',padx=7)
-        self.scope=tk.StringVar(value=SCOPES[0]);self.region_hint=tk.StringVar(value='Распознайте всё фото или нажмите «Выбрать зону мышью» и обведите нужную машину.')
+        self.scope=tk.StringVar(value=SCOPES[0]);self.region_hint=tk.StringVar(value='Обведите нужную машину или распознайте всё фото. Цветные контуры различают машины; цвет кузова указан справа.')
         ttk.Label(view,textvariable=self.region_hint,style='Muted.TLabel',wraplength=850).pack(anchor='w',pady=(7,0))
         actions=ttk.Frame(view);actions.pack(fill='x',pady=8)
         self.button(actions,'zoom','Крупнее / выбранная машина',self.zoom_car,side='left')
@@ -90,6 +90,9 @@ class App:
         for text,var in [('Уверенность поиска',self.det),('Уверенность марки',self.conf)]:
             ttk.Label(scores,text=text).pack(side='left',padx=(0,5));ttk.Spinbox(scores,from_=.1,to=.99,increment=.05,textvariable=var,width=5).pack(side='left',padx=(0,15))
         ttk.Label(self.advanced_controls,text='Поиск: больше значение — меньше сомнительных объектов. Марка: ниже выбранного значения показываются варианты вместо установленной марки. Значения 0.5 подходят для начала; проценты сети не гарантируют правильность.',wraplength=800,style='Muted.TLabel',font=('Segoe UI',9)).pack(anchor='w',pady=(4,0))
+        corrections=ttk.Frame(self.advanced_controls);corrections.pack(fill='x',pady=(5,0))
+        self.button(corrections,'merge_parts','Объединить части одной машины',self.choose_parts,side='left').configure(padding=(8,5))
+        self.button(corrections,'undo_merge','Отменить объединение',self.undo_merge,side='left',padx=7).configure(padding=(8,5))
         self.model_status=tk.StringVar();ttk.Label(view,textvariable=self.model_status,foreground='#a66718',wraplength=850).pack(anchor='w',pady=(0,7))
         body=ttk.Frame(view);body.pack(fill='both',expand=True);self.infer_body=body
         self.preview=tk.Canvas(body,bg='#eaf0f6',highlightthickness=1,highlightbackground='#dfe7ef');self.preview.pack(side='left',fill='both',expand=True)
@@ -125,6 +128,31 @@ class App:
         else:self.advanced_controls.pack_forget()
         self.queue_redraw()
 
+    def choose_parts(self):
+        if self.busy or not self.result or len(self.result['cars'])<2:return
+        win=tk.Toplevel(self.root);win.title('Части одной машины');win.geometry('480x490');win.transient(self.root);win.grab_set()
+        ttk.Label(win,text='Отметьте контуры, которые принадлежат ОДНОЙ машине. Их видимые пиксели объединятся, марка, модель и цвет будут рассчитаны заново. Пространство между частями останется исключённым.',wraplength=435,padding=14).pack(anchor='w')
+        canvas=tk.Canvas(win,bg=BG,highlightthickness=0);canvas.pack(fill='both',expand=True);bar=ttk.Scrollbar(canvas,command=canvas.yview);bar.pack(side='right',fill='y');canvas.configure(yscrollcommand=bar.set)
+        body=ttk.Frame(canvas);canvas.create_window(0,0,window=body,anchor='nw');body.bind('<Configure>',lambda e:canvas.configure(scrollregion=canvas.bbox('all')))
+        choices=[]
+        for row in self.result['cars']:
+            var=tk.BooleanVar(value=False);choices.append((row['id'],var));ttk.Checkbutton(body,text=f"№ {row['id']} · {vehicle_name(row)}",variable=var).pack(anchor='w',padx=14,pady=4)
+        def apply():
+            ids=[i for i,var in choices if var.get()]
+            if len(ids)<2:messagebox.showinfo('Выбор частей','Отметьте минимум два контура.',parent=win);return
+            self.before_merge=self.result;win.destroy();self.set_busy(True,'Объединяю видимые части и пересчитываю ответ…')
+            def work():
+                try:
+                    from .scene import merge_prediction
+                    result=merge_prediction(self.pipeline,self.image,self.result,ids);save_prediction(self.path,result,ROOT/'outputs');self.events.put(('prediction',result))
+                except Exception as e:self.events.put(('error',str(e)))
+            threading.Thread(target=work,daemon=True).start()
+        ttk.Button(win,text='Объединить и пересчитать',command=apply,style='Primary.TButton').pack(fill='x',padx=14,pady=14)
+
+    def undo_merge(self):
+        if self.busy or self.before_merge is None:return
+        result=self.before_merge;self.before_merge=None;self.events.put(('prediction',result));self.status.set('Объединение отменено.')
+
     def choose_region(self):
         if self.busy or self.image is None:return
         self.scope.set(SCOPES[2]);self.region=None;self.scope_changed();self.status.set('Протяните мышью от одного угла нужной области до другого. Затем нажмите «Распознать в зоне».')
@@ -138,10 +166,13 @@ class App:
         text+='\nЦвет: '+COLOUR_RU.get(row['colour'],row['colour'])+f" · {row.get('colour_confidence',0):.0%}"+(' · проверьте' if not row.get('colour_reliable',True) else '')
         if len(colours)>1:text+='\nЕщё: '+COLOUR_RU.get(colours[1]['colour'],colours[1]['colour'])+f" · {colours[1]['confidence']:.0%}"
         if row.get('model_reason'):text+='\nДля этой марки модели ещё не обучены.'
+        if row.get('brand_source','').startswith('own model head'):text+='\nМарка установлена обученным классификатором моделей кузова; её нет в прежнем отдельном классификаторе марок.'
         for reason in row.get('visual_limitations',[]):text+='\n'+reason
         if row.get('reference_comparison'):text+='\nСравнение с целыми машинами и фрагментами учебного набора. Проценты относительны; неизвестные модели могут быть похожи.'
         if row.get('approximate_mask'):text+='\nГраница приблизительная; наличие машины не подтверждено.'
         elif row.get('segmentation'):text+='\nРаспознана видимая форма машины.'
+        if row.get('merged_proposals',1)>1:text+=f"\nОбъединено предложений детектора: {row['merged_proposals']}. Все части с этим номером относятся к одной машине; скрытые пиксели не дорисованы."
+        if row.get('visible_parts',1)>1:text+=f"\nВидимых участков кузова: {row['visible_parts']}. Цвет контура служит только для различения машин."
         return text
 
     def show_evidence(self,row=None):
@@ -211,6 +242,8 @@ class App:
             if key in ('copy','copy_details','export'):enabled=enabled and self.result is not None
             if key=='zoom':enabled=enabled and (self.region is not None or bool(self.table.selection()))
             if key=='ranking':enabled=enabled and self.result is not None and bool(self.table.selection())
+            if key=='merge_parts':enabled=enabled and self.pipeline is not None and self.result is not None and len(self.result['cars'])>=2
+            if key=='undo_merge':enabled=enabled and self.before_merge is not None
             if key=='clear_region':enabled=enabled and (self.region is not None or self.scope.get()!=SCOPES[0])
             if key=='label_save':enabled=enabled and self.box is not None
             if key=='undo':enabled=enabled and bool(self.undo_rows)
@@ -241,7 +274,7 @@ class App:
         try:image=read_image(path)
         except Exception as e:messagebox.showerror('Ошибка фото',str(e));return
         if self.zoom_window is not None and self.zoom_window.winfo_exists():self.zoom_window.destroy()
-        self.path=str(path);self.image=image;self.result=None;self.region=None;self.region_start=None;self.table.delete(*self.table.get_children());self.show_evidence();self.scope.set(SCOPES[0]);self.scope_changed()
+        self.before_merge=None;self.path=str(path);self.image=image;self.result=None;self.region=None;self.region_start=None;self.table.delete(*self.table.get_children());self.show_evidence();self.scope.set(SCOPES[0]);self.scope_changed()
         self.summary.set(f'{Path(path).name}\n{image.width} × {image.height} пикселей');self.show('infer');self.status.set('Фото загружено. '+('Можно анализировать.' if (ROOT/'models/detector.pt').exists() else 'Сначала обучите детектор на своей разметке.'));self.refresh_buttons();self.redraw()
     def queue_redraw(self):
         if self.closed:return
@@ -260,7 +293,8 @@ class App:
         if any(row.get('contours') for row in rows or []):
             layer=Image.new('RGBA',im.size,(0,0,0,0));paint=ImageDraw.Draw(layer)
             for row in rows or []:
-                tint=(255,179,65,46) if row.get('id')==selected else (20,184,166,25)
+                from PIL import ImageColor
+                tint=(255,179,65,46) if row.get('id')==selected else (*ImageColor.getrgb(instance_colour(row.get('id',1))),25)
                 if row.get('segmentation'):
                     from .segmentation import decode_mask
                     encoded=row['segmentation'];mask=Image.fromarray(decode_mask(encoded).astype('uint8')*tint[3]);scale=encoded.get('scale',[1,1]);size=(max(1,round(mask.width*scale[0]*im.width/image.width)),max(1,round(mask.height*scale[1]*im.height/image.height)))
@@ -273,13 +307,13 @@ class App:
         screen_boxes=[]
         for i,row in enumerate(rows or [],1):
             x,y,x2,y2=row['box'];coords=(ox+x*sx,oy+y*sy,ox+x2*sx,oy+y2*sy);ident=row.get('id',i)
-            colour='#ffb341' if ident==selected else '#24c9ad'
+            colour='#ffb341' if ident==selected else instance_colour(ident)
             if row.get('contours'):
                 for contour in row['contours']:canvas.create_polygon(*[v for x,y in contour for v in (ox+x*sx,oy+y*sy)],outline=colour,fill='',width=3 if ident==selected else 2,tags=f'car-{ident}')
             else:canvas.create_rectangle(*coords,outline=colour,width=3 if ident==selected else 2)
             screen_boxes.append(coords)
         for i,(row,rect) in enumerate(zip(rows or [],marker_positions(screen_boxes,w,h)),1):
-            ident=row.get('id',i);x,y,x2,y2=rect;box=screen_boxes[i-1];canvas.create_line(box[0],box[1],(x+x2)/2,(y+y2)/2,fill='#24c9ad');canvas.create_rectangle(*rect,fill=TEAL if ident==selected else NAVY,outline='#ffb341' if ident==selected else '#24c9ad');canvas.create_text((x+x2)/2,(y+y2)/2,text=str(ident),fill='white',font=('Segoe UI',9,'bold'),tags='car-marker')
+            ident=row.get('id',i);x,y,x2,y2=rect;box=screen_boxes[i-1];colour='#ffb341' if ident==selected else instance_colour(ident);canvas.create_line(box[0],box[1],(x+x2)/2,(y+y2)/2,fill=colour);canvas.create_rectangle(*rect,fill=TEAL if ident==selected else NAVY,outline=colour);canvas.create_text((x+x2)/2,(y+y2)/2,text=str(ident),fill='white',font=('Segoe UI',9,'bold'),tags='car-marker')
             tag=f'car-{ident}';canvas.addtag_withtag(tag,canvas.find_all()[-1]);canvas.addtag_withtag(tag,canvas.find_all()[-2])
 
     def select_car(self,ident):
@@ -302,7 +336,7 @@ class App:
         except Exception as e:messagebox.showerror('Настройки',str(e));return
         region=self.region.copy() if self.region is not None and self.scope.get()!=SCOPES[0] else None;single=self.scope.get()==SCOPES[2]
         if self.scope.get()!=SCOPES[0] and region is None:messagebox.showinfo('Выберите область','Обведите мышью машину или участок фотографии.');return
-        source=self.path;self.set_busy(True,'Анализ выделенной области…' if region else 'Анализ фотографии…')
+        self.before_merge=None;source=self.path;self.set_busy(True,'Анализ выделенной области…' if region else 'Анализ фотографии…')
         def work():
             try:
                 if self.pipeline is None:self.pipeline=Pipeline()
@@ -477,7 +511,7 @@ class App:
                     scope='Одна выбранная машина' if data.get('single_car_region') else 'Машины в области' if data.get('region') else 'Весь кадр'
                     self.summary.set(f"{scope} · машин: {len(data['cars'])}\nАнализ: {data['seconds']:.2f} с");self.set_busy(False,'Результаты сохранены в outputs.');self.redraw()
                     if data['cars']:
-                        main=max(data['cars'],key=lambda r:(r['box'][2]-r['box'][0])*(r['box'][3]-r['box'][1]));self.table.selection_set(str(main['id']));self.table.see(str(main['id']));self.redraw()
+                        main=max(data['cars'],key=lambda r:r.get('mask_pixels',(r['box'][2]-r['box'][0])*(r['box'][3]-r['box'][1])));self.table.selection_set(str(main['id']));self.table.see(str(main['id']));self.redraw()
                 elif kind=='log':self.append_log(data)
                 elif kind=='started':self.refresh_buttons()
                 elif kind=='done':self.process=None;self.pipeline=None;self.set_busy(False,'Остановлено. Незавершённое обучение нужно повторить.' if self.cancelled else 'Готово.' if data==0 else 'Ошибка. Подробности в журнале.');self.append_log(f'\nКод завершения: {data}\n')

@@ -89,6 +89,20 @@ class GuiChecks(unittest.TestCase):
             self.app.buttons['audit'].invoke();self.assertEqual(command.call_args.args[0][0],'audit')
             self.app.buttons['evaluate'].invoke();self.assertIn(str(self.folder/'models/evaluation'),command.call_args.args[0])
             self.app.buttons['train'].invoke();self.assertIn('--detector-epochs',command.call_args.args[0])
+
+    def test_merge_controls_disable_when_busy_and_clear_for_a_new_photo(self):
+        from carvision.segmentation import encode_mask
+        import numpy as np
+        app=self.app;app.load_photo(self.photo);app.pipeline=Mock()
+        row=dict(brand='unknown',model_candidate='unknown',brand_confidence=.1,colour='blue',box=[10,10,90,90],segmentation=encode_mask(np.ones((80,80),bool),(10,10)))
+        result=dict(cars=[dict(row,id=1),dict(row,id=2)],seconds=.1)
+        app.events.put(('prediction',result));app.poll();app.refresh_buttons()
+        self.assertFalse(app.buttons['merge_parts'].instate(['disabled']))
+        app.buttons['merge_parts'].invoke();self.root.update()
+        windows=[w for w in self.root.winfo_children() if isinstance(w,tk.Toplevel)]
+        self.assertEqual(len(windows),1);windows[0].destroy()
+        app.before_merge=result;app.set_busy(True,'busy');self.assertTrue(app.buttons['merge_parts'].instate(['disabled']));self.assertTrue(app.buttons['undo_merge'].instate(['disabled']))
+        app.set_busy(False,'ready');app.load_photo(self.photo);self.assertIsNone(app.before_merge);self.assertTrue(app.buttons['undo_merge'].instate(['disabled']))
     def test_stop_button_terminates_active_child(self):
         process=Mock();process.poll.return_value=None;self.app.process=process;self.app.set_busy(True,'running');self.app.buttons['cancel'].invoke();process.terminate.assert_called_once();self.assertTrue(self.app.cancelled);self.app.process=None;self.app.set_busy(False,'stopped')
 

@@ -47,3 +47,6 @@ The 3,740 descriptors come exclusively from the existing 374 regional training p
 ## Expanded models / v1.8
 
 Eight explicit2012 Stanford Cars classes were added using original human MAT model annotations and the previously verified original Git-blob/image mapping. Mirror fine_label and heuristic colour labels are not model ground truth. Existing public train/validation and official test allocations were preserved. Vehicle identity-separated generalization is not certified. Counts and source original names/hashes are in models/expanded_dataset.json; sources and research-use attribution remain in data/public_prototype/provenance.json. Raw training images are not distributed in the portable package. New train-only reference descriptors and the24-class CNN were learned in this project, not obtained as an automotive pretrained classifier.
+
+
+CarVision1.9:244real Commons/Flickr photos, per-file author/licence/source/changes in samples/EV_PHOTO_SOURCES.json and CarVision-Real-Chinese-EV-Photos-v1.9.zip. Flickr licences verified on original source pages. No generated photographs; public photo ownership is not attributed to the student. See CC BY/CC BY-SA/CC0/PD conditions per image.

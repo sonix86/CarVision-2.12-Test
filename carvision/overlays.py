@@ -2,6 +2,11 @@
 
 Names belong in the result list/legend, so dense street views stay legible.
 """
+INSTANCE_COLOURS=['#24c9ad','#59a9ff','#d392ef','#ff9783','#a8cb58','#69d1e5','#ec91bf','#c8ad78']
+
+def instance_colour(ident):
+    return INSTANCE_COLOURS[(int(ident)-1)%len(INSTANCE_COLOURS)]
+
 def marker_positions(boxes, width, height, size=23):
     placed=[];result=[]
     def overlap(a,b):return a[0]<b[2]+3 and a[2]+3>b[0] and a[1]<b[3]+3 and a[3]+3>b[1]

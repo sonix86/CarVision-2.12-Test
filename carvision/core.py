@@ -190,6 +190,7 @@ class Pipeline:
                 reference=torch.load(reference_file,map_location='cpu',weights_only=True)
                 if reference['source_model_sha256']==hashlib.sha256(model_file.read_bytes()).hexdigest() and reference['labels']==self.vehicle_classifier.labels and reference['brands']==self.vehicle_classifier.brands:
                     self.vehicle_classifier.references=VisualReferences(reference)
+            if self.vehicle_classifier.requires_references and self.vehicle_classifier.references is None:raise ValueError('Банк сравнения моделей отсутствует или не соответствует весам. Восстановите всю папку models из переносимого архива.')
 
     @torch.inference_mode()
     def predict(self, image, region=None, single=False):
@@ -262,16 +263,23 @@ def save_prediction(source, result, output):
     (out/(stem+'.json')).write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
     (out/(stem+'.txt')).write_text('; '.join(r['brand']+' '+r['colour'] for r in result['cars']) or 'No cars detected',encoding='utf-8')
     (out/(stem+'.details.txt')).write_text('\n'.join(detailed_answer(r) for r in result['cars']) or 'No cars detected',encoding='utf-8')
-    from .overlays import marker_positions
-    im=read_image(source); draw=ImageDraw.Draw(im);font=ImageFont.load_default(size=max(14,im.width//90));size=max(24,im.width//60)
+    from .overlays import marker_positions,instance_colour
+    im=read_image(source); draw=ImageDraw.Draw(im);font_size=max(14,im.width//90);size=max(24,im.width//60)
+    # Pillow's default font lacks Cyrillic. Standard Windows fonts stay on the
+    # destination machine; they are never bundled or redistributed with the app.
+    try:font=ImageFont.truetype('segoeui.ttf',font_size)
+    except OSError:
+        try:font=ImageFont.truetype('DejaVuSans.ttf',font_size)
+        except OSError:font=ImageFont.load_default(size=font_size)
     markers=marker_positions([r['box'] for r in result['cars']],im.width,im.height,size)
     for r in result['cars']:
+        colour=instance_colour(r['id'])
         if r.get('contours'):
-            for contour in r['contours']:draw.line([tuple(v) for v in contour]+[tuple(contour[0])],fill='#14b8a6',width=max(2,im.width//400))
-        else:draw.rectangle(r['box'],outline='#14b8a6',width=max(2,im.width//400))
+            for contour in r['contours']:draw.line([tuple(v) for v in contour]+[tuple(contour[0])],fill=colour,width=max(2,im.width//400))
+        else:draw.rectangle(r['box'],outline=colour,width=max(2,im.width//400))
     for r,rect in zip(result['cars'],markers):
-        draw.line((r['box'][0],r['box'][1],rect[0]+size/2,rect[1]+size/2),fill='#14b8a6',width=2)
-        draw.rectangle(rect,fill='#14243a',outline='#14b8a6',width=2);draw.text((rect[0]+4,rect[1]+2),str(r['id']),font=font,fill='white')
+        colour=instance_colour(r['id']);draw.line((r['box'][0],r['box'][1],rect[0]+size/2,rect[1]+size/2),fill=colour,width=2)
+        draw.rectangle(rect,fill='#14243a',outline=colour,width=2);draw.text((rect[0]+4,rect[1]+2),str(r['id']),font=font,fill='white')
     # A separate legend cannot cover vehicles or other captions.
     if result['cars']:
         line=max(25,im.width//60);annotated=Image.new('RGB',(im.width,im.height+line*(len(result['cars'])+1)), '#14243a');annotated.paste(im,(0,0));draw=ImageDraw.Draw(annotated)

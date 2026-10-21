@@ -1,0 +1,1321 @@
+{
+  "origin": "project-trained-regional-model-head",
+  "source_model_sha256": "b1d94d806f3cf4d0c59510054d74a6c67f8de4f2b5e88275a8177bf38c0e995e",
+  "labels": [
+    [
+      "BYD",
+      "Song Plus"
+    ],
+    [
+      "Chery",
+      "Tiggo 7"
+    ],
+    [
+      "Chevrolet",
+      "Captiva"
+    ],
+    [
+      "Chevrolet",
+      "Cobalt"
+    ],
+    [
+      "Chevrolet",
+      "Damas"
+    ],
+    [
+      "Chevrolet",
+      "Lacetti"
+    ],
+    [
+      "Chevrolet",
+      "Malibu"
+    ],
+    [
+      "Chevrolet",
+      "Nexia"
+    ],
+    [
+      "Chevrolet",
+      "Onix"
+    ],
+    [
+      "Chevrolet",
+      "Spark"
+    ],
+    [
+      "Chevrolet",
+      "Tracker"
+    ],
+    [
+      "Daewoo",
+      "Matiz"
+    ],
+    [
+      "Daewoo",
+      "Nexia"
+    ],
+    [
+      "Haval",
+      "Jolion"
+    ],
+    [
+      "Kia",
+      "K5"
+    ],
+    [
+      "Lada",
+      "2101"
+    ],
+    [
+      "BMW",
+      "3 Series Sedan 2012"
+    ],
+    [
+      "Honda",
+      "Accord Sedan 2012"
+    ],
+    [
+      "Hyundai",
+      "Accent 2012"
+    ],
+    [
+      "Hyundai",
+      "Santa Fe 2012"
+    ],
+    [
+      "Hyundai",
+      "Sonata 2012"
+    ],
+    [
+      "Hyundai",
+      "Tucson 2012"
+    ],
+    [
+      "Toyota",
+      "Camry 2012"
+    ],
+    [
+      "Toyota",
+      "Corolla 2012"
+    ]
+  ],
+  "counts": {
+    "BYD Song Plus": {
+      "train": 17,
+      "validation": 4,
+      "test": 4
+    },
+    "Chery Tiggo 7": {
+      "train": 20,
+      "validation": 5,
+      "test": 4
+    },
+    "Chevrolet Captiva": {
+      "train": 32,
+      "validation": 8,
+      "test": 11
+    },
+    "Chevrolet Cobalt": {
+      "train": 12,
+      "validation": 0,
+      "test": 2
+    },
+    "Chevrolet Damas": {
+      "train": 3,
+      "validation": 0,
+      "test": 0
+    },
+    "Chevrolet Lacetti": {
+      "train": 32,
+      "validation": 8,
+      "test": 5
+    },
+    "Chevrolet Malibu": {
+      "train": 38,
+      "validation": 6,
+      "test": 10
+    },
+    "Chevrolet Nexia": {
+      "train": 4,
+      "validation": 0,
+      "test": 1
+    },
+    "Chevrolet Onix": {
+      "train": 32,
+      "validation": 2,
+      "test": 2
+    },
+    "Chevrolet Spark": {
+      "train": 49,
+      "validation": 19,
+      "test": 14
+    },
+    "Chevrolet Tracker": {
+      "train": 20,
+      "validation": 5,
+      "test": 2
+    },
+    "Daewoo Matiz": {
+      "train": 27,
+      "validation": 6,
+      "test": 4
+    },
+    "Daewoo Nexia": {
+      "train": 37,
+      "validation": 8,
+      "test": 10
+    },
+    "Haval Jolion": {
+      "train": 18,
+      "validation": 4,
+      "test": 4
+    },
+    "Kia K5": {
+      "train": 17,
+      "validation": 4,
+      "test": 4
+    },
+    "Lada 2101": {
+      "train": 16,
+      "validation": 3,
+      "test": 3
+    },
+    "BMW 3 Series Sedan 2012": {
+      "train": 35,
+      "validation": 8,
+      "test": 42
+    },
+    "Honda Accord Sedan 2012": {
+      "train": 33,
+      "validation": 6,
+      "test": 38
+    },
+    "Hyundai Accent 2012": {
+      "train": 21,
+      "validation": 3,
+      "test": 24
+    },
+    "Hyundai Santa Fe 2012": {
+      "train": 34,
+      "validation": 8,
+      "test": 42
+    },
+    "Hyundai Sonata 2012": {
+      "train": 35,
+      "validation": 5,
+      "test": 39
+    },
+    "Hyundai Tucson 2012": {
+      "train": 37,
+      "validation": 7,
+      "test": 43
+    },
+    "Toyota Camry 2012": {
+      "train": 34,
+      "validation": 10,
+      "test": 43
+    },
+    "Toyota Corolla 2012": {
+      "train": 39,
+      "validation": 5,
+      "test": 43
+    }
+  },
+  "epochs": 16,
+  "best_epoch": 12,
+  "baseline_validation": {
+    "whole": {
+      "all": {
+        "count": 134,
+        "top1": 0.8283582329750061,
+        "top3": 0.9701492786407471
+      },
+      "legacy": {
+        "count": 134,
+        "top1": 0.8283582329750061,
+        "top3": 0.9701492786407471
+      },
+      "new": {
+        "count": 0,
+        "top1": null,
+        "top3": null
+      }
+    },
+    "upper55": {
+      "all": {
+        "count": 134,
+        "top1": 0.5074626803398132,
+        "top3": 0.753731369972229
+      },
+      "legacy": {
+        "count": 134,
+        "top1": 0.5074626803398132,
+        "top3": 0.753731369972229
+      },
+      "new": {
+        "count": 0,
+        "top1": null,
+        "top3": null
+      }
+    },
+    "upper35": {
+      "all": {
+        "count": 134,
+        "top1": 0.21641790866851807,
+        "top3": 0.49253731966018677
+      },
+      "legacy": {
+        "count": 134,
+        "top1": 0.21641790866851807,
+        "top3": 0.49253731966018677
+      },
+      "new": {
+        "count": 0,
+        "top1": null,
+        "top3": null
+      }
+    }
+  },
+  "results": {
+    "validation": {
+      "whole": {
+        "all": {
+          "count": 134,
+          "top1": 0.8208954930305481,
+          "top3": 0.9626865386962891
+        },
+        "legacy": {
+          "count": 134,
+          "top1": 0.8208954930305481,
+          "top3": 0.9626865386962891
+        },
+        "new": {
+          "count": 0,
+          "top1": null,
+          "top3": null
+        }
+      },
+      "upper55": {
+        "all": {
+          "count": 134,
+          "top1": 0.5373134613037109,
+          "top3": 0.7985074520111084
+        },
+        "legacy": {
+          "count": 134,
+          "top1": 0.5373134613037109,
+          "top3": 0.7985074520111084
+        },
+        "new": {
+          "count": 0,
+          "top1": null,
+          "top3": null
+        }
+      },
+      "upper35": {
+        "all": {
+          "count": 134,
+          "top1": 0.2537313401699066,
+          "top3": 0.5149253606796265
+        },
+        "legacy": {
+          "count": 134,
+          "top1": 0.2537313401699066,
+          "top3": 0.5149253606796265
+        },
+        "new": {
+          "count": 0,
+          "top1": null,
+          "top3": null
+        }
+      }
+    },
+    "test": {
+      "whole": {
+        "all": {
+          "count": 394,
+          "top1": 0.779187798500061,
+          "top3": 0.9441624283790588
+        },
+        "legacy": {
+          "count": 394,
+          "top1": 0.779187798500061,
+          "top3": 0.9441624283790588
+        },
+        "new": {
+          "count": 0,
+          "top1": null,
+          "top3": null
+        }
+      },
+      "upper55": {
+        "all": {
+          "count": 394,
+          "top1": 0.4695431590080261,
+          "top3": 0.7385786771774292
+        },
+        "legacy": {
+          "count": 394,
+          "top1": 0.4695431590080261,
+          "top3": 0.7385786771774292
+        },
+        "new": {
+          "count": 0,
+          "top1": null,
+          "top3": null
+        }
+      },
+      "upper35": {
+        "all": {
+          "count": 394,
+          "top1": 0.21065989136695862,
+          "top3": 0.4492385685443878
+        },
+        "legacy": {
+          "count": 394,
+          "top1": 0.21065989136695862,
+          "top3": 0.4492385685443878
+        },
+        "new": {
+          "count": 0,
+          "top1": null,
+          "top3": null
+        }
+      }
+    }
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "validation": {
+        "whole": {
+          "all": {
+            "count": 134,
+            "top1": 0.8283582329750061,
+            "top3": 0.9552238583564758
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.8283582329750061,
+            "top3": 0.9552238583564758
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        },
+        "upper55": {
+          "all": {
+            "count": 134,
+            "top1": 0.4701492488384247,
+            "top3": 0.7313432693481445
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.4701492488384247,
+            "top3": 0.7313432693481445
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        },
+        "upper35": {
+          "all": {
+            "count": 134,
+            "top1": 0.17164179682731628,
+            "top3": 0.4552238881587982
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.17164179682731628,
+            "top3": 0.4552238881587982
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        }
+      },
+      "score": 0.8470149288574854,
+      "legacy_clean_guard": true
+    },
+    {
+      "epoch": 2,
+      "validation": {
+        "whole": {
+          "all": {
+            "count": 134,
+            "top1": 0.8283582329750061,
+            "top3": 0.9701492786407471
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.8283582329750061,
+            "top3": 0.9701492786407471
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        },
+        "upper55": {
+          "all": {
+            "count": 134,
+            "top1": 0.5,
+            "top3": 0.753731369972229
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.5,
+            "top3": 0.753731369972229
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        },
+        "upper35": {
+          "all": {
+            "count": 134,
+            "top1": 0.23880596458911896,
+            "top3": 0.49253731966018677
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.23880596458911896,
+            "top3": 0.49253731966018677
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        }
+      },
+      "score": 0.8917910605669022,
+      "legacy_clean_guard": true
+    },
+    {
+      "epoch": 3,
+      "validation": {
+        "whole": {
+          "all": {
+            "count": 134,
+            "top1": 0.8358209133148193,
+            "top3": 0.9477611780166626
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.8358209133148193,
+            "top3": 0.9477611780166626
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        },
+        "upper55": {
+          "all": {
+            "count": 134,
+            "top1": 0.5074626803398132,
+            "top3": 0.7164179086685181
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.5074626803398132,
+            "top3": 0.7164179086685181
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        },
+        "upper35": {
+          "all": {
+            "count": 134,
+            "top1": 0.2014925330877304,
+            "top3": 0.4776119291782379
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.2014925330877304,
+            "top3": 0.4776119291782379
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        }
+      },
+      "score": 0.8718905448913574,
+      "legacy_clean_guard": false
+    },
+    {
+      "epoch": 4,
+      "validation": {
+        "whole": {
+          "all": {
+            "count": 134,
+            "top1": 0.8134328126907349,
+            "top3": 0.9552238583564758
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.8134328126907349,
+            "top3": 0.9552238583564758
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        },
+        "upper55": {
+          "all": {
+            "count": 134,
+            "top1": 0.49253731966018677,
+            "top3": 0.7388059496879578
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.49253731966018677,
+            "top3": 0.7388059496879578
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        },
+        "upper35": {
+          "all": {
+            "count": 134,
+            "top1": 0.23134328424930573,
+            "top3": 0.49253731966018677
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.23134328424930573,
+            "top3": 0.49253731966018677
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        }
+      },
+      "score": 0.8768656601508459,
+      "legacy_clean_guard": true
+    },
+    {
+      "epoch": 5,
+      "validation": {
+        "whole": {
+          "all": {
+            "count": 134,
+            "top1": 0.8283582329750061,
+            "top3": 0.9552238583564758
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.8283582329750061,
+            "top3": 0.9552238583564758
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        },
+        "upper55": {
+          "all": {
+            "count": 134,
+            "top1": 0.5149253606796265,
+            "top3": 0.753731369972229
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.5149253606796265,
+            "top3": 0.753731369972229
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        },
+        "upper35": {
+          "all": {
+            "count": 134,
+            "top1": 0.2014925330877304,
+            "top3": 0.48507463932037354
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.2014925330877304,
+            "top3": 0.48507463932037354
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        }
+      },
+      "score": 0.8805970201889673,
+      "legacy_clean_guard": true
+    },
+    {
+      "epoch": 6,
+      "validation": {
+        "whole": {
+          "all": {
+            "count": 134,
+            "top1": 0.8283582329750061,
+            "top3": 0.9552238583564758
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.8283582329750061,
+            "top3": 0.9552238583564758
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        },
+        "upper55": {
+          "all": {
+            "count": 134,
+            "top1": 0.5223880410194397,
+            "top3": 0.746268630027771
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.5223880410194397,
+            "top3": 0.746268630027771
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        },
+        "upper35": {
+          "all": {
+            "count": 134,
+            "top1": 0.2014925330877304,
+            "top3": 0.4701492488384247
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.2014925330877304,
+            "top3": 0.4701492488384247
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        }
+      },
+      "score": 0.8793532252311707,
+      "legacy_clean_guard": true
+    },
+    {
+      "epoch": 7,
+      "validation": {
+        "whole": {
+          "all": {
+            "count": 134,
+            "top1": 0.8283582329750061,
+            "top3": 0.9701492786407471
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.8283582329750061,
+            "top3": 0.9701492786407471
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        },
+        "upper55": {
+          "all": {
+            "count": 134,
+            "top1": 0.5074626803398132,
+            "top3": 0.7238805890083313
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.5074626803398132,
+            "top3": 0.7238805890083313
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        },
+        "upper35": {
+          "all": {
+            "count": 134,
+            "top1": 0.23134328424930573,
+            "top3": 0.48507463932037354
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.23134328424930573,
+            "top3": 0.48507463932037354
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        }
+      },
+      "score": 0.885572150349617,
+      "legacy_clean_guard": true
+    },
+    {
+      "epoch": 8,
+      "validation": {
+        "whole": {
+          "all": {
+            "count": 134,
+            "top1": 0.8208954930305481,
+            "top3": 0.9626865386962891
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.8208954930305481,
+            "top3": 0.9626865386962891
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        },
+        "upper55": {
+          "all": {
+            "count": 134,
+            "top1": 0.5223880410194397,
+            "top3": 0.7686567306518555
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.5223880410194397,
+            "top3": 0.7686567306518555
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        },
+        "upper35": {
+          "all": {
+            "count": 134,
+            "top1": 0.2014925330877304,
+            "top3": 0.5298507213592529
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.2014925330877304,
+            "top3": 0.5298507213592529
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        }
+      },
+      "score": 0.8917910208304723,
+      "legacy_clean_guard": true
+    },
+    {
+      "epoch": 9,
+      "validation": {
+        "whole": {
+          "all": {
+            "count": 134,
+            "top1": 0.8208954930305481,
+            "top3": 0.9701492786407471
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.8208954930305481,
+            "top3": 0.9701492786407471
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        },
+        "upper55": {
+          "all": {
+            "count": 134,
+            "top1": 0.5,
+            "top3": 0.7686567306518555
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.5,
+            "top3": 0.7686567306518555
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        },
+        "upper35": {
+          "all": {
+            "count": 134,
+            "top1": 0.21641790866851807,
+            "top3": 0.5074626803398132
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.21641790866851807,
+            "top3": 0.5074626803398132
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        }
+      },
+      "score": 0.8868159155050913,
+      "legacy_clean_guard": true
+    },
+    {
+      "epoch": 10,
+      "validation": {
+        "whole": {
+          "all": {
+            "count": 134,
+            "top1": 0.8358209133148193,
+            "top3": 0.9552238583564758
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.8358209133148193,
+            "top3": 0.9552238583564758
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        },
+        "upper55": {
+          "all": {
+            "count": 134,
+            "top1": 0.5522388219833374,
+            "top3": 0.7761194109916687
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.5522388219833374,
+            "top3": 0.7761194109916687
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        },
+        "upper35": {
+          "all": {
+            "count": 134,
+            "top1": 0.2238806039094925,
+            "top3": 0.5223880410194397
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.2238806039094925,
+            "top3": 0.5223880410194397
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        }
+      },
+      "score": 0.9129353314638138,
+      "legacy_clean_guard": true
+    },
+    {
+      "epoch": 11,
+      "validation": {
+        "whole": {
+          "all": {
+            "count": 134,
+            "top1": 0.8283582329750061,
+            "top3": 0.9552238583564758
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.8283582329750061,
+            "top3": 0.9552238583564758
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        },
+        "upper55": {
+          "all": {
+            "count": 134,
+            "top1": 0.5298507213592529,
+            "top3": 0.7611940503120422
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.5298507213592529,
+            "top3": 0.7611940503120422
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        },
+        "upper35": {
+          "all": {
+            "count": 134,
+            "top1": 0.2238806039094925,
+            "top3": 0.5149253606796265
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.2238806039094925,
+            "top3": 0.5149253606796265
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        }
+      },
+      "score": 0.899253730972608,
+      "legacy_clean_guard": true
+    },
+    {
+      "epoch": 12,
+      "validation": {
+        "whole": {
+          "all": {
+            "count": 134,
+            "top1": 0.8208954930305481,
+            "top3": 0.9626865386962891
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.8208954930305481,
+            "top3": 0.9626865386962891
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        },
+        "upper55": {
+          "all": {
+            "count": 134,
+            "top1": 0.5373134613037109,
+            "top3": 0.7985074520111084
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.5373134613037109,
+            "top3": 0.7985074520111084
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        },
+        "upper35": {
+          "all": {
+            "count": 134,
+            "top1": 0.2537313401699066,
+            "top3": 0.5149253606796265
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.2537313401699066,
+            "top3": 0.5149253606796265
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        }
+      },
+      "score": 0.9166666567325592,
+      "legacy_clean_guard": true
+    },
+    {
+      "epoch": 13,
+      "validation": {
+        "whole": {
+          "all": {
+            "count": 134,
+            "top1": 0.8134328126907349,
+            "top3": 0.9626865386962891
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.8134328126907349,
+            "top3": 0.9626865386962891
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        },
+        "upper55": {
+          "all": {
+            "count": 134,
+            "top1": 0.5447761416435242,
+            "top3": 0.7910447716712952
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.5447761416435242,
+            "top3": 0.7910447716712952
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        },
+        "upper35": {
+          "all": {
+            "count": 134,
+            "top1": 0.23134328424930573,
+            "top3": 0.5298507213592529
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.23134328424930573,
+            "top3": 0.5298507213592529
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        }
+      },
+      "score": 0.9104477514823278,
+      "legacy_clean_guard": true
+    },
+    {
+      "epoch": 14,
+      "validation": {
+        "whole": {
+          "all": {
+            "count": 134,
+            "top1": 0.8283582329750061,
+            "top3": 0.9552238583564758
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.8283582329750061,
+            "top3": 0.9552238583564758
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        },
+        "upper55": {
+          "all": {
+            "count": 134,
+            "top1": 0.5522388219833374,
+            "top3": 0.7835820913314819
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.5522388219833374,
+            "top3": 0.7835820913314819
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        },
+        "upper35": {
+          "all": {
+            "count": 134,
+            "top1": 0.20895522832870483,
+            "top3": 0.5074626803398132
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.20895522832870483,
+            "top3": 0.5074626803398132
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        }
+      },
+      "score": 0.9042288661003113,
+      "legacy_clean_guard": true
+    },
+    {
+      "epoch": 15,
+      "validation": {
+        "whole": {
+          "all": {
+            "count": 134,
+            "top1": 0.8283582329750061,
+            "top3": 0.9552238583564758
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.8283582329750061,
+            "top3": 0.9552238583564758
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        },
+        "upper55": {
+          "all": {
+            "count": 134,
+            "top1": 0.5447761416435242,
+            "top3": 0.7910447716712952
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.5447761416435242,
+            "top3": 0.7910447716712952
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        },
+        "upper35": {
+          "all": {
+            "count": 134,
+            "top1": 0.23134328424930573,
+            "top3": 0.5149253606796265
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.23134328424930573,
+            "top3": 0.5149253606796265
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        }
+      },
+      "score": 0.9116915514071783,
+      "legacy_clean_guard": true
+    },
+    {
+      "epoch": 16,
+      "validation": {
+        "whole": {
+          "all": {
+            "count": 134,
+            "top1": 0.8283582329750061,
+            "top3": 0.9552238583564758
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.8283582329750061,
+            "top3": 0.9552238583564758
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        },
+        "upper55": {
+          "all": {
+            "count": 134,
+            "top1": 0.5522388219833374,
+            "top3": 0.7835820913314819
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.5522388219833374,
+            "top3": 0.7835820913314819
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        },
+        "upper35": {
+          "all": {
+            "count": 134,
+            "top1": 0.23880596458911896,
+            "top3": 0.5149253606796265
+          },
+          "legacy": {
+            "count": 134,
+            "top1": 0.23880596458911896,
+            "top3": 0.5149253606796265
+          },
+          "new": {
+            "count": 0,
+            "top1": null,
+            "top3": null
+          }
+        }
+      },
+      "score": 0.9154228915770849,
+      "legacy_clean_guard": true
+    }
+  ],
+  "selection": "Grouped validation only; maximize mean whole/upper55/upper35 top1+half top3, old24 clean top1 and top3 floors minus2pp. No test/city selection. Candidate only: not automatically promoted. Compare final references against v1.8 before promotion.",
+  "augmentation": "Whole/upper35/upper55/left65/right65/centre details;60% isolated, flip, mild colour jitter,25% grayscale,35% random occluders. Old24 knowledge distillation from our v1.8 network. No class colour restrictions.",
+  "seconds": 495.3403565000044,
+  "test_used_for_selection": false
+}

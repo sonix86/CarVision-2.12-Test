@@ -1,0 +1,20 @@
+{
+  "purpose": "Annotation quality review before split/training; source labels, not prediction-based relabelling. Not a model accuracy evaluation.",
+  "excluded_sources": {
+    "https://www.flickr.com/photos/66451944@N03/53627983336": "Interior photograph; exterior body recognition training requires visible exterior. Retain as review-only material.",
+    "https://commons.wikimedia.org/wiki/File:BYD_Yuan_Plus_as_Twilight_Sparkle_-_Autowizja.jpg": "Costume/wrap substantially obscures original body. Retain as review-only material.",
+    "https://commons.wikimedia.org/wiki/File:2024_BYD_Seal_Performance_AWD_in_Aurora_White_03.jpg": "Interior/dashboard photograph, no visible exterior for body recognition.",
+    "https://commons.wikimedia.org/wiki/File:Car-Net,_MG_Cyberster,_Chery_Tiggo_8,_Pozsonyi_Piknik,_2025_%C3%9Ajlip%C3%B3tv%C3%A1ros.jpg": "Mixed-model scene: dominant foreground is MG Cyberster, not the Chery Tiggo8 named in the title.",
+    "https://commons.wikimedia.org/wiki/File:2024_Geely_EX5_1.jpg": "Interior/dashboard photograph, no visible exterior for body recognition.",
+    "https://commons.wikimedia.org/wiki/File:GWM_Haval_H6_HEV_Ditzingen_Mobil_2026_IMG_5516.jpg": "Interior/dashboard photograph, no visible exterior for body recognition."
+  },
+  "taxonomy_notes": [
+    "Yuan Plus is a family label spanning author-labelled generations; II photographs are explicitly titled that way. No exact year/trim guarantee.",
+    "H6 is a family label. Third-generation source photographs do not establish all generation coverage.",
+    "Qin Plus and Song Plus can have different powertrains; make/model recognition is not an electric-powertrain detector.",
+    "Unlabelled intersection/parking scenes are excluded from make/model supervision. Generic detector guesses are never model-name ground truth."
+  ],
+  "contact_sheets_reviewed": 10,
+  "real_photographs_reviewed": 244,
+  "review_scope": "Source annotation/exterior suitability before assigning train/validation/test; no classifier predictions or test-score selection."
+}

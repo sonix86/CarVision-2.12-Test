@@ -4,7 +4,7 @@ from pathlib import Path
 from unittest.mock import patch
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from carvision.core import ROOT,Pipeline,save_prediction
-out=ROOT/'outputs/release-runtime-v18';out.mkdir(parents=True,exist_ok=True);results=[]
+out=ROOT/'outputs/release-runtime-v19';out.mkdir(parents=True,exist_ok=True);results=[]
 def hashes():return {name:hashlib.sha256((ROOT/'models'/name).read_bytes()).hexdigest() for name in ['classifier.pt','detector.pt','colour_model.pt','vehicle_model.pt','segmenter.pt','masked_colour.pt','visual_references.pt']}
 model_hashes=hashes()
 with patch.object(socket.socket,'connect',side_effect=AssertionError('Unexpected network request')):
@@ -31,3 +31,4 @@ with patch.object(socket.socket,'connect',side_effect=AssertionError('Unexpected
     assert all(r.get('segmentation') and r.get('contours') for photo in results for r in photo['cars'])
 (out/'checks.json').write_text(json.dumps(dict(network_connections_blocked=True,filename_independence=True,actual_single_car_roi_passed=True,actual_scene_roi_passed=True,synthetic_weights=False,model_sha256=model_hashes,photos=results,repeated_seconds=repeated_seconds,region_checks=dict(single=single,scene=cropped_scene)),indent=2))
 print('Actual trained weights: offline and filename-independence checks passed.',flush=True)
+

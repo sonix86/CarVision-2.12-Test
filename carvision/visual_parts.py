@@ -22,4 +22,5 @@ def quality_of_fragment(mask):
     h,w=mask.shape;reasons=[]
     if w/max(1,h)>3.2:reasons.append('Виден узкий фрагмент: крыша или часть кузова. По нему модель не подтверждается.')
     if min(h,w)<64 or int(mask.sum())<1200:reasons.append('Машина мала в исходном кадре: не хватает различимых деталей.')
+    if float(mask.mean())<.35:reasons.append('В области мало видимого кузова: сильные перекрытия. Показаны гипотезы, модель не подтверждается.')
     return reasons

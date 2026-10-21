@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "counts": {
+    "train": 779,
+    "test": 416,
+    "validation": 161
+  },
+  "known_author_date_groups": 545,
+  "group_intersections": 0,
+  "old_splits_immutable": true,
+  "excluded_legacy_audit": {
+    "conflicting_sessions": 7,
+    "excluded_validation": 3,
+    "excluded_test": 5,
+    "excluded_images": [
+      "images/027e4746a44cd5f2e7a1.jpg",
+      "images/0ad342fc3c6819d4a406.jpg",
+      "images/0f9b08636ab5f5d2d622.jpg",
+      "images/2843044f1d4a795e0d6d.jpg",
+      "images/44c85ded0c53806ac0aa.jpg",
+      "images/4dcb9bed32ff10d029db.jpg",
+      "images/55f9dc073e21e004862b.jpg",
+      "images/adebe6441b90f775d65f.jpg"
+    ],
+    "policy": "Keep old files/splits immutable. Exclude non-training members of cross-brand author/date sessions from all new validation/test views. No old heldout photo is moved into training.",
+    "remaining_old_counts": {
+      "train": 642,
+      "validation": 131,
+      "test": 389
+    },
+    "limitations": "Author/date is an approximate session. True vehicle identity labels are unavailable for these public sources."
+  },
+  "public_photo_checksums_verified": 244,
+  "new_photos": 194,
+  "new_groups": 146,
+  "stanford_identity_labels_available": false,
+  "city_images_used_for_training_or_selection": false
+}

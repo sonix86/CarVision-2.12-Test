@@ -47,3 +47,14 @@ class VisualPartChecks(unittest.TestCase):
         predicted=dict(brand='Chevrolet',model='Cobalt',model_alternatives=[dict(brand='Chevrolet',model='Cobalt',confidence=.99)],colour='white')
         with patch('carvision.scene.classify',return_value=predicted):r=predict_instances(p,Image.new('RGB',(600,400)),'roof.jpg',None,False,time.perf_counter())['cars'][0]
         self.assertEqual(r['model'],'unknown');self.assertEqual(r['brand'],'unknown');self.assertTrue(r['model_limited']);self.assertEqual(r['model_alternatives'][0]['model'],'Cobalt')
+
+    def test_unrepresented_model_family_does_not_erase_a_known_make(self):
+        import time
+        from types import SimpleNamespace
+        from unittest.mock import patch
+        from carvision.scene import predict_instances
+        mask=np.zeros((180,240),bool);mask[10:170,10:230]=True
+        p=SimpleNamespace(segmenter=SimpleNamespace(instances=lambda *a:([dict(mask=mask,score=.99)],1)),detection=.5,mode='fast',classifier=object(),brands=['Audi'])
+        predicted=dict(brand='Audi',model='unknown',model_reason='No model-name training examples for this manufacturer',model_candidate_brand='Geely',model_candidate='Galaxy E5',model_confidence=.9,reference_comparison=True,colour='grey')
+        with patch('carvision.scene.classify',return_value=predicted):row=predict_instances(p,Image.new('RGB',(240,180)),'audi.png',None,False,time.perf_counter())['cars'][0]
+        self.assertEqual(row['brand'],'Audi');self.assertEqual(row['model'],'unknown')

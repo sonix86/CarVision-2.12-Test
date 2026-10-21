@@ -13,10 +13,24 @@ class VehicleModelClassifier:
             raise ValueError('Expected our independently trained model-name head')
         self.labels=checkpoint['labels'];self.brands=checkpoint['brands']
         self.references=None
+        self.requires_references=checkpoint.get('architecture')=='reference-expanded-model-network-v1'
+        self.legacy_model=None;self.legacy_weight=float(checkpoint.get('legacy_weight',0.))
+        if not 0<=self.legacy_weight<=1:raise ValueError('Invalid legacy mixture weight')
+        if checkpoint.get('legacy_model'):
+            legacy=checkpoint['legacy_model']
+            if legacy.get('legacy_model'):raise ValueError('Nested legacy mixtures are not supported')
+            self.legacy_model=VehicleModelClassifier(legacy)
+            from .visual_parts import VisualReferences
+            reference=checkpoint['legacy_references']
+            if reference['source_model_sha256']!=checkpoint['legacy_model_sha256'] or reference['labels']!=legacy['labels'] or reference['brands']!=legacy['brands']:raise ValueError('Legacy reference provenance mismatch')
+            self.legacy_model.references=VisualReferences(reference)
+            if list(zip(legacy['brands'],legacy['labels']))!=list(zip(self.brands,self.labels))[:len(legacy['labels'])]:raise ValueError('Legacy labels must retain the exact prefix order')
         self.network=None
-        if checkpoint.get('architecture')=='finetuned-model-network-v1':
+        if checkpoint.get('architecture') in ('finetuned-model-network-v1','reference-expanded-model-network-v1'):
             from .core import Classifier
-            self.network=Classifier(len(self.labels)).eval();self.network.load_state_dict(checkpoint['state'])
+            neural_labels=checkpoint.get('neural_labels',self.labels);neural_brands=checkpoint.get('neural_brands',self.brands)
+            if list(zip(neural_brands,neural_labels))!=list(zip(self.brands,self.labels))[:len(neural_labels)]:raise ValueError('Neural taxonomy must be an exact prefix of the reference taxonomy')
+            self.network=Classifier(len(neural_labels)).eval();self.network.load_state_dict(checkpoint['state'])
             self.temperature=checkpoint['temperature'];self.threshold=checkpoint['threshold'];return
         self.mean=checkpoint['mean'];self.std=checkpoint['std']
         self.head=nn.Linear(len(self.mean),len(self.labels)).eval()
@@ -31,10 +45,16 @@ class VehicleModelClassifier:
         views=torch.stack([preprocess(image),preprocess(ImageOps.mirror(image))])
         if self.network is not None:
             x=pooled_features(self.network,views);f=self.network.neck(x);logits=self.network.brand(f)/self.temperature
+            probability=logits.softmax(1).mean(0)
+            if len(probability)<len(self.labels):probability=torch.nn.functional.pad(probability,(0,len(self.labels)-len(probability)))
             if self.references is not None:
                 feature=torch.nn.functional.normalize(torch.nn.functional.normalize(f,dim=1).mean(0),dim=0)
                 reference=self.references.probabilities(feature,image.width/image.height)
-                return logits.softmax(1).mean(0)*(1-self.references.weight)+reference*self.references.weight
+                probability=probability*(1-self.references.weight)+reference*self.references.weight
+            if self.legacy_model is not None and self.legacy_weight:
+                old=self.legacy_model.probabilities(image,network,preprocess);old=torch.nn.functional.pad(old,(0,len(probability)-len(old)))
+                probability=probability*(1-self.legacy_weight)+old*self.legacy_weight
+            return probability
         else:
             x=pooled_features(network,views)
             logits=self.head((x-self.mean)/self.std)/self.temperature
@@ -42,14 +62,15 @@ class VehicleModelClassifier:
 
     def describe(self,probabilities,brand):
         if self.references is not None:probabilities=self.references.calibrated(probabilities)
-        if brand!='unknown' and brand not in self.brands:
-            return dict(model='unknown',model_candidate='unknown',model_confidence=0.,model_alternatives=[],model_reason='No model-name training examples for this manufacturer')
+        unsupported_brand=brand!='unknown' and brand not in self.brands
         confidence,index=probabilities.max(0);index=int(index);confidence=float(confidence)
         candidate=self.labels[index];candidate_brand=self.brands[index]
         alternatives=[dict(brand=self.brands[int(i)],model=self.labels[int(i)],confidence=float(probabilities[i])) for i in probabilities.topk(min(3,len(self.labels))).indices]
         threshold=self.references.threshold if self.references is not None else self.threshold
         ranking=[dict(brand=self.brands[int(i)],model=self.labels[int(i)],confidence=float(probabilities[i])) for i in probabilities.argsort(descending=True)]
-        return dict(model=candidate if confidence>=threshold and candidate_brand==brand else 'unknown',model_candidate=candidate,model_candidate_brand=candidate_brand,model_confidence=confidence,model_alternatives=alternatives,model_ranking=ranking,reference_comparison=self.references is not None)
+        result=dict(model=candidate if confidence>=threshold and candidate_brand==brand else 'unknown',model_candidate=candidate,model_candidate_brand=candidate_brand,model_confidence=confidence,model_alternatives=alternatives,model_ranking=ranking,reference_comparison=self.references is not None)
+        if unsupported_brand:result['model_reason']='No model-name training examples for this manufacturer; alternatives compare supported classes only'
+        return result
 
     @torch.inference_mode()
     def predict_details(self,image,brand,network,preprocess):

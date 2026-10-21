@@ -1,5 +1,6 @@
 """Instance-aware scene analysis. Paint never includes pixels from a neighbour."""
 import time
+import copy
 import numpy as np
 import torch
 from PIL import Image,ImageOps
@@ -18,7 +19,7 @@ def manual_foreground(image):
 @torch.inference_mode()
 def classify(p,crop,mask):
     from .core import COLOURS,heuristic_colour
-    focused=isolate(crop,mask);brand='unknown';bp=0.;brand_alternatives=[]
+    focused=isolate(crop,mask);brand='unknown';bp=0.;brand_alternatives=[];brand_source='own make classifier'
     if p.classifier is not None:
         def brand_prob(im):
             views=[im,ImageOps.mirror(im)];logits=p.classifier(torch.stack([p.preprocess(v) for v in views]))[0]
@@ -28,6 +29,14 @@ def classify(p,crop,mask):
     model=dict(model='unknown',model_candidate='unknown',model_confidence=0.,model_alternatives=[])
     if p.vehicle_classifier is not None:
         weight=p.mask_fusion['model_mask_weight'];prob=p.vehicle_classifier.probabilities(crop,p.classifier,p.preprocess)*(1-weight)+p.vehicle_classifier.probabilities(focused,p.classifier,p.preprocess)*weight;model=p.vehicle_classifier.describe(prob,brand)
+        # The older make head has a closed vocabulary. A newly trained model
+        # head can identify an added manufacturer; never force it into one of
+        # the old18 brands. Require the model head's calibrated acceptance gate.
+        new_brand=model.get('model_candidate_brand')
+        reference=p.vehicle_classifier.references
+        gate=reference.threshold if reference is not None else p.vehicle_classifier.threshold
+        if new_brand and new_brand not in p.brands and model.get('model_confidence',0)>=max(.85,gate):
+            brand=new_brand;bp=sum(r['confidence'] for r in model.get('model_ranking',[]) if r['brand']==new_brand);model=p.vehicle_classifier.describe(prob,brand);brand_source='own model head taxonomy; manufacturer absent from older make head'
     colour,cp=heuristic_colour(focused);source='foreground HSV fallback';threshold=p.colour_reliability_threshold
     if p.colour_classifier is not None:
         prob=p.colour_classifier.probabilities(focused);source='own colour head on isolated visible instance'
@@ -35,7 +44,7 @@ def classify(p,crop,mask):
             prob=p.masked_colour.blend(prob,p.masked_colour.probabilities(crop,mask));threshold=p.masked_colour.threshold;source='own source-labelled visible-paint head + isolated-instance colour evidence'
         cp,index=prob.max(0);cp=float(cp);colour=COLOURS[int(index)];alternatives=[dict(colour=COLOURS[int(i)],confidence=float(prob[i])) for i in prob.topk(2).indices]
     else:alternatives=[dict(colour=colour,confidence=cp)]
-    return dict(brand=brand,brand_confidence=bp,brand_alternatives=brand_alternatives,**model,colour=colour,colour_confidence=cp,colour_reliable=cp>=threshold,colour_alternatives=alternatives,colour_source=source)
+    return dict(brand=brand,brand_confidence=bp,brand_alternatives=brand_alternatives,brand_source=brand_source,**model,colour=colour,colour_confidence=cp,colour_reliable=cp>=threshold,colour_alternatives=alternatives,colour_source=source)
 
 @torch.inference_mode()
 def predict_instances(p,original,path,region,single,started):
@@ -48,7 +57,8 @@ def predict_instances(p,original,path,region,single,started):
             box=tight_box(record['mask']);x=max(box[0],prompt[0]);y=max(box[1],prompt[1]);r=min(box[2],prompt[2]);b=min(box[3],prompt[3]);intersection=max(0,r-x)*max(0,b-y);union=(box[2]-box[0])*(box[3]-box[1])+(prompt[2]-prompt[0])*(prompt[3]-prompt[1])-intersection;iou=intersection/max(1,union)
             if iou<.03:continue
             mask=record['mask'].copy();x,y,r,b=[int(v) for v in [np.floor(prompt[0]),np.floor(prompt[1]),np.ceil(prompt[2]),np.ceil(prompt[3])]];mask[:y]=False;mask[b:]=False;mask[:,:x]=False;mask[:,r:]=False
-            if int(mask.sum())>=20:matches.append((iou*record['score'],dict(record,mask=mask)))
+            visible=int(mask.sum());prompt_area=max(1,(prompt[2]-prompt[0])*(prompt[3]-prompt[1]));visible_iou=visible/max(1,int(record['mask'].sum())+prompt_area-visible)
+            if visible>=20:matches.append((visible_iou*record['score'],dict(record,mask=mask)))
         if matches:records=[max(matches,key=lambda r:r[0])[1]]
         else:
             image=original.crop(region);offset=region[:2];work=image.copy();work.thumbnail((1600,1600));records,extra=p.segmenter.instances(work,p.detection,p.mode);views+=extra
@@ -68,12 +78,37 @@ def predict_instances(p,original,path,region,single,started):
         row['visual_limitations']=reasons;row['model_limited']=bool(reasons)
         if reasons:
             row['brand_candidate']=row['brand'];row['brand']='unknown';row['model']='unknown'
-        elif row.get('reference_comparison') and row['brand']!='unknown' and row.get('model_candidate_brand')!=row['brand'] and row.get('model_confidence',0)>=.5:
+        elif row.get('reference_comparison') and not row.get('model_reason') and row['brand']!='unknown' and row.get('model_candidate_brand')!=row['brand'] and row.get('model_confidence',0)>=.5:
             row['brand_candidate']=row['brand'];row['brand']='unknown';row['model']='unknown';row['visual_limitations']=['Классификатор марки и сравнение деталей расходятся: название не подтверждено.']
         encoded=encode_mask(local,global_box[:2]);encoded['scale']=[(global_box[2]-global_box[0])/local.shape[1],(global_box[3]-global_box[1])/local.shape[0]]
         contours=[[[round((px+x)*sx+offset[0]),round((py+y)*sy+offset[1])] for px,py in contour] for contour in polygons(local)]
-        result.append(dict(row,box=global_box,segmentation=encoded,contours=contours,mask_pixels=int(local.sum()),mask_box_fraction=float(local.mean()),detection_confidence=record['score'],box_source='approximate GrabCut selected foreground' if record.get('approximate') else 'user region + visible-instance mask' if single else 'COCO visible-instance mask',approximate_mask=bool(record.get('approximate'))))
+        result.append(dict(row,box=global_box,segmentation=encoded,contours=contours,mask_pixels=int(local.sum()),mask_box_fraction=float(local.mean()),merged_proposals=record.get('merged_proposals',1),visible_parts=len(contours),detection_confidence=record['score'],box_source='approximate GrabCut selected foreground' if record.get('approximate') else 'user region + visible-instance mask' if single else 'COCO visible-instance mask',approximate_mask=bool(record.get('approximate'))))
     result.sort(key=lambda r:(r['box'][1],r['box'][0]))
     for i,row in enumerate(result,1):row['id']=i
     warnings.append('Contours describe visible pixels, not reconstructed hidden vehicle parts. Unrepresented models and strong occlusion can still produce wrong candidates.')
-    return dict(image=path,cars=result,seconds=round(time.perf_counter()-started,3),classifier_trained=p.classifier is not None,supported_brands=p.brands,mode=p.mode,region=region,single_car_region=single,detector_views=views,segmented=True,warnings=warnings)
+    supported=sorted(set(p.brands)|set(getattr(getattr(p,'vehicle_classifier',None),'brands',[])))
+    return dict(image=path,cars=result,seconds=round(time.perf_counter()-started,3),classifier_trained=p.classifier is not None,supported_brands=supported,mode=p.mode,region=region,single_car_region=single,detector_views=views,segmented=True,warnings=warnings)
+
+def merge_prediction(p,original,prediction,ids):
+    """Explicit user correction: union existing visible pixels, then reclassify.
+
+    Never fill the space between parts. No make/model answer is inherited from
+    the old guesses. Unselected cars and their masks remain untouched.
+    """
+    from PIL import ImageChops
+    from .segmentation import decode_mask
+    ids=set(ids);selected=[r for r in prediction['cars'] if r['id'] in ids]
+    if len(selected)!=len(ids) or len(ids)<2 or any(not r.get('segmentation') for r in selected):raise ValueError('Выберите минимум два контура одной машины.')
+    started=time.perf_counter();work=original.copy();work.thumbnail((1600,1600));sx=work.width/original.width;sy=work.height/original.height;union=Image.new('L',work.size)
+    for row in selected:
+        encoded=row['segmentation'];mask=Image.fromarray(decode_mask(encoded).astype('uint8')*255);scale=encoded.get('scale',[1,1]);mask=mask.resize((max(1,round(mask.width*scale[0]*sx)),max(1,round(mask.height*scale[1]*sy))),Image.Resampling.NEAREST)
+        layer=Image.new('L',work.size);layer.paste(mask,(round(encoded['origin'][0]*sx),round(encoded['origin'][1]*sy)));union=ImageChops.lighter(union,layer)
+    class FixedMask:
+        def instances(self,*args):return [dict(mask=np.asarray(union)>0,score=min(r['detection_confidence'] or 0 for r in selected),label=3,merged_proposals=sum(r.get('merged_proposals',1) for r in selected))],0
+    proxy=copy.copy(p);proxy.segmenter=FixedMask()
+    combined=predict_instances(proxy,original,prediction['image'],None,False,started)['cars'][0]
+    combined['box_source']='user-confirmed union of existing visible parts';combined['manually_merged_from']=sorted(ids)
+    result=copy.deepcopy(prediction);result['cars']=[r for r in result['cars'] if r['id'] not in ids]+[combined];result['cars'].sort(key=lambda r:(r['box'][1],r['box'][0]))
+    for i,r in enumerate(result['cars'],1):r['id']=i
+    result['seconds']=round(time.perf_counter()-started,3);result.setdefault('warnings',[]).append('User merged selected visible parts into one instance; hidden areas were not reconstructed. IDs renumbered.')
+    return result

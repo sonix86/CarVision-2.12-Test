@@ -1,0 +1,13 @@
+{
+  "network_blocked": true,
+  "model_selection_completed_before_this_check": true,
+  "model_sha256": "107c0a452e44ea413234ce5b3ed29d11728a6c0a1d81aa58e8912b902df79817",
+  "photos": 27,
+  "top1_count": 7,
+  "top3_count": 21,
+  "no_detection_count": 0,
+  "confirmed_model_count": 1,
+  "seconds_max": 9.723,
+  "scope": "27new heldout full photographs; largest visible detected instance compared to dominant-car source label. Candidate correctness, not calibrated confirmed-name accuracy. No all-instance mask ground truth, no scene AP claim. No model/settings changes based on this result.",
+  "confirmed_correct_count": 0
+}

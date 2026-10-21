@@ -2,7 +2,7 @@
 import hashlib,json,zipfile
 from pathlib import Path
 root=Path(__file__).resolve().parents[1]
-with zipfile.ZipFile(root/'TashkentCarVision-v1.8-Portable.zip') as archive:
+with zipfile.ZipFile(root/'TashkentCarVision-v1.9-Portable.zip') as archive:
     names=archive.namelist();assert archive.testzip() is None
     required=['CarVision/models/visual_references.pt','CarVision/source/carvision/visual_parts.py','CarVision/models/segmenter.pt','CarVision/models/masked_colour.pt','CarVision/INSTANCE_ANALYSIS.md','CarVision/source/carvision/scene.py','CarVision/models/vehicle_model.pt','CarVision/MODEL_AND_COLOUR.md','CarVision/source/carvision/vehicle_model.py','CarVision/CarVision.exe','CarVision/models/classifier.pt','CarVision/models/detector.pt','CarVision/models/colour_model.pt','CarVision/models/colour_training.json','CarVision/PROTOTYPE_VALIDATION.md','CarVision/source/carvision/core.py','CarVision/source/carvision/overlays.py','CarVision/source/tools/train_public_brand.py','CarVision/models/evaluation/public_test.json']
     assert all(n in names for n in required)
@@ -18,3 +18,4 @@ with zipfile.ZipFile(root/'Tashkent-JPG-Photos.zip') as photos:
     assert len([n for n in photos.namelist() if n.lower().endswith('.jpg')])==6
     assert not any(n.lower().endswith('.pdf') for n in photos.namelist())
 print('Both delivery archives passed CRC, contents and model checks. Program SHA256 manifest fully verified.')
+
