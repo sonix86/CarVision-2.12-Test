@@ -44,7 +44,7 @@ class App:
         rail=tk.Frame(root,bg=NAVY,width=190);rail.pack(side='left',fill='y');rail.pack_propagate(False)
         tk.Label(rail,text='CV',font=('Segoe UI',32,'bold'),fg='#6ed9c8',bg=NAVY).pack(anchor='w',padx=22,pady=(28,2))
         tk.Label(rail,text='CarVision',font=('Segoe UI',18,'bold'),fg='white',bg=NAVY,justify='left').pack(anchor='w',padx=22)
-        tk.Label(rail,text='ТАШКЕНТ  /  1.9',font=('Segoe UI',8),fg='#a4b7cd',bg=NAVY).pack(anchor='w',padx=23,pady=(8,9))
+        tk.Label(rail,text='ТАШКЕНТ  /  2.0',font=('Segoe UI',8),fg='#a4b7cd',bg=NAVY).pack(anchor='w',padx=23,pady=(8,9))
         tk.Label(rail,text='●  Работает без интернета',font=('Segoe UI',8),fg='#7dd5bf',bg=NAVY).pack(anchor='w',padx=22,pady=(0,29))
         self.nav={};self.views={}
         for key,title in [('infer','Анализ фото'),('labels','Учебная разметка'),('training','Обучение'),('help','О проекте')]:
@@ -166,6 +166,9 @@ class App:
         text+='\nЦвет: '+COLOUR_RU.get(row['colour'],row['colour'])+f" · {row.get('colour_confidence',0):.0%}"+(' · проверьте' if not row.get('colour_reliable',True) else '')
         if len(colours)>1:text+='\nЕщё: '+COLOUR_RU.get(colours[1]['colour'],colours[1]['colour'])+f" · {colours[1]['confidence']:.0%}"
         if row.get('model_reason'):text+='\nДля этой марки модели ещё не обучены.'
+        badge=row.get('badge_evidence')
+        if badge and badge.get('accepted'):text+='\nЭмблема: '+badge['brand']+' — дополнительный признак, не подтверждение конкретной модели.'
+        elif badge:text+='\nЭмблема не подтверждена: решение по кузову и деталям.'
         if row.get('brand_source','').startswith('own model head'):text+='\nМарка установлена обученным классификатором моделей кузова; её нет в прежнем отдельном классификаторе марок.'
         for reason in row.get('visual_limitations',[]):text+='\n'+reason
         if row.get('reference_comparison'):text+='\nСравнение с целыми машинами и фрагментами учебного набора. Проценты относительны; неизвестные модели могут быть похожи.'

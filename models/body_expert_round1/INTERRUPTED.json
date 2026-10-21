@@ -1,0 +1,5 @@
+{
+  "reason": "Refine source/mask crop alignment before final fine-tuning; no test viewed, no weights promoted",
+  "epochs_completed": 9,
+  "best_epoch": 9
+}

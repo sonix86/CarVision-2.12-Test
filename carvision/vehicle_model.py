@@ -12,6 +12,14 @@ class VehicleModelClassifier:
         if checkpoint.get('origin')!='project-trained-regional-model-head':
             raise ValueError('Expected our independently trained model-name head')
         self.labels=checkpoint['labels'];self.brands=checkpoint['brands']
+        self.body_expert=None
+        self.badge_evidence=None
+        if checkpoint.get('badge_evidence'):
+            from .badge_evidence import BadgeEvidence
+            self.badge_evidence=BadgeEvidence(checkpoint['badge_evidence'])
+        if checkpoint.get('body_expert'):
+            from .body_expert import BodyExpert
+            self.body_expert=BodyExpert(checkpoint['body_expert'],list(zip(self.brands,self.labels)))
         self.references=None
         self.requires_references=checkpoint.get('architecture')=='reference-expanded-model-network-v1'
         self.legacy_model=None;self.legacy_weight=float(checkpoint.get('legacy_weight',0.))
@@ -54,11 +62,16 @@ class VehicleModelClassifier:
             if self.legacy_model is not None and self.legacy_weight:
                 old=self.legacy_model.probabilities(image,network,preprocess);old=torch.nn.functional.pad(old,(0,len(probability)-len(old)))
                 probability=probability*(1-self.legacy_weight)+old*self.legacy_weight
-            return probability
+            return self._body_blend(probability,image)
         else:
             x=pooled_features(network,views)
             logits=self.head((x-self.mean)/self.std)/self.temperature
-        return logits.softmax(1).mean(0)
+        return self._body_blend(logits.softmax(1).mean(0),image)
+
+    def _body_blend(self,probability,image):
+        if self.body_expert is None:return probability
+        weight=self.body_expert.weight
+        return probability*(1-weight)+self.body_expert.probabilities(image)*weight
 
     def describe(self,probabilities,brand):
         if self.references is not None:probabilities=self.references.calibrated(probabilities)

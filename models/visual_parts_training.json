@@ -1,7 +1,7 @@
 {
   "origin": "project-trained-visible-part-references",
   "selection": "Grouped validation only; mean whole/upper55/upper35 top1 + half top3, whole top1 floor baseline minus2pts. Test and city images excluded from selection.",
-  "model_sha256": "107c0a452e44ea413234ce5b3ed29d11728a6c0a1d81aa58e8912b902df79817",
+  "model_sha256": "049d77ad66d1f799307ae417dcb98afa6a3535adece330016a4827fc860dbe3c",
   "train_photos": 779,
   "legacy_reference_baseline": {
     "validation": {
@@ -15347,7 +15347,13 @@
       "top3": 0.5419847369194031
     }
   },
-  "probability_temperature": 1.0,
+  "probability_temperature": 0.5,
   "confidence_threshold": 0.7,
-  "calibration": "NLL temperature and >=90% accepted accuracy with >=20 examples, grouped validation whole+upper55+upper35 only; geometry-quality gate is separate."
+  "calibration": "NLL temperature and >=90% accepted accuracy with >=20 examples, grouped validation whole+upper55+upper35 only; geometry-quality gate is separate.",
+  "v20_body_expert": {
+    "training": "body_expert_training.json",
+    "evaluation": "body_expert_evaluation.json",
+    "old_reference_descriptors_unchanged": true,
+    "reason": "Embedded independently trained body expert changes the enclosing file hash; original CNN and original train-reference features remain the same."
+  }
 }

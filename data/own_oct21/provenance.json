@@ -1,0 +1,98 @@
+{
+  "photos": [
+    {
+      "image": "images/photo_1_2026-10-21_13-00-40.jpg",
+      "sha256": "7a38a4aeae6abe2e16275849bbd5168254bf5d2e4c6bdece3198e26d7442f364",
+      "group": "owner-phone-outing-2026-10-21",
+      "split": "train",
+      "source": "User supplied phone photograph; use for local training explicitly authorized in chat",
+      "license": "User-provided; not assigned a public redistribution licence",
+      "annotation_status": "partial: only visually identifiable vehicles labelled; remaining objects require review"
+    },
+    {
+      "image": "images/photo_2_2026-10-21_13-00-40.jpg",
+      "sha256": "3316ea8d861e5d9194661a3e1391aa2236cae802209ba1c50f0cf4b5274c3741",
+      "group": "owner-phone-outing-2026-10-21",
+      "split": "train",
+      "source": "User supplied phone photograph; use for local training explicitly authorized in chat",
+      "license": "User-provided; not assigned a public redistribution licence",
+      "annotation_status": "partial: only visually identifiable vehicles labelled; remaining objects require review"
+    },
+    {
+      "image": "images/photo_3_2026-10-21_13-00-40.jpg",
+      "sha256": "dae0e99fde5344e0e4b96d1f3cfb30ab4b29626209a62fc74e20fb99fba5b887",
+      "group": "owner-phone-outing-2026-10-21",
+      "split": "train",
+      "source": "User supplied phone photograph; use for local training explicitly authorized in chat",
+      "license": "User-provided; not assigned a public redistribution licence",
+      "annotation_status": "partial: only visually identifiable vehicles labelled; remaining objects require review"
+    },
+    {
+      "image": "images/photo_4_2026-10-21_13-00-40.jpg",
+      "sha256": "dff7c4a8997895e9ce282267e862bfeab0b41281627959a5ffd8e1c7dcff30a5",
+      "group": "owner-phone-outing-2026-10-21",
+      "split": "train",
+      "source": "User supplied phone photograph; use for local training explicitly authorized in chat",
+      "license": "User-provided; not assigned a public redistribution licence",
+      "annotation_status": "partial: only visually identifiable vehicles labelled; remaining objects require review"
+    },
+    {
+      "image": "images/photo_5_2026-10-21_13-00-40.jpg",
+      "sha256": "ac5559ad986cd2ab7782c4c6dacb2ea94619d3746c32a3bab22403899c9cdeeb",
+      "group": "owner-phone-outing-2026-10-21",
+      "split": "train",
+      "source": "User supplied phone photograph; use for local training explicitly authorized in chat",
+      "license": "User-provided; not assigned a public redistribution licence",
+      "annotation_status": "partial: only visually identifiable vehicles labelled; remaining objects require review"
+    },
+    {
+      "image": "images/photo_6_2026-10-21_13-00-40.jpg",
+      "sha256": "1e1065a94ad0fbb77202a04251e0d815a38d718b49a5688a6c65c79b465fe1d8",
+      "group": "owner-phone-outing-2026-10-21",
+      "split": "train",
+      "source": "User supplied phone photograph; use for local training explicitly authorized in chat",
+      "license": "User-provided; not assigned a public redistribution licence",
+      "annotation_status": "partial: only visually identifiable vehicles labelled; remaining objects require review"
+    },
+    {
+      "image": "images/photo_7_2026-10-21_13-00-40.jpg",
+      "sha256": "0f8b2d8dbc87ca1777a327f9fc88655288ad84e983b616f43028810e7e40adf9",
+      "group": "owner-phone-outing-2026-10-21",
+      "split": "train",
+      "source": "User supplied phone photograph; use for local training explicitly authorized in chat",
+      "license": "User-provided; not assigned a public redistribution licence",
+      "annotation_status": "partial: only visually identifiable vehicles labelled; remaining objects require review"
+    },
+    {
+      "image": "images/photo_8_2026-10-21_13-00-40.jpg",
+      "sha256": "af3948c52af0e153d49b915c5777676b6ded7ec53520bbe96e74aaea1be11636",
+      "group": "owner-phone-outing-2026-10-21",
+      "split": "train",
+      "source": "User supplied phone photograph; use for local training explicitly authorized in chat",
+      "license": "User-provided; not assigned a public redistribution licence",
+      "annotation_status": "partial: only visually identifiable vehicles labelled; remaining objects require review"
+    },
+    {
+      "image": "images/photo_9_2026-10-21_13-00-40.jpg",
+      "sha256": "5b3fa187412660439c285315136560514e4a4ca106eaa5a39e6b29865065c959",
+      "group": "owner-phone-outing-2026-10-21",
+      "split": "train",
+      "source": "User supplied phone photograph; use for local training explicitly authorized in chat",
+      "license": "User-provided; not assigned a public redistribution licence",
+      "annotation_status": "partial: only visually identifiable vehicles labelled; remaining objects require review"
+    },
+    {
+      "image": "images/photo_10_2026-10-21_13-00-40.jpg",
+      "sha256": "6ee123d248110cdb2cbcd463daddbf2a2e327413574f698ad3effd481cc2415b",
+      "group": "owner-phone-outing-2026-10-21",
+      "split": "train",
+      "source": "User supplied phone photograph; use for local training explicitly authorized in chat",
+      "license": "User-provided; not assigned a public redistribution licence",
+      "annotation_status": "partial: only visually identifiable vehicles labelled; remaining objects require review"
+    }
+  ],
+  "labelled_cars": 9,
+  "model_labelled_cars": 8,
+  "excluded_from_independent_evaluation": true,
+  "remaining_unlabelled_cars": "Not treated as negatives; not ready for detector training"
+}

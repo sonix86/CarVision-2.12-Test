@@ -1,6 +1,6 @@
 {
   "owner": "София Рахманкулова",
-  "release": "1.9",
+  "release": "2.0",
   "brand_parameters": 1228858,
   "brand_architecture": "MobileNetV3 Small, own avg/max pooled 18-brand head, regional fine-tuning, mirrored-view probability mean and development temperature",
   "detector": "General COCO Mask R-CNN visible-instance masks, instance bridge association, duplicate consolidation and person-pixel exclusion; Faster R-CNN is a fallback. Segmentation neural weights are unchanged this round.",
@@ -179,7 +179,7 @@
       "model": "001"
     }
   ],
-  "vehicle_model_test_accuracy": 0.7572115659713745,
+  "vehicle_model_test_accuracy": 0.8149038553237915,
   "vehicle_model_test_count": 416,
   "vehicle_model_threshold": 0.7,
   "colour_reliability_threshold": 0.6,
@@ -17085,7 +17085,7 @@
     "seconds": 813.7427137999985,
     "test_used_for_selection": false
   },
-  "current_scope": "Selected hybrid candidate; 32 learned model families, closed set. Unseen/rebadged/occluded cars can remain wrong or unknown; colour is not a model prohibition. Two bounded local neural rounds; no ready-made vehicle-name classifier.",
+  "current_scope": "v2.0 body expert selected on grouped validation, priorities Chevrolet and low-resolution bodies;32families unchanged. Small Cobalt/Nexia test counts and unvalidated Damas prevent broad reliability claims. Historical18-make metrics below are not measurements of this new expert.",
   "v19_data": {
     "real_licensed_photos": 244,
     "accepted_new_photos": 194,
@@ -17139,5 +17139,1325 @@
       },
       "reason": "Validation only; no test metric participates in this decision"
     }
-  ]
+  ],
+  "historical_v19_model_metrics": {
+    "vehicle_model_test_accuracy": 0.7572115659713745,
+    "vehicle_model_test_count": 416,
+    "instance_model_metrics": {
+      "validation": {
+        "whole": {
+          "baseline": {
+            "top1": 0.7639751434326172,
+            "top3": 0.9254658222198486
+          },
+          "combined": {
+            "top1": 0.782608687877655,
+            "top3": 0.9440993666648865
+          },
+          "legacy_combined": {
+            "top1": 0.8396946787834167,
+            "top3": 0.9618320465087891
+          },
+          "new_combined": {
+            "top1": 0.5333333611488342,
+            "top3": 0.8666666746139526
+          },
+          "count": 161,
+          "accepted_count": 89,
+          "accepted_accuracy": 0.9438202381134033
+        },
+        "upper55": {
+          "baseline": {
+            "top1": 0.4968944191932678,
+            "top3": 0.7204968929290771
+          },
+          "combined": {
+            "top1": 0.47826087474823,
+            "top3": 0.7080745100975037
+          },
+          "legacy_combined": {
+            "top1": 0.5572519302368164,
+            "top3": 0.7862595319747925
+          },
+          "new_combined": {
+            "top1": 0.13333334028720856,
+            "top3": 0.36666667461395264
+          },
+          "count": 161,
+          "accepted_count": 30,
+          "accepted_accuracy": 0.8666666746139526
+        },
+        "upper35": {
+          "baseline": {
+            "top1": 0.19875776767730713,
+            "top3": 0.43478259444236755
+          },
+          "combined": {
+            "top1": 0.25465837121009827,
+            "top3": 0.52173912525177
+          },
+          "legacy_combined": {
+            "top1": 0.30534350872039795,
+            "top3": 0.580152690410614
+          },
+          "new_combined": {
+            "top1": 0.03333333507180214,
+            "top3": 0.2666666805744171
+          },
+          "count": 161,
+          "accepted_count": 7,
+          "accepted_accuracy": 0.5714285969734192
+        }
+      },
+      "test": {
+        "whole": {
+          "baseline": {
+            "top1": 0.7572115659713745,
+            "top3": 0.9158653616905212
+          },
+          "combined": {
+            "top1": 0.7572115659713745,
+            "top3": 0.9278846383094788
+          },
+          "legacy_combined": {
+            "top1": 0.791773796081543,
+            "top3": 0.9408740401268005
+          },
+          "new_combined": {
+            "top1": 0.25925925374031067,
+            "top3": 0.7407407164573669
+          },
+          "count": 416,
+          "accepted_count": 230,
+          "accepted_accuracy": 0.947826087474823
+        },
+        "upper55": {
+          "baseline": {
+            "top1": 0.44951921701431274,
+            "top3": 0.7163461446762085
+          },
+          "combined": {
+            "top1": 0.45192307233810425,
+            "top3": 0.7115384340286255
+          },
+          "legacy_combined": {
+            "top1": 0.48071980476379395,
+            "top3": 0.7377892136573792
+          },
+          "new_combined": {
+            "top1": 0.03703703731298447,
+            "top3": 0.3333333432674408
+          },
+          "count": 416,
+          "accepted_count": 75,
+          "accepted_accuracy": 0.8133333325386047
+        },
+        "upper35": {
+          "baseline": {
+            "top1": 0.17548076808452606,
+            "top3": 0.45673078298568726
+          },
+          "combined": {
+            "top1": 0.18269230425357819,
+            "top3": 0.45192307233810425
+          },
+          "legacy_combined": {
+            "top1": 0.19537274539470673,
+            "top3": 0.4755783975124359
+          },
+          "new_combined": {
+            "top1": 0.0,
+            "top3": 0.1111111119389534
+          },
+          "count": 416,
+          "accepted_count": 6,
+          "accepted_accuracy": 0.6666666865348816
+        }
+      }
+    }
+  },
+  "v20_body_expert": {
+    "architecture": "ResNet18 ImageNet generic initialization; independently trained32-model FC and layer3/4",
+    "geometry": "Aspect-preserving224padding; source crop shapes restored",
+    "training_photos": 779,
+    "validation_photos": 161,
+    "test_photos": 416,
+    "selected_epoch": 6,
+    "mixture_weight": 0.75,
+    "results": {
+      "whole": {
+        "baseline": {
+          "all": {
+            "count": 416,
+            "top1": 0.7572115659713745,
+            "top3": 0.9278846383094788
+          },
+          "chevrolet": {
+            "count": 47,
+            "top1": 0.7659574747085571,
+            "top3": 0.914893627166748
+          },
+          "other": {
+            "count": 369,
+            "top1": 0.7560975551605225,
+            "top3": 0.9295393228530884
+          },
+          "per_class": {
+            "BYD Song Plus": {
+              "count": 4,
+              "correct": 3,
+              "top3_correct": 3
+            },
+            "Chery Tiggo 7": {
+              "count": 3,
+              "correct": 2,
+              "top3_correct": 3
+            },
+            "Chevrolet Captiva": {
+              "count": 11,
+              "correct": 5,
+              "top3_correct": 10
+            },
+            "Chevrolet Cobalt": {
+              "count": 2,
+              "correct": 2,
+              "top3_correct": 2
+            },
+            "Chevrolet Damas": {
+              "count": 0,
+              "correct": 0,
+              "top3_correct": 0
+            },
+            "Chevrolet Lacetti": {
+              "count": 5,
+              "correct": 4,
+              "top3_correct": 5
+            },
+            "Chevrolet Malibu": {
+              "count": 10,
+              "correct": 9,
+              "top3_correct": 9
+            },
+            "Chevrolet Nexia": {
+              "count": 1,
+              "correct": 0,
+              "top3_correct": 0
+            },
+            "Chevrolet Onix": {
+              "count": 2,
+              "correct": 2,
+              "top3_correct": 2
+            },
+            "Chevrolet Spark": {
+              "count": 14,
+              "correct": 13,
+              "top3_correct": 14
+            },
+            "Chevrolet Tracker": {
+              "count": 2,
+              "correct": 1,
+              "top3_correct": 1
+            },
+            "Daewoo Matiz": {
+              "count": 4,
+              "correct": 1,
+              "top3_correct": 4
+            },
+            "Daewoo Nexia": {
+              "count": 9,
+              "correct": 9,
+              "top3_correct": 9
+            },
+            "Haval Jolion": {
+              "count": 2,
+              "correct": 2,
+              "top3_correct": 2
+            },
+            "Kia K5": {
+              "count": 3,
+              "correct": 1,
+              "top3_correct": 3
+            },
+            "Lada 2101": {
+              "count": 3,
+              "correct": 2,
+              "top3_correct": 2
+            },
+            "BMW 3 Series Sedan 2012": {
+              "count": 42,
+              "correct": 37,
+              "top3_correct": 41
+            },
+            "Honda Accord Sedan 2012": {
+              "count": 38,
+              "correct": 30,
+              "top3_correct": 36
+            },
+            "Hyundai Accent 2012": {
+              "count": 24,
+              "correct": 21,
+              "top3_correct": 23
+            },
+            "Hyundai Santa Fe 2012": {
+              "count": 42,
+              "correct": 32,
+              "top3_correct": 36
+            },
+            "Hyundai Sonata 2012": {
+              "count": 39,
+              "correct": 35,
+              "top3_correct": 37
+            },
+            "Hyundai Tucson 2012": {
+              "count": 43,
+              "correct": 38,
+              "top3_correct": 43
+            },
+            "Toyota Camry 2012": {
+              "count": 43,
+              "correct": 27,
+              "top3_correct": 41
+            },
+            "Toyota Corolla 2012": {
+              "count": 43,
+              "correct": 32,
+              "top3_correct": 40
+            },
+            "BYD Qin Plus": {
+              "count": 3,
+              "correct": 1,
+              "top3_correct": 2
+            },
+            "BYD Seagull": {
+              "count": 3,
+              "correct": 1,
+              "top3_correct": 1
+            },
+            "BYD Seal": {
+              "count": 4,
+              "correct": 2,
+              "top3_correct": 4
+            },
+            "BYD Yuan Plus": {
+              "count": 3,
+              "correct": 0,
+              "top3_correct": 2
+            },
+            "Chery Tiggo 8": {
+              "count": 3,
+              "correct": 1,
+              "top3_correct": 1
+            },
+            "Geely Galaxy E5": {
+              "count": 3,
+              "correct": 0,
+              "top3_correct": 3
+            },
+            "Haval H6": {
+              "count": 3,
+              "correct": 0,
+              "top3_correct": 2
+            },
+            "Zeekr 001": {
+              "count": 5,
+              "correct": 2,
+              "top3_correct": 5
+            }
+          },
+          "chevrolet_as_bmw": 0,
+          "chevrolet_wrong_candidates": {
+            "Chevrolet Captiva": 1,
+            "Chevrolet Lacetti": 2,
+            "Chevrolet Spark": 3,
+            "Chevrolet Tracker": 2,
+            "Daewoo Matiz": 1,
+            "Kia K5": 1,
+            "Zeekr 001": 1
+          }
+        },
+        "candidate": {
+          "all": {
+            "count": 416,
+            "top1": 0.8149038553237915,
+            "top3": 0.9447115659713745
+          },
+          "chevrolet": {
+            "count": 47,
+            "top1": 0.7659574747085571,
+            "top3": 0.957446813583374
+          },
+          "other": {
+            "count": 369,
+            "top1": 0.8211382031440735,
+            "top3": 0.9430894255638123
+          },
+          "per_class": {
+            "BYD Song Plus": {
+              "count": 4,
+              "correct": 3,
+              "top3_correct": 4
+            },
+            "Chery Tiggo 7": {
+              "count": 3,
+              "correct": 2,
+              "top3_correct": 3
+            },
+            "Chevrolet Captiva": {
+              "count": 11,
+              "correct": 8,
+              "top3_correct": 11
+            },
+            "Chevrolet Cobalt": {
+              "count": 2,
+              "correct": 1,
+              "top3_correct": 2
+            },
+            "Chevrolet Damas": {
+              "count": 0,
+              "correct": 0,
+              "top3_correct": 0
+            },
+            "Chevrolet Lacetti": {
+              "count": 5,
+              "correct": 4,
+              "top3_correct": 5
+            },
+            "Chevrolet Malibu": {
+              "count": 10,
+              "correct": 9,
+              "top3_correct": 9
+            },
+            "Chevrolet Nexia": {
+              "count": 1,
+              "correct": 0,
+              "top3_correct": 0
+            },
+            "Chevrolet Onix": {
+              "count": 2,
+              "correct": 2,
+              "top3_correct": 2
+            },
+            "Chevrolet Spark": {
+              "count": 14,
+              "correct": 12,
+              "top3_correct": 14
+            },
+            "Chevrolet Tracker": {
+              "count": 2,
+              "correct": 0,
+              "top3_correct": 2
+            },
+            "Daewoo Matiz": {
+              "count": 4,
+              "correct": 1,
+              "top3_correct": 4
+            },
+            "Daewoo Nexia": {
+              "count": 9,
+              "correct": 8,
+              "top3_correct": 9
+            },
+            "Haval Jolion": {
+              "count": 2,
+              "correct": 2,
+              "top3_correct": 2
+            },
+            "Kia K5": {
+              "count": 3,
+              "correct": 0,
+              "top3_correct": 2
+            },
+            "Lada 2101": {
+              "count": 3,
+              "correct": 3,
+              "top3_correct": 3
+            },
+            "BMW 3 Series Sedan 2012": {
+              "count": 42,
+              "correct": 39,
+              "top3_correct": 40
+            },
+            "Honda Accord Sedan 2012": {
+              "count": 38,
+              "correct": 30,
+              "top3_correct": 35
+            },
+            "Hyundai Accent 2012": {
+              "count": 24,
+              "correct": 20,
+              "top3_correct": 22
+            },
+            "Hyundai Santa Fe 2012": {
+              "count": 42,
+              "correct": 33,
+              "top3_correct": 37
+            },
+            "Hyundai Sonata 2012": {
+              "count": 39,
+              "correct": 36,
+              "top3_correct": 39
+            },
+            "Hyundai Tucson 2012": {
+              "count": 43,
+              "correct": 41,
+              "top3_correct": 42
+            },
+            "Toyota Camry 2012": {
+              "count": 43,
+              "correct": 33,
+              "top3_correct": 41
+            },
+            "Toyota Corolla 2012": {
+              "count": 43,
+              "correct": 37,
+              "top3_correct": 42
+            },
+            "BYD Qin Plus": {
+              "count": 3,
+              "correct": 1,
+              "top3_correct": 3
+            },
+            "BYD Seagull": {
+              "count": 3,
+              "correct": 2,
+              "top3_correct": 2
+            },
+            "BYD Seal": {
+              "count": 4,
+              "correct": 4,
+              "top3_correct": 4
+            },
+            "BYD Yuan Plus": {
+              "count": 3,
+              "correct": 1,
+              "top3_correct": 2
+            },
+            "Chery Tiggo 8": {
+              "count": 3,
+              "correct": 2,
+              "top3_correct": 3
+            },
+            "Geely Galaxy E5": {
+              "count": 3,
+              "correct": 1,
+              "top3_correct": 3
+            },
+            "Haval H6": {
+              "count": 3,
+              "correct": 0,
+              "top3_correct": 2
+            },
+            "Zeekr 001": {
+              "count": 5,
+              "correct": 4,
+              "top3_correct": 4
+            }
+          },
+          "chevrolet_as_bmw": 0,
+          "chevrolet_wrong_candidates": {
+            "Chevrolet Captiva": 3,
+            "Chevrolet Lacetti": 3,
+            "Chevrolet Spark": 1,
+            "Chevrolet Tracker": 1,
+            "Daewoo Matiz": 1,
+            "Kia K5": 1,
+            "Hyundai Tucson 2012": 1
+          }
+        }
+      },
+      "small64": {
+        "baseline": {
+          "all": {
+            "count": 416,
+            "top1": 0.3413461446762085,
+            "top3": 0.6346153616905212
+          },
+          "chevrolet": {
+            "count": 47,
+            "top1": 0.3404255211353302,
+            "top3": 0.5319148898124695
+          },
+          "other": {
+            "count": 369,
+            "top1": 0.3414634168148041,
+            "top3": 0.6476964950561523
+          },
+          "per_class": {
+            "BYD Song Plus": {
+              "count": 4,
+              "correct": 2,
+              "top3_correct": 3
+            },
+            "Chery Tiggo 7": {
+              "count": 3,
+              "correct": 1,
+              "top3_correct": 1
+            },
+            "Chevrolet Captiva": {
+              "count": 11,
+              "correct": 1,
+              "top3_correct": 2
+            },
+            "Chevrolet Cobalt": {
+              "count": 2,
+              "correct": 0,
+              "top3_correct": 1
+            },
+            "Chevrolet Damas": {
+              "count": 0,
+              "correct": 0,
+              "top3_correct": 0
+            },
+            "Chevrolet Lacetti": {
+              "count": 5,
+              "correct": 1,
+              "top3_correct": 3
+            },
+            "Chevrolet Malibu": {
+              "count": 10,
+              "correct": 7,
+              "top3_correct": 9
+            },
+            "Chevrolet Nexia": {
+              "count": 1,
+              "correct": 0,
+              "top3_correct": 0
+            },
+            "Chevrolet Onix": {
+              "count": 2,
+              "correct": 1,
+              "top3_correct": 2
+            },
+            "Chevrolet Spark": {
+              "count": 14,
+              "correct": 6,
+              "top3_correct": 8
+            },
+            "Chevrolet Tracker": {
+              "count": 2,
+              "correct": 0,
+              "top3_correct": 0
+            },
+            "Daewoo Matiz": {
+              "count": 4,
+              "correct": 0,
+              "top3_correct": 0
+            },
+            "Daewoo Nexia": {
+              "count": 9,
+              "correct": 3,
+              "top3_correct": 4
+            },
+            "Haval Jolion": {
+              "count": 2,
+              "correct": 1,
+              "top3_correct": 1
+            },
+            "Kia K5": {
+              "count": 3,
+              "correct": 0,
+              "top3_correct": 0
+            },
+            "Lada 2101": {
+              "count": 3,
+              "correct": 2,
+              "top3_correct": 2
+            },
+            "BMW 3 Series Sedan 2012": {
+              "count": 42,
+              "correct": 15,
+              "top3_correct": 26
+            },
+            "Honda Accord Sedan 2012": {
+              "count": 38,
+              "correct": 10,
+              "top3_correct": 19
+            },
+            "Hyundai Accent 2012": {
+              "count": 24,
+              "correct": 0,
+              "top3_correct": 15
+            },
+            "Hyundai Santa Fe 2012": {
+              "count": 42,
+              "correct": 29,
+              "top3_correct": 38
+            },
+            "Hyundai Sonata 2012": {
+              "count": 39,
+              "correct": 4,
+              "top3_correct": 11
+            },
+            "Hyundai Tucson 2012": {
+              "count": 43,
+              "correct": 16,
+              "top3_correct": 35
+            },
+            "Toyota Camry 2012": {
+              "count": 43,
+              "correct": 8,
+              "top3_correct": 38
+            },
+            "Toyota Corolla 2012": {
+              "count": 43,
+              "correct": 33,
+              "top3_correct": 42
+            },
+            "BYD Qin Plus": {
+              "count": 3,
+              "correct": 0,
+              "top3_correct": 0
+            },
+            "BYD Seagull": {
+              "count": 3,
+              "correct": 0,
+              "top3_correct": 0
+            },
+            "BYD Seal": {
+              "count": 4,
+              "correct": 0,
+              "top3_correct": 0
+            },
+            "BYD Yuan Plus": {
+              "count": 3,
+              "correct": 0,
+              "top3_correct": 0
+            },
+            "Chery Tiggo 8": {
+              "count": 3,
+              "correct": 0,
+              "top3_correct": 0
+            },
+            "Geely Galaxy E5": {
+              "count": 3,
+              "correct": 0,
+              "top3_correct": 0
+            },
+            "Haval H6": {
+              "count": 3,
+              "correct": 0,
+              "top3_correct": 0
+            },
+            "Zeekr 001": {
+              "count": 5,
+              "correct": 2,
+              "top3_correct": 4
+            }
+          },
+          "chevrolet_as_bmw": 0,
+          "chevrolet_wrong_candidates": {
+            "Chevrolet Lacetti": 1,
+            "Chevrolet Malibu": 2,
+            "Chevrolet Onix": 1,
+            "Chevrolet Spark": 2,
+            "Chevrolet Tracker": 2,
+            "Daewoo Nexia": 1,
+            "Haval Jolion": 1,
+            "Honda Accord Sedan 2012": 1,
+            "Hyundai Santa Fe 2012": 3,
+            "Hyundai Sonata 2012": 1,
+            "Hyundai Tucson 2012": 4,
+            "Toyota Corolla 2012": 12
+          }
+        },
+        "candidate": {
+          "all": {
+            "count": 416,
+            "top1": 0.7115384340286255,
+            "top3": 0.879807710647583
+          },
+          "chevrolet": {
+            "count": 47,
+            "top1": 0.6170212626457214,
+            "top3": 0.8510638475418091
+          },
+          "other": {
+            "count": 369,
+            "top1": 0.7235772609710693,
+            "top3": 0.8834688067436218
+          },
+          "per_class": {
+            "BYD Song Plus": {
+              "count": 4,
+              "correct": 4,
+              "top3_correct": 4
+            },
+            "Chery Tiggo 7": {
+              "count": 3,
+              "correct": 0,
+              "top3_correct": 1
+            },
+            "Chevrolet Captiva": {
+              "count": 11,
+              "correct": 8,
+              "top3_correct": 9
+            },
+            "Chevrolet Cobalt": {
+              "count": 2,
+              "correct": 0,
+              "top3_correct": 1
+            },
+            "Chevrolet Damas": {
+              "count": 0,
+              "correct": 0,
+              "top3_correct": 0
+            },
+            "Chevrolet Lacetti": {
+              "count": 5,
+              "correct": 4,
+              "top3_correct": 5
+            },
+            "Chevrolet Malibu": {
+              "count": 10,
+              "correct": 6,
+              "top3_correct": 9
+            },
+            "Chevrolet Nexia": {
+              "count": 1,
+              "correct": 0,
+              "top3_correct": 0
+            },
+            "Chevrolet Onix": {
+              "count": 2,
+              "correct": 2,
+              "top3_correct": 2
+            },
+            "Chevrolet Spark": {
+              "count": 14,
+              "correct": 9,
+              "top3_correct": 13
+            },
+            "Chevrolet Tracker": {
+              "count": 2,
+              "correct": 0,
+              "top3_correct": 1
+            },
+            "Daewoo Matiz": {
+              "count": 4,
+              "correct": 3,
+              "top3_correct": 4
+            },
+            "Daewoo Nexia": {
+              "count": 9,
+              "correct": 6,
+              "top3_correct": 9
+            },
+            "Haval Jolion": {
+              "count": 2,
+              "correct": 2,
+              "top3_correct": 2
+            },
+            "Kia K5": {
+              "count": 3,
+              "correct": 0,
+              "top3_correct": 0
+            },
+            "Lada 2101": {
+              "count": 3,
+              "correct": 3,
+              "top3_correct": 3
+            },
+            "BMW 3 Series Sedan 2012": {
+              "count": 42,
+              "correct": 28,
+              "top3_correct": 35
+            },
+            "Honda Accord Sedan 2012": {
+              "count": 38,
+              "correct": 17,
+              "top3_correct": 26
+            },
+            "Hyundai Accent 2012": {
+              "count": 24,
+              "correct": 17,
+              "top3_correct": 22
+            },
+            "Hyundai Santa Fe 2012": {
+              "count": 42,
+              "correct": 34,
+              "top3_correct": 38
+            },
+            "Hyundai Sonata 2012": {
+              "count": 39,
+              "correct": 36,
+              "top3_correct": 39
+            },
+            "Hyundai Tucson 2012": {
+              "count": 43,
+              "correct": 41,
+              "top3_correct": 42
+            },
+            "Toyota Camry 2012": {
+              "count": 43,
+              "correct": 28,
+              "top3_correct": 40
+            },
+            "Toyota Corolla 2012": {
+              "count": 43,
+              "correct": 32,
+              "top3_correct": 42
+            },
+            "BYD Qin Plus": {
+              "count": 3,
+              "correct": 3,
+              "top3_correct": 3
+            },
+            "BYD Seagull": {
+              "count": 3,
+              "correct": 2,
+              "top3_correct": 2
+            },
+            "BYD Seal": {
+              "count": 4,
+              "correct": 4,
+              "top3_correct": 4
+            },
+            "BYD Yuan Plus": {
+              "count": 3,
+              "correct": 0,
+              "top3_correct": 2
+            },
+            "Chery Tiggo 8": {
+              "count": 3,
+              "correct": 2,
+              "top3_correct": 3
+            },
+            "Geely Galaxy E5": {
+              "count": 3,
+              "correct": 0,
+              "top3_correct": 0
+            },
+            "Haval H6": {
+              "count": 3,
+              "correct": 0,
+              "top3_correct": 0
+            },
+            "Zeekr 001": {
+              "count": 5,
+              "correct": 5,
+              "top3_correct": 5
+            }
+          },
+          "chevrolet_as_bmw": 0,
+          "chevrolet_wrong_candidates": {
+            "Chevrolet Captiva": 7,
+            "Chevrolet Lacetti": 2,
+            "Chevrolet Tracker": 1,
+            "Honda Accord Sedan 2012": 1,
+            "Hyundai Accent 2012": 1,
+            "Hyundai Santa Fe 2012": 2,
+            "Hyundai Tucson 2012": 1,
+            "Toyota Corolla 2012": 3
+          }
+        }
+      },
+      "upper55": {
+        "baseline": {
+          "all": {
+            "count": 416,
+            "top1": 0.45432692766189575,
+            "top3": 0.7091346383094788
+          },
+          "chevrolet": {
+            "count": 47,
+            "top1": 0.5319148898124695,
+            "top3": 0.6382978558540344
+          },
+          "other": {
+            "count": 369,
+            "top1": 0.4444444477558136,
+            "top3": 0.718157172203064
+          },
+          "per_class": {
+            "BYD Song Plus": {
+              "count": 4,
+              "correct": 1,
+              "top3_correct": 2
+            },
+            "Chery Tiggo 7": {
+              "count": 3,
+              "correct": 1,
+              "top3_correct": 1
+            },
+            "Chevrolet Captiva": {
+              "count": 11,
+              "correct": 3,
+              "top3_correct": 3
+            },
+            "Chevrolet Cobalt": {
+              "count": 2,
+              "correct": 0,
+              "top3_correct": 1
+            },
+            "Chevrolet Damas": {
+              "count": 0,
+              "correct": 0,
+              "top3_correct": 0
+            },
+            "Chevrolet Lacetti": {
+              "count": 5,
+              "correct": 2,
+              "top3_correct": 3
+            },
+            "Chevrolet Malibu": {
+              "count": 10,
+              "correct": 8,
+              "top3_correct": 8
+            },
+            "Chevrolet Nexia": {
+              "count": 1,
+              "correct": 0,
+              "top3_correct": 0
+            },
+            "Chevrolet Onix": {
+              "count": 2,
+              "correct": 2,
+              "top3_correct": 2
+            },
+            "Chevrolet Spark": {
+              "count": 14,
+              "correct": 10,
+              "top3_correct": 13
+            },
+            "Chevrolet Tracker": {
+              "count": 2,
+              "correct": 0,
+              "top3_correct": 0
+            },
+            "Daewoo Matiz": {
+              "count": 4,
+              "correct": 1,
+              "top3_correct": 2
+            },
+            "Daewoo Nexia": {
+              "count": 9,
+              "correct": 7,
+              "top3_correct": 9
+            },
+            "Haval Jolion": {
+              "count": 2,
+              "correct": 2,
+              "top3_correct": 2
+            },
+            "Kia K5": {
+              "count": 3,
+              "correct": 1,
+              "top3_correct": 1
+            },
+            "Lada 2101": {
+              "count": 3,
+              "correct": 2,
+              "top3_correct": 2
+            },
+            "BMW 3 Series Sedan 2012": {
+              "count": 42,
+              "correct": 25,
+              "top3_correct": 33
+            },
+            "Honda Accord Sedan 2012": {
+              "count": 38,
+              "correct": 12,
+              "top3_correct": 25
+            },
+            "Hyundai Accent 2012": {
+              "count": 24,
+              "correct": 9,
+              "top3_correct": 19
+            },
+            "Hyundai Santa Fe 2012": {
+              "count": 42,
+              "correct": 21,
+              "top3_correct": 31
+            },
+            "Hyundai Sonata 2012": {
+              "count": 39,
+              "correct": 32,
+              "top3_correct": 34
+            },
+            "Hyundai Tucson 2012": {
+              "count": 43,
+              "correct": 24,
+              "top3_correct": 37
+            },
+            "Toyota Camry 2012": {
+              "count": 43,
+              "correct": 11,
+              "top3_correct": 28
+            },
+            "Toyota Corolla 2012": {
+              "count": 43,
+              "correct": 14,
+              "top3_correct": 32
+            },
+            "BYD Qin Plus": {
+              "count": 3,
+              "correct": 0,
+              "top3_correct": 0
+            },
+            "BYD Seagull": {
+              "count": 3,
+              "correct": 0,
+              "top3_correct": 1
+            },
+            "BYD Seal": {
+              "count": 4,
+              "correct": 0,
+              "top3_correct": 0
+            },
+            "BYD Yuan Plus": {
+              "count": 3,
+              "correct": 0,
+              "top3_correct": 1
+            },
+            "Chery Tiggo 8": {
+              "count": 3,
+              "correct": 0,
+              "top3_correct": 1
+            },
+            "Geely Galaxy E5": {
+              "count": 3,
+              "correct": 0,
+              "top3_correct": 1
+            },
+            "Haval H6": {
+              "count": 3,
+              "correct": 0,
+              "top3_correct": 1
+            },
+            "Zeekr 001": {
+              "count": 5,
+              "correct": 1,
+              "top3_correct": 2
+            }
+          },
+          "chevrolet_as_bmw": 1,
+          "chevrolet_wrong_candidates": {
+            "Chevrolet Captiva": 1,
+            "Chevrolet Malibu": 1,
+            "Chevrolet Onix": 1,
+            "Chevrolet Tracker": 1,
+            "Daewoo Matiz": 1,
+            "Daewoo Nexia": 5,
+            "Kia K5": 1,
+            "Lada 2101": 1,
+            "BMW 3 Series Sedan 2012": 1,
+            "Honda Accord Sedan 2012": 3,
+            "Hyundai Tucson 2012": 1,
+            "BYD Seagull": 2,
+            "BYD Seal": 1,
+            "BYD Yuan Plus": 2
+          }
+        },
+        "candidate": {
+          "all": {
+            "count": 416,
+            "top1": 0.5456730723381042,
+            "top3": 0.786057710647583
+          },
+          "chevrolet": {
+            "count": 47,
+            "top1": 0.6170212626457214,
+            "top3": 0.8297872543334961
+          },
+          "other": {
+            "count": 369,
+            "top1": 0.5365853905677795,
+            "top3": 0.7804877758026123
+          },
+          "per_class": {
+            "BYD Song Plus": {
+              "count": 4,
+              "correct": 1,
+              "top3_correct": 3
+            },
+            "Chery Tiggo 7": {
+              "count": 3,
+              "correct": 0,
+              "top3_correct": 1
+            },
+            "Chevrolet Captiva": {
+              "count": 11,
+              "correct": 4,
+              "top3_correct": 11
+            },
+            "Chevrolet Cobalt": {
+              "count": 2,
+              "correct": 0,
+              "top3_correct": 0
+            },
+            "Chevrolet Damas": {
+              "count": 0,
+              "correct": 0,
+              "top3_correct": 0
+            },
+            "Chevrolet Lacetti": {
+              "count": 5,
+              "correct": 3,
+              "top3_correct": 3
+            },
+            "Chevrolet Malibu": {
+              "count": 10,
+              "correct": 7,
+              "top3_correct": 9
+            },
+            "Chevrolet Nexia": {
+              "count": 1,
+              "correct": 0,
+              "top3_correct": 0
+            },
+            "Chevrolet Onix": {
+              "count": 2,
+              "correct": 2,
+              "top3_correct": 2
+            },
+            "Chevrolet Spark": {
+              "count": 14,
+              "correct": 13,
+              "top3_correct": 13
+            },
+            "Chevrolet Tracker": {
+              "count": 2,
+              "correct": 0,
+              "top3_correct": 1
+            },
+            "Daewoo Matiz": {
+              "count": 4,
+              "correct": 2,
+              "top3_correct": 2
+            },
+            "Daewoo Nexia": {
+              "count": 9,
+              "correct": 5,
+              "top3_correct": 9
+            },
+            "Haval Jolion": {
+              "count": 2,
+              "correct": 2,
+              "top3_correct": 2
+            },
+            "Kia K5": {
+              "count": 3,
+              "correct": 1,
+              "top3_correct": 1
+            },
+            "Lada 2101": {
+              "count": 3,
+              "correct": 3,
+              "top3_correct": 3
+            },
+            "BMW 3 Series Sedan 2012": {
+              "count": 42,
+              "correct": 27,
+              "top3_correct": 35
+            },
+            "Honda Accord Sedan 2012": {
+              "count": 38,
+              "correct": 12,
+              "top3_correct": 21
+            },
+            "Hyundai Accent 2012": {
+              "count": 24,
+              "correct": 10,
+              "top3_correct": 17
+            },
+            "Hyundai Santa Fe 2012": {
+              "count": 42,
+              "correct": 21,
+              "top3_correct": 31
+            },
+            "Hyundai Sonata 2012": {
+              "count": 39,
+              "correct": 35,
+              "top3_correct": 38
+            },
+            "Hyundai Tucson 2012": {
+              "count": 43,
+              "correct": 28,
+              "top3_correct": 41
+            },
+            "Toyota Camry 2012": {
+              "count": 43,
+              "correct": 24,
+              "top3_correct": 33
+            },
+            "Toyota Corolla 2012": {
+              "count": 43,
+              "correct": 21,
+              "top3_correct": 39
+            },
+            "BYD Qin Plus": {
+              "count": 3,
+              "correct": 0,
+              "top3_correct": 1
+            },
+            "BYD Seagull": {
+              "count": 3,
+              "correct": 1,
+              "top3_correct": 2
+            },
+            "BYD Seal": {
+              "count": 4,
+              "correct": 3,
+              "top3_correct": 4
+            },
+            "BYD Yuan Plus": {
+              "count": 3,
+              "correct": 0,
+              "top3_correct": 0
+            },
+            "Chery Tiggo 8": {
+              "count": 3,
+              "correct": 0,
+              "top3_correct": 1
+            },
+            "Geely Galaxy E5": {
+              "count": 3,
+              "correct": 0,
+              "top3_correct": 0
+            },
+            "Haval H6": {
+              "count": 3,
+              "correct": 0,
+              "top3_correct": 0
+            },
+            "Zeekr 001": {
+              "count": 5,
+              "correct": 2,
+              "top3_correct": 4
+            }
+          },
+          "chevrolet_as_bmw": 0,
+          "chevrolet_wrong_candidates": {
+            "Chevrolet Captiva": 3,
+            "Chevrolet Lacetti": 7,
+            "Chevrolet Malibu": 1,
+            "Chevrolet Tracker": 1,
+            "Kia K5": 1,
+            "Lada 2101": 1,
+            "Honda Accord Sedan 2012": 2,
+            "Toyota Camry 2012": 1,
+            "BYD Seal": 1
+          }
+        }
+      }
+    },
+    "source_model_sha256": "107c0a452e44ea413234ce5b3ed29d11728a6c0a1d81aa58e8912b902df79817",
+    "candidate_sha256": "049d77ad66d1f799307ae417dcb98afa6a3535adece330016a4827fc860dbe3c",
+    "city_examples_used_for_training_or_selection": false,
+    "new_photographs_used_for_training": false,
+    "limitations": "Chevrolet Cobalt has2oldtest photographs, Nexia1, Damas0. Most Chevrolet test images are other families. These counts cannot substantiate broad Cobalt/Nexia/Damas accuracy. City and new Flickr photos were not used for selection.",
+    "generic_initialization_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec"
+  },
+  "owner_data_experiment": {
+    "photos": 10,
+    "manually_labelled_cars": 9,
+    "model_labels": 8,
+    "groups": 1,
+    "split": "train only",
+    "epochs": 12,
+    "selected": false,
+    "reason": "No validation improvement under predeclared guards",
+    "badge_enabled": false,
+    "report": "owner_adaptation_training.json"
+  }
 }

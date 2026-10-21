@@ -1,0 +1,7147 @@
+{
+  "geometry_sources": {
+    "original_regional_crop": 528,
+    "pixel_registration_match": 1150,
+    "verified_tight_source_box": 1162,
+    "original_mat_box": 634,
+    "ev_restored_ratio": 194
+  },
+  "alignment": [
+    {
+      "image": "images/14e4b0d687507d8bb186.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/4c45b7f43630c77ef7bf.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/3a77b8c85d1c27ee3557.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/162aca0fc900c5f97686.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/3360c414c30752e0af44.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/0cceb954cef96e03936e.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/45a365bc30667adf88b4.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/a695bf8588d2b60bb2d9.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/4f9f5e68dc08462a156c.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/210057b201363cb585af.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2e0271fc3edb0043073a.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/205b2432a87032a40057.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/237611cc4843e784c534.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/12a33aec276080531dd0.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/24486e343a474816fbee.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/388495b03f937fe69458.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/37d486237e94900ea080.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/8a7d655f0e4bc1965325.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/09f5e628bdcf918bb940.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/23e6748e2d81428ef207.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/488bc990394049fd59da.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/7454654c8a7cfd78ff06.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/58635dad28c2da8d52d6.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/1c1b0e3106b3cf60d2ea.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/bd594679bbb01b050714.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/bfab21aaf3a131793beb.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/03dab3b4911c5e3e4c02.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/3a6593be073979a6eb6f.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2fae5eae12e6fa25ee31.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/cc5b7e29887cbbd43041.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/12a3cf1db306a7e05102.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2b8cdf28b684adea5af0.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2563c3ea5f6d3431dc9c.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/0736ecf47696813bc1f2.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/e91564809f97cf451a92.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/d7b3daab6efecff0f817.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/031910af47d002aefdc0.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/87750dd47a345a5ac51d.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/91b8c3db25853970cc1c.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/8767a1b463d0b1fdb796.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/8ef0d70469a0e9cdcf47.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/e147853d7250061fd563.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/baf585015a15290a4f1b.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2137d12620330009862b.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/58645617311434c9ea18.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/9b7188264cd89d28b200.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/aa45fb571313cbc6766a.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/e1c51ea05b5db546e77f.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/33e9ba6fb90a440b5c9b.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/069e651407d70c83793f.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2dcf56a1a0103cd35f5a.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/1322cd2bf59d79d21524.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2ca64abc54adb2ef356d.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/66d32be71fa711f0fcd6.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/c2626bb660380201081e.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/881b52408c23e93e4c73.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/052cdde48abb902cea0d.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/1e3220425e51304f394d.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/43435d10c7063fa53d78.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/15ad167bd4304a06afa8.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/4f48bbd2d7deb14ad1fb.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/39ce5fbdc501c42e49e5.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/3e96ccde69c87319e751.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/d9a2822f727cbaee1dfb.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/341ace93c8868dbccb5a.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/05d060322e5725012244.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2aefc2b220afb4ed0a3d.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/1f70caef551d9ec37256.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/187862d411d56593991c.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/4d23bcecaf1b48299a4a.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/0deb0b00f4b4ce558950.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/03fe0071ed28cd6ae03e.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/080f4d49577d57d5d897.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/02308fd85ea605f102e8.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/6edbeff5df84c563c193.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/7412edcb81409fc206b1.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/634926eb025a2297461e.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/41835b1a687ce43e2a25.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/a2a53746b3ba7d845c54.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/42c5840dba05d0aa009a.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/9bbf1f5e1ab41092c884.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/245e2776ae2d13f1167d.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/30bb08e7457258c46ab6.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/d0c5b9d09f435a1cee8f.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/be5c44774e8ea2ae7e28.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/871ded0305b9bc855d43.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/83d2e11ff04d10118339.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/57516962c8a0bc338551.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/d78652340fbd0203ca62.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/9c7048c8014144e03a9d.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/40412b6a6aa8d79e4279.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/1a9b05633368d0d961d3.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/05e76ad1f362b1c6bacf.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/d860bd28154fcfeaa4a1.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/5cab78ae1819e2d9c3ab.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/74d53abe5b24171bbd3e.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/9a9e1d8599d7b7ce67eb.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2d6d3a6440a747cddfd0.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/24147320c52d9a3e0453.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/3f45724ad1e1a16007f9.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/cf26d23a0bc4348edc98.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/1ec373fafece07a49b26.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/79a22133e01c7ff252c4.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/56244a830370b5d00cd9.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/9198ce475d791385f262.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/9d3ed6bd899a32fe09d9.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/028818bf4e740425a706.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/5670ae30fc43f37b64a5.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/b0e87e479172bf73c3d6.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/42ad54768191cbc14eff.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/cb26b01607267b0788cf.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/3c535d059b6e6ed94300.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/17134779f31141a34ee5.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/773d1cd5877a48db52c9.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/313710c75cbb20d09941.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/1aa3ad00dd78345fe824.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/08c7aa61815828c38680.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/01e12f5160a38e96ece6.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/0f3c73a805fc06b141e5.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/67a6bcc40b672ccccb7a.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/a7905fd055e682a23060.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/9ee0bb814028480d4f2d.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/d710af7e2f4f3da066e0.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/36aa749ee7320dd43eb4.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/3cd4e19685c4dd7f4605.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/3eb2a47a4c5047dfe831.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/f4c016b22d0b26a9bd59.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/57686d82cf9ea695b3a1.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/228e9577ca99457bdb16.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/3c74f5d92fb8d0ce18e8.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/44e65f120bc95b002b8d.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/5e6ecbe3d593e7368706.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/bdce3a672cef4b8873e4.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/ee9ca9cf22c2f6afea29.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2a027fbc0f9c3cbfebfd.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/313d8fb76721a0e69a6a.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/0732aad3124b4f9c1c32.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/024e114f053efa191ab0.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/430cb1f8e10bf36ef169.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/08b2ba94a011b25bfc95.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/b2901ba7740381951b22.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/7375108e0bf038cdadfc.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/c02f44289689e625fd3e.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2a5a3a28e9dd84dc0183.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/5bbd821a761687fbe01a.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/5c119fcaa4fae91e644f.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/6cd40305f4e1c0075a3f.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/5f4c76403bfb0bc4c1c2.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/ac5cccb56f4f46f26897.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/78feb11fa9d218b42848.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/489fb069eab4531b6fac.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/87ea19671241d4698fae.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/7835211a57f87f37f01d.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/aecc0f83bb824ac6e5db.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/b525146b6bf8e3381d26.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/0ebff647cb516753506d.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/a3c6f7979b87807f80a7.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/1d187bd345bd4b690b43.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/311b4564513744b23edc.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/58102a28c05c43fda2b0.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/6d8055938fea423ab6e3.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/418f13426c11e863999c.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/09f961b5fabf63bb032c.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/94c40727509d39fae082.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/0fe2c9a4907239b241c5.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/a67a6481d2990e799171.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/6f6a68179004e350a7cd.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/59086b455a0228fd87a1.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/cbd9f7c4d3e7feded375.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/568e555f0108921b9640.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/fcd8421221c5b7683222.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/ff80e8642f5d2836b490.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/eb5622358721a6d20874.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/82662c844f94d2719719.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/0fdc0964066dd7802e80.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/0feae1f4a2429a50936d.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2c30d80e4a5436d9acf3.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/1904d563925eed1708b4.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/006855614738c7d43f2d.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/31cad8cb22ccf51d1b52.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/1104e5986539a07f0efd.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/23dc483ff11dd4e1f988.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/32eec797c4e5be9a1d95.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/10b677255803790906a9.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/22d06e025387c038c8e8.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/0f74915d5ec0e216dc53.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/21aa340b3d36feccd02f.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/1e5e523088bf6a711d47.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/13bb1f82ae5a65a917b8.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/1fb9ff794e2170d5b6aa.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/479e1984a1af5a10e93a.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/0d5123fbc8a165fa8f55.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/38a78220c42addfa6570.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/182e26b98116f5f87997.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/38eec6112bc730e96c72.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/062faea8adc97b072c7f.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/20e99e883b6f799934a3.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2ce3349f6c5b139e13bc.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/0a74641b31da9ff00544.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/1abcad9fc4ac86bc3cf6.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/147c3291f5cb4e3ce6bd.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/1e60e7a9eb344cc58898.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2cbe6103db6bd2d76bce.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/41e67539bf9064b8e482.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/252dc688526896055566.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2d461b4344bab1f84786.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2bf98486705d75f3d1fb.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2696c69b3ce19a2b0f74.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/314a7c7c1e3eec8076f5.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/38026a9cc6e5a38863ee.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2ffc481f82bc9d20a213.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/368fdb0da4a56d6004b9.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/06087f031b83ee89380a.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/3f9635810ea6632bc5a8.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/0560bd2400a4f809596a.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/28f4785a37091b862c39.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2a630f3b9b1964f4a7e2.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/0b12545dea8ae833a700.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/3ce8c9798d171ae6e335.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/33065d1cada5ece300ae.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/16fbab4a23c9680b5651.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/027829c83bab4f428a9c.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/4865f71064b30fb9d6c1.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/25d20689a68ea3bed81e.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/0489ff1ce5464fe5bc1b.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/3830af114eaad16fe14c.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/0f85200ed3753c4fc2a1.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/10f4f9f17f56941ff7b7.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/1cd7c29e49b3a61537d4.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/26e6e00055a1554ec7fc.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/43666053e89f341cb9db.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/086e39bad8ae820cde2e.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2f2b3b3d3ff4f0a74f0b.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/f23f145bc73b57d43eed.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/315625e8f5fa8acccf0c.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/d93243b48004c298adb3.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/b14203824ecab16102e5.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/a9913952f03b340a0506.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/cfe35f7b68395425dfbe.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/41f439a54e125ea302c4.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/ae1a43620c0e6b84aeb0.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/c4c263e1a5e19979569f.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/fe505259d81e5291ff81.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/61805766db4046d4814a.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/f32e397c1d5f916a398e.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/f2b4d78f13f4cbc85782.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/466bdc9ef078a2b57a93.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/e7e56786abd016ef1e0d.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/5f7dedd83791405abc76.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/e474eda55140bf4203f6.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/191d64d484e60f9e755a.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/93de114f1c37f0483c55.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/cfc1278b6faa0a3b788c.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/66641e59758a172a9b75.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/129bb486c4a38daf2031.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/34c2ac453081ed00a00b.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/9af65fbbf8a85ab8c6b1.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/0327e61178425d1bc191.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/f606ffcf9191521d80e5.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/6e85028022fc92780ad2.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/4f79ca184c57ec3457d6.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/6ada31eed5e46fd50fb1.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/cdef4e501ee7765bc406.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/fa7c0c15aec4a8a02e38.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2da5cc083d5c596b4be0.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/126fc4449ff894c2541c.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/9f8529e8251979f0cd9a.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/93f6426ab2f61f36d346.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/fe08184f2ff2a35204c0.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/95ccba46b72924472a07.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/a7ec09eb3c3db14e8efd.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/1e7e925656d7a832869c.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/6073ea4fd7496142f12e.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2697802803da9181dff4.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/3f2c24ce1fae2b68c107.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/a349396f2f6105e94f40.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/84d86b5c060d0b32a47e.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/18565bf73885ce19e8eb.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/0727f9ef3a88a129df4e.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/1198d6a44777292b61e6.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/082a16ec032aa3ec8d02.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/6018f68943d03bc0d376.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/4bc8700c18d60b4e18de.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/0596431832cc8c9c5f8a.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/36bb750699cb8968abb0.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/477f9a5fdb062ddb913f.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2d188a8061849bc1c2ef.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/5545d413d68593d4ef3a.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/8224e196b02e1db820b9.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/68240470f6284357c28a.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2400886545467ef1ef7a.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/ca065a8b888730e78e86.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/4c25b118753afccdd004.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/3f27244191f6d4deb15b.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/5e8bf4bc06e24c908af1.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/af50fd6048eae0fd5dd1.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/3506838734f32a20e955.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/f5ce565fbd61b872080d.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/6d5971c756d71733eb1a.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/712fe4b344cf40dce98a.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/8b2522d0f0801c02deaa.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/6c6469d830d3f0eb2131.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/dd540c01e7a111f15865.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/dcc98127cfc8e2d3d9d4.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/968a0d632565c5de99ea.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/02706cd56b1b90b75c71.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/a28999bdc0b3b1c375f7.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/6197ea1fcaa9428e6085.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/f947182db5f1bdb76936.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/bc49d73a85deff9a74ca.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/8aea65edd97615a94623.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/d193dbf85d1154dcf006.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2f1983a78b0a4c9de3e4.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2c368c460c010d5c796f.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2e2fa05a96848f84f807.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/4770b80388b53c6ace00.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/02b6e04788d307d544f8.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/1c1459f334ac59d6c9b9.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/416328d0af421dfe0192.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/22e1908df7bb48e5c582.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/3d909a87a04aea582796.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2fb216b6c108bfeb410e.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/11e8144d9b0b0e3087bd.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/4c872e1931afa6adc562.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/40d98c7a88318c259c07.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2b5196555dd5079011e9.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/722c67bf6c0bfc806256.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2e34361e229130fec9a7.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/5964bde93d7933302805.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/334f3b53b47be9dc3c80.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2b43cb73f09c5aa8056a.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/49d27b36f4a87707e861.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/188f470d0d58e0eaffa8.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/05a132ed892f01e1ea4e.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/4f3a84380eef0f16aa24.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/289c341606c79f807b21.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/46ade93555aabd76f3b9.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/249f2c56fc3a8fee4672.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/8f00e015307dac1ebefb.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/81fc7b6038191a799e00.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/33a2d864fdbb848af9d0.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/3754d6d0bed51d817f7f.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/1664e148a7b8ef6397a7.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/cbdf02b96b878283077a.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2ab11f81b8ee56715dcb.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/72583571a267a33137d7.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/88049e4b354297524c01.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/c4fa16da04db3466f4d4.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/0aaa56bfbcf1e3a8ae99.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/ab4a2ec555cc436e106e.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/7fdf43f14cb78269bf2d.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2af4c14066a768abc017.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/40e1647e8467f5461e77.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/1730d49c8b6c689c4a6b.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2148e2789d23bba094f6.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/236c4f738edbd11b02ae.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/1ef794fed828e9f16cb9.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/45c56099cc8bc9a67a6f.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/03595a6ab9452b05c6d2.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/29819b1f9e320367b367.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2e046c108aa0f461d02d.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/181383f8b9e4760758d8.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/89ce9ba32391f9a6b04a.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2bc6ed250f9cd1ade472.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/16f5e42e219ac35366f9.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/42390c1463cfe0a1f3fe.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2d3428c09da9fa1fb6e3.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/a3c6e9f8cb5217cd3ab7.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/215277377f2759194b2f.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/de7c3e0afe54f0622a78.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/c87b18bae00dfeb38d9a.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/bd77533c84cd1aa1abba.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/8ddd2f7e729ed3e60857.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/3b5ce9092d1cbf3d2063.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/409071f5268fd6c6c72a.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2b6386deec48ed99aff1.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/e74388b6771a5db35a27.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2580d7200dc0f9f95f51.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/b7225b57a235c382d4af.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/faee162365a685696f66.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/122c3c560fd76a3373af.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/4923d2e9eeaf0dee6a79.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/70973ce5fdcc59e546e8.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/f9b786b600696d510ec5.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/ac22b1e07867c0629196.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/114c46214be94ff8fe60.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/34164a54d15d58164b0d.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/8a8a90d621cfb44e88a1.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/28e92cbb1837c462819c.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/135d14a16e25d438af6f.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/000041a6e6d6f78c43a6.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/0439c87bcda44d97a58d.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/33fe084d30acc559343d.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/1c4a592583e9ef00f27b.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/20388d7be5efa7bdc818.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/02b514d41bd098f3e24f.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2c9789e45eca716e0d5b.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/15fb3b42818ea3d45747.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/17e7a6e6a60e280fa5b5.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/294e7c1dcf6b01c432c8.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/08ccc1e2bb73d3aea11b.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/20486774156b5ffa551a.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/033a7aa0ace7224ad3fd.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/105e68db999d98e651ed.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/1ff384422b0e1793083d.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/073b86a2002770885a97.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/186c372611ff3e667886.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/1696833c15116e5ae4b1.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/0309da56a63b36e7f145.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/241405831eabdf125338.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/3815e102bc63d2242d89.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/7923ee727b29978ae349.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/95609b63fb50dbdd636b.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/b234e45f8f076aec2826.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/5d1063e95c99c0c594fc.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/88feef002e849648fc9b.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/3423726164fb67784972.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/0134068d5f0704a831ad.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/689dcdc0c6d46484f550.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/38bfdba30dce625432f2.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/27a17b3530586d0a2159.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/cddcbc29f99b10f4cc76.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/87c18464f9884d9ba102.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/797737f6872b70e99844.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/3b5d28da9879a3ed5376.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/35fa4814c1db7b7ed137.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/221ffed90d8482226e2d.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/c78a94ef8ebc0320a158.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/0ac23c3d61d4eefe4b9f.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/94108cbfe486a03f4694.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/711c9becd581db05b6e6.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/7dba18cf89c8314aca26.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/49eeeaebc7817fb3c447.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/5cca237dfa013605fdfc.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/8df7a0a17223f0a50d9e.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/9d84237be2d299490d96.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/d6d1c5049dcb5075c653.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/df7869618d767c9a0eb1.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/03f97307f0bb34f7241e.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/23e0aa3a8cdb66c91b2d.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/8f7a905f978ce77df4a2.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/ab7a1e21c1eb04684fdb.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/a0feff7968cecc9f0f61.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/177fc2cda4a8a4954fbf.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/a1ce3fb4041e0fff240f.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/71e1285a5c31480f5ec4.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/117254aa0402511069a5.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/d17b56e2fdbeb318b072.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/4ee17d68854333f491b9.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/3a979c3b1a726d4f4078.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/9e5f6223084c93c2b260.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/40fecaa51a485f7d95f6.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/211ecd51de1fc6fdbffd.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/28c9afe66cf2a1bfc961.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/5ef1e7e2482b186bcfea.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/11144cf9514fcb7b44ad.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/3291e4e1af2b61a51c5b.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2e4f303196cf5d446d24.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/57a6961311f423bb6f81.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/3b4ce259bc20d896cf31.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/36c5d92056c2f92a3257.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/54b13150685115b9d10f.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/066e8efeb46479d07610.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/233745b714d2b23887d5.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/1cd0d680a9c01d8025e6.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/05ab63999760a23f038d.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/1722ba433936f0cff916.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/1b9bea0a1af89cda5073.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/21c1faaccc69cfbb7d37.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/01e5ca5f0ed1d175c3b3.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/0c1a9ee66ece615924fc.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/1a270fb706383c8341cf.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/19154fd0c681311d7b99.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/21117ceecf08799345d7.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/00358c38ee160e2088f7.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/0b07130374edc81ecdb5.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/0dfbea6aa7f7c1bf80bd.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/187f39f1de229cd88867.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/1d629fc8be694bc71828.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/0a444729a1d3862077ee.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/19c32fe38860422ae371.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/1f9bc6e4706566d95d5d.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/037ef0f6f64250ed3519.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/01fddbf0b5c66a4709b7.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/0b8bea6c09173837e322.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/02074a92f1b0d335a89c.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/1beef16c4845d56c22ba.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/13765d0291ea8ab1ad90.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/207bf7580ada13298445.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/0f374a1c5669ff379ea7.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/1f60b9545de4591f1173.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/09aafa1874ae5ca3d2af.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/0636aa3bebe797c508b6.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/15d35086285be53a5087.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/03924bb48891b5b95260.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/1ca509efb6d47d1e2b79.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/0fbdb26f2878c7470231.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/6b7a2285caaf6776d1ad.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/259f18abdac23464e7b1.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/e7f6ec4af41577843b55.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/286146c5b9fd31859775.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/5273e709092ebdf61ca8.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/9ad7bec9ecfae98e07dd.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/b96f3e505e5e471a21a4.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/040150ee78d0a731165c.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/50ec89a5fa0cba18e4a4.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/52e8f06c6ae3b48ebdc6.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/398480f30ae7dfa90a64.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/03c7ec75cbd27324585d.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/3ac67b05953647c08e85.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/dc969e116335be9e7ea4.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2fb0c6500dd2c168eab0.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/309b623753e97bb1b008.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/1c665cd285818c41d280.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/2bc04f6496618bda0072.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/019085c19ab061e2c433.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/1b7791170b578245b8fc.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/cecba146fb508e609190.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/163af389fdeae70e744b.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/20be742fbec47d3de012.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/1fbe7109a006b3a8048b.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/0a58a5c881e005c08955.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/0396e24471f4e62b2df7.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/1e2cb9a11742bedc616e.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/094f4a20a1574e2c0c41.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/91f9e9e78301f814e99c.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/6bc93e1b145bf9621a51.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "images/7d69adca7ff680d9cb48.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_ffd713bf1b2844e1ab83a350.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_cfe04f0396f16cd2b3108144.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_da99214608b6a4c64c147eba.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_65ef010e913fb7e7ae726b93.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_1799d276e082568c951d8297.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_2bc1e210df0ca07929073e49.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_4667723da59e99b1b364dab0.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_591256562443c08cb270ab05.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_31533b03e8ab51bfe5ea40e7.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_a02950eb91325e48b86c2cab.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_e47c0d9d7f998ae37485a96f.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_476b3166babab9a78f88a21b.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_9357e99a62a7ccf867e16c4a.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_f59ee8de8ca0fd619e8c5903.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_a001e2eb983da90523e3b22f.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_d89b07cb010ab8b9699a3701.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_bdb1bf6d1f2e6e4ab84010dd.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_a6afaef85065954d0e2b3f6a.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_0202a0cee6491785b33f4190.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_d6b275cb12d9250756f364fa.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_287377b12c4c81ad4da04446.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_9a1832b50637ed09a61a84e2.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_9f955db786e22fe7e62f1f71.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_dee4b90bb62d893369ede3a9.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_6425af187806370e4497388d.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_45700db39a10a0ff5a623660.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_6c1b8c30df6f72763bc28a74.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_b7916428e141fa9800bd8c87.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_0d72052e88c889301a62d77b.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_5c6777130a9e1261bd6489d0.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_a443234db42710136d52f6c5.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_8d0a070328194e8fe954009a.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_ec7cd61d21dfbf9b47aca156.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_866ac9038760b5414e0d871f.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_8b67e51dae955b5a95a5ddb5.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_ca453dcd3045c2fc4470249f.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_06c25688f98453e6c7f1bb37.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_554f212487e4af685e4cde59.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_6b13962c05c6f7fc1bdb009f.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_0fb3efc070cec2c55e40b7c6.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_a6429ee236225c6eb11ec8b8.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_2d2218af54af5ddffb395f04.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_62a25a771fda4aeea6d8c40a.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_7f4feab72dd41ad4090fa051.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_b9a293d2f7266a6ed3f3d99c.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_21c3912ec0a4950833b3e7c1.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_76a6d571e9b76a2fa5feca44.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_d4bd122e58eda3203c42cde3.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_41c6ec87b9c5e9f139ec4636.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_ecfc8c17f58393d8834c5858.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_222061f2229edbc3b0959a1b.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_ab17710aa74664473201d847.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_1b4b614c4c019b2beab507e1.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_f6244d34cd96ee6ac5c0a884.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_ea706e73db9c06709e71bf72.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_b2b357949e45bdfe7d649e9e.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_541085b21b2e216de7339e4c.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_31540c6bf516c2e6e00bf627.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_eceacce97353d30ca281a08d.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_d0f8a5fc64415f88c69025c6.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_17395f7ef851c511cd1e92de.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_c3b8c280f20797ba7079e3f0.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_815b7739d1ef87c39f0df1fd.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_a9fb71740f16f1bc2bb35095.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_d1b2c1a9fc130e07332486fe.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_fbf02c7d8e8e27bd1c6cdbec.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_6f829d621f86010fd6607e48.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_095da2911d48b327949811bb.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_a0db8bdee8b6816e6fe66618.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_d061baed678707e51c207373.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_163b230cbb6136fe8f7478de.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_c2ce2febcb9f91048ac56a35.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_81c5dcffe1822fca8c6ba2b9.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_5abd2310a405e231b3d847e3.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_3098bd9b70ac9405e9f025af.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_16d7e5dfd947f47dc065f30b.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_53c4ade4c6848828a5be79dc.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_71393ef6baa102b5a192291b.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_9376fe81e3f7f6c407799301.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_ee3007c153b0ef1c1482616c.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_7765ea1970c561d3fe0477aa.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_0ee9dbc534f2e69b552efeca.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_60f57d4a487e6f21ba64258d.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_d307b0debe953f989765e021.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_2a2f25346a6d331bc0718ed9.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_a034ba578202e588a0226500.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_07d373a8c2221f014504e0de.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_41ad8f9f6414452ccf150569.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_3f0ba67394fb4663baab5b62.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_53c364f6cb0510cbbd6c7837.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_d2862f1513caf451e263c013.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_de6f1650b58ac87b1d09a418.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_a73f206610c06c6c061853f9.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_51b954095470c29fe552c11a.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_5c562d5ca43362775bb961a8.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_2c4b427e1c489fc77019992e.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_d665c62fb32812b93fc02fea.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_718976fd5844b6738117530e.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_2829130efa9bcf7ecf534484.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_872c0b2f76bef307295759a9.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_600ec1612ca05a1e1494d67a.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_aea8cb13191291497d157c7c.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_94874d06a88c7f05f1924b9b.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_38cad2399a1fd91192f74446.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_390e1fb93628a5300c971f4d.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_2d31356c5316925112f39f83.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_10d9523482d5fea282005cb5.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_e9bb13a9bf37f1c6ef17613f.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_bf70c073b510525366edaa9c.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_841d0430c601858c35e0f5d0.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_6e5e14bccf3f8562bd7578df.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_8abaf8830b429534498d30dd.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_725dffa8ff48ae6a1716394c.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_663ba64914e5411ca0e27dc0.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_da13611d053bb92da3920c34.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_1e6a074d8fcc4cfc2672ea85.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_4f0bec6adcb342ef0e4bfe58.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_cef31287458bbfbca37331da.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_6add09872ad25c8d19520697.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_ffd23d96b1ad875163be5940.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_29a7d1a4df663ec211a708e7.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_26590dcf8d8d071ab1d3ac39.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_6302d12ff82c135f84b063a4.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_9a71beedf9daf5d9c8a84a50.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_137f76ec14ca10a876581fba.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_c7fcef58ea8309cf79d999f7.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_970fc56442eb9cc401cfb87d.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_b7438e6743d198e9d8591f2a.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_2b4878f167f8cbff68548a92.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_d214b0d2b3ffb7b182e04d37.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_59de37079a2a9598b40fb310.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_5e76391613f90e1fadd454b5.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_1eab04de6363957d900f26de.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_07ec9627d43ea9d9004655e3.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_f21edde7de3a65e0f8481a03.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_24be84216189e4fcbfdf9572.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_f487db02e98e6bef94f26e4c.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_8973b0a56d1b8fdc2552d2f8.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_6d3d284cacbcf9058b1d1234.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_572e98f28250c58be84847b5.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_3da653057b4f7814d9015027.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_20eb78776319cb25a79c1da9.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_fbf8b9bd7881fdaeef4a2120.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_eedccab4947ca2bbdc6d1f86.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_ce57c40ca13b2dc3d6d52471.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_921733008432c201cb45ee9d.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_e71ebfda4d005bbf6d96d858.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_bc8b221d026ee3959346f621.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_a85189a69bda25ce8f6b6ce8.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_797a26d77ed28576d5129641.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_8f1196c204aac8b1ec928108.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_73093f5e3932825faf0908c1.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_60a5e21a4ec14cc975d764e4.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_b2fbdd5114d504f4db6f96cb.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_5853a3f38dd925b8b86fc1b6.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_5235d342561ff22057add68e.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_4df3128b0d2f9fecb5fca9f8.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_6ecd77a97b024ca8aef13563.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_8afb9912a8fdf1375be61a2c.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_3b7710e08bbfd9072b0b997c.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_393c26dde1e7115aa3d98845.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_3fa91d7c3731d7452cb588c8.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_7e357be5612a23591f423d86.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_641d9bff889a6ef3f9403529.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_6b6c20249009f290487a3231.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_d044c8c6166ab96850495cff.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_a159a24aea52c57443f14694.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_bc7f755c56e68953e8bff500.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_9f56a0be312cc7e7244ba4c3.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_4281d297b9a963b9ae14d309.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_d0ea65a46d12fd70f73162bd.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_5e3474232ec32a010af1eb64.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_d335f179616964e2a7762137.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_e18c898ce8abfc82edc70669.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_1ff3d1222e97a88580c43b8e.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_d57397ad73a30961f9817e6c.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_c6ef01390b9dd1c903cafbf3.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_262ab866a7b9a5d64ff8e3be.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_31fed1f57850eeb4f73a3783.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_890fa4d1cc16a6b9452f8962.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_2801bf2802cbad7f223209ce.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_c25222a501d57c7a6838da3e.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_fca687623595fc4a96ab3f19.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_a84e0292189e49b473f160bd.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_8f46af325b99e9c2de8a0cc0.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_a8d040302ff61b1e27a1f00e.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_f53a51cf29d6044827614975.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_4a069d39a607bc90da9401b4.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_7f97bfc90077814004a759ea.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_51c1a4ec15bc0bd1422b2f8c.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_b642573eba363f4fb05d1aa6.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_2648446182872f247ee1f0c3.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_64d62f5e15a4bfff663474a0.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_f7101e2537573cc96e16c8cc.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_354d0ac6084dfa8d01dcf114.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_80cde6cdd144c79459190253.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_9e4a5184843a3d2bad017302.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_8c7eab1e352d427f52154e4d.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_67b8f4ff9e26bf9a6b341f6c.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_d0ee2ba9aebfc3e433b15be6.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_d36ffe05074344e9a5f72c63.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_0433814cd7949a7b351dbff8.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_2244af144c75ef45b42e4026.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_7cf142018ef304950f8a9cb9.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_79b9cb730473ad243535a5f3.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_0d1989074e1f3ae7e79de736.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_1fafb5fa80484d088830b681.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_9a5d3bcf8cc917bb79b63be5.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_34bf915b3f1be53e8f17d7ef.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_259009ae587c3fd8d1304926.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_ee358a6c29eb750db9cb8496.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_d4a376a7be0067961404682f.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_216617603d648f886ab5863f.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_2adbc2134f03d32f1d57992e.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_5646ec2a7248d491a1369dbf.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_82b2caffcd5798daab8f4f0b.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_28d6ced3a7c47b56a5e417bc.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_0ac3690a07208e6f548e9fb9.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_d6b84ad98c081e699ccdf906.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_edff77135a08e466263abd63.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_530d49b62eab363a9c674b9f.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_d1135be2eec2f98e7f9927b3.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_6b977fd3c8c2c686c00f56b7.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_f2e07730d71127b7f6c67ef7.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_94aeab813c7536a21049955d.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_21c6ccf9fb00b49cb5b1e397.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_8651f255f40cb5546f1b35a4.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_39c41078e31479b6ac4efafa.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_f289f868210f6f237ed1e664.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_092f597ef286c624ab991bfe.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_ce0e7dd04cf8f21fd0905e9a.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_a2b235c8a217a9663c2e75aa.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_5f7e7b97b85c5961cbd94a75.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_93944427cc38da891f40cdab.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_a99df9822bb123d2140c78a0.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_61096fa871d3493373e1ad4a.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_6cd4c98ab62139621b5a1c4a.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_e64a7eb61982b615fa614b02.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_f77235957ed0b3342ac3bdb1.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_484929778ce461c3e525c316.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_a4431a6e49b784e3a66bc1d8.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_c8a976c7d18fddf5bafafddf.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_3588790982122bd78a32bb2b.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_f37365298e0f1efc72f4280e.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_74c0655084c5c71db18b83fb.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_620f54c1b0d3b61f530e56db.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_917b9510ddbb291fbc87453c.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_a7c2a7b24586950c172d9818.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_caf3e2f45678c855914d95c9.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_f38207b3ef13d7e5e207779a.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_3393d4284aa5604f4c2de310.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_4f355e76f998417f96ee4c2d.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_4b1f570424dc843fe09b4427.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_68ee870dbef0723e12d1ab3d.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_8862dd5eea0ad41ea77ee144.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_6966a3e448ebab93aff76599.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_27479b72f9bd34e16889ad6e.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_318b5dded80ccfa52d0a7d2b.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_ce1093c7e1e0ad4e16af5f43.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_6744472f414fcfd3daea5ece.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_f4430f5a60e09bcc585d159e.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_507d81235a73a5bbb7fe8151.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_0003e9a162c8a377c4405a59.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_7f20980eb388cee6cdb2af44.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_a3a2a9f2b1eb0b5f4d034ba3.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_9b751d01c046ea5ceb145ac6.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_98dbb34108aff09f071cf7a5.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_688908f0defdccd497d91f87.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_9ca6951dea992459444ac7fd.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_dcf62ed8e6f1ce9b65574298.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_11b310719f80192a7f533d8b.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_582a00f10403ee5362c0adc8.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_fadc8d2beccbeb9104b5d8a9.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_a341af32d19216d74000a5ab.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_1ed83dbd79a589ebd545d24c.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_a60487a8f39330dcc98c8bf6.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_fb371b073c862636ef18e4d2.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_6d42ce33e4b5003bcaa9de2b.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_16689d7abec30647358b713c.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_84d7b4c53c46024e38c2b42a.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_39020b5f583417955e08ff8d.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_f52fa9970cccd841da7fc297.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_9b7266fb5ad82c8849bd10b0.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_7b805a40258d1445c7222b0a.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_de66bd0dd7f6d6d77eb305a7.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_502e1a7e9eced474ce73ad0a.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_66ea7b90b6e8c00e7b3e6991.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_ecdf09d363b31e54963e0274.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_0e6cb28cfb749c99b075d3db.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_ea15a0367ed9e364641b30ef.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_1be353ba5924698f256fc88d.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_0724a2f12f8e738a04fb9a9d.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_ae97586c4e030cd10cf02b1f.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_0b42843bb3bec9f8dd1a70ed.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_728491526bcb5f5a42ddcf3c.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_bf40d52b3688894970ee7247.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_d68ea8fb273bfb17cc893acc.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_228efcd2d2b2b7c307adf722.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_a5cc5ef69da6e5aac1834124.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_2d37a4498580789d68e37ea6.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_5777d4f89aeefdc7fe644a62.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_4902b17668ff191b608467e3.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_d36ed0472f41794f66c875ea.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_f93bf3b2dff83f2e7805b69a.jpg",
+      "split": "validation",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_ae031a954b30fdfe45d7ad5e.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_f5e8b58ab0aa93a8b3c8913f.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_b097dcc81110b401f006eb98.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_bbfdcabaf21bb369ae110bd7.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_7bec73ad9fd2019aaaa1eb58.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_76acfa67a8541dd905853735.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_54be3d3b5c0dd00cdc151a72.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_1676f545ca5591db58c29e38.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_fbeedb35fcdb1063d932c20e.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_0341ecf7a7a14246adfd8aef.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_7daf8158c25b210415a45461.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_c60a956ffbaff32a1553955f.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_bf3a0c78d991b7f8dec5f353.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_28cd2e2a6ac1ec491f808a15.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_e1570928bdc2e7bd27692906.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_65f955ca2b8bb6b8fc9bb694.jpg",
+      "split": "train",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_f612a26eee7a964f3dd87f4a.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_a6f977217dd27d92bfe0da18.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_4b17d11da39fd6e87c71ab6f.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_3d486e4625fbfda270a4ed16.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_991ce0ebc2fa7698c05f9716.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_66fc74452951ff1587902683.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_f9c8933460baf44c030d3aa1.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_0ba1423afebfad3c78b8898e.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_6e08d590dde27dfb290476ab.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_53dbf4d585495a73be84d55b.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_347a22d9b28edcddcb46f4c1.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_b57b698726354d4cb92666b5.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_b4d949a32a99658fc9c64ba3.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_0959a86a7edb0b7ec397f594.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_3e9e53af3d1d31cdd04e04de.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_497211594e3776c14ea880d4.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_1a02adf0470c1c172e0d08c9.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_c57f93798ed88c81665abe0a.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_0bdf73518a2ecee88f5f5297.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_c0b84d6f35863b704a2a4e1a.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_3325f7e6f8b892f4b1d6fb3f.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_3ad1da213b04d6fb400cca7d.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_144efac9db4718a03806be1b.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_2274f13d4e6e0191128ff7a0.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_f8339b57d5504926754871dd.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_2a9724493622c06686d451dc.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_e06702a9f35c5225ca2f257e.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_d0e026e8f99ebb8367ece78b.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_e06be19389d4bebe3a81fddb.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_d4401184fe4ff93e1a41818c.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_25f4651a1ad13b16548751a6.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_69c68accb9f518e1775ad612.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_f8b5f677af5673a047ef41f4.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_566b42638d1ad80cc06614d7.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_8f01410dbee3e89bf66ef7ed.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_e9e004a8d4b51625dfeea5d3.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_088327c8606c615fdaeeb5bf.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_4b4aeb928a05851b675f314c.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_1bc4dfe165181294b3ae9b39.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_6c2bfb22985fdd9e43b99efe.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_43cf22e0d9d8b898986a2c31.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_58bc791f9fa0cda9ec786d2a.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_a5def00dd84acd2be777b834.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_adc6f76b08547ae86548643e.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_bec70eab7ed6211e14270d44.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_1a2c8472e50e8c98a4476715.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_4ea1074252e56677ad6ebf02.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_36383e8c94186ae4306abb79.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_7de8fb7da3c3a1c76cfa78d3.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_67142703a323e81bf19ef404.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_46e554783090ae37c0578f55.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_09d728874ca58c9f337f0e8c.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_107b3b864a4b79aa0ae829f0.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_e5d2bc3afce851944ed87abb.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_7fbf6d697965ccc965b039f0.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_3c438b5f9601b9619696d976.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_ddc05ccdf6d1da4c69e30591.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_f959508a685ab22a9fd2a5b3.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_122cb8b451ef549abdd94b29.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_96b4d1c057f7514ffa41ece5.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_c7ab55aa0f47d3f3ee312829.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_eb0660ab484d0eec0488400d.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_5d29f8b9847ba7a78f291c4e.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_4826d91455ee64ca676107cd.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_b35050f21cb3097eab23c84a.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_79070df95874f35ab8b6107d.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_c6e37903e8b2a06dbedfb404.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_14e57e5897960edb63a61333.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_2b9669bc4a43e4756a503030.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_83d5054324fc7e7b321f5336.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_0926812421fc1d5a5f194fa5.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_4ed0fee4a987397e7de6c762.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_669216c5d1eb5a87bb0c49a3.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_054b81f675b0c763b81ea029.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_9091be39012182a4b6bfca14.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_b3b42f01c6150186624422f8.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_2bc871697c013cc0c5d33a76.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_bfc9ee529b8c9c432c44eda9.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_a024133bc6d0b96f4cd347bf.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_7a6c35ce8ee57e4e761a4ba7.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_607158c73a24e43013ec7c26.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_5ac1563df153868b15f26874.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_f1487b3f633bb90247759ac9.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_356cf6620dfb309d1c76ab69.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_2f5520ae8b9db4c1c75702c8.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_0daaeb302fca16028520897b.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_6116e085c50c9ab761d954e8.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_effae145498edec9fe49d412.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_9bd22bdfab51072ad1230b7c.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_748adea6f9e7728a23be04fb.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_9bdb4ace1b5efc01d9c96b5b.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_7a80da0309b3b357b63fefef.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_5364cea5f93579732d4f401e.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_a3d2fc8fa410ad1d48b9d053.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_80d0afe41ce08267ed309cbb.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_3575b6484bfe06cfae6aba43.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_a77d85bbc2f8bb1dc3c7ae04.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_1f01bceff9e5881b954c93de.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_8255a43a3f35b66f43902b5a.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_537d6b9bc069b94c515ad5f7.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_d43fdb9bc6a81656e54199e8.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_d6e7a53f588cf645b0c9405c.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_fbda58d29c912964431028b8.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_c1ef35d133c27c44892ecd1a.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_35a68c906dee61c49e78bfa4.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_dd65a5de1b8f439a72a43427.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_bf7c1e21d68b8d63bab5856a.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_eab8c25a414a0ce0934ad04d.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_948541a86f72941b8c7b9917.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_160fd777601013e8963a020b.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_c641a423a032e7476d664655.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_df4dd587e91048873770ddbd.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_107f7e631104fbb1b86c6b74.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_944e6a6861454f916bdac5c4.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_d2420d2e2ce07e3bb0e0fa08.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_b44b3d1c763c1b1573ac31bb.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_081e863a14fecb5622b197ef.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_b078e429937d61c18ce3999d.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_c5a0dafd767f6cc30a1b86e1.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_05507f1b819a21adb962e32a.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_a9dc12d7623031a28802e7ea.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_57a8ea94b74a3cb6137f2767.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_f0a9b86d23a1c34ee6106dfe.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_5206df96b8ee90e75f4eae79.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_2f4fa1c6c5f493590e80fe24.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_aff34a336183a4aa368d76bd.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_91edaf6d6b59b46b3c5cbdda.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_d3613a07bfcbe6fe3669fcd8.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_46a04b75911f2594cac57d7b.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_4f212308a3a953a1240c25ba.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_28aa33474e67d36bebd0b141.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_69c07ef39af05edcbee2f3c3.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_8c2ec4b1ea2fc1fb9210952b.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_4a94e6f33990e59f719c48cb.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_2cb87234f16dcf2891fa0120.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_8fad26aa643f829aa6a435e4.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_54562effddedf5ddac3da117.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_f1f38b920209f8efdc5b421d.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_4a057f76fa7045932c014bba.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_188d46eefc4622b50c40418d.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_cf43a99c40ed2366b32e0407.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_ea2250539a7d7000e6daa30f.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_9de7e6d7b8c7e6719e1fb7e6.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_3af99085459cf388dbb4b1db.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_7ddae4ebacb939568d2192cc.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_ac65b3726308f76a7c0a76b3.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_1a28b3b393d38cab384c3af7.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_4c5653c4ff29d5f5919ae0ea.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_5d97144a7ec862b1976dd14f.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_987dc96cc840a3f27cc170ba.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_4580808a0a963883e696d2ce.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_44d3551c7c3bcbb3032ec20b.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_80dc4caf5b04795bd2d82f71.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_a55febf89943595eb1e68d80.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_e88a659083aa304505636514.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_11489973d49328a1a355cc0a.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_f62a3153e67f9bbcc791267f.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_9a73c4752dbe2877e778d24b.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_cb3eb126319c325a57d9dd47.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_e99a67d658d599821927265d.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_1be81861452a23f4e70b5cdf.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_476c3fe9dab0709cb82a3708.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_ba8e2456952d325160607623.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_57a340ea271d006871b3634b.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_dea3d6e51377c7d8cdfe5e34.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_9880061f36046a103e65684f.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_52f893b37385503caa01a8b7.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_6fa09dfa8577b1d194ee639e.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_f736b0739cfdab9e365de204.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_eee92ccec7b747a3e52cd3e3.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_124ac85543abbe81529d33ec.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_ecdba32ae0260b6f85a35243.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_133c398fd04940c008ddac64.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_a30c9d5c7fdd8e6dde8a202e.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_0cb0dc9ff378afcc4d5e4c37.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_f5658b7255e56ff7da58e3c6.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_933b3d075ddd2ccbedfef76a.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_820ce5917556897d4cb5de8b.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_91ca8bac5094df26a09bff6c.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_136ae9a2d3af3083d6ed41bd.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_7038e933f203045d3a15a501.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_0970089d17dc839f7b3272eb.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_f5c5b7f8386cb4ff427fa17b.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_0402f76f5f489d3dbd605ab7.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_af1c73f36b7ede2e2a71b622.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_4b45b2e405346f845323f92f.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_92c9d92a574b4221f1c340a9.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_c41d46e61a2d8a3ceada1c68.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_caf610b272b8c3c17b414bac.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_d785e4e8a7c44febb24cf26a.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_d6e86ad14d47f41556b8d892.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_613cf089aaac46db1668885e.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_eccd0c345e8d9db676da403c.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_2a94ee1923285f6eb1c41e36.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_3443ab2c076929a7e3e5da5c.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_7bbbda2d37eb5668cb6c7e7d.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_4852c26f2976e853a6a478e0.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_0d98fc385e5f59c6d98f3628.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_1a3370914e96aa08ba42c49a.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_d5c3a1206ce282d87c4c8301.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_b1eb02fc0ef014b59cf496f1.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_bd1c451c2a3838effab054c5.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_fbacd8f1a10a3e6477bb6f2a.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_6343a987093ab05a00e92108.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_e159c56f9a5b9e56cb0c99c2.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_e55743f5811c8e4506ab74d7.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_f3bc632c817ec6b54b6ba694.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_9ce8b8388b163ee01b14dd38.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_ad3783740c0bd5cf4d3838fa.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_79a7cc4738a0c42880f0d9c0.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_47a3c6575602a6c088347d0f.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_4bf3a2ded3db8670e7b3e759.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_926c2fadb0f6202630239e8c.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_aafa42dd8cc10a20039874a0.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_d05f7f32eb6c907fec886dee.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_a30864d98cd6efdf1db6036c.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_f7f185c75ee181a839c9195d.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_aa029f00d7fbab689aa7a8a6.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_3c8228346e0348ca1c403f87.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_1d08b885bc69e764faff8536.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_1adc33ef804fa75c87d97131.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_124e8be927747741875af985.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_076279972a5d3d129446b8b9.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_cfce3c992962ca696c83f480.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_368e3c076b1beaecc9d18f8f.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_643a48ed0c0660a97728f80d.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_98c2f990a5135c0a28688709.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_4787f84a1d27ca77e78a88c8.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_1add26d54984a49733df7572.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_24ec043fc8623c17eaac668a.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_67f94c3faf01af5975dbfdcf.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_458d18a5fd47453aed6a7102.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_2784018f064d7881b6155dc8.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_d128373898455bb06637d3d8.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_bd00af15d820030e7060db1e.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_6120359846e8139635b0c788.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_25d9601fbfa35560e3da6cea.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_f149e17b8cbc933e0c7d57b7.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_180a3d347fec72d7aaa0bf12.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_21ef83ec3ea0a8a9ff1f853a.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_c22a9267fd4b634a0b2a4776.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_1c656a9255480879fb7273b1.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_73e58486a1a0465b1604bf60.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_b758d648c3172a8827401d88.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_cbebb0a9f8f77e2ddd8ba3ec.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_dac6484a835086f27a83d4c4.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_a527a5088206cf6f886e4c8d.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_a8a25fd73ccfbb41742f8c3e.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_d24a9a86766dda9160ab3c92.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_2677d613c460d1b8c0ff1e02.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_252683694f4366c01eb63bde.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_79a082f2c33ef37a5a7f1e11.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_a1eb9bd34e1f6b9f34abc446.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_832c53e447e8471aa03f0b84.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_59eba57f63548a88a4000553.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_5adf2b1f5363bbaaf1c3c774.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_3db19605f10dc0b98ffb90d6.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_0d377111aef3f6c83ddd519b.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_5fd3c5c37b975f897dab52e3.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_fc70e1617aedada15c7a85f9.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_05cc91f927f5de0a31d6581a.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_37b2d21c5a3fdc4044fb8165.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_f33ad6ddf0976d74880cf6f7.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_eb30c30e192e965fba67a596.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_82760d959335dbbe7b2c1dd2.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_1b6e49363d7d4b2d377661d9.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_b769688bea44a91a211b5500.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_f542b17518cce939fde9c7f3.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_18983456cd89710b2d235b1e.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_b047d25f15b64c7592fdf99d.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_23d53eb64d54c4eb8f62c70d.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_8d02c51373beac5ff51e5aaa.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_8a53896b5650de54dda5d5da.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_6a05c6db010232504cb9473c.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_7cc7707fecda5a40bf2994b7.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_15ec5c5f2e3256ab50bde731.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_be665d19b8d43159000c8e72.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_3ea0c7e8493abf5e2bf82c31.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_782adf3f3b28a89780edf5b5.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_082e9d4a98090c755b8cac01.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_49824dcc1f1bfe43b327edc8.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_030ec9557215c6a8fe09d1dc.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_e1fd58c793f85fc4226ef212.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_9e7ffbdf0dd2847af025cefe.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_bf28fa9c3a778946c0437907.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_b6296cc1e368a754eedf1840.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_e3b9951936120d46369c5ceb.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_2e73050660bf9f1d7e62cedf.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_d686b97ffefdaa2f5fddf2c5.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_96971ce2cbe1fcae4ef162de.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_d6193e36f860db6bce4e9d0d.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_a2c98267b1d65b1718ba7d9e.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_3f8cbccf542760d5e99607f7.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_33d30086275f2ae5633a019c.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_314891898bd685e1cbef44f2.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_62770ab3e858d83b9db55235.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_3de5ab61a0c4b386fbffaaa2.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_0238b366e39a0d4411812488.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_609493e837b23f06e3ffd405.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_920a3402229e2d369d518823.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_5ad8e08b79967788ad660e91.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_496b3da04cd23d1060663ae9.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_5711322f5564c2300aceb5c2.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_0d7a069e1301c21a0d7b1618.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_b66376999a2cf60827a48ebf.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_dde2c37f1943b88d59fa307f.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_9d047f6338eb711e198bea68.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_1dfa94297f4e46bb2c37253c.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_e25b0fb350803da83bb37401.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_a3be609291720c22069b01c6.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_95207de64c95735bb679b455.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_c9c1baf6e6244248f2124159.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_48d20e266e4db47a6e8388d3.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    },
+    {
+      "image": "stanford/images/stanford_5f1b13e688ad224d4986f75d.jpg",
+      "split": "test",
+      "rgb_mean_error": 0.0,
+      "matched": true
+    }
+  ],
+  "counts": {
+    "BYD Song Plus": {
+      "train": 17,
+      "validation": 2,
+      "test": 4
+    },
+    "Chery Tiggo 7": {
+      "train": 22,
+      "validation": 5,
+      "test": 3
+    },
+    "Chevrolet Captiva": {
+      "train": 32,
+      "validation": 8,
+      "test": 11
+    },
+    "Chevrolet Cobalt": {
+      "train": 12,
+      "validation": 0,
+      "test": 2
+    },
+    "Chevrolet Damas": {
+      "train": 3,
+      "validation": 0,
+      "test": 0
+    },
+    "Chevrolet Lacetti": {
+      "train": 32,
+      "validation": 8,
+      "test": 5
+    },
+    "Chevrolet Malibu": {
+      "train": 38,
+      "validation": 6,
+      "test": 10
+    },
+    "Chevrolet Nexia": {
+      "train": 4,
+      "validation": 0,
+      "test": 1
+    },
+    "Chevrolet Onix": {
+      "train": 32,
+      "validation": 2,
+      "test": 2
+    },
+    "Chevrolet Spark": {
+      "train": 49,
+      "validation": 19,
+      "test": 14
+    },
+    "Chevrolet Tracker": {
+      "train": 20,
+      "validation": 5,
+      "test": 2
+    },
+    "Daewoo Matiz": {
+      "train": 27,
+      "validation": 5,
+      "test": 4
+    },
+    "Daewoo Nexia": {
+      "train": 37,
+      "validation": 8,
+      "test": 9
+    },
+    "Haval Jolion": {
+      "train": 21,
+      "validation": 5,
+      "test": 2
+    },
+    "Kia K5": {
+      "train": 17,
+      "validation": 4,
+      "test": 3
+    },
+    "Lada 2101": {
+      "train": 16,
+      "validation": 3,
+      "test": 3
+    },
+    "BMW 3 Series Sedan 2012": {
+      "train": 35,
+      "validation": 8,
+      "test": 42
+    },
+    "Honda Accord Sedan 2012": {
+      "train": 33,
+      "validation": 6,
+      "test": 38
+    },
+    "Hyundai Accent 2012": {
+      "train": 21,
+      "validation": 3,
+      "test": 24
+    },
+    "Hyundai Santa Fe 2012": {
+      "train": 34,
+      "validation": 8,
+      "test": 42
+    },
+    "Hyundai Sonata 2012": {
+      "train": 35,
+      "validation": 5,
+      "test": 39
+    },
+    "Hyundai Tucson 2012": {
+      "train": 37,
+      "validation": 7,
+      "test": 43
+    },
+    "Toyota Camry 2012": {
+      "train": 34,
+      "validation": 10,
+      "test": 43
+    },
+    "Toyota Corolla 2012": {
+      "train": 39,
+      "validation": 5,
+      "test": 43
+    },
+    "BYD Qin Plus": {
+      "train": 14,
+      "validation": 3,
+      "test": 3
+    },
+    "BYD Seagull": {
+      "train": 15,
+      "validation": 3,
+      "test": 3
+    },
+    "BYD Seal": {
+      "train": 18,
+      "validation": 4,
+      "test": 4
+    },
+    "BYD Yuan Plus": {
+      "train": 15,
+      "validation": 3,
+      "test": 3
+    },
+    "Chery Tiggo 8": {
+      "train": 16,
+      "validation": 4,
+      "test": 3
+    },
+    "Geely Galaxy E5": {
+      "train": 16,
+      "validation": 4,
+      "test": 3
+    },
+    "Haval H6": {
+      "train": 16,
+      "validation": 3,
+      "test": 3
+    },
+    "Zeekr 001": {
+      "train": 22,
+      "validation": 5,
+      "test": 5
+    }
+  },
+  "labels_and_splits_unchanged": true,
+  "city_examples_used": false
+}

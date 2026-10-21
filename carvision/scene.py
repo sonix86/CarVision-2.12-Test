@@ -27,16 +27,41 @@ def classify(p,crop,mask):
         weight=p.mask_fusion['brand_mask_weight'];prob=brand_prob(crop)*(1-weight)+brand_prob(focused)*weight;bp,index=prob.max(0);bp=float(bp);brand=p.brands[int(index)] if bp>=p.brand_threshold else 'unknown'
         brand_alternatives=[dict(brand=p.brands[int(i)],confidence=float(prob[i])) for i in prob.topk(min(3,len(p.brands))).indices]
     model=dict(model='unknown',model_candidate='unknown',model_confidence=0.,model_alternatives=[])
+    badge=None
     if p.vehicle_classifier is not None:
-        weight=p.mask_fusion['model_mask_weight'];prob=p.vehicle_classifier.probabilities(crop,p.classifier,p.preprocess)*(1-weight)+p.vehicle_classifier.probabilities(focused,p.classifier,p.preprocess)*weight;model=p.vehicle_classifier.describe(prob,brand)
+        weight=p.mask_fusion['model_mask_weight'];prob=p.vehicle_classifier.probabilities(crop,p.classifier,p.preprocess)*(1-weight)+p.vehicle_classifier.probabilities(focused,p.classifier,p.preprocess)*weight
+        badge_detector=getattr(p.vehicle_classifier,'badge_evidence',None)
+        if badge_detector is not None:
+            from .badge_evidence import fuse_badge
+            badge=badge_detector.predict(crop,mask)
+            prob=fuse_badge(prob,list(zip(p.vehicle_classifier.brands,p.vehicle_classifier.labels)),badge)
+        model=p.vehicle_classifier.describe(prob,brand)
         # The older make head has a closed vocabulary. A newly trained model
         # head can identify an added manufacturer; never force it into one of
         # the old18 brands. Require the model head's calibrated acceptance gate.
         new_brand=model.get('model_candidate_brand')
         reference=p.vehicle_classifier.references
         gate=reference.threshold if reference is not None else p.vehicle_classifier.threshold
+        make_scores={}
+        for option in model.get('model_ranking',[]):
+            make_scores[option['brand']]=make_scores.get(option['brand'],0.)+option['confidence']
+        body_make,body_make_confidence=max(make_scores.items(),key=lambda item:item[1],default=(None,0.))
+        make_gate=getattr(getattr(p.vehicle_classifier,'body_expert',None),'make_threshold',max(.9,gate))
         if new_brand and new_brand not in p.brands and model.get('model_confidence',0)>=max(.85,gate):
             brand=new_brand;bp=sum(r['confidence'] for r in model.get('model_ranking',[]) if r['brand']==new_brand);model=p.vehicle_classifier.describe(prob,brand);brand_source='own model head taxonomy; manufacturer absent from older make head'
+        elif (getattr(p.vehicle_classifier,'body_expert',None) is not None
+              and body_make and body_make!=brand
+              and (brand=='unknown' or brand in p.vehicle_classifier.brands)
+              and body_make_confidence>=make_gate):
+            # Only the validation-calibrated, independently trained expert can
+            # correct the older make head. Unsupported makes retain their own
+            # evidence; colour/location never force a Chevrolet answer.
+            # Several Chevrolet models can together establish the make while
+            # Cobalt versus Captiva is still uncertain. Do not require one
+            # exact-model probability to stand in for the make probability.
+            brand=body_make;bp=body_make_confidence
+            brand_alternatives=[dict(brand=b,confidence=score) for b,score in sorted(make_scores.items(),key=lambda item:item[1],reverse=True)[:3]]
+            model=p.vehicle_classifier.describe(prob,brand);brand_source='own body-detail expert, high-confidence calibrated correction of older make head'
     colour,cp=heuristic_colour(focused);source='foreground HSV fallback';threshold=p.colour_reliability_threshold
     if p.colour_classifier is not None:
         prob=p.colour_classifier.probabilities(focused);source='own colour head on isolated visible instance'
@@ -44,7 +69,7 @@ def classify(p,crop,mask):
             prob=p.masked_colour.blend(prob,p.masked_colour.probabilities(crop,mask));threshold=p.masked_colour.threshold;source='own source-labelled visible-paint head + isolated-instance colour evidence'
         cp,index=prob.max(0);cp=float(cp);colour=COLOURS[int(index)];alternatives=[dict(colour=COLOURS[int(i)],confidence=float(prob[i])) for i in prob.topk(2).indices]
     else:alternatives=[dict(colour=colour,confidence=cp)]
-    return dict(brand=brand,brand_confidence=bp,brand_alternatives=brand_alternatives,brand_source=brand_source,**model,colour=colour,colour_confidence=cp,colour_reliable=cp>=threshold,colour_alternatives=alternatives,colour_source=source)
+    return dict(brand=brand,brand_confidence=bp,brand_alternatives=brand_alternatives,brand_source=brand_source,badge_evidence=badge,**model,colour=colour,colour_confidence=cp,colour_reliable=cp>=threshold,colour_alternatives=alternatives,colour_source=source)
 
 @torch.inference_mode()
 def predict_instances(p,original,path,region,single,started):

@@ -1,0 +1,40 @@
+{
+  "purpose": "Reviewed research material only. No new photographs used in the body-expert training round or validation selection.",
+  "total": 30,
+  "excluded_sources": {
+    "https://www.flickr.com/photos/59398780@N00/20533166160": "US Delta-platform Cobalt, incompatible with existing Gamma-II Cobalt family",
+    "https://www.flickr.com/photos/57067135@N05/5447145013": "Interior only",
+    "https://www.flickr.com/photos/57067135@N05/5447144837": "Interior only",
+    "https://www.flickr.com/photos/57067135@N05/5447144913": "Interior only",
+    "https://www.flickr.com/photos/57067135@N05/5447144737": "Engine only",
+    "https://www.flickr.com/photos/57067135@N05/5447747348": "Interior only",
+    "https://www.flickr.com/photos/57067135@N05/5447143905": "Studio publicity: photographic provenance not sufficient for this round",
+    "https://www.flickr.com/photos/57067135@N05/5447145707": "Ambiguous promotional/partially open body",
+    "https://www.flickr.com/photos/57067135@N05/5447748920": "Studio publicity and near-duplicate",
+    "https://www.flickr.com/photos/57067135@N05/5447144049": "Wrong body/model: pickup shown under Captiva title",
+    "https://www.flickr.com/photos/37691369@N08/5710392619": "Studio publicity",
+    "https://www.flickr.com/photos/57067135@N05/5447143651": "Duplicate studio publicity",
+    "https://www.flickr.com/photos/82756760@N00/2110623264": "Racing body/detail fragment, unsuitable road-model label",
+    "https://www.flickr.com/photos/36957528@N04/4843938937": "Race-modified model, unsuitable road-model label",
+    "https://www.flickr.com/photos/56619626@N05/7452907478": "Several explicitly named models; no single-car ground truth"
+  },
+  "kept_sources": [
+    "https://www.flickr.com/photos/37691369@N08/24596654543",
+    "https://www.flickr.com/photos/37691369@N08/26572229852",
+    "https://www.flickr.com/photos/57067135@N05/5447145137",
+    "https://www.flickr.com/photos/57067135@N05/5447749034",
+    "https://www.flickr.com/photos/57067135@N05/5447747998",
+    "https://www.flickr.com/photos/57067135@N05/5447145243",
+    "https://www.flickr.com/photos/57067135@N05/5447747856",
+    "https://www.flickr.com/photos/57067135@N05/5447144587",
+    "https://www.flickr.com/photos/57067135@N05/5447747738",
+    "https://www.flickr.com/photos/57067135@N05/5447749162",
+    "https://www.flickr.com/photos/57067135@N05/5447747110",
+    "https://www.flickr.com/photos/8593553@N05/2305509218",
+    "https://www.flickr.com/photos/35224583@N07/3270230474",
+    "https://www.flickr.com/photos/117096107@N03/37446383052",
+    "https://www.flickr.com/photos/30474136@N07/52978688685"
+  ],
+  "cobalt_group": "Both Gamma-II images share photographer/date and must never be split apart. Reserved for final diagnostic only; not training or calibration.",
+  "generated_photos": false
+}
