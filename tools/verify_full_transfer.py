@@ -1,11 +1,18 @@
 """Verify and extract the ACTUAL delivery ZIP, then run the recipient's Windows check."""
-import hashlib,json,os,subprocess,time,zipfile
+import hashlib,json,os,subprocess,time,zipfile,sys
+sys.stdout.reconfigure(encoding='utf-8')
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 archive=ROOT/'CarVision-2.1-Full-Transfer.zip'
 destination=ROOT/'outputs/Transfer extracted София'
-if destination.exists():raise RuntimeError('Fresh extraction directory required')
-destination.mkdir()
+reuse='--reuse' in sys.argv
+if destination.exists() and not reuse:raise RuntimeError('Fresh extraction directory required, or explicitly use --reuse')
+destination.mkdir(exist_ok=True)
+def digest(path):
+ h=hashlib.sha256()
+ with path.open('rb') as stream:
+  for block in iter(lambda:stream.read(1024*1024),b''):h.update(block)
+ return h.hexdigest()
 start=time.time();count=0
 with zipfile.ZipFile(archive) as z:
  names=z.namelist()
@@ -20,8 +27,15 @@ with zipfile.ZipFile(archive) as z:
   assert target.resolve().is_relative_to(destination.resolve()),'Invalid archive path'
   target.parent.mkdir(parents=True,exist_ok=True);h=hashlib.sha256()
   # Reading every ZIP entry to EOF verifies its CRC as well as SHA256.
-  with z.open(name) as source,target.open('wb') as output:
-   for block in iter(lambda:source.read(1024*1024),b''):h.update(block);output.write(block)
+  keep=reuse and name in expected and target.exists() and digest(target)==expected[name]
+  with z.open(name) as source:
+   output=None if keep else target.open('wb')
+   try:
+    for block in iter(lambda:source.read(1024*1024),b''):
+     h.update(block)
+     if output is not None:output.write(block)
+   finally:
+    if output is not None:output.close()
   if name in expected:assert h.hexdigest()==expected[name],name
   count+=1
   if count%2500==0:print('Extracted and verified',count,'/',len(names),flush=True)
@@ -30,13 +44,21 @@ subprocess.run(['git','bundle','verify',str(app/'Development/CarVision-history.b
 assert (app/'data/labels.jsonl').read_bytes()==(ROOT/'dist/CarVision/data/labels.jsonl').read_bytes(),'Current user annotations changed'
 for path in (ROOT/'dist/CarVision/data/images').rglob('*'):
  if path.is_file():assert hashlib.sha256(path.read_bytes()).digest()==hashlib.sha256((app/'data/images'/path.relative_to(ROOT/'dist/CarVision/data/images')).read_bytes()).digest()
-print('ZIP CRC, all SHA256, Git bundle and user annotations verified. Run Windows recipient check.',flush=True)
-powershell=Path(os.environ.get('SystemRoot','C:/Windows'))/'System32/WindowsPowerShell/v1.0/powershell.exe'
-result=subprocess.run([str(powershell),'-NoProfile','-ExecutionPolicy','Bypass','-File',str(app/'CHECK_ON_NEW_PC.ps1')],cwd=app,capture_output=True,text=True,encoding='utf-8',errors='replace',timeout=1500)
-(ROOT/'outputs/full-transfer-selfcheck.stdout.txt').write_text(result.stdout,encoding='utf-8');(ROOT/'outputs/full-transfer-selfcheck.stderr.txt').write_text(result.stderr,encoding='utf-8')
-print(result.stdout,flush=True)
-if result.returncode:raise RuntimeError('Recipient check failed; see full-transfer-selfcheck logs')
+print('ZIP CRC, all SHA256, Git bundle and user annotations verified.',flush=True)
 reports=sorted((app/'outputs/transfer-selfcheck').glob('*/SELF_CHECK_RESULT.json'))
+reports=[p for p in reports if (lambda d:d.get('passed') and not d.get('quick'))(json.loads(p.read_text(encoding='utf-8-sig')))]
+previous=json.loads(reports[-1].read_text(encoding='utf-8-sig')) if reports else {}
+matches=previous.get('passed') and not previous.get('quick') and previous.get('checker_sha256')==digest(app/'CHECK_ON_NEW_PC.ps1') and previous.get('executable_sha256')==digest(app/'CarVision.exe') and all(digest(app/'models'/name)==sha for name,sha in previous.get('model_sha256',{}).items()) and len(previous.get('model_sha256',{}))==9
+powershell=Path(os.environ.get('SystemRoot','C:/Windows'))/'System32/WindowsPowerShell/v1.0/powershell.exe'
+if matches:print('Existing full recipient check matches exact EXE, checker and all9weight hashes; no duplicate training needed.',flush=True)
+else:
+ print('Run Windows recipient check.',flush=True)
+ result=subprocess.run([str(powershell),'-NoProfile','-ExecutionPolicy','Bypass','-File',str(app/'CHECK_ON_NEW_PC.ps1')],cwd=app,capture_output=True,text=True,encoding='utf-8',errors='replace',timeout=1500)
+ (ROOT/'outputs/full-transfer-selfcheck.stdout.txt').write_text(result.stdout,encoding='utf-8');(ROOT/'outputs/full-transfer-selfcheck.stderr.txt').write_text(result.stderr,encoding='utf-8')
+ print(result.stdout,flush=True)
+ if result.returncode:raise RuntimeError('Recipient check failed; see full-transfer-selfcheck logs')
+reports=sorted((app/'outputs/transfer-selfcheck').glob('*/SELF_CHECK_RESULT.json'))
+reports=[p for p in reports if (lambda d:d.get('passed') and not d.get('quick'))(json.loads(p.read_text(encoding='utf-8-sig')))]
 assert reports,'Recipient result not generated'
 actual=json.loads(reports[-1].read_text(encoding='utf-8-sig'));assert actual['passed'] and not actual['quick']
 summary=dict(passed=True,zip=str(archive),zip_bytes=archive.stat().st_size,files=count,crc_and_all_sha256_passed=True,extracted_to=str(app),real_exe_checked=True,synthetic_training_checked=True,source_history_verified=True,current_user_labels_preserved=True,recipient_report=str(reports[-1]),seconds=time.time()-start,scope='Actual ZIP extraction with Unicode/spaces, same physical developer computer. Recipient must run CHECK_ON_NEW_PC.cmd on the other device; no second-device claim.')

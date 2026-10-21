@@ -1,5 +1,6 @@
 param([switch]$Quick)
 $ErrorActionPreference = 'Stop'
+[Console]::OutputEncoding = [Text.UTF8Encoding]::new($false)
 $taskRoot = $PSScriptRoot
 $taskStamp = Get-Date -Format 'yyyyMMdd-HHmmss-fff'
 $taskRun = Join-Path $taskRoot ('outputs\transfer-selfcheck\' + $taskStamp)
@@ -12,6 +13,14 @@ $env:PATH = "$env:SystemRoot\System32;$env:SystemRoot"
 $env:PYTHONHOME = ''; $env:PYTHONPATH = ''; $env:PYTHONIOENCODING = 'utf-8'
 $env:OMP_NUM_THREADS = '3'; $env:MKL_NUM_THREADS = '3'
 $taskOverall = [ordered]@{ passed=$false; version='2.1'; computer=$env:COMPUTERNAME; os=[Environment]::OSVersion.VersionString; architecture=$env:PROCESSOR_ARCHITECTURE; path=$taskRoot; python_in_path=$false; quick=[bool]$Quick; started=(Get-Date).ToString('o'); scope='Engineering/portability checks on THIS computer, not recognition accuracy or an independent phone exam'; steps=$taskResults }
+
+function Get-LocalSHA256 {
+    param([string]$LiteralPath)
+    $taskStream = [IO.File]::OpenRead($LiteralPath)
+    $taskAlgorithm = [Security.Cryptography.SHA256]::Create()
+    try { return [BitConverter]::ToString($taskAlgorithm.ComputeHash($taskStream)).Replace('-','').ToLowerInvariant() }
+    finally { $taskStream.Dispose(); $taskAlgorithm.Dispose() }
+}
 
 function Invoke-CarVision {
     param([string]$Name, [string[]]$Arguments, [int]$TimeoutSeconds=120, [bool]$AllowFailure=$false)
@@ -35,15 +44,18 @@ function Invoke-CarVision {
 }
 
 try {
+    $taskOverall['checker_sha256'] = Get-LocalSHA256 -LiteralPath $PSCommandPath
+    $taskOverall['executable_sha256'] = Get-LocalSHA256 -LiteralPath $taskExe
     if (-not [Environment]::Is64BitOperatingSystem) { throw 'Windows x64 is required.' }
     if (-not (Test-Path -LiteralPath $taskExe)) { throw 'CarVision.exe is missing. Extract the complete ZIP first.' }
     $taskModels = Get-Content -LiteralPath (Join-Path $taskRoot 'Development\ACTIVE_MODEL_SHA256.json') -Raw -Encoding UTF8 | ConvertFrom-Json
     $taskBefore = @{}
     foreach ($taskEntry in $taskModels.PSObject.Properties) {
-        $taskHash = (Get-FileHash -LiteralPath (Join-Path $taskRoot ('models\'+$taskEntry.Name)) -Algorithm SHA256).Hash.ToLowerInvariant()
+        $taskHash = Get-LocalSHA256 -LiteralPath (Join-Path $taskRoot ('models\'+$taskEntry.Name))
         if ($taskHash -ne $taskEntry.Value) { throw ('Model checksum mismatch: '+$taskEntry.Name) }
         $taskBefore[$taskEntry.Name] = $taskHash
     }
+    $taskOverall['model_sha256'] = $taskBefore
     Write-Host '[PASS] Included trained weights match the handoff manifest.'
     $null = Invoke-CarVision -Name 'help' -Arguments @('--help')
     $taskPhoto = Join-Path $taskRoot 'samples\images\03.jpg'
@@ -86,7 +98,7 @@ try {
     }
 
     foreach ($taskName in $taskBefore.Keys) {
-        if ((Get-FileHash -LiteralPath (Join-Path $taskRoot ('models\'+$taskName)) -Algorithm SHA256).Hash.ToLowerInvariant() -ne $taskBefore[$taskName]) { throw ('Production model unexpectedly changed: '+$taskName) }
+        if ((Get-LocalSHA256 -LiteralPath (Join-Path $taskRoot ('models\'+$taskName))) -ne $taskBefore[$taskName]) { throw ('Production model unexpectedly changed: '+$taskName) }
     }
     $taskOverall.passed = $true
     Write-Host 'PASS - EXE, trained weights, prediction, region and exports work on this computer.' -ForegroundColor Green
