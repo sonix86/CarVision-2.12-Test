@@ -22,6 +22,7 @@ function Invoke-CarVision {
     $taskQuoted = ($Arguments | ForEach-Object { '"' + $_.Replace('"','\"') + '"' }) -join ' '
     $taskWatch = [Diagnostics.Stopwatch]::StartNew()
     $taskProcess = Start-Process -FilePath $taskExe -ArgumentList $taskQuoted -WorkingDirectory $taskRoot -WindowStyle Hidden -RedirectStandardOutput $taskOut -RedirectStandardError $taskErr -PassThru
+    $null = $taskProcess.Handle
     if (-not $taskProcess.WaitForExit($TimeoutSeconds*1000)) {
         $taskProcess.Kill()
         throw ("Timeout in " + $Name + "; see " + $taskErr)
@@ -88,12 +89,12 @@ try {
         if ((Get-FileHash -LiteralPath (Join-Path $taskRoot ('models\'+$taskName)) -Algorithm SHA256).Hash.ToLowerInvariant() -ne $taskBefore[$taskName]) { throw ('Production model unexpectedly changed: '+$taskName) }
     }
     $taskOverall.passed = $true
-    Write-Host 'PASS — EXE, trained weights, prediction, region and exports work on this computer.' -ForegroundColor Green
-    if (-not $Quick) { Write-Host 'PASS — isolated training and evaluation also completed; production models unchanged.' -ForegroundColor Green }
+    Write-Host 'PASS - EXE, trained weights, prediction, region and exports work on this computer.' -ForegroundColor Green
+    if (-not $Quick) { Write-Host 'PASS - isolated training and evaluation also completed; production models unchanged.' -ForegroundColor Green }
 }
 catch {
     $taskOverall['error'] = $_.Exception.Message
-    Write-Host ('FAIL — '+$_.Exception.Message) -ForegroundColor Red
+    Write-Host ('FAIL - '+$_.Exception.Message) -ForegroundColor Red
 }
 finally {
     $env:PATH = $taskOriginalPath
