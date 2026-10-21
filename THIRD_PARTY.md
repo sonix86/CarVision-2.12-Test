@@ -42,3 +42,8 @@ The visible-paint ExtraTrees head is trained locally on source-labelled VCoR sam
 ## Visible-part references / v1.7
 
 The 3,740 descriptors come exclusively from the existing 374 regional training photographs and their whole/upper/left/right views. The descriptor network is our own previously trained model-name network; no ready-made vehicle-model or brand classifier was obtained. Public source categories, authors, image changes, licences and group splits remain in data/regional metadata. Validation and test images, city examples and filenames are not references. The portable package distributes learned descriptors, not the raw regional training images. Relative scores only compare the sixteen learned classes; they are not an open-world probability of correctness.
+
+
+## Expanded models / v1.8
+
+Eight explicit2012 Stanford Cars classes were added using original human MAT model annotations and the previously verified original Git-blob/image mapping. Mirror fine_label and heuristic colour labels are not model ground truth. Existing public train/validation and official test allocations were preserved. Vehicle identity-separated generalization is not certified. Counts and source original names/hashes are in models/expanded_dataset.json; sources and research-use attribution remain in data/public_prototype/provenance.json. Raw training images are not distributed in the portable package. New train-only reference descriptors and the24-class CNN were learned in this project, not obtained as an automotive pretrained classifier.

@@ -4,7 +4,7 @@ from pathlib import Path
 from unittest.mock import patch
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from carvision.core import ROOT,Pipeline,save_prediction
-out=ROOT/'outputs/release-runtime-v17';out.mkdir(parents=True,exist_ok=True);results=[]
+out=ROOT/'outputs/release-runtime-v18';out.mkdir(parents=True,exist_ok=True);results=[]
 def hashes():return {name:hashlib.sha256((ROOT/'models'/name).read_bytes()).hexdigest() for name in ['classifier.pt','detector.pt','colour_model.pt','vehicle_model.pt','segmenter.pt','masked_colour.pt','visual_references.pt']}
 model_hashes=hashes()
 with patch.object(socket.socket,'connect',side_effect=AssertionError('Unexpected network request')):

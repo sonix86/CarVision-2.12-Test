@@ -18,3 +18,5 @@ samples/images/*.jpg
 datasets/
 data/public_prototype/images/
 data/regional/images/
+
+dist-v18/
