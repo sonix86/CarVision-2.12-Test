@@ -1,0 +1,84 @@
+[
+  {
+    "image": "owner_oct25/92f4c38fbd6997c34912.jpg",
+    "brand": "BYD",
+    "family": "Dolphin",
+    "source": {
+      "image": "92f4c38fbd6997c34912.jpg",
+      "source": "D:\\машинки\\photo_4_2026-10-25_20-44-40.jpg",
+      "original_sha256": "92f4c38fbd6997c3491298e25ab6d83f240e9040473976146679babb7866d7d7",
+      "brand": "BYD",
+      "colour": "white",
+      "point": [
+        600,
+        680
+      ],
+      "group": "owner-phone-outing-2026-10-25",
+      "split": "train",
+      "provenance": "User make/model correction in chat; colour visually reviewed by assistant",
+      "model": "unknown",
+      "box": [
+        290,
+        562,
+        744,
+        825
+      ],
+      "role": "TRAIN only, same outing group; never independent evaluation",
+      "previous_known_error_now_training": true
+    },
+    "role": "TRAIN correction, not independent accuracy"
+  },
+  {
+    "image": "owner_oct25/75125c4829113a7d613b.jpg",
+    "brand": "BYD",
+    "family": "Song Plus",
+    "source": {
+      "image": "75125c4829113a7d613b.jpg",
+      "source": "D:\\машинки\\photo_5_2026-10-25_20-44-40.jpg",
+      "original_sha256": "75125c4829113a7d613b8abf3be874641917b773db1dddd21506d1d30ea1f04a",
+      "brand": "BYD",
+      "colour": "black",
+      "point": null,
+      "group": "owner-phone-outing-2026-10-25",
+      "split": "train",
+      "provenance": "User make/model correction in chat; colour visually reviewed by assistant",
+      "model": "unknown",
+      "box": [
+        77,
+        107,
+        960,
+        937
+      ],
+      "role": "TRAIN only, same outing group; never independent evaluation",
+      "previous_known_error_now_training": true
+    },
+    "role": "TRAIN correction, not independent accuracy"
+  },
+  {
+    "image": "owner_oct25/91db7f0812f6222cbaad.jpg",
+    "brand": "Dongfeng",
+    "family": "Aeolus E70",
+    "source": {
+      "image": "91db7f0812f6222cbaad.jpg",
+      "source": "D:\\машинки\\11223344.jpg",
+      "original_sha256": "91db7f0812f6222cbaad619d5af32e6d78d5be7322276d1648d06f2f5707cab4",
+      "brand": "Dongfeng",
+      "colour": "white",
+      "point": null,
+      "group": "owner-phone-outing-2026-10-25",
+      "split": "train",
+      "provenance": "User make/model correction in chat; colour visually reviewed by assistant",
+      "model": "Aeolus E70",
+      "box": [
+        328,
+        514,
+        712,
+        767
+      ],
+      "role": "TRAIN only, same outing group; never independent evaluation",
+      "previous_known_error_now_training": true,
+      "previous_assumed_label": "GAC Aion, disputed then corrected by independent E70 exterior-source comparison"
+    },
+    "role": "TRAIN correction, not independent accuracy"
+  }
+]

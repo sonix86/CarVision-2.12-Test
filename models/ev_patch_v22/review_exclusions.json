@@ -1,0 +1,15 @@
+{
+  "ev_patch_flickr_v22/39af4cdf8dd43fc0827b.jpg": "Dashboard/interior; generic detector false positive.",
+  "ev_patch_flickr_v22/251c9dd2308e84d87c3e.jpg": "Prominent full-body artwork; retain as review-only domain challenge.",
+  "ev_patch_flickr_v22/8e0d62cd643530effb40.jpg": "Open bonnet obscures normal exterior front profile.",
+  "ev_patch_flickr_v22/69efe8c005747e046cfc.jpg": "Interior cabin; no usable exterior body.",
+  "ev_patch_flickr_v22/0e822ce9c8d0d9d4ec81.jpg": "Open bonnet obscures normal exterior front profile.",
+  "ev_patch_v22/3d9327b6bc0dc476924b.jpg": "Interior/dashboard photograph; generic segmenter false positive, not an exterior body.",
+  "ev_patch_v22/4239bb9a75110d752acb.jpg": "Interior/dashboard photograph; generic segmenter false positive, not an exterior body.",
+  "ev_patch_v22/019a2be1f51365782fac.jpg": "Open boot/cargo detail rather than normal exterior; review-only.",
+  "ev_patch_v22/3a8cdf3307126d9d3116.jpg": "Duplicate of previously excluded full-body artwork photo (Flickr/Commons source alias); review-only.",
+  "ev_patch_v22/1925de1ab2b89c6bd1f1.jpg": "Isolated wheel/arch detail; no usable complete exterior for this classifier dataset.",
+  "ev_patch_v22/027ad9e5a5cd01ee8657.jpg": "Powertrain component instead of exterior vehicle",
+  "ev_patch_v22/2ec1fa38bad23eb588de.jpg": "Sedan shown under SUV bZ4X source label; inconsistent vehicle body",
+  "ev_patch_v22/2f2483e50581245f185d.jpg": "Sedan shown under crossover G6 source label; inconsistent vehicle body"
+}

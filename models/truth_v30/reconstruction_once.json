@@ -1,0 +1,1 @@
+{"reason": "Failed candidates were not serialized by original training script. Deterministically reconstruct the fixed round1epoch49 for architecture analysis; no new epoch/candidate selection.", "seed": 300101, "epoch": 49}

@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "checks": {
+    "confirmed_views": true,
+    "confirmed_precision": true,
+    "priority_makes": true
+  },
+  "priority_enabled": {
+    "BYD": true,
+    "Zeekr": true,
+    "Li Auto": true,
+    "Chevrolet": true,
+    "Toyota": true
+  },
+  "candidate_sha256": "e551618022d002022b70dd36c45953b6b0854142b2d9f8ff5a1080b113510a93",
+  "test_used": false
+}

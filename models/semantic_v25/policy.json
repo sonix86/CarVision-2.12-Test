@@ -1,0 +1,16 @@
+{
+  "iteration": "New explicit user-authorized resumption after the manual midterm-wrapper test",
+  "rounds_max": 2,
+  "epochs_per_round_max": 80,
+  "candidates": ["Own supervised cosine head on general CLIP whole-instance features", "Own supervised cosine head on whole-instance plus body-detail features"],
+  "initialization": "Generic LAION CLIP text embeddings initialize the head; every head is then trained on labelled vehicle images. No untrained zero-shot answer is deployed.",
+  "priority_makes": ["BYD", "Zeekr", "Li Auto", "Chevrolet", "Toyota"],
+  "selection": "Validation only: .5 whole macro + .2 synthetic-phone macro + .3 priority-make whole macro; old historical validation within 2 percentage points",
+  "data": "Frozen multimodal_v24 dataset and source/session splits. 18 manually verified private training crops; no unverified AI labels. Existing reported errors excluded from fitting. No filename features.",
+  "calibration": "Per-make validation precision >=90%, >=3 source groups, confidence >=.5, margin >=.06, minimum view dimension 40 pixels",
+  "validation_release": {"confirmed_views_min": 40, "confirmed_precision_min": 0.9, "all_priority_makes_enabled": true},
+  "test_release": {"whole_top1_gain_min": 0.03, "historical_min_delta": -0.02, "confirmed_precision_min": 0.9, "confirmed_count_min": 30, "correct_confirmed_at_least_baseline_compatibility": true},
+  "test_warning": "Existing public heldouts have been used in earlier iterations and are not a fresh blind Uzbekistan field trial. No epoch or threshold reselection after this fixed model is tested.",
+  "no_paid_services": true,
+  "stopping": "Stop after these two fits; reject failed candidates without lowering release guards or starting an endless search. Existing 2.2 release remains intact."
+}

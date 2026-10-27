@@ -1,0 +1,8 @@
+{
+  "complete": true,
+  "source_sha256": "983f1562536e84ff750a1576fb08e54de751dbf2e17c0d8a4a13704341fdcd3d",
+  "dataset_sha256": "422319bb418c29feac8f9d25feabbdddd9d59b6d1e9a3bb5589e9cb22045fae6",
+  "feature_items": 7302,
+  "test_features_requested": true,
+  "ready_made_car_classifier": false
+}

@@ -1,0 +1,4727 @@
+{
+  "passed": false,
+  "checks": {
+    "whole": false,
+    "stress": true
+  },
+  "metrics": {
+    "whole": {
+      "count": 240,
+      "baseline": 0.9166666666666666,
+      "candidate": 0.875
+    },
+    "warm": {
+      "count": 240,
+      "baseline": 0.625,
+      "candidate": 0.8291666666666667
+    },
+    "shadow": {
+      "count": 240,
+      "baseline": 0.7458333333333333,
+      "candidate": 0.8291666666666667
+    }
+  },
+  "per_colour": {
+    "white": {
+      "whole": {
+        "count": 30,
+        "baseline": 0.9666666666666667,
+        "candidate": 0.9
+      },
+      "warm": {
+        "count": 30,
+        "baseline": 0.0,
+        "candidate": 0.8333333333333334
+      },
+      "shadow": {
+        "count": 30,
+        "baseline": 0.3,
+        "candidate": 0.7666666666666667
+      }
+    },
+    "black": {
+      "whole": {
+        "count": 30,
+        "baseline": 0.8333333333333334,
+        "candidate": 0.7666666666666667
+      },
+      "warm": {
+        "count": 30,
+        "baseline": 0.5333333333333333,
+        "candidate": 0.7666666666666667
+      },
+      "shadow": {
+        "count": 30,
+        "baseline": 0.9666666666666667,
+        "candidate": 0.8
+      }
+    },
+    "grey": {
+      "whole": {
+        "count": 30,
+        "baseline": 0.8,
+        "candidate": 0.7666666666666667
+      },
+      "warm": {
+        "count": 30,
+        "baseline": 0.03333333333333333,
+        "candidate": 0.5
+      },
+      "shadow": {
+        "count": 30,
+        "baseline": 0.43333333333333335,
+        "candidate": 0.7
+      }
+    },
+    "red": {
+      "whole": {
+        "count": 30,
+        "baseline": 1.0,
+        "candidate": 0.9666666666666667
+      },
+      "warm": {
+        "count": 30,
+        "baseline": 0.8333333333333334,
+        "candidate": 1.0
+      },
+      "shadow": {
+        "count": 30,
+        "baseline": 1.0,
+        "candidate": 0.9666666666666667
+      }
+    },
+    "blue": {
+      "whole": {
+        "count": 30,
+        "baseline": 0.9666666666666667,
+        "candidate": 0.9666666666666667
+      },
+      "warm": {
+        "count": 30,
+        "baseline": 0.7666666666666667,
+        "candidate": 0.8666666666666667
+      },
+      "shadow": {
+        "count": 30,
+        "baseline": 0.9,
+        "candidate": 0.9333333333333333
+      }
+    },
+    "green": {
+      "whole": {
+        "count": 30,
+        "baseline": 1.0,
+        "candidate": 0.9666666666666667
+      },
+      "warm": {
+        "count": 30,
+        "baseline": 0.9,
+        "candidate": 0.9333333333333333
+      },
+      "shadow": {
+        "count": 30,
+        "baseline": 0.9,
+        "candidate": 0.9333333333333333
+      }
+    },
+    "brown": {
+      "whole": {
+        "count": 30,
+        "baseline": 0.9333333333333333,
+        "candidate": 0.9333333333333333
+      },
+      "warm": {
+        "count": 30,
+        "baseline": 1.0,
+        "candidate": 0.9333333333333333
+      },
+      "shadow": {
+        "count": 30,
+        "baseline": 0.8333333333333334,
+        "candidate": 0.8
+      }
+    },
+    "yellow": {
+      "whole": {
+        "count": 30,
+        "baseline": 0.8333333333333334,
+        "candidate": 0.7333333333333333
+      },
+      "warm": {
+        "count": 30,
+        "baseline": 0.9333333333333333,
+        "candidate": 0.8
+      },
+      "shadow": {
+        "count": 30,
+        "baseline": 0.6333333333333333,
+        "candidate": 0.7333333333333333
+      }
+    }
+  },
+  "records": [
+    {
+      "truth": "white",
+      "group": "vcor/test/white/5f1aa0dd05.jpg",
+      "whole": {
+        "baseline": "white",
+        "prediction": "white",
+        "confidence": 0.9080995321273804
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "white",
+        "confidence": 0.6997317671775818
+      },
+      "shadow": {
+        "baseline": "white",
+        "prediction": "white",
+        "confidence": 0.7179712653160095
+      }
+    },
+    {
+      "truth": "white",
+      "group": "vcor/test/white/6b80577649.jpg",
+      "whole": {
+        "baseline": "white",
+        "prediction": "white",
+        "confidence": 0.8020378351211548
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "white",
+        "confidence": 0.506508469581604
+      },
+      "shadow": {
+        "baseline": "grey",
+        "prediction": "white",
+        "confidence": 0.5783873200416565
+      }
+    },
+    {
+      "truth": "white",
+      "group": "vcor/test/white/b9d60c95fe.jpg",
+      "whole": {
+        "baseline": "white",
+        "prediction": "white",
+        "confidence": 0.8230920433998108
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "white",
+        "confidence": 0.44643011689186096
+      },
+      "shadow": {
+        "baseline": "grey",
+        "prediction": "white",
+        "confidence": 0.5373995900154114
+      }
+    },
+    {
+      "truth": "white",
+      "group": "vcor/test/white/19580db798.jpg",
+      "whole": {
+        "baseline": "white",
+        "prediction": "white",
+        "confidence": 0.3790585696697235
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.3824569582939148
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.4733823537826538
+      }
+    },
+    {
+      "truth": "white",
+      "group": "vcor/test/white/47dccbe8ec.jpg",
+      "whole": {
+        "baseline": "white",
+        "prediction": "white",
+        "confidence": 0.7837435007095337
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "white",
+        "confidence": 0.5853114724159241
+      },
+      "shadow": {
+        "baseline": "grey",
+        "prediction": "white",
+        "confidence": 0.5767218470573425
+      }
+    },
+    {
+      "truth": "white",
+      "group": "vcor/test/white/e9a26b8ff0.jpg",
+      "whole": {
+        "baseline": "white",
+        "prediction": "white",
+        "confidence": 0.9454855918884277
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "white",
+        "confidence": 0.570182740688324
+      },
+      "shadow": {
+        "baseline": "grey",
+        "prediction": "white",
+        "confidence": 0.6367614269256592
+      }
+    },
+    {
+      "truth": "white",
+      "group": "vcor/test/white/8738d678a1.jpg",
+      "whole": {
+        "baseline": "white",
+        "prediction": "white",
+        "confidence": 0.9832314848899841
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "white",
+        "confidence": 0.6395443677902222
+      },
+      "shadow": {
+        "baseline": "grey",
+        "prediction": "white",
+        "confidence": 0.6856140494346619
+      }
+    },
+    {
+      "truth": "white",
+      "group": "vcor/test/white/3eb077024b.jpg",
+      "whole": {
+        "baseline": "white",
+        "prediction": "white",
+        "confidence": 0.686448335647583
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.46475598216056824
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "grey",
+        "confidence": 0.5495713949203491
+      }
+    },
+    {
+      "truth": "white",
+      "group": "vcor/test/white/f2fc173e1a.jpg",
+      "whole": {
+        "baseline": "white",
+        "prediction": "white",
+        "confidence": 0.48430368304252625
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "white",
+        "confidence": 0.35734376311302185
+      },
+      "shadow": {
+        "baseline": "white",
+        "prediction": "white",
+        "confidence": 0.35851722955703735
+      }
+    },
+    {
+      "truth": "white",
+      "group": "vcor/test/white/489a6522c7.jpg",
+      "whole": {
+        "baseline": "white",
+        "prediction": "white",
+        "confidence": 0.7926092743873596
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "white",
+        "confidence": 0.6891913414001465
+      },
+      "shadow": {
+        "baseline": "white",
+        "prediction": "grey",
+        "confidence": 0.5368605256080627
+      }
+    },
+    {
+      "truth": "white",
+      "group": "vcor/test/white/08c6f0b675.jpg",
+      "whole": {
+        "baseline": "white",
+        "prediction": "white",
+        "confidence": 0.9541983604431152
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "white",
+        "confidence": 0.6984788775444031
+      },
+      "shadow": {
+        "baseline": "white",
+        "prediction": "white",
+        "confidence": 0.7697411775588989
+      }
+    },
+    {
+      "truth": "white",
+      "group": "vcor/test/white/bdf0ce1887.jpg",
+      "whole": {
+        "baseline": "white",
+        "prediction": "white",
+        "confidence": 0.8972200155258179
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "white",
+        "confidence": 0.5172528028488159
+      },
+      "shadow": {
+        "baseline": "grey",
+        "prediction": "white",
+        "confidence": 0.5955416560173035
+      }
+    },
+    {
+      "truth": "white",
+      "group": "vcor/test/white/603c973438.jpg",
+      "whole": {
+        "baseline": "white",
+        "prediction": "white",
+        "confidence": 0.8366650938987732
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "white",
+        "confidence": 0.7072633504867554
+      },
+      "shadow": {
+        "baseline": "white",
+        "prediction": "white",
+        "confidence": 0.7200541496276855
+      }
+    },
+    {
+      "truth": "white",
+      "group": "vcor/test/white/482c2079e7.jpg",
+      "whole": {
+        "baseline": "white",
+        "prediction": "white",
+        "confidence": 0.49812501668930054
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.46096378564834595
+      },
+      "shadow": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.5584104061126709
+      }
+    },
+    {
+      "truth": "white",
+      "group": "vcor/test/white/2294c7f609.jpg",
+      "whole": {
+        "baseline": "white",
+        "prediction": "white",
+        "confidence": 0.9022985696792603
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "white",
+        "confidence": 0.6663941740989685
+      },
+      "shadow": {
+        "baseline": "white",
+        "prediction": "white",
+        "confidence": 0.7234679460525513
+      }
+    },
+    {
+      "truth": "white",
+      "group": "vcor/test/white/c485046662.jpg",
+      "whole": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.47665631771087646
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "grey",
+        "confidence": 0.48711514472961426
+      },
+      "shadow": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.8166555762290955
+      }
+    },
+    {
+      "truth": "white",
+      "group": "vcor/test/white/e5b993e18e.jpg",
+      "whole": {
+        "baseline": "white",
+        "prediction": "white",
+        "confidence": 0.9567477703094482
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "white",
+        "confidence": 0.5675859451293945
+      },
+      "shadow": {
+        "baseline": "grey",
+        "prediction": "white",
+        "confidence": 0.6445983648300171
+      }
+    },
+    {
+      "truth": "white",
+      "group": "vcor/test/white/e8907b4b77.jpg",
+      "whole": {
+        "baseline": "white",
+        "prediction": "white",
+        "confidence": 0.9092711210250854
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "white",
+        "confidence": 0.5218902230262756
+      },
+      "shadow": {
+        "baseline": "grey",
+        "prediction": "white",
+        "confidence": 0.4837576448917389
+      }
+    },
+    {
+      "truth": "white",
+      "group": "vcor/test/white/6e7b33a43f.jpg",
+      "whole": {
+        "baseline": "white",
+        "prediction": "black",
+        "confidence": 0.49761977791786194
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "white",
+        "confidence": 0.5013257265090942
+      },
+      "shadow": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.4923417270183563
+      }
+    },
+    {
+      "truth": "white",
+      "group": "vcor/test/white/b18d8d0351.jpg",
+      "whole": {
+        "baseline": "white",
+        "prediction": "grey",
+        "confidence": 0.5474332571029663
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "white",
+        "confidence": 0.4877869188785553
+      },
+      "shadow": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.7085340023040771
+      }
+    },
+    {
+      "truth": "white",
+      "group": "vcor/test/white/8df2a4d92b.jpg",
+      "whole": {
+        "baseline": "white",
+        "prediction": "white",
+        "confidence": 0.7524145245552063
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "white",
+        "confidence": 0.4980221092700958
+      },
+      "shadow": {
+        "baseline": "grey",
+        "prediction": "white",
+        "confidence": 0.5823519825935364
+      }
+    },
+    {
+      "truth": "white",
+      "group": "vcor/test/white/601dc1c0d1.jpg",
+      "whole": {
+        "baseline": "white",
+        "prediction": "white",
+        "confidence": 0.843048095703125
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "white",
+        "confidence": 0.5014700889587402
+      },
+      "shadow": {
+        "baseline": "white",
+        "prediction": "white",
+        "confidence": 0.6671230792999268
+      }
+    },
+    {
+      "truth": "white",
+      "group": "vcor/test/white/a7a977f8a4.jpg",
+      "whole": {
+        "baseline": "white",
+        "prediction": "white",
+        "confidence": 0.9896299242973328
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "white",
+        "confidence": 0.6665693521499634
+      },
+      "shadow": {
+        "baseline": "grey",
+        "prediction": "white",
+        "confidence": 0.7075176239013672
+      }
+    },
+    {
+      "truth": "white",
+      "group": "vcor/test/white/dbe2a973a1.jpg",
+      "whole": {
+        "baseline": "white",
+        "prediction": "white",
+        "confidence": 0.9547282457351685
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "white",
+        "confidence": 0.5132677555084229
+      },
+      "shadow": {
+        "baseline": "white",
+        "prediction": "white",
+        "confidence": 0.7117776870727539
+      }
+    },
+    {
+      "truth": "white",
+      "group": "vcor/test/white/c27b6c305a.jpg",
+      "whole": {
+        "baseline": "white",
+        "prediction": "white",
+        "confidence": 0.5280013084411621
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "white",
+        "confidence": 0.5651793479919434
+      },
+      "shadow": {
+        "baseline": "grey",
+        "prediction": "white",
+        "confidence": 0.5592771172523499
+      }
+    },
+    {
+      "truth": "white",
+      "group": "vcor/test/white/0af23aa4e0.jpg",
+      "whole": {
+        "baseline": "white",
+        "prediction": "white",
+        "confidence": 0.8549044728279114
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "white",
+        "confidence": 0.647438645362854
+      },
+      "shadow": {
+        "baseline": "white",
+        "prediction": "white",
+        "confidence": 0.6700825095176697
+      }
+    },
+    {
+      "truth": "white",
+      "group": "vcor/test/white/ff4046ffc2.jpg",
+      "whole": {
+        "baseline": "white",
+        "prediction": "white",
+        "confidence": 0.5883702039718628
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.4488740861415863
+      },
+      "shadow": {
+        "baseline": "grey",
+        "prediction": "white",
+        "confidence": 0.5086203813552856
+      }
+    },
+    {
+      "truth": "white",
+      "group": "vcor/test/white/fbf7557f3f.jpg",
+      "whole": {
+        "baseline": "white",
+        "prediction": "white",
+        "confidence": 0.927604079246521
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "white",
+        "confidence": 0.5367420315742493
+      },
+      "shadow": {
+        "baseline": "grey",
+        "prediction": "white",
+        "confidence": 0.5685430765151978
+      }
+    },
+    {
+      "truth": "white",
+      "group": "vcor/test/white/05beec100f.jpg",
+      "whole": {
+        "baseline": "white",
+        "prediction": "white",
+        "confidence": 0.9858533143997192
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "white",
+        "confidence": 0.5001422166824341
+      },
+      "shadow": {
+        "baseline": "grey",
+        "prediction": "white",
+        "confidence": 0.700755774974823
+      }
+    },
+    {
+      "truth": "white",
+      "group": "vcor/test/white/d1058af1b6.jpg",
+      "whole": {
+        "baseline": "white",
+        "prediction": "white",
+        "confidence": 0.8877009153366089
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "white",
+        "confidence": 0.5950150489807129
+      },
+      "shadow": {
+        "baseline": "grey",
+        "prediction": "white",
+        "confidence": 0.6416237354278564
+      }
+    },
+    {
+      "truth": "black",
+      "group": "vcor/test/black/efe4586820.jpg",
+      "whole": {
+        "baseline": "black",
+        "prediction": "grey",
+        "confidence": 0.5252733826637268
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "black",
+        "confidence": 0.5516241192817688
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.8220950961112976
+      }
+    },
+    {
+      "truth": "black",
+      "group": "vcor/test/black/2dcd5a2ed0.jpg",
+      "whole": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.694277822971344
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.41227367520332336
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.5407894849777222
+      }
+    },
+    {
+      "truth": "black",
+      "group": "vcor/test/black/8ed74bb508.jpg",
+      "whole": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.885061502456665
+      },
+      "warm": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.7451277375221252
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.9720050096511841
+      }
+    },
+    {
+      "truth": "black",
+      "group": "vcor/test/black/6fb536c8b3.jpg",
+      "whole": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.7400356531143188
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "black",
+        "confidence": 0.6408127546310425
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.9642844200134277
+      }
+    },
+    {
+      "truth": "black",
+      "group": "vcor/test/black/4a55ddbfae.jpg",
+      "whole": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.8315591216087341
+      },
+      "warm": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.6640529632568359
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.6181745529174805
+      }
+    },
+    {
+      "truth": "black",
+      "group": "vcor/test/black/070ed15b67.jpg",
+      "whole": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.9462998509407043
+      },
+      "warm": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.6888776421546936
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.862503170967102
+      }
+    },
+    {
+      "truth": "black",
+      "group": "vcor/test/black/3d12223e07.jpg",
+      "whole": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.8074754476547241
+      },
+      "warm": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.7670921087265015
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.8270409107208252
+      }
+    },
+    {
+      "truth": "black",
+      "group": "vcor/test/black/5e516c7e44.jpg",
+      "whole": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.6463067531585693
+      },
+      "warm": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.6496704816818237
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.710511326789856
+      }
+    },
+    {
+      "truth": "black",
+      "group": "vcor/test/black/737eb1a449.jpg",
+      "whole": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.9440844058990479
+      },
+      "warm": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.7208470106124878
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.8968505263328552
+      }
+    },
+    {
+      "truth": "black",
+      "group": "vcor/test/black/375e468a7b.jpg",
+      "whole": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.5242496728897095
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.5025387406349182
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "blue",
+        "confidence": 0.37728506326675415
+      }
+    },
+    {
+      "truth": "black",
+      "group": "vcor/test/black/7fc2306e4f.jpg",
+      "whole": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.9729380011558533
+      },
+      "warm": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.7852166295051575
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.9091812372207642
+      }
+    },
+    {
+      "truth": "black",
+      "group": "vcor/test/black/2b869ea3ef.jpg",
+      "whole": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.42096370458602905
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.40016722679138184
+      },
+      "shadow": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.8081783056259155
+      }
+    },
+    {
+      "truth": "black",
+      "group": "vcor/test/black/7e7db9e7d4.jpg",
+      "whole": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.9272595643997192
+      },
+      "warm": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.7497158646583557
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.8653923273086548
+      }
+    },
+    {
+      "truth": "black",
+      "group": "vcor/test/black/ae5f5af3c4.jpg",
+      "whole": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.9703139066696167
+      },
+      "warm": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.8244863748550415
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.940518856048584
+      }
+    },
+    {
+      "truth": "black",
+      "group": "vcor/test/black/52e2308e4e.jpg",
+      "whole": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.9846303462982178
+      },
+      "warm": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.8140175342559814
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.962112545967102
+      }
+    },
+    {
+      "truth": "black",
+      "group": "vcor/test/black/877dcb4c1f.jpg",
+      "whole": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.917462170124054
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "black",
+        "confidence": 0.5686733722686768
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.6436929702758789
+      }
+    },
+    {
+      "truth": "black",
+      "group": "vcor/test/black/3419c510ba.jpg",
+      "whole": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.6967648267745972
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.34437671303749084
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.7232605218887329
+      }
+    },
+    {
+      "truth": "black",
+      "group": "vcor/test/black/9da1a94174.jpg",
+      "whole": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.8451457023620605
+      },
+      "warm": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.7531378269195557
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.9411146640777588
+      }
+    },
+    {
+      "truth": "black",
+      "group": "vcor/test/black/dab22f9044.jpg",
+      "whole": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.9236648082733154
+      },
+      "warm": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.527213990688324
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.7044187784194946
+      }
+    },
+    {
+      "truth": "black",
+      "group": "vcor/test/black/b2b37522fb.jpg",
+      "whole": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.5557951927185059
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "black",
+        "confidence": 0.5164204835891724
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "brown",
+        "confidence": 0.5116684436798096
+      }
+    },
+    {
+      "truth": "black",
+      "group": "vcor/test/black/f56db8982e.jpg",
+      "whole": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.9553616046905518
+      },
+      "warm": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.8380266427993774
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.9356721639633179
+      }
+    },
+    {
+      "truth": "black",
+      "group": "vcor/test/black/0ea1f11a35.jpg",
+      "whole": {
+        "baseline": "brown",
+        "prediction": "black",
+        "confidence": 0.5648592114448547
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.713711678981781
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "brown",
+        "confidence": 0.5139376521110535
+      }
+    },
+    {
+      "truth": "black",
+      "group": "vcor/test/black/7c70bd8072.jpg",
+      "whole": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.9251073002815247
+      },
+      "warm": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.7839729189872742
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.886167049407959
+      }
+    },
+    {
+      "truth": "black",
+      "group": "vcor/test/black/5e2e76cac5.jpg",
+      "whole": {
+        "baseline": "black",
+        "prediction": "brown",
+        "confidence": 0.4701070785522461
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "black",
+        "confidence": 0.4344611167907715
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "brown",
+        "confidence": 0.4733022153377533
+      }
+    },
+    {
+      "truth": "black",
+      "group": "vcor/test/black/a667da785d.jpg",
+      "whole": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.4800357222557068
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.38200661540031433
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.8380535840988159
+      }
+    },
+    {
+      "truth": "black",
+      "group": "vcor/test/black/40c75b2df4.jpg",
+      "whole": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.7159742116928101
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "black",
+        "confidence": 0.40071815252304077
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.6232841610908508
+      }
+    },
+    {
+      "truth": "black",
+      "group": "vcor/test/black/d0a67f122c.jpg",
+      "whole": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.4589865207672119
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "grey",
+        "confidence": 0.5391108989715576
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "grey",
+        "confidence": 0.5859175324440002
+      }
+    },
+    {
+      "truth": "black",
+      "group": "vcor/test/black/367a6f7575.jpg",
+      "whole": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.5238133668899536
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "black",
+        "confidence": 0.5228511095046997
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.7775006294250488
+      }
+    },
+    {
+      "truth": "black",
+      "group": "vcor/test/black/2201ea59f7.jpg",
+      "whole": {
+        "baseline": "black",
+        "prediction": "blue",
+        "confidence": 0.5975088477134705
+      },
+      "warm": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.35996413230895996
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.59037846326828
+      }
+    },
+    {
+      "truth": "black",
+      "group": "vcor/test/black/9be75bffb3.jpg",
+      "whole": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.9482331275939941
+      },
+      "warm": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.7419837713241577
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.9317618012428284
+      }
+    },
+    {
+      "truth": "grey",
+      "group": "vcor/test/grey/98263bda3b.jpg",
+      "whole": {
+        "baseline": "grey",
+        "prediction": "brown",
+        "confidence": 0.5497692823410034
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.7069669961929321
+      },
+      "shadow": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.4257733225822449
+      }
+    },
+    {
+      "truth": "grey",
+      "group": "vcor/test/silver/e8743c46e6.jpg",
+      "whole": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.8643425107002258
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "grey",
+        "confidence": 0.5334936380386353
+      },
+      "shadow": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.734463095664978
+      }
+    },
+    {
+      "truth": "grey",
+      "group": "vcor/test/grey/794e33dac8.jpg",
+      "whole": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.7288883924484253
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "grey",
+        "confidence": 0.48858118057250977
+      },
+      "shadow": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.7154921889305115
+      }
+    },
+    {
+      "truth": "grey",
+      "group": "vcor/test/grey/1357369694.jpg",
+      "whole": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.8935433626174927
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "grey",
+        "confidence": 0.4931987524032593
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "grey",
+        "confidence": 0.5806116461753845
+      }
+    },
+    {
+      "truth": "grey",
+      "group": "vcor/test/silver/82923ace3c.jpg",
+      "whole": {
+        "baseline": "brown",
+        "prediction": "grey",
+        "confidence": 0.387761652469635
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.6023602485656738
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "grey",
+        "confidence": 0.5754810571670532
+      }
+    },
+    {
+      "truth": "grey",
+      "group": "vcor/test/silver/2d81eae132.jpg",
+      "whole": {
+        "baseline": "brown",
+        "prediction": "grey",
+        "confidence": 0.40665364265441895
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "grey",
+        "confidence": 0.5212579369544983
+      },
+      "shadow": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.5830610990524292
+      }
+    },
+    {
+      "truth": "grey",
+      "group": "vcor/test/grey/7b4dba2608.jpg",
+      "whole": {
+        "baseline": "black",
+        "prediction": "grey",
+        "confidence": 0.5927363038063049
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.4620484709739685
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.524800181388855
+      }
+    },
+    {
+      "truth": "grey",
+      "group": "vcor/test/silver/6f31220605.jpg",
+      "whole": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.7037338614463806
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "grey",
+        "confidence": 0.495761513710022
+      },
+      "shadow": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.7457622289657593
+      }
+    },
+    {
+      "truth": "grey",
+      "group": "vcor/test/grey/7325748d5a.jpg",
+      "whole": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.7690775394439697
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "black",
+        "confidence": 0.5694795846939087
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.7273164391517639
+      }
+    },
+    {
+      "truth": "grey",
+      "group": "vcor/test/grey/3e2a7ac811.jpg",
+      "whole": {
+        "baseline": "white",
+        "prediction": "white",
+        "confidence": 0.5035661458969116
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.399985134601593
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.40683913230895996
+      }
+    },
+    {
+      "truth": "grey",
+      "group": "vcor/test/grey/06be2eb1c6.jpg",
+      "whole": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.7701249122619629
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "grey",
+        "confidence": 0.5126661658287048
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "grey",
+        "confidence": 0.6792501211166382
+      }
+    },
+    {
+      "truth": "grey",
+      "group": "vcor/test/grey/17bd34b615.jpg",
+      "whole": {
+        "baseline": "grey",
+        "prediction": "black",
+        "confidence": 0.5784730911254883
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "black",
+        "confidence": 0.511192798614502
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "grey",
+        "confidence": 0.5094821453094482
+      }
+    },
+    {
+      "truth": "grey",
+      "group": "vcor/test/grey/9d27c9a8c1.jpg",
+      "whole": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.803508996963501
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "grey",
+        "confidence": 0.5358224511146545
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "grey",
+        "confidence": 0.5659934282302856
+      }
+    },
+    {
+      "truth": "grey",
+      "group": "vcor/test/grey/7fec500f6b.jpg",
+      "whole": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.7642107605934143
+      },
+      "warm": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.6692806482315063
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "grey",
+        "confidence": 0.6230815649032593
+      }
+    },
+    {
+      "truth": "grey",
+      "group": "vcor/test/grey/2fab026e44.jpg",
+      "whole": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.6558486223220825
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.3504132628440857
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.9314024448394775
+      }
+    },
+    {
+      "truth": "grey",
+      "group": "vcor/test/silver/5c26823daf.jpg",
+      "whole": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.8316786289215088
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.4627522826194763
+      },
+      "shadow": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.8045629262924194
+      }
+    },
+    {
+      "truth": "grey",
+      "group": "vcor/test/grey/6b40839d54.jpg",
+      "whole": {
+        "baseline": "grey",
+        "prediction": "black",
+        "confidence": 0.48921626806259155
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.4115816652774811
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.7572545409202576
+      }
+    },
+    {
+      "truth": "grey",
+      "group": "vcor/test/silver/e461d87ee0.jpg",
+      "whole": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.6890354156494141
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "grey",
+        "confidence": 0.5237500667572021
+      },
+      "shadow": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.7332255840301514
+      }
+    },
+    {
+      "truth": "grey",
+      "group": "vcor/test/silver/8d21fc77a1.jpg",
+      "whole": {
+        "baseline": "brown",
+        "prediction": "grey",
+        "confidence": 0.44616809487342834
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.9218060970306396
+      },
+      "shadow": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.5565525889396667
+      }
+    },
+    {
+      "truth": "grey",
+      "group": "vcor/test/grey/6eacea58af.jpg",
+      "whole": {
+        "baseline": "grey",
+        "prediction": "black",
+        "confidence": 0.6403170824050903
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "grey",
+        "confidence": 0.6160152554512024
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.5891759395599365
+      }
+    },
+    {
+      "truth": "grey",
+      "group": "vcor/test/grey/3ec4fc265e.jpg",
+      "whole": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.762952446937561
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "grey",
+        "confidence": 0.510613739490509
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.780212938785553
+      }
+    },
+    {
+      "truth": "grey",
+      "group": "vcor/test/grey/269f46637d.jpg",
+      "whole": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.5054908394813538
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "grey",
+        "confidence": 0.47355860471725464
+      },
+      "shadow": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.7646772861480713
+      }
+    },
+    {
+      "truth": "grey",
+      "group": "vcor/test/silver/83c31bc7ae.jpg",
+      "whole": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.8520638942718506
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "grey",
+        "confidence": 0.49544399976730347
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "grey",
+        "confidence": 0.6395713686943054
+      }
+    },
+    {
+      "truth": "grey",
+      "group": "vcor/test/grey/b2ea78df52.jpg",
+      "whole": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.8327029943466187
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.7757971286773682
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "grey",
+        "confidence": 0.565876305103302
+      }
+    },
+    {
+      "truth": "grey",
+      "group": "vcor/test/grey/de06408490.jpg",
+      "whole": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.6855562925338745
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "black",
+        "confidence": 0.3531070351600647
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.8459324836730957
+      }
+    },
+    {
+      "truth": "grey",
+      "group": "vcor/test/silver/dfe1c56060.jpg",
+      "whole": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.8634486794471741
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.4615291655063629
+      },
+      "shadow": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.7606459856033325
+      }
+    },
+    {
+      "truth": "grey",
+      "group": "vcor/test/grey/5a73abcd1b.jpg",
+      "whole": {
+        "baseline": "grey",
+        "prediction": "black",
+        "confidence": 0.4927133619785309
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "black",
+        "confidence": 0.4594942331314087
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.4652523994445801
+      }
+    },
+    {
+      "truth": "grey",
+      "group": "vcor/test/grey/70e2ba391e.jpg",
+      "whole": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.7258067727088928
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "grey",
+        "confidence": 0.5583916902542114
+      },
+      "shadow": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.5866239070892334
+      }
+    },
+    {
+      "truth": "grey",
+      "group": "vcor/test/silver/03c7121768.jpg",
+      "whole": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.6250700950622559
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.5831051468849182
+      },
+      "shadow": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.6458262205123901
+      }
+    },
+    {
+      "truth": "grey",
+      "group": "vcor/test/grey/3dff4febf2.jpg",
+      "whole": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.9132628440856934
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "grey",
+        "confidence": 0.496065616607666
+      },
+      "shadow": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.7025116086006165
+      }
+    },
+    {
+      "truth": "red",
+      "group": "vcor/test/red/f67f0c46c4.jpg",
+      "whole": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9774327278137207
+      },
+      "warm": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.889056921005249
+      },
+      "shadow": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9092373847961426
+      }
+    },
+    {
+      "truth": "red",
+      "group": "vcor/test/red/0df8f813a2.jpg",
+      "whole": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9302222728729248
+      },
+      "warm": {
+        "baseline": "yellow",
+        "prediction": "red",
+        "confidence": 0.5477725863456726
+      },
+      "shadow": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.5159068703651428
+      }
+    },
+    {
+      "truth": "red",
+      "group": "vcor/test/red/fa2212cdcb.jpg",
+      "whole": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9469525218009949
+      },
+      "warm": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.8248312473297119
+      },
+      "shadow": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9597877264022827
+      }
+    },
+    {
+      "truth": "red",
+      "group": "vcor/test/red/57a90c9f82.jpg",
+      "whole": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9669854640960693
+      },
+      "warm": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.7593219876289368
+      },
+      "shadow": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.7747423648834229
+      }
+    },
+    {
+      "truth": "red",
+      "group": "vcor/test/red/9776a02bb8.jpg",
+      "whole": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9751981496810913
+      },
+      "warm": {
+        "baseline": "yellow",
+        "prediction": "red",
+        "confidence": 0.7240459322929382
+      },
+      "shadow": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9673467874526978
+      }
+    },
+    {
+      "truth": "red",
+      "group": "vcor/test/red/3a8637a1ff.jpg",
+      "whole": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.8675477504730225
+      },
+      "warm": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.8008219003677368
+      },
+      "shadow": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.8555235862731934
+      }
+    },
+    {
+      "truth": "red",
+      "group": "vcor/test/red/20133bb110.jpg",
+      "whole": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9720547199249268
+      },
+      "warm": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.8700323104858398
+      },
+      "shadow": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9623725414276123
+      }
+    },
+    {
+      "truth": "red",
+      "group": "vcor/test/red/1fc0badd4a.jpg",
+      "whole": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9785264730453491
+      },
+      "warm": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9716867208480835
+      },
+      "shadow": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9759427905082703
+      }
+    },
+    {
+      "truth": "red",
+      "group": "vcor/test/red/dd6d3e3e40.jpg",
+      "whole": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.977670431137085
+      },
+      "warm": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9891184568405151
+      },
+      "shadow": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.950819730758667
+      }
+    },
+    {
+      "truth": "red",
+      "group": "vcor/test/red/58842af1de.jpg",
+      "whole": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.95826256275177
+      },
+      "warm": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.7972313165664673
+      },
+      "shadow": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9012446403503418
+      }
+    },
+    {
+      "truth": "red",
+      "group": "vcor/test/red/5812d51bc4.jpg",
+      "whole": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.8949561715126038
+      },
+      "warm": {
+        "baseline": "yellow",
+        "prediction": "red",
+        "confidence": 0.6514263153076172
+      },
+      "shadow": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.846228837966919
+      }
+    },
+    {
+      "truth": "red",
+      "group": "vcor/test/red/755ba4edc8.jpg",
+      "whole": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9647727012634277
+      },
+      "warm": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.8177723288536072
+      },
+      "shadow": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9802117347717285
+      }
+    },
+    {
+      "truth": "red",
+      "group": "vcor/test/red/c538164529.jpg",
+      "whole": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9219428300857544
+      },
+      "warm": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.6625085473060608
+      },
+      "shadow": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.7647786140441895
+      }
+    },
+    {
+      "truth": "red",
+      "group": "vcor/test/red/dda8145df3.jpg",
+      "whole": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9877995252609253
+      },
+      "warm": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9841370582580566
+      },
+      "shadow": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9863490462303162
+      }
+    },
+    {
+      "truth": "red",
+      "group": "vcor/test/red/f332651718.jpg",
+      "whole": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9771339297294617
+      },
+      "warm": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.979404091835022
+      },
+      "shadow": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9696589708328247
+      }
+    },
+    {
+      "truth": "red",
+      "group": "vcor/test/red/58cf5733f5.jpg",
+      "whole": {
+        "baseline": "red",
+        "prediction": "yellow",
+        "confidence": 0.34504303336143494
+      },
+      "warm": {
+        "baseline": "yellow",
+        "prediction": "red",
+        "confidence": 0.33055272698402405
+      },
+      "shadow": {
+        "baseline": "red",
+        "prediction": "yellow",
+        "confidence": 0.34619981050491333
+      }
+    },
+    {
+      "truth": "red",
+      "group": "vcor/test/red/8037b54fbb.jpg",
+      "whole": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.6294735074043274
+      },
+      "warm": {
+        "baseline": "yellow",
+        "prediction": "red",
+        "confidence": 0.6304905414581299
+      },
+      "shadow": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.5175356864929199
+      }
+    },
+    {
+      "truth": "red",
+      "group": "vcor/test/red/efd5a75e51.jpg",
+      "whole": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9834091663360596
+      },
+      "warm": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9589525461196899
+      },
+      "shadow": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9920204877853394
+      }
+    },
+    {
+      "truth": "red",
+      "group": "vcor/test/red/2fbb1d46b3.jpg",
+      "whole": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9031295776367188
+      },
+      "warm": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.7212437391281128
+      },
+      "shadow": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9048188924789429
+      }
+    },
+    {
+      "truth": "red",
+      "group": "vcor/test/red/80dd14e495.jpg",
+      "whole": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9210437536239624
+      },
+      "warm": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.8819568157196045
+      },
+      "shadow": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9095885753631592
+      }
+    },
+    {
+      "truth": "red",
+      "group": "vcor/test/red/b9e8359f2c.jpg",
+      "whole": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.7042235136032104
+      },
+      "warm": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.7231583595275879
+      },
+      "shadow": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.6241477727890015
+      }
+    },
+    {
+      "truth": "red",
+      "group": "vcor/test/red/1e50ae3795.jpg",
+      "whole": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9860746264457703
+      },
+      "warm": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9853211641311646
+      },
+      "shadow": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9724559187889099
+      }
+    },
+    {
+      "truth": "red",
+      "group": "vcor/test/red/0c8ac10318.jpg",
+      "whole": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9769725203514099
+      },
+      "warm": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.8108713030815125
+      },
+      "shadow": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9702633619308472
+      }
+    },
+    {
+      "truth": "red",
+      "group": "vcor/test/red/29a8fae88a.jpg",
+      "whole": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9880532026290894
+      },
+      "warm": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9847254753112793
+      },
+      "shadow": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9861913323402405
+      }
+    },
+    {
+      "truth": "red",
+      "group": "vcor/test/red/ef805191c2.jpg",
+      "whole": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9748854041099548
+      },
+      "warm": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9876184463500977
+      },
+      "shadow": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9645737409591675
+      }
+    },
+    {
+      "truth": "red",
+      "group": "vcor/test/red/723fa71f5a.jpg",
+      "whole": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9462984204292297
+      },
+      "warm": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.8879567384719849
+      },
+      "shadow": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9231245517730713
+      }
+    },
+    {
+      "truth": "red",
+      "group": "vcor/test/red/8022dd2e64.jpg",
+      "whole": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9058900475502014
+      },
+      "warm": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.8589714765548706
+      },
+      "shadow": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9085983037948608
+      }
+    },
+    {
+      "truth": "red",
+      "group": "vcor/test/red/450deda378.jpg",
+      "whole": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9173762798309326
+      },
+      "warm": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9495214819908142
+      },
+      "shadow": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.8240160942077637
+      }
+    },
+    {
+      "truth": "red",
+      "group": "vcor/test/red/37ebbc9c28.jpg",
+      "whole": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.957996666431427
+      },
+      "warm": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.8826725482940674
+      },
+      "shadow": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9633879661560059
+      }
+    },
+    {
+      "truth": "red",
+      "group": "vcor/test/red/abb642d30d.jpg",
+      "whole": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9567245244979858
+      },
+      "warm": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9582673907279968
+      },
+      "shadow": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.9735389351844788
+      }
+    },
+    {
+      "truth": "blue",
+      "group": "vcor/test/blue/01401b6d76.jpg",
+      "whole": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.978782057762146
+      },
+      "warm": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.8885369300842285
+      },
+      "shadow": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.9667884707450867
+      }
+    },
+    {
+      "truth": "blue",
+      "group": "vcor/test/blue/b0592d99a7.jpg",
+      "whole": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.8654117584228516
+      },
+      "warm": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.8139961957931519
+      },
+      "shadow": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.7974216938018799
+      }
+    },
+    {
+      "truth": "blue",
+      "group": "vcor/test/blue/c14ec8cc51.jpg",
+      "whole": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.9711211919784546
+      },
+      "warm": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.8536988496780396
+      },
+      "shadow": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.8249692916870117
+      }
+    },
+    {
+      "truth": "blue",
+      "group": "vcor/test/blue/837676f754.jpg",
+      "whole": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.9566744565963745
+      },
+      "warm": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.9613445997238159
+      },
+      "shadow": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.8880687952041626
+      }
+    },
+    {
+      "truth": "blue",
+      "group": "vcor/test/blue/7e5fcef591.jpg",
+      "whole": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.9827322959899902
+      },
+      "warm": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.9542586803436279
+      },
+      "shadow": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.9388149976730347
+      }
+    },
+    {
+      "truth": "blue",
+      "group": "vcor/test/blue/4ebbe89063.jpg",
+      "whole": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.9638888835906982
+      },
+      "warm": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.9203985929489136
+      },
+      "shadow": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.9252960681915283
+      }
+    },
+    {
+      "truth": "blue",
+      "group": "vcor/test/blue/5aa5148f39.jpg",
+      "whole": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.9786723852157593
+      },
+      "warm": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.8804820775985718
+      },
+      "shadow": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.9449124336242676
+      }
+    },
+    {
+      "truth": "blue",
+      "group": "vcor/test/blue/0d66bc7a61.jpg",
+      "whole": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.8794798851013184
+      },
+      "warm": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.7730392813682556
+      },
+      "shadow": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.8325957655906677
+      }
+    },
+    {
+      "truth": "blue",
+      "group": "vcor/test/blue/d2b956c359.jpg",
+      "whole": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.7239443063735962
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "blue",
+        "confidence": 0.5498793721199036
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.373198002576828
+      }
+    },
+    {
+      "truth": "blue",
+      "group": "vcor/test/blue/00be3db68c.jpg",
+      "whole": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.9137784242630005
+      },
+      "warm": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.7562832832336426
+      },
+      "shadow": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.8508524894714355
+      }
+    },
+    {
+      "truth": "blue",
+      "group": "vcor/test/blue/a5a331438d.jpg",
+      "whole": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.7594454884529114
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "blue",
+        "confidence": 0.4782002866268158
+      },
+      "shadow": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.7791358232498169
+      }
+    },
+    {
+      "truth": "blue",
+      "group": "vcor/test/blue/a6f67683c7.jpg",
+      "whole": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.6877425909042358
+      },
+      "warm": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.7214555740356445
+      },
+      "shadow": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.7685158252716064
+      }
+    },
+    {
+      "truth": "blue",
+      "group": "vcor/test/blue/246797ded3.jpg",
+      "whole": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.9665135145187378
+      },
+      "warm": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.9551637172698975
+      },
+      "shadow": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.9242802858352661
+      }
+    },
+    {
+      "truth": "blue",
+      "group": "vcor/test/blue/e2ac47204e.jpg",
+      "whole": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.9713159203529358
+      },
+      "warm": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.9324654340744019
+      },
+      "shadow": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.8898801803588867
+      }
+    },
+    {
+      "truth": "blue",
+      "group": "vcor/test/blue/3b5e964079.jpg",
+      "whole": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.9645808339118958
+      },
+      "warm": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.8350796699523926
+      },
+      "shadow": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.8532068729400635
+      }
+    },
+    {
+      "truth": "blue",
+      "group": "vcor/test/blue/20a7398971.jpg",
+      "whole": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.5951771140098572
+      },
+      "warm": {
+        "baseline": "green",
+        "prediction": "grey",
+        "confidence": 0.2573697566986084
+      },
+      "shadow": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.6881307363510132
+      }
+    },
+    {
+      "truth": "blue",
+      "group": "vcor/test/blue/a6aa7d2805.jpg",
+      "whole": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.9657394886016846
+      },
+      "warm": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.9629150629043579
+      },
+      "shadow": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.9227539300918579
+      }
+    },
+    {
+      "truth": "blue",
+      "group": "vcor/test/blue/2227dbf0ea.jpg",
+      "whole": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.9877824783325195
+      },
+      "warm": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.9544165730476379
+      },
+      "shadow": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.9537103772163391
+      }
+    },
+    {
+      "truth": "blue",
+      "group": "vcor/test/blue/3bdbfd6c2b.jpg",
+      "whole": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.7075653076171875
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "blue",
+        "confidence": 0.5036970973014832
+      },
+      "shadow": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.5466052293777466
+      }
+    },
+    {
+      "truth": "blue",
+      "group": "vcor/test/blue/7051854ce1.jpg",
+      "whole": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.9257127046585083
+      },
+      "warm": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.7974620461463928
+      },
+      "shadow": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.7689317464828491
+      }
+    },
+    {
+      "truth": "blue",
+      "group": "vcor/test/blue/080863fed8.jpg",
+      "whole": {
+        "baseline": "blue",
+        "prediction": "green",
+        "confidence": 0.5901923179626465
+      },
+      "warm": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.906684398651123
+      },
+      "shadow": {
+        "baseline": "blue",
+        "prediction": "green",
+        "confidence": 0.5475995540618896
+      }
+    },
+    {
+      "truth": "blue",
+      "group": "vcor/test/blue/18a00115a9.jpg",
+      "whole": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.8003244400024414
+      },
+      "warm": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.6830248832702637
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "blue",
+        "confidence": 0.6215930581092834
+      }
+    },
+    {
+      "truth": "blue",
+      "group": "vcor/test/blue/7a7d829382.jpg",
+      "whole": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.9933065176010132
+      },
+      "warm": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.9340081214904785
+      },
+      "shadow": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.9496158361434937
+      }
+    },
+    {
+      "truth": "blue",
+      "group": "vcor/test/blue/1690ec7eda.jpg",
+      "whole": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.9417453408241272
+      },
+      "warm": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.8227267265319824
+      },
+      "shadow": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.9279037714004517
+      }
+    },
+    {
+      "truth": "blue",
+      "group": "vcor/test/blue/be3bc2fb5e.jpg",
+      "whole": {
+        "baseline": "white",
+        "prediction": "blue",
+        "confidence": 0.4202286899089813
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.6531577706336975
+      },
+      "shadow": {
+        "baseline": "grey",
+        "prediction": "blue",
+        "confidence": 0.49157923460006714
+      }
+    },
+    {
+      "truth": "blue",
+      "group": "vcor/test/blue/af095012c9.jpg",
+      "whole": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.9919843077659607
+      },
+      "warm": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.9307314157485962
+      },
+      "shadow": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.9720916748046875
+      }
+    },
+    {
+      "truth": "blue",
+      "group": "vcor/test/blue/fa60bc148e.jpg",
+      "whole": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.7714269161224365
+      },
+      "warm": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.6580556035041809
+      },
+      "shadow": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.6922096014022827
+      }
+    },
+    {
+      "truth": "blue",
+      "group": "vcor/test/blue/f7c3798311.jpg",
+      "whole": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.9928032159805298
+      },
+      "warm": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.9656740427017212
+      },
+      "shadow": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.9334559440612793
+      }
+    },
+    {
+      "truth": "blue",
+      "group": "vcor/test/blue/61f0d9d56a.jpg",
+      "whole": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.9057097434997559
+      },
+      "warm": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.7546992301940918
+      },
+      "shadow": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.923414409160614
+      }
+    },
+    {
+      "truth": "blue",
+      "group": "vcor/test/blue/3d91a0572b.jpg",
+      "whole": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.9769842624664307
+      },
+      "warm": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.9447983503341675
+      },
+      "shadow": {
+        "baseline": "blue",
+        "prediction": "blue",
+        "confidence": 0.908290445804596
+      }
+    },
+    {
+      "truth": "green",
+      "group": "vcor/test/green/5e9c57e3f7.jpg",
+      "whole": {
+        "baseline": "green",
+        "prediction": "blue",
+        "confidence": 0.5931647419929504
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "green",
+        "confidence": 0.520386278629303
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "blue",
+        "confidence": 0.5960515737533569
+      }
+    },
+    {
+      "truth": "green",
+      "group": "vcor/test/green/07f848564a.jpg",
+      "whole": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.989332914352417
+      },
+      "warm": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.980947732925415
+      },
+      "shadow": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9742792844772339
+      }
+    },
+    {
+      "truth": "green",
+      "group": "vcor/test/green/d3a6ec2ea9.jpg",
+      "whole": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9399202466011047
+      },
+      "warm": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.8673259019851685
+      },
+      "shadow": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9798738956451416
+      }
+    },
+    {
+      "truth": "green",
+      "group": "vcor/test/green/ad69d345d9.jpg",
+      "whole": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9897112846374512
+      },
+      "warm": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9446893930435181
+      },
+      "shadow": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9794926643371582
+      }
+    },
+    {
+      "truth": "green",
+      "group": "vcor/test/green/0b5c800dd8.jpg",
+      "whole": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9889308214187622
+      },
+      "warm": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9888712763786316
+      },
+      "shadow": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9878346920013428
+      }
+    },
+    {
+      "truth": "green",
+      "group": "vcor/test/green/e75ef7c8b8.jpg",
+      "whole": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9753611087799072
+      },
+      "warm": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9791202545166016
+      },
+      "shadow": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9726767539978027
+      }
+    },
+    {
+      "truth": "green",
+      "group": "vcor/test/green/7ba7376d2b.jpg",
+      "whole": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.957588791847229
+      },
+      "warm": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.910895824432373
+      },
+      "shadow": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9531772136688232
+      }
+    },
+    {
+      "truth": "green",
+      "group": "vcor/test/green/6b283952d2.jpg",
+      "whole": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.8610291481018066
+      },
+      "warm": {
+        "baseline": "yellow",
+        "prediction": "green",
+        "confidence": 0.6188513040542603
+      },
+      "shadow": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.8504860997200012
+      }
+    },
+    {
+      "truth": "green",
+      "group": "vcor/test/green/077494412e.jpg",
+      "whole": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9634110927581787
+      },
+      "warm": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9343065023422241
+      },
+      "shadow": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9592540860176086
+      }
+    },
+    {
+      "truth": "green",
+      "group": "vcor/test/green/50bb5f0abc.jpg",
+      "whole": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9887397289276123
+      },
+      "warm": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9689708948135376
+      },
+      "shadow": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9885070323944092
+      }
+    },
+    {
+      "truth": "green",
+      "group": "vcor/test/green/2982160f2d.jpg",
+      "whole": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9570306539535522
+      },
+      "warm": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9452794790267944
+      },
+      "shadow": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9263825416564941
+      }
+    },
+    {
+      "truth": "green",
+      "group": "vcor/test/green/1b203c6b70.jpg",
+      "whole": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.97670578956604
+      },
+      "warm": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9753237366676331
+      },
+      "shadow": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.955489993095398
+      }
+    },
+    {
+      "truth": "green",
+      "group": "vcor/test/green/a114606d81.jpg",
+      "whole": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9828293919563293
+      },
+      "warm": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9758011698722839
+      },
+      "shadow": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9758861064910889
+      }
+    },
+    {
+      "truth": "green",
+      "group": "vcor/test/green/e625030faa.jpg",
+      "whole": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9873078465461731
+      },
+      "warm": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9727117419242859
+      },
+      "shadow": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9692447185516357
+      }
+    },
+    {
+      "truth": "green",
+      "group": "vcor/test/green/566c05bf37.jpg",
+      "whole": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9914578199386597
+      },
+      "warm": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9771971106529236
+      },
+      "shadow": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9817931652069092
+      }
+    },
+    {
+      "truth": "green",
+      "group": "vcor/test/green/0ab0ae24e8.jpg",
+      "whole": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9777047634124756
+      },
+      "warm": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9850037097930908
+      },
+      "shadow": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.967487096786499
+      }
+    },
+    {
+      "truth": "green",
+      "group": "vcor/test/green/fe456be170.jpg",
+      "whole": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9811974763870239
+      },
+      "warm": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9635641574859619
+      },
+      "shadow": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9455275535583496
+      }
+    },
+    {
+      "truth": "green",
+      "group": "vcor/test/green/4b4ef9186a.jpg",
+      "whole": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9522638320922852
+      },
+      "warm": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9665616750717163
+      },
+      "shadow": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9511538743972778
+      }
+    },
+    {
+      "truth": "green",
+      "group": "vcor/test/green/66f040fa36.jpg",
+      "whole": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9482088088989258
+      },
+      "warm": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9016138911247253
+      },
+      "shadow": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.7377007007598877
+      }
+    },
+    {
+      "truth": "green",
+      "group": "vcor/test/green/90f22d323f.jpg",
+      "whole": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9788708686828613
+      },
+      "warm": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9647715091705322
+      },
+      "shadow": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9780788421630859
+      }
+    },
+    {
+      "truth": "green",
+      "group": "vcor/test/green/501a92a709.jpg",
+      "whole": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9877452850341797
+      },
+      "warm": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9632578492164612
+      },
+      "shadow": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9894747138023376
+      }
+    },
+    {
+      "truth": "green",
+      "group": "vcor/test/green/0a5bceb5ed.jpg",
+      "whole": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.8569974899291992
+      },
+      "warm": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.4767988324165344
+      },
+      "shadow": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.6745712757110596
+      }
+    },
+    {
+      "truth": "green",
+      "group": "vcor/test/green/0be657cf88.jpg",
+      "whole": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.964411735534668
+      },
+      "warm": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9185587167739868
+      },
+      "shadow": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9033520221710205
+      }
+    },
+    {
+      "truth": "green",
+      "group": "vcor/test/green/49efa1724c.jpg",
+      "whole": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9901213645935059
+      },
+      "warm": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9914700984954834
+      },
+      "shadow": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.984538197517395
+      }
+    },
+    {
+      "truth": "green",
+      "group": "vcor/test/green/2792577c0a.jpg",
+      "whole": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.7389366626739502
+      },
+      "warm": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.5310049057006836
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "green",
+        "confidence": 0.5259626507759094
+      }
+    },
+    {
+      "truth": "green",
+      "group": "vcor/test/green/8fc4187dc0.jpg",
+      "whole": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.958030641078949
+      },
+      "warm": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.8656095266342163
+      },
+      "shadow": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.951983630657196
+      }
+    },
+    {
+      "truth": "green",
+      "group": "vcor/test/green/1c8cb508d5.jpg",
+      "whole": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9582468271255493
+      },
+      "warm": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.8382165431976318
+      },
+      "shadow": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9397165775299072
+      }
+    },
+    {
+      "truth": "green",
+      "group": "vcor/test/green/1acad4c6a5.jpg",
+      "whole": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.8630937933921814
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.483895480632782
+      },
+      "shadow": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.8107438087463379
+      }
+    },
+    {
+      "truth": "green",
+      "group": "vcor/test/green/43b4542805.jpg",
+      "whole": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.5041544437408447
+      },
+      "warm": {
+        "baseline": "green",
+        "prediction": "black",
+        "confidence": 0.5506255030632019
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.5356987118721008
+      }
+    },
+    {
+      "truth": "green",
+      "group": "vcor/test/green/d752ca4d63.jpg",
+      "whole": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9502725601196289
+      },
+      "warm": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.852200984954834
+      },
+      "shadow": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.9731372594833374
+      }
+    },
+    {
+      "truth": "brown",
+      "group": "vcor/test/tan/d51ba96bc3.jpg",
+      "whole": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.8727627992630005
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.9447359442710876
+      },
+      "shadow": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.5668407082557678
+      }
+    },
+    {
+      "truth": "brown",
+      "group": "vcor/test/tan/641657a9ec.jpg",
+      "whole": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.41110482811927795
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.938887357711792
+      },
+      "shadow": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.652132511138916
+      }
+    },
+    {
+      "truth": "brown",
+      "group": "vcor/test/gold/d849d16393.jpg",
+      "whole": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.6431370377540588
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "yellow",
+        "confidence": 0.4827027916908264
+      },
+      "shadow": {
+        "baseline": "brown",
+        "prediction": "yellow",
+        "confidence": 0.552636444568634
+      }
+    },
+    {
+      "truth": "brown",
+      "group": "vcor/test/brown/e31b6ed9d3.jpg",
+      "whole": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.8963992595672607
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.8963702917098999
+      },
+      "shadow": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.7409326434135437
+      }
+    },
+    {
+      "truth": "brown",
+      "group": "vcor/test/tan/3f396dce67.jpg",
+      "whole": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.5738244652748108
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.9439013004302979
+      },
+      "shadow": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.5933321714401245
+      }
+    },
+    {
+      "truth": "brown",
+      "group": "vcor/test/gold/9243c62302.jpg",
+      "whole": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.863345742225647
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.8265745639801025
+      },
+      "shadow": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.8608840703964233
+      }
+    },
+    {
+      "truth": "brown",
+      "group": "vcor/test/brown/364ecc08c0.jpg",
+      "whole": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.4588790237903595
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.7729349136352539
+      },
+      "shadow": {
+        "baseline": "brown",
+        "prediction": "grey",
+        "confidence": 0.35479792952537537
+      }
+    },
+    {
+      "truth": "brown",
+      "group": "vcor/test/brown/d270cd6dc2.jpg",
+      "whole": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.9119457006454468
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.9433750510215759
+      },
+      "shadow": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.753848671913147
+      }
+    },
+    {
+      "truth": "brown",
+      "group": "vcor/test/brown/dd5f521829.jpg",
+      "whole": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.7302303314208984
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.9579856395721436
+      },
+      "shadow": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.43882694840431213
+      }
+    },
+    {
+      "truth": "brown",
+      "group": "vcor/test/gold/b3cf6622dc.jpg",
+      "whole": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.6983938217163086
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.5402101278305054
+      },
+      "shadow": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.8393359184265137
+      }
+    },
+    {
+      "truth": "brown",
+      "group": "vcor/test/tan/0eea5e55d7.jpg",
+      "whole": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.5684894323348999
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.8921431303024292
+      },
+      "shadow": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.8561753034591675
+      }
+    },
+    {
+      "truth": "brown",
+      "group": "vcor/test/beige/68faf1d292.jpg",
+      "whole": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.8094967603683472
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.970630407333374
+      },
+      "shadow": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.8626545667648315
+      }
+    },
+    {
+      "truth": "brown",
+      "group": "vcor/test/beige/0c3bb456ee.jpg",
+      "whole": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.6512778997421265
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.6253587007522583
+      },
+      "shadow": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.4599408805370331
+      }
+    },
+    {
+      "truth": "brown",
+      "group": "vcor/test/gold/aa317c3aac.jpg",
+      "whole": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.6150241494178772
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.8633332252502441
+      },
+      "shadow": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.5839049220085144
+      }
+    },
+    {
+      "truth": "brown",
+      "group": "vcor/test/brown/93166838eb.jpg",
+      "whole": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.40165552496910095
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.6544004082679749
+      },
+      "shadow": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.6094812750816345
+      }
+    },
+    {
+      "truth": "brown",
+      "group": "vcor/test/gold/674166b96c.jpg",
+      "whole": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.9066616296768188
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.8958183526992798
+      },
+      "shadow": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.7048611044883728
+      }
+    },
+    {
+      "truth": "brown",
+      "group": "vcor/test/brown/4b1697109f.jpg",
+      "whole": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.9422104358673096
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.8880251049995422
+      },
+      "shadow": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.8771085739135742
+      }
+    },
+    {
+      "truth": "brown",
+      "group": "vcor/test/brown/2e7515d2b8.jpg",
+      "whole": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.9280540943145752
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.7867217063903809
+      },
+      "shadow": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.9322420358657837
+      }
+    },
+    {
+      "truth": "brown",
+      "group": "vcor/test/brown/2754fc7a2c.jpg",
+      "whole": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.6125823259353638
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.565868079662323
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "grey",
+        "confidence": 0.3380044400691986
+      }
+    },
+    {
+      "truth": "brown",
+      "group": "vcor/test/brown/ef6ad95790.jpg",
+      "whole": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.4673973619937897
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.7915632724761963
+      },
+      "shadow": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.6621025800704956
+      }
+    },
+    {
+      "truth": "brown",
+      "group": "vcor/test/gold/292ab3583c.jpg",
+      "whole": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.6078486442565918
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.555295467376709
+      },
+      "shadow": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.7269883155822754
+      }
+    },
+    {
+      "truth": "brown",
+      "group": "vcor/test/beige/408174870e.jpg",
+      "whole": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.5922861099243164
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.6104887127876282
+      },
+      "shadow": {
+        "baseline": "grey",
+        "prediction": "brown",
+        "confidence": 0.6801066398620605
+      }
+    },
+    {
+      "truth": "brown",
+      "group": "vcor/test/tan/dbf3c45a7e.jpg",
+      "whole": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.8737369179725647
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.8430320024490356
+      },
+      "shadow": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.6232752799987793
+      }
+    },
+    {
+      "truth": "brown",
+      "group": "vcor/test/tan/44238be68d.jpg",
+      "whole": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.9346058368682861
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.8730795979499817
+      },
+      "shadow": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.9234014749526978
+      }
+    },
+    {
+      "truth": "brown",
+      "group": "vcor/test/gold/cfb09c412d.jpg",
+      "whole": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.8487730026245117
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.5570273399353027
+      },
+      "shadow": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.8284135460853577
+      }
+    },
+    {
+      "truth": "brown",
+      "group": "vcor/test/beige/e4a19d3da1.jpg",
+      "whole": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.5371099710464478
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.9220472574234009
+      },
+      "shadow": {
+        "baseline": "brown",
+        "prediction": "grey",
+        "confidence": 0.5078759789466858
+      }
+    },
+    {
+      "truth": "brown",
+      "group": "vcor/test/gold/597cf20dd7.jpg",
+      "whole": {
+        "baseline": "grey",
+        "prediction": "grey",
+        "confidence": 0.817358136177063
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "grey",
+        "confidence": 0.5569338202476501
+      },
+      "shadow": {
+        "baseline": "black",
+        "prediction": "black",
+        "confidence": 0.6747732758522034
+      }
+    },
+    {
+      "truth": "brown",
+      "group": "vcor/test/tan/b4608976b4.jpg",
+      "whole": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.4241075813770294
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.6877086162567139
+      },
+      "shadow": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.37421104311943054
+      }
+    },
+    {
+      "truth": "brown",
+      "group": "vcor/test/brown/1557854fe5.jpg",
+      "whole": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.6551904678344727
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.9381901025772095
+      },
+      "shadow": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.7337275743484497
+      }
+    },
+    {
+      "truth": "brown",
+      "group": "vcor/test/beige/c5099e3507.jpg",
+      "whole": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.5376338958740234
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.5817257761955261
+      },
+      "shadow": {
+        "baseline": "grey",
+        "prediction": "brown",
+        "confidence": 0.6310266256332397
+      }
+    },
+    {
+      "truth": "yellow",
+      "group": "vcor/test/yellow/13d8fbb189.jpg",
+      "whole": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.445934921503067
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.5029230117797852
+      },
+      "shadow": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.6631030440330505
+      }
+    },
+    {
+      "truth": "yellow",
+      "group": "vcor/test/yellow/67a03aa74b.jpg",
+      "whole": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.9435594081878662
+      },
+      "warm": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.8857264518737793
+      },
+      "shadow": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.8855463266372681
+      }
+    },
+    {
+      "truth": "yellow",
+      "group": "vcor/test/yellow/bbdb571ce5.jpg",
+      "whole": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.8087724447250366
+      },
+      "warm": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.950737714767456
+      },
+      "shadow": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.7080049514770508
+      }
+    },
+    {
+      "truth": "yellow",
+      "group": "vcor/test/orange/d1f54927ca.jpg",
+      "whole": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.9894483089447021
+      },
+      "warm": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.9868707656860352
+      },
+      "shadow": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.9034665822982788
+      }
+    },
+    {
+      "truth": "yellow",
+      "group": "vcor/test/yellow/4ea907ffed.jpg",
+      "whole": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.8094403743743896
+      },
+      "warm": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.9171598553657532
+      },
+      "shadow": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.704116940498352
+      }
+    },
+    {
+      "truth": "yellow",
+      "group": "vcor/test/orange/7610df81b9.jpg",
+      "whole": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.9657633900642395
+      },
+      "warm": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.9859287738800049
+      },
+      "shadow": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.8391518592834473
+      }
+    },
+    {
+      "truth": "yellow",
+      "group": "vcor/test/orange/fcaf4fa4ef.jpg",
+      "whole": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.9822861552238464
+      },
+      "warm": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.9766840934753418
+      },
+      "shadow": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.8375369310379028
+      }
+    },
+    {
+      "truth": "yellow",
+      "group": "vcor/test/orange/392cc087b7.jpg",
+      "whole": {
+        "baseline": "yellow",
+        "prediction": "brown",
+        "confidence": 0.5389602184295654
+      },
+      "warm": {
+        "baseline": "yellow",
+        "prediction": "brown",
+        "confidence": 0.49980685114860535
+      },
+      "shadow": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.6792667508125305
+      }
+    },
+    {
+      "truth": "yellow",
+      "group": "vcor/test/orange/0d01970ad9.jpg",
+      "whole": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.7688819169998169
+      },
+      "warm": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.8669368028640747
+      },
+      "shadow": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.7967339754104614
+      }
+    },
+    {
+      "truth": "yellow",
+      "group": "vcor/test/yellow/2b04dfa66f.jpg",
+      "whole": {
+        "baseline": "yellow",
+        "prediction": "brown",
+        "confidence": 0.627784013748169
+      },
+      "warm": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.6650067567825317
+      },
+      "shadow": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.7161540985107422
+      }
+    },
+    {
+      "truth": "yellow",
+      "group": "vcor/test/yellow/ee799fe5a4.jpg",
+      "whole": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.7854325771331787
+      },
+      "warm": {
+        "baseline": "yellow",
+        "prediction": "green",
+        "confidence": 0.604953408241272
+      },
+      "shadow": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.8615762591362
+      }
+    },
+    {
+      "truth": "yellow",
+      "group": "vcor/test/yellow/feacf53e9e.jpg",
+      "whole": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.6246051788330078
+      },
+      "warm": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.8979265689849854
+      },
+      "shadow": {
+        "baseline": "green",
+        "prediction": "green",
+        "confidence": 0.4870099723339081
+      }
+    },
+    {
+      "truth": "yellow",
+      "group": "vcor/test/orange/13ed55efa9.jpg",
+      "whole": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.6932851076126099
+      },
+      "warm": {
+        "baseline": "yellow",
+        "prediction": "red",
+        "confidence": 0.5417352914810181
+      },
+      "shadow": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.7572087645530701
+      }
+    },
+    {
+      "truth": "yellow",
+      "group": "vcor/test/orange/3e4b4949e4.jpg",
+      "whole": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.6110185384750366
+      },
+      "warm": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.6601096391677856
+      },
+      "shadow": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.5944761633872986
+      }
+    },
+    {
+      "truth": "yellow",
+      "group": "vcor/test/yellow/33e193b821.jpg",
+      "whole": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.9603960514068604
+      },
+      "warm": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.9666822552680969
+      },
+      "shadow": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.7176947593688965
+      }
+    },
+    {
+      "truth": "yellow",
+      "group": "vcor/test/orange/0b8988e43e.jpg",
+      "whole": {
+        "baseline": "yellow",
+        "prediction": "red",
+        "confidence": 0.6729128956794739
+      },
+      "warm": {
+        "baseline": "yellow",
+        "prediction": "red",
+        "confidence": 0.5085113048553467
+      },
+      "shadow": {
+        "baseline": "red",
+        "prediction": "red",
+        "confidence": 0.65257728099823
+      }
+    },
+    {
+      "truth": "yellow",
+      "group": "vcor/test/orange/0f0a3992c8.jpg",
+      "whole": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.4999252259731293
+      },
+      "warm": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.5941710472106934
+      },
+      "shadow": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.536939263343811
+      }
+    },
+    {
+      "truth": "yellow",
+      "group": "vcor/test/yellow/3e762c1baf.jpg",
+      "whole": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.9683937430381775
+      },
+      "warm": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.9597023725509644
+      },
+      "shadow": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.8165509700775146
+      }
+    },
+    {
+      "truth": "yellow",
+      "group": "vcor/test/orange/75d7cbf5db.jpg",
+      "whole": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.9469388723373413
+      },
+      "warm": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.8897441029548645
+      },
+      "shadow": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.7987797260284424
+      }
+    },
+    {
+      "truth": "yellow",
+      "group": "vcor/test/yellow/3b1d2fa14e.jpg",
+      "whole": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.984491229057312
+      },
+      "warm": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.9681112766265869
+      },
+      "shadow": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.8504660129547119
+      }
+    },
+    {
+      "truth": "yellow",
+      "group": "vcor/test/yellow/c3af4aa32d.jpg",
+      "whole": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.9801430702209473
+      },
+      "warm": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.9280786514282227
+      },
+      "shadow": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.8593987226486206
+      }
+    },
+    {
+      "truth": "yellow",
+      "group": "vcor/test/orange/a6a1403782.jpg",
+      "whole": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.7971314787864685
+      },
+      "warm": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.9630975723266602
+      },
+      "shadow": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.7437405586242676
+      }
+    },
+    {
+      "truth": "yellow",
+      "group": "vcor/test/yellow/bd9d8208eb.jpg",
+      "whole": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.7276695966720581
+      },
+      "warm": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.695232629776001
+      },
+      "shadow": {
+        "baseline": "brown",
+        "prediction": "yellow",
+        "confidence": 0.5780132412910461
+      }
+    },
+    {
+      "truth": "yellow",
+      "group": "vcor/test/orange/f121875aec.jpg",
+      "whole": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.7829623222351074
+      },
+      "warm": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.6306830048561096
+      },
+      "shadow": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.7951897978782654
+      }
+    },
+    {
+      "truth": "yellow",
+      "group": "vcor/test/yellow/dc6b8f7c50.jpg",
+      "whole": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.9407771825790405
+      },
+      "warm": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.9360778331756592
+      },
+      "shadow": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.7539024353027344
+      }
+    },
+    {
+      "truth": "yellow",
+      "group": "vcor/test/yellow/8619b81817.jpg",
+      "whole": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.987956166267395
+      },
+      "warm": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.968070387840271
+      },
+      "shadow": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.8930739164352417
+      }
+    },
+    {
+      "truth": "yellow",
+      "group": "vcor/test/yellow/ee3dc659bc.jpg",
+      "whole": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.947072446346283
+      },
+      "warm": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.9174529314041138
+      },
+      "shadow": {
+        "baseline": "brown",
+        "prediction": "yellow",
+        "confidence": 0.6697132587432861
+      }
+    },
+    {
+      "truth": "yellow",
+      "group": "vcor/test/yellow/b56c07b3d6.jpg",
+      "whole": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.9305544495582581
+      },
+      "warm": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.9481985569000244
+      },
+      "shadow": {
+        "baseline": "brown",
+        "prediction": "yellow",
+        "confidence": 0.6811121702194214
+      }
+    },
+    {
+      "truth": "yellow",
+      "group": "vcor/test/orange/109769f0db.jpg",
+      "whole": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.6001631021499634
+      },
+      "warm": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.8289743661880493
+      },
+      "shadow": {
+        "baseline": "brown",
+        "prediction": "brown",
+        "confidence": 0.739190936088562
+      }
+    },
+    {
+      "truth": "yellow",
+      "group": "vcor/test/yellow/ce4598c5b6.jpg",
+      "whole": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.9485328793525696
+      },
+      "warm": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.9546395540237427
+      },
+      "shadow": {
+        "baseline": "yellow",
+        "prediction": "yellow",
+        "confidence": 0.8016594052314758
+      }
+    }
+  ],
+  "candidate_sha256": "f34c34985a10ceced919e60138d69a00ca3f4a657c15e54f2d7cfa7e1c70e215",
+  "test_used_for_selection": false,
+  "limitations": "Existing VCoR source split, foreground masks. Warm/shadow are controlled synthetic views of the same photos, not independent Uzbekistan field photos."
+}

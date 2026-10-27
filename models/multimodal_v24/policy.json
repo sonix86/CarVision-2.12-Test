@@ -1,0 +1,23 @@
+{
+  "max_training_rounds": 2,
+  "epochs_per_round": 150,
+  "rounds": [
+    "ConvNeXt Tiny ImageNet frozen whole+body-detail linear supervised make head",
+    "same visual features + general offline OCR character features, supervised linear make head"
+  ],
+  "source": "Generic ImageNet1K only; no downloaded car-brand or car-colour classifier",
+  "train_validation_test": "Preserve source/session splits. Add reviewed owner data TRAIN ONLY; reported current three errors locked out. No filename features.",
+  "old_historical_validation_min_delta": -0.02,
+  "selection": ".7 whole macro + .3 reduced-dark-image macro, history safeguards",
+  "calibration": "Per predicted make >=90% validation precision, >=3 independent source groups; confidence >=.5, margin >=.06; no global gate that silently disables all individually sound makes",
+  "release_requirements": {
+    "validation_confirmation_precision_min": 0.9,
+    "validation_confirmation_views_min": 40,
+    "heldout_make_top1_gain_min": 0.03,
+    "heldout_historical_top1_min_delta": -0.02,
+    "heldout_confirmed_precision_min": 0.9,
+    "heldout_confirmed_count_min": 30
+  },
+  "test_access": "Only after fixed model selection. Previous v2.3 test was partially run then cancelled without accuracy measurements; not a fresh blind phone test.",
+  "no_paid_services": true
+}

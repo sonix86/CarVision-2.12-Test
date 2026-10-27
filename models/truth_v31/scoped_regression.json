@@ -1,0 +1,96 @@
+{
+  "passed": true,
+  "development_regression_only": true,
+  "independent_test": false,
+  "checks": {
+    "make_top1": true,
+    "make_correct": true,
+    "make_precision": true,
+    "family_correct": true,
+    "family_precision": true,
+    "family_raw": true
+  },
+  "make_baseline": {
+    "whole": {
+      "top1": 0.8269639015197754,
+      "historical": 0.9188596606254578,
+      "macro": 0.6681081652641296,
+      "priority_macro": 0.7208302617073059,
+      "confirmed": 642,
+      "correct_confirmed": 619,
+      "precision": 0.9641744494438171
+    },
+    "phone": {
+      "top1": 0.7653927803039551,
+      "historical": 0.8771929740905762,
+      "macro": 0.5908822417259216,
+      "priority_macro": 0.6025035381317139,
+      "confirmed": 502,
+      "correct_confirmed": 478,
+      "precision": 0.9521912336349487
+    }
+  },
+  "make_candidate": {
+    "whole": {
+      "top1": 0.831210196018219,
+      "historical": 0.9188596606254578,
+      "macro": 0.6738061904907227,
+      "priority_macro": 0.745521605014801,
+      "confirmed": 646,
+      "correct_confirmed": 623,
+      "precision": 0.9643962979316711
+    },
+    "phone": {
+      "top1": 0.7653927803039551,
+      "historical": 0.8771929740905762,
+      "macro": 0.5908822417259216,
+      "priority_macro": 0.6025035381317139,
+      "confirmed": 502,
+      "correct_confirmed": 478,
+      "precision": 0.9521912336349487
+    }
+  },
+  "family_baseline": {
+    "whole": {
+      "confirmed": 73,
+      "correct_confirmed": 73,
+      "precision": 1.0,
+      "raw_top1": 0.8199566006660461
+    },
+    "phone": {
+      "confirmed": 12,
+      "correct_confirmed": 12,
+      "precision": 1.0,
+      "raw_top1": 0.7245119214057922
+    }
+  },
+  "family_candidate": {
+    "whole": {
+      "count": 461,
+      "confirmed": 303,
+      "correct_confirmed": 299,
+      "precision": 0.9867987036705017
+    },
+    "phone": {
+      "count": 461,
+      "confirmed": 62,
+      "correct_confirmed": 61,
+      "precision": 0.9838709831237793
+    },
+    "edge": {
+      "count": 461,
+      "confirmed": 296,
+      "correct_confirmed": 294,
+      "precision": 0.9932432174682617
+    }
+  },
+  "family_raw_top1": {
+    "whole": 0.9370932579040527,
+    "phone": 0.8741865754127502,
+    "edge": 0.9305856823921204
+  },
+  "make_images": 942,
+  "family_images": 461,
+  "candidate_sha256": "f7bb9def4761b7c45bf8d73130cabe17f5458a0f4ecfd5571b730bd407ddbe01",
+  "limitations": "Reused public test937 plus5new source images. Known own1/4/5 areTRAINcorrections, not independent accuracy. Own2same-carview notfitted but notblind. No second-PC/blindphone/100%claim."
+}

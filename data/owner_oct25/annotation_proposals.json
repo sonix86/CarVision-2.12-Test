@@ -1,0 +1,182 @@
+[
+  {
+    "image": "b71f9f8c49db9959544b.jpg",
+    "box": [
+      98,
+      482,
+      790,
+      910
+    ],
+    "brand": "Deepal",
+    "colour": "black",
+    "source": "D:\\машинки\\photo_18_2026-10-25_20-44-40.jpg",
+    "original_sha256": "b71f9f8c49db9959544babd50bb82b6dbba42c30cc435980d6dd00ece9da977e",
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "label_source": "Manual visible emblem/body review; detector proposes geometry only",
+    "status": "geometry_pending_review",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "fbd492e6dabd592e4a96.jpg",
+    "box": [
+      130,
+      474,
+      762,
+      834
+    ],
+    "brand": "BMW",
+    "colour": "black",
+    "source": "D:\\машинки\\photo_19_2026-10-25_20-44-40.jpg",
+    "original_sha256": "fbd492e6dabd592e4a9643de527d237c2af0d74d9da52cc6ee59253de16e95f4",
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "label_source": "Manual visible emblem/body review; detector proposes geometry only",
+    "status": "geometry_pending_review",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "c24446ae74e054ec06c5.jpg",
+    "box": [
+      136,
+      368,
+      922,
+      830
+    ],
+    "brand": "BMW",
+    "colour": "grey",
+    "source": "D:\\машинки\\photo_20_2026-10-25_20-44-40.jpg",
+    "original_sha256": "c24446ae74e054ec06c598b18106101ee7d2d97e08306c9ee69d1906518ed4cc",
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "label_source": "Manual visible emblem/body review; detector proposes geometry only",
+    "status": "geometry_pending_review",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "474300f3eecf3715195d.jpg",
+    "box": [
+      32,
+      434,
+      452,
+      692
+    ],
+    "brand": "Kia",
+    "colour": "black",
+    "source": "D:\\машинки\\photo_21_2026-10-25_20-44-40.jpg",
+    "original_sha256": "474300f3eecf3715195db7ad4f52bb443ef639358ad91b0e796e0cdf205fe6d0",
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "label_source": "Manual visible emblem/body review; detector proposes geometry only",
+    "status": "geometry_pending_review",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "27192edeee8d46acbd6d.jpg",
+    "box": [
+      212,
+      430,
+      776,
+      768
+    ],
+    "brand": "Kia",
+    "colour": "black",
+    "source": "D:\\машинки\\photo_22_2026-10-25_20-44-40.jpg",
+    "original_sha256": "27192edeee8d46acbd6d98c5866f4525c891c85f3fc9707a5d0ed82af6534c57",
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "label_source": "Manual visible emblem/body review; detector proposes geometry only",
+    "status": "geometry_pending_review",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "f55ecc86584396f9f1ed.jpg",
+    "box": [
+      4,
+      98,
+      958,
+      1010
+    ],
+    "brand": "Chevrolet",
+    "colour": "black",
+    "source": "D:\\машинки\\photo_31_2026-10-25_20-44-40.jpg",
+    "original_sha256": "f55ecc86584396f9f1ed576b3072e3119af2173cea1feb6e3d4ca81627af8472",
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "label_source": "Manual visible emblem/body review; detector proposes geometry only",
+    "status": "geometry_pending_review",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "75125c4829113a7d613b.jpg",
+    "box": [
+      86,
+      114,
+      956,
+      924
+    ],
+    "brand": "BYD",
+    "colour": "black",
+    "source": "D:\\машинки\\photo_5_2026-10-25_20-44-40.jpg",
+    "original_sha256": "75125c4829113a7d613b8abf3be874641917b773db1dddd21506d1d30ea1f04a",
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "label_source": "Manual visible emblem/body review; detector proposes geometry only",
+    "status": "geometry_pending_review",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "2e02c9cb5e75002d3092.jpg",
+    "box": [
+      10,
+      568,
+      956,
+      1154
+    ],
+    "brand": "Chevrolet",
+    "colour": "grey",
+    "source": "D:\\машинки\\photo_64_2026-10-25_20-44-40.jpg",
+    "original_sha256": "2e02c9cb5e75002d3092e6ee1da2a07afb9667a19c05de7adfd29f0b68740e50",
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "label_source": "Manual visible emblem/body review; detector proposes geometry only",
+    "status": "geometry_pending_review",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "e4c080db52751320696c.jpg",
+    "box": [
+      8,
+      452,
+      508,
+      852
+    ],
+    "brand": "Kia",
+    "colour": "white",
+    "source": "D:\\машинки\\photo_73_2026-10-25_20-44-40.jpg",
+    "original_sha256": "e4c080db52751320696ca80b0990ff20d2c3bad270ecfb8e37bd3aaa8dd468bb",
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "label_source": "Manual visible emblem/body review; detector proposes geometry only",
+    "status": "geometry_pending_review",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "e0e40171a362a41e2723.jpg",
+    "box": [
+      294,
+      200,
+      766,
+      564
+    ],
+    "brand": "Chevrolet",
+    "colour": "white",
+    "source": "D:\\машинки\\photo_8_2026-10-25_20-44-40.jpg",
+    "original_sha256": "e0e40171a362a41e2723698606016c80588b3ecde72ca9b76176458ccdd21ea8",
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "label_source": "Manual visible emblem/body review; detector proposes geometry only",
+    "status": "geometry_pending_review",
+    "exclude_from_independent_evaluation": true
+  }
+]

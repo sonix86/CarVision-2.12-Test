@@ -1,0 +1,1 @@
+NO DEPLOYMENT: selected joint DINO+CLIP make candidate failed fixed heldout gate and real-phone errors remain. Both colour candidates failed validation. No more v28 fits or test reselection. Running2.6 and sealed releases unchanged.

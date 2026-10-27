@@ -7,12 +7,15 @@ from PIL import Image
 from .core import COLOURS, read_image
 
 def load_records(file):
-    file=Path(file).resolve(); rows=[]
+    file=Path(file).resolve(); rows=[];labelled_boxes={}
     for n,line in enumerate(file.read_text(encoding='utf-8-sig').splitlines(),1):
         if not line.strip(): continue
         r=json.loads(line)
         for key in ['image','box','brand','colour','source','group']:
             if key not in r: raise ValueError(f'Line {n}: missing {key}')
+        for key in ['image','brand','colour','source','group']:
+            if not isinstance(r[key],str) or not r[key].strip():raise ValueError(f'Line {n}: invalid {key}')
+        for key in ['brand','colour','source','group']:r[key]=r[key].strip()
         r['path']=(file.parent/r['image']).resolve()
         if not r['path'].is_relative_to(file.parent): raise ValueError(f'Line {n}: image must be inside dataset directory')
         im=read_image(r['path']); w,h=im.size
@@ -21,6 +24,11 @@ def load_records(file):
         if r['colour'] not in COLOURS or not r['brand'].strip(): raise ValueError(f'Line {n}: invalid label')
         if not r['source'].strip() or not r['group'].strip(): raise ValueError(f'Line {n}: source/group required')
         r['hash']=hashlib.sha256(r['path'].read_bytes()).hexdigest()
+        r['pixel_hash']=hashlib.sha256(str(im.size).encode()+im.tobytes()).hexdigest()
+        identity=(r['pixel_hash'],tuple(r['box']));label=(r['brand'],r['colour'])
+        if identity in labelled_boxes and labelled_boxes[identity][0]!=label:
+            raise ValueError(f'Line {n}: Conflicting labels for the same image/box (previous line {labelled_boxes[identity][1]})')
+        labelled_boxes[identity]=(label,n)
         rows.append(r)
     if not rows: raise ValueError('Dataset is empty. Add and label real car photographs first.')
     return rows
@@ -35,6 +43,7 @@ def split_records(rows, seed=3210, fraction=.2):
     def union(a,b): parent[find(a)]=find(b)
     for r in rows:
         union('g:'+r['group'],'h:'+r['hash'])
+        if r.get('pixel_hash'):union('g:'+r['group'],'p:'+r['pixel_hash'])
     groups=collections.defaultdict(list)
     for r in rows: groups[find('g:'+r['group'])].append(r)
     keys=sorted(groups); random.Random(seed).shuffle(keys)
@@ -48,7 +57,7 @@ def split_records(rows, seed=3210, fraction=.2):
     return train,val
 
 def statistics(rows):
-    return dict(cars=len(rows),images=len({r['hash'] for r in rows}),brands=dict(collections.Counter(r['brand'] for r in rows)),colours=dict(collections.Counter(r['colour'] for r in rows)),sources=dict(collections.Counter(r['source'] for r in rows)),groups=len({r['group'] for r in rows}))
+    return dict(cars=len(rows),images=len({r.get('pixel_hash',r['hash']) for r in rows}),brands=dict(collections.Counter(r['brand'] for r in rows)),colours=dict(collections.Counter(r['colour'] for r in rows)),sources=dict(collections.Counter(r['source'] for r in rows)),groups=len({r['group'] for r in rows}))
 
 def dataset_fingerprint(rows):
     payload=sorted(json.dumps({k:r[k] for k in ['image','box','brand','colour','source','group','hash']},sort_keys=True) for r in rows)

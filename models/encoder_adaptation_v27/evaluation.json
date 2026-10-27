@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "checks": {
+    "whole": true,
+    "phone": true,
+    "historical": true,
+    "precision": true,
+    "correct_confirmed": true,
+    "priority": true
+  },
+  "results": {
+    "baseline": {
+      "whole": {
+        "top1": 0.8153681755065918,
+        "historical": 0.9166666865348816,
+        "macro": 0.6855311989784241,
+        "priority_macro": 0.6384546756744385,
+        "confirmed": 598,
+        "correct_confirmed": 576,
+        "precision": 0.9632107019424438
+      },
+      "phone": {
+        "top1": 0.7129135727882385,
+        "historical": 0.8201754093170166,
+        "macro": 0.5588374733924866,
+        "priority_macro": 0.5294740796089172,
+        "confirmed": 470,
+        "correct_confirmed": 446,
+        "precision": 0.9489361643791199
+      }
+    },
+    "candidate": {
+      "whole": {
+        "top1": 0.8388473987579346,
+        "historical": 0.9385964870452881,
+        "macro": 0.7162964940071106,
+        "priority_macro": 0.691883385181427,
+        "confirmed": 635,
+        "correct_confirmed": 613,
+        "precision": 0.965354323387146
+      },
+      "phone": {
+        "top1": 0.7652081251144409,
+        "historical": 0.8640350699424744,
+        "macro": 0.6190780401229858,
+        "priority_macro": 0.5893350839614868,
+        "confirmed": 517,
+        "correct_confirmed": 484,
+        "precision": 0.936170220375061
+      }
+    }
+  },
+  "limitations": "Reused public heldout set; not an independent Uzbekistan phone exam. Known seven user errors excluded from fitting and selection."
+}

@@ -1,0 +1,9 @@
+{
+  "passed": false,
+  "stage": "validation_calibration",
+  "checks": {
+    "any_confirmed_make_gate": false
+  },
+  "heldout_release_checks_not_completed": true,
+  "decision_file": "release_decision.json"
+}

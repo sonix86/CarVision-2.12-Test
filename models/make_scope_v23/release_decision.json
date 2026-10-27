@@ -1,0 +1,103 @@
+{
+  "released": false,
+  "decision": "Rejected by validation confirmation calibration; no reliable confirmation gate enabled",
+  "time": "2026-10-26T00:25:07.068487+05:00",
+  "training_completed": true,
+  "rounds": 2,
+  "mlp_epochs": 120,
+  "cnn_epochs": 6,
+  "selected_mlp_epoch": 109,
+  "cnn_selected": false,
+  "trained_make_labels": 82,
+  "requested_make_labels_covered": 79,
+  "requested_make_labels_total": 82,
+  "missing_requested_makes": [
+    "Jiyue",
+    "Letin",
+    "Rising Auto"
+  ],
+  "confirmed_make_gates": 0,
+  "validation": {
+    "whole": {
+      "all": {
+        "count": 669,
+        "top1": 0.5142002701759338,
+        "macro": 0.42847129702568054
+      },
+      "historical": {
+        "count": 213,
+        "top1": 0.737089216709137,
+        "macro": 0.6442459225654602
+      }
+    },
+    "phone": {
+      "all": {
+        "count": 669,
+        "top1": 0.48131540417671204,
+        "macro": 0.39677658677101135
+      },
+      "historical": {
+        "count": 213,
+        "top1": 0.6619718074798584,
+        "macro": 0.5790378451347351
+      }
+    },
+    "upper": {
+      "all": {
+        "count": 669,
+        "top1": 0.40807175636291504,
+        "macro": 0.338324636220932
+      },
+      "historical": {
+        "count": 213,
+        "top1": 0.6150234937667847,
+        "macro": 0.5289959907531738
+      }
+    }
+  },
+  "baseline_historical_validation": {
+    "whole": {
+      "count": 213,
+      "top1": 0.7464788556098938,
+      "macro": 0.6292940974235535
+    },
+    "phone": {
+      "count": 213,
+      "top1": 0.6807511448860168,
+      "macro": 0.5339819192886353
+    },
+    "upper": {
+      "count": 213,
+      "top1": 0.591549277305603,
+      "macro": 0.40639105439186096
+    }
+  },
+  "test_started": true,
+  "test_completed": false,
+  "test_cancelled_intentionally": true,
+  "test_cancellation_reason": "Global confirmation gate is disabled (threshold 1.0); every make abstains. Further heldout testing cannot make this checkpoint eligible for release. Evaluation log reached progress 50 of 910; no aggregate test accuracy produced.",
+  "test_must_not_be_repeated_in_this_iteration": true,
+  "checkpoint_sha256": "216724365a6bc37fa271bbd491e5254968ba5f30c9ef41d728bb244bbb394e62",
+  "dataset_sha256": "819a606a054891b1e56047d25d41d650ef80841cb59f6e30906b657266ab1005",
+  "source_exe_sha256": "ac3539bb5c4b7372e12446b61a161cc05b9306ac780ac4268a5f424e950072f7",
+  "recipient_active_weights_unchanged": {
+    "classifier.pt": true,
+    "detector.pt": true,
+    "colour_model.pt": true,
+    "vehicle_model.pt": true,
+    "segmenter.pt": true,
+    "masked_colour.pt": true,
+    "visual_references.pt": true,
+    "generic_brand_backbone.pt": true,
+    "generic_detector_backbone.pt": true
+  },
+  "root_vehicle_sha256": "049d77ad66d1f799307ae417dcb98afa6a3535adece330016a4827fc860dbe3c",
+  "root_references_sha256": "7f43e6714f8aebd35ac153ecaa0cc40a400609ebd088c4fcf390f01853c37bf0",
+  "private_owner_pool": {
+    "photos": 99,
+    "reviewed_make_colour_annotations": 10,
+    "makes": 5,
+    "training_used": 0
+  },
+  "payments_or_resets_used": false
+}

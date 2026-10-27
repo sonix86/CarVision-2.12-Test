@@ -1,0 +1,62 @@
+[
+  {
+    "photo": 2,
+    "brand": "unknown",
+    "candidate": "Neta",
+    "confidence": 0.2845214605331421,
+    "alternatives": [
+      {
+        "brand": "Neta",
+        "confidence": 0.2845214605331421
+      },
+      {
+        "brand": "Changan",
+        "confidence": 0.20846675336360931
+      },
+      {
+        "brand": "Buick",
+        "confidence": 0.16550013422966003
+      }
+    ]
+  },
+  {
+    "photo": 5,
+    "brand": "unknown",
+    "candidate": "Chery",
+    "confidence": 0.26536253094673157,
+    "alternatives": [
+      {
+        "brand": "Chery",
+        "confidence": 0.26536253094673157
+      },
+      {
+        "brand": "MG",
+        "confidence": 0.13951346278190613
+      },
+      {
+        "brand": "BYD",
+        "confidence": 0.09809693694114685
+      }
+    ]
+  },
+  {
+    "photo": 16,
+    "brand": "unknown",
+    "candidate": "BYD",
+    "confidence": 0.326445072889328,
+    "alternatives": [
+      {
+        "brand": "BYD",
+        "confidence": 0.326445072889328
+      },
+      {
+        "brand": "Toyota",
+        "confidence": 0.10876418650150299
+      },
+      {
+        "brand": "Zeekr",
+        "confidence": 0.09818068891763687
+      }
+    ]
+  }
+]

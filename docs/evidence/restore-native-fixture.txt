@@ -1,0 +1,5 @@
+Verified fixture.zip.001
+Verified fixture.zip.002
+Extracting the verified complete application...
+READY: D:\Projects\CarVision-GitHub-2.12-Submission\.publication\restore-fixture-trd270zk\CarVision\CarVision.exe
+Launch the EXE. Python, previous patches and internet are not needed for analysis.

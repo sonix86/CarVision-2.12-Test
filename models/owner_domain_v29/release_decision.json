@@ -1,0 +1,11 @@
+{
+  "test_build_available": true,
+  "final_quality_goal_achieved": false,
+  "selected_model_sha256": "367eaeee7d20aa49cd8af9e12d9b64e3db78ce7018706c55044da9444f24bbb9",
+  "validation_and_reused_public_test_passed": true,
+  "whole_macro_regression_disclosed": true,
+  "colour_candidates_rejected": true,
+  "detector_unchanged": true,
+  "stable26_untouched": true,
+  "known_owner_controls_train_only": true
+}

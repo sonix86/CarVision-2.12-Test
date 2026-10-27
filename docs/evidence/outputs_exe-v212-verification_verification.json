@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "steps": [
+    {
+      "name": "help",
+      "seconds": 0.43716410000342876
+    },
+    {
+      "name": "training-output-guard",
+      "rejected_before_training": true
+    },
+    {
+      "name": "zeekr",
+      "seconds": 15.088332699961029
+    },
+    {
+      "name": "leapmotor",
+      "seconds": 14.779107699985616
+    },
+    {
+      "name": "prior-1",
+      "seconds": 14.917715799994767
+    },
+    {
+      "name": "prior-2",
+      "seconds": 16.17798809998203
+    },
+    {
+      "name": "prior-4",
+      "seconds": 16.3177805999876
+    },
+    {
+      "name": "prior-5",
+      "seconds": 15.219642699987162
+    },
+    {
+      "name": "detector-only",
+      "seconds": 16.223633099987637
+    },
+    {
+      "name": "selfcheck",
+      "seconds": 43.48141960002249
+    }
+  ],
+  "ordinary_211_answers_unchanged": true,
+  "detector_only_uses_active_make_head": true,
+  "paired_clip_verified": true,
+  "python_in_path": false,
+  "exe_sha256": "48d81ca9214d0528553db5ec409b8fe39d686e6bf0c2a09aa45e2d91e3eea830",
+  "scope": "Engineering audit, not improved classification accuracy. Existing known cases remain TRAIN/development. Original garage and AIQAR photographs currently unavailable."
+}

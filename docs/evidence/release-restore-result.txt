@@ -1,0 +1,1 @@
+PASS: source restorer verified SHA256 and sizes of both full ZIP parts and the supplemental training archive. The reconstructed full ZIP matches cd5644e7f6bdd5c046e5130e0db6c9065e802c80c4dd9b7ecdddb0fb9540995c. Runtime models/data/datasets/samples and training caches restored successfully into the isolated publication checkout.

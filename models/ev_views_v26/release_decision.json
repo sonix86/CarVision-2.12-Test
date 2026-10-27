@@ -1,0 +1,8 @@
+{
+  "new_model_promoted": true,
+  "selected_model": "models/ev_views_v26/semantic_make.pt",
+  "selected_model_sha256": "94a67eb9cc5f52e89cc309bdec66a027b2b7818219f121f4a0fe1023bf547f23",
+  "reason": "Round1 epoch75 selected by validation; all fixed post-selection heldout checks passed. Round2 rejected on validation; no reselection using test.",
+  "known_owner_errors_not_used_for_selection": true,
+  "all_requested_models_solved": false
+}

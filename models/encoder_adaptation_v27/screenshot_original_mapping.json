@@ -1,0 +1,156 @@
+[
+  {
+    "number": 1,
+    "matches": [
+      [
+        0.9674162268638611,
+        "D:\\\u043c\u0430\u0448\u0438\u043d\u043a\u0438\\11223344.jpg",
+        [
+          410,
+          296
+        ]
+      ],
+      [
+        0.5461902618408203,
+        "D:\\\u043c\u0430\u0448\u0438\u043d\u043a\u0438\\photo_98_2026-10-25_20-44-40.jpg",
+        [
+          408,
+          305
+        ]
+      ]
+    ],
+    "purpose": "Pixel-based original-file identification for diagnostics only. File names are never used as prediction features."
+  },
+  {
+    "number": 2,
+    "matches": [
+      [
+        0.9690561890602112,
+        "D:\\\u043c\u0430\u0448\u0438\u043d\u043a\u0438\\photo_2_2026-10-25_20-44-40.jpg",
+        [
+          219,
+          265
+        ]
+      ],
+      [
+        0.622433066368103,
+        "D:\\\u043c\u0430\u0448\u0438\u043d\u043a\u0438\\photo_92_2026-10-25_20-44-40.jpg",
+        [
+          219,
+          289
+        ]
+      ]
+    ],
+    "purpose": "Pixel-based original-file identification for diagnostics only. File names are never used as prediction features."
+  },
+  {
+    "number": 3,
+    "matches": [
+      [
+        0.9601630568504333,
+        "D:\\\u043c\u0430\u0448\u0438\u043d\u043a\u0438\\photo_3_2026-10-25_20-44-40.jpg",
+        [
+          219,
+          265
+        ]
+      ],
+      [
+        0.6175459623336792,
+        "D:\\\u043c\u0430\u0448\u0438\u043d\u043a\u0438\\photo_69_2026-10-25_20-44-40.jpg",
+        [
+          219,
+          94
+        ]
+      ]
+    ],
+    "purpose": "Pixel-based original-file identification for diagnostics only. File names are never used as prediction features."
+  },
+  {
+    "number": 4,
+    "matches": [
+      [
+        0.9470941424369812,
+        "D:\\\u043c\u0430\u0448\u0438\u043d\u043a\u0438\\photo_4_2026-10-25_20-44-40.jpg",
+        [
+          219,
+          265
+        ]
+      ],
+      [
+        0.584585428237915,
+        "D:\\\u043c\u0430\u0448\u0438\u043d\u043a\u0438\\photo_98_2026-10-25_20-44-40.jpg",
+        [
+          126,
+          343
+        ]
+      ]
+    ],
+    "purpose": "Pixel-based original-file identification for diagnostics only. File names are never used as prediction features."
+  },
+  {
+    "number": 5,
+    "matches": [
+      [
+        0.9461497664451599,
+        "D:\\\u043c\u0430\u0448\u0438\u043d\u043a\u0438\\photo_5_2026-10-25_20-44-40.jpg",
+        [
+          195,
+          154
+        ]
+      ],
+      [
+        0.5837289094924927,
+        "D:\\\u043c\u0430\u0448\u0438\u043d\u043a\u0438\\photo_69_2026-10-25_20-44-40.jpg",
+        [
+          237,
+          4
+        ]
+      ]
+    ],
+    "purpose": "Pixel-based original-file identification for diagnostics only. File names are never used as prediction features."
+  },
+  {
+    "number": 6,
+    "matches": [
+      [
+        0.9252944588661194,
+        "D:\\\u043c\u0430\u0448\u0438\u043d\u043a\u0438\\photo_27_2026-10-25_20-44-40.jpg",
+        [
+          219,
+          265
+        ]
+      ],
+      [
+        0.6165004372596741,
+        "D:\\\u043c\u0430\u0448\u0438\u043d\u043a\u0438\\photo_69_2026-10-25_20-44-40.jpg",
+        [
+          219,
+          97
+        ]
+      ]
+    ],
+    "purpose": "Pixel-based original-file identification for diagnostics only. File names are never used as prediction features."
+  },
+  {
+    "number": 7,
+    "matches": [
+      [
+        0.9607551097869873,
+        "D:\\\u043c\u0430\u0448\u0438\u043d\u043a\u0438\\photo_11_2026-10-25_20-44-40.jpg",
+        [
+          219,
+          265
+        ]
+      ],
+      [
+        0.5235092043876648,
+        "D:\\\u043c\u0430\u0448\u0438\u043d\u043a\u0438\\photo_92_2026-10-25_20-44-40.jpg",
+        [
+          219,
+          269
+        ]
+      ]
+    ],
+    "purpose": "Pixel-based original-file identification for diagnostics only. File names are never used as prediction features."
+  }
+]

@@ -1,0 +1,4083 @@
+{
+  "origin": "User-requested target scope, 25 October 2026",
+  "names_are_not_verified_vehicle_specifications": true,
+  "policy": "Aliases/trim claims require source review before import. No price, city prevalence, drivetrain, exact trim or perfect-recognition claims. A catalogue entry never supplies an inference answer.",
+  "entries": [
+    {
+      "brand": "Wuling",
+      "family": "Hongguang Mini EV",
+      "requested_ranges": [
+        1
+      ],
+      "requested_aliases_or_variants": [
+        "Hongguang Mini EV Standard",
+        "Macaron",
+        "Gameboy Edition"
+      ],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Wuling",
+      "family": "Air EV",
+      "requested_ranges": [
+        1
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Wuling",
+      "family": "Bingo",
+      "requested_ranges": [
+        1
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Wuling",
+      "family": "Bingo Plus",
+      "requested_ranges": [
+        1
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Wuling",
+      "family": "Nano EV",
+      "requested_ranges": [
+        1
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Changan",
+      "family": "Lumin",
+      "requested_ranges": [
+        1
+      ],
+      "requested_aliases_or_variants": [
+        "Lumin Corn"
+      ],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Changan",
+      "family": "BenBen E-Star",
+      "requested_ranges": [
+        1
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Dongfeng",
+      "family": "EX1",
+      "requested_ranges": [
+        1
+      ],
+      "requested_aliases_or_variants": [
+        "EX1 Pro",
+        "Renault City K-ZE"
+      ],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Dongfeng",
+      "family": "Nano Box",
+      "requested_ranges": [
+        1
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Dongfeng",
+      "family": "Fengon Mini EV",
+      "requested_ranges": [
+        1
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Nammi",
+      "family": "01",
+      "requested_ranges": [
+        1
+      ],
+      "requested_aliases_or_variants": [
+        "Nammi Box"
+      ],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Chery",
+      "family": "eQ1",
+      "requested_ranges": [
+        1
+      ],
+      "requested_aliases_or_variants": [
+        "Little Ant",
+        "Муравей"
+      ],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Chery",
+      "family": "QQ Ice Cream",
+      "requested_ranges": [
+        1
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Chery",
+      "family": "Wujie Pro",
+      "requested_ranges": [
+        1
+      ],
+      "requested_aliases_or_variants": [
+        "Unbounded Pro"
+      ],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Geely",
+      "family": "Panda Mini",
+      "requested_ranges": [
+        1
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Geely",
+      "family": "Panda Knight",
+      "requested_ranges": [
+        1
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Geometry",
+      "family": "E",
+      "requested_ranges": [
+        1
+      ],
+      "requested_aliases_or_variants": [
+        "Firefly"
+      ],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Geometry",
+      "family": "EX3",
+      "requested_ranges": [
+        1
+      ],
+      "requested_aliases_or_variants": [
+        "Kungfu Cow"
+      ],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "BYD",
+      "family": "e1",
+      "requested_ranges": [
+        1
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "BYD",
+      "family": "S2",
+      "requested_ranges": [
+        1
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "BYD",
+      "family": "Seagull",
+      "requested_ranges": [
+        1,
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": true,
+      "training_counts": {
+        "train": 16,
+        "validation": 5,
+        "test": 3
+      },
+      "status": "trained_family_candidate_2.2",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Baojun",
+      "family": "Kiwi EV",
+      "requested_ranges": [
+        1
+      ],
+      "requested_aliases_or_variants": [
+        "E300"
+      ],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Baojun",
+      "family": "E100",
+      "requested_ranges": [
+        1
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Baojun",
+      "family": "E200",
+      "requested_ranges": [
+        1
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Baojun",
+      "family": "Yep",
+      "requested_ranges": [
+        1
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Baojun",
+      "family": "Yep Plus",
+      "requested_ranges": [
+        1
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Leapmotor",
+      "family": "T03",
+      "requested_ranges": [
+        1
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Neta",
+      "family": "V",
+      "requested_ranges": [
+        1
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Neta",
+      "family": "Aya",
+      "requested_ranges": [
+        1
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "JAC",
+      "family": "iEV6E",
+      "requested_ranges": [
+        1
+      ],
+      "requested_aliases_or_variants": [
+        "Sehol E10X"
+      ],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "JAC",
+      "family": "iEV7S",
+      "requested_ranges": [
+        1
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "BAIC",
+      "family": "EC3",
+      "requested_ranges": [
+        1
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "BAIC",
+      "family": "EC5",
+      "requested_ranges": [
+        1
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "BAIC",
+      "family": "Lite",
+      "requested_ranges": [
+        1
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Bestune",
+      "family": "Pony",
+      "requested_ranges": [
+        1
+      ],
+      "requested_aliases_or_variants": [
+        "Xiaoma"
+      ],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Ora",
+      "family": "Black Cat",
+      "requested_ranges": [
+        1
+      ],
+      "requested_aliases_or_variants": [
+        "R1"
+      ],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Ora",
+      "family": "White Cat",
+      "requested_ranges": [
+        1
+      ],
+      "requested_aliases_or_variants": [
+        "R2"
+      ],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Pocco",
+      "family": "Meimei",
+      "requested_ranges": [
+        1
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Pocco",
+      "family": "Duoduo",
+      "requested_ranges": [
+        1
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Letin",
+      "family": "Mengo",
+      "requested_ranges": [
+        1
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Hanteng",
+      "family": "X5 EV",
+      "requested_ranges": [
+        1
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Zotye",
+      "family": "E200",
+      "requested_ranges": [
+        1
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "BYD",
+      "family": "e2",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "BYD",
+      "family": "Dolphin",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": true,
+      "training_counts": {
+        "train": 14,
+        "validation": 5,
+        "test": 4
+      },
+      "status": "trained_family_candidate_2.2",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "BYD",
+      "family": "Yuan Up",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "BYD",
+      "family": "Yuan Pro",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "BYD",
+      "family": "Qin Plus",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [
+        "EV",
+        "DM-i"
+      ],
+      "checkpoint_22_class": true,
+      "training_counts": {
+        "train": 14,
+        "validation": 3,
+        "test": 3
+      },
+      "status": "trained_family_candidate_2.2",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "BYD",
+      "family": "Chazor",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [
+        "Destroyer 05"
+      ],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "BYD",
+      "family": "D1",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "BYD",
+      "family": "e3",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "BYD",
+      "family": "Qin EV",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "GAC Aion",
+      "family": "S",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "GAC Aion",
+      "family": "S Plus",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "GAC Aion",
+      "family": "S Max",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "GAC Aion",
+      "family": "Y",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "GAC Aion",
+      "family": "Y Plus",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "GAC Aion",
+      "family": "Y Younger",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "GAC Aion",
+      "family": "UT",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Changan",
+      "family": "Eado EV",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Changan",
+      "family": "Qiyuan A05",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [
+        "Nevo A05"
+      ],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Changan",
+      "family": "Qiyuan Q05",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [
+        "Nevo Q05"
+      ],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Changan",
+      "family": "CS15 E-Pro",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Changan",
+      "family": "CS55 E-Rock",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Geometry",
+      "family": "A",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Geometry",
+      "family": "A Pro",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Geometry",
+      "family": "C",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Geometry",
+      "family": "M6",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Geometry",
+      "family": "G6",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Geely",
+      "family": "Emgrand EV",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Geely",
+      "family": "GSE",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Geely",
+      "family": "Galaxy L6",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Geely",
+      "family": "Starwish",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [
+        "Xingyuan"
+      ],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "BAIC",
+      "family": "EU5",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "BAIC",
+      "family": "EU5 Plus",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "BAIC",
+      "family": "EU7",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "BAIC",
+      "family": "EX360",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Aeolus",
+      "family": "E70",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Aeolus",
+      "family": "Sky EV01",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Dongfeng",
+      "family": "Nammi 06",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Dongfeng",
+      "family": "Box",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Neta",
+      "family": "U",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Neta",
+      "family": "U-II",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Neta",
+      "family": "X",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Volkswagen",
+      "family": "ID.3",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Volkswagen",
+      "family": "e-Lavida",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Volkswagen",
+      "family": "e-Bora",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Volkswagen",
+      "family": "e-Golf",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Chevrolet",
+      "family": "Menlo",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Chevrolet",
+      "family": "Bolt EV",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Buick",
+      "family": "Velite 6",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Buick",
+      "family": "Velite 7",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "MG",
+      "family": "MG4 EV",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [
+        "Mulan"
+      ],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "MG",
+      "family": "ZS EV",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "MG",
+      "family": "MG5 EV",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "JAC",
+      "family": "iC5",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [
+        "Sehol E50A"
+      ],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "JAC",
+      "family": "Sehol E40X",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "JAC",
+      "family": "Yiwei 3",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Wuling",
+      "family": "Starlight",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Wuling",
+      "family": "Starlight S",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Ora",
+      "family": "Good Cat",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [
+        "Haomao"
+      ],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Ora",
+      "family": "Good Cat GT",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Nissan",
+      "family": "Sylphy Zero Emission",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Nissan",
+      "family": "Leaf",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [
+        "ZE0",
+        "ZE1"
+      ],
+      "checkpoint_22_class": true,
+      "training_counts": {
+        "train": 19,
+        "validation": 9,
+        "test": 6
+      },
+      "status": "trained_family_candidate_2.2",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Everus",
+      "family": "VE-1",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Ciimo",
+      "family": "M-NV",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Ciimo",
+      "family": "X-NV",
+      "requested_ranges": [
+        2
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "BYD",
+      "family": "Song Plus",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [
+        "EV",
+        "DM-i",
+        "Champion",
+        "UzPride"
+      ],
+      "checkpoint_22_class": true,
+      "training_counts": {
+        "train": 21,
+        "validation": 4,
+        "test": 5
+      },
+      "status": "trained_family_candidate_2.2",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "BYD",
+      "family": "Yuan Plus",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [
+        "Atto 3"
+      ],
+      "checkpoint_22_class": true,
+      "training_counts": {
+        "train": 15,
+        "validation": 3,
+        "test": 4
+      },
+      "status": "trained_family_candidate_2.2",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "BYD",
+      "family": "Song Pro",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "BYD",
+      "family": "Seal 06 DM-i",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "BYD",
+      "family": "Seal 06 GT",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "BYD",
+      "family": "Qin L",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "BYD",
+      "family": "Seal",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": true,
+      "training_counts": {
+        "train": 19,
+        "validation": 5,
+        "test": 4
+      },
+      "status": "trained_family_candidate_2.2",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "BYD",
+      "family": "Seal DM-i",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [
+        "Chaser 07"
+      ],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "BYD",
+      "family": "Song L DM-i",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Deepal",
+      "family": "S07",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [
+        "S7",
+        "Shenlan S7"
+      ],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Deepal",
+      "family": "SL03",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Deepal",
+      "family": "L07",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Deepal",
+      "family": "S05",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Changan",
+      "family": "Nevo A07",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [
+        "Qiyuan A07"
+      ],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Changan",
+      "family": "UNI-K iDD",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Changan",
+      "family": "UNI-Z iDD",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Changan",
+      "family": "UNI-V iDD",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Changan",
+      "family": "UNI-E",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Leapmotor",
+      "family": "C11",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Leapmotor",
+      "family": "C10",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Leapmotor",
+      "family": "C16",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Leapmotor",
+      "family": "C01",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Leapmotor",
+      "family": "B10",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Volkswagen",
+      "family": "ID.4 Crozz",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Volkswagen",
+      "family": "ID.4 X",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Volkswagen",
+      "family": "ID.6 Crozz",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Volkswagen",
+      "family": "ID.6 X",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Volkswagen",
+      "family": "ID.7 Vizzion",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Volkswagen",
+      "family": "ID.UNYX",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Geely",
+      "family": "Galaxy E5",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [
+        "Geely EX5"
+      ],
+      "checkpoint_22_class": true,
+      "training_counts": {
+        "train": 16,
+        "validation": 4,
+        "test": 3
+      },
+      "status": "trained_family_candidate_2.2",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Geely",
+      "family": "Galaxy L7",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Geely",
+      "family": "Galaxy E8",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Honda",
+      "family": "e:NS1",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Honda",
+      "family": "e:NP1",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Honda",
+      "family": "e:NS2",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Honda",
+      "family": "e:NP2",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Toyota",
+      "family": "bZ4X",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": true,
+      "training_counts": {
+        "train": 11,
+        "validation": 4,
+        "test": 3
+      },
+      "status": "trained_family_candidate_2.2",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Toyota",
+      "family": "bZ3",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Toyota",
+      "family": "bZ3X",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Dongfeng",
+      "family": "eπ 007",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Dongfeng",
+      "family": "eπ 008",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Forthing",
+      "family": "Friday",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [
+        "Fengxing Leiting"
+      ],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Forthing",
+      "family": "Xinghai S7",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "iCAR",
+      "family": "03",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "iCAR",
+      "family": "V23",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Chery",
+      "family": "eQ7",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [
+        "Shuxiangjia"
+      ],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Chery",
+      "family": "Fulwin A8",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Chery",
+      "family": "Fulwin T9",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Chery",
+      "family": "Fulwin T10",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Jetour",
+      "family": "Shanhai T2",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Jetour",
+      "family": "Shanhai L9",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Hongqi",
+      "family": "E-QM5",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": true,
+      "training_counts": {
+        "train": 10,
+        "validation": 4,
+        "test": 3
+      },
+      "status": "trained_family_candidate_2.2",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Hongqi",
+      "family": "EHS3",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "XPeng",
+      "family": "Mona M03",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "XPeng",
+      "family": "P5",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "XPeng",
+      "family": "G3",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "XPeng",
+      "family": "G3i",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "XPeng",
+      "family": "G6",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": true,
+      "training_counts": {
+        "train": 15,
+        "validation": 5,
+        "test": 5
+      },
+      "status": "trained_family_candidate_2.2",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "GAC Aion",
+      "family": "V",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "GAC Aion",
+      "family": "V Plus",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "GAC Aion",
+      "family": "LX",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "GAC Aion",
+      "family": "i60",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Arcfox",
+      "family": "Kaola S",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Arcfox",
+      "family": "Alpha T5",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Arcfox",
+      "family": "Alpha S5",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Haval",
+      "family": "H6 PHEV",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Haval",
+      "family": "Xiaolong Max",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Haval",
+      "family": "Raptor",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [
+        "Menglong"
+      ],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Wey",
+      "family": "Mocha DHT-PHEV",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Skywell",
+      "family": "ET5",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Skywell",
+      "family": "HT-i",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Weltmeister",
+      "family": "EX5",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": true,
+      "training_counts": {
+        "train": 8,
+        "validation": 3,
+        "test": 2
+      },
+      "status": "trained_family_candidate_2.2",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Weltmeister",
+      "family": "W6",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Neta",
+      "family": "S",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Neta",
+      "family": "GT",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Rising Auto",
+      "family": "F7",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Rising Auto",
+      "family": "R7",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Roewe",
+      "family": "D7",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Roewe",
+      "family": "Marvel R",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Mazda",
+      "family": "EZ-6",
+      "requested_ranges": [
+        3
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Zeekr",
+      "family": "001",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": true,
+      "training_counts": {
+        "train": 22,
+        "validation": 5,
+        "test": 5
+      },
+      "status": "trained_family_candidate_2.2",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Zeekr",
+      "family": "007",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Zeekr",
+      "family": "7X",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Zeekr",
+      "family": "X",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": true,
+      "training_counts": {
+        "train": 14,
+        "validation": 4,
+        "test": 4
+      },
+      "status": "trained_family_candidate_2.2",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Zeekr",
+      "family": "Mix",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Li Auto",
+      "family": "L6",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Li Auto",
+      "family": "L7",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [
+        "LiXiang L7"
+      ],
+      "checkpoint_22_class": true,
+      "training_counts": {
+        "train": 11,
+        "validation": 3,
+        "test": 3
+      },
+      "status": "trained_family_candidate_2.2",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Li Auto",
+      "family": "L8",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Li Auto",
+      "family": "L9",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Li Auto",
+      "family": "One",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "BYD",
+      "family": "Han",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [
+        "EV",
+        "DM-i"
+      ],
+      "checkpoint_22_class": true,
+      "training_counts": {
+        "train": 16,
+        "validation": 6,
+        "test": 5
+      },
+      "status": "trained_family_candidate_2.2",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "BYD",
+      "family": "Tang",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [
+        "EV",
+        "DM-i"
+      ],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "BYD",
+      "family": "Song L EV",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "BYD",
+      "family": "Sealion 07 EV",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "BYD",
+      "family": "Xia",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "BYD",
+      "family": "Atto 8",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "BYD",
+      "family": "Ti7",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "FangChengBao",
+      "family": "Bao 5",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [
+        "Leopard 5"
+      ],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "FangChengBao",
+      "family": "Bao 3",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [
+        "Tai 3"
+      ],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Denza",
+      "family": "N7",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Denza",
+      "family": "N8",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Xiaomi",
+      "family": "SU7",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [
+        "Standard",
+        "Pro",
+        "Max"
+      ],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Xiaomi",
+      "family": "YU7",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Avatr",
+      "family": "11",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Avatr",
+      "family": "12",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Avatr",
+      "family": "07",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Aito",
+      "family": "M5",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Aito",
+      "family": "M7",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Voyah",
+      "family": "Free",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Voyah",
+      "family": "Passion",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [
+        "Zhuiguang"
+      ],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Voyah",
+      "family": "Courage",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [
+        "Zhiyin"
+      ],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Exlantix",
+      "family": "ES",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [
+        "Sterra ES"
+      ],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Exlantix",
+      "family": "ET",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [
+        "Sterra ET"
+      ],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Luxeed",
+      "family": "S7",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Luxeed",
+      "family": "R7",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "IM Motors",
+      "family": "L6",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "IM Motors",
+      "family": "L7",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "IM Motors",
+      "family": "LS6",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "IM Motors",
+      "family": "LS7",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Nio",
+      "family": "ET5",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Nio",
+      "family": "ET5T",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Nio",
+      "family": "ET7",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Nio",
+      "family": "ES6",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Nio",
+      "family": "EC6",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Nio",
+      "family": "ES7",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Nio",
+      "family": "EC7",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Nio",
+      "family": "ES8",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Onvo",
+      "family": "L60",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "XPeng",
+      "family": "P7",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "XPeng",
+      "family": "P7i",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "XPeng",
+      "family": "G9",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "XPeng",
+      "family": "X9",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Deepal",
+      "family": "G318",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Tank",
+      "family": "400 Hi4-T",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Tank",
+      "family": "500 Hi4-T",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Tank",
+      "family": "700 Hi4-T",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Jiyue",
+      "family": "01",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Jiyue",
+      "family": "07",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Hyptec",
+      "family": "GT",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Hyptec",
+      "family": "HT",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Lynk & Co",
+      "family": "Z10",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Lynk & Co",
+      "family": "Z20",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Lynk & Co",
+      "family": "08 EM-P",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Lynk & Co",
+      "family": "09 EM-P",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Smart",
+      "family": "#1",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Smart",
+      "family": "#3",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Smart",
+      "family": "#5",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Polestar",
+      "family": "2",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Polestar",
+      "family": "4",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "MG",
+      "family": "Cyberster",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Tesla",
+      "family": "Model 3",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [
+        "Highland"
+      ],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Tesla",
+      "family": "Model Y",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "BMW",
+      "family": "i3 Sedan",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "BMW",
+      "family": "i4",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "BMW",
+      "family": "iX3",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Kia",
+      "family": "EV5",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Kia",
+      "family": "EV6",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Kia",
+      "family": "EV9",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Hyundai",
+      "family": "Ioniq 5",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Hyundai",
+      "family": "Ioniq 6",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Audi",
+      "family": "Q4 e-tron",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Audi",
+      "family": "Q5 e-tron",
+      "requested_ranges": [
+        4
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "YangWang",
+      "family": "U8",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "YangWang",
+      "family": "U9",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "YangWang",
+      "family": "U7",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Zeekr",
+      "family": "009",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Zeekr",
+      "family": "009 Grand",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Zeekr",
+      "family": "001 FR",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Zeekr",
+      "family": "8X",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Denza",
+      "family": "Z9 GT",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Denza",
+      "family": "Z9",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Denza",
+      "family": "D9",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Denza",
+      "family": "N9",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "FangChengBao",
+      "family": "Bao 8",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [
+        "Leopard 8"
+      ],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Li Auto",
+      "family": "Mega",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Aito",
+      "family": "M9",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Stelato",
+      "family": "S9",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Maextro",
+      "family": "S800",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "M-Hero",
+      "family": "917",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Voyah",
+      "family": "Dream",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [
+        "Dreamer"
+      ],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Hongqi",
+      "family": "E-HS9",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Lotus",
+      "family": "Eletre",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Lotus",
+      "family": "Emeya",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "HiPhi",
+      "family": "Z",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "HiPhi",
+      "family": "X",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "HiPhi",
+      "family": "Y",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Xiaomi",
+      "family": "SU7 Ultra",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Hyptec",
+      "family": "SSR",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Nio",
+      "family": "ET9",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Polestar",
+      "family": "3",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "LEVC",
+      "family": "L380",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Tesla",
+      "family": "Cybertruck",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Tesla",
+      "family": "Model S",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [
+        "Plaid"
+      ],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Tesla",
+      "family": "Model X",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [
+        "Plaid"
+      ],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "family": "G 580 EQ",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "family": "EQS",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "family": "EQS SUV",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "family": "EQE",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "family": "EQE SUV",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "family": "EQC",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "family": "EQA",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "family": "EQB",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "family": "Maybach EQS SUV",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Porsche",
+      "family": "Taycan",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [
+        "4S",
+        "Turbo",
+        "Turbo S",
+        "Cross Turismo"
+      ],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Porsche",
+      "family": "Macan Electric",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "BMW",
+      "family": "i7",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "BMW",
+      "family": "iX",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "BMW",
+      "family": "i5",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Audi",
+      "family": "e-tron GT",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Audi",
+      "family": "RS e-tron GT",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Audi",
+      "family": "Q8 e-tron",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Audi",
+      "family": "e-tron S",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "GMC",
+      "family": "Hummer EV",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Rivian",
+      "family": "R1T",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Rivian",
+      "family": "R1S",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Cadillac",
+      "family": "Lyriq",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Cadillac",
+      "family": "Escalade IQ",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Lucid",
+      "family": "Air",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    },
+    {
+      "brand": "Rolls-Royce",
+      "family": "Spectre",
+      "requested_ranges": [
+        5
+      ],
+      "requested_aliases_or_variants": [],
+      "checkpoint_22_class": false,
+      "training_counts": null,
+      "status": "not_trained",
+      "verified_good_real_phone_accuracy": false
+    }
+  ]
+}

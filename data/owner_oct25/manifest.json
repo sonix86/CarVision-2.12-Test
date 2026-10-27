@@ -1,0 +1,992 @@
+[
+  {
+    "image": "4ca65cf6f52de490ac95.jpg",
+    "original_name": "photo_10_2026-10-25_20-44-40.jpg",
+    "sha256": "4ca65cf6f52de490ac950619076f4369f05192255ba4bb95653e5e2e3943c8b0",
+    "source": "D:\\машинки\\photo_10_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "8540d053f67d304785f0.jpg",
+    "original_name": "photo_11_2026-10-25_20-44-40.jpg",
+    "sha256": "8540d053f67d304785f0f95bd76aad2eb0a9fe0f5248775d8f4219cd32e4ab64",
+    "source": "D:\\машинки\\photo_11_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "d7f6678fdafd5a181c7c.jpg",
+    "original_name": "photo_12_2026-10-25_20-44-40.jpg",
+    "sha256": "d7f6678fdafd5a181c7cc53500b2eea2acdc33458721c8b16c8d803f0780206f",
+    "source": "D:\\машинки\\photo_12_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "aeba51a4c34686469cba.jpg",
+    "original_name": "photo_13_2026-10-25_20-44-40.jpg",
+    "sha256": "aeba51a4c34686469cba1df6215801640a6c2d88b626b939a2efd28e06cc5502",
+    "source": "D:\\машинки\\photo_13_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "1dfb9aea8646551e6173.jpg",
+    "original_name": "photo_14_2026-10-25_20-44-40.jpg",
+    "sha256": "1dfb9aea8646551e61738a74dc40d18f73b0a4048b6d3c0d099f27a8d6de6db6",
+    "source": "D:\\машинки\\photo_14_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "94593741cde508229f8e.jpg",
+    "original_name": "photo_15_2026-10-25_20-44-40.jpg",
+    "sha256": "94593741cde508229f8e4c8f608ed800d0b356f0c28127ad507e24fd5acf7657",
+    "source": "D:\\машинки\\photo_15_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "7f1d7a4bcb990ef3f3e8.jpg",
+    "original_name": "photo_16_2026-10-25_20-44-40.jpg",
+    "sha256": "7f1d7a4bcb990ef3f3e817ef3121eef975688a3b657bcb633214f7c282cc536a",
+    "source": "D:\\машинки\\photo_16_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "abc5442ef5ead5d0db98.jpg",
+    "original_name": "photo_17_2026-10-25_20-44-40.jpg",
+    "sha256": "abc5442ef5ead5d0db9862f31d942782c39a7280346b14f9bbb7ba15ef4982d5",
+    "source": "D:\\машинки\\photo_17_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "b71f9f8c49db9959544b.jpg",
+    "original_name": "photo_18_2026-10-25_20-44-40.jpg",
+    "sha256": "b71f9f8c49db9959544babd50bb82b6dbba42c30cc435980d6dd00ece9da977e",
+    "source": "D:\\машинки\\photo_18_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "fbd492e6dabd592e4a96.jpg",
+    "original_name": "photo_19_2026-10-25_20-44-40.jpg",
+    "sha256": "fbd492e6dabd592e4a9643de527d237c2af0d74d9da52cc6ee59253de16e95f4",
+    "source": "D:\\машинки\\photo_19_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "91db7f0812f6222cbaad.jpg",
+    "original_name": "photo_1_2026-10-25_20-44-40.jpg",
+    "sha256": "91db7f0812f6222cbaad619d5af32e6d78d5be7322276d1648d06f2f5707cab4",
+    "source": "D:\\машинки\\photo_1_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "c24446ae74e054ec06c5.jpg",
+    "original_name": "photo_20_2026-10-25_20-44-40.jpg",
+    "sha256": "c24446ae74e054ec06c598b18106101ee7d2d97e08306c9ee69d1906518ed4cc",
+    "source": "D:\\машинки\\photo_20_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "474300f3eecf3715195d.jpg",
+    "original_name": "photo_21_2026-10-25_20-44-40.jpg",
+    "sha256": "474300f3eecf3715195db7ad4f52bb443ef639358ad91b0e796e0cdf205fe6d0",
+    "source": "D:\\машинки\\photo_21_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "27192edeee8d46acbd6d.jpg",
+    "original_name": "photo_22_2026-10-25_20-44-40.jpg",
+    "sha256": "27192edeee8d46acbd6d98c5866f4525c891c85f3fc9707a5d0ed82af6534c57",
+    "source": "D:\\машинки\\photo_22_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "f46db3e3dbeaf62f6d06.jpg",
+    "original_name": "photo_23_2026-10-25_20-44-40.jpg",
+    "sha256": "f46db3e3dbeaf62f6d06c01ba8f18b664424eb3f63cbf31b36fb2775bed6bf9e",
+    "source": "D:\\машинки\\photo_23_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "0c53045a930550e16c73.jpg",
+    "original_name": "photo_24_2026-10-25_20-44-40.jpg",
+    "sha256": "0c53045a930550e16c731a8dd02f39f91922864952a20f433fee006abf30b558",
+    "source": "D:\\машинки\\photo_24_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "bb89f0c02eb5ab02cee7.jpg",
+    "original_name": "photo_25_2026-10-25_20-44-40.jpg",
+    "sha256": "bb89f0c02eb5ab02cee74abd4e37ed4439309abba2b43a67906189be3d46ea50",
+    "source": "D:\\машинки\\photo_25_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "36efdfc3d08ae1e8a550.jpg",
+    "original_name": "photo_26_2026-10-25_20-44-40.jpg",
+    "sha256": "36efdfc3d08ae1e8a55075d779f01028b5a4f96660da2b8679ab121a553abce0",
+    "source": "D:\\машинки\\photo_26_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "00e3e55379f6d75d4cee.jpg",
+    "original_name": "photo_27_2026-10-25_20-44-40.jpg",
+    "sha256": "00e3e55379f6d75d4ceeca6a4b373a194e1b669e7fa74be5db1ced814b0e7e86",
+    "source": "D:\\машинки\\photo_27_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "6bb042fad3f0d0c61ed8.jpg",
+    "original_name": "photo_28_2026-10-25_20-44-40.jpg",
+    "sha256": "6bb042fad3f0d0c61ed824297cec352c8c92e7540c2260f757f79663b57a7276",
+    "source": "D:\\машинки\\photo_28_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "c3ac1edf529721408d9a.jpg",
+    "original_name": "photo_29_2026-10-25_20-44-40.jpg",
+    "sha256": "c3ac1edf529721408d9a56484717b36764e80068b061f9a8a38de413a9243b92",
+    "source": "D:\\машинки\\photo_29_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "2b4547faee2f448767d2.jpg",
+    "original_name": "photo_2_2026-10-25_20-44-40.jpg",
+    "sha256": "2b4547faee2f448767d2cc1e7f0efea0bb24e65117a5f91e29b01af58c1b48e9",
+    "source": "D:\\машинки\\photo_2_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "d47da47aa6108bac7628.jpg",
+    "original_name": "photo_30_2026-10-25_20-44-40.jpg",
+    "sha256": "d47da47aa6108bac76284ad9ba4c7361b83f7855c4486231071f47dcbb3c3043",
+    "source": "D:\\машинки\\photo_30_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "f55ecc86584396f9f1ed.jpg",
+    "original_name": "photo_31_2026-10-25_20-44-40.jpg",
+    "sha256": "f55ecc86584396f9f1ed576b3072e3119af2173cea1feb6e3d4ca81627af8472",
+    "source": "D:\\машинки\\photo_31_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "4c4a019226dc7ad06a05.jpg",
+    "original_name": "photo_32_2026-10-25_20-44-40.jpg",
+    "sha256": "4c4a019226dc7ad06a0574a9a209e66bd5ca08ef7c5f7480a4fa72692028387b",
+    "source": "D:\\машинки\\photo_32_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "bd9dbd3dff278ab28a17.jpg",
+    "original_name": "photo_33_2026-10-25_20-44-40.jpg",
+    "sha256": "bd9dbd3dff278ab28a1742e4a77ddcea5829e274792b83e04b1abfe7d67d6318",
+    "source": "D:\\машинки\\photo_33_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "655598a2785b8c430860.jpg",
+    "original_name": "photo_34_2026-10-25_20-44-40.jpg",
+    "sha256": "655598a2785b8c4308605d2c6abb4bb5e2720a0aecfc7cb75ca698436447cf5f",
+    "source": "D:\\машинки\\photo_34_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "63c3ae3790536ffbe4a9.jpg",
+    "original_name": "photo_35_2026-10-25_20-44-40.jpg",
+    "sha256": "63c3ae3790536ffbe4a9a5ee959eddc037f3eb733ad8c938e45090f5de5c4f58",
+    "source": "D:\\машинки\\photo_35_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "af02178950cc8273c504.jpg",
+    "original_name": "photo_36_2026-10-25_20-44-40.jpg",
+    "sha256": "af02178950cc8273c50405b7610d29ca77dd5b1c93f73b2ec3c973bcbff6641a",
+    "source": "D:\\машинки\\photo_36_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "abf1a0c5da31db7fcf24.jpg",
+    "original_name": "photo_37_2026-10-25_20-44-40.jpg",
+    "sha256": "abf1a0c5da31db7fcf24004bd549c033e08540d55b8f6b7a0992879e2fe8ad28",
+    "source": "D:\\машинки\\photo_37_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "a5dd1f1425227ed43b06.jpg",
+    "original_name": "photo_38_2026-10-25_20-44-40.jpg",
+    "sha256": "a5dd1f1425227ed43b069a4b76b47996ffb0b5733d676ebcb0dadaad238161cb",
+    "source": "D:\\машинки\\photo_38_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "bcc0b5f4dd5a560852a9.jpg",
+    "original_name": "photo_39_2026-10-25_20-44-40.jpg",
+    "sha256": "bcc0b5f4dd5a560852a980c0e03a59617f33e3cdf36da7fa4eaf305e86f50cbc",
+    "source": "D:\\машинки\\photo_39_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "e96a4a962bfb7ecc4bdf.jpg",
+    "original_name": "photo_3_2026-10-25_20-44-40.jpg",
+    "sha256": "e96a4a962bfb7ecc4bdfaa81b73eb17eeecee2edef9c3c8ccc82a3b2b51ff86d",
+    "source": "D:\\машинки\\photo_3_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "c6ab137049b7c565ae75.jpg",
+    "original_name": "photo_40_2026-10-25_20-44-40.jpg",
+    "sha256": "c6ab137049b7c565ae750ee95234b1f4d5d7f98bd25c46b7a5b1494048b8aa0d",
+    "source": "D:\\машинки\\photo_40_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "24312d4ef0aba241507d.jpg",
+    "original_name": "photo_41_2026-10-25_20-44-40.jpg",
+    "sha256": "24312d4ef0aba241507d8c21b01160f11116adf6f241e9694e60396ba35d1846",
+    "source": "D:\\машинки\\photo_41_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "dc81e98cbf69b9a40e78.jpg",
+    "original_name": "photo_42_2026-10-25_20-44-40.jpg",
+    "sha256": "dc81e98cbf69b9a40e780d60f6f9344cfa65d8e16f9befe70301da0bb02751ff",
+    "source": "D:\\машинки\\photo_42_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "e7efe8e599f951748ff8.jpg",
+    "original_name": "photo_43_2026-10-25_20-44-40.jpg",
+    "sha256": "e7efe8e599f951748ff828fcd36341ccfffc7dc28cc423b4e1e0874bb66a54ce",
+    "source": "D:\\машинки\\photo_43_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "e6594a2ad24d9c3f4c4c.jpg",
+    "original_name": "photo_44_2026-10-25_20-44-40.jpg",
+    "sha256": "e6594a2ad24d9c3f4c4c9ed69702742f8551c216bab17f1bbdf6f69d4cd7b818",
+    "source": "D:\\машинки\\photo_44_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "8a775daf35e05eb8645d.jpg",
+    "original_name": "photo_45_2026-10-25_20-44-40.jpg",
+    "sha256": "8a775daf35e05eb8645d37f5181ae8b3401df138e3cfda61be04b5cbc442dc9e",
+    "source": "D:\\машинки\\photo_45_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "6033223759f8f0a207ff.jpg",
+    "original_name": "photo_46_2026-10-25_20-44-40.jpg",
+    "sha256": "6033223759f8f0a207ff0f3f832e3ef207f6cba10d65329a33854f7b73de8a21",
+    "source": "D:\\машинки\\photo_46_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "68caaaf846b76c59bbc5.jpg",
+    "original_name": "photo_47_2026-10-25_20-44-40.jpg",
+    "sha256": "68caaaf846b76c59bbc54387fd4406aed79c0e0a3fdc595621ca0b5de0f1ddcd",
+    "source": "D:\\машинки\\photo_47_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "3c50e812064447b11f7c.jpg",
+    "original_name": "photo_48_2026-10-25_20-44-40.jpg",
+    "sha256": "3c50e812064447b11f7cc20018cda00ab57c8dac670c3d5b4cea9e11979868ff",
+    "source": "D:\\машинки\\photo_48_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "5e6dc74b6cdfdec1e012.jpg",
+    "original_name": "photo_49_2026-10-25_20-44-40.jpg",
+    "sha256": "5e6dc74b6cdfdec1e012ad2d3fc293c611096a6cf3a8020436ba2f1046f5471e",
+    "source": "D:\\машинки\\photo_49_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "92f4c38fbd6997c34912.jpg",
+    "original_name": "photo_4_2026-10-25_20-44-40.jpg",
+    "sha256": "92f4c38fbd6997c3491298e25ab6d83f240e9040473976146679babb7866d7d7",
+    "source": "D:\\машинки\\photo_4_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "e9f05e1dd5930e7d1975.jpg",
+    "original_name": "photo_50_2026-10-25_20-44-40.jpg",
+    "sha256": "e9f05e1dd5930e7d1975264d446e47a581e6521426e422656e74d1038d8149c4",
+    "source": "D:\\машинки\\photo_50_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "b68cf00ba8ee73f6d191.jpg",
+    "original_name": "photo_51_2026-10-25_20-44-40.jpg",
+    "sha256": "b68cf00ba8ee73f6d1914491a11076d37a1164edbc50cf6471677338bfe9836c",
+    "source": "D:\\машинки\\photo_51_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "6bcd45654d09741940d9.jpg",
+    "original_name": "photo_52_2026-10-25_20-44-40.jpg",
+    "sha256": "6bcd45654d09741940d9d6d27a69a7e7e1f269ea763aebcfa2fb63288e824572",
+    "source": "D:\\машинки\\photo_52_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "49fef0159e6bb3337a14.jpg",
+    "original_name": "photo_53_2026-10-25_20-44-40.jpg",
+    "sha256": "49fef0159e6bb3337a14e8992a84f00a8df96d3568932817a06c57ed3b1756e6",
+    "source": "D:\\машинки\\photo_53_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "0c804e2ec62ce6345d41.jpg",
+    "original_name": "photo_54_2026-10-25_20-44-40.jpg",
+    "sha256": "0c804e2ec62ce6345d41530e01451dfce2e0e6ea4e16f7842ef54db382e7df9f",
+    "source": "D:\\машинки\\photo_54_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "5de083041ee44031178d.jpg",
+    "original_name": "photo_55_2026-10-25_20-44-40.jpg",
+    "sha256": "5de083041ee44031178dd9e9b2913c0910b85d85a0a212d02f230dde98fdc412",
+    "source": "D:\\машинки\\photo_55_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "bf6e5d7a83dcb08a952d.jpg",
+    "original_name": "photo_56_2026-10-25_20-44-40.jpg",
+    "sha256": "bf6e5d7a83dcb08a952dfca004a3ffe2a507e5769c7e1e4069761ec5cd9df771",
+    "source": "D:\\машинки\\photo_56_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "d0d58888605680c133d5.jpg",
+    "original_name": "photo_57_2026-10-25_20-44-40.jpg",
+    "sha256": "d0d58888605680c133d5867674ae676a5d1d285e40a71a5006be4ea82299771c",
+    "source": "D:\\машинки\\photo_57_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "bd8db66e79873fc15852.jpg",
+    "original_name": "photo_58_2026-10-25_20-44-40.jpg",
+    "sha256": "bd8db66e79873fc158525a72e155212b9ad879567e6e95e9e7c1abd8aa8ec360",
+    "source": "D:\\машинки\\photo_58_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "4ab9477d55e21ed691e2.jpg",
+    "original_name": "photo_59_2026-10-25_20-44-40.jpg",
+    "sha256": "4ab9477d55e21ed691e280ce9175327d4061204de4a989a48ebf794878d345a7",
+    "source": "D:\\машинки\\photo_59_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "75125c4829113a7d613b.jpg",
+    "original_name": "photo_5_2026-10-25_20-44-40.jpg",
+    "sha256": "75125c4829113a7d613b8abf3be874641917b773db1dddd21506d1d30ea1f04a",
+    "source": "D:\\машинки\\photo_5_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "6ea0e87ab3aad4a0ba6f.jpg",
+    "original_name": "photo_60_2026-10-25_20-44-40.jpg",
+    "sha256": "6ea0e87ab3aad4a0ba6f9984a53211df8f39dc2e494731757347facc92e64cae",
+    "source": "D:\\машинки\\photo_60_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "f42a9731559ae07623b5.jpg",
+    "original_name": "photo_61_2026-10-25_20-44-40.jpg",
+    "sha256": "f42a9731559ae07623b56a0a3741ad594b61dadd5cd60e8a97bb0a94685b583f",
+    "source": "D:\\машинки\\photo_61_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "f662c9d645982ad2abfe.jpg",
+    "original_name": "photo_62_2026-10-25_20-44-40.jpg",
+    "sha256": "f662c9d645982ad2abfeb0575943000d59ce5ba26e4f6ce5f1453c763a6eacea",
+    "source": "D:\\машинки\\photo_62_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "4a0399dca761ef62a572.jpg",
+    "original_name": "photo_63_2026-10-25_20-44-40.jpg",
+    "sha256": "4a0399dca761ef62a57266a718dca94192a01c725b244f9b91c8c416603064b9",
+    "source": "D:\\машинки\\photo_63_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "2e02c9cb5e75002d3092.jpg",
+    "original_name": "photo_64_2026-10-25_20-44-40.jpg",
+    "sha256": "2e02c9cb5e75002d3092e6ee1da2a07afb9667a19c05de7adfd29f0b68740e50",
+    "source": "D:\\машинки\\photo_64_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "927d0bd2f34adbcd6285.jpg",
+    "original_name": "photo_65_2026-10-25_20-44-40.jpg",
+    "sha256": "927d0bd2f34adbcd6285f685e18793a388266ce56beb9bfe4fb6192755947d27",
+    "source": "D:\\машинки\\photo_65_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "f7772ba7b135838b476f.jpg",
+    "original_name": "photo_66_2026-10-25_20-44-40.jpg",
+    "sha256": "f7772ba7b135838b476f00fa69170cfc5431caf56ae2225bd9e9d77b9d296cf1",
+    "source": "D:\\машинки\\photo_66_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "19235a2907ea33892f65.jpg",
+    "original_name": "photo_67_2026-10-25_20-44-40.jpg",
+    "sha256": "19235a2907ea33892f656a12034c80dd2d6793b7f1f6a898593ff1fc65b7544b",
+    "source": "D:\\машинки\\photo_67_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "0509e84674bf6d6649db.jpg",
+    "original_name": "photo_68_2026-10-25_20-44-40.jpg",
+    "sha256": "0509e84674bf6d6649dbc0960e5f0ac58e75d21567fe9c6673d29d665397378b",
+    "source": "D:\\машинки\\photo_68_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "5a956458d3d4e32718b8.jpg",
+    "original_name": "photo_69_2026-10-25_20-44-40.jpg",
+    "sha256": "5a956458d3d4e32718b82fa9dbc7cabd10a258cff50663fa63d8b8e0f12366a7",
+    "source": "D:\\машинки\\photo_69_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "369cfe6061dad85460ac.jpg",
+    "original_name": "photo_6_2026-10-25_20-44-40.jpg",
+    "sha256": "369cfe6061dad85460ace19d19c0283647926405a5b4400f7b5cbf810c8b3fe4",
+    "source": "D:\\машинки\\photo_6_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "727842df7e673599a138.jpg",
+    "original_name": "photo_70_2026-10-25_20-44-40.jpg",
+    "sha256": "727842df7e673599a13884bf7da1edb0a0459b00e837c73be66b48ffcf449abf",
+    "source": "D:\\машинки\\photo_70_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "109149fb1f9166df39a3.jpg",
+    "original_name": "photo_71_2026-10-25_20-44-40.jpg",
+    "sha256": "109149fb1f9166df39a394744307cabb18232a0fd6baacf5df6de820f2ea5140",
+    "source": "D:\\машинки\\photo_71_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "d449d0799d65034bd28f.jpg",
+    "original_name": "photo_72_2026-10-25_20-44-40.jpg",
+    "sha256": "d449d0799d65034bd28fbf31a0200a394bca7c2db0a9fd0e9f12a3d1b4c467a4",
+    "source": "D:\\машинки\\photo_72_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "e4c080db52751320696c.jpg",
+    "original_name": "photo_73_2026-10-25_20-44-40.jpg",
+    "sha256": "e4c080db52751320696ca80b0990ff20d2c3bad270ecfb8e37bd3aaa8dd468bb",
+    "source": "D:\\машинки\\photo_73_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "3669dcba5424edd4bf9f.jpg",
+    "original_name": "photo_74_2026-10-25_20-44-40.jpg",
+    "sha256": "3669dcba5424edd4bf9f573d3617a8b381e4348df7a9bcb3a121c8ac17d82bd1",
+    "source": "D:\\машинки\\photo_74_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "5bbd82a74ca4dabc22d6.jpg",
+    "original_name": "photo_75_2026-10-25_20-44-40.jpg",
+    "sha256": "5bbd82a74ca4dabc22d6a60c1463384c4571ca3d35e7b5d3fb82aaf99b75ba46",
+    "source": "D:\\машинки\\photo_75_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "4831928efe9b999f6d40.jpg",
+    "original_name": "photo_76_2026-10-25_20-44-40.jpg",
+    "sha256": "4831928efe9b999f6d40e4fb823fdc2269a519833e890543982fa7189ed6d6c5",
+    "source": "D:\\машинки\\photo_76_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "32c408de9fdc6a61b0e9.jpg",
+    "original_name": "photo_77_2026-10-25_20-44-40.jpg",
+    "sha256": "32c408de9fdc6a61b0e96e9a351d7f257e53d8fa997b6e96df3b52dce5e551b9",
+    "source": "D:\\машинки\\photo_77_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "da4040dd6867209f44b8.jpg",
+    "original_name": "photo_78_2026-10-25_20-44-40.jpg",
+    "sha256": "da4040dd6867209f44b8b38c27f45570d582b908fe4c849157edf6bf00ef1877",
+    "source": "D:\\машинки\\photo_78_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "798f90807dd627be1905.jpg",
+    "original_name": "photo_79_2026-10-25_20-44-40.jpg",
+    "sha256": "798f90807dd627be190511d02d5ad582b5ba5c1689e51d446f029dfa9d89b43c",
+    "source": "D:\\машинки\\photo_79_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "7d225bfaea67dbc4d00a.jpg",
+    "original_name": "photo_7_2026-10-25_20-44-40.jpg",
+    "sha256": "7d225bfaea67dbc4d00a370e4be12da4edcab6a3981b2e52e98a22a33d4a5da5",
+    "source": "D:\\машинки\\photo_7_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "6ce7d5f3545edc23de6b.jpg",
+    "original_name": "photo_80_2026-10-25_20-44-40.jpg",
+    "sha256": "6ce7d5f3545edc23de6bdcfa849f521a6830b9d6d7585479b2f9c4d3f309dae7",
+    "source": "D:\\машинки\\photo_80_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "e4be2e85700357c7cb9f.jpg",
+    "original_name": "photo_81_2026-10-25_20-44-40.jpg",
+    "sha256": "e4be2e85700357c7cb9ff8d25432fdaee5b64071357eb3fa15ff953bd60d018f",
+    "source": "D:\\машинки\\photo_81_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "3a90a97a018034cb9866.jpg",
+    "original_name": "photo_82_2026-10-25_20-44-40.jpg",
+    "sha256": "3a90a97a018034cb98665a7cf95574d5cb9ffee1beaef9546a3c8efc39044e70",
+    "source": "D:\\машинки\\photo_82_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "2e165cd91ee18410061c.jpg",
+    "original_name": "photo_83_2026-10-25_20-44-40.jpg",
+    "sha256": "2e165cd91ee18410061c5f934ebe13fa9014c651323986296d6f86b79f35e28a",
+    "source": "D:\\машинки\\photo_83_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "2022e8124974131e94a7.jpg",
+    "original_name": "photo_84_2026-10-25_20-44-40.jpg",
+    "sha256": "2022e8124974131e94a71d1b2fe63d5379317eb4c6749995b27cdb316136ab01",
+    "source": "D:\\машинки\\photo_84_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "197e2b52e6f81bcf2c0e.jpg",
+    "original_name": "photo_85_2026-10-25_20-44-40.jpg",
+    "sha256": "197e2b52e6f81bcf2c0ee00360fb98fc9a42c172e6ab6126bc012f52dc3cfc10",
+    "source": "D:\\машинки\\photo_85_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "bd30ae7e3f5d9161c7b1.jpg",
+    "original_name": "photo_86_2026-10-25_20-44-40.jpg",
+    "sha256": "bd30ae7e3f5d9161c7b152797066ad273164bb6414db81d2edd7e982ab387046",
+    "source": "D:\\машинки\\photo_86_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "ccea33795d0ebf528a0f.jpg",
+    "original_name": "photo_87_2026-10-25_20-44-40.jpg",
+    "sha256": "ccea33795d0ebf528a0f470c8dc8452a06a0b0822818af4836f832c26b95070e",
+    "source": "D:\\машинки\\photo_87_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "74ee9f2dd1715c22ff30.jpg",
+    "original_name": "photo_88_2026-10-25_20-44-40.jpg",
+    "sha256": "74ee9f2dd1715c22ff30cda8a5f9e5103ebb15c93966abc86f7e7c419ceb1d5c",
+    "source": "D:\\машинки\\photo_88_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "b265216ab78787ea7933.jpg",
+    "original_name": "photo_89_2026-10-25_20-44-40.jpg",
+    "sha256": "b265216ab78787ea79333ffd5483aaf9781944b1796129a6bae74e7cd93bc9c4",
+    "source": "D:\\машинки\\photo_89_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "e0e40171a362a41e2723.jpg",
+    "original_name": "photo_8_2026-10-25_20-44-40.jpg",
+    "sha256": "e0e40171a362a41e2723698606016c80588b3ecde72ca9b76176458ccdd21ea8",
+    "source": "D:\\машинки\\photo_8_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "c0b64454b69567e5bdab.jpg",
+    "original_name": "photo_90_2026-10-25_20-44-40.jpg",
+    "sha256": "c0b64454b69567e5bdab95fb1f51008c4c60766519cf9289e6048f883c4900dd",
+    "source": "D:\\машинки\\photo_90_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "5559d7df370647e1470d.jpg",
+    "original_name": "photo_91_2026-10-25_20-44-40.jpg",
+    "sha256": "5559d7df370647e1470db32f3475289495823fa3cbdca463a07253499716a9c3",
+    "source": "D:\\машинки\\photo_91_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "245e878da9f143515cc0.jpg",
+    "original_name": "photo_92_2026-10-25_20-44-40.jpg",
+    "sha256": "245e878da9f143515cc0515b5798a4518e6dcb6104d5040e02aeb261e37af143",
+    "source": "D:\\машинки\\photo_92_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "c87367215fa9df7e1901.jpg",
+    "original_name": "photo_93_2026-10-25_20-44-40.jpg",
+    "sha256": "c87367215fa9df7e1901c4881daa3b619caf7b44353d4eaa43df22687418d36a",
+    "source": "D:\\машинки\\photo_93_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "1292f0840295e3c214d6.jpg",
+    "original_name": "photo_94_2026-10-25_20-44-40.jpg",
+    "sha256": "1292f0840295e3c214d6f33d4d4b1bc56c8b27c9d1919ce3af2a4e1b55327530",
+    "source": "D:\\машинки\\photo_94_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "9c2e9260ad8d1924313b.jpg",
+    "original_name": "photo_95_2026-10-25_20-44-40.jpg",
+    "sha256": "9c2e9260ad8d1924313b7d04e54fecdc9bb610066435115d04abf18b69a0656f",
+    "source": "D:\\машинки\\photo_95_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "68891e6496cbd28cdf29.jpg",
+    "original_name": "photo_96_2026-10-25_20-44-40.jpg",
+    "sha256": "68891e6496cbd28cdf298468c1b6c7384b02d42eed6687a196ce9ee43d0dddd9",
+    "source": "D:\\машинки\\photo_96_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "d21e7bd1e7d0b3609596.jpg",
+    "original_name": "photo_97_2026-10-25_20-44-40.jpg",
+    "sha256": "d21e7bd1e7d0b3609596e4646f2e5b673df667d900c9412dd643fbc77aaa3f2c",
+    "source": "D:\\машинки\\photo_97_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "c034022af9dce3b295b7.jpg",
+    "original_name": "photo_98_2026-10-25_20-44-40.jpg",
+    "sha256": "c034022af9dce3b295b77eed97a77f038a409e4db265cde0ddd4efecee69874b",
+    "source": "D:\\машинки\\photo_98_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "fd1976bcf563a8c75c19.jpg",
+    "original_name": "photo_99_2026-10-25_20-44-40.jpg",
+    "sha256": "fd1976bcf563a8c75c192443f33c88916e18089b4fe4ab87ff203e4f80bdb3fc",
+    "source": "D:\\машинки\\photo_99_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  },
+  {
+    "image": "c49a294d84591d7ed9a1.jpg",
+    "original_name": "photo_9_2026-10-25_20-44-40.jpg",
+    "sha256": "c49a294d84591d7ed9a14aa589b4b292e61273254dc08835c0e1ffd2cfce8b3c",
+    "source": "D:\\машинки\\photo_9_2026-10-25_20-44-40.jpg",
+    "permission": "User authorized project training in this chat",
+    "group": "owner_oct25_unverified_session",
+    "status": "unlabelled_training_pool",
+    "exclude_from_independent_evaluation": true
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "complete": true,
+  "private_rows": 39,
+  "items": 156,
+  "augmentation_kinds": [
+    "whole",
+    "phone",
+    "flip",
+    "cast"
+  ],
+  "all_train": true
+}

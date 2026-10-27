@@ -1,0 +1,1 @@
+{"settings": [{"k": 3, "alpha": 0.5}, {"k": 3, "alpha": 0.75}, {"k": 8, "alpha": 0.5}, {"k": 8, "alpha": 0.75}], "beta": 50, "gradient_training_rounds": 0, "selection": "validation only", "no_more_searches": true}

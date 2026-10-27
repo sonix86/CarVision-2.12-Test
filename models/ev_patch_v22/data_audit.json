@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "historical_rows_preserved": 1356,
+  "total_rows": 1592,
+  "families": 42,
+  "new_rows": 236,
+  "groups": 697,
+  "source_urls": 422,
+  "inactive_historical_metadata": 8,
+  "split_counts": {
+    "train": 923,
+    "test": 456,
+    "validation": 213
+  },
+  "dataset_sha256": "b23f708afdd032b9497223cfe005bfa1a962b6ee0cd6581a44a9d951c406955b",
+  "limitations": "Session grouping and near-duplicate filtering do not prove physical vehicle independence."
+}

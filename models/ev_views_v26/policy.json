@@ -1,0 +1,39 @@
+{
+  "rounds_max": 2,
+  "epochs_each": 80,
+  "priority_makes": [
+    "BYD",
+    "Li Auto",
+    "Zeekr",
+    "GAC Aion",
+    "Geely",
+    "Geometry",
+    "Deepal",
+    "Leapmotor",
+    "Neta",
+    "XPeng",
+    "Changan",
+    "Weltmeister",
+    "Voyah",
+    "Nio",
+    "Honda",
+    "Toyota"
+  ],
+  "mandatory_makes": [
+    "BYD",
+    "Li Auto",
+    "Zeekr",
+    "Chevrolet",
+    "Toyota"
+  ],
+  "selection": "Validation only; at most cosine continuation and four visual prototypes, stop after two fits",
+  "test_release": {
+    "all_top1_min": 0.8021978021978022,
+    "historical_top1_min": 0.8957017543859649,
+    "confirmed_precision_min": 0.95,
+    "new_source_min_count": 20,
+    "new_source_not_worse": true,
+    "priority_top1_gain_min": 0.02
+  },
+  "known_owner_errors_not_fit_or_selection": true
+}

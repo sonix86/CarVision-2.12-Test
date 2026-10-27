@@ -1,0 +1,1 @@
+NOT RELEASED. All 82 make confirmation gates disabled by validation calibration. New checkpoint is research-only; do not copy to active models or distribute as an improved patch. See release_decision.json. No complete heldout accuracy claim.

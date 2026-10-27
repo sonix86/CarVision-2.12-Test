@@ -1,0 +1,13 @@
+{
+  "started": 1793107860.190291,
+  "config": {
+    "rule": "Preserve every accepted v29 make. On abstentions only, use manufacturer probability summed from fixed source-labelled family head; gates calibrated on ALL validation make classes, not just supported families. Family then calibrated on final make over whole/phone/edge.",
+    "fits_added": 0,
+    "fixed_family_round": 1,
+    "fixed_family_epoch": 49,
+    "make_precision_min": 0.95,
+    "family_precision_min": 0.95,
+    "min_source_groups": 3,
+    "known_error_selection": false
+  }
+}

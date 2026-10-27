@@ -1,0 +1,11 @@
+{
+  "archive": "D:\\Projects\\TashkentCarVision\\outputs\\CarVision-2.12-Test-Full.zip",
+  "bytes": 2936560562,
+  "sha256": "cd5644e7f6bdd5c046e5130e0db6c9065e802c80c4dd9b7ecdddb0fb9540995c",
+  "payload_files": 24669,
+  "all_payload_hashes_verified": true,
+  "all_zip_entries_crc_checked": true,
+  "version": "2.12 TEST",
+  "exe_sha256": "48d81ca9214d0528553db5ec409b8fe39d686e6bf0c2a09aa45e2d91e3eea830",
+  "second_physical_pc_tested": false
+}

@@ -1,0 +1,43 @@
+{
+  "dataset_sha256": "8a128e0df884a7807af6e8844c12fbfc57f7d187c4c63e9d82069bd63e890e1a",
+  "base_dataset_sha256": "422319bb418c29feac8f9d25feabbdddd9d59b6d1e9a3bb5589e9cb22045fae6",
+  "source_manifest_sha256": "384da278e905b174389fa0e4a17636b9f8a6db1374a0d63322be92181c12f102",
+  "base_rows": 3651,
+  "new_rows": 162,
+  "new_splits": {
+    "test": 27,
+    "train": 104,
+    "validation": 31
+  },
+  "new_makes": {
+    "BYD": 14,
+    "Li Auto": 16,
+    "Zeekr": 13,
+    "GAC Aion": 15,
+    "Geometry": 13,
+    "Deepal": 7,
+    "Leapmotor": 12,
+    "Neta": 11,
+    "Changan": 1,
+    "Toyota": 7,
+    "Honda": 7,
+    "Nio": 7,
+    "Avatr": 6,
+    "Voyah": 4,
+    "Wuling": 8,
+    "Weltmeister": 4,
+    "Geely": 8,
+    "XPeng": 6,
+    "Hongqi": 3
+  },
+  "rows": 3813,
+  "splits": {
+    "train": 2176,
+    "validation": 700,
+    "test": 937
+  },
+  "groups_disjoint": true,
+  "original_rows_unchanged": true,
+  "private_additional_rows": 6,
+  "requested_families_not_exact_model_ground_truth": true
+}

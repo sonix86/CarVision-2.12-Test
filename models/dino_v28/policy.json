@@ -1,0 +1,66 @@
+{
+  "rounds_max": 2,
+  "epochs_each": 100,
+  "heads": [
+    "own cosine on DINO cls+patchmean",
+    "own cosine on joint equal-norm DINO and existing CLIP features"
+  ],
+  "selection": "Validation only; no test or seven known errors used for fitting, epoch choice, temperature or thresholds.",
+  "priority_makes": [
+    "BYD",
+    "Li Auto",
+    "Zeekr",
+    "GAC Aion",
+    "Haval",
+    "Geely",
+    "Geometry",
+    "Deepal",
+    "Leapmotor",
+    "Neta",
+    "XPeng",
+    "Changan",
+    "Weltmeister",
+    "Voyah",
+    "Nio",
+    "Honda",
+    "Toyota"
+  ],
+  "mandatory_makes": [
+    "BYD",
+    "Li Auto",
+    "Zeekr",
+    "Chevrolet",
+    "Toyota"
+  ],
+  "validation_guards": {
+    "whole_top1_not_worse": true,
+    "phone_top1_not_worse": true,
+    "historical_tolerance_pp": 1,
+    "priority_macro_gain_pp": 1,
+    "whole_confirmation_precision_min": 0.95,
+    "phone_confirmation_precision_min": 0.95,
+    "phone_precision_max_drop_pp": 1,
+    "correct_confirmations_not_worse_both": true,
+    "mandatory_makes_enabled": true
+  },
+  "primary_calibration_precision": 0.95,
+  "fallback_calibration_precision": 0.95,
+  "test": "One fixed-candidate evaluation only after validation passes. Same reused public set; not new phone exam. Whole/phone top1 and correct confirmations must not decrease; confirmation precision >=95% and no >1pp drop.",
+  "known_error_review": "Release veto for new confident wrong make; do not choose another candidate using known errors.",
+  "data": "Existing frozen grouped v26 dataset; generic Apache-2.0 DINOv2 backbone only; own supervised heads. No new downloads of labelled automobile classifiers.",
+  "colour": "Separately compare only own trained colour decisions or own documented algorithms. No colour shortcut tied to make or filename.",
+  "production": "Preserve running2.6 and sealed ZIPs. No release unless quantitative gates and practical error review permit. Do not claim every electric model learned.",
+  "colour_policy": {
+    "rounds_max": 2,
+    "epochs_each": 100,
+    "features": [
+      "DINO generic image features plus own paint statistics",
+      "same features plus probabilities of existing own trained colour heads"
+    ],
+    "public_cohort": "stable SHA-sorted 50/train and20/validation per colour from preserved VCoR splits;20/test only after validation passes; exclude dHash-near crosssplit pairs",
+    "own": "Existing24 colour-labelled own TRAIN crops only; no seven new error labels fitted",
+    "selection": "mean whole/stress validation, whole not worse and synthetic-stress gain>=2pp over existing 2.6 colour heads. No test based choice. Exact two fits only.",
+    "stress": "96px, brightness0.55, blur0.35, RGB gain0.95/1.07/0.93",
+    "limitations": "Historical VCoR author/vehicle identities unavailable; split+near-duplicate separation is not certified independent vehicle grouping. No new blind-phone accuracy claim."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "complete": true,
+  "new_jobs": 1874,
+  "total_items": 7626,
+  "test_requested": true,
+  "dataset_sha256": "8a128e0df884a7807af6e8844c12fbfc57f7d187c4c63e9d82069bd63e890e1a",
+  "implementation_sha256": "809859b0e190738b87068bcba6837c2075f4bcb929d0e77f72ca6469a6882410",
+  "source_sha256": "b938bf1bc15cd2ec0feacfe3a1bb553fe8ea9ca46a7e1d8d00217f29aef60cd9",
+  "seconds": 160.10027623176575
+}

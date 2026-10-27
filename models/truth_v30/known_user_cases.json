@@ -1,0 +1,38 @@
+[
+  {
+    "case": 1,
+    "source": "D:\\машинки\\11223344.jpg",
+    "sha256": "91db7f0812f6222cbaad619d5af32e6d78d5be7322276d1648d06f2f5707cab4",
+    "expected_make": "Dongfeng",
+    "expected_family": "Aeolus E70",
+    "colour": "white",
+    "truth_source": "Visible Dongfeng round emblem, grille and lights compared to independent author-labelled E70 exterior sources. Earlier user GAC label rejected; no model predictions used.",
+    "reviewer": "Assistant source-assisted visual review; not independent human certification",
+    "not_fitted_for_new_family_head": true,
+    "not_blind": true
+  },
+  {
+    "case": 2,
+    "source": "D:\\машинки\\photo_2_2026-10-25_20-44-40.jpg",
+    "sha256": "2b4547faee2f448767d2cc1e7f0efea0bb24e65117a5f91e29b01af58c1b48e9",
+    "expected_make": "Dongfeng",
+    "expected_family": "Aeolus E70",
+    "colour": "white",
+    "truth_source": "Same physical white sedan as1from another view; source-assisted visual review, not a classifier label.",
+    "reviewer": "Assistant source-assisted visual review; not independent human certification",
+    "not_fitted_for_new_family_head": true,
+    "not_blind": true
+  },
+  {
+    "case": 5,
+    "source": "D:\\машинки\\photo_5_2026-10-25_20-44-40.jpg",
+    "sha256": "75125c4829113a7d613b8abf3be874641917b773db1dddd21506d1d30ea1f04a",
+    "expected_make": "BYD",
+    "expected_family": "Song Plus",
+    "colour": "black",
+    "truth_source": "BYD slogan and SONG PLUS text visible on the vehicle rear. Broad family only; trim/fuel type not certified.",
+    "reviewer": "Assistant source-assisted visual review; not independent human certification",
+    "not_fitted_for_new_family_head": true,
+    "not_blind": true
+  }
+]

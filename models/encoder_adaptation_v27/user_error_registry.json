@@ -1,0 +1,72 @@
+[
+  {
+    "number": 1,
+    "path": "C:\\Temp\\codex-clipboard-ec88adc2-6a33-4f27-949a-4e1206355825.png",
+    "sha256": "ee88c355eda4ec8224ef2fdbcd133d7acca0b4bc8c9da834c22ccde7e16a4ea0",
+    "brand": "GAC Aion",
+    "model": "Aion S Plus",
+    "label_source": "User correction in chat; not independently certified",
+    "role": "known-development-error-only",
+    "notes": "Photos 1 and 2 same vehicle; never count as independent vehicles. Photo 6 user tentatively agrees on BYD, exact family unverified. Photo 7 truth not provided."
+  },
+  {
+    "number": 2,
+    "path": "C:\\Temp\\codex-clipboard-43677459-1c82-41ad-9ddb-f36f56281deb.png",
+    "sha256": "5d9b55a01225af06743a013190218e227a0f896358fc1e0d493aab093ea1e843",
+    "brand": "GAC Aion",
+    "model": "Aion S Plus",
+    "label_source": "User correction in chat; not independently certified",
+    "role": "known-development-error-only",
+    "notes": "Photos 1 and 2 same vehicle; never count as independent vehicles. Photo 6 user tentatively agrees on BYD, exact family unverified. Photo 7 truth not provided."
+  },
+  {
+    "number": 3,
+    "path": "C:\\Temp\\codex-clipboard-21c2efa7-bb49-4e2a-8002-7828df3cf1fa.png",
+    "sha256": "439d90b584ae8ec6102758e19e9278fad345b5fe18941607c61a3771afe09877",
+    "brand": "Haval",
+    "model": "M6 / M6 Plus",
+    "label_source": "User correction in chat; not independently certified",
+    "role": "known-development-error-only",
+    "notes": "Photos 1 and 2 same vehicle; never count as independent vehicles. Photo 6 user tentatively agrees on BYD, exact family unverified. Photo 7 truth not provided."
+  },
+  {
+    "number": 4,
+    "path": "C:\\Temp\\codex-clipboard-b948bdac-98db-4b41-b4ca-c6e9bf180546.png",
+    "sha256": "1377facbbb7ec10665e38b3830c233bfbc02614b4f3e7ed5a8048e1d03895d82",
+    "brand": "BYD",
+    "model": "Dolphin",
+    "label_source": "User correction in chat; not independently certified",
+    "role": "known-development-error-only",
+    "notes": "Photos 1 and 2 same vehicle; never count as independent vehicles. Photo 6 user tentatively agrees on BYD, exact family unverified. Photo 7 truth not provided."
+  },
+  {
+    "number": 5,
+    "path": "C:\\Temp\\codex-clipboard-e0b21f6b-e990-4de8-8390-0a53fbaeccfb.png",
+    "sha256": "2a6c617b5dc24d78167248d072991437febdc4b77b859626afb507dc7694a75e",
+    "brand": "BYD",
+    "model": "Song Plus",
+    "label_source": "User correction in chat; not independently certified",
+    "role": "known-development-error-only",
+    "notes": "Photos 1 and 2 same vehicle; never count as independent vehicles. Photo 6 user tentatively agrees on BYD, exact family unverified. Photo 7 truth not provided."
+  },
+  {
+    "number": 6,
+    "path": "C:\\Temp\\codex-clipboard-648c1c26-0248-4619-9552-7183a70e4ff5.png",
+    "sha256": "92b7f4fe9d7a861cb66d3778a926d0267d81b891e70f5cbc228c1bd1b21e2661",
+    "brand": "BYD",
+    "model": "unknown",
+    "label_source": "User correction in chat; not independently certified",
+    "role": "known-development-error-only",
+    "notes": "Photos 1 and 2 same vehicle; never count as independent vehicles. Photo 6 user tentatively agrees on BYD, exact family unverified. Photo 7 truth not provided."
+  },
+  {
+    "number": 7,
+    "path": "C:\\Temp\\codex-clipboard-a6c94dd3-172c-435a-9ab3-9923768b1c72.png",
+    "sha256": "9cf99fe12d6cc19c9056b2d0dbe6f8c6a929c2b2a159d7931ac16dbb1c289ad6",
+    "brand": "unknown",
+    "model": "unknown",
+    "label_source": "User correction in chat; not independently certified",
+    "role": "known-development-error-only",
+    "notes": "Photos 1 and 2 same vehicle; never count as independent vehicles. Photo 6 user tentatively agrees on BYD, exact family unverified. Photo 7 truth not provided."
+  }
+]

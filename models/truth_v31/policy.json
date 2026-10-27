@@ -1,0 +1,22 @@
+{
+  "rounds_max": 2,
+  "epochs_each": 100,
+  "rounds": [
+    {
+      "lr": 0.0001,
+      "phone_weight": 16
+    },
+    {
+      "lr": 0.0002,
+      "phone_weight": 24
+    }
+  ],
+  "initial": "Fixed own family v30round1epoch49; generic encoders remain frozen. Only Song Plus/Dolphin/E70 classifier vectors adapt; other vectors and logit scale frozen.",
+  "private_data": "Only reviewed own1E70,4Dolphin,5SongPlus. All sameTRAIN outing. Own2E70 notfitted: known same-vehicle angle diagnostic, not blind independent test.",
+  "truth": "E70 independent author-labelled/source-visual comparison; SongPlus rear text; Dolphin user correction and full-original visual review. No classifier labels.",
+  "selection": "Epoch selection uses unchanged public validation rawwhole/phone top1 >=v30parent; private TRAIN mustfit allviews andconfidence>=99%. These constraints areTRAINfit, notaccuracy. No own control used asvalidation. Maximize validation mean rawtop1; no extra rounds.",
+  "calibration": "Same v30joint routing-aware class probability+absolute similarity calibration on full makevalidation, exactfamilies+other-make negatives; no threshold lowering by hand.",
+  "test": "One final fixed-candidate reused public test +new E70 split, includingedgeprobe. No retuning after test.",
+  "public_splits_unchanged": true,
+  "own_cases_now_train": true
+}

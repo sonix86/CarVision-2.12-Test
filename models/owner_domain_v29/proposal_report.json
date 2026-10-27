@@ -1,0 +1,22 @@
+{
+  "proposed": 43,
+  "replacing": 15,
+  "new": 28,
+  "brands": {
+    "Deepal": 3,
+    "BMW": 3,
+    "Kia": 4,
+    "Chevrolet": 8,
+    "GAC Aion": 3,
+    "Li Auto": 2,
+    "Leapmotor": 2,
+    "BYD": 10,
+    "Haval": 1,
+    "Dongfeng": 4,
+    "Toyota": 1,
+    "Tesla": 2
+  },
+  "all_train": true,
+  "independent_accuracy_claim_allowed": false,
+  "originals_unchanged": true
+}

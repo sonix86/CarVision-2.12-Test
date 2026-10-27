@@ -1,0 +1,9 @@
+{
+  "passed": false,
+  "checks": {
+    "top1_gain": true,
+    "historical_guard": false,
+    "confirmed_precision": true,
+    "confirmed_count": true
+  }
+}

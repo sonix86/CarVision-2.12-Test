@@ -1,0 +1,9 @@
+Research only. Do not install these candidate weights.
+The two finite make fits completed and one fixed-model test was performed.
+Whole heldout make top1 65.71% over expanded 82-label source taxonomy.
+Historical cohort: 80.26% old body head -> 75.44% candidate; the 2pp guard failed.
+BYD and Chevrolet confirmation thresholds were disabled by validation.
+The separately trained paint head improved controlled lighting stress but
+reduced ordinary heldout colour accuracy 91.67% -> 87.50%; guard failed.
+No weights or EXE from this experiment were promoted to the working 2.2 app.
+No additional training rounds or test-based epoch/threshold reselection.

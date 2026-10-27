@@ -1,0 +1,22 @@
+{
+  "max_rounds": 2,
+  "frozen_mlp_epochs": 120,
+  "max_layer4_epochs": 6,
+  "selection": "grouped validation only",
+  "test_once": true,
+  "post_test_policy": "Stop on release-gate failure; never select a different epoch using test outcomes",
+  "guards": {
+    "historical_top1_body_delta_min": -0.02,
+    "all_top1_body_delta_min": 0.03,
+    "new_target_count_min": 50,
+    "new_target_top1_min": 0.5,
+    "confirmed_count_min": 30,
+    "confirmed_precision_min": 0.9,
+    "confirmed_coverage_min": 0.1,
+    "new_confirmed_count_min": 10,
+    "new_confirmed_precision_min": 0.9,
+    "priority_byd_li_zeekr_body_delta_min": -0.02
+  },
+  "public_city_examples_excluded": true,
+  "source_family_labels_not_certified": true
+}

@@ -1,0 +1,4 @@
+{
+  "reason": "Calibration originally included examples where primary make already accepted a different manufacturer. New family decision cannot be used there because runtime preserves that make. Restrict calibration eligibility to actual routing; keep full source/negative truth. Same fixed head, no fitting/epoch selection/test tuning.",
+  "timestamp": 1793108210.5892851
+}

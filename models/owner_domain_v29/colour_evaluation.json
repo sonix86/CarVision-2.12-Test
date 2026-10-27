@@ -1,0 +1,17 @@
+{
+  "passed": false,
+  "baseline": 0.9437500238418579,
+  "rounds": [
+    {
+      "round": 1,
+      "passed": false,
+      "selected": null
+    },
+    {
+      "round": 2,
+      "passed": false,
+      "selected": null
+    }
+  ],
+  "limitations": "Cached base-colour probabilities shared identically by both paint heads. Not a full current-runtime colour benchmark. Own photos TRAIN only; historical VCoR source splits lack certified vehicle identity groups."
+}

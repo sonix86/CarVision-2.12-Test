@@ -1,0 +1,177 @@
+{
+  "version": "2.11 TEST",
+  "target_makes": [
+    "BYD",
+    "Zeekr",
+    "Leapmotor",
+    "GAC Aion",
+    "Li Auto",
+    "Voyah",
+    "XPeng",
+    "Neta",
+    "Nio",
+    "Geometry",
+    "Avatr",
+    "Aito",
+    "Denza",
+    "Hongqi",
+    "Weltmeister",
+    "Xiaomi",
+    "Stelato",
+    "Deepal",
+    "Arcfox",
+    "Dongfeng"
+  ],
+  "scope": "Target-make cohort, NOT proof of electric drivetrain. Mixed makes such as BYD/Dongfeng can include ICE/PHEV. All82 labels remain competitors, never renormalize over EV-only classes. Cached validation/test are reused development evidence, not blind Uzbekistan accuracy.",
+  "splits": {
+    "validation": {
+      "whole": {
+        "count": 193,
+        "source_groups": 120,
+        "correct_confirmed": 113,
+        "wrong_confirmed": 2,
+        "unknown": 78,
+        "successful_fraction": 0.5854922279792746,
+        "raw_top1": 0.7979274392127991,
+        "confirmed_precision": 0.9826086956521739
+      },
+      "phone": {
+        "count": 193,
+        "source_groups": 120,
+        "correct_confirmed": 72,
+        "wrong_confirmed": 2,
+        "unknown": 119,
+        "successful_fraction": 0.37305699481865284,
+        "raw_top1": 0.6683937907218933,
+        "confirmed_precision": 0.972972972972973
+      }
+    },
+    "test": {
+      "whole": {
+        "count": 174,
+        "source_groups": 115,
+        "correct_confirmed": 90,
+        "wrong_confirmed": 4,
+        "unknown": 80,
+        "successful_fraction": 0.5172413793103449,
+        "raw_top1": 0.7643678188323975,
+        "confirmed_precision": 0.9574468085106383
+      },
+      "phone": {
+        "count": 174,
+        "source_groups": 115,
+        "correct_confirmed": 47,
+        "wrong_confirmed": 6,
+        "unknown": 121,
+        "successful_fraction": 0.27011494252873564,
+        "raw_top1": 0.6379310488700867,
+        "confirmed_precision": 0.8867924528301887
+      }
+    }
+  },
+  "class_counts": {
+    "BYD": {
+      "train": 149,
+      "validation": 39,
+      "test": 38
+    },
+    "Zeekr": {
+      "train": 56,
+      "validation": 20,
+      "test": 13
+    },
+    "Leapmotor": {
+      "train": 27,
+      "validation": 10,
+      "test": 6
+    },
+    "GAC Aion": {
+      "train": 27,
+      "validation": 10,
+      "test": 8
+    },
+    "Li Auto": {
+      "train": 35,
+      "validation": 11,
+      "test": 10
+    },
+    "Voyah": {
+      "train": 12,
+      "validation": 4,
+      "test": 5
+    },
+    "XPeng": {
+      "train": 34,
+      "validation": 11,
+      "test": 12
+    },
+    "Neta": {
+      "train": 19,
+      "validation": 12,
+      "test": 9
+    },
+    "Nio": {
+      "train": 25,
+      "validation": 12,
+      "test": 8
+    },
+    "Geometry": {
+      "train": 23,
+      "validation": 5,
+      "test": 5
+    },
+    "Avatr": {
+      "train": 18,
+      "validation": 8,
+      "test": 5
+    },
+    "Aito": {
+      "train": 14,
+      "validation": 7,
+      "test": 6
+    },
+    "Denza": {
+      "train": 13,
+      "validation": 5,
+      "test": 3
+    },
+    "Hongqi": {
+      "train": 14,
+      "validation": 6,
+      "test": 11
+    },
+    "Weltmeister": {
+      "train": 18,
+      "validation": 4,
+      "test": 5
+    },
+    "Xiaomi": {
+      "train": 10,
+      "validation": 6,
+      "test": 4
+    },
+    "Stelato": {
+      "train": 10,
+      "validation": 5,
+      "test": 4
+    },
+    "Deepal": {
+      "train": 20,
+      "validation": 6,
+      "test": 10
+    },
+    "Arcfox": {
+      "train": 9,
+      "validation": 4,
+      "test": 3
+    },
+    "Dongfeng": {
+      "train": 23,
+      "validation": 8,
+      "test": 9
+    }
+  },
+  "unsupported_known_make": [
+    "AIQAR"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "reviewed_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "geometry_review": "All13 isolated instance crops viewed. E70 dominant vehicle retained. No neighbour selected.",
+  "group_rule": "Same author/date hash as historical corpus; obey existing split locks. New groups deterministic, minimum3 validation groups. Fix replaces provisional local-prefixed grouping BEFORE any fitting.",
+  "groups": {
+    "b7e2f9607dd9e419665a": "validation",
+    "51b2873ffe151b47017b": "test",
+    "856c818a42492a79c2cf": "validation",
+    "d1083e47c4cebe7ddb4d": "train",
+    "972327893e0a3c201ada": "test",
+    "5b03eedd6a4a1b30e659": "train",
+    "1177600f7ea0219e71b2": "test",
+    "c63390914a5ee91b7cd9": "validation",
+    "b83fcd90e58fbc2f9c89": "train"
+  },
+  "split_counts": {
+    "validation": 4,
+    "test": 5,
+    "train": 4
+  },
+  "features_sha256": "30fa8bfc362982605d6ac7259ee0921ef0e73dd0165dd638e9a81740f49b3d65"
+}

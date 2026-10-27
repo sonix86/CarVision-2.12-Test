@@ -1,0 +1,15 @@
+{
+  "selected_round": 1,
+  "selected_epoch": 100,
+  "source": "Final checkpoint of original fixed candidate, deterministically recovered. No new candidate hyperparameters.",
+  "selection": "Compare to deployed2.9 legacy model head79.26/70.05%, not the undeployed v30 research head93.09/88.48%. Both original finals tie onpublicvalidation; choose earlier round. No own-held diagnostic or test used.",
+  "public_validation": [
+    0.9308755993843079,
+    0.8801843523979187
+  ],
+  "private_training_fit": 1.0,
+  "private_training_min_confidence": 0.9626848697662354,
+  "parent_research_phone_loss_pp": 0.46085,
+  "private_cases_not_independent": true,
+  "test_used": false
+}

@@ -1,0 +1,7 @@
+{
+  "test_started": true,
+  "test_completed": false,
+  "test_cancelled_intentionally": true,
+  "test_cancellation_reason": "Global confirmation gate is disabled (threshold 1.0); every make abstains. Further heldout testing cannot make this checkpoint eligible for release. Evaluation log reached progress 50 of 910; no aggregate test accuracy produced.",
+  "test_must_not_be_repeated_in_this_iteration": true
+}

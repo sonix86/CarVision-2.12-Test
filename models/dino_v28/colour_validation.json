@@ -1,0 +1,2223 @@
+{
+  "passed": false,
+  "baseline": {
+    "whole": 0.9556962251663208,
+    "stress": 0.702531635761261
+  },
+  "selected": null,
+  "rounds": [
+    {
+      "round": 1,
+      "history": [
+        {
+          "epoch": 1,
+          "metrics": {
+            "whole": 0.797468364238739,
+            "stress": 0.702531635761261
+          },
+          "checks": {
+            "whole": false,
+            "stress": false
+          }
+        },
+        {
+          "epoch": 2,
+          "metrics": {
+            "whole": 0.8227847814559937,
+            "stress": 0.8164557218551636
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 3,
+          "metrics": {
+            "whole": 0.8354430198669434,
+            "stress": 0.8291139006614685
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 4,
+          "metrics": {
+            "whole": 0.8417721390724182,
+            "stress": 0.8354430198669434
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 5,
+          "metrics": {
+            "whole": 0.8607594966888428,
+            "stress": 0.8417721390724182
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 6,
+          "metrics": {
+            "whole": 0.8607594966888428,
+            "stress": 0.8354430198669434
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 7,
+          "metrics": {
+            "whole": 0.8544303774833679,
+            "stress": 0.8164557218551636
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 8,
+          "metrics": {
+            "whole": 0.8544303774833679,
+            "stress": 0.8291139006614685
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 9,
+          "metrics": {
+            "whole": 0.8417721390724182,
+            "stress": 0.8291139006614685
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 10,
+          "metrics": {
+            "whole": 0.8860759735107422,
+            "stress": 0.8164557218551636
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 11,
+          "metrics": {
+            "whole": 0.892405092716217,
+            "stress": 0.8227847814559937
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 12,
+          "metrics": {
+            "whole": 0.892405092716217,
+            "stress": 0.8354430198669434
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 13,
+          "metrics": {
+            "whole": 0.8797468543052673,
+            "stress": 0.8164557218551636
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 14,
+          "metrics": {
+            "whole": 0.8860759735107422,
+            "stress": 0.8227847814559937
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 15,
+          "metrics": {
+            "whole": 0.8860759735107422,
+            "stress": 0.8164557218551636
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 16,
+          "metrics": {
+            "whole": 0.8860759735107422,
+            "stress": 0.8227847814559937
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 17,
+          "metrics": {
+            "whole": 0.8987341523170471,
+            "stress": 0.8101266026496887
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 18,
+          "metrics": {
+            "whole": 0.8987341523170471,
+            "stress": 0.8164557218551636
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 19,
+          "metrics": {
+            "whole": 0.8797468543052673,
+            "stress": 0.8101266026496887
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 20,
+          "metrics": {
+            "whole": 0.8797468543052673,
+            "stress": 0.8037974834442139
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 21,
+          "metrics": {
+            "whole": 0.8860759735107422,
+            "stress": 0.8037974834442139
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 22,
+          "metrics": {
+            "whole": 0.8860759735107422,
+            "stress": 0.8101266026496887
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 23,
+          "metrics": {
+            "whole": 0.892405092716217,
+            "stress": 0.8164557218551636
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 24,
+          "metrics": {
+            "whole": 0.892405092716217,
+            "stress": 0.8101266026496887
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 25,
+          "metrics": {
+            "whole": 0.8860759735107422,
+            "stress": 0.8101266026496887
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 26,
+          "metrics": {
+            "whole": 0.8797468543052673,
+            "stress": 0.8101266026496887
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 27,
+          "metrics": {
+            "whole": 0.8797468543052673,
+            "stress": 0.8291139006614685
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 28,
+          "metrics": {
+            "whole": 0.8670886158943176,
+            "stress": 0.8164557218551636
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 29,
+          "metrics": {
+            "whole": 0.8860759735107422,
+            "stress": 0.8101266026496887
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 30,
+          "metrics": {
+            "whole": 0.8860759735107422,
+            "stress": 0.8164557218551636
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 31,
+          "metrics": {
+            "whole": 0.892405092716217,
+            "stress": 0.8291139006614685
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 32,
+          "metrics": {
+            "whole": 0.8797468543052673,
+            "stress": 0.8227847814559937
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 33,
+          "metrics": {
+            "whole": 0.892405092716217,
+            "stress": 0.8164557218551636
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 34,
+          "metrics": {
+            "whole": 0.8860759735107422,
+            "stress": 0.8101266026496887
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 35,
+          "metrics": {
+            "whole": 0.892405092716217,
+            "stress": 0.8354430198669434
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 36,
+          "metrics": {
+            "whole": 0.892405092716217,
+            "stress": 0.8291139006614685
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 37,
+          "metrics": {
+            "whole": 0.8860759735107422,
+            "stress": 0.8164557218551636
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 38,
+          "metrics": {
+            "whole": 0.8860759735107422,
+            "stress": 0.8227847814559937
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 39,
+          "metrics": {
+            "whole": 0.8734177350997925,
+            "stress": 0.8227847814559937
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 40,
+          "metrics": {
+            "whole": 0.8797468543052673,
+            "stress": 0.8227847814559937
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 41,
+          "metrics": {
+            "whole": 0.892405092716217,
+            "stress": 0.8101266026496887
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 42,
+          "metrics": {
+            "whole": 0.8797468543052673,
+            "stress": 0.8164557218551636
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 43,
+          "metrics": {
+            "whole": 0.8860759735107422,
+            "stress": 0.8227847814559937
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 44,
+          "metrics": {
+            "whole": 0.892405092716217,
+            "stress": 0.8291139006614685
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 45,
+          "metrics": {
+            "whole": 0.8860759735107422,
+            "stress": 0.8101266026496887
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 46,
+          "metrics": {
+            "whole": 0.8797468543052673,
+            "stress": 0.8291139006614685
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 47,
+          "metrics": {
+            "whole": 0.8797468543052673,
+            "stress": 0.8481012582778931
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 48,
+          "metrics": {
+            "whole": 0.8797468543052673,
+            "stress": 0.8417721390724182
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 49,
+          "metrics": {
+            "whole": 0.8797468543052673,
+            "stress": 0.8481012582778931
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 50,
+          "metrics": {
+            "whole": 0.8734177350997925,
+            "stress": 0.8481012582778931
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 51,
+          "metrics": {
+            "whole": 0.8860759735107422,
+            "stress": 0.8354430198669434
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 52,
+          "metrics": {
+            "whole": 0.892405092716217,
+            "stress": 0.8481012582778931
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 53,
+          "metrics": {
+            "whole": 0.8797468543052673,
+            "stress": 0.8417721390724182
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 54,
+          "metrics": {
+            "whole": 0.8860759735107422,
+            "stress": 0.8544303774833679
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 55,
+          "metrics": {
+            "whole": 0.8797468543052673,
+            "stress": 0.8417721390724182
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 56,
+          "metrics": {
+            "whole": 0.8797468543052673,
+            "stress": 0.8354430198669434
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 57,
+          "metrics": {
+            "whole": 0.8860759735107422,
+            "stress": 0.8354430198669434
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 58,
+          "metrics": {
+            "whole": 0.8797468543052673,
+            "stress": 0.8544303774833679
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 59,
+          "metrics": {
+            "whole": 0.8797468543052673,
+            "stress": 0.8417721390724182
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 60,
+          "metrics": {
+            "whole": 0.8860759735107422,
+            "stress": 0.8670886158943176
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 61,
+          "metrics": {
+            "whole": 0.8987341523170471,
+            "stress": 0.8481012582778931
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 62,
+          "metrics": {
+            "whole": 0.8987341523170471,
+            "stress": 0.8481012582778931
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 63,
+          "metrics": {
+            "whole": 0.8860759735107422,
+            "stress": 0.8481012582778931
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 64,
+          "metrics": {
+            "whole": 0.892405092716217,
+            "stress": 0.8417721390724182
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 65,
+          "metrics": {
+            "whole": 0.8860759735107422,
+            "stress": 0.8481012582778931
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 66,
+          "metrics": {
+            "whole": 0.8797468543052673,
+            "stress": 0.8607594966888428
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 67,
+          "metrics": {
+            "whole": 0.8797468543052673,
+            "stress": 0.8734177350997925
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 68,
+          "metrics": {
+            "whole": 0.892405092716217,
+            "stress": 0.8607594966888428
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 69,
+          "metrics": {
+            "whole": 0.892405092716217,
+            "stress": 0.8670886158943176
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 70,
+          "metrics": {
+            "whole": 0.892405092716217,
+            "stress": 0.8607594966888428
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 71,
+          "metrics": {
+            "whole": 0.8860759735107422,
+            "stress": 0.8607594966888428
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 72,
+          "metrics": {
+            "whole": 0.8860759735107422,
+            "stress": 0.8544303774833679
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 73,
+          "metrics": {
+            "whole": 0.892405092716217,
+            "stress": 0.8481012582778931
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 74,
+          "metrics": {
+            "whole": 0.892405092716217,
+            "stress": 0.8544303774833679
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 75,
+          "metrics": {
+            "whole": 0.8860759735107422,
+            "stress": 0.8607594966888428
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 76,
+          "metrics": {
+            "whole": 0.8987341523170471,
+            "stress": 0.8481012582778931
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 77,
+          "metrics": {
+            "whole": 0.8607594966888428,
+            "stress": 0.8544303774833679
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 78,
+          "metrics": {
+            "whole": 0.8797468543052673,
+            "stress": 0.8544303774833679
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 79,
+          "metrics": {
+            "whole": 0.8860759735107422,
+            "stress": 0.8544303774833679
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 80,
+          "metrics": {
+            "whole": 0.8860759735107422,
+            "stress": 0.8481012582778931
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 81,
+          "metrics": {
+            "whole": 0.8670886158943176,
+            "stress": 0.8544303774833679
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 82,
+          "metrics": {
+            "whole": 0.8797468543052673,
+            "stress": 0.8544303774833679
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 83,
+          "metrics": {
+            "whole": 0.8797468543052673,
+            "stress": 0.8544303774833679
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 84,
+          "metrics": {
+            "whole": 0.892405092716217,
+            "stress": 0.8544303774833679
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 85,
+          "metrics": {
+            "whole": 0.8860759735107422,
+            "stress": 0.8544303774833679
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 86,
+          "metrics": {
+            "whole": 0.892405092716217,
+            "stress": 0.8607594966888428
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 87,
+          "metrics": {
+            "whole": 0.8860759735107422,
+            "stress": 0.8417721390724182
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 88,
+          "metrics": {
+            "whole": 0.892405092716217,
+            "stress": 0.8544303774833679
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 89,
+          "metrics": {
+            "whole": 0.8987341523170471,
+            "stress": 0.8544303774833679
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 90,
+          "metrics": {
+            "whole": 0.892405092716217,
+            "stress": 0.8354430198669434
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 91,
+          "metrics": {
+            "whole": 0.892405092716217,
+            "stress": 0.8481012582778931
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 92,
+          "metrics": {
+            "whole": 0.905063271522522,
+            "stress": 0.8481012582778931
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 93,
+          "metrics": {
+            "whole": 0.892405092716217,
+            "stress": 0.8481012582778931
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 94,
+          "metrics": {
+            "whole": 0.8987341523170471,
+            "stress": 0.8607594966888428
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 95,
+          "metrics": {
+            "whole": 0.892405092716217,
+            "stress": 0.8544303774833679
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 96,
+          "metrics": {
+            "whole": 0.892405092716217,
+            "stress": 0.8544303774833679
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 97,
+          "metrics": {
+            "whole": 0.892405092716217,
+            "stress": 0.8544303774833679
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 98,
+          "metrics": {
+            "whole": 0.8987341523170471,
+            "stress": 0.8607594966888428
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 99,
+          "metrics": {
+            "whole": 0.8987341523170471,
+            "stress": 0.8544303774833679
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 100,
+          "metrics": {
+            "whole": 0.8987341523170471,
+            "stress": 0.8481012582778931
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        }
+      ],
+      "passed": false
+    },
+    {
+      "round": 2,
+      "history": [
+        {
+          "epoch": 1,
+          "metrics": {
+            "whole": 0.753164529800415,
+            "stress": 0.7278481125831604
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 2,
+          "metrics": {
+            "whole": 0.8481012582778931,
+            "stress": 0.8291139006614685
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 3,
+          "metrics": {
+            "whole": 0.8544303774833679,
+            "stress": 0.8544303774833679
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 4,
+          "metrics": {
+            "whole": 0.8481012582778931,
+            "stress": 0.8291139006614685
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 5,
+          "metrics": {
+            "whole": 0.8734177350997925,
+            "stress": 0.8354430198669434
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 6,
+          "metrics": {
+            "whole": 0.8734177350997925,
+            "stress": 0.8417721390724182
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 7,
+          "metrics": {
+            "whole": 0.9113923907279968,
+            "stress": 0.8417721390724182
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 8,
+          "metrics": {
+            "whole": 0.905063271522522,
+            "stress": 0.8354430198669434
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 9,
+          "metrics": {
+            "whole": 0.8797468543052673,
+            "stress": 0.8354430198669434
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 10,
+          "metrics": {
+            "whole": 0.892405092716217,
+            "stress": 0.8227847814559937
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 11,
+          "metrics": {
+            "whole": 0.905063271522522,
+            "stress": 0.8354430198669434
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 12,
+          "metrics": {
+            "whole": 0.905063271522522,
+            "stress": 0.8354430198669434
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 13,
+          "metrics": {
+            "whole": 0.905063271522522,
+            "stress": 0.8354430198669434
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 14,
+          "metrics": {
+            "whole": 0.8987341523170471,
+            "stress": 0.8417721390724182
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 15,
+          "metrics": {
+            "whole": 0.905063271522522,
+            "stress": 0.8417721390724182
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 16,
+          "metrics": {
+            "whole": 0.892405092716217,
+            "stress": 0.8291139006614685
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 17,
+          "metrics": {
+            "whole": 0.8987341523170471,
+            "stress": 0.8291139006614685
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 18,
+          "metrics": {
+            "whole": 0.8987341523170471,
+            "stress": 0.8291139006614685
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 19,
+          "metrics": {
+            "whole": 0.8987341523170471,
+            "stress": 0.8164557218551636
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 20,
+          "metrics": {
+            "whole": 0.8987341523170471,
+            "stress": 0.8227847814559937
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 21,
+          "metrics": {
+            "whole": 0.905063271522522,
+            "stress": 0.8417721390724182
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 22,
+          "metrics": {
+            "whole": 0.905063271522522,
+            "stress": 0.8417721390724182
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 23,
+          "metrics": {
+            "whole": 0.905063271522522,
+            "stress": 0.8544303774833679
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 24,
+          "metrics": {
+            "whole": 0.905063271522522,
+            "stress": 0.8607594966888428
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 25,
+          "metrics": {
+            "whole": 0.9113923907279968,
+            "stress": 0.8354430198669434
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 26,
+          "metrics": {
+            "whole": 0.9113923907279968,
+            "stress": 0.8544303774833679
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 27,
+          "metrics": {
+            "whole": 0.905063271522522,
+            "stress": 0.8417721390724182
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 28,
+          "metrics": {
+            "whole": 0.9113923907279968,
+            "stress": 0.8607594966888428
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 29,
+          "metrics": {
+            "whole": 0.9113923907279968,
+            "stress": 0.8481012582778931
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 30,
+          "metrics": {
+            "whole": 0.905063271522522,
+            "stress": 0.8481012582778931
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 31,
+          "metrics": {
+            "whole": 0.8987341523170471,
+            "stress": 0.8481012582778931
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 32,
+          "metrics": {
+            "whole": 0.9240506291389465,
+            "stress": 0.8481012582778931
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 33,
+          "metrics": {
+            "whole": 0.9113923907279968,
+            "stress": 0.8481012582778931
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 34,
+          "metrics": {
+            "whole": 0.9177215099334717,
+            "stress": 0.8607594966888428
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 35,
+          "metrics": {
+            "whole": 0.9177215099334717,
+            "stress": 0.8607594966888428
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 36,
+          "metrics": {
+            "whole": 0.9177215099334717,
+            "stress": 0.8797468543052673
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 37,
+          "metrics": {
+            "whole": 0.9240506291389465,
+            "stress": 0.8607594966888428
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 38,
+          "metrics": {
+            "whole": 0.9113923907279968,
+            "stress": 0.8670886158943176
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 39,
+          "metrics": {
+            "whole": 0.9113923907279968,
+            "stress": 0.8607594966888428
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 40,
+          "metrics": {
+            "whole": 0.9240506291389465,
+            "stress": 0.8544303774833679
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 41,
+          "metrics": {
+            "whole": 0.905063271522522,
+            "stress": 0.8607594966888428
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 42,
+          "metrics": {
+            "whole": 0.905063271522522,
+            "stress": 0.8860759735107422
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 43,
+          "metrics": {
+            "whole": 0.905063271522522,
+            "stress": 0.8734177350997925
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 44,
+          "metrics": {
+            "whole": 0.905063271522522,
+            "stress": 0.8670886158943176
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 45,
+          "metrics": {
+            "whole": 0.9177215099334717,
+            "stress": 0.8734177350997925
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 46,
+          "metrics": {
+            "whole": 0.905063271522522,
+            "stress": 0.8670886158943176
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 47,
+          "metrics": {
+            "whole": 0.905063271522522,
+            "stress": 0.8734177350997925
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 48,
+          "metrics": {
+            "whole": 0.905063271522522,
+            "stress": 0.8797468543052673
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 49,
+          "metrics": {
+            "whole": 0.9113923907279968,
+            "stress": 0.8734177350997925
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 50,
+          "metrics": {
+            "whole": 0.905063271522522,
+            "stress": 0.8734177350997925
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 51,
+          "metrics": {
+            "whole": 0.905063271522522,
+            "stress": 0.8670886158943176
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 52,
+          "metrics": {
+            "whole": 0.905063271522522,
+            "stress": 0.8670886158943176
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 53,
+          "metrics": {
+            "whole": 0.9113923907279968,
+            "stress": 0.8734177350997925
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 54,
+          "metrics": {
+            "whole": 0.9113923907279968,
+            "stress": 0.8797468543052673
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 55,
+          "metrics": {
+            "whole": 0.9113923907279968,
+            "stress": 0.8797468543052673
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 56,
+          "metrics": {
+            "whole": 0.9113923907279968,
+            "stress": 0.8797468543052673
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 57,
+          "metrics": {
+            "whole": 0.9177215099334717,
+            "stress": 0.8670886158943176
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 58,
+          "metrics": {
+            "whole": 0.9113923907279968,
+            "stress": 0.8670886158943176
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 59,
+          "metrics": {
+            "whole": 0.905063271522522,
+            "stress": 0.8670886158943176
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 60,
+          "metrics": {
+            "whole": 0.9113923907279968,
+            "stress": 0.8734177350997925
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 61,
+          "metrics": {
+            "whole": 0.9177215099334717,
+            "stress": 0.8734177350997925
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 62,
+          "metrics": {
+            "whole": 0.9113923907279968,
+            "stress": 0.8797468543052673
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 63,
+          "metrics": {
+            "whole": 0.9113923907279968,
+            "stress": 0.8797468543052673
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 64,
+          "metrics": {
+            "whole": 0.9113923907279968,
+            "stress": 0.8670886158943176
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 65,
+          "metrics": {
+            "whole": 0.9177215099334717,
+            "stress": 0.8670886158943176
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 66,
+          "metrics": {
+            "whole": 0.9177215099334717,
+            "stress": 0.8797468543052673
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 67,
+          "metrics": {
+            "whole": 0.9113923907279968,
+            "stress": 0.8797468543052673
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 68,
+          "metrics": {
+            "whole": 0.9240506291389465,
+            "stress": 0.8734177350997925
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 69,
+          "metrics": {
+            "whole": 0.9240506291389465,
+            "stress": 0.8670886158943176
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 70,
+          "metrics": {
+            "whole": 0.9177215099334717,
+            "stress": 0.8734177350997925
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 71,
+          "metrics": {
+            "whole": 0.9113923907279968,
+            "stress": 0.8670886158943176
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 72,
+          "metrics": {
+            "whole": 0.905063271522522,
+            "stress": 0.8670886158943176
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 73,
+          "metrics": {
+            "whole": 0.9113923907279968,
+            "stress": 0.8797468543052673
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 74,
+          "metrics": {
+            "whole": 0.9240506291389465,
+            "stress": 0.8797468543052673
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 75,
+          "metrics": {
+            "whole": 0.9177215099334717,
+            "stress": 0.8797468543052673
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 76,
+          "metrics": {
+            "whole": 0.9177215099334717,
+            "stress": 0.8734177350997925
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 77,
+          "metrics": {
+            "whole": 0.9113923907279968,
+            "stress": 0.8797468543052673
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 78,
+          "metrics": {
+            "whole": 0.9113923907279968,
+            "stress": 0.8860759735107422
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 79,
+          "metrics": {
+            "whole": 0.9113923907279968,
+            "stress": 0.8797468543052673
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 80,
+          "metrics": {
+            "whole": 0.9177215099334717,
+            "stress": 0.8860759735107422
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 81,
+          "metrics": {
+            "whole": 0.9177215099334717,
+            "stress": 0.8797468543052673
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 82,
+          "metrics": {
+            "whole": 0.9113923907279968,
+            "stress": 0.8797468543052673
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 83,
+          "metrics": {
+            "whole": 0.905063271522522,
+            "stress": 0.8670886158943176
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 84,
+          "metrics": {
+            "whole": 0.9113923907279968,
+            "stress": 0.8797468543052673
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 85,
+          "metrics": {
+            "whole": 0.9177215099334717,
+            "stress": 0.892405092716217
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 86,
+          "metrics": {
+            "whole": 0.9113923907279968,
+            "stress": 0.8734177350997925
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 87,
+          "metrics": {
+            "whole": 0.9240506291389465,
+            "stress": 0.8797468543052673
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 88,
+          "metrics": {
+            "whole": 0.9177215099334717,
+            "stress": 0.8734177350997925
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 89,
+          "metrics": {
+            "whole": 0.9177215099334717,
+            "stress": 0.8860759735107422
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 90,
+          "metrics": {
+            "whole": 0.905063271522522,
+            "stress": 0.8860759735107422
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 91,
+          "metrics": {
+            "whole": 0.905063271522522,
+            "stress": 0.8670886158943176
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 92,
+          "metrics": {
+            "whole": 0.9113923907279968,
+            "stress": 0.8670886158943176
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 93,
+          "metrics": {
+            "whole": 0.9113923907279968,
+            "stress": 0.8797468543052673
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 94,
+          "metrics": {
+            "whole": 0.9113923907279968,
+            "stress": 0.8860759735107422
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 95,
+          "metrics": {
+            "whole": 0.9177215099334717,
+            "stress": 0.8734177350997925
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 96,
+          "metrics": {
+            "whole": 0.9113923907279968,
+            "stress": 0.8734177350997925
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 97,
+          "metrics": {
+            "whole": 0.9113923907279968,
+            "stress": 0.8860759735107422
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 98,
+          "metrics": {
+            "whole": 0.9113923907279968,
+            "stress": 0.8860759735107422
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 99,
+          "metrics": {
+            "whole": 0.9177215099334717,
+            "stress": 0.8797468543052673
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        },
+        {
+          "epoch": 100,
+          "metrics": {
+            "whole": 0.9177215099334717,
+            "stress": 0.8797468543052673
+          },
+          "checks": {
+            "whole": false,
+            "stress": true
+          }
+        }
+      ],
+      "passed": false
+    }
+  ],
+  "test_used": false
+}

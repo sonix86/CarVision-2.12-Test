@@ -1,0 +1,17 @@
+{
+  "data_integrity_passed": true,
+  "ready_for_training": true,
+  "unreviewed_images": [],
+  "historical_crops_preserved": 1592,
+  "new_source_crops_checked": 1416,
+  "brands": 82,
+  "rows": 3633,
+  "groups": 2752,
+  "split_counts": {
+    "train": 2054,
+    "validation": 669,
+    "test": 910
+  },
+  "dataset_sha256": "819a606a054891b1e56047d25d41d650ef80841cb59f6e30906b657266ab1005",
+  "limitation": "Declared source-session independence, not verified physical-vehicle identity. The integrity audit is not an accuracy test."
+}

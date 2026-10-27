@@ -1,0 +1,22 @@
+{
+  "base_dataset_sha256": "819a606a054891b1e56047d25d41d650ef80841cb59f6e30906b657266ab1005",
+  "dataset_sha256": "422319bb418c29feac8f9d25feabbdddd9d59b6d1e9a3bb5589e9cb22045fae6",
+  "rows": 3651,
+  "owner_train_crops": 18,
+  "owner_groups": [
+    "owner-phone-outing-2026-10-21",
+    "owner-phone-outing-2026-10-25"
+  ],
+  "owner_colours": {
+    "black": 7,
+    "white": 9,
+    "grey": 2
+  },
+  "locked_development_controls": [
+    "75125c4829113a7d613b.jpg",
+    "7f1d7a4bcb990ef3f3e8.jpg",
+    "e96a4a962bfb7ecc4bdf.jpg"
+  ],
+  "original_splits_preserved": true,
+  "private_pixels_distributable": false
+}

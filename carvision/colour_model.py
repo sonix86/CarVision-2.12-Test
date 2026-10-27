@@ -15,6 +15,9 @@ class JointColourClassifier:
         from PIL import ImageOps
         views=torch.stack([self.preprocess(image),self.preprocess(ImageOps.mirror(image))])
         return self.network(views)[1].softmax(1).mean(0)
+    def predict(self,image):
+        p=self.probabilities(image);index=int(p.argmax())
+        return COLOURS[index],float(p[index])
 
 def colour_statistics(image):
     image=image.convert('RGB').resize((128,128));features=[]

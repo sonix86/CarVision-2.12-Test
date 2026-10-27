@@ -1,3 +1,7 @@
+# Current 2.12 additions
+
+The active route uses general Meta DINOv2 ViT-S/14 (Apache-2.0) and the general LAION CLIP ViT-B/32 visual encoder (MIT), with own supervised automotive make/family heads. The generic COCO Mask R-CNN ResNet50-FPN-v2 supplies instance geometry. Colour decisions use project-trained VCoR heads and original paint/illumination evidence. This header supersedes older architecture counts below. See models/model_version.json, source manifests, README and docs/evidence.
+
 # Libraries, general weights and public photographs
 
 Owner: София Рахманкулова. OpenAI Codex assisted with code, training, data preparation, visual colour review, tests, documentation and packaging. No student-collected data is claimed.

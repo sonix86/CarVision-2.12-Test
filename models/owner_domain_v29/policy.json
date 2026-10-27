@@ -1,0 +1,57 @@
+{
+  "rounds_max": 2,
+  "epochs_each": 100,
+  "heads": [
+    "continuation of existing own CLIP head2.6",
+    "continuation of previous own joint DINO+CLIP head, not deployed"
+  ],
+  "priority_makes": [
+    "BYD",
+    "Changan",
+    "Deepal",
+    "Dongfeng",
+    "GAC Aion",
+    "Geely",
+    "Geometry",
+    "Haval",
+    "Honda",
+    "Leapmotor",
+    "Li Auto",
+    "Neta",
+    "Nio",
+    "Toyota",
+    "Voyah",
+    "Weltmeister",
+    "XPeng",
+    "Zeekr"
+  ],
+  "mandatory_makes": [
+    "BYD",
+    "Li Auto",
+    "Zeekr",
+    "Chevrolet",
+    "Toyota"
+  ],
+  "own_loss_weight": 12,
+  "public_teacher_kl": 0.2,
+  "known_error_role": "Explicitly change verified own examples to TRAIN in this new user-authorized iteration. Not an independent phone test. First two claimed GAC labels disputed and excluded; prior files preserved.",
+  "selection": "Validation only among epochs with private-TRAIN argmax accuracy>=90% and historical raw accuracy within1pp; priority macro weighted same as v28. All acceptance gates/calibration from unchanged grouped public validation. Exactly two fits.",
+  "validation_guards": {
+    "whole_top1_not_worse": true,
+    "phone_top1_not_worse": true,
+    "historical_tolerance_pp": 1,
+    "priority_macro_gain_pp": 1,
+    "whole_confirmation_precision_min": 0.95,
+    "phone_confirmation_precision_min": 0.95,
+    "phone_precision_max_drop_pp": 1,
+    "correct_confirmations_not_worse_both": true,
+    "mandatory_makes_enabled": true
+  },
+  "primary_calibration_precision": 0.95,
+  "fallback_calibration_precision": 0.95,
+  "test": "One fixed-candidate evaluation only after validation passes. Same reused public set; not new phone exam. Whole/phone top1 and correct confirmations must not decrease; confirmation precision >=95% and no >1pp drop.",
+  "data": "Replace15old owner crops with runtime masks and correct confirmed annotation errors; add verified owner views, all sameTRAIN group. Preserve every public pixel/label/split. Never infer answers from file names.",
+  "colour": "Two own visible-paint MLP fits on existing masked training features plus corrected ownerTRAIN only; compare against old tree paint head on untouched validation; reject whole-score regressions.",
+  "new_blind_phone_test_available": false,
+  "production": "Keep2.6 and sealed ZIPs unchanged until all gates/checks. No promise all EVs covered."
+}

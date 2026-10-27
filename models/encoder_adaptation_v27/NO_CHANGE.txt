@@ -1,0 +1,1 @@
+REJECTED FOR DEPLOYMENT: both fits finished. Selected candidate improves public metrics but does not fix user phone errors and wrongly confirms Changan on GAC Aion. Keep 2.6 unchanged. No package or additional v27 fit.

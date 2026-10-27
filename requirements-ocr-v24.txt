@@ -1,0 +1,9 @@
+# Optional only when the validation-selected v2.4 head uses general OCR.
+# Install base requirements first, then the runtime requirements below.
+# RapidOCR declares opencv-python; this project already uses headless OpenCV.
+# Install that one package with --no-deps to avoid two conflicting cv2 wheels.
+onnxruntime==1.23.2
+shapely==2.2.0
+pyclipper==1.4.0
+PyYAML==6.0.3
+# Final command: python -m pip install --no-deps rapidocr_onnxruntime==1.4.4

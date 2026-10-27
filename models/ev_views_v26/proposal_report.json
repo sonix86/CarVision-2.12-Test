@@ -1,0 +1,1398 @@
+{
+  "source_manifest_sha256": "384da278e905b174389fa0e4a17636b9f8a6db1374a0d63322be92181c12f102",
+  "base_dataset_sha256": "422319bb418c29feac8f9d25feabbdddd9d59b6d1e9a3bb5589e9cb22045fae6",
+  "proposed": 171,
+  "rejected": {
+    "ev_views_v26/c1382813254e76914991.jpg": "no isolated dominant exterior",
+    "ev_views_v26/0099cf7f8ce0da7968bf.jpg": "near duplicate",
+    "ev_views_v26/02f4a0ac9e1e5efb46ad.jpg": "near duplicate",
+    "ev_views_v26/4781c7fd30a8b1e9724e.jpg": "no isolated dominant exterior",
+    "ev_views_v26/02ab2df2a311f5b56e68.jpg": "near duplicate",
+    "ev_views_v26/0af731f71343c8ccb531.jpg": "near duplicate",
+    "ev_views_v26/10de07677d053768c143.jpg": "near duplicate",
+    "ev_views_v26/19c10115977c828cea49.jpg": "near duplicate",
+    "ev_views_v26/2d91fa52fafb93bcfda3.jpg": "no isolated dominant exterior",
+    "ev_views_v26/a665dd7e799182fe9493.jpg": "no isolated dominant exterior",
+    "ev_views_v26/02837fcdc8564fc6e4ac.jpg": "no isolated dominant exterior",
+    "ev_views_v26/622c4f6e869cd373794c.jpg": "no isolated dominant exterior",
+    "ev_views_v26/313ae8648473f36c36df.jpg": "no isolated dominant exterior",
+    "ev_views_v26/00caf482e0c869ccbd45.jpg": "no isolated dominant exterior",
+    "ev_views_v26/0b20357cf715ee69d251.jpg": "no isolated dominant exterior",
+    "ev_views_v26/0f32bc1881fa999ab8da.jpg": "no isolated dominant exterior",
+    "ev_views_v26/109c79821d4500c565d8.jpg": "no isolated dominant exterior",
+    "ev_views_v26/1c4f5697b48e054c7777.jpg": "no isolated dominant exterior",
+    "ev_views_v26/087bdbbdc56f5acf302d.jpg": "no isolated dominant exterior"
+  },
+  "entries": [
+    {
+      "index": 0,
+      "image": "ev_views_v26/48c96d9e665b1634b19e.jpg",
+      "brand": "BYD",
+      "requested_family": "Song Plus",
+      "group": "6e7ab8838bfbb51f4e48",
+      "split": "test"
+    },
+    {
+      "index": 1,
+      "image": "ev_views_v26/a9edad36ba698b61b562.jpg",
+      "brand": "BYD",
+      "requested_family": "Song Plus",
+      "group": "14462e288a6533acf5af",
+      "split": "test"
+    },
+    {
+      "index": 2,
+      "image": "ev_views_v26/38cdc70c205382ccb43b.jpg",
+      "brand": "Li Auto",
+      "requested_family": "L6",
+      "group": "05ef0e48bcbf4cb5512f",
+      "split": "train"
+    },
+    {
+      "index": 3,
+      "image": "ev_views_v26/6215f2ffadc50f27f512.jpg",
+      "brand": "Li Auto",
+      "requested_family": "L6",
+      "group": "05ef0e48bcbf4cb5512f",
+      "split": "train"
+    },
+    {
+      "index": 4,
+      "image": "ev_views_v26/64f700155fc1b262d966.jpg",
+      "brand": "Li Auto",
+      "requested_family": "L6",
+      "group": "06d2651d74407d011c0a",
+      "split": "train"
+    },
+    {
+      "index": 5,
+      "image": "ev_views_v26/68334b4a8e6b14227158.jpg",
+      "brand": "Li Auto",
+      "requested_family": "L6",
+      "group": "5bf0c6acf2d5915df4fc",
+      "split": "train"
+    },
+    {
+      "index": 6,
+      "image": "ev_views_v26/0402e7a8f562748e47d2.jpg",
+      "brand": "Zeekr",
+      "requested_family": "001",
+      "group": "03afc3880c30944d343f",
+      "split": "validation"
+    },
+    {
+      "index": 7,
+      "image": "ev_views_v26/047bb40482acb935c807.jpg",
+      "brand": "Zeekr",
+      "requested_family": "001",
+      "group": "734434df1830306b22c3",
+      "split": "train"
+    },
+    {
+      "index": 8,
+      "image": "ev_views_v26/20e6d4b8dbd4fcb3faa7.jpg",
+      "brand": "GAC Aion",
+      "requested_family": "S",
+      "group": "ded64f7de196213fab70",
+      "split": "train"
+    },
+    {
+      "index": 9,
+      "image": "ev_views_v26/51e7933fb91e88e68393.jpg",
+      "brand": "GAC Aion",
+      "requested_family": "S",
+      "group": "ded64f7de196213fab70",
+      "split": "train"
+    },
+    {
+      "index": 10,
+      "image": "ev_views_v26/72e3cfdf5139fd14f552.jpg",
+      "brand": "GAC Aion",
+      "requested_family": "S",
+      "group": "4adbe3d1039a37f9d31e",
+      "split": "train"
+    },
+    {
+      "index": 11,
+      "image": "ev_views_v26/0bc2d188054b90991fc7.jpg",
+      "brand": "Geometry",
+      "requested_family": "A",
+      "group": "ca1a7a9c3cad2658ffca",
+      "split": "validation"
+    },
+    {
+      "index": 12,
+      "image": "ev_views_v26/0c2cec6bc577bdd673d5.jpg",
+      "brand": "Geometry",
+      "requested_family": "A",
+      "group": "1177600f7ea0219e71b2",
+      "split": "test"
+    },
+    {
+      "index": 13,
+      "image": "ev_views_v26/24bb16ee998b96ee4851.jpg",
+      "brand": "Geometry",
+      "requested_family": "A",
+      "group": "1177600f7ea0219e71b2",
+      "split": "test"
+    },
+    {
+      "index": 14,
+      "image": "ev_views_v26/283c0956b96a8356d876.jpg",
+      "brand": "Geometry",
+      "requested_family": "A",
+      "group": "5b03eedd6a4a1b30e659",
+      "split": "train"
+    },
+    {
+      "index": 15,
+      "image": "ev_views_v26/18cc62e6fe11c21abcb0.jpg",
+      "brand": "Deepal",
+      "requested_family": "S07",
+      "group": "14f9378e6e8f8d0446a3",
+      "split": "train"
+    },
+    {
+      "index": 16,
+      "image": "ev_views_v26/209ca90b017b0e3a068a.jpg",
+      "brand": "Deepal",
+      "requested_family": "S07",
+      "group": "74d23d47b08889bcea41",
+      "split": "test"
+    },
+    {
+      "index": 17,
+      "image": "ev_views_v26/2b472642e34c3e17c571.jpg",
+      "brand": "Deepal",
+      "requested_family": "S07",
+      "group": "3f5788d63b7121b8eec5",
+      "split": "train"
+    },
+    {
+      "index": 18,
+      "image": "ev_views_v26/3a12068f50ec53218e17.jpg",
+      "brand": "Leapmotor",
+      "requested_family": "T03",
+      "group": "78c1a8b9e3f61453e756",
+      "split": "validation"
+    },
+    {
+      "index": 19,
+      "image": "ev_views_v26/6f5e6d8d9e2814c4b0f5.jpg",
+      "brand": "Leapmotor",
+      "requested_family": "T03",
+      "group": "7eb8a1b5fafec46a8ac7",
+      "split": "validation"
+    },
+    {
+      "index": 20,
+      "image": "ev_views_v26/70f8cd09c2985b53e669.jpg",
+      "brand": "Leapmotor",
+      "requested_family": "T03",
+      "group": "7eb8a1b5fafec46a8ac7",
+      "split": "validation"
+    },
+    {
+      "index": 21,
+      "image": "ev_views_v26/73eb3e7e8d41ae23f644.jpg",
+      "brand": "Leapmotor",
+      "requested_family": "T03",
+      "group": "c1beca65e5b42ae4d88d",
+      "split": "train"
+    },
+    {
+      "index": 22,
+      "image": "ev_views_v26/66a7d0ad5011de29a2c6.jpg",
+      "brand": "Neta",
+      "requested_family": "V",
+      "group": "e7beb78b6dfa615e7a5c",
+      "split": "train"
+    },
+    {
+      "index": 23,
+      "image": "ev_views_v26/d82624ff177b83fad692.jpg",
+      "brand": "Neta",
+      "requested_family": "V",
+      "group": "1e6220a0ee90ef98a6f5",
+      "split": "validation"
+    },
+    {
+      "index": 24,
+      "image": "ev_views_v26/d92d901bdd176f684610.jpg",
+      "brand": "Neta",
+      "requested_family": "V",
+      "group": "1e6220a0ee90ef98a6f5",
+      "split": "validation"
+    },
+    {
+      "index": 25,
+      "image": "ev_views_v26/b72089f6b32e325c3f97.jpg",
+      "brand": "Changan",
+      "requested_family": "Lumin",
+      "group": "a78778b8b3cea004e150",
+      "split": "train"
+    },
+    {
+      "index": 26,
+      "image": "ev_views_v26/0debbef4f2927bea4822.jpg",
+      "brand": "Toyota",
+      "requested_family": "bZ4X",
+      "group": "b6872240ec9d5771a190",
+      "split": "test"
+    },
+    {
+      "index": 27,
+      "image": "ev_views_v26/141a0a0ba01450093954.jpg",
+      "brand": "Toyota",
+      "requested_family": "bZ4X",
+      "group": "b6872240ec9d5771a190",
+      "split": "test"
+    },
+    {
+      "index": 28,
+      "image": "ev_views_v26/3a977605de120c32df5b.jpg",
+      "brand": "Toyota",
+      "requested_family": "bZ4X",
+      "group": "5d9f79631063cf37046b",
+      "split": "train"
+    },
+    {
+      "index": 29,
+      "image": "ev_views_v26/3abd2e114eb21d277e94.jpg",
+      "brand": "Toyota",
+      "requested_family": "bZ4X",
+      "group": "693cc9239096683110e8",
+      "split": "validation"
+    },
+    {
+      "index": 30,
+      "image": "ev_views_v26/9ea6bfd9dcad80a1de3d.jpg",
+      "brand": "Honda",
+      "requested_family": "e:NS1",
+      "group": "f29bc3e1db64fba47316",
+      "split": "validation"
+    },
+    {
+      "index": 31,
+      "image": "ev_views_v26/ade62d236abc5fec1af1.jpg",
+      "brand": "Honda",
+      "requested_family": "e:NS1",
+      "group": "8c1e672c26e7438db30e",
+      "split": "validation"
+    },
+    {
+      "index": 32,
+      "image": "ev_views_v26/b902a2a58f785db0ac56.jpg",
+      "brand": "Honda",
+      "requested_family": "e:NS1",
+      "group": "f29bc3e1db64fba47316",
+      "split": "validation"
+    },
+    {
+      "index": 33,
+      "image": "ev_views_v26/0b5b9804427a8c519049.jpg",
+      "brand": "Nio",
+      "requested_family": "ET5",
+      "group": "c75a97c6ec1ccdae97ed",
+      "split": "train"
+    },
+    {
+      "index": 34,
+      "image": "ev_views_v26/0ee61695c31df6e73c42.jpg",
+      "brand": "Nio",
+      "requested_family": "ET5",
+      "group": "a1a904a40c04b49cddeb",
+      "split": "train"
+    },
+    {
+      "index": 35,
+      "image": "ev_views_v26/0f15dff2ac0bb7bf9118.jpg",
+      "brand": "Nio",
+      "requested_family": "ET5",
+      "group": "13e2c36be266366f6d85",
+      "split": "train"
+    },
+    {
+      "index": 36,
+      "image": "ev_views_v26/20d8d74bcda6f3a0f268.jpg",
+      "brand": "Avatr",
+      "requested_family": "11",
+      "group": "6b880696942118dab409",
+      "split": "train"
+    },
+    {
+      "index": 37,
+      "image": "ev_views_v26/6004c9004e2e5ac2a092.jpg",
+      "brand": "Avatr",
+      "requested_family": "11",
+      "group": "dafe07e8b8b588b9b82c",
+      "split": "validation"
+    },
+    {
+      "index": 38,
+      "image": "ev_views_v26/60aa488a69f15b3bc6f3.jpg",
+      "brand": "Avatr",
+      "requested_family": "11",
+      "group": "63543459a25c6ff5ae18",
+      "split": "train"
+    },
+    {
+      "index": 39,
+      "image": "ev_views_v26/2b6e4e8eebd36f892896.jpg",
+      "brand": "Voyah",
+      "requested_family": "Free",
+      "group": "d959efd6b653e456d496",
+      "split": "train"
+    },
+    {
+      "index": 40,
+      "image": "ev_views_v26/3296da094e4e7e1c91f4.jpg",
+      "brand": "Voyah",
+      "requested_family": "Free",
+      "group": "d959efd6b653e456d496",
+      "split": "train"
+    },
+    {
+      "index": 41,
+      "image": "ev_views_v26/48cae0a8f4c2ce595924.jpg",
+      "brand": "Voyah",
+      "requested_family": "Free",
+      "group": "63743430cec6986872f8",
+      "split": "train"
+    },
+    {
+      "index": 42,
+      "image": "ev_views_v26/7046ecd2a6bf7cb9f7d8.jpg",
+      "brand": "Voyah",
+      "requested_family": "Free",
+      "group": "5102d5f7cc10337f3f6c",
+      "split": "test"
+    },
+    {
+      "index": 43,
+      "image": "ev_views_v26/2be4ff00bfb3309ec965.jpg",
+      "brand": "Wuling",
+      "requested_family": "Bingo",
+      "group": "9bb68ad929fdb6abb4cd",
+      "split": "train"
+    },
+    {
+      "index": 44,
+      "image": "ev_views_v26/31c0c60dc38da4e173f2.jpg",
+      "brand": "Wuling",
+      "requested_family": "Bingo",
+      "group": "e608ce3a1dd69fb78924",
+      "split": "train"
+    },
+    {
+      "index": 45,
+      "image": "ev_views_v26/3436d3ef1a1ae578c307.jpg",
+      "brand": "Wuling",
+      "requested_family": "Bingo",
+      "group": "5fba5353f1427e0c286f",
+      "split": "train"
+    },
+    {
+      "index": 46,
+      "image": "ev_views_v26/38d27212006a60fb24a2.jpg",
+      "brand": "Wuling",
+      "requested_family": "Bingo",
+      "group": "e1b87a4fb65d971c457c",
+      "split": "train"
+    },
+    {
+      "index": 47,
+      "image": "ev_views_v26/b3d00ea5b0c93ef594ec.jpg",
+      "brand": "BYD",
+      "requested_family": "Seagull",
+      "group": "5dfcd846751bbb043a83",
+      "split": "train"
+    },
+    {
+      "index": 48,
+      "image": "ev_views_v26/e05f57cc44e72ec13e3b.jpg",
+      "brand": "BYD",
+      "requested_family": "Seagull",
+      "group": "5dfcd846751bbb043a83",
+      "split": "train"
+    },
+    {
+      "index": 49,
+      "image": "ev_views_v26/a2239542b3a91269c256.jpg",
+      "brand": "Weltmeister",
+      "requested_family": "W6",
+      "group": "b64085831345da1bf044",
+      "split": "train"
+    },
+    {
+      "index": 50,
+      "image": "ev_views_v26/a737a47c02ddd65d551e.jpg",
+      "brand": "Weltmeister",
+      "requested_family": "W6",
+      "group": "00857e2c0a38362133b2",
+      "split": "train"
+    },
+    {
+      "index": 51,
+      "image": "ev_views_v26/c34925b69a76b192589e.jpg",
+      "brand": "Weltmeister",
+      "requested_family": "W6",
+      "group": "598d99df9d60d11eeddc",
+      "split": "train"
+    },
+    {
+      "index": 52,
+      "image": "ev_views_v26/d45115d2e43cb39a5dcc.jpg",
+      "brand": "Weltmeister",
+      "requested_family": "W6",
+      "group": "c945b1567a7c19fca984",
+      "split": "test"
+    },
+    {
+      "index": 53,
+      "image": "ev_views_v26/065e30651f3e90e24b77.jpg",
+      "brand": "Li Auto",
+      "requested_family": "L7",
+      "group": "a22cb7e46b802338ae81",
+      "split": "validation"
+    },
+    {
+      "index": 54,
+      "image": "ev_views_v26/0785da32e6c446e3f155.jpg",
+      "brand": "Li Auto",
+      "requested_family": "L7",
+      "group": "2cd1fb0beadc94c26df6",
+      "split": "test"
+    },
+    {
+      "index": 55,
+      "image": "ev_views_v26/157039ba1b2c613aba06.jpg",
+      "brand": "Li Auto",
+      "requested_family": "L7",
+      "group": "e7a0e65268901678eaee",
+      "split": "validation"
+    },
+    {
+      "index": 56,
+      "image": "ev_views_v26/174b2e10b3c4072c7dc4.jpg",
+      "brand": "Li Auto",
+      "requested_family": "L7",
+      "group": "a2f63807618ba58c8fc5",
+      "split": "train"
+    },
+    {
+      "index": 57,
+      "image": "ev_views_v26/3943726a0fdfe603cf3f.jpg",
+      "brand": "Zeekr",
+      "requested_family": "007",
+      "group": "3569725ce89b4c1d6397",
+      "split": "train"
+    },
+    {
+      "index": 58,
+      "image": "ev_views_v26/46fb0f95bf1cbe80a418.jpg",
+      "brand": "Zeekr",
+      "requested_family": "007",
+      "group": "e5727e71b434d39294c1",
+      "split": "validation"
+    },
+    {
+      "index": 59,
+      "image": "ev_views_v26/4d31c4a48e2fbb8fbd09.jpg",
+      "brand": "Zeekr",
+      "requested_family": "007",
+      "group": "e5727e71b434d39294c1",
+      "split": "validation"
+    },
+    {
+      "index": 60,
+      "image": "ev_views_v26/5105d0ecc5003ba582a5.jpg",
+      "brand": "Zeekr",
+      "requested_family": "007",
+      "group": "77654a8d84fb9df365c0",
+      "split": "validation"
+    },
+    {
+      "index": 61,
+      "image": "ev_views_v26/06705a27ee9363fe57cb.jpg",
+      "brand": "GAC Aion",
+      "requested_family": "S Plus",
+      "group": "848db8dd36cdac78e814",
+      "split": "test"
+    },
+    {
+      "index": 62,
+      "image": "ev_views_v26/150bfc1a95d7e142a8ef.jpg",
+      "brand": "GAC Aion",
+      "requested_family": "S Plus",
+      "group": "906659aa135c2147f10b",
+      "split": "train"
+    },
+    {
+      "index": 63,
+      "image": "ev_views_v26/19a07b2c15121379a255.jpg",
+      "brand": "GAC Aion",
+      "requested_family": "S Plus",
+      "group": "d10b3a576c301aec0439",
+      "split": "test"
+    },
+    {
+      "index": 64,
+      "image": "ev_views_v26/258ae498417cc90a30e0.jpg",
+      "brand": "GAC Aion",
+      "requested_family": "S Plus",
+      "group": "906659aa135c2147f10b",
+      "split": "train"
+    },
+    {
+      "index": 65,
+      "image": "ev_views_v26/00b883a32b1744916a3c.jpg",
+      "brand": "Geely",
+      "requested_family": "Galaxy E8",
+      "group": "7d76add7a692e2fba54d",
+      "split": "train"
+    },
+    {
+      "index": 66,
+      "image": "ev_views_v26/17c260c2bdcd7e817f3b.jpg",
+      "brand": "Geely",
+      "requested_family": "Galaxy E8",
+      "group": "128da5f807e327947fce",
+      "split": "train"
+    },
+    {
+      "index": 67,
+      "image": "ev_views_v26/2597c83b6bfc63b915ed.jpg",
+      "brand": "Geely",
+      "requested_family": "Galaxy E8",
+      "group": "d97369f0200e2d157e30",
+      "split": "train"
+    },
+    {
+      "index": 68,
+      "image": "ev_views_v26/3fcebf32f24f8fee50d7.jpg",
+      "brand": "Geely",
+      "requested_family": "Galaxy E8",
+      "group": "a833bcd6425922b948b7",
+      "split": "train"
+    },
+    {
+      "index": 69,
+      "image": "ev_views_v26/1242097cfe0c9d0333b6.jpg",
+      "brand": "Geometry",
+      "requested_family": "C",
+      "group": "757b5fe1355897ab47ad",
+      "split": "train"
+    },
+    {
+      "index": 70,
+      "image": "ev_views_v26/12b90c16574b0964ff13.jpg",
+      "brand": "Geometry",
+      "requested_family": "C",
+      "group": "ac694731fe88005f62ac",
+      "split": "train"
+    },
+    {
+      "index": 71,
+      "image": "ev_views_v26/159eeb7b76b10fdf2b80.jpg",
+      "brand": "Geometry",
+      "requested_family": "C",
+      "group": "bcdaca148a085aa128c7",
+      "split": "train"
+    },
+    {
+      "index": 72,
+      "image": "ev_views_v26/225682477ae35311a3db.jpg",
+      "brand": "Geometry",
+      "requested_family": "C",
+      "group": "3ad3caa8b6668137ecb9",
+      "split": "train"
+    },
+    {
+      "index": 73,
+      "image": "ev_views_v26/7d24ba4ec188dac75a6f.jpg",
+      "brand": "Deepal",
+      "requested_family": "SL03",
+      "group": "2b892a7a3af92bdab229",
+      "split": "train"
+    },
+    {
+      "index": 74,
+      "image": "ev_views_v26/9c59d3f6d4ea9ea5765a.jpg",
+      "brand": "Deepal",
+      "requested_family": "SL03",
+      "group": "2b3ee2e3e9bc14a079e0",
+      "split": "test"
+    },
+    {
+      "index": 75,
+      "image": "ev_views_v26/b9e3242caa0cf61f5241.jpg",
+      "brand": "Deepal",
+      "requested_family": "SL03",
+      "group": "e2a9131d29555c5036c8",
+      "split": "test"
+    },
+    {
+      "index": 76,
+      "image": "ev_views_v26/bc815df16c37d1eaa600.jpg",
+      "brand": "Deepal",
+      "requested_family": "SL03",
+      "group": "4d86ae5e3ddf8f6a90ce",
+      "split": "train"
+    },
+    {
+      "index": 77,
+      "image": "ev_views_v26/06fd4b8dd18aedd4c633.jpg",
+      "brand": "Leapmotor",
+      "requested_family": "C11",
+      "group": "620285ebcf473be1b909",
+      "split": "train"
+    },
+    {
+      "index": 78,
+      "image": "ev_views_v26/0ad9a5e9c7e0457d1b6a.jpg",
+      "brand": "Leapmotor",
+      "requested_family": "C11",
+      "group": "8b79f7f67a6dabc647f0",
+      "split": "test"
+    },
+    {
+      "index": 79,
+      "image": "ev_views_v26/0f581df5fb98953524fa.jpg",
+      "brand": "Leapmotor",
+      "requested_family": "C11",
+      "group": "66c82d257b5c606b8f94",
+      "split": "train"
+    },
+    {
+      "index": 80,
+      "image": "ev_views_v26/1028e6dbf7ad98a3aa26.jpg",
+      "brand": "Leapmotor",
+      "requested_family": "C11",
+      "group": "00857e2c0a38362133b2",
+      "split": "train"
+    },
+    {
+      "index": 81,
+      "image": "ev_views_v26/0c98d477ab684412152f.jpg",
+      "brand": "Neta",
+      "requested_family": "U",
+      "group": "e6bf68e2d7f24508591b",
+      "split": "train"
+    },
+    {
+      "index": 82,
+      "image": "ev_views_v26/2cc2676ad97db9c80b6a.jpg",
+      "brand": "Neta",
+      "requested_family": "U",
+      "group": "1177600f7ea0219e71b2",
+      "split": "test"
+    },
+    {
+      "index": 83,
+      "image": "ev_views_v26/5d898f125a040410b4b8.jpg",
+      "brand": "Neta",
+      "requested_family": "U",
+      "group": "56e40c0b9b4037621ceb",
+      "split": "test"
+    },
+    {
+      "index": 84,
+      "image": "ev_views_v26/6a883527d9bc8739bd37.jpg",
+      "brand": "Neta",
+      "requested_family": "U",
+      "group": "d878f6ad1fd5f80a21ed",
+      "split": "test"
+    },
+    {
+      "index": 85,
+      "image": "ev_views_v26/6c1e1912bd0a55c83be4.jpg",
+      "brand": "XPeng",
+      "requested_family": "G6",
+      "group": "94f84a6c6e0a98914aed",
+      "split": "train"
+    },
+    {
+      "index": 86,
+      "image": "ev_views_v26/74c6bf38c155522bcdc4.jpg",
+      "brand": "XPeng",
+      "requested_family": "G6",
+      "group": "917995ef1a833f900ba2",
+      "split": "test"
+    },
+    {
+      "index": 87,
+      "image": "ev_views_v26/776f2e6ae8343596ed65.jpg",
+      "brand": "XPeng",
+      "requested_family": "G6",
+      "group": "d4466930fe712d727294",
+      "split": "train"
+    },
+    {
+      "index": 88,
+      "image": "ev_views_v26/792fa2db84e21442746e.jpg",
+      "brand": "XPeng",
+      "requested_family": "G6",
+      "group": "d4466930fe712d727294",
+      "split": "train"
+    },
+    {
+      "index": 89,
+      "image": "ev_views_v26/84c627247ad4d5ecf2a8.jpg",
+      "brand": "Toyota",
+      "requested_family": "bZ3",
+      "group": "369b7ab36928498fb8f0",
+      "split": "validation"
+    },
+    {
+      "index": 90,
+      "image": "ev_views_v26/8e481bdfc1b40d798076.jpg",
+      "brand": "Toyota",
+      "requested_family": "bZ3",
+      "group": "7ebef83ced75ec2fd33b",
+      "split": "train"
+    },
+    {
+      "index": 91,
+      "image": "ev_views_v26/935387ece8f0af16644e.jpg",
+      "brand": "Toyota",
+      "requested_family": "bZ3",
+      "group": "3d1d24f14e13a7d964e1",
+      "split": "validation"
+    },
+    {
+      "index": 92,
+      "image": "ev_views_v26/b93ce6f215bc36741718.jpg",
+      "brand": "Toyota",
+      "requested_family": "bZ3",
+      "group": "369b7ab36928498fb8f0",
+      "split": "validation"
+    },
+    {
+      "index": 93,
+      "image": "ev_views_v26/40dc49de0968b669ac70.jpg",
+      "brand": "Honda",
+      "requested_family": "e:NP1",
+      "group": "0c0dea22195ab1d45a55",
+      "split": "train"
+    },
+    {
+      "index": 94,
+      "image": "ev_views_v26/60d018c9d0eb1f4c2aa3.jpg",
+      "brand": "Honda",
+      "requested_family": "e:NP1",
+      "group": "a3772fb0d8bd79e9a79e",
+      "split": "train"
+    },
+    {
+      "index": 95,
+      "image": "ev_views_v26/6e6a071998eeffd2f175.jpg",
+      "brand": "Honda",
+      "requested_family": "e:NP1",
+      "group": "47b311fed5272293d3ef",
+      "split": "train"
+    },
+    {
+      "index": 96,
+      "image": "ev_views_v26/9cf35e261dadce00ae67.jpg",
+      "brand": "Honda",
+      "requested_family": "e:NP1",
+      "group": "1dc08db6c1f59723089f",
+      "split": "test"
+    },
+    {
+      "index": 97,
+      "image": "ev_views_v26/00f9eaf642e5aab16ac0.jpg",
+      "brand": "Nio",
+      "requested_family": "ES6",
+      "group": "04f5f871fe6d8df4e426",
+      "split": "train"
+    },
+    {
+      "index": 98,
+      "image": "ev_views_v26/055d69f30fad07ee163d.jpg",
+      "brand": "Nio",
+      "requested_family": "ES6",
+      "group": "f03655a5c40d6b7c998b",
+      "split": "validation"
+    },
+    {
+      "index": 99,
+      "image": "ev_views_v26/1377158bdf70f052f99f.jpg",
+      "brand": "Nio",
+      "requested_family": "ES6",
+      "group": "9ec1de395ae5605c9835",
+      "split": "train"
+    },
+    {
+      "index": 100,
+      "image": "ev_views_v26/1c72829d45bdba2822fb.jpg",
+      "brand": "Nio",
+      "requested_family": "ES6",
+      "group": "e4e54f55f5e0b39bf2b7",
+      "split": "test"
+    },
+    {
+      "index": 101,
+      "image": "ev_views_v26/3004235adc6525132cf6.jpg",
+      "brand": "Avatr",
+      "requested_family": "12",
+      "group": "bfc287e33f7bfac7101f",
+      "split": "train"
+    },
+    {
+      "index": 102,
+      "image": "ev_views_v26/36c53f0006a09dfa8a15.jpg",
+      "brand": "Avatr",
+      "requested_family": "12",
+      "group": "8753a0e190ab918af631",
+      "split": "train"
+    },
+    {
+      "index": 103,
+      "image": "ev_views_v26/384c0c58e60f16a8092c.jpg",
+      "brand": "Avatr",
+      "requested_family": "12",
+      "group": "2d56dbf53d8fbec44e77",
+      "split": "test"
+    },
+    {
+      "index": 104,
+      "image": "ev_views_v26/03667089b8118e40cb35.jpg",
+      "brand": "Hongqi",
+      "requested_family": "E-HS9",
+      "group": "5655381969edad291b7a",
+      "split": "train"
+    },
+    {
+      "index": 105,
+      "image": "ev_views_v26/088fdd0e262dcacb3a67.jpg",
+      "brand": "Hongqi",
+      "requested_family": "E-HS9",
+      "group": "1f9debec1fe842595b8d",
+      "split": "train"
+    },
+    {
+      "index": 106,
+      "image": "ev_views_v26/09386215be86bb273dd5.jpg",
+      "brand": "Hongqi",
+      "requested_family": "E-HS9",
+      "group": "5ee74851ad909f22a5cb",
+      "split": "validation"
+    },
+    {
+      "index": 107,
+      "image": "ev_views_v26/0a874bca231cd6bfcdba.jpg",
+      "brand": "Hongqi",
+      "requested_family": "E-HS9",
+      "group": "0418a95d14623249f1d6",
+      "split": "test"
+    },
+    {
+      "index": 108,
+      "image": "ev_views_v26/2834ca20211a8a13b446.jpg",
+      "brand": "Wuling",
+      "requested_family": "Hongguang Mini EV",
+      "group": "a0f3f14ede946d5bc1a6",
+      "split": "train"
+    },
+    {
+      "index": 109,
+      "image": "ev_views_v26/3a1ad51c425b7d7507cd.jpg",
+      "brand": "Wuling",
+      "requested_family": "Hongguang Mini EV",
+      "group": "92909de755e4d2359850",
+      "split": "train"
+    },
+    {
+      "index": 110,
+      "image": "ev_views_v26/4bad43d0cc0443987116.jpg",
+      "brand": "Wuling",
+      "requested_family": "Hongguang Mini EV",
+      "group": "e608ce3a1dd69fb78924",
+      "split": "train"
+    },
+    {
+      "index": 111,
+      "image": "ev_views_v26/4d44c950c12e72e326cc.jpg",
+      "brand": "Wuling",
+      "requested_family": "Hongguang Mini EV",
+      "group": "99fbd8908c75ce319189",
+      "split": "train"
+    },
+    {
+      "index": 112,
+      "image": "ev_views_v26/00fa5df9d81ac67f5d84.jpg",
+      "brand": "BYD",
+      "requested_family": "Yuan Plus",
+      "group": "130cb2a2a99ef05ba8bd",
+      "split": "train"
+    },
+    {
+      "index": 113,
+      "image": "ev_views_v26/0639375a61040b9c715b.jpg",
+      "brand": "BYD",
+      "requested_family": "Yuan Plus",
+      "group": "bb684ec11345157a5d9b",
+      "split": "validation"
+    },
+    {
+      "index": 114,
+      "image": "ev_views_v26/06ee23141db641577c91.jpg",
+      "brand": "BYD",
+      "requested_family": "Yuan Plus",
+      "group": "e122befa350df13a94dc",
+      "split": "train"
+    },
+    {
+      "index": 115,
+      "image": "ev_views_v26/17ddadbc761323ed01a3.jpg",
+      "brand": "Li Auto",
+      "requested_family": "L8",
+      "group": "dbbab740dbe03a5b3073",
+      "split": "train"
+    },
+    {
+      "index": 116,
+      "image": "ev_views_v26/246352d3800d2f4e3d80.jpg",
+      "brand": "Li Auto",
+      "requested_family": "L8",
+      "group": "3a47291e424ba3817011",
+      "split": "train"
+    },
+    {
+      "index": 117,
+      "image": "ev_views_v26/2860804c8e571aea9de5.jpg",
+      "brand": "Li Auto",
+      "requested_family": "L8",
+      "group": "f74635ba4f39ee0f966c",
+      "split": "train"
+    },
+    {
+      "index": 118,
+      "image": "ev_views_v26/0369cc7a74598a51cf75.jpg",
+      "brand": "Zeekr",
+      "requested_family": "7X",
+      "group": "cca5381efbf1dfdb2695",
+      "split": "train"
+    },
+    {
+      "index": 119,
+      "image": "ev_views_v26/158823806c29c20c076b.jpg",
+      "brand": "Zeekr",
+      "requested_family": "7X",
+      "group": "5489c65aad2f5df6ce84",
+      "split": "train"
+    },
+    {
+      "index": 120,
+      "image": "ev_views_v26/1a283b890af14a57d03f.jpg",
+      "brand": "Zeekr",
+      "requested_family": "7X",
+      "group": "7e3060823b80f9140f67",
+      "split": "validation"
+    },
+    {
+      "index": 121,
+      "image": "ev_views_v26/1ca2f5252956527e26aa.jpg",
+      "brand": "Zeekr",
+      "requested_family": "7X",
+      "group": "5489c65aad2f5df6ce84",
+      "split": "train"
+    },
+    {
+      "index": 122,
+      "image": "ev_views_v26/08d4ce0695d7015c1a77.jpg",
+      "brand": "GAC Aion",
+      "requested_family": "Y",
+      "group": "dd18b2e55ecd9a8b6237",
+      "split": "test"
+    },
+    {
+      "index": 123,
+      "image": "ev_views_v26/1d64cb16906d79ba09b2.jpg",
+      "brand": "GAC Aion",
+      "requested_family": "Y",
+      "group": "9f2ae46ff739f9a6132b",
+      "split": "validation"
+    },
+    {
+      "index": 124,
+      "image": "ev_views_v26/25ff1d6a8d94b88e8c4e.jpg",
+      "brand": "GAC Aion",
+      "requested_family": "Y",
+      "group": "a678dd1cf88cb4b36925",
+      "split": "train"
+    },
+    {
+      "index": 125,
+      "image": "ev_views_v26/089630e2d7312926cd94.jpg",
+      "brand": "Geely",
+      "requested_family": "Galaxy L7",
+      "group": "f03655a5c40d6b7c998b",
+      "split": "validation"
+    },
+    {
+      "index": 126,
+      "image": "ev_views_v26/0a7435f18e4401cb6245.jpg",
+      "brand": "Geely",
+      "requested_family": "Galaxy L7",
+      "group": "ad53cf1324d7c9fa3b57",
+      "split": "train"
+    },
+    {
+      "index": 127,
+      "image": "ev_views_v26/152f9f2febaa33775c39.jpg",
+      "brand": "Geely",
+      "requested_family": "Galaxy L7",
+      "group": "96c5f8a24b00a8f5c343",
+      "split": "validation"
+    },
+    {
+      "index": 128,
+      "image": "ev_views_v26/19e2120b8020c1e4b6e8.jpg",
+      "brand": "Geely",
+      "requested_family": "Galaxy L7",
+      "group": "52d1826f26422837ade9",
+      "split": "train"
+    },
+    {
+      "index": 129,
+      "image": "ev_views_v26/6b3672ee9c907979d380.jpg",
+      "brand": "Geometry",
+      "requested_family": "E",
+      "group": "ae283cc73e7ee5ea7b67",
+      "split": "train"
+    },
+    {
+      "index": 130,
+      "image": "ev_views_v26/96336e71b19e86b61f79.jpg",
+      "brand": "Geometry",
+      "requested_family": "E",
+      "group": "ae283cc73e7ee5ea7b67",
+      "split": "train"
+    },
+    {
+      "index": 131,
+      "image": "ev_views_v26/e93fcfab736b391ddc56.jpg",
+      "brand": "Geometry",
+      "requested_family": "E",
+      "group": "c5b6995cb93e16e284b1",
+      "split": "train"
+    },
+    {
+      "index": 132,
+      "image": "ev_views_v26/14c61b88494264ad9206.jpg",
+      "brand": "Deepal",
+      "requested_family": "S05",
+      "group": "d63f7725c4dd6841f79b",
+      "split": "test"
+    },
+    {
+      "index": 133,
+      "image": "ev_views_v26/44aec0195d7292140ff6.jpg",
+      "brand": "Deepal",
+      "requested_family": "S05",
+      "group": "e343a68a6a7ab496eee5",
+      "split": "train"
+    },
+    {
+      "index": 134,
+      "image": "ev_views_v26/4be39e2f5feae2476d40.jpg",
+      "brand": "Deepal",
+      "requested_family": "S05",
+      "group": "e343a68a6a7ab496eee5",
+      "split": "train"
+    },
+    {
+      "index": 135,
+      "image": "ev_views_v26/225a6e761a8eb1e79b38.jpg",
+      "brand": "Leapmotor",
+      "requested_family": "C10",
+      "group": "a4422e86c10ca98d0187",
+      "split": "train"
+    },
+    {
+      "index": 136,
+      "image": "ev_views_v26/2481d1652b89873c1b7b.jpg",
+      "brand": "Leapmotor",
+      "requested_family": "C10",
+      "group": "97d5478088bf80ab1ac8",
+      "split": "train"
+    },
+    {
+      "index": 137,
+      "image": "ev_views_v26/28348a04fa17694ec429.jpg",
+      "brand": "Leapmotor",
+      "requested_family": "C10",
+      "group": "942159248bb1cff40a4a",
+      "split": "train"
+    },
+    {
+      "index": 138,
+      "image": "ev_views_v26/2ce7049a494adfcfb72c.jpg",
+      "brand": "Leapmotor",
+      "requested_family": "C10",
+      "group": "942159248bb1cff40a4a",
+      "split": "train"
+    },
+    {
+      "index": 139,
+      "image": "ev_views_v26/23cd6c758f4f5f0c57f8.jpg",
+      "brand": "Neta",
+      "requested_family": "X",
+      "group": "e2a84408b670ab192a53",
+      "split": "validation"
+    },
+    {
+      "index": 140,
+      "image": "ev_views_v26/309fdab6546a33c41455.jpg",
+      "brand": "Neta",
+      "requested_family": "X",
+      "group": "8da331c0a40688a043d5",
+      "split": "test"
+    },
+    {
+      "index": 141,
+      "image": "ev_views_v26/31f8318ea51b6eb15afa.jpg",
+      "brand": "Neta",
+      "requested_family": "X",
+      "group": "3f5788d63b7121b8eec5",
+      "split": "train"
+    },
+    {
+      "index": 142,
+      "image": "ev_views_v26/3a8d7c707ddc8591ea2c.jpg",
+      "brand": "Neta",
+      "requested_family": "X",
+      "group": "89dd520f36c3ea79f810",
+      "split": "train"
+    },
+    {
+      "index": 143,
+      "image": "ev_views_v26/0e0cb2be41e8e2b129e9.jpg",
+      "brand": "XPeng",
+      "requested_family": "P7",
+      "group": "1342c1255848d075343b",
+      "split": "train"
+    },
+    {
+      "index": 144,
+      "image": "ev_views_v26/126897353a1848f5676a.jpg",
+      "brand": "XPeng",
+      "requested_family": "P7",
+      "group": "d63f7725c4dd6841f79b",
+      "split": "test"
+    },
+    {
+      "index": 145,
+      "image": "ev_views_v26/12da6f21085d2cc8b721.jpg",
+      "brand": "XPeng",
+      "requested_family": "P7",
+      "group": "69d04e237401d9645c48",
+      "split": "test"
+    },
+    {
+      "index": 146,
+      "image": "ev_views_v26/18c08e7e704baad3d132.jpg",
+      "brand": "BYD",
+      "requested_family": "Han",
+      "group": "dd157a7268e36e9f6edb",
+      "split": "test"
+    },
+    {
+      "index": 147,
+      "image": "ev_views_v26/1a5921d7eaa6f1569974.jpg",
+      "brand": "BYD",
+      "requested_family": "Han",
+      "group": "ac694731fe88005f62ac",
+      "split": "train"
+    },
+    {
+      "index": 148,
+      "image": "ev_views_v26/211d8d76e374cf211b29.jpg",
+      "brand": "BYD",
+      "requested_family": "Han",
+      "group": "ded64f7de196213fab70",
+      "split": "train"
+    },
+    {
+      "index": 149,
+      "image": "ev_views_v26/238bf1f577d6ef170e3f.jpg",
+      "brand": "BYD",
+      "requested_family": "Han",
+      "group": "b3af6df5dd4355dc5614",
+      "split": "train"
+    },
+    {
+      "index": 150,
+      "image": "ev_views_v26/0d0cdf90757da0bd6ae8.jpg",
+      "brand": "Li Auto",
+      "requested_family": "L9",
+      "group": "2687215528b328a9b615",
+      "split": "test"
+    },
+    {
+      "index": 151,
+      "image": "ev_views_v26/5d5938afca979856deb1.jpg",
+      "brand": "Li Auto",
+      "requested_family": "L9",
+      "group": "1b3da5a040b171234598",
+      "split": "train"
+    },
+    {
+      "index": 152,
+      "image": "ev_views_v26/5ee87b14f00278cdf8fd.jpg",
+      "brand": "Li Auto",
+      "requested_family": "L9",
+      "group": "4efceeb7f2be7b5077e7",
+      "split": "train"
+    },
+    {
+      "index": 153,
+      "image": "ev_views_v26/640be8187a1a3fd80a6c.jpg",
+      "brand": "Li Auto",
+      "requested_family": "L9",
+      "group": "e570cdd29d232112525a",
+      "split": "validation"
+    },
+    {
+      "index": 154,
+      "image": "ev_views_v26/46ccc3077578da2833da.jpg",
+      "brand": "Zeekr",
+      "requested_family": "X",
+      "group": "3517582e6c0e326abbb1",
+      "split": "train"
+    },
+    {
+      "index": 155,
+      "image": "ev_views_v26/5d2280daee33f528d3e6.jpg",
+      "brand": "Zeekr",
+      "requested_family": "X",
+      "group": "40a76e2c0da67f742193",
+      "split": "train"
+    },
+    {
+      "index": 156,
+      "image": "ev_views_v26/723429530a8e49c34f42.jpg",
+      "brand": "Zeekr",
+      "requested_family": "X",
+      "group": "40a76e2c0da67f742193",
+      "split": "train"
+    },
+    {
+      "index": 157,
+      "image": "ev_views_v26/82a62e812cf9339fffbc.jpg",
+      "brand": "Zeekr",
+      "requested_family": "X",
+      "group": "dc89c24f17810a0ec5b1",
+      "split": "train"
+    },
+    {
+      "index": 158,
+      "image": "ev_views_v26/24b230dfee62d66008f6.jpg",
+      "brand": "GAC Aion",
+      "requested_family": "Y Plus",
+      "group": "3c3d872f32e7ce08a058",
+      "split": "validation"
+    },
+    {
+      "index": 159,
+      "image": "ev_views_v26/2cc192ef41de749d95a6.jpg",
+      "brand": "GAC Aion",
+      "requested_family": "Y Plus",
+      "group": "118fc50f42ab783d5324",
+      "split": "train"
+    },
+    {
+      "index": 160,
+      "image": "ev_views_v26/2db44541150cc24dc59d.jpg",
+      "brand": "GAC Aion",
+      "requested_family": "Y Plus",
+      "group": "118fc50f42ab783d5324",
+      "split": "train"
+    },
+    {
+      "index": 161,
+      "image": "ev_views_v26/2e57719a56090a9a3749.jpg",
+      "brand": "GAC Aion",
+      "requested_family": "Y Plus",
+      "group": "d283758f016b75ed2c2b",
+      "split": "train"
+    },
+    {
+      "index": 162,
+      "image": "ev_views_v26/0aae21f2718f068bde4d.jpg",
+      "brand": "Geometry",
+      "requested_family": "G6",
+      "group": "04f5f871fe6d8df4e426",
+      "split": "train"
+    },
+    {
+      "index": 163,
+      "image": "ev_views_v26/30cb6cfd02a497dc2551.jpg",
+      "brand": "Geometry",
+      "requested_family": "G6",
+      "group": "29b82a20a06afe4313a2",
+      "split": "validation"
+    },
+    {
+      "index": 164,
+      "image": "ev_views_v26/57a1857be6bea24e848b.jpg",
+      "brand": "Geometry",
+      "requested_family": "G6",
+      "group": "abc69e7c1517cf3a7db1",
+      "split": "train"
+    },
+    {
+      "index": 165,
+      "image": "owner_oct25/798f90807dd627be1905.jpg",
+      "brand": "GAC Aion",
+      "requested_family": null,
+      "group": "owner-phone-outing-2026-10-25",
+      "split": "train"
+    },
+    {
+      "index": 166,
+      "image": "owner_oct25/6ce7d5f3545edc23de6b.jpg",
+      "brand": "Li Auto",
+      "requested_family": null,
+      "group": "owner-phone-outing-2026-10-25",
+      "split": "train"
+    },
+    {
+      "index": 167,
+      "image": "owner_oct25/2e165cd91ee18410061c.jpg",
+      "brand": "Leapmotor",
+      "requested_family": null,
+      "group": "owner-phone-outing-2026-10-25",
+      "split": "train"
+    },
+    {
+      "index": 168,
+      "image": "owner_oct25/c0b64454b69567e5bdab.jpg",
+      "brand": "BYD",
+      "requested_family": null,
+      "group": "owner-phone-outing-2026-10-25",
+      "split": "train"
+    },
+    {
+      "index": 169,
+      "image": "owner_oct25/c87367215fa9df7e1901.jpg",
+      "brand": "BYD",
+      "requested_family": null,
+      "group": "owner-phone-outing-2026-10-25",
+      "split": "train"
+    },
+    {
+      "index": 170,
+      "image": "owner_oct25/fd1976bcf563a8c75c19.jpg",
+      "brand": "BYD",
+      "requested_family": null,
+      "group": "owner-phone-outing-2026-10-25",
+      "split": "train"
+    }
+  ],
+  "reviewed": false,
+  "trained": false
+}

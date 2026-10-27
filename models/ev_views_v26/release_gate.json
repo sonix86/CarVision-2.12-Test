@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "checks": {
+    "all_accuracy": true,
+    "historical": true,
+    "confirmed_precision": true,
+    "correct_confirmed": true,
+    "new_source_count": true,
+    "new_source_accuracy": true,
+    "priority_gain": true
+  }
+}

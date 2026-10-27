@@ -1,0 +1,4189 @@
+{
+  "passed": false,
+  "baseline": {
+    "whole": {
+      "top1": 0.8053977489471436,
+      "historical": 0.8967136144638062,
+      "macro": 0.742552638053894,
+      "priority_macro": 0.7555367350578308,
+      "confirmed": 432,
+      "correct_confirmed": 426,
+      "precision": 0.9861111044883728
+    },
+    "phone": {
+      "top1": 0.7230113744735718,
+      "historical": 0.8450704216957092,
+      "macro": 0.6303396821022034,
+      "priority_macro": 0.5956259369850159,
+      "confirmed": 336,
+      "correct_confirmed": 330,
+      "precision": 0.9821428656578064
+    }
+  },
+  "raw_baseline": {
+    "whole": {
+      "top1": 0.8167613744735718,
+      "historical": 0.9014084339141846,
+      "macro": 0.7456032633781433,
+      "priority_macro": 0.7406675219535828,
+      "confirmed": 0,
+      "correct_confirmed": 0,
+      "precision": 0.0
+    },
+    "phone": {
+      "top1": 0.7258522510528564,
+      "historical": 0.8309859037399292,
+      "macro": 0.6334298253059387,
+      "priority_macro": 0.5765900015830994,
+      "confirmed": 0,
+      "correct_confirmed": 0,
+      "precision": 0.0
+    }
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "history": [
+        {
+          "epoch": 1,
+          "fit": 0.4722222089767456,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8096590638160706,
+              "historical": 0.9154929518699646,
+              "macro": 0.7300131320953369,
+              "priority_macro": 0.7348101735115051,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7215909361839294,
+              "historical": 0.8356807231903076,
+              "macro": 0.6291969418525696,
+              "priority_macro": 0.5798579454421997,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 2,
+          "fit": 0.5555555820465088,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8125,
+              "historical": 0.9107981324195862,
+              "macro": 0.7381578087806702,
+              "priority_macro": 0.7348101735115051,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7159090638160706,
+              "historical": 0.8309859037399292,
+              "macro": 0.6244985461235046,
+              "priority_macro": 0.5840246081352234,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 3,
+          "fit": 0.6388888955116272,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8139204382896423,
+              "historical": 0.9107981324195862,
+              "macro": 0.736234724521637,
+              "priority_macro": 0.7431435585021973,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7144886255264282,
+              "historical": 0.8356807231903076,
+              "macro": 0.626001238822937,
+              "priority_macro": 0.5674647688865662,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 4,
+          "fit": 0.6944444179534912,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8125,
+              "historical": 0.9061033129692078,
+              "macro": 0.734632134437561,
+              "priority_macro": 0.7431435585021973,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.71875,
+              "historical": 0.8403756022453308,
+              "macro": 0.6266987919807434,
+              "priority_macro": 0.5872926115989685,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 5,
+          "fit": 0.9444444179534912,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8110795617103577,
+              "historical": 0.9061033129692078,
+              "macro": 0.731427013874054,
+              "priority_macro": 0.7223102450370789,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7258522510528564,
+              "historical": 0.8497652411460876,
+              "macro": 0.6337477564811707,
+              "priority_macro": 0.5832327604293823,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 6,
+          "fit": 0.9444444179534912,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8125,
+              "historical": 0.9061033129692078,
+              "macro": 0.7323427200317383,
+              "priority_macro": 0.7223102450370789,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.71875,
+              "historical": 0.8450704216957092,
+              "macro": 0.6246873736381531,
+              "priority_macro": 0.5832327604293823,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 7,
+          "fit": 0.9722222089767456,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8110795617103577,
+              "historical": 0.9107981324195862,
+              "macro": 0.7323330640792847,
+              "priority_macro": 0.7223102450370789,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7244318127632141,
+              "historical": 0.8403756022453308,
+              "macro": 0.6344846487045288,
+              "priority_macro": 0.5832327604293823,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 8,
+          "fit": 0.9722222089767456,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8096590638160706,
+              "historical": 0.9061033129692078,
+              "macro": 0.7299465537071228,
+              "priority_macro": 0.7223102450370789,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7215909361839294,
+              "historical": 0.8450704216957092,
+              "macro": 0.6315757632255554,
+              "priority_macro": 0.5832327604293823,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 9,
+          "fit": 0.9722222089767456,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8096590638160706,
+              "historical": 0.9061033129692078,
+              "macro": 0.7294123768806458,
+              "priority_macro": 0.7223102450370789,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7215909361839294,
+              "historical": 0.8356807231903076,
+              "macro": 0.6310603022575378,
+              "priority_macro": 0.5915661454200745,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 10,
+          "fit": 0.9722222089767456,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8139204382896423,
+              "historical": 0.9061033129692078,
+              "macro": 0.7351357936859131,
+              "priority_macro": 0.7431435585021973,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7244318127632141,
+              "historical": 0.8403756022453308,
+              "macro": 0.6300181746482849,
+              "priority_macro": 0.5915661454200745,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 11,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8096590638160706,
+              "historical": 0.9014084339141846,
+              "macro": 0.7294487953186035,
+              "priority_macro": 0.7223102450370789,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7215909361839294,
+              "historical": 0.8262910842895508,
+              "macro": 0.6307151317596436,
+              "priority_macro": 0.599899411201477,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 12,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8110795617103577,
+              "historical": 0.9014084339141846,
+              "macro": 0.7284050583839417,
+              "priority_macro": 0.7389768958091736,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7230113744735718,
+              "historical": 0.8356807231903076,
+              "macro": 0.6256314516067505,
+              "priority_macro": 0.599899411201477,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 13,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8096590638160706,
+              "historical": 0.9061033129692078,
+              "macro": 0.7301602959632874,
+              "priority_macro": 0.7389768958091736,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7201704382896423,
+              "historical": 0.8356807231903076,
+              "macro": 0.627598226070404,
+              "priority_macro": 0.599899411201477,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 14,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8125,
+              "historical": 0.9061033129692078,
+              "macro": 0.7325717210769653,
+              "priority_macro": 0.7389768958091736,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7272727489471436,
+              "historical": 0.8497652411460876,
+              "macro": 0.6286148428916931,
+              "priority_macro": 0.6082327961921692,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 15,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8082386255264282,
+              "historical": 0.9061033129692078,
+              "macro": 0.7308720350265503,
+              "priority_macro": 0.7306435704231262,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7230113744735718,
+              "historical": 0.8356807231903076,
+              "macro": 0.6258221864700317,
+              "priority_macro": 0.599899411201477,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 16,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8110795617103577,
+              "historical": 0.9061033129692078,
+              "macro": 0.7324746251106262,
+              "priority_macro": 0.7389768958091736,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7258522510528564,
+              "historical": 0.8309859037399292,
+              "macro": 0.6343531608581543,
+              "priority_macro": 0.6082327961921692,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 17,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8110795617103577,
+              "historical": 0.9014084339141846,
+              "macro": 0.7320225834846497,
+              "priority_macro": 0.7389768958091736,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7244318127632141,
+              "historical": 0.8356807231903076,
+              "macro": 0.6290022730827332,
+              "priority_macro": 0.6082327961921692,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 18,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8153409361839294,
+              "historical": 0.9107981324195862,
+              "macro": 0.7373794913291931,
+              "priority_macro": 0.7389768958091736,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7230113744735718,
+              "historical": 0.8309859037399292,
+              "macro": 0.6317675113677979,
+              "priority_macro": 0.6082327961921692,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 19,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8125,
+              "historical": 0.9061033129692078,
+              "macro": 0.7356797456741333,
+              "priority_macro": 0.7389768958091736,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7230113744735718,
+              "historical": 0.8356807231903076,
+              "macro": 0.6267129182815552,
+              "priority_macro": 0.6082327961921692,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 20,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8110795617103577,
+              "historical": 0.9061033129692078,
+              "macro": 0.7324746251106262,
+              "priority_macro": 0.7389768958091736,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7244318127632141,
+              "historical": 0.8450704216957092,
+              "macro": 0.6260245442390442,
+              "priority_macro": 0.6165661215782166,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 21,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8096590638160706,
+              "historical": 0.9014084339141846,
+              "macro": 0.7314884066581726,
+              "priority_macro": 0.7389768958091736,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7301136255264282,
+              "historical": 0.8450704216957092,
+              "macro": 0.6334635615348816,
+              "priority_macro": 0.6165661215782166,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 22,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8139204382896423,
+              "historical": 0.9107981324195862,
+              "macro": 0.7362139225006104,
+              "priority_macro": 0.7389768958091736,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7286931872367859,
+              "historical": 0.8450704216957092,
+              "macro": 0.6332848072052002,
+              "priority_macro": 0.6165661215782166,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 23,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8096590638160706,
+              "historical": 0.9014084339141846,
+              "macro": 0.7318335771560669,
+              "priority_macro": 0.7306435704231262,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7258522510528564,
+              "historical": 0.8450704216957092,
+              "macro": 0.6265602707862854,
+              "priority_macro": 0.6165661215782166,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 24,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8125,
+              "historical": 0.9061033129692078,
+              "macro": 0.7301424741744995,
+              "priority_macro": 0.7357089519500732,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7230113744735718,
+              "historical": 0.8403756022453308,
+              "macro": 0.6273323893547058,
+              "priority_macro": 0.6165661215782166,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 25,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8125,
+              "historical": 0.9107981324195862,
+              "macro": 0.7365938425064087,
+              "priority_macro": 0.7357089519500732,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7272727489471436,
+              "historical": 0.8403756022453308,
+              "macro": 0.6332938075065613,
+              "priority_macro": 0.6165661215782166,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 26,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8125,
+              "historical": 0.9061033129692078,
+              "macro": 0.7320786714553833,
+              "priority_macro": 0.7389768958091736,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7301136255264282,
+              "historical": 0.8450704216957092,
+              "macro": 0.6352044343948364,
+              "priority_macro": 0.6165661215782166,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 27,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8139204382896423,
+              "historical": 0.9061033129692078,
+              "macro": 0.7393966317176819,
+              "priority_macro": 0.7357089519500732,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7286931872367859,
+              "historical": 0.8450704216957092,
+              "macro": 0.6329705119132996,
+              "priority_macro": 0.6165661215782166,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 28,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8110795617103577,
+              "historical": 0.9061033129692078,
+              "macro": 0.7316479086875916,
+              "priority_macro": 0.7357089519500732,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7315340638160706,
+              "historical": 0.8450704216957092,
+              "macro": 0.6393898129463196,
+              "priority_macro": 0.6165661215782166,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 29,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8139204382896423,
+              "historical": 0.9107981324195862,
+              "macro": 0.734686017036438,
+              "priority_macro": 0.7357089519500732,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7272727489471436,
+              "historical": 0.8356807231903076,
+              "macro": 0.6370769143104553,
+              "priority_macro": 0.6122926473617554,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 30,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8153409361839294,
+              "historical": 0.9107981324195862,
+              "macro": 0.7367817163467407,
+              "priority_macro": 0.7357089519500732,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7272727489471436,
+              "historical": 0.8403756022453308,
+              "macro": 0.6348200440406799,
+              "priority_macro": 0.6165661215782166,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 31,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8096590638160706,
+              "historical": 0.9014084339141846,
+              "macro": 0.7286220788955688,
+              "priority_macro": 0.7357089519500732,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7272727489471436,
+              "historical": 0.8403756022453308,
+              "macro": 0.6325306296348572,
+              "priority_macro": 0.6165661215782166,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 32,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8125,
+              "historical": 0.9014084339141846,
+              "macro": 0.733762264251709,
+              "priority_macro": 0.7324409484863281,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7258522510528564,
+              "historical": 0.8403756022453308,
+              "macro": 0.6290140151977539,
+              "priority_macro": 0.6122926473617554,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 33,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8053977489471436,
+              "historical": 0.8967136144638062,
+              "macro": 0.7292762398719788,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7244318127632141,
+              "historical": 0.8403756022453308,
+              "macro": 0.628086507320404,
+              "priority_macro": 0.6165661215782166,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 34,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8096590638160706,
+              "historical": 0.9061033129692078,
+              "macro": 0.7310479879379272,
+              "priority_macro": 0.7273755669593811,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7258522510528564,
+              "historical": 0.8356807231903076,
+              "macro": 0.6341386437416077,
+              "priority_macro": 0.6165661215782166,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 35,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8139204382896423,
+              "historical": 0.9061033129692078,
+              "macro": 0.7381802797317505,
+              "priority_macro": 0.7273755669593811,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7301136255264282,
+              "historical": 0.8403756022453308,
+              "macro": 0.6358174681663513,
+              "priority_macro": 0.6165661215782166,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 36,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8096590638160706,
+              "historical": 0.9014084339141846,
+              "macro": 0.7325870394706726,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7272727489471436,
+              "historical": 0.8356807231903076,
+              "macro": 0.6337191462516785,
+              "priority_macro": 0.6122926473617554,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 37,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8110795617103577,
+              "historical": 0.9014084339141846,
+              "macro": 0.735236644744873,
+              "priority_macro": 0.7273755669593811,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7244318127632141,
+              "historical": 0.8356807231903076,
+              "macro": 0.6263841986656189,
+              "priority_macro": 0.6122926473617554,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 38,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8068181872367859,
+              "historical": 0.8967136144638062,
+              "macro": 0.7311077117919922,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7301136255264282,
+              "historical": 0.8403756022453308,
+              "macro": 0.6360785365104675,
+              "priority_macro": 0.6165661215782166,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 39,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8125,
+              "historical": 0.9014084339141846,
+              "macro": 0.7389972805976868,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7286931872367859,
+              "historical": 0.8403756022453308,
+              "macro": 0.6331993937492371,
+              "priority_macro": 0.6122926473617554,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 40,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8125,
+              "historical": 0.9061033129692078,
+              "macro": 0.7349751591682434,
+              "priority_macro": 0.7273755669593811,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7301136255264282,
+              "historical": 0.8450704216957092,
+              "macro": 0.6359145641326904,
+              "priority_macro": 0.6165661215782166,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 41,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8096590638160706,
+              "historical": 0.9014084339141846,
+              "macro": 0.7326281070709229,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7244318127632141,
+              "historical": 0.8356807231903076,
+              "macro": 0.628423810005188,
+              "priority_macro": 0.6122926473617554,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 42,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8068181872367859,
+              "historical": 0.8920187950134277,
+              "macro": 0.7276608943939209,
+              "priority_macro": 0.7273755669593811,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7286931872367859,
+              "historical": 0.8403756022453308,
+              "macro": 0.6349899768829346,
+              "priority_macro": 0.6165661215782166,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 43,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8139204382896423,
+              "historical": 0.9107981324195862,
+              "macro": 0.7399210929870605,
+              "priority_macro": 0.7273755669593811,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7272727489471436,
+              "historical": 0.8356807231903076,
+              "macro": 0.6318581700325012,
+              "priority_macro": 0.6165661215782166,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 44,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8110795617103577,
+              "historical": 0.9061033129692078,
+              "macro": 0.7364645600318909,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7215909361839294,
+              "historical": 0.8262910842895508,
+              "macro": 0.6294795870780945,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 45,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8096590638160706,
+              "historical": 0.9014084339141846,
+              "macro": 0.732031524181366,
+              "priority_macro": 0.7273755669593811,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7272727489471436,
+              "historical": 0.8262910842895508,
+              "macro": 0.6337746381759644,
+              "priority_macro": 0.6122926473617554,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 46,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8096590638160706,
+              "historical": 0.8920187950134277,
+              "macro": 0.7370659708976746,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7301136255264282,
+              "historical": 0.8403756022453308,
+              "macro": 0.6333664655685425,
+              "priority_macro": 0.6165661215782166,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 47,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8139204382896423,
+              "historical": 0.9014084339141846,
+              "macro": 0.7390239238739014,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7272727489471436,
+              "historical": 0.8262910842895508,
+              "macro": 0.636500358581543,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 48,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8082386255264282,
+              "historical": 0.8920187950134277,
+              "macro": 0.7338197827339172,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7286931872367859,
+              "historical": 0.8356807231903076,
+              "macro": 0.6343559622764587,
+              "priority_macro": 0.6122926473617554,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 49,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8110795617103577,
+              "historical": 0.9014084339141846,
+              "macro": 0.73850417137146,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7315340638160706,
+              "historical": 0.8403756022453308,
+              "macro": 0.6410095691680908,
+              "priority_macro": 0.6122926473617554,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 50,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8110795617103577,
+              "historical": 0.8967136144638062,
+              "macro": 0.7355194687843323,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7258522510528564,
+              "historical": 0.8262910842895508,
+              "macro": 0.6340935826301575,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 51,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8110795617103577,
+              "historical": 0.9014084339141846,
+              "macro": 0.7357921600341797,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7258522510528564,
+              "historical": 0.8309859037399292,
+              "macro": 0.6291916370391846,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 52,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8125,
+              "historical": 0.9014084339141846,
+              "macro": 0.7379289269447327,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7286931872367859,
+              "historical": 0.8403756022453308,
+              "macro": 0.6338627934455872,
+              "priority_macro": 0.6122926473617554,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 53,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8139204382896423,
+              "historical": 0.9014084339141846,
+              "macro": 0.7372420430183411,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7315340638160706,
+              "historical": 0.8450704216957092,
+              "macro": 0.6399428248405457,
+              "priority_macro": 0.6122926473617554,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 54,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8125,
+              "historical": 0.9014084339141846,
+              "macro": 0.7389972805976868,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7272727489471436,
+              "historical": 0.8356807231903076,
+              "macro": 0.6330692172050476,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 55,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8110795617103577,
+              "historical": 0.9014084339141846,
+              "macro": 0.7357921600341797,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7258522510528564,
+              "historical": 0.8356807231903076,
+              "macro": 0.6292620301246643,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 56,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8110795617103577,
+              "historical": 0.8920187950134277,
+              "macro": 0.7385159134864807,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7286931872367859,
+              "historical": 0.8262910842895508,
+              "macro": 0.6366792917251587,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 57,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8139204382896423,
+              "historical": 0.8967136144638062,
+              "macro": 0.7399952411651611,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7286931872367859,
+              "historical": 0.8356807231903076,
+              "macro": 0.6340380311012268,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 58,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8125,
+              "historical": 0.8967136144638062,
+              "macro": 0.7389268279075623,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7286931872367859,
+              "historical": 0.8262910842895508,
+              "macro": 0.6345425844192505,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 59,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8110795617103577,
+              "historical": 0.8920187950134277,
+              "macro": 0.7379406094551086,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7315340638160706,
+              "historical": 0.8356807231903076,
+              "macro": 0.6385988593101501,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 60,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8139204382896423,
+              "historical": 0.9061033129692078,
+              "macro": 0.7394279837608337,
+              "priority_macro": 0.7273755669593811,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7272727489471436,
+              "historical": 0.8309859037399292,
+              "macro": 0.6351369619369507,
+              "priority_macro": 0.6122926473617554,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 61,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8125,
+              "historical": 0.9014084339141846,
+              "macro": 0.7406408786773682,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7329545617103577,
+              "historical": 0.8450704216957092,
+              "macro": 0.6418744325637817,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 62,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8110795617103577,
+              "historical": 0.8967136144638062,
+              "macro": 0.7353401184082031,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7272727489471436,
+              "historical": 0.8356807231903076,
+              "macro": 0.6322746872901917,
+              "priority_macro": 0.6122926473617554,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 63,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8096590638160706,
+              "historical": 0.8967136144638062,
+              "macro": 0.7376973032951355,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7244318127632141,
+              "historical": 0.8262910842895508,
+              "macro": 0.6290128231048584,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 64,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8125,
+              "historical": 0.8967136144638062,
+              "macro": 0.7401478290557861,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7286931872367859,
+              "historical": 0.8309859037399292,
+              "macro": 0.6334651708602905,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 65,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8096590638160706,
+              "historical": 0.8920187950134277,
+              "macro": 0.7347354888916016,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7286931872367859,
+              "historical": 0.8309859037399292,
+              "macro": 0.6323412656784058,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 66,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8082386255264282,
+              "historical": 0.8967136144638062,
+              "macro": 0.7343128323554993,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7315340638160706,
+              "historical": 0.8356807231903076,
+              "macro": 0.638379693031311,
+              "priority_macro": 0.6122926473617554,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 67,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8167613744735718,
+              "historical": 0.9061033129692078,
+              "macro": 0.7416127324104309,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7301136255264282,
+              "historical": 0.8356807231903076,
+              "macro": 0.6356902718544006,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 68,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8082386255264282,
+              "historical": 0.8967136144638062,
+              "macro": 0.7343128323554993,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7272727489471436,
+              "historical": 0.8403756022453308,
+              "macro": 0.6323412656784058,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 69,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8125,
+              "historical": 0.9014084339141846,
+              "macro": 0.7389972805976868,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7301136255264282,
+              "historical": 0.8356807231903076,
+              "macro": 0.6332570314407349,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 70,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8139204382896423,
+              "historical": 0.8967136144638062,
+              "macro": 0.7421777844429016,
+              "priority_macro": 0.744940996170044,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7329545617103577,
+              "historical": 0.8450704216957092,
+              "macro": 0.6362578272819519,
+              "priority_macro": 0.6122926473617554,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 71,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8082386255264282,
+              "historical": 0.8920187950134277,
+              "macro": 0.7354633808135986,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7258522510528564,
+              "historical": 0.8309859037399292,
+              "macro": 0.6291916370391846,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 72,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8096590638160706,
+              "historical": 0.8920187950134277,
+              "macro": 0.7381343245506287,
+              "priority_macro": 0.744940996170044,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7272727489471436,
+              "historical": 0.8356807231903076,
+              "macro": 0.6300824284553528,
+              "priority_macro": 0.6122926473617554,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 73,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8125,
+              "historical": 0.9014084339141846,
+              "macro": 0.7389972805976868,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7329545617103577,
+              "historical": 0.8403756022453308,
+              "macro": 0.6385721564292908,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 74,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8096590638160706,
+              "historical": 0.8967136144638062,
+              "macro": 0.7375179529190063,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7315340638160706,
+              "historical": 0.8403756022453308,
+              "macro": 0.6342431902885437,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 75,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8110795617103577,
+              "historical": 0.8967136144638062,
+              "macro": 0.7380521893501282,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7301136255264282,
+              "historical": 0.8403756022453308,
+              "macro": 0.6364353895187378,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 76,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8125,
+              "historical": 0.8920187950134277,
+              "macro": 0.7400773763656616,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7315340638160706,
+              "historical": 0.8450704216957092,
+              "macro": 0.6328029632568359,
+              "priority_macro": 0.6122926473617554,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 77,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8125,
+              "historical": 0.9014084339141846,
+              "macro": 0.7394198775291443,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7286931872367859,
+              "historical": 0.8356807231903076,
+              "macro": 0.6310626864433289,
+              "priority_macro": 0.6122926473617554,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 78,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8139204382896423,
+              "historical": 0.8967136144638062,
+              "macro": 0.7394609451293945,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7286931872367859,
+              "historical": 0.8403756022453308,
+              "macro": 0.62861168384552,
+              "priority_macro": 0.6122926473617554,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 79,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8153409361839294,
+              "historical": 0.9014084339141846,
+              "macro": 0.739378809928894,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7329545617103577,
+              "historical": 0.8450704216957092,
+              "macro": 0.6376009583473206,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 80,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8139204382896423,
+              "historical": 0.8920187950134277,
+              "macro": 0.7400773167610168,
+              "priority_macro": 0.744940996170044,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7329545617103577,
+              "historical": 0.8356807231903076,
+              "macro": 0.640897274017334,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        }
+      ],
+      "passed": false,
+      "checks": {
+        "known_train_originals_correct": false,
+        "precision": true,
+        "confirmed": false,
+        "top1": true
+      },
+      "metrics": {
+        "whole": {
+          "top1": 0.8053977489471436,
+          "historical": 0.9014084339141846,
+          "macro": 0.737401008605957,
+          "priority_macro": 0.7588046193122864,
+          "confirmed": 391,
+          "correct_confirmed": 388,
+          "precision": 0.9923273921012878
+        },
+        "phone": {
+          "top1": 0.7272727489471436,
+          "historical": 0.8497652411460876,
+          "macro": 0.6413334608078003,
+          "priority_macro": 0.6122926473617554,
+          "confirmed": 312,
+          "correct_confirmed": 307,
+          "precision": 0.9839743375778198
+        }
+      },
+      "epoch": 61,
+      "known_train_accepted": [
+        {
+          "brand": "Zeekr",
+          "accepted": true,
+          "candidate": "Zeekr",
+          "confidence": 0.9943844079971313
+        },
+        {
+          "brand": "Leapmotor",
+          "accepted": true,
+          "candidate": "Leapmotor",
+          "confidence": 0.9987585544586182
+        },
+        {
+          "brand": "Chevrolet",
+          "accepted": false,
+          "candidate": "Chevrolet",
+          "confidence": 0.9976409673690796
+        },
+        {
+          "brand": "Voyah",
+          "accepted": false,
+          "candidate": "Voyah",
+          "confidence": 0.9995937347412109
+        },
+        {
+          "brand": "Chevrolet",
+          "accepted": false,
+          "candidate": "Chevrolet",
+          "confidence": 0.9964502453804016
+        },
+        {
+          "brand": "BYD",
+          "accepted": true,
+          "candidate": "BYD",
+          "confidence": 0.99055415391922
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "history": [
+        {
+          "epoch": 1,
+          "fit": 0.5555555820465088,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8153409361839294,
+              "historical": 0.9107981324195862,
+              "macro": 0.7376748919487,
+              "priority_macro": 0.7348101735115051,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7201704382896423,
+              "historical": 0.8309859037399292,
+              "macro": 0.628309428691864,
+              "priority_macro": 0.5923579931259155,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 2,
+          "fit": 0.7222222089767456,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8110795617103577,
+              "historical": 0.9154929518699646,
+              "macro": 0.7329740524291992,
+              "priority_macro": 0.7306435108184814,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.71875,
+              "historical": 0.8403756022453308,
+              "macro": 0.6223806142807007,
+              "priority_macro": 0.5790660977363586,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 3,
+          "fit": 0.9444444179534912,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8082386255264282,
+              "historical": 0.9107981324195862,
+              "macro": 0.72853684425354,
+              "priority_macro": 0.7514768242835999,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7144886255264282,
+              "historical": 0.8450704216957092,
+              "macro": 0.6183363795280457,
+              "priority_macro": 0.5832327604293823,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 4,
+          "fit": 0.9722222089767456,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8096590638160706,
+              "historical": 0.9061033129692078,
+              "macro": 0.7306638956069946,
+              "priority_macro": 0.7431435585021973,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7159090638160706,
+              "historical": 0.8450704216957092,
+              "macro": 0.6223915815353394,
+              "priority_macro": 0.5832327604293823,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 5,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8096590638160706,
+              "historical": 0.9014084339141846,
+              "macro": 0.7300495505332947,
+              "priority_macro": 0.7223102450370789,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7102272510528564,
+              "historical": 0.8262910842895508,
+              "macro": 0.61832195520401,
+              "priority_macro": 0.5915661454200745,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 6,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8110795617103577,
+              "historical": 0.9061033129692078,
+              "macro": 0.7310357689857483,
+              "priority_macro": 0.7223102450370789,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7258522510528564,
+              "historical": 0.8356807231903076,
+              "macro": 0.6308208107948303,
+              "priority_macro": 0.599899411201477,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 7,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8139204382896423,
+              "historical": 0.9061033129692078,
+              "macro": 0.7335332036018372,
+              "priority_macro": 0.7223102450370789,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7244318127632141,
+              "historical": 0.8403756022453308,
+              "macro": 0.6286398768424988,
+              "priority_macro": 0.599899411201477,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 8,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8139204382896423,
+              "historical": 0.9107981324195862,
+              "macro": 0.7340577244758606,
+              "priority_macro": 0.7223102450370789,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7244318127632141,
+              "historical": 0.8356807231903076,
+              "macro": 0.6293805241584778,
+              "priority_macro": 0.6082327961921692,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 9,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8153409361839294,
+              "historical": 0.9107981324195862,
+              "macro": 0.7357769012451172,
+              "priority_macro": 0.759810209274292,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.71875,
+              "historical": 0.8262910842895508,
+              "macro": 0.6234862208366394,
+              "priority_macro": 0.599899411201477,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 10,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8096590638160706,
+              "historical": 0.9107981324195862,
+              "macro": 0.7304349541664124,
+              "priority_macro": 0.7306435704231262,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.71875,
+              "historical": 0.8309859037399292,
+              "macro": 0.6250014305114746,
+              "priority_macro": 0.6082327961921692,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 11,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8167613744735718,
+              "historical": 0.9061033129692078,
+              "macro": 0.7353083491325378,
+              "priority_macro": 0.7389768958091736,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7258522510528564,
+              "historical": 0.8403756022453308,
+              "macro": 0.6326437592506409,
+              "priority_macro": 0.5956259369850159,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 12,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8181818127632141,
+              "historical": 0.9154929518699646,
+              "macro": 0.7391859889030457,
+              "priority_macro": 0.747310221195221,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7286931872367859,
+              "historical": 0.8450704216957092,
+              "macro": 0.632134199142456,
+              "priority_macro": 0.6165661215782166,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 13,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8153409361839294,
+              "historical": 0.9061033129692078,
+              "macro": 0.7367070317268372,
+              "priority_macro": 0.7389768958091736,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7230113744735718,
+              "historical": 0.8309859037399292,
+              "macro": 0.6244879961013794,
+              "priority_macro": 0.6082327961921692,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 14,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8181818127632141,
+              "historical": 0.9107981324195862,
+              "macro": 0.740533709526062,
+              "priority_macro": 0.7306435704231262,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7215909361839294,
+              "historical": 0.8356807231903076,
+              "macro": 0.6252046823501587,
+              "priority_macro": 0.6082327961921692,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 15,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8110795617103577,
+              "historical": 0.8920187950134277,
+              "macro": 0.7377821803092957,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7329545617103577,
+              "historical": 0.8450704216957092,
+              "macro": 0.6412678360939026,
+              "priority_macro": 0.6165661215782166,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 16,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8125,
+              "historical": 0.9061033129692078,
+              "macro": 0.7337846755981445,
+              "priority_macro": 0.7357089519500732,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7272727489471436,
+              "historical": 0.8403756022453308,
+              "macro": 0.6312798261642456,
+              "priority_macro": 0.6165661215782166,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 17,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8139204382896423,
+              "historical": 0.9061033129692078,
+              "macro": 0.7342535853385925,
+              "priority_macro": 0.7273755669593811,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7286931872367859,
+              "historical": 0.8356807231903076,
+              "macro": 0.6318258047103882,
+              "priority_macro": 0.6122926473617554,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 18,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8125,
+              "historical": 0.9014084339141846,
+              "macro": 0.7343935370445251,
+              "priority_macro": 0.7324409484863281,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7301136255264282,
+              "historical": 0.8403756022453308,
+              "macro": 0.6329822540283203,
+              "priority_macro": 0.6122926473617554,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 19,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8125,
+              "historical": 0.9061033129692078,
+              "macro": 0.7338258028030396,
+              "priority_macro": 0.7357089519500732,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7301136255264282,
+              "historical": 0.8497652411460876,
+              "macro": 0.6342005133628845,
+              "priority_macro": 0.6165661215782166,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 20,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8125,
+              "historical": 0.9061033129692078,
+              "macro": 0.7325636744499207,
+              "priority_macro": 0.7357089519500732,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7286931872367859,
+              "historical": 0.8450704216957092,
+              "macro": 0.6337778568267822,
+              "priority_macro": 0.6165661215782166,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 21,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8082386255264282,
+              "historical": 0.9014084339141846,
+              "macro": 0.7284741997718811,
+              "priority_macro": 0.7273755669593811,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7230113744735718,
+              "historical": 0.8262910842895508,
+              "macro": 0.6361395716667175,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 22,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8068181872367859,
+              "historical": 0.8873239159584045,
+              "macro": 0.7311488389968872,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7301136255264282,
+              "historical": 0.8356807231903076,
+              "macro": 0.6411888003349304,
+              "priority_macro": 0.6122926473617554,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 23,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8068181872367859,
+              "historical": 0.8967136144638062,
+              "macro": 0.7297069430351257,
+              "priority_macro": 0.7273755669593811,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7201704382896423,
+              "historical": 0.8309859037399292,
+              "macro": 0.6269065737724304,
+              "priority_macro": 0.6122926473617554,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 24,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8082386255264282,
+              "historical": 0.8920187950134277,
+              "macro": 0.7331787347793579,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7286931872367859,
+              "historical": 0.8309859037399292,
+              "macro": 0.6342282891273499,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 25,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8096590638160706,
+              "historical": 0.8967136144638062,
+              "macro": 0.7373076677322388,
+              "priority_macro": 0.7190422415733337,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7230113744735718,
+              "historical": 0.8215962648391724,
+              "macro": 0.6342462301254272,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 26,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8082386255264282,
+              "historical": 0.8873239159584045,
+              "macro": 0.7315303683280945,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7357954382896423,
+              "historical": 0.8403756022453308,
+              "macro": 0.645106315612793,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 27,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8125,
+              "historical": 0.9014084339141846,
+              "macro": 0.7367277145385742,
+              "priority_macro": 0.7273755669593811,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7286931872367859,
+              "historical": 0.8262910842895508,
+              "macro": 0.6351835131645203,
+              "priority_macro": 0.6122926473617554,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 28,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8139204382896423,
+              "historical": 0.9014084339141846,
+              "macro": 0.7384631037712097,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7286931872367859,
+              "historical": 0.8356807231903076,
+              "macro": 0.6309010982513428,
+              "priority_macro": 0.6122926473617554,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 29,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8125,
+              "historical": 0.8920187950134277,
+              "macro": 0.7374064326286316,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7329545617103577,
+              "historical": 0.8450704216957092,
+              "macro": 0.6350635290145874,
+              "priority_macro": 0.6122926473617554,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 30,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8110795617103577,
+              "historical": 0.9014084339141846,
+              "macro": 0.7358332276344299,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7244318127632141,
+              "historical": 0.8356807231903076,
+              "macro": 0.62613445520401,
+              "priority_macro": 0.6122926473617554,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 31,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8096590638160706,
+              "historical": 0.9061033129692078,
+              "macro": 0.7321499586105347,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7301136255264282,
+              "historical": 0.8356807231903076,
+              "macro": 0.641341507434845,
+              "priority_macro": 0.6122926473617554,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 32,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8110795617103577,
+              "historical": 0.8967136144638062,
+              "macro": 0.7336820363998413,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7301136255264282,
+              "historical": 0.8356807231903076,
+              "macro": 0.6346306800842285,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 33,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8096590638160706,
+              "historical": 0.8920187950134277,
+              "macro": 0.7306562662124634,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7286931872367859,
+              "historical": 0.8262910842895508,
+              "macro": 0.6375042200088501,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 34,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8053977489471436,
+              "historical": 0.8967136144638062,
+              "macro": 0.7278087735176086,
+              "priority_macro": 0.7273755669593811,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7286931872367859,
+              "historical": 0.8403756022453308,
+              "macro": 0.6332642436027527,
+              "priority_macro": 0.6155605912208557,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 35,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8110795617103577,
+              "historical": 0.8967136144638062,
+              "macro": 0.7341954112052917,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7301136255264282,
+              "historical": 0.8450704216957092,
+              "macro": 0.6325638890266418,
+              "priority_macro": 0.6122926473617554,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 36,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8125,
+              "historical": 0.9014084339141846,
+              "macro": 0.736748993396759,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7301136255264282,
+              "historical": 0.8450704216957092,
+              "macro": 0.6350106000900269,
+              "priority_macro": 0.6122926473617554,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 37,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8082386255264282,
+              "historical": 0.8920187950134277,
+              "macro": 0.7343128323554993,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7272727489471436,
+              "historical": 0.8356807231903076,
+              "macro": 0.6328081488609314,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 38,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8096590638160706,
+              "historical": 0.8920187950134277,
+              "macro": 0.7325165867805481,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7315340638160706,
+              "historical": 0.8497652411460876,
+              "macro": 0.630375862121582,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 39,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8139204382896423,
+              "historical": 0.9014084339141846,
+              "macro": 0.74117511510849,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7286931872367859,
+              "historical": 0.8356807231903076,
+              "macro": 0.6350826621055603,
+              "priority_macro": 0.6057566404342651,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 40,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8110795617103577,
+              "historical": 0.9014084339141846,
+              "macro": 0.73850417137146,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7329545617103577,
+              "historical": 0.8450704216957092,
+              "macro": 0.6362006068229675,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 41,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8068181872367859,
+              "historical": 0.8873239159584045,
+              "macro": 0.7310372591018677,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7329545617103577,
+              "historical": 0.8450704216957092,
+              "macro": 0.6365325450897217,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 42,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8096590638160706,
+              "historical": 0.8967136144638062,
+              "macro": 0.7330096364021301,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7329545617103577,
+              "historical": 0.8356807231903076,
+              "macro": 0.6421093344688416,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 43,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8110795617103577,
+              "historical": 0.8967136144638062,
+              "macro": 0.7377926707267761,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7272727489471436,
+              "historical": 0.8356807231903076,
+              "macro": 0.6344340443611145,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 44,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8096590638160706,
+              "historical": 0.8967136144638062,
+              "macro": 0.735478401184082,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7258522510528564,
+              "historical": 0.8309859037399292,
+              "macro": 0.6276532411575317,
+              "priority_macro": 0.6122926473617554,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 45,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8096590638160706,
+              "historical": 0.9014084339141846,
+              "macro": 0.735478401184082,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7272727489471436,
+              "historical": 0.8262910842895508,
+              "macro": 0.6360687613487244,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 46,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8082386255264282,
+              "historical": 0.8873239159584045,
+              "macro": 0.7354633808135986,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7286931872367859,
+              "historical": 0.8356807231903076,
+              "macro": 0.6312461495399475,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 47,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8153409361839294,
+              "historical": 0.9014084339141846,
+              "macro": 0.7427777051925659,
+              "priority_macro": 0.744940996170044,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7286931872367859,
+              "historical": 0.8497652411460876,
+              "macro": 0.6286805272102356,
+              "priority_macro": 0.6165661215782166,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 48,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8053977489471436,
+              "historical": 0.8873239159584045,
+              "macro": 0.7274506092071533,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7301136255264282,
+              "historical": 0.8450704216957092,
+              "macro": 0.6342000961303711,
+              "priority_macro": 0.6082327961921692,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 49,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8139204382896423,
+              "historical": 0.9014084339141846,
+              "macro": 0.739050030708313,
+              "priority_macro": 0.7198341488838196,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7315340638160706,
+              "historical": 0.8403756022453308,
+              "macro": 0.6368698477745056,
+              "priority_macro": 0.5996857285499573,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 50,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8110795617103577,
+              "historical": 0.8920187950134277,
+              "macro": 0.7373406887054443,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7301136255264282,
+              "historical": 0.8309859037399292,
+              "macro": 0.6354888677597046,
+              "priority_macro": 0.6122926473617554,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 51,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8181818127632141,
+              "historical": 0.9014084339141846,
+              "macro": 0.7458204627037048,
+              "priority_macro": 0.744940996170044,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7315340638160706,
+              "historical": 0.8403756022453308,
+              "macro": 0.6368557214736938,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 52,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8139204382896423,
+              "historical": 0.9061033129692078,
+              "macro": 0.740203857421875,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7272727489471436,
+              "historical": 0.8356807231903076,
+              "macro": 0.6306536197662354,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 53,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8167613744735718,
+              "historical": 0.9061033129692078,
+              "macro": 0.7447579503059387,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7286931872367859,
+              "historical": 0.8262910842895508,
+              "macro": 0.6365804672241211,
+              "priority_macro": 0.6006912589073181,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 54,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8125,
+              "historical": 0.8920187950134277,
+              "macro": 0.7374064326286316,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7272727489471436,
+              "historical": 0.8309859037399292,
+              "macro": 0.633037805557251,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 55,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8153409361839294,
+              "historical": 0.9014084339141846,
+              "macro": 0.7439376711845398,
+              "priority_macro": 0.7157742977142334,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.734375,
+              "historical": 0.8403756022453308,
+              "macro": 0.6433701515197754,
+              "priority_macro": 0.5956259369850159,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 56,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8125,
+              "historical": 0.8967136144638062,
+              "macro": 0.7409141659736633,
+              "priority_macro": 0.7198341488838196,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7329545617103577,
+              "historical": 0.8356807231903076,
+              "macro": 0.6394175291061401,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 57,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8167613744735718,
+              "historical": 0.9061033129692078,
+              "macro": 0.7445786595344543,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7315340638160706,
+              "historical": 0.8450704216957092,
+              "macro": 0.6341807246208191,
+              "priority_macro": 0.6132981181144714,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 58,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8110795617103577,
+              "historical": 0.9014084339141846,
+              "macro": 0.73850417137146,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7272727489471436,
+              "historical": 0.8309859037399292,
+              "macro": 0.6347705125808716,
+              "priority_macro": 0.6006912589073181,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 59,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8153409361839294,
+              "historical": 0.9014084339141846,
+              "macro": 0.7429569959640503,
+              "priority_macro": 0.744940996170044,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7301136255264282,
+              "historical": 0.8309859037399292,
+              "macro": 0.6357635259628296,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 60,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8167613744735718,
+              "historical": 0.9061033129692078,
+              "macro": 0.7439431548118591,
+              "priority_macro": 0.744940996170044,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7301136255264282,
+              "historical": 0.8356807231903076,
+              "macro": 0.6310097575187683,
+              "priority_macro": 0.6165661215782166,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 61,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8082386255264282,
+              "historical": 0.8967136144638062,
+              "macro": 0.7338854670524597,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7301136255264282,
+              "historical": 0.8403756022453308,
+              "macro": 0.632013738155365,
+              "priority_macro": 0.6082327961921692,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 62,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8181818127632141,
+              "historical": 0.9061033129692078,
+              "macro": 0.7457585334777832,
+              "priority_macro": 0.744940996170044,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7315340638160706,
+              "historical": 0.8356807231903076,
+              "macro": 0.6382076740264893,
+              "priority_macro": 0.6090246438980103,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 63,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8110795617103577,
+              "historical": 0.8920187950134277,
+              "macro": 0.73958420753479,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7329545617103577,
+              "historical": 0.8356807231903076,
+              "macro": 0.6428263783454895,
+              "priority_macro": 0.6006912589073181,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 64,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8139204382896423,
+              "historical": 0.9014084339141846,
+              "macro": 0.7422434687614441,
+              "priority_macro": 0.744940996170044,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7329545617103577,
+              "historical": 0.8544601202011108,
+              "macro": 0.6335363388061523,
+              "priority_macro": 0.6132981181144714,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 65,
+          "fit": 1.0,
+          "guard": false,
+          "raw": {
+            "whole": {
+              "top1": 0.8110795617103577,
+              "historical": 0.8967136144638062,
+              "macro": 0.736942708492279,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7258522510528564,
+              "historical": 0.8309859037399292,
+              "macro": 0.6304215788841248,
+              "priority_macro": 0.6039592623710632,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 66,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8125,
+              "historical": 0.9061033129692078,
+              "macro": 0.736932098865509,
+              "priority_macro": 0.744940996170044,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7286931872367859,
+              "historical": 0.8356807231903076,
+              "macro": 0.6300600171089172,
+              "priority_macro": 0.6006912589073181,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 67,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8139204382896423,
+              "historical": 0.9061033129692078,
+              "macro": 0.7394962906837463,
+              "priority_macro": 0.744940996170044,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7286931872367859,
+              "historical": 0.8403756022453308,
+              "macro": 0.6319650411605835,
+              "priority_macro": 0.6006912589073181,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 68,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8125,
+              "historical": 0.9014084339141846,
+              "macro": 0.7427470684051514,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7329545617103577,
+              "historical": 0.8450704216957092,
+              "macro": 0.6393161416053772,
+              "priority_macro": 0.6082327961921692,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 69,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8125,
+              "historical": 0.9014084339141846,
+              "macro": 0.7379699349403381,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7329545617103577,
+              "historical": 0.8450704216957092,
+              "macro": 0.6360032558441162,
+              "priority_macro": 0.6049647927284241,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 70,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8181818127632141,
+              "historical": 0.9014084339141846,
+              "macro": 0.7456881403923035,
+              "priority_macro": 0.744940996170044,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7272727489471436,
+              "historical": 0.8403756022453308,
+              "macro": 0.6301668882369995,
+              "priority_macro": 0.6090246438980103,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 71,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8125,
+              "historical": 0.9014084339141846,
+              "macro": 0.7389925718307495,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7286931872367859,
+              "historical": 0.8309859037399292,
+              "macro": 0.6364982724189758,
+              "priority_macro": 0.6006912589073181,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 72,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8139204382896423,
+              "historical": 0.9061033129692078,
+              "macro": 0.7405645847320557,
+              "priority_macro": 0.744940996170044,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7286931872367859,
+              "historical": 0.8356807231903076,
+              "macro": 0.6342629194259644,
+              "priority_macro": 0.6049647927284241,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 73,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8125,
+              "historical": 0.8920187950134277,
+              "macro": 0.7428351044654846,
+              "priority_macro": 0.744940996170044,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7315340638160706,
+              "historical": 0.8356807231903076,
+              "macro": 0.639297366142273,
+              "priority_macro": 0.6082327961921692,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 74,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8153409361839294,
+              "historical": 0.9014084339141846,
+              "macro": 0.7393435835838318,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7301136255264282,
+              "historical": 0.8450704216957092,
+              "macro": 0.6311529874801636,
+              "priority_macro": 0.6090246438980103,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 75,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8181818127632141,
+              "historical": 0.9107981324195862,
+              "macro": 0.7464309334754944,
+              "priority_macro": 0.744940996170044,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7315340638160706,
+              "historical": 0.8403756022453308,
+              "macro": 0.6378117203712463,
+              "priority_macro": 0.6090246438980103,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 76,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8153409361839294,
+              "historical": 0.9061033129692078,
+              "macro": 0.7426916360855103,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7301136255264282,
+              "historical": 0.8356807231903076,
+              "macro": 0.6349087953567505,
+              "priority_macro": 0.6122926473617554,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 77,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8125,
+              "historical": 0.8920187950134277,
+              "macro": 0.7428351044654846,
+              "priority_macro": 0.744940996170044,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7329545617103577,
+              "historical": 0.8356807231903076,
+              "macro": 0.6406369209289551,
+              "priority_macro": 0.6006912589073181,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 78,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8125,
+              "historical": 0.8920187950134277,
+              "macro": 0.741191565990448,
+              "priority_macro": 0.744940996170044,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7315340638160706,
+              "historical": 0.8356807231903076,
+              "macro": 0.637431800365448,
+              "priority_macro": 0.6006912589073181,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 79,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8153409361839294,
+              "historical": 0.9061033129692078,
+              "macro": 0.741632878780365,
+              "priority_macro": 0.7241076827049255,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7286931872367859,
+              "historical": 0.8309859037399292,
+              "macro": 0.635271430015564,
+              "priority_macro": 0.6006912589073181,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 80,
+          "fit": 1.0,
+          "guard": true,
+          "raw": {
+            "whole": {
+              "top1": 0.8139204382896423,
+              "historical": 0.9014084339141846,
+              "macro": 0.7420603632926941,
+              "priority_macro": 0.7366076111793518,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7315340638160706,
+              "historical": 0.8309859037399292,
+              "macro": 0.6391692757606506,
+              "priority_macro": 0.6006912589073181,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        }
+      ],
+      "passed": false,
+      "checks": {
+        "known_train_originals_correct": false,
+        "precision": true,
+        "confirmed": false,
+        "top1": true
+      },
+      "metrics": {
+        "whole": {
+          "top1": 0.8053977489471436,
+          "historical": 0.9014084339141846,
+          "macro": 0.7377461791038513,
+          "priority_macro": 0.750471293926239,
+          "confirmed": 395,
+          "correct_confirmed": 391,
+          "precision": 0.9898734092712402
+        },
+        "phone": {
+          "top1": 0.7230113744735718,
+          "historical": 0.8309859037399292,
+          "macro": 0.6423970460891724,
+          "priority_macro": 0.5880844593048096,
+          "confirmed": 314,
+          "correct_confirmed": 308,
+          "precision": 0.9808917045593262
+        }
+      },
+      "epoch": 55,
+      "known_train_accepted": [
+        {
+          "brand": "Zeekr",
+          "accepted": true,
+          "candidate": "Zeekr",
+          "confidence": 0.9971275925636292
+        },
+        {
+          "brand": "Leapmotor",
+          "accepted": true,
+          "candidate": "Leapmotor",
+          "confidence": 0.999189555644989
+        },
+        {
+          "brand": "Chevrolet",
+          "accepted": false,
+          "candidate": "Chevrolet",
+          "confidence": 0.998330295085907
+        },
+        {
+          "brand": "Voyah",
+          "accepted": false,
+          "candidate": "Voyah",
+          "confidence": 0.9997363090515137
+        },
+        {
+          "brand": "Chevrolet",
+          "accepted": false,
+          "candidate": "Chevrolet",
+          "confidence": 0.9984298944473267
+        },
+        {
+          "brand": "BYD",
+          "accepted": true,
+          "candidate": "BYD",
+          "confidence": 0.9943631887435913
+        }
+      ]
+    }
+  ],
+  "selected": null,
+  "test_used": false
+}

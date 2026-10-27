@@ -1,0 +1,131 @@
+{
+  "baseline": {
+    "whole": {
+      "top1": 0.8096590638160706,
+      "historical": 0.8967136144638062,
+      "macro": 0.747360348701477,
+      "priority_macro": 0.8180367350578308,
+      "confirmed": 435,
+      "correct_confirmed": 429,
+      "precision": 0.9862068891525269
+    },
+    "phone": {
+      "top1": 0.7244318127632141,
+      "historical": 0.8450704216957092,
+      "macro": 0.6319422721862793,
+      "priority_macro": 0.6164592504501343,
+      "confirmed": 337,
+      "correct_confirmed": 331,
+      "precision": 0.9821958541870117
+    }
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "passed": false,
+      "checks": {
+        "known_scope_train": true,
+        "precision": false,
+        "confirmed": true,
+        "top1": true
+      },
+      "metrics": {
+        "whole": {
+          "top1": 0.8096590638160706,
+          "historical": 0.8967136144638062,
+          "macro": 0.747360348701477,
+          "priority_macro": 0.8180367350578308,
+          "confirmed": 442,
+          "correct_confirmed": 435,
+          "precision": 0.9841628670692444
+        },
+        "phone": {
+          "top1": 0.7244318127632141,
+          "historical": 0.8450704216957092,
+          "macro": 0.6319422721862793,
+          "priority_macro": 0.6164592504501343,
+          "confirmed": 337,
+          "correct_confirmed": 331,
+          "precision": 0.9821958541870117
+        }
+      },
+      "gates": {
+        "Zeekr": 0.9,
+        "Leapmotor": 0.95,
+        "BYD": 0.95
+      },
+      "own": [
+        {
+          "brand": "Zeekr",
+          "candidate": "Zeekr",
+          "accepted": true
+        },
+        {
+          "brand": "Leapmotor",
+          "candidate": "Leapmotor",
+          "accepted": true
+        },
+        {
+          "brand": "BYD",
+          "candidate": "BYD",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "passed": false,
+      "checks": {
+        "known_scope_train": true,
+        "precision": false,
+        "confirmed": true,
+        "top1": true
+      },
+      "metrics": {
+        "whole": {
+          "top1": 0.8096590638160706,
+          "historical": 0.8967136144638062,
+          "macro": 0.747360348701477,
+          "priority_macro": 0.8180367350578308,
+          "confirmed": 441,
+          "correct_confirmed": 434,
+          "precision": 0.9841269850730896
+        },
+        "phone": {
+          "top1": 0.7244318127632141,
+          "historical": 0.8450704216957092,
+          "macro": 0.6319422721862793,
+          "priority_macro": 0.6164592504501343,
+          "confirmed": 337,
+          "correct_confirmed": 331,
+          "precision": 0.9821958541870117
+        }
+      },
+      "gates": {
+        "Zeekr": 0.9,
+        "Leapmotor": 0.95,
+        "BYD": 0.95
+      },
+      "own": [
+        {
+          "brand": "Zeekr",
+          "candidate": "Zeekr",
+          "accepted": true
+        },
+        {
+          "brand": "Leapmotor",
+          "candidate": "Leapmotor",
+          "accepted": true
+        },
+        {
+          "brand": "BYD",
+          "candidate": "BYD",
+          "accepted": true
+        }
+      ]
+    }
+  ],
+  "test_used": false,
+  "passed": false,
+  "selected": null
+}

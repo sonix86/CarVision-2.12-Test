@@ -1,0 +1,16 @@
+{
+  "target": "D:\\Projects\\TashkentCarVision\\outputs\\CarVision-2.12-Test\\CarVision",
+  "exe_sha256": "48d81ca9214d0528553db5ec409b8fe39d686e6bf0c2a09aa45e2d91e3eea830",
+  "model_sha256": "c1b01c33d55e163815734ba8c37810da97ac02bba0f9d042519635815d9fac14",
+  "weights_unchanged": true,
+  "base211_preserved": {
+    "CarVision.exe": true,
+    "models/dino_make.pt": true,
+    "models/model_version.json": true
+  },
+  "final_training_preflight_included": true,
+  "changed_build_files": [
+    "CarVision.exe",
+    "_internal/base_library.zip"
+  ]
+}

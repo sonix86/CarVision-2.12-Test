@@ -1,0 +1,6 @@
+{
+  "reason": "Full manufacturer substitution failed frozen precision guard on reused test; reject it. Retain new family classifier, limit new manufacturer path to the missing Dongfeng E70 support implicated by user. No new fitting or threshold recalibration. Scoped public result is DEVELOPMENT regression, not an independent test or frozen-pass claim.",
+  "stable_joint_model_rejected": true,
+  "new_independent_phone_test_available": false,
+  "timestamp": 1793109948.9709313
+}

@@ -1,0 +1,13 @@
+{
+  "started": 1793109409.5894563,
+  "config": {
+    "rule": "Preserve every accepted v29 make. A directly accepted exact-family class may establish manufacturer on make abstentions. Calibrate exact-family probability AND absolute feature-similarity gates on source-labelled families plus all other-make negatives across the entire make validation. Unknown same-make families are excluded from exact-family scoring, not counted as correct. No known-owner fit/selection.",
+    "fits_added": 0,
+    "fixed_family_round": "v31selected",
+    "fixed_family_epoch": "validationselected",
+    "make_precision_min": 0.95,
+    "family_precision_min": 0.95,
+    "min_source_groups": 3,
+    "known_error_selection": false
+  }
+}

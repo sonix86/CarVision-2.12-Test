@@ -1,0 +1,114 @@
+{
+  "passed": false,
+  "selected": {
+    "scheme": "mask",
+    "temperature": 0.75,
+    "metrics": {
+      "whole": {
+        "top1": 0.7249626517295837,
+        "historical": 0.8309859037399292,
+        "macro": 0.6570183038711548
+      },
+      "phone": {
+        "top1": 0.6158445477485657,
+        "historical": 0.7464788556098938,
+        "macro": 0.528896152973175
+      }
+    },
+    "priority_macro": 0.8763570785522461,
+    "score": 0.6971955060958862,
+    "guard": true
+  },
+  "candidates": [
+    {
+      "scheme": "mask",
+      "temperature": 0.75,
+      "metrics": {
+        "whole": {
+          "top1": 0.7249626517295837,
+          "historical": 0.8309859037399292,
+          "macro": 0.6570183038711548
+        },
+        "phone": {
+          "top1": 0.6158445477485657,
+          "historical": 0.7464788556098938,
+          "macro": 0.528896152973175
+        }
+      },
+      "priority_macro": 0.8763570785522461,
+      "score": 0.6971955060958862,
+      "guard": true
+    },
+    {
+      "scheme": "mask_raw",
+      "temperature": 0.75,
+      "metrics": {
+        "whole": {
+          "top1": 0.726457417011261,
+          "historical": 0.8403756022453308,
+          "macro": 0.6720908880233765
+        },
+        "phone": {
+          "top1": 0.6173393130302429,
+          "historical": 0.7323943376541138,
+          "macro": 0.5316268801689148
+        }
+      },
+      "priority_macro": 0.8268834352493286,
+      "score": 0.6904358506202697,
+      "guard": false
+    },
+    {
+      "scheme": "mask_raw_gray",
+      "temperature": 0.5,
+      "metrics": {
+        "whole": {
+          "top1": 0.7204782962799072,
+          "historical": 0.8356807231903076,
+          "macro": 0.654914915561676
+        },
+        "phone": {
+          "top1": 0.5964125394821167,
+          "historical": 0.6948356628417969,
+          "macro": 0.5021094679832458
+        }
+      },
+      "priority_macro": 0.8652167320251465,
+      "score": 0.6874443709850311,
+      "guard": false
+    },
+    {
+      "scheme": "raw_gray",
+      "temperature": 0.75,
+      "metrics": {
+        "whole": {
+          "top1": 0.6965620517730713,
+          "historical": 0.8262910842895508,
+          "macro": 0.623833179473877
+        },
+        "phone": {
+          "top1": 0.5650224089622498,
+          "historical": 0.67136150598526,
+          "macro": 0.45540228486061096
+        }
+      },
+      "priority_macro": 0.8426986932754517,
+      "score": 0.6558066546916961,
+      "guard": false
+    }
+  ],
+  "priority_enabled": {
+    "BYD": true,
+    "Zeekr": true,
+    "Li Auto": true,
+    "Chevrolet": true,
+    "Toyota": true
+  },
+  "validation_confirmed_views": 527,
+  "validation_confirmed_precision": 0.9696394801139832,
+  "source_model_sha256": "e551618022d002022b70dd36c45953b6b0854142b2d9f8ff5a1080b113510a93",
+  "gradient_training_rounds": 0,
+  "test_used_for_selection": false,
+  "user_controls_used": false,
+  "seconds": 125.29096794128418
+}

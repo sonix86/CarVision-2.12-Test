@@ -1,0 +1,9 @@
+{
+  "scope": [
+    "Zeekr",
+    "Leapmotor",
+    "BYD"
+  ],
+  "reason": "Full replacement rejected. Apply a second own head only when its global top1 is a calibrated scoped make; preserve all other primary/family decisions. Same two fits, no additional training. Validation selects; no test consulted.",
+  "gates": "At least3 source groups, precision>=95%, global probability and margin plus geometry. No manual threshold reduction."
+}

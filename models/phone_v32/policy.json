@@ -1,0 +1,22 @@
+{
+  "max_rounds": 2,
+  "epochs": 80,
+  "configs": [
+    {
+      "lr": 5e-05,
+      "own_weight": 12
+    },
+    {
+      "lr": 0.0001,
+      "own_weight": 16
+    }
+  ],
+  "scope": "Supervised make-head adaptation only; general encoders and family head frozen. Known new errors become TRAIN. Public validation chooses candidate. Reused public test is development regression, not independent accuracy.",
+  "selection": "Do not lower confidence gates by hand. Require validation routed precision >= baseline - .002, correct confirmations >= baseline on both normal and phone views; raw top1 >= baseline - .005. Require all original new TRAIN corrections accepted correctly. No further candidate searches after these two.",
+  "excluded": [
+    {
+      "image": "C:/Users/Miku/Downloads/photo_2026-10-26_11-51-34.jpg",
+      "reason": "Visible AIQAR badge; missing from82-class vocabulary. AIQAR Arrizo e official source located. Keep excluded from make training until own class has sufficient source-group validation; do not relabel as Chery/Hyundai from body similarity."
+    }
+  ]
+}

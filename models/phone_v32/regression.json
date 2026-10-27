@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "checks": {
+    "correct_confirmations": true,
+    "precision": true,
+    "top1": true
+  },
+  "baseline": {
+    "whole": {
+      "top1": 0.831210196018219,
+      "historical": 0.9188596606254578,
+      "macro": 0.6738061904907227,
+      "priority_macro": 0.8538011908531189,
+      "confirmed": 646,
+      "correct_confirmed": 623,
+      "precision": 0.9643962979316711
+    },
+    "phone": {
+      "top1": 0.7653927803039551,
+      "historical": 0.8771929740905762,
+      "macro": 0.5908822417259216,
+      "priority_macro": 0.8067925572395325,
+      "confirmed": 502,
+      "correct_confirmed": 478,
+      "precision": 0.9521912336349487
+    }
+  },
+  "candidate": {
+    "whole": {
+      "top1": 0.831210196018219,
+      "historical": 0.9188596606254578,
+      "macro": 0.6738061904907227,
+      "priority_macro": 0.8538011908531189,
+      "confirmed": 649,
+      "correct_confirmed": 626,
+      "precision": 0.964560866355896
+    },
+    "phone": {
+      "top1": 0.7653927803039551,
+      "historical": 0.8771929740905762,
+      "macro": 0.5908822417259216,
+      "priority_macro": 0.8067925572395325,
+      "confirmed": 502,
+      "correct_confirmed": 478,
+      "precision": 0.9521912336349487
+    }
+  },
+  "make_images": 942,
+  "independent_test": false,
+  "scope": "Frozen post-selection evaluation on reused development benchmark. New six phone corrections are TRAIN and absent here. No threshold changes or retries after this result."
+}

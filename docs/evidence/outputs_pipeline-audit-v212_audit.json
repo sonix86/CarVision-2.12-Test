@@ -1,0 +1,112 @@
+{
+  "rows": 3851,
+  "invalid_geometry": [],
+  "group_split_leaks": [],
+  "pixel_split_leaks": [],
+  "pixel_label_conflicts": [],
+  "source_split_leaks": [],
+  "source_label_conflicts": [],
+  "source_hash_rows": 3217,
+  "scope": "Current cached3851 crops only; contradictions are flags for source review, predictions are never ground truth.",
+  "joint_encoder_pairing": {
+    "declared_clip_checkpoint_sha256": "94a67eb9cc5f52e89cc309bdec66a027b2b7818219f121f4a0fe1023bf547f23",
+    "actual_clip_checkpoint_sha256": "94a67eb9cc5f52e89cc309bdec66a027b2b7818219f121f4a0fe1023bf547f23",
+    "encoder_matches_training_source": true
+  },
+  "cached_features": {
+    "rows": 7702,
+    "expected_rows": 7702,
+    "finite": true,
+    "norm_min": 0.9999998211860657,
+    "norm_max": 1.0000001192092896
+  },
+  "taxonomy": {
+    "brands": 82,
+    "families": 43,
+    "family_brands_missing": [],
+    "disabled_make_classes": [
+      "Aeolus",
+      "Arcfox",
+      "BAIC",
+      "Bestune",
+      "Dongfeng",
+      "Everus",
+      "Exlantix",
+      "FangChengBao",
+      "Forthing",
+      "Geometry",
+      "Hanteng",
+      "HiPhi",
+      "JAC",
+      "Jetour",
+      "LEVC",
+      "Lynk & Co",
+      "Maextro",
+      "Mazda",
+      "Onvo",
+      "Pocco",
+      "Rivian",
+      "Rolls-Royce",
+      "Skywell",
+      "Smart",
+      "Stelato",
+      "Tank",
+      "Voyah",
+      "Weltmeister",
+      "Wey",
+      "Wuling",
+      "YangWang",
+      "Zotye"
+    ]
+  },
+  "runtime_cache_parity": [
+    {
+      "index": 0,
+      "image": "make_scope_v23/1771d82b036d9de5935c.jpg",
+      "max_error": 2.3469328880310059e-07,
+      "passed": true
+    },
+    {
+      "index": 100,
+      "image": "public_prototype/images/stanford_eacc38fab9cc97f279d36e29.jpg",
+      "max_error": 2.2351741790771484e-07,
+      "passed": true
+    },
+    {
+      "index": 450,
+      "image": "ev_patch_v22/4060c0540ab635befa05.jpg",
+      "max_error": 1.5459954738616943e-07,
+      "passed": true
+    },
+    {
+      "index": 1000,
+      "image": "images/3b5ce9092d1cbf3d2063.jpg",
+      "max_error": 1.9744038581848145e-07,
+      "passed": true
+    },
+    {
+      "index": 1800,
+      "image": "stanford/images/stanford_3f0ba67394fb4663baab5b62.jpg",
+      "max_error": 2.1478626877069473e-07,
+      "passed": true
+    },
+    {
+      "index": 2500,
+      "image": "public_prototype/images/stanford_9e1d81d14b0d79de885bdaa0.jpg",
+      "max_error": 1.3783574104309082e-07,
+      "passed": true
+    },
+    {
+      "index": 3300,
+      "image": "public_prototype/images/stanford_d197257b5a532954d54cb840.jpg",
+      "max_error": 9.685754776000977e-08,
+      "passed": true
+    },
+    {
+      "index": 3850,
+      "image": "owner_oct25/91db7f0812f6222cbaad.jpg",
+      "max_error": 0.0,
+      "passed": true
+    }
+  ]
+}

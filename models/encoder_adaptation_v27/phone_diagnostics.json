@@ -1,0 +1,603 @@
+{
+  "records": [
+    {
+      "number": 1,
+      "image": "D:\\\u043c\u0430\u0448\u0438\u043d\u043a\u0438\\11223344.jpg",
+      "user_brand": "GAC Aion",
+      "user_model": "Aion S Plus",
+      "truth_status": "user-corrected",
+      "same_vehicle_group": "GAC-Aion-first-two",
+      "baseline": {
+        "brand": "unknown",
+        "candidate": "Neta",
+        "confidence": 0.306906133890152,
+        "accepted": false,
+        "model": "unknown",
+        "model_alternatives": [],
+        "colour": "white",
+        "alternatives": [
+          {
+            "brand": "Neta",
+            "confidence": 0.306906133890152
+          },
+          {
+            "brand": "Chevrolet",
+            "confidence": 0.29831984639167786
+          },
+          {
+            "brand": "Nissan",
+            "confidence": 0.06845739483833313
+          }
+        ],
+        "car_count": 2
+      },
+      "candidate": {
+        "brand": "unknown",
+        "candidate": "Neta",
+        "confidence": 0.29071298241615295,
+        "accepted": false,
+        "model": "unknown",
+        "model_alternatives": [],
+        "colour": "white",
+        "alternatives": [
+          {
+            "brand": "Neta",
+            "confidence": 0.29071298241615295
+          },
+          {
+            "brand": "Chevrolet",
+            "confidence": 0.2594868540763855
+          },
+          {
+            "brand": "Nissan",
+            "confidence": 0.12961716949939728
+          }
+        ],
+        "car_count": 2
+      }
+    },
+    {
+      "number": 2,
+      "image": "D:\\\u043c\u0430\u0448\u0438\u043d\u043a\u0438\\photo_2_2026-10-25_20-44-40.jpg",
+      "user_brand": "GAC Aion",
+      "user_model": "Aion S Plus",
+      "truth_status": "user-corrected",
+      "same_vehicle_group": "GAC-Aion-first-two",
+      "baseline": {
+        "brand": "unknown",
+        "candidate": "Neta",
+        "confidence": 0.2788602411746979,
+        "accepted": false,
+        "model": "unknown",
+        "model_alternatives": [],
+        "colour": "white",
+        "alternatives": [
+          {
+            "brand": "Neta",
+            "confidence": 0.2788602411746979
+          },
+          {
+            "brand": "Changan",
+            "confidence": 0.20664627850055695
+          },
+          {
+            "brand": "Honda",
+            "confidence": 0.16645464301109314
+          }
+        ],
+        "car_count": 2
+      },
+      "candidate": {
+        "brand": "Changan",
+        "candidate": "Changan",
+        "confidence": 0.7559095025062561,
+        "accepted": true,
+        "model": "unknown",
+        "model_alternatives": [],
+        "colour": "white",
+        "alternatives": [
+          {
+            "brand": "Changan",
+            "confidence": 0.7559095025062561
+          },
+          {
+            "brand": "Honda",
+            "confidence": 0.13932031393051147
+          },
+          {
+            "brand": "Volkswagen",
+            "confidence": 0.03509378433227539
+          }
+        ],
+        "car_count": 2
+      }
+    },
+    {
+      "number": 3,
+      "image": "D:\\\u043c\u0430\u0448\u0438\u043d\u043a\u0438\\photo_3_2026-10-25_20-44-40.jpg",
+      "user_brand": "Haval",
+      "user_model": "M6 / M6 Plus",
+      "truth_status": "user-corrected",
+      "same_vehicle_group": "3",
+      "baseline": {
+        "brand": "unknown",
+        "candidate": "Chery",
+        "confidence": 0.413750022649765,
+        "accepted": false,
+        "model": "unknown",
+        "model_alternatives": [],
+        "colour": "brown",
+        "alternatives": [
+          {
+            "brand": "Chery",
+            "confidence": 0.413750022649765
+          },
+          {
+            "brand": "Geometry",
+            "confidence": 0.34779873490333557
+          },
+          {
+            "brand": "Haval",
+            "confidence": 0.12829846143722534
+          }
+        ],
+        "car_count": 1
+      },
+      "candidate": {
+        "brand": "unknown",
+        "candidate": "Chery",
+        "confidence": 0.4674912095069885,
+        "accepted": false,
+        "model": "unknown",
+        "model_alternatives": [],
+        "colour": "brown",
+        "alternatives": [
+          {
+            "brand": "Chery",
+            "confidence": 0.4674912095069885
+          },
+          {
+            "brand": "Geometry",
+            "confidence": 0.3529939353466034
+          },
+          {
+            "brand": "Haval",
+            "confidence": 0.11365823447704315
+          }
+        ],
+        "car_count": 1
+      }
+    },
+    {
+      "number": 4,
+      "image": "D:\\\u043c\u0430\u0448\u0438\u043d\u043a\u0438\\photo_4_2026-10-25_20-44-40.jpg",
+      "user_brand": "BYD",
+      "user_model": "Dolphin",
+      "truth_status": "user-corrected",
+      "same_vehicle_group": "4",
+      "baseline": {
+        "brand": "BYD",
+        "candidate": "BYD",
+        "confidence": 0.961681604385376,
+        "accepted": true,
+        "model": "unknown",
+        "model_alternatives": [
+          {
+            "brand": "BYD",
+            "model": "Dolphin",
+            "confidence": 0.3351317048072815
+          },
+          {
+            "brand": "BYD",
+            "model": "Seagull",
+            "confidence": 0.16753581166267395
+          },
+          {
+            "brand": "BYD",
+            "model": "Qin Plus",
+            "confidence": 0.03277286887168884
+          }
+        ],
+        "colour": "brown",
+        "alternatives": [
+          {
+            "brand": "BYD",
+            "confidence": 0.961681604385376
+          },
+          {
+            "brand": "Chevrolet",
+            "confidence": 0.01604219526052475
+          },
+          {
+            "brand": "Weltmeister",
+            "confidence": 0.0026404710952192545
+          }
+        ],
+        "car_count": 3
+      },
+      "candidate": {
+        "brand": "BYD",
+        "candidate": "BYD",
+        "confidence": 0.9817283749580383,
+        "accepted": true,
+        "model": "unknown",
+        "model_alternatives": [
+          {
+            "brand": "BYD",
+            "model": "Dolphin",
+            "confidence": 0.3351317048072815
+          },
+          {
+            "brand": "BYD",
+            "model": "Seagull",
+            "confidence": 0.16753581166267395
+          },
+          {
+            "brand": "BYD",
+            "model": "Qin Plus",
+            "confidence": 0.03277286887168884
+          }
+        ],
+        "colour": "brown",
+        "alternatives": [
+          {
+            "brand": "BYD",
+            "confidence": 0.9817283749580383
+          },
+          {
+            "brand": "Chevrolet",
+            "confidence": 0.008472071029245853
+          },
+          {
+            "brand": "Dongfeng",
+            "confidence": 0.0010644405847415328
+          }
+        ],
+        "car_count": 3
+      }
+    },
+    {
+      "number": 5,
+      "image": "D:\\\u043c\u0430\u0448\u0438\u043d\u043a\u0438\\photo_5_2026-10-25_20-44-40.jpg",
+      "user_brand": "BYD",
+      "user_model": "Song Plus",
+      "truth_status": "user-corrected",
+      "same_vehicle_group": "5",
+      "baseline": {
+        "brand": "unknown",
+        "candidate": "BYD",
+        "confidence": 0.38919687271118164,
+        "accepted": false,
+        "model": "unknown",
+        "model_alternatives": [],
+        "colour": "black",
+        "alternatives": [
+          {
+            "brand": "BYD",
+            "confidence": 0.38919687271118164
+          },
+          {
+            "brand": "Chery",
+            "confidence": 0.15747900307178497
+          },
+          {
+            "brand": "MG",
+            "confidence": 0.07321386784315109
+          }
+        ],
+        "car_count": 1
+      },
+      "candidate": {
+        "brand": "unknown",
+        "candidate": "BYD",
+        "confidence": 0.4537999629974365,
+        "accepted": false,
+        "model": "unknown",
+        "model_alternatives": [],
+        "colour": "black",
+        "alternatives": [
+          {
+            "brand": "BYD",
+            "confidence": 0.4537999629974365
+          },
+          {
+            "brand": "Chery",
+            "confidence": 0.18859124183654785
+          },
+          {
+            "brand": "Haval",
+            "confidence": 0.11572074890136719
+          }
+        ],
+        "car_count": 1
+      }
+    },
+    {
+      "number": 6,
+      "image": "D:\\\u043c\u0430\u0448\u0438\u043d\u043a\u0438\\photo_27_2026-10-25_20-44-40.jpg",
+      "user_brand": "BYD",
+      "user_model": "unknown",
+      "truth_status": "tentative",
+      "same_vehicle_group": "6",
+      "baseline": {
+        "brand": "BYD",
+        "candidate": "BYD",
+        "confidence": 0.9717288017272949,
+        "accepted": true,
+        "model": "unknown",
+        "model_alternatives": [
+          {
+            "brand": "BYD",
+            "model": "Song Plus",
+            "confidence": 0.09750517457723618
+          },
+          {
+            "brand": "BYD",
+            "model": "Seal",
+            "confidence": 0.08309944719076157
+          },
+          {
+            "brand": "BYD",
+            "model": "Qin Plus",
+            "confidence": 0.06674204021692276
+          }
+        ],
+        "colour": "black",
+        "alternatives": [
+          {
+            "brand": "BYD",
+            "confidence": 0.9717288017272949
+          },
+          {
+            "brand": "Geely",
+            "confidence": 0.003969540819525719
+          },
+          {
+            "brand": "Exlantix",
+            "confidence": 0.0038592806085944176
+          }
+        ],
+        "car_count": 5
+      },
+      "candidate": {
+        "brand": "BYD",
+        "candidate": "BYD",
+        "confidence": 0.9895021319389343,
+        "accepted": true,
+        "model": "unknown",
+        "model_alternatives": [
+          {
+            "brand": "BYD",
+            "model": "Song Plus",
+            "confidence": 0.09750517457723618
+          },
+          {
+            "brand": "BYD",
+            "model": "Seal",
+            "confidence": 0.08309944719076157
+          },
+          {
+            "brand": "BYD",
+            "model": "Qin Plus",
+            "confidence": 0.06674204021692276
+          }
+        ],
+        "colour": "black",
+        "alternatives": [
+          {
+            "brand": "BYD",
+            "confidence": 0.9895021319389343
+          },
+          {
+            "brand": "Geely",
+            "confidence": 0.001851370558142662
+          },
+          {
+            "brand": "Exlantix",
+            "confidence": 0.0017729124519973993
+          }
+        ],
+        "car_count": 5
+      }
+    },
+    {
+      "number": 7,
+      "image": "D:\\\u043c\u0430\u0448\u0438\u043d\u043a\u0438\\photo_11_2026-10-25_20-44-40.jpg",
+      "user_brand": "unknown",
+      "user_model": "unknown",
+      "truth_status": "unlabelled",
+      "same_vehicle_group": "7",
+      "baseline": {
+        "brand": "unknown",
+        "candidate": "Geely",
+        "confidence": 0.16018527746200562,
+        "accepted": false,
+        "model": "unknown",
+        "model_alternatives": [],
+        "colour": "white",
+        "alternatives": [
+          {
+            "brand": "Geely",
+            "confidence": 0.16018527746200562
+          },
+          {
+            "brand": "Arcfox",
+            "confidence": 0.13911369442939758
+          },
+          {
+            "brand": "BYD",
+            "confidence": 0.13006627559661865
+          }
+        ],
+        "car_count": 1
+      },
+      "candidate": {
+        "brand": "unknown",
+        "candidate": "Geely",
+        "confidence": 0.2064739316701889,
+        "accepted": false,
+        "model": "unknown",
+        "model_alternatives": [],
+        "colour": "white",
+        "alternatives": [
+          {
+            "brand": "Geely",
+            "confidence": 0.2064739316701889
+          },
+          {
+            "brand": "Arcfox",
+            "confidence": 0.12492131441831589
+          },
+          {
+            "brand": "Denza",
+            "confidence": 0.11826319992542267
+          }
+        ],
+        "car_count": 1
+      }
+    },
+    {
+      "number": "previous-Toyota",
+      "image": "D:/\u043c\u0430\u0448\u0438\u043d\u043a\u0438/photo_16_2026-10-25_20-44-40.jpg",
+      "user_brand": "Toyota",
+      "user_model": "unknown",
+      "truth_status": "visible-emblem prior development review",
+      "baseline": {
+        "brand": "unknown",
+        "candidate": "BYD",
+        "confidence": 0.33665168285369873,
+        "accepted": false,
+        "model": "unknown",
+        "model_alternatives": [],
+        "colour": "black",
+        "alternatives": [
+          {
+            "brand": "BYD",
+            "confidence": 0.33665168285369873
+          },
+          {
+            "brand": "Toyota",
+            "confidence": 0.11076773703098297
+          },
+          {
+            "brand": "GAC Aion",
+            "confidence": 0.09219413995742798
+          }
+        ],
+        "car_count": 3
+      },
+      "candidate": {
+        "brand": "unknown",
+        "candidate": "BYD",
+        "confidence": 0.3521230220794678,
+        "accepted": false,
+        "model": "unknown",
+        "model_alternatives": [],
+        "colour": "black",
+        "alternatives": [
+          {
+            "brand": "BYD",
+            "confidence": 0.3521230220794678
+          },
+          {
+            "brand": "Toyota",
+            "confidence": 0.1519244909286499
+          },
+          {
+            "brand": "Roewe",
+            "confidence": 0.11050058156251907
+          }
+        ],
+        "car_count": 3
+      }
+    },
+    {
+      "number": "previous-night",
+      "image": "C:/Temp/codex-clipboard-779e498d-79c4-4db9-9fd4-61cd3491b753.png",
+      "user_brand": "Weltmeister",
+      "user_model": "unknown",
+      "truth_status": "assistant visual reference comparison; not independent certified truth",
+      "baseline": {
+        "brand": "BYD",
+        "candidate": "BYD",
+        "confidence": 0.8314489126205444,
+        "accepted": true,
+        "model": "unknown",
+        "model_alternatives": [
+          {
+            "brand": "BYD",
+            "model": "Dolphin",
+            "confidence": 0.06356967240571976
+          },
+          {
+            "brand": "BYD",
+            "model": "Seal",
+            "confidence": 0.061614155769348145
+          },
+          {
+            "brand": "BYD",
+            "model": "Seagull",
+            "confidence": 0.05443376302719116
+          }
+        ],
+        "colour": "white",
+        "alternatives": [
+          {
+            "brand": "BYD",
+            "confidence": 0.8314489126205444
+          },
+          {
+            "brand": "Ciimo",
+            "confidence": 0.048512253910303116
+          },
+          {
+            "brand": "Geometry",
+            "confidence": 0.03486986085772514
+          }
+        ],
+        "car_count": 5
+      },
+      "candidate": {
+        "brand": "BYD",
+        "candidate": "BYD",
+        "confidence": 0.7471210956573486,
+        "accepted": true,
+        "model": "unknown",
+        "model_alternatives": [
+          {
+            "brand": "BYD",
+            "model": "Dolphin",
+            "confidence": 0.06356967240571976
+          },
+          {
+            "brand": "BYD",
+            "model": "Seal",
+            "confidence": 0.061614155769348145
+          },
+          {
+            "brand": "BYD",
+            "model": "Seagull",
+            "confidence": 0.05443376302719116
+          }
+        ],
+        "colour": "white",
+        "alternatives": [
+          {
+            "brand": "BYD",
+            "confidence": 0.7471210956573486
+          },
+          {
+            "brand": "Ciimo",
+            "confidence": 0.058682288974523544
+          },
+          {
+            "brand": "Geometry",
+            "confidence": 0.04054972901940346
+          }
+        ],
+        "car_count": 5
+      }
+    }
+  ],
+  "limitations": "Known development errors only; repeated same vehicle in first two. Cases6/7 lack certified truth. Not an independent accuracy estimate. Timings omitted because segmentation cache makes paired timings unequal."
+}

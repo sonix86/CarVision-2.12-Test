@@ -1,0 +1,37 @@
+{
+  "repository": "https://github.com/sonix86/CarVision-2.12-Test",
+  "release_tag": "v2.12-test",
+  "version": "2.12 TEST",
+  "original_zip": {
+    "name": "CarVision-2.12-Test-Full.zip",
+    "bytes": 2936560562,
+    "sha256": "cd5644e7f6bdd5c046e5130e0db6c9065e802c80c4dd9b7ecdddb0fb9540995c"
+  },
+  "parts": [
+    {
+      "name": "CarVision-2.12-Test-Full.zip.001",
+      "bytes": 1500000000,
+      "sha256": "663bf912ed27667dec821a4ec24a665e3df40ad1e972c778748d9dc8caf24cfd"
+    },
+    {
+      "name": "CarVision-2.12-Test-Full.zip.002",
+      "bytes": 1436560562,
+      "sha256": "38190006002c31688e095261c91ae08e422a7bf325d7b03de4293abc01b5a60b"
+    }
+  ],
+  "training": {
+    "name": "CarVision-2.12-Training-Crops.zip",
+    "bytes": 551248619,
+    "sha256": "970a1aa5812fd532355c07407865510f08577574a08b3e2db3c8ede6eaf3a458"
+  },
+  "weights_sha256": "c1b01c33d55e163815734ba8c37810da97ac02bba0f9d042519635815d9fac14",
+  "exe_sha256": "48d81ca9214d0528553db5ec409b8fe39d686e6bf0c2a09aa45e2d91e3eea830",
+  "scope": "Exact delivered portable release; supplemental frozen training crops/features, no recognition weight changes",
+  "local_photos": {
+    "name": "CarVision-2.12-Local-Phone-Photos.zip",
+    "bytes": 16110510,
+    "sha256": "6993fa7b7edc9e6716a8a3ad9875f74338fd6cacd291676af705ca3ccebbe92c",
+    "photos": 99,
+    "all_train": true
+  }
+}

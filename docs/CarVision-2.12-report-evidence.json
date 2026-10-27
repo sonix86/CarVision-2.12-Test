@@ -1,0 +1,39 @@
+{
+  "validation": {
+    "whole": {
+      "n": 704,
+      "raw_top1": 0.8096590638160706,
+      "correct": 432,
+      "wrong": 6,
+      "unknown": 266
+    },
+    "phone": {
+      "n": 704,
+      "raw_top1": 0.7244318127632141,
+      "correct": 331,
+      "wrong": 6,
+      "unknown": 367
+    }
+  },
+  "split_counts": {
+    "train": 2205,
+    "validation": 704,
+    "test": 942
+  },
+  "sources": {
+    "make_scope_v23": 1407,
+    "public_prototype": 625,
+    "stanford": 634,
+    "images": 528,
+    "ev_v19": 194,
+    "ev_patch_v22": 202,
+    "ev_patch_flickr_v22": 26,
+    "make_flickr_v23": 9,
+    "own_oct21": 17,
+    "ev_views_v26": 156,
+    "owner_oct25": 40,
+    "e70_truth_v30": 13
+  },
+  "own_reviewed_objects": 44,
+  "scope": "Reused development corpus; no blind phone accuracy"
+}

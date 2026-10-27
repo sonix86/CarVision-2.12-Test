@@ -1,0 +1,944 @@
+[
+  {
+    "image": "b71f9f8c49db9959544b.jpg",
+    "box": [
+      100,
+      475,
+      803,
+      913
+    ],
+    "brand": "Deepal",
+    "colour": "black",
+    "source": "D:\\машинки\\photo_18_2026-10-25_20-44-40.jpg",
+    "original_sha256": "b71f9f8c49db9959544babd50bb82b6dbba42c30cc435980d6dd00ece9da977e",
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "label_source": "Manual visible emblem/body review; detector proposes geometry only",
+    "status": "manual_make_and_geometry_reviewed",
+    "exclude_from_independent_evaluation": true,
+    "model": "unknown",
+    "review": "Original photograph and selected crop viewed. Make/colour only. Same outing is train-only; not used in v2.3 fitting or selection.",
+    "provenance": "Existing manually reviewed own annotation; crop refreshed to match runtime",
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": false
+  },
+  {
+    "image": "fbd492e6dabd592e4a96.jpg",
+    "box": [
+      130,
+      473,
+      767,
+      834
+    ],
+    "brand": "BMW",
+    "colour": "black",
+    "source": "D:\\машинки\\photo_19_2026-10-25_20-44-40.jpg",
+    "original_sha256": "fbd492e6dabd592e4a9643de527d237c2af0d74d9da52cc6ee59253de16e95f4",
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "label_source": "Manual visible emblem/body review; detector proposes geometry only",
+    "status": "manual_make_and_geometry_reviewed",
+    "exclude_from_independent_evaluation": true,
+    "model": "unknown",
+    "review": "Original photograph and selected crop viewed. Make/colour only. Same outing is train-only; not used in v2.3 fitting or selection.",
+    "provenance": "Existing manually reviewed own annotation; crop refreshed to match runtime",
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": false
+  },
+  {
+    "image": "c24446ae74e054ec06c5.jpg",
+    "box": [
+      140,
+      372,
+      915,
+      834
+    ],
+    "brand": "BMW",
+    "colour": "grey",
+    "source": "D:\\машинки\\photo_20_2026-10-25_20-44-40.jpg",
+    "original_sha256": "c24446ae74e054ec06c598b18106101ee7d2d97e08306c9ee69d1906518ed4cc",
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "label_source": "Manual visible emblem/body review; detector proposes geometry only",
+    "status": "manual_make_and_geometry_reviewed",
+    "exclude_from_independent_evaluation": true,
+    "model": "unknown",
+    "review": "Original photograph and selected crop viewed. Make/colour only. Same outing is train-only; not used in v2.3 fitting or selection.",
+    "provenance": "Existing manually reviewed own annotation; crop refreshed to match runtime",
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": false
+  },
+  {
+    "image": "474300f3eecf3715195d.jpg",
+    "brand": "Kia",
+    "colour": "black",
+    "source": "D:\\машинки\\photo_21_2026-10-25_20-44-40.jpg",
+    "original_sha256": "474300f3eecf3715195db7ad4f52bb443ef639358ad91b0e796e0cdf205fe6d0",
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "label_source": "Manual visible emblem/body review; detector proposes geometry only",
+    "status": "manual_make_and_geometry_reviewed",
+    "exclude_from_independent_evaluation": true,
+    "model": "unknown",
+    "review": "Original photograph and selected crop viewed. Make/colour only. Same outing is train-only; not used in v2.3 fitting or selection.",
+    "provenance": "Corrected geometry after full-resolution review: labelled Kia foreground, not neighbouring Chevrolet",
+    "point": [
+      850,
+      600
+    ],
+    "box": [
+      253,
+      421,
+      922,
+      816
+    ],
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": false
+  },
+  {
+    "image": "27192edeee8d46acbd6d.jpg",
+    "box": [
+      215,
+      427,
+      726,
+      771
+    ],
+    "brand": "Chevrolet",
+    "colour": "black",
+    "source": "D:\\машинки\\photo_22_2026-10-25_20-44-40.jpg",
+    "original_sha256": "27192edeee8d46acbd6d98c5866f4525c891c85f3fc9707a5d0ed82af6534c57",
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "label_source": "Manual visible emblem/body review; detector proposes geometry only",
+    "status": "manual_make_and_geometry_reviewed",
+    "exclude_from_independent_evaluation": true,
+    "model": "unknown",
+    "review": "Original photograph and selected crop viewed. Make/colour only. Same outing is train-only; not used in v2.3 fitting or selection.",
+    "provenance": "CORRECTION: previous Kia label was wrong; gold Chevrolet bowtie and Tracker lettering visible in original. Previous files retained.",
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": false
+  },
+  {
+    "image": "f55ecc86584396f9f1ed.jpg",
+    "box": [
+      10,
+      99,
+      958,
+      1011
+    ],
+    "brand": "Chevrolet",
+    "colour": "black",
+    "source": "D:\\машинки\\photo_31_2026-10-25_20-44-40.jpg",
+    "original_sha256": "f55ecc86584396f9f1ed576b3072e3119af2173cea1feb6e3d4ca81627af8472",
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "label_source": "Manual visible emblem/body review; detector proposes geometry only",
+    "status": "manual_make_and_geometry_reviewed",
+    "exclude_from_independent_evaluation": true,
+    "model": "unknown",
+    "review": "Original photograph and selected crop viewed. Make/colour only. Same outing is train-only; not used in v2.3 fitting or selection.",
+    "provenance": "Existing manually reviewed own annotation; crop refreshed to match runtime",
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": false
+  },
+  {
+    "image": "2e02c9cb5e75002d3092.jpg",
+    "box": [
+      4,
+      571,
+      953,
+      1156
+    ],
+    "brand": "Chevrolet",
+    "colour": "grey",
+    "source": "D:\\машинки\\photo_64_2026-10-25_20-44-40.jpg",
+    "original_sha256": "2e02c9cb5e75002d3092e6ee1da2a07afb9667a19c05de7adfd29f0b68740e50",
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "label_source": "Manual visible emblem/body review; detector proposes geometry only",
+    "status": "manual_make_and_geometry_reviewed",
+    "exclude_from_independent_evaluation": true,
+    "model": "unknown",
+    "review": "Original photograph and selected crop viewed. Make/colour only. Same outing is train-only; not used in v2.3 fitting or selection.",
+    "provenance": "Existing manually reviewed own annotation; crop refreshed to match runtime",
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": false
+  },
+  {
+    "image": "e4c080db52751320696c.jpg",
+    "box": [
+      2,
+      453,
+      510,
+      844
+    ],
+    "brand": "Kia",
+    "colour": "white",
+    "source": "D:\\машинки\\photo_73_2026-10-25_20-44-40.jpg",
+    "original_sha256": "e4c080db52751320696ca80b0990ff20d2c3bad270ecfb8e37bd3aaa8dd468bb",
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "label_source": "Manual visible emblem/body review; detector proposes geometry only",
+    "status": "manual_make_and_geometry_reviewed",
+    "exclude_from_independent_evaluation": true,
+    "model": "unknown",
+    "review": "Original photograph and selected crop viewed. Make/colour only. Same outing is train-only; not used in v2.3 fitting or selection.",
+    "provenance": "Existing manually reviewed own annotation; crop refreshed to match runtime",
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": false
+  },
+  {
+    "image": "e0e40171a362a41e2723.jpg",
+    "box": [
+      293,
+      199,
+      766,
+      569
+    ],
+    "brand": "Chevrolet",
+    "colour": "white",
+    "source": "D:\\машинки\\photo_8_2026-10-25_20-44-40.jpg",
+    "original_sha256": "e0e40171a362a41e2723698606016c80588b3ecde72ca9b76176458ccdd21ea8",
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "label_source": "Manual visible emblem/body review; detector proposes geometry only",
+    "status": "manual_make_and_geometry_reviewed",
+    "exclude_from_independent_evaluation": true,
+    "model": "unknown",
+    "review": "Original photograph and selected crop viewed. Make/colour only. Same outing is train-only; not used in v2.3 fitting or selection.",
+    "provenance": "Existing manually reviewed own annotation; crop refreshed to match runtime",
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": false
+  },
+  {
+    "image": "798f90807dd627be1905.jpg",
+    "box": [
+      114,
+      241,
+      849,
+      866
+    ],
+    "brand": "GAC Aion",
+    "colour": "white",
+    "source": "D:\\машинки\\photo_79_2026-10-25_20-44-40.jpg",
+    "original_sha256": "798f90807dd627be190511d02d5ad582b5ba5c1689e51d446f029dfa9d89b43c",
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "label_source": "Assistant full-resolution visible-emblem review; not independently human-certified",
+    "status": "additional_v26_reviewed_make_only",
+    "exclude_from_independent_evaluation": true,
+    "model": "unknown",
+    "review": "Clear GAC emblem; Aion S exterior, exact variant not certified",
+    "provenance": "Existing manually reviewed own annotation; crop refreshed to match runtime",
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": false
+  },
+  {
+    "image": "6ce7d5f3545edc23de6b.jpg",
+    "box": [
+      392,
+      490,
+      948,
+      868
+    ],
+    "brand": "Li Auto",
+    "colour": "grey",
+    "source": "D:\\машинки\\photo_80_2026-10-25_20-44-40.jpg",
+    "original_sha256": "6ce7d5f3545edc23de6bdcfa849f521a6830b9d6d7585479b2f9c4d3f309dae7",
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "label_source": "Assistant full-resolution visible-emblem review; not independently human-certified",
+    "status": "additional_v26_reviewed_make_only",
+    "exclude_from_independent_evaluation": true,
+    "model": "unknown",
+    "review": "Li emblem on bonnet; foreground SUV only",
+    "provenance": "Existing manually reviewed own annotation; crop refreshed to match runtime",
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": false
+  },
+  {
+    "image": "2e165cd91ee18410061c.jpg",
+    "box": [
+      220,
+      60,
+      834,
+      637
+    ],
+    "brand": "Leapmotor",
+    "colour": "white",
+    "source": "D:\\машинки\\photo_83_2026-10-25_20-44-40.jpg",
+    "original_sha256": "2e165cd91ee18410061c5f934ebe13fa9014c651323986296d6f86b79f35e28a",
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "label_source": "Assistant full-resolution visible-emblem review; not independently human-certified",
+    "status": "additional_v26_reviewed_make_only",
+    "exclude_from_independent_evaluation": true,
+    "model": "unknown",
+    "review": "Clear Leapmotor emblem on bonnet",
+    "provenance": "Existing manually reviewed own annotation; crop refreshed to match runtime",
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": false
+  },
+  {
+    "image": "c0b64454b69567e5bdab.jpg",
+    "box": [
+      2,
+      55,
+      495,
+      509
+    ],
+    "brand": "BYD",
+    "colour": "grey",
+    "source": "D:\\машинки\\photo_90_2026-10-25_20-44-40.jpg",
+    "original_sha256": "c0b64454b69567e5bdab95fb1f51008c4c60766519cf9289e6048f883c4900dd",
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "label_source": "Assistant full-resolution visible-emblem review; not independently human-certified",
+    "status": "additional_v26_reviewed_make_only",
+    "exclude_from_independent_evaluation": true,
+    "model": "unknown",
+    "review": "BYD lettering across front trim",
+    "provenance": "Existing manually reviewed own annotation; crop refreshed to match runtime",
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": false
+  },
+  {
+    "image": "c87367215fa9df7e1901.jpg",
+    "box": [
+      406,
+      325,
+      959,
+      801
+    ],
+    "brand": "BYD",
+    "colour": "black",
+    "source": "D:\\машинки\\photo_93_2026-10-25_20-44-40.jpg",
+    "original_sha256": "c87367215fa9df7e1901c4881daa3b619caf7b44353d4eaa43df22687418d36a",
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "label_source": "Assistant full-resolution visible-emblem review; not independently human-certified",
+    "status": "additional_v26_reviewed_make_only",
+    "exclude_from_independent_evaluation": true,
+    "model": "unknown",
+    "review": "BYD lettering on rear; different vehicle from locked photo5",
+    "provenance": "Existing manually reviewed own annotation; crop refreshed to match runtime",
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": false
+  },
+  {
+    "image": "fd1976bcf563a8c75c19.jpg",
+    "box": [
+      183,
+      337,
+      762,
+      784
+    ],
+    "brand": "BYD",
+    "colour": "white",
+    "source": "D:\\машинки\\photo_99_2026-10-25_20-44-40.jpg",
+    "original_sha256": "fd1976bcf563a8c75c192443f33c88916e18089b4fe4ab87ff203e4f80bdb3fc",
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "label_source": "Assistant full-resolution visible-emblem review; not independently human-certified",
+    "status": "additional_v26_reviewed_make_only",
+    "exclude_from_independent_evaluation": true,
+    "model": "unknown",
+    "review": "BYD rear lettering in night photo; motion blur retained",
+    "provenance": "Existing manually reviewed own annotation; crop refreshed to match runtime",
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": false
+  },
+  {
+    "image": "91db7f0812f6222cbaad.jpg",
+    "source": "D:\\машинки\\11223344.jpg",
+    "original_sha256": "91db7f0812f6222cbaad619d5af32e6d78d5be7322276d1648d06f2f5707cab4",
+    "brand": "GAC Aion",
+    "colour": "white",
+    "point": null,
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "provenance": "User make/model correction in chat; colour visually reviewed by assistant",
+    "model": "unknown",
+    "box": [
+      328,
+      514,
+      712,
+      767
+    ],
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": true
+  },
+  {
+    "image": "2b4547faee2f448767d2.jpg",
+    "source": "D:\\машинки\\photo_2_2026-10-25_20-44-40.jpg",
+    "original_sha256": "2b4547faee2f448767d2cc1e7f0efea0bb24e65117a5f91e29b01af58c1b48e9",
+    "brand": "GAC Aion",
+    "colour": "white",
+    "point": null,
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "provenance": "User make/model correction in chat; colour visually reviewed by assistant",
+    "model": "unknown",
+    "box": [
+      367,
+      451,
+      660,
+      627
+    ],
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": true
+  },
+  {
+    "image": "e96a4a962bfb7ecc4bdf.jpg",
+    "source": "D:\\машинки\\photo_3_2026-10-25_20-44-40.jpg",
+    "original_sha256": "e96a4a962bfb7ecc4bdfaa81b73eb17eeecee2edef9c3c8ccc82a3b2b51ff86d",
+    "brand": "Haval",
+    "colour": "grey",
+    "point": null,
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "provenance": "User make/model correction in chat; colour visually reviewed by assistant",
+    "model": "unknown",
+    "box": [
+      307,
+      487,
+      682,
+      821
+    ],
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": true
+  },
+  {
+    "image": "92f4c38fbd6997c34912.jpg",
+    "source": "D:\\машинки\\photo_4_2026-10-25_20-44-40.jpg",
+    "original_sha256": "92f4c38fbd6997c3491298e25ab6d83f240e9040473976146679babb7866d7d7",
+    "brand": "BYD",
+    "colour": "white",
+    "point": [
+      600,
+      680
+    ],
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "provenance": "User make/model correction in chat; colour visually reviewed by assistant",
+    "model": "unknown",
+    "box": [
+      290,
+      562,
+      744,
+      825
+    ],
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": true
+  },
+  {
+    "image": "75125c4829113a7d613b.jpg",
+    "source": "D:\\машинки\\photo_5_2026-10-25_20-44-40.jpg",
+    "original_sha256": "75125c4829113a7d613b8abf3be874641917b773db1dddd21506d1d30ea1f04a",
+    "brand": "BYD",
+    "colour": "black",
+    "point": null,
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "provenance": "User make/model correction in chat; colour visually reviewed by assistant",
+    "model": "unknown",
+    "box": [
+      77,
+      107,
+      960,
+      937
+    ],
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": true
+  },
+  {
+    "image": "8540d053f67d304785f0.jpg",
+    "source": "D:\\машинки\\photo_11_2026-10-25_20-44-40.jpg",
+    "original_sha256": "8540d053f67d304785f0f95bd76aad2eb0a9fe0f5248775d8f4219cd32e4ab64",
+    "brand": "Dongfeng",
+    "colour": "white",
+    "point": null,
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "provenance": "Assistant full-resolution visible-emblem review; not independently certified",
+    "model": "unknown",
+    "box": [
+      3,
+      435,
+      745,
+      916
+    ],
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": true
+  },
+  {
+    "image": "d7f6678fdafd5a181c7c.jpg",
+    "source": "D:\\машинки\\photo_12_2026-10-25_20-44-40.jpg",
+    "original_sha256": "d7f6678fdafd5a181c7cc53500b2eea2acdc33458721c8b16c8d803f0780206f",
+    "brand": "Dongfeng",
+    "colour": "white",
+    "point": null,
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "provenance": "Assistant full-resolution visible-emblem review; not independently certified",
+    "model": "unknown",
+    "box": [
+      3,
+      386,
+      955,
+      1079
+    ],
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": false
+  },
+  {
+    "image": "aeba51a4c34686469cba.jpg",
+    "source": "D:\\машинки\\photo_13_2026-10-25_20-44-40.jpg",
+    "original_sha256": "aeba51a4c34686469cba1df6215801640a6c2d88b626b939a2efd28e06cc5502",
+    "brand": "Dongfeng",
+    "colour": "white",
+    "point": null,
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "provenance": "Assistant full-resolution visible-emblem review; not independently certified",
+    "model": "unknown",
+    "box": [
+      261,
+      525,
+      848,
+      932
+    ],
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": false
+  },
+  {
+    "image": "1dfb9aea8646551e6173.jpg",
+    "source": "D:\\машинки\\photo_14_2026-10-25_20-44-40.jpg",
+    "original_sha256": "1dfb9aea8646551e61738a74dc40d18f73b0a4048b6d3c0d099f27a8d6de6db6",
+    "brand": "Dongfeng",
+    "colour": "white",
+    "point": null,
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "provenance": "Assistant full-resolution visible-emblem review; not independently certified",
+    "model": "unknown",
+    "box": [
+      3,
+      335,
+      827,
+      922
+    ],
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": false
+  },
+  {
+    "image": "7f1d7a4bcb990ef3f3e8.jpg",
+    "source": "D:\\машинки\\photo_16_2026-10-25_20-44-40.jpg",
+    "original_sha256": "7f1d7a4bcb990ef3f3e817ef3121eef975688a3b657bcb633214f7c282cc536a",
+    "brand": "Toyota",
+    "colour": "black",
+    "point": null,
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "provenance": "Assistant full-resolution visible-emblem review; not independently certified",
+    "model": "unknown",
+    "box": [
+      204,
+      502,
+      794,
+      812
+    ],
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": true
+  },
+  {
+    "image": "00e3e55379f6d75d4cee.jpg",
+    "source": "D:\\машинки\\photo_27_2026-10-25_20-44-40.jpg",
+    "original_sha256": "00e3e55379f6d75d4ceeca6a4b373a194e1b669e7fa74be5db1ced814b0e7e86",
+    "brand": "BYD",
+    "colour": "grey",
+    "point": [
+      600,
+      650
+    ],
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "provenance": "Assistant full-resolution visible-emblem review; not independently certified",
+    "model": "unknown",
+    "box": [
+      310,
+      566,
+      956,
+      935
+    ],
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": true
+  },
+  {
+    "image": "6bb042fad3f0d0c61ed8.jpg",
+    "source": "D:\\машинки\\photo_28_2026-10-25_20-44-40.jpg",
+    "original_sha256": "6bb042fad3f0d0c61ed824297cec352c8c92e7540c2260f757f79663b57a7276",
+    "brand": "Chevrolet",
+    "colour": "black",
+    "point": null,
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "provenance": "Assistant full-resolution visible-emblem review; not independently certified",
+    "model": "unknown",
+    "box": [
+      1,
+      345,
+      937,
+      858
+    ],
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": false
+  },
+  {
+    "image": "a5dd1f1425227ed43b06.jpg",
+    "source": "D:\\машинки\\photo_38_2026-10-25_20-44-40.jpg",
+    "original_sha256": "a5dd1f1425227ed43b069a4b76b47996ffb0b5733d676ebcb0dadaad238161cb",
+    "brand": "Tesla",
+    "colour": "white",
+    "point": [
+      540,
+      890
+    ],
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "provenance": "Assistant full-resolution visible-emblem review; not independently certified",
+    "model": "unknown",
+    "box": [
+      378,
+      743,
+      649,
+      984
+    ],
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": false
+  },
+  {
+    "image": "bcc0b5f4dd5a560852a9.jpg",
+    "source": "D:\\машинки\\photo_39_2026-10-25_20-44-40.jpg",
+    "original_sha256": "bcc0b5f4dd5a560852a980c0e03a59617f33e3cdf36da7fa4eaf305e86f50cbc",
+    "brand": "Tesla",
+    "colour": "white",
+    "point": [
+      500,
+      850
+    ],
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "provenance": "Assistant full-resolution visible-emblem review; not independently certified",
+    "model": "unknown",
+    "box": [
+      245,
+      604,
+      939,
+      1078
+    ],
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": false
+  },
+  {
+    "image": "e6594a2ad24d9c3f4c4c.jpg",
+    "source": "D:\\машинки\\photo_44_2026-10-25_20-44-40.jpg",
+    "original_sha256": "e6594a2ad24d9c3f4c4c9ed69702742f8551c216bab17f1bbdf6f69d4cd7b818",
+    "brand": "Chevrolet",
+    "colour": "white",
+    "point": null,
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "provenance": "Assistant full-resolution visible-emblem review; not independently certified",
+    "model": "unknown",
+    "box": [
+      226,
+      604,
+      586,
+      892
+    ],
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": false
+  },
+  {
+    "image": "6033223759f8f0a207ff.jpg",
+    "source": "D:\\машинки\\photo_46_2026-10-25_20-44-40.jpg",
+    "original_sha256": "6033223759f8f0a207ff0f3f832e3ef207f6cba10d65329a33854f7b73de8a21",
+    "brand": "Chevrolet",
+    "colour": "white",
+    "point": null,
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "provenance": "Assistant full-resolution visible-emblem review; not independently certified",
+    "model": "unknown",
+    "box": [
+      468,
+      580,
+      719,
+      780
+    ],
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": false
+  },
+  {
+    "image": "bd8db66e79873fc15852.jpg",
+    "source": "D:\\машинки\\photo_58_2026-10-25_20-44-40.jpg",
+    "original_sha256": "bd8db66e79873fc158525a72e155212b9ad879567e6e95e9e7c1abd8aa8ec360",
+    "brand": "Chevrolet",
+    "colour": "white",
+    "point": null,
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "provenance": "Assistant full-resolution visible-emblem review; not independently certified",
+    "model": "unknown",
+    "box": [
+      1,
+      663,
+      527,
+      983
+    ],
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": false
+  },
+  {
+    "image": "d449d0799d65034bd28f.jpg",
+    "source": "D:\\машинки\\photo_72_2026-10-25_20-44-40.jpg",
+    "original_sha256": "d449d0799d65034bd28fbf31a0200a394bca7c2db0a9fd0e9f12a3d1b4c467a4",
+    "brand": "Deepal",
+    "colour": "grey",
+    "point": [
+      450,
+      600
+    ],
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "provenance": "Assistant full-resolution visible-emblem review; not independently certified",
+    "model": "unknown",
+    "box": [
+      221,
+      288,
+      810,
+      702
+    ],
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": false
+  },
+  {
+    "image": "3669dcba5424edd4bf9f.jpg",
+    "source": "D:\\машинки\\photo_74_2026-10-25_20-44-40.jpg",
+    "original_sha256": "3669dcba5424edd4bf9f573d3617a8b381e4348df7a9bcb3a121c8ac17d82bd1",
+    "brand": "Kia",
+    "colour": "white",
+    "point": [
+      450,
+      520
+    ],
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "provenance": "Assistant full-resolution visible-emblem review; not independently certified",
+    "model": "unknown",
+    "box": [
+      243,
+      365,
+      692,
+      665
+    ],
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": false
+  },
+  {
+    "image": "32c408de9fdc6a61b0e9.jpg",
+    "source": "D:\\машинки\\photo_77_2026-10-25_20-44-40.jpg",
+    "original_sha256": "32c408de9fdc6a61b0e96e9a351d7f257e53d8fa997b6e96df3b52dce5e551b9",
+    "brand": "BYD",
+    "colour": "grey",
+    "point": null,
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "provenance": "Assistant full-resolution visible-emblem review; not independently certified",
+    "model": "unknown",
+    "box": [
+      129,
+      313,
+      960,
+      783
+    ],
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": false
+  },
+  {
+    "image": "da4040dd6867209f44b8.jpg",
+    "source": "D:\\машинки\\photo_78_2026-10-25_20-44-40.jpg",
+    "original_sha256": "da4040dd6867209f44b8b38c27f45570d582b908fe4c849157edf6bf00ef1877",
+    "brand": "Kia",
+    "colour": "white",
+    "point": null,
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "provenance": "Assistant full-resolution visible-emblem review; not independently certified",
+    "model": "unknown",
+    "box": [
+      122,
+      321,
+      956,
+      1100
+    ],
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": false
+  },
+  {
+    "image": "e4be2e85700357c7cb9f.jpg",
+    "source": "D:\\машинки\\photo_81_2026-10-25_20-44-40.jpg",
+    "original_sha256": "e4be2e85700357c7cb9ff8d25432fdaee5b64071357eb3fa15ff953bd60d018f",
+    "brand": "Li Auto",
+    "colour": "grey",
+    "point": null,
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "provenance": "Assistant full-resolution visible-emblem review; not independently certified",
+    "model": "unknown",
+    "box": [
+      303,
+      435,
+      955,
+      860
+    ],
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": false
+  },
+  {
+    "image": "3a90a97a018034cb9866.jpg",
+    "source": "D:\\машинки\\photo_82_2026-10-25_20-44-40.jpg",
+    "original_sha256": "3a90a97a018034cb98665a7cf95574d5cb9ffee1beaef9546a3c8efc39044e70",
+    "brand": "BYD",
+    "colour": "black",
+    "point": [
+      550,
+      680
+    ],
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "provenance": "Assistant full-resolution visible-emblem review; not independently certified",
+    "model": "unknown",
+    "box": [
+      313,
+      436,
+      908,
+      908
+    ],
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": false
+  },
+  {
+    "image": "2022e8124974131e94a7.jpg",
+    "source": "D:\\машинки\\photo_84_2026-10-25_20-44-40.jpg",
+    "original_sha256": "2022e8124974131e94a71d1b2fe63d5379317eb4c6749995b27cdb316136ab01",
+    "brand": "Leapmotor",
+    "colour": "white",
+    "point": null,
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "provenance": "Assistant full-resolution visible-emblem review; not independently certified",
+    "model": "unknown",
+    "box": [
+      4,
+      4,
+      554,
+      458
+    ],
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": false
+  },
+  {
+    "image": "ccea33795d0ebf528a0f.jpg",
+    "source": "D:\\машинки\\photo_87_2026-10-25_20-44-40.jpg",
+    "original_sha256": "ccea33795d0ebf528a0f470c8dc8452a06a0b0822818af4836f832c26b95070e",
+    "brand": "Deepal",
+    "colour": "grey",
+    "point": [
+      350,
+      400
+    ],
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "provenance": "Assistant full-resolution visible-emblem review; not independently certified",
+    "model": "unknown",
+    "box": [
+      32,
+      169,
+      597,
+      599
+    ],
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": false
+  },
+  {
+    "image": "74ee9f2dd1715c22ff30.jpg",
+    "source": "D:\\машинки\\photo_88_2026-10-25_20-44-40.jpg",
+    "original_sha256": "74ee9f2dd1715c22ff30cda8a5f9e5103ebb15c93966abc86f7e7c419ceb1d5c",
+    "brand": "BYD",
+    "colour": "grey",
+    "point": [
+      500,
+      450
+    ],
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "provenance": "Assistant full-resolution visible-emblem review; not independently certified",
+    "model": "unknown",
+    "box": [
+      149,
+      140,
+      692,
+      543
+    ],
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": false
+  },
+  {
+    "image": "5559d7df370647e1470d.jpg",
+    "source": "D:\\машинки\\photo_91_2026-10-25_20-44-40.jpg",
+    "original_sha256": "5559d7df370647e1470db32f3475289495823fa3cbdca463a07253499716a9c3",
+    "brand": "BYD",
+    "colour": "grey",
+    "point": [
+      450,
+      400
+    ],
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "provenance": "Assistant full-resolution visible-emblem review; not independently certified",
+    "model": "unknown",
+    "box": [
+      60,
+      118,
+      507,
+      456
+    ],
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": false
+  },
+  {
+    "image": "245e878da9f143515cc0.jpg",
+    "source": "D:\\машинки\\photo_92_2026-10-25_20-44-40.jpg",
+    "original_sha256": "245e878da9f143515cc0515b5798a4518e6dcb6104d5040e02aeb261e37af143",
+    "brand": "BMW",
+    "colour": "blue",
+    "point": [
+      650,
+      250
+    ],
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "provenance": "Assistant full-resolution visible-emblem review; not independently certified",
+    "model": "unknown",
+    "box": [
+      309,
+      11,
+      946,
+      434
+    ],
+    "role": "TRAIN only, same outing group; never independent evaluation",
+    "previous_known_error_now_training": false
+  }
+]

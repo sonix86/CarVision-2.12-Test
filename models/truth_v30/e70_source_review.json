@@ -1,0 +1,30 @@
+{
+  "reviewed_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "basis": "All13 source photographs visually reviewed on contact sheet; consistent E70 exterior, source descriptions and author identities preserved. Own first sedan independently compared by badge/grille/lights. No predicted labels used.",
+  "groups": {
+    "Poprace|2026-09-29": "validation",
+    "User3204|2023-09-12": "validation",
+    "Jengtingchen|2019-04-16": "validation",
+    "Jengtingchen|2020-05-15": "test",
+    "メイド理世|2024-04-29": "test",
+    "Zotyefan|2021-09-19": "train",
+    "S5A-0043|2024-12-03": "train",
+    "S5A-0043|2025-12-17": "train",
+    "Li Yinghonghh|2021-09-20": "train"
+  },
+  "owner_first_two": "Known error diagnostics only; not added to training or validation in v30."
+}

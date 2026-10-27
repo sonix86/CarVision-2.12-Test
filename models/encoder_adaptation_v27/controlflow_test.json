@@ -1,0 +1,1 @@
+{"split_encoder_parity_max_error": 0.0, "last_block_gradient_finite": true, "test": "Synthetic tensor control-flow only, not recognition accuracy."}

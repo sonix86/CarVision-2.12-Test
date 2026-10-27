@@ -1,0 +1,5 @@
+{
+  "kind": "joint",
+  "checkpoint": "dino_make.pt",
+  "sha256": "367eaeee7d20aa49cd8af9e12d9b64e3db78ce7018706c55044da9444f24bbb9"
+}

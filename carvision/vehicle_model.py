@@ -81,7 +81,7 @@ class VehicleModelClassifier:
         alternatives=[dict(brand=self.brands[int(i)],model=self.labels[int(i)],confidence=float(probabilities[i])) for i in probabilities.topk(min(3,len(self.labels))).indices]
         threshold=self.references.threshold if self.references is not None else self.threshold
         ranking=[dict(brand=self.brands[int(i)],model=self.labels[int(i)],confidence=float(probabilities[i])) for i in probabilities.argsort(descending=True)]
-        result=dict(model=candidate if confidence>=threshold and candidate_brand==brand else 'unknown',model_candidate=candidate,model_candidate_brand=candidate_brand,model_confidence=confidence,model_alternatives=alternatives,model_ranking=ranking,reference_comparison=self.references is not None)
+        result=dict(model=candidate if confidence>=threshold and candidate_brand==brand else 'unknown',model_candidate=candidate,model_candidate_brand=candidate_brand,model_confidence=confidence,model_threshold=float(threshold),model_alternatives=alternatives,model_ranking=ranking,reference_comparison=self.references is not None)
         if unsupported_brand:result['model_reason']='No model-name training examples for this manufacturer; alternatives compare supported classes only'
         return result
 
@@ -94,6 +94,15 @@ class VehicleModelClassifier:
         return result['model'],result['model_confidence']
 
 def vehicle_name(row):
+    if row.get('make_first'):
+        brand=row.get('brand','unknown')
+        if brand!='unknown':
+            model='unknown' if row.get('model_limited') else row.get('model','unknown')
+            display=row.get('make_evidence',{}).get('display_name',brand) if row.get('make_evidence') else brand
+            return display+(' '+model if model!='unknown' else ' · модель не определена')
+        evidence=row.get('make_evidence')
+        if evidence:return 'Возможно '+evidence.get('display_name',evidence['candidate'])+' · марка не подтверждена'
+        return 'Марка не определена'
     if row.get('model_limited'):return 'Недостаточно деталей'
     model=row.get('model','unknown')
     if model!='unknown':return row['brand']+' '+model
@@ -101,8 +110,30 @@ def vehicle_name(row):
     if row['brand']=='unknown' and candidate!='unknown':return candidate_brand+' '+candidate+'?'
     return row['brand']+(' '+candidate+'?' if candidate!='unknown' and candidate_brand==row['brand'] else '')
 
+def model_status_text(row):
+    """Explain a rejected family hypothesis without presenting it as recognition."""
+    if row.get('make_first') and row.get('brand','unknown')=='unknown':
+        return 'Сначала нужно подтвердить марку; точная модель не вычислялась.'
+    if row.get('model','unknown')!='unknown':return ''
+    same=[r for r in row.get('model_alternatives',[]) if r.get('brand')==row.get('brand')]
+    if same:
+        best=same[0]
+        text=f"Гипотеза модели: {best['brand']} {best['model']} · {best['confidence']:.0%}."
+        if row.get('model_limited'):
+            return text+' Недостаточно видимых деталей для подтверждения.'
+        gate=row.get('model_threshold')
+        if gate is not None and best['confidence']<gate:
+            return text+f' Порог подтверждения модели: {gate:.0%}; он не пройден.'
+        return text+' Модель не подтверждена; первое место в списке не означает правильный ответ.'
+    if row.get('model_reason'):return 'Для этой марки нет доступных обученных вариантов модели.'
+    return 'Точная модель не подтверждена.'
+
+
 def detailed_answer(row):
     text=vehicle_name(row)+' '+row['colour']+(' (uncertain colour)' if not row.get('colour_reliable',True) else '')
+    evidence=row.get('make_evidence')
+    if row.get('make_first') and evidence and not evidence['accepted']:
+        return text+' | makes: '+', '.join(f"{r.get('display_name',r['brand'])} {r['confidence']:.0%}" for r in evidence['alternatives'])
     alternatives=row.get('model_alternatives',[])
     if alternatives:text+=' | models: '+', '.join(f"{r['brand']} {r['model']} {r['confidence']:.0%}" for r in alternatives)
     return text

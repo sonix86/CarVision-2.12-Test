@@ -1,0 +1,35 @@
+{
+  "make_fits_max": 2,
+  "model_fits_max": 2,
+  "epochs_each": 100,
+  "make_initial": "v29 trained joint DINO+CLIP; encoders frozen",
+  "model": "New own43-family cosine heads on shared general features; no automotive pretrained classifier",
+  "family_truth": "Only original42-family corpus with exact source/own labels, excluding make-only provisional make_scope rows; plus reviewed E70. Never use predicted labels.",
+  "owner_errors": "First2 E70 not fitted; photo5 not fitted for family. Existing make-head owner TRAIN remainsTRAIN. Known diagnostics not blind.",
+  "validation": "Historical groups immutable; same source author/date locks for new E70. Calibrate make>=95% and family>=95% precision, >=3sourcegroups. Make top1/historical/confirmed guards nonregression vsv29. Model selection validation only; whole/phone top1 and coverage independently reported. Known user diagnostics never used to select epochs.",
+  "test": "One fixed candidate evaluation if validation passes. Reused public test plus new E70 source groups; not real blind phone exam.",
+  "changes": "No colour fits in this iteration. No forced top-label/filename/emblem string rules. No changing sealed2.9bundle.",
+  "final_quality_goal": "No100% guarantee. Exact model and make separately graded; known first-photo failures explicitly included in diagnostic report.",
+  "edge_probe": "Fixed validation12%left/right cuts; calibrate model gates jointly onwhole/phone/edge. Testedgefeaturesonlyaftervalidationpass. Border-warning may cease being an absolute veto only for new independently calibrated acceptedfamily decisions; thin/small/masked fragments still veto.",
+  "make_rounds": [
+    {
+      "lr": 0.0001,
+      "e70_weight": 16
+    },
+    {
+      "lr": 0.0002,
+      "e70_weight": 24
+    }
+  ],
+  "family_rounds": [
+    {
+      "lr": 0.0005,
+      "label_smoothing": 0.02
+    },
+    {
+      "lr": 0.001,
+      "label_smoothing": 0.04
+    }
+  ],
+  "family_selection": "Maximize mean whole/phone raw top1, validation only. Both whole/phone raw top1 >=actual legacy; confirmationprecision>=95% andcorrectconfirmations>=legacyboth. Edgeconfirmationprecision>=95%, at leastoneaccepted; Song Plus andE70 gates mustbeenabled toclaimtargetrepair. Thresholds need3independent groups. No knownownerimages used to select family epoch."
+}

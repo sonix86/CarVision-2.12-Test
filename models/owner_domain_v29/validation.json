@@ -1,0 +1,5306 @@
+{
+  "passed": true,
+  "baseline": {
+    "whole": {
+      "top1": 0.7771428823471069,
+      "historical": 0.8826290965080261,
+      "macro": 0.7215002775192261,
+      "priority_macro": 0.6974645853042603,
+      "confirmed": 362,
+      "correct_confirmed": 355,
+      "precision": 0.980663001537323
+    },
+    "phone": {
+      "top1": 0.6657142639160156,
+      "historical": 0.7981220483779907,
+      "macro": 0.5908330082893372,
+      "priority_macro": 0.5523365139961243,
+      "confirmed": 259,
+      "correct_confirmed": 251,
+      "precision": 0.969111979007721
+    }
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "kind": "clip",
+      "history": [
+        {
+          "epoch": 1,
+          "score": 0.6271446734666825,
+          "guard": false,
+          "private_training_fit": 0.7179487347602844,
+          "metrics": {
+            "whole": {
+              "top1": 0.7385714054107666,
+              "historical": 0.8356807231903076,
+              "macro": 0.6833844780921936,
+              "priority_macro": 0.609954833984375,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6214285492897034,
+              "historical": 0.7746478915214539,
+              "macro": 0.5306873321533203,
+              "priority_macro": 0.4944370687007904,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 2,
+          "score": 0.6168507963418961,
+          "guard": false,
+          "private_training_fit": 0.7884615659713745,
+          "metrics": {
+            "whole": {
+              "top1": 0.727142870426178,
+              "historical": 0.8497652411460876,
+              "macro": 0.6648476719856262,
+              "priority_macro": 0.593858003616333,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6242856979370117,
+              "historical": 0.7746478915214539,
+              "macro": 0.5490952134132385,
+              "priority_macro": 0.5299885272979736,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 3,
+          "score": 0.6162844151258469,
+          "guard": false,
+          "private_training_fit": 0.8461538553237915,
+          "metrics": {
+            "whole": {
+              "top1": 0.7242857217788696,
+              "historical": 0.8309859037399292,
+              "macro": 0.6744198203086853,
+              "priority_macro": 0.5759360790252686,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6285714507102966,
+              "historical": 0.7793427109718323,
+              "macro": 0.5560893416404724,
+              "priority_macro": 0.5102083683013916,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 4,
+          "score": 0.6188629239797592,
+          "guard": false,
+          "private_training_fit": 0.8782051205635071,
+          "metrics": {
+            "whole": {
+              "top1": 0.7342857122421265,
+              "historical": 0.8403756022453308,
+              "macro": 0.6791388392448425,
+              "priority_macro": 0.5846893787384033,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6285714507102966,
+              "historical": 0.7746478915214539,
+              "macro": 0.5430458188056946,
+              "priority_macro": 0.5044964551925659,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 5,
+          "score": 0.6265021055936812,
+          "guard": true,
+          "private_training_fit": 0.9038461446762085,
+          "metrics": {
+            "whole": {
+              "top1": 0.7371428608894348,
+              "historical": 0.8544601202011108,
+              "macro": 0.6789385676383972,
+              "priority_macro": 0.5940744876861572,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.645714282989502,
+              "historical": 0.7793427109718323,
+              "macro": 0.5652683973312378,
+              "priority_macro": 0.5064195394515991,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 6,
+          "score": 0.632864847779274,
+          "guard": true,
+          "private_training_fit": 0.9358974099159241,
+          "metrics": {
+            "whole": {
+              "top1": 0.7385714054107666,
+              "historical": 0.8638497591018677,
+              "macro": 0.6823886632919312,
+              "priority_macro": 0.605046808719635,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6385714411735535,
+              "historical": 0.7793427109718323,
+              "macro": 0.5701178312301636,
+              "priority_macro": 0.5072132349014282,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 7,
+          "score": 0.6307335764169693,
+          "guard": true,
+          "private_training_fit": 0.9679487347602844,
+          "metrics": {
+            "whole": {
+              "top1": 0.7400000095367432,
+              "historical": 0.8497652411460876,
+              "macro": 0.6880925297737122,
+              "priority_macro": 0.6005568504333496,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6442857384681702,
+              "historical": 0.7887324094772339,
+              "macro": 0.5544852018356323,
+              "priority_macro": 0.521354615688324,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 8,
+          "score": 0.6249771356582642,
+          "guard": true,
+          "private_training_fit": 0.9807692170143127,
+          "metrics": {
+            "whole": {
+              "top1": 0.7328571677207947,
+              "historical": 0.8497652411460876,
+              "macro": 0.6792952418327332,
+              "priority_macro": 0.5941290259361267,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6299999952316284,
+              "historical": 0.7699530720710754,
+              "macro": 0.5567455887794495,
+              "priority_macro": 0.5100455284118652,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 9,
+          "score": 0.6281971603631973,
+          "guard": true,
+          "private_training_fit": 0.9871794581413269,
+          "metrics": {
+            "whole": {
+              "top1": 0.7357142567634583,
+              "historical": 0.8356807231903076,
+              "macro": 0.6844941973686218,
+              "priority_macro": 0.5942918062210083,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.645714282989502,
+              "historical": 0.7887324094772339,
+              "macro": 0.560863196849823,
+              "priority_macro": 0.5086081027984619,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 10,
+          "score": 0.6276888966560363,
+          "guard": true,
+          "private_training_fit": 0.9935897588729858,
+          "metrics": {
+            "whole": {
+              "top1": 0.7342857122421265,
+              "historical": 0.8450704216957092,
+              "macro": 0.68642657995224,
+              "priority_macro": 0.5917240977287292,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6428571343421936,
+              "historical": 0.7793427109718323,
+              "macro": 0.5584675073623657,
+              "priority_macro": 0.518667459487915,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 11,
+          "score": 0.6237352311611175,
+          "guard": true,
+          "private_training_fit": 0.9935897588729858,
+          "metrics": {
+            "whole": {
+              "top1": 0.7428571581840515,
+              "historical": 0.8544601202011108,
+              "macro": 0.6830955147743225,
+              "priority_macro": 0.5815083384513855,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6371428370475769,
+              "historical": 0.7746478915214539,
+              "macro": 0.5640716552734375,
+              "priority_macro": 0.4938839375972748,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 12,
+          "score": 0.6317861199378967,
+          "guard": true,
+          "private_training_fit": 0.9935897588729858,
+          "metrics": {
+            "whole": {
+              "top1": 0.7442857027053833,
+              "historical": 0.8497652411460876,
+              "macro": 0.6852790713310242,
+              "priority_macro": 0.6007973551750183,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.645714282989502,
+              "historical": 0.7934272289276123,
+              "macro": 0.5656573176383972,
+              "priority_macro": 0.5081095099449158,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 13,
+          "score": 0.6219546258449554,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7342857122421265,
+              "historical": 0.8497652411460876,
+              "macro": 0.6814336776733398,
+              "priority_macro": 0.5774863958358765,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.645714282989502,
+              "historical": 0.7887324094772339,
+              "macro": 0.5659461617469788,
+              "priority_macro": 0.49866336584091187,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 14,
+          "score": 0.6199447393417358,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7357142567634583,
+              "historical": 0.8403756022453308,
+              "macro": 0.6778073310852051,
+              "priority_macro": 0.5759055614471436,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6471428275108337,
+              "historical": 0.7793427109718323,
+              "macro": 0.5668224692344666,
+              "priority_macro": 0.518667459487915,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 15,
+          "score": 0.6212761849164963,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7342857122421265,
+              "historical": 0.8403756022453308,
+              "macro": 0.6770350337028503,
+              "priority_macro": 0.5788767337799072,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6514285802841187,
+              "historical": 0.7840375304222107,
+              "macro": 0.5700178146362305,
+              "priority_macro": 0.5218660831451416,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 16,
+          "score": 0.6304100036621094,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7428571581840515,
+              "historical": 0.8403756022453308,
+              "macro": 0.6902837753295898,
+              "priority_macro": 0.596672773361206,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6328571438789368,
+              "historical": 0.7652581930160522,
+              "macro": 0.5547341704368591,
+              "priority_macro": 0.5062577128410339,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 17,
+          "score": 0.6276693731546402,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7357142567634583,
+              "historical": 0.8450704216957092,
+              "macro": 0.6847851872444153,
+              "priority_macro": 0.5873358249664307,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6442857384681702,
+              "historical": 0.7699530720710754,
+              "macro": 0.5697425007820129,
+              "priority_macro": 0.5056027173995972,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 18,
+          "score": 0.62183096408844,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.741428554058075,
+              "historical": 0.8544601202011108,
+              "macro": 0.6757612228393555,
+              "priority_macro": 0.5879120826721191,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6414285898208618,
+              "historical": 0.7746478915214539,
+              "macro": 0.5598459243774414,
+              "priority_macro": 0.5121859908103943,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 19,
+          "score": 0.6296757102012634,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7385714054107666,
+              "historical": 0.8450704216957092,
+              "macro": 0.6881835460662842,
+              "priority_macro": 0.5973823070526123,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6414285898208618,
+              "historical": 0.7793427109718323,
+              "macro": 0.5545465350151062,
+              "priority_macro": 0.5261165499687195,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 20,
+          "score": 0.6221173405647278,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7342857122421265,
+              "historical": 0.8356807231903076,
+              "macro": 0.683864176273346,
+              "priority_macro": 0.5783169865608215,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6414285898208618,
+              "historical": 0.7652581930160522,
+              "macro": 0.5598375797271729,
+              "priority_macro": 0.5092694759368896,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 21,
+          "score": 0.6219531476497651,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7342857122421265,
+              "historical": 0.8450704216957092,
+              "macro": 0.6787552833557129,
+              "priority_macro": 0.5837098360061646,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6399999856948853,
+              "historical": 0.7699530720710754,
+              "macro": 0.5610741376876831,
+              "priority_macro": 0.503408670425415,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 22,
+          "score": 0.6261933445930481,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.741428554058075,
+              "historical": 0.8450704216957092,
+              "macro": 0.688654899597168,
+              "priority_macro": 0.5859825611114502,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6371428370475769,
+              "historical": 0.7887324094772339,
+              "macro": 0.5560237169265747,
+              "priority_macro": 0.5165991187095642,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 23,
+          "score": 0.6318977981805801,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7357142567634583,
+              "historical": 0.8403756022453308,
+              "macro": 0.6835954785346985,
+              "priority_macro": 0.599318265914917,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6485714316368103,
+              "historical": 0.7840375304222107,
+              "macro": 0.5725921988487244,
+              "priority_macro": 0.5192270874977112,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 24,
+          "score": 0.6426789969205856,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7428571581840515,
+              "historical": 0.8450704216957092,
+              "macro": 0.6985030770301819,
+              "priority_macro": 0.61164391040802,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6442857384681702,
+              "historical": 0.7840375304222107,
+              "macro": 0.5713862180709839,
+              "priority_macro": 0.5190883874893188,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 25,
+          "score": 0.645566189289093,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7442857027053833,
+              "historical": 0.8403756022453308,
+              "macro": 0.6991122364997864,
+              "priority_macro": 0.6192381978034973,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6485714316368103,
+              "historical": 0.7840375304222107,
+              "macro": 0.5711615681648254,
+              "priority_macro": 0.5425556302070618,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 26,
+          "score": 0.6242363452911377,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7314285635948181,
+              "historical": 0.8403756022453308,
+              "macro": 0.6798120141029358,
+              "priority_macro": 0.5862229466438293,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.645714282989502,
+              "historical": 0.7840375304222107,
+              "macro": 0.5657145380973816,
+              "priority_macro": 0.5144587159156799,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 27,
+          "score": 0.6259548366069794,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7371428608894348,
+              "historical": 0.8450704216957092,
+              "macro": 0.6810340881347656,
+              "priority_macro": 0.5882071256637573,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6485714316368103,
+              "historical": 0.7934272289276123,
+              "macro": 0.5680850148200989,
+              "priority_macro": 0.5259602069854736,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 28,
+          "score": 0.6230454683303833,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7314285635948181,
+              "historical": 0.8403756022453308,
+              "macro": 0.6790910363197327,
+              "priority_macro": 0.5862229466438293,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6399999856948853,
+              "historical": 0.7746478915214539,
+              "macro": 0.5613823533058167,
+              "priority_macro": 0.5192205905914307,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 29,
+          "score": 0.6354888498783111,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7442857027053833,
+              "historical": 0.8497652411460876,
+              "macro": 0.6978267431259155,
+              "priority_macro": 0.5998713970184326,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6371428370475769,
+              "historical": 0.7793427109718323,
+              "macro": 0.5575591325759888,
+              "priority_macro": 0.524138867855072,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 30,
+          "score": 0.6273348450660705,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7357142567634583,
+              "historical": 0.8403756022453308,
+              "macro": 0.6843491196632385,
+              "priority_macro": 0.5884957909584045,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6499999761581421,
+              "historical": 0.7793427109718323,
+              "macro": 0.5670210719108582,
+              "priority_macro": 0.5240602493286133,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 31,
+          "score": 0.6254350453615188,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7371428608894348,
+              "historical": 0.8403756022453308,
+              "macro": 0.6809852719306946,
+              "priority_macro": 0.5912735462188721,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6442857384681702,
+              "historical": 0.7746478915214539,
+              "macro": 0.5602296590805054,
+              "priority_macro": 0.5057821869850159,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 32,
+          "score": 0.6272231072187424,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7371428608894348,
+              "historical": 0.8403756022453308,
+              "macro": 0.6876949667930603,
+              "priority_macro": 0.585080623626709,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6442857384681702,
+              "historical": 0.7793427109718323,
+              "macro": 0.5649107694625854,
+              "priority_macro": 0.5244274735450745,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 33,
+          "score": 0.63875569999218,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7471428513526917,
+              "historical": 0.8544601202011108,
+              "macro": 0.6948845386505127,
+              "priority_macro": 0.6024392247200012,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6528571248054504,
+              "historical": 0.7746478915214539,
+              "macro": 0.5760196447372437,
+              "priority_macro": 0.5240676403045654,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 34,
+          "score": 0.6358826726675033,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7428571581840515,
+              "historical": 0.8497652411460876,
+              "macro": 0.691770076751709,
+              "priority_macro": 0.603070080280304,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6485714316368103,
+              "historical": 0.7887324094772339,
+              "macro": 0.5675580501556396,
+              "priority_macro": 0.5285279750823975,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 35,
+          "score": 0.6309665709733963,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7342857122421265,
+              "historical": 0.8403756022453308,
+              "macro": 0.6855524778366089,
+              "priority_macro": 0.5977550148963928,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6414285898208618,
+              "historical": 0.7840375304222107,
+              "macro": 0.5662685036659241,
+              "priority_macro": 0.5160395503044128,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 36,
+          "score": 0.6298402607440948,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7385714054107666,
+              "historical": 0.8497652411460876,
+              "macro": 0.6890851259231567,
+              "priority_macro": 0.5991795063018799,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6328571438789368,
+              "historical": 0.7840375304222107,
+              "macro": 0.5501956343650818,
+              "priority_macro": 0.5123116970062256,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 37,
+          "score": 0.6299216270446777,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7442857027053833,
+              "historical": 0.8591549396514893,
+              "macro": 0.688893735408783,
+              "priority_macro": 0.5953740477561951,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6428571343421936,
+              "historical": 0.7840375304222107,
+              "macro": 0.5576926469802856,
+              "priority_macro": 0.524108350276947,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 38,
+          "score": 0.6307918876409531,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.741428554058075,
+              "historical": 0.8403756022453308,
+              "macro": 0.6853411793708801,
+              "priority_macro": 0.5983923673629761,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6485714316368103,
+              "historical": 0.7887324094772339,
+              "macro": 0.5647551417350769,
+              "priority_macro": 0.5399332642555237,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 39,
+          "score": 0.6262283533811569,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7371428608894348,
+              "historical": 0.8450704216957092,
+              "macro": 0.6800307035446167,
+              "priority_macro": 0.5867761969566345,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6485714316368103,
+              "historical": 0.7746478915214539,
+              "macro": 0.5742143392562866,
+              "priority_macro": 0.5268454551696777,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 40,
+          "score": 0.636017718911171,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7442857027053833,
+              "historical": 0.8497652411460876,
+              "macro": 0.6894899010658264,
+              "priority_macro": 0.6066415309906006,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6485714316368103,
+              "historical": 0.7840375304222107,
+              "macro": 0.5671136379241943,
+              "priority_macro": 0.5199430584907532,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 41,
+          "score": 0.6391085177659989,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7442857027053833,
+              "historical": 0.8450704216957092,
+              "macro": 0.68779456615448,
+              "priority_macro": 0.6131229996681213,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6514285802841187,
+              "historical": 0.7887324094772339,
+              "macro": 0.5750395655632019,
+              "priority_macro": 0.5264115929603577,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 42,
+          "score": 0.6331401914358139,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7428571581840515,
+              "historical": 0.8403756022453308,
+              "macro": 0.6913682222366333,
+              "priority_macro": 0.6053428053855896,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6414285898208618,
+              "historical": 0.7934272289276123,
+              "macro": 0.5507725477218628,
+              "priority_macro": 0.5360612273216248,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 43,
+          "score": 0.6459870874881745,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7485714554786682,
+              "historical": 0.8450704216957092,
+              "macro": 0.7019684910774231,
+              "priority_macro": 0.6141812205314636,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6514285802841187,
+              "historical": 0.7840375304222107,
+              "macro": 0.5756891965866089,
+              "priority_macro": 0.5276797413825989,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 44,
+          "score": 0.6397286623716354,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7457143068313599,
+              "historical": 0.8403756022453308,
+              "macro": 0.7013147473335266,
+              "priority_macro": 0.5997391939163208,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6514285802841187,
+              "historical": 0.7934272289276123,
+              "macro": 0.5711415410041809,
+              "priority_macro": 0.5142959356307983,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 45,
+          "score": 0.6355545401573182,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7400000095367432,
+              "historical": 0.8356807231903076,
+              "macro": 0.6921148300170898,
+              "priority_macro": 0.5991017818450928,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6528571248054504,
+              "historical": 0.7793427109718323,
+              "macro": 0.5720862150192261,
+              "priority_macro": 0.5294604301452637,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 46,
+          "score": 0.6354014158248902,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7400000095367432,
+              "historical": 0.8356807231903076,
+              "macro": 0.6920324563980103,
+              "priority_macro": 0.5975145101547241,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6485714316368103,
+              "historical": 0.7793427109718323,
+              "macro": 0.5742836594581604,
+              "priority_macro": 0.5237179398536682,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 47,
+          "score": 0.6353709995746613,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7428571581840515,
+              "historical": 0.8403756022453308,
+              "macro": 0.6924788355827332,
+              "priority_macro": 0.6010859608650208,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6485714316368103,
+              "historical": 0.7840375304222107,
+              "macro": 0.5668771862983704,
+              "priority_macro": 0.543210506439209,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 48,
+          "score": 0.6376697510480881,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.75,
+              "historical": 0.8544601202011108,
+              "macro": 0.6978995203971863,
+              "priority_macro": 0.6026732921600342,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6471428275108337,
+              "historical": 0.7840375304222107,
+              "macro": 0.5633965730667114,
+              "priority_macro": 0.5195156931877136,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 49,
+          "score": 0.6358868896961212,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7471428513526917,
+              "historical": 0.8450704216957092,
+              "macro": 0.6980160474777222,
+              "priority_macro": 0.5988132953643799,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6414285898208618,
+              "historical": 0.7699530720710754,
+              "macro": 0.5609750747680664,
+              "priority_macro": 0.5147602558135986,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 50,
+          "score": 0.6320861965417862,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7471428513526917,
+              "historical": 0.8403756022453308,
+              "macro": 0.6992875337600708,
+              "priority_macro": 0.592464029788971,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.631428599357605,
+              "historical": 0.7652581930160522,
+              "macro": 0.5502219796180725,
+              "priority_macro": 0.5102564692497253,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 51,
+          "score": 0.6306737840175629,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7371428608894348,
+              "historical": 0.8356807231903076,
+              "macro": 0.6920112371444702,
+              "priority_macro": 0.5854294300079346,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6499999761581421,
+              "historical": 0.7652581930160522,
+              "macro": 0.5718421339988708,
+              "priority_macro": 0.5238566994667053,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 52,
+          "score": 0.6451055496931076,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7485714554786682,
+              "historical": 0.8450704216957092,
+              "macro": 0.6957458257675171,
+              "priority_macro": 0.6228031516075134,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6528571248054504,
+              "historical": 0.7840375304222107,
+              "macro": 0.5701941251754761,
+              "priority_macro": 0.5368678569793701,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 53,
+          "score": 0.6263188630342483,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7442857027053833,
+              "historical": 0.8497652411460876,
+              "macro": 0.6879786252975464,
+              "priority_macro": 0.5883393883705139,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6399999856948853,
+              "historical": 0.7793427109718323,
+              "macro": 0.554048478603363,
+              "priority_macro": 0.5198643803596497,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 54,
+          "score": 0.6241632282733918,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7400000095367432,
+              "historical": 0.8497652411460876,
+              "macro": 0.6721577048301697,
+              "priority_macro": 0.5976467728614807,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6414285898208618,
+              "historical": 0.7652581930160522,
+              "macro": 0.5625794529914856,
+              "priority_macro": 0.5165815353393555,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 55,
+          "score": 0.6323433965444565,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7442857027053833,
+              "historical": 0.8450704216957092,
+              "macro": 0.6877347230911255,
+              "priority_macro": 0.6022765040397644,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6442857384681702,
+              "historical": 0.7840375304222107,
+              "macro": 0.5603299736976624,
+              "priority_macro": 0.5310171246528625,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 56,
+          "score": 0.6292509943246842,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7428571581840515,
+              "historical": 0.8356807231903076,
+              "macro": 0.6768847703933716,
+              "priority_macro": 0.6050541996955872,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6514285802841187,
+              "historical": 0.7981220483779907,
+              "macro": 0.5644193887710571,
+              "priority_macro": 0.5499019622802734,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 57,
+          "score": 0.637741357088089,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7485714554786682,
+              "historical": 0.8544601202011108,
+              "macro": 0.6955479979515076,
+              "priority_macro": 0.6078320145606995,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6442857384681702,
+              "historical": 0.7840375304222107,
+              "macro": 0.5600177645683289,
+              "priority_macro": 0.5318108201026917,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 58,
+          "score": 0.6333377569913864,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7428571581840515,
+              "historical": 0.8356807231903076,
+              "macro": 0.6886337399482727,
+              "priority_macro": 0.6007131338119507,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6442857384681702,
+              "historical": 0.7699530720710754,
+              "macro": 0.5660148859024048,
+              "priority_macro": 0.5214932560920715,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 59,
+          "score": 0.6297752588987351,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.741428554058075,
+              "historical": 0.8403756022453308,
+              "macro": 0.6758245229721069,
+              "priority_macro": 0.6069061160087585,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6471428275108337,
+              "historical": 0.7840375304222107,
+              "macro": 0.5661854147911072,
+              "priority_macro": 0.5214933156967163,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 60,
+          "score": 0.6310775816440582,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7471428513526917,
+              "historical": 0.8450704216957092,
+              "macro": 0.6836041212081909,
+              "priority_macro": 0.6004245281219482,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6528571248054504,
+              "historical": 0.7934272289276123,
+              "macro": 0.5665357112884521,
+              "priority_macro": 0.5316479802131653,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 61,
+          "score": 0.6376539200544358,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7442857027053833,
+              "historical": 0.8450704216957092,
+              "macro": 0.685878574848175,
+              "priority_macro": 0.6162976026535034,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6442857384681702,
+              "historical": 0.7746478915214539,
+              "macro": 0.5665220022201538,
+              "priority_macro": 0.5262617468833923,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 62,
+          "score": 0.6281759411096572,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7442857027053833,
+              "historical": 0.8309859037399292,
+              "macro": 0.6803103685379028,
+              "priority_macro": 0.5991564393043518,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6428571343421936,
+              "historical": 0.7746478915214539,
+              "macro": 0.5616576075553894,
+              "priority_macro": 0.5282763838768005,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 63,
+          "score": 0.6337710797786713,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7457143068313599,
+              "historical": 0.8403756022453308,
+              "macro": 0.6856924891471863,
+              "priority_macro": 0.6034908890724182,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6499999761581421,
+              "historical": 0.7793427109718323,
+              "macro": 0.5699382424354553,
+              "priority_macro": 0.5397953987121582,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 64,
+          "score": 0.62653606235981,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7457143068313599,
+              "historical": 0.8403756022453308,
+              "macro": 0.6765864491462708,
+              "priority_macro": 0.6019036769866943,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6428571343421936,
+              "historical": 0.7793427109718323,
+              "macro": 0.5570293664932251,
+              "priority_macro": 0.5234774947166443,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 65,
+          "score": 0.630306789278984,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7471428513526917,
+              "historical": 0.8450704216957092,
+              "macro": 0.6819018721580505,
+              "priority_macro": 0.6032023429870605,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6471428275108337,
+              "historical": 0.7793427109718323,
+              "macro": 0.5616506338119507,
+              "priority_macro": 0.5336626172065735,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 66,
+          "score": 0.6330482006072998,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7485714554786682,
+              "historical": 0.8356807231903076,
+              "macro": 0.681519627571106,
+              "priority_macro": 0.6074591875076294,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.654285728931427,
+              "historical": 0.7840375304222107,
+              "macro": 0.5687682628631592,
+              "priority_macro": 0.5406427383422852,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 67,
+          "score": 0.6312911540269852,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.741428554058075,
+              "historical": 0.8403756022453308,
+              "macro": 0.6815083622932434,
+              "priority_macro": 0.6018490791320801,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6514285802841187,
+              "historical": 0.7981220483779907,
+              "macro": 0.569826066493988,
+              "priority_macro": 0.5309560894966125,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 68,
+          "score": 0.6355576395988465,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7457143068313599,
+              "historical": 0.8450704216957092,
+              "macro": 0.6871812343597412,
+              "priority_macro": 0.6043927669525146,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6571428775787354,
+              "historical": 0.8169013857841492,
+              "macro": 0.5739430785179138,
+              "priority_macro": 0.5291042923927307,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 69,
+          "score": 0.6385848701000214,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7471428513526917,
+              "historical": 0.8403756022453308,
+              "macro": 0.6913522481918335,
+              "priority_macro": 0.6165862083435059,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.645714282989502,
+              "historical": 0.7840375304222107,
+              "macro": 0.5583559274673462,
+              "priority_macro": 0.5297489166259766,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 70,
+          "score": 0.6359322220087051,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7528571486473083,
+              "historical": 0.8450704216957092,
+              "macro": 0.6860579252243042,
+              "priority_macro": 0.6083610653877258,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6514285802841187,
+              "historical": 0.7887324094772339,
+              "macro": 0.571398913860321,
+              "priority_macro": 0.5195629000663757,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 71,
+          "score": 0.6342460393905639,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7514285445213318,
+              "historical": 0.8450704216957092,
+              "macro": 0.6912636756896973,
+              "priority_macro": 0.6004245281219482,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6471428275108337,
+              "historical": 0.7793427109718323,
+              "macro": 0.5651440024375916,
+              "priority_macro": 0.5201529264450073,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 72,
+          "score": 0.6248807668685913,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7428571581840515,
+              "historical": 0.8591549396514893,
+              "macro": 0.6717308759689331,
+              "priority_macro": 0.5988131761550903,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6499999761581421,
+              "historical": 0.7934272289276123,
+              "macro": 0.565086305141449,
+              "priority_macro": 0.540113627910614,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 73,
+          "score": 0.6338148981332778,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.75,
+              "historical": 0.8450704216957092,
+              "macro": 0.6844213008880615,
+              "priority_macro": 0.6094433665275574,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.645714282989502,
+              "historical": 0.7840375304222107,
+              "macro": 0.5626006722450256,
+              "priority_macro": 0.5339512228965759,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 74,
+          "score": 0.6278623759746551,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7442857027053833,
+              "historical": 0.8450704216957092,
+              "macro": 0.6774188280105591,
+              "priority_macro": 0.6004245281219482,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6485714316368103,
+              "historical": 0.7934272289276123,
+              "macro": 0.5643765926361084,
+              "priority_macro": 0.5289007425308228,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 75,
+          "score": 0.6311627209186554,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7457143068313599,
+              "historical": 0.8356807231903076,
+              "macro": 0.6851099133491516,
+              "priority_macro": 0.5967208743095398,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6528571248054504,
+              "historical": 0.7981220483779907,
+              "macro": 0.5700547695159912,
+              "priority_macro": 0.5331575870513916,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 76,
+          "score": 0.6401261806488037,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7528571486473083,
+              "historical": 0.8497652411460876,
+              "macro": 0.6927563548088074,
+              "priority_macro": 0.609311044216156,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6557142734527588,
+              "historical": 0.7934272289276123,
+              "macro": 0.575634777545929,
+              "priority_macro": 0.5351417064666748,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 77,
+          "score": 0.6374188244342804,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7485714554786682,
+              "historical": 0.8497652411460876,
+              "macro": 0.6920737028121948,
+              "priority_macro": 0.6005809307098389,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6557142734527588,
+              "historical": 0.7887324094772339,
+              "macro": 0.5789116621017456,
+              "priority_macro": 0.5347994565963745,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 78,
+          "score": 0.6353216350078583,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7457143068313599,
+              "historical": 0.8450704216957092,
+              "macro": 0.6829115152359009,
+              "priority_macro": 0.6139407157897949,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6485714316368103,
+              "historical": 0.7887324094772339,
+              "macro": 0.5656610131263733,
+              "priority_macro": 0.5310171246528625,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 79,
+          "score": 0.6415551513433456,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7514285445213318,
+              "historical": 0.8450704216957092,
+              "macro": 0.68378746509552,
+              "priority_macro": 0.6307396292686462,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6499999761581421,
+              "historical": 0.7887324094772339,
+              "macro": 0.5654596090316772,
+              "priority_macro": 0.5328143835067749,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 80,
+          "score": 0.6367182165384293,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7542856931686401,
+              "historical": 0.8497652411460876,
+              "macro": 0.7005248665809631,
+              "priority_macro": 0.5971176624298096,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6442857384681702,
+              "historical": 0.7840375304222107,
+              "macro": 0.5624542236328125,
+              "priority_macro": 0.5214146971702576,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 81,
+          "score": 0.6381289094686509,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7528571486473083,
+              "historical": 0.8403756022453308,
+              "macro": 0.6879583597183228,
+              "priority_macro": 0.6120888590812683,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6471428275108337,
+              "historical": 0.7840375304222107,
+              "macro": 0.5715827345848083,
+              "priority_macro": 0.5252034664154053,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 82,
+          "score": 0.6423483580350876,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7514285445213318,
+              "historical": 0.8450704216957092,
+              "macro": 0.6840739846229553,
+              "priority_macro": 0.624895453453064,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6571428775787354,
+              "historical": 0.7840375304222107,
+              "macro": 0.5790082812309265,
+              "priority_macro": 0.5308136343955994,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 83,
+          "score": 0.6340401142835617,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7514285445213318,
+              "historical": 0.8450704216957092,
+              "macro": 0.6873429417610168,
+              "priority_macro": 0.5996309518814087,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6528571248054504,
+              "historical": 0.7887324094772339,
+              "macro": 0.5743247866630554,
+              "priority_macro": 0.5286667346954346,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 84,
+          "score": 0.6318340033292771,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7442857027053833,
+              "historical": 0.8356807231903076,
+              "macro": 0.6801723837852478,
+              "priority_macro": 0.6050541400909424,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6499999761581421,
+              "historical": 0.7840375304222107,
+              "macro": 0.5699374079704285,
+              "priority_macro": 0.5322381854057312,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 85,
+          "score": 0.6357232451438904,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7528571486473083,
+              "historical": 0.8497652411460876,
+              "macro": 0.6915317177772522,
+              "priority_macro": 0.6043928265571594,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6499999761581421,
+              "historical": 0.7934272289276123,
+              "macro": 0.5649824142456055,
+              "priority_macro": 0.5356467366218567,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 86,
+          "score": 0.6398227542638779,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.75,
+              "historical": 0.8497652411460876,
+              "macro": 0.692989706993103,
+              "priority_macro": 0.6066655516624451,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6585714221000671,
+              "historical": 0.8028169274330139,
+              "macro": 0.5782222151756287,
+              "priority_macro": 0.5508047938346863,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 87,
+          "score": 0.6316003233194352,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7442857027053833,
+              "historical": 0.8497652411460876,
+              "macro": 0.6808599233627319,
+              "priority_macro": 0.6083851456642151,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6428571343421936,
+              "historical": 0.7934272289276123,
+              "macro": 0.5613927841186523,
+              "priority_macro": 0.5254616141319275,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 88,
+          "score": 0.6276917874813079,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7400000095367432,
+              "historical": 0.8403756022453308,
+              "macro": 0.6745284795761108,
+              "priority_macro": 0.601085901260376,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.654285728931427,
+              "historical": 0.7981220483779907,
+              "macro": 0.5688695311546326,
+              "priority_macro": 0.5363081097602844,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 89,
+          "score": 0.639992517232895,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7557142972946167,
+              "historical": 0.8497652411460876,
+              "macro": 0.6957421898841858,
+              "priority_macro": 0.6101047396659851,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6528571248054504,
+              "historical": 0.7981220483779907,
+              "macro": 0.5668593645095825,
+              "priority_macro": 0.5480205416679382,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 90,
+          "score": 0.6334189057350159,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7514285445213318,
+              "historical": 0.8403756022453308,
+              "macro": 0.6877037286758423,
+              "priority_macro": 0.5983387231826782,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6528571248054504,
+              "historical": 0.7887324094772339,
+              "macro": 0.5726683735847473,
+              "priority_macro": 0.5346496105194092,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 91,
+          "score": 0.6332981556653977,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7471428513526917,
+              "historical": 0.8497652411460876,
+              "macro": 0.693028450012207,
+              "priority_macro": 0.590215265750885,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6471428275108337,
+              "historical": 0.7934272289276123,
+              "macro": 0.5743000507354736,
+              "priority_macro": 0.5408055186271667,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 92,
+          "score": 0.6332139939069749,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7471428513526917,
+              "historical": 0.8403756022453308,
+              "macro": 0.6811680197715759,
+              "priority_macro": 0.6073029041290283,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6485714316368103,
+              "historical": 0.7934272289276123,
+              "macro": 0.5706618428230286,
+              "priority_macro": 0.5336626172065735,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 93,
+          "score": 0.636911353468895,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7557142972946167,
+              "historical": 0.8497652411460876,
+              "macro": 0.68764728307724,
+              "priority_macro": 0.6118242740631104,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6499999761581421,
+              "historical": 0.7793427109718323,
+              "macro": 0.5666579008102417,
+              "priority_macro": 0.540626049041748,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 94,
+          "score": 0.6299847275018692,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7442857027053833,
+              "historical": 0.8403756022453308,
+              "macro": 0.6803423762321472,
+              "priority_macro": 0.6021682024002075,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6499999761581421,
+              "historical": 0.7887324094772339,
+              "macro": 0.5653589367866516,
+              "priority_macro": 0.539771318435669,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 95,
+          "score": 0.6256288707256317,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7428571581840515,
+              "historical": 0.8450704216957092,
+              "macro": 0.6779018044471741,
+              "priority_macro": 0.5946044325828552,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6471428275108337,
+              "historical": 0.7981220483779907,
+              "macro": 0.5623075366020203,
+              "priority_macro": 0.5341612100601196,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 96,
+          "score": 0.6310168713331222,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7457143068313599,
+              "historical": 0.8450704216957092,
+              "macro": 0.6797274351119995,
+              "priority_macro": 0.6060041785240173,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6514285802841187,
+              "historical": 0.7981220483779907,
+              "macro": 0.565190315246582,
+              "priority_macro": 0.5409858822822571,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 97,
+          "score": 0.6422972977161407,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7514285445213318,
+              "historical": 0.8497652411460876,
+              "macro": 0.6943584084510803,
+              "priority_macro": 0.6168267130851746,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6571428775787354,
+              "historical": 0.8075117468833923,
+              "macro": 0.5697333216667175,
+              "priority_macro": 0.5373968482017517,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 98,
+          "score": 0.6235913425683975,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7485714554786682,
+              "historical": 0.8544601202011108,
+              "macro": 0.6794739365577698,
+              "priority_macro": 0.5838596820831299,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6485714316368103,
+              "historical": 0.8028169274330139,
+              "macro": 0.5673859119415283,
+              "priority_macro": 0.5447672605514526,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 99,
+          "score": 0.6289649099111557,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7471428513526917,
+              "historical": 0.8450704216957092,
+              "macro": 0.6820963621139526,
+              "priority_macro": 0.5940448641777039,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6499999761581421,
+              "historical": 0.7934272289276123,
+              "macro": 0.5705292224884033,
+              "priority_macro": 0.5194305777549744,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 100,
+          "score": 0.631710883975029,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7485714554786682,
+              "historical": 0.8497652411460876,
+              "macro": 0.6892191767692566,
+              "priority_macro": 0.5958967208862305,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.6471428275108337,
+              "historical": 0.8028169274330139,
+              "macro": 0.5649920105934143,
+              "priority_macro": 0.5184270143508911,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        }
+      ],
+      "passed": false,
+      "selected_epoch": 43,
+      "private_training_fit": 1.0,
+      "metrics": {
+        "whole": {
+          "top1": 0.7814285755157471,
+          "historical": 0.8779342770576477,
+          "macro": 0.7265627980232239,
+          "priority_macro": 0.696809709072113,
+          "confirmed": 380,
+          "correct_confirmed": 377,
+          "precision": 0.99210524559021
+        },
+        "phone": {
+          "top1": 0.6714285612106323,
+          "historical": 0.7981220483779907,
+          "macro": 0.5851131081581116,
+          "priority_macro": 0.5869380235671997,
+          "confirmed": 275,
+          "correct_confirmed": 270,
+          "precision": 0.9818181991577148
+        }
+      },
+      "checks": {
+        "whole": true,
+        "phone": true,
+        "historical": true,
+        "priority": false,
+        "precision_both": true,
+        "correct_confirmed_both": true,
+        "mandatory": true
+      }
+    },
+    {
+      "round": 2,
+      "kind": "joint",
+      "history": [
+        {
+          "epoch": 1,
+          "score": 0.6963504046201707,
+          "guard": false,
+          "private_training_fit": 0.7820512652397156,
+          "metrics": {
+            "whole": {
+              "top1": 0.7900000214576721,
+              "historical": 0.8967136144638062,
+              "macro": 0.7025240659713745,
+              "priority_macro": 0.7318024039268494,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7142857313156128,
+              "historical": 0.8356807231903076,
+              "macro": 0.6204186677932739,
+              "priority_macro": 0.6022459268569946,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 2,
+          "score": 0.6818315118551255,
+          "guard": false,
+          "private_training_fit": 0.8653846383094788,
+          "metrics": {
+            "whole": {
+              "top1": 0.7814285755157471,
+              "historical": 0.8873239159584045,
+              "macro": 0.6957483291625977,
+              "priority_macro": 0.6961186528205872,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7157142758369446,
+              "historical": 0.8215962648391724,
+              "macro": 0.6255161762237549,
+              "priority_macro": 0.6029072999954224,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 3,
+          "score": 0.6960195362567901,
+          "guard": false,
+          "private_training_fit": 0.8782051205635071,
+          "metrics": {
+            "whole": {
+              "top1": 0.7842857241630554,
+              "historical": 0.8873239159584045,
+              "macro": 0.7005560398101807,
+              "priority_macro": 0.7192667722702026,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7314285635948181,
+              "historical": 0.8356807231903076,
+              "macro": 0.6451297402381897,
+              "priority_macro": 0.6435157060623169,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 4,
+          "score": 0.6955448210239411,
+          "guard": false,
+          "private_training_fit": 0.8974359035491943,
+          "metrics": {
+            "whole": {
+              "top1": 0.7857142686843872,
+              "historical": 0.8920187950134277,
+              "macro": 0.701266348361969,
+              "priority_macro": 0.7206913828849792,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7228571176528931,
+              "historical": 0.8215962648391724,
+              "macro": 0.6386649012565613,
+              "priority_macro": 0.6224599480628967,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 5,
+          "score": 0.6952693641185761,
+          "guard": true,
+          "private_training_fit": 0.942307710647583,
+          "metrics": {
+            "whole": {
+              "top1": 0.7842857241630554,
+              "historical": 0.8779342770576477,
+              "macro": 0.7023362517356873,
+              "priority_macro": 0.7122321724891663,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7328571677207947,
+              "historical": 0.8309859037399292,
+              "macro": 0.649683952331543,
+              "priority_macro": 0.6251599788665771,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 6,
+          "score": 0.6958571642637252,
+          "guard": true,
+          "private_training_fit": 0.9679487347602844,
+          "metrics": {
+            "whole": {
+              "top1": 0.7871428728103638,
+              "historical": 0.8873239159584045,
+              "macro": 0.7039281129837036,
+              "priority_macro": 0.718707263469696,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7242857217788696,
+              "historical": 0.8262910842895508,
+              "macro": 0.6377098560333252,
+              "priority_macro": 0.6276732683181763,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 7,
+          "score": 0.7039959341287613,
+          "guard": true,
+          "private_training_fit": 0.9807692170143127,
+          "metrics": {
+            "whole": {
+              "top1": 0.7914285659790039,
+              "historical": 0.8873239159584045,
+              "macro": 0.7136290073394775,
+              "priority_macro": 0.7279664874076843,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7285714149475098,
+              "historical": 0.8215962648391724,
+              "macro": 0.6403730511665344,
+              "priority_macro": 0.62465500831604,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 8,
+          "score": 0.707067146897316,
+          "guard": true,
+          "private_training_fit": 0.9807692170143127,
+          "metrics": {
+            "whole": {
+              "top1": 0.795714259147644,
+              "historical": 0.8873239159584045,
+              "macro": 0.718482494354248,
+              "priority_macro": 0.7279664874076843,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7300000190734863,
+              "historical": 0.8215962648391724,
+              "macro": 0.6448087692260742,
+              "priority_macro": 0.6186479926109314,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 9,
+          "score": 0.7058163106441497,
+          "guard": true,
+          "private_training_fit": 0.9807692170143127,
+          "metrics": {
+            "whole": {
+              "top1": 0.7971428632736206,
+              "historical": 0.8873239159584045,
+              "macro": 0.7189403176307678,
+              "priority_macro": 0.7279664874076843,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7257142663002014,
+              "historical": 0.8309859037399292,
+              "macro": 0.6375244855880737,
+              "priority_macro": 0.6135132908821106,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 10,
+          "score": 0.7056977123022079,
+          "guard": true,
+          "private_training_fit": 0.9935897588729858,
+          "metrics": {
+            "whole": {
+              "top1": 0.7971428632736206,
+              "historical": 0.8873239159584045,
+              "macro": 0.7212296724319458,
+              "priority_macro": 0.7239982485771179,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7257142663002014,
+              "historical": 0.8215962648391724,
+              "macro": 0.6387248635292053,
+              "priority_macro": 0.6145715117454529,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 11,
+          "score": 0.7050340503454209,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7942857146263123,
+              "historical": 0.8826290965080261,
+              "macro": 0.7182310819625854,
+              "priority_macro": 0.7279664874076843,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7214285731315613,
+              "historical": 0.8215962648391724,
+              "macro": 0.6352089643478394,
+              "priority_macro": 0.6077237725257874,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 12,
+          "score": 0.7086622744798661,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7985714077949524,
+              "historical": 0.8920187950134277,
+              "macro": 0.7197259068489075,
+              "priority_macro": 0.7325961589813232,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7228571176528931,
+              "historical": 0.8169013857841492,
+              "macro": 0.6418848037719727,
+              "priority_macro": 0.6097078919410706,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 13,
+          "score": 0.7081093221902848,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.795714259147644,
+              "historical": 0.8732394576072693,
+              "macro": 0.7201084494590759,
+              "priority_macro": 0.7261210680007935,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7314285635948181,
+              "historical": 0.8356807231903076,
+              "macro": 0.6495907306671143,
+              "priority_macro": 0.6228030920028687,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 14,
+          "score": 0.7069622248411178,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7942857146263123,
+              "historical": 0.8779342770576477,
+              "macro": 0.718894362449646,
+              "priority_macro": 0.7311715483665466,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7257142663002014,
+              "historical": 0.8262910842895508,
+              "macro": 0.6377485990524292,
+              "priority_macro": 0.6144697666168213,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 15,
+          "score": 0.7085978537797928,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7971428632736206,
+              "historical": 0.8826290965080261,
+              "macro": 0.7209773063659668,
+              "priority_macro": 0.7311715483665466,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7228571176528931,
+              "historical": 0.8215962648391724,
+              "macro": 0.641240119934082,
+              "priority_macro": 0.6064010262489319,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 16,
+          "score": 0.7066043406724929,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.7985714077949524,
+              "historical": 0.8826290965080261,
+              "macro": 0.7214703559875488,
+              "priority_macro": 0.7311715483665466,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7214285731315613,
+              "historical": 0.8215962648391724,
+              "macro": 0.6301631927490234,
+              "priority_macro": 0.6209512948989868,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 17,
+          "score": 0.7093966662883757,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8014285564422607,
+              "historical": 0.8873239159584045,
+              "macro": 0.7236971855163574,
+              "priority_macro": 0.7386502027511597,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7157142758369446,
+              "historical": 0.8169013857841492,
+              "macro": 0.6260268092155457,
+              "priority_macro": 0.5858974456787109,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 18,
+          "score": 0.7121216863393784,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8042857050895691,
+              "historical": 0.8873239159584045,
+              "macro": 0.7274119257926941,
+              "priority_macro": 0.7377853393554688,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7214285731315613,
+              "historical": 0.8169013857841492,
+              "macro": 0.6328072547912598,
+              "priority_macro": 0.6034058332443237,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 19,
+          "score": 0.7102265149354934,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8014285564422607,
+              "historical": 0.8873239159584045,
+              "macro": 0.7230163216590881,
+              "priority_macro": 0.7377853393554688,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7200000286102295,
+              "historical": 0.8169013857841492,
+              "macro": 0.6332215070724487,
+              "priority_macro": 0.6083851456642151,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 20,
+          "score": 0.7162098050117494,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8071428537368774,
+              "historical": 0.8873239159584045,
+              "macro": 0.7316712141036987,
+              "priority_macro": 0.7467495203018188,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7200000286102295,
+              "historical": 0.8169013857841492,
+              "macro": 0.6279771327972412,
+              "priority_macro": 0.6085646152496338,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 21,
+          "score": 0.7160365760326386,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8071428537368774,
+              "historical": 0.8920187950134277,
+              "macro": 0.7321057319641113,
+              "priority_macro": 0.7447654008865356,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7200000286102295,
+              "historical": 0.8262910842895508,
+              "macro": 0.6296055316925049,
+              "priority_macro": 0.6038267612457275,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 22,
+          "score": 0.7133857041597367,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8057143092155457,
+              "historical": 0.8920187950134277,
+              "macro": 0.7291143536567688,
+              "priority_macro": 0.7392098903656006,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7228571176528931,
+              "historical": 0.8215962648391724,
+              "macro": 0.6328039169311523,
+              "priority_macro": 0.6066045165061951,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 23,
+          "score": 0.7212913304567337,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.808571457862854,
+              "historical": 0.8826290965080261,
+              "macro": 0.7339581847190857,
+              "priority_macro": 0.7542892694473267,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7257142663002014,
+              "historical": 0.8262910842895508,
+              "macro": 0.635044515132904,
+              "priority_macro": 0.6190624237060547,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 24,
+          "score": 0.7196877568960189,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8100000023841858,
+              "historical": 0.8920187950134277,
+              "macro": 0.7337868809700012,
+              "priority_macro": 0.7516437768936157,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7214285731315613,
+              "historical": 0.8215962648391724,
+              "macro": 0.6320416927337646,
+              "priority_macro": 0.6134588122367859,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 25,
+          "score": 0.7219398409128188,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8100000023841858,
+              "historical": 0.8873239159584045,
+              "macro": 0.7325717806816101,
+              "priority_macro": 0.7562733888626099,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7285714149475098,
+              "historical": 0.8262910842895508,
+              "macro": 0.6379342675209045,
+              "priority_macro": 0.6191706657409668,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 26,
+          "score": 0.7208672165870667,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8114285469055176,
+              "historical": 0.8967136144638062,
+              "macro": 0.7372128367424011,
+              "priority_macro": 0.7487336993217468,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7242857217788696,
+              "historical": 0.8169013857841492,
+              "macro": 0.6353232264518738,
+              "priority_macro": 0.6123533844947815,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 27,
+          "score": 0.7173289716243745,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8071428537368774,
+              "historical": 0.8873239159584045,
+              "macro": 0.7287882566452026,
+              "priority_macro": 0.7512228488922119,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7228571176528931,
+              "historical": 0.8215962648391724,
+              "macro": 0.6322312951087952,
+              "priority_macro": 0.6101518869400024,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 28,
+          "score": 0.72382772564888,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8128571510314941,
+              "historical": 0.8873239159584045,
+              "macro": 0.7362449765205383,
+              "priority_macro": 0.7593397498130798,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7228571176528931,
+              "historical": 0.8215962648391724,
+              "macro": 0.6337428689002991,
+              "priority_macro": 0.6156297326087952,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 29,
+          "score": 0.7253885298967362,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8142856955528259,
+              "historical": 0.8873239159584045,
+              "macro": 0.7387738227844238,
+              "priority_macro": 0.761323869228363,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7200000286102295,
+              "historical": 0.8169013857841492,
+              "macro": 0.6323847770690918,
+              "priority_macro": 0.604759156703949,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 30,
+          "score": 0.7146899312734604,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8071428537368774,
+              "historical": 0.8873239159584045,
+              "macro": 0.7300123572349548,
+              "priority_macro": 0.7430458068847656,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7214285731315613,
+              "historical": 0.8309859037399292,
+              "macro": 0.6305916905403137,
+              "priority_macro": 0.6066045165061951,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 31,
+          "score": 0.715688517689705,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8057143092155457,
+              "historical": 0.8873239159584045,
+              "macro": 0.7278708219528198,
+              "priority_macro": 0.7470141053199768,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7242857217788696,
+              "historical": 0.8309859037399292,
+              "macro": 0.6334585547447205,
+              "priority_macro": 0.6152023673057556,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 32,
+          "score": 0.721240210533142,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8100000023841858,
+              "historical": 0.8873239159584045,
+              "macro": 0.734510064125061,
+              "priority_macro": 0.7562733888626099,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7228571176528931,
+              "historical": 0.8309859037399292,
+              "macro": 0.6300749778747559,
+              "priority_macro": 0.6084563732147217,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 33,
+          "score": 0.7206010133028031,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8114285469055176,
+              "historical": 0.8826290965080261,
+              "macro": 0.7364428639411926,
+              "priority_macro": 0.7512228488922119,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7214285731315613,
+              "historical": 0.8122065663337708,
+              "macro": 0.6313686370849609,
+              "priority_macro": 0.607109546661377,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 34,
+          "score": 0.7171463012695313,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8100000023841858,
+              "historical": 0.8920187950134277,
+              "macro": 0.7311192750930786,
+              "priority_macro": 0.75206458568573,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7171428799629211,
+              "historical": 0.8215962648391724,
+              "macro": 0.6246001124382019,
+              "priority_macro": 0.6066045165061951,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 35,
+          "score": 0.7217485427856445,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8128571510314941,
+              "historical": 0.8920187950134277,
+              "macro": 0.7381574511528015,
+              "priority_macro": 0.7566942572593689,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7228571176528931,
+              "historical": 0.8215962648391724,
+              "macro": 0.6236734986305237,
+              "priority_macro": 0.61292964220047,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 36,
+          "score": 0.7189777940511703,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8128571510314941,
+              "historical": 0.8873239159584045,
+              "macro": 0.7370644807815552,
+              "priority_macro": 0.7566942572593689,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7185714244842529,
+              "historical": 0.8169013857841492,
+              "macro": 0.612278938293457,
+              "priority_macro": 0.6171559691429138,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 37,
+          "score": 0.7191033869981766,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8114285469055176,
+              "historical": 0.8873239159584045,
+              "macro": 0.7329975962638855,
+              "priority_macro": 0.758118748664856,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7242857217788696,
+              "historical": 0.8215962648391724,
+              "macro": 0.6195645332336426,
+              "priority_macro": 0.6164705753326416,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 38,
+          "score": 0.7201780706644059,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8128571510314941,
+              "historical": 0.8873239159584045,
+              "macro": 0.737504243850708,
+              "priority_macro": 0.752647340297699,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7200000286102295,
+              "historical": 0.8262910842895508,
+              "macro": 0.6243729591369629,
+              "priority_macro": 0.6007058024406433,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 39,
+          "score": 0.7193055003881454,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8100000023841858,
+              "historical": 0.8873239159584045,
+              "macro": 0.7333348393440247,
+              "priority_macro": 0.7516437768936157,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7228571176528931,
+              "historical": 0.8262910842895508,
+              "macro": 0.6311475038528442,
+              "priority_macro": 0.6150460839271545,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 40,
+          "score": 0.7188423901796341,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8100000023841858,
+              "historical": 0.8873239159584045,
+              "macro": 0.7318320870399475,
+              "priority_macro": 0.753068208694458,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7257142663002014,
+              "historical": 0.8262910842895508,
+              "macro": 0.6297203898429871,
+              "priority_macro": 0.6136928200721741,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 41,
+          "score": 0.7215897619724274,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8114285469055176,
+              "historical": 0.8873239159584045,
+              "macro": 0.7355404496192932,
+              "priority_macro": 0.7566942572593689,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7228571176528931,
+              "historical": 0.8262910842895508,
+              "macro": 0.6287678480148315,
+              "priority_macro": 0.6066045165061951,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 42,
+          "score": 0.7198457300662995,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8128571510314941,
+              "historical": 0.8873239159584045,
+              "macro": 0.7362027168273926,
+              "priority_macro": 0.758118748664856,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7185714244842529,
+              "historical": 0.8122065663337708,
+              "macro": 0.616064727306366,
+              "priority_macro": 0.6034835577011108,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 43,
+          "score": 0.7203812330961228,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8142856955528259,
+              "historical": 0.8967136144638062,
+              "macro": 0.7348989844322205,
+              "priority_macro": 0.753068208694458,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7242857217788696,
+              "historical": 0.8215962648391724,
+              "macro": 0.6305140852928162,
+              "priority_macro": 0.6069467663764954,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 44,
+          "score": 0.7237309724092483,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8142856955528259,
+              "historical": 0.8873239159584045,
+              "macro": 0.7425573468208313,
+              "priority_macro": 0.7617447376251221,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7200000286102295,
+              "historical": 0.8169013857841492,
+              "macro": 0.6148475408554077,
+              "priority_macro": 0.6029784679412842,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 45,
+          "score": 0.7098175495862962,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8028571605682373,
+              "historical": 0.8685445785522461,
+              "macro": 0.7266631722450256,
+              "priority_macro": 0.7429672479629517,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7200000286102295,
+              "historical": 0.8262910842895508,
+              "macro": 0.6139029264450073,
+              "priority_macro": 0.6058645248413086,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 46,
+          "score": 0.7137454003095627,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8071428537368774,
+              "historical": 0.8779342770576477,
+              "macro": 0.72957843542099,
+              "priority_macro": 0.744391679763794,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7200000286102295,
+              "historical": 0.8215962648391724,
+              "macro": 0.6244900822639465,
+              "priority_macro": 0.6023170948028564,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 47,
+          "score": 0.7217497736215591,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8128571510314941,
+              "historical": 0.8873239159584045,
+              "macro": 0.7391729354858398,
+              "priority_macro": 0.7566942572593689,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7257142663002014,
+              "historical": 0.8309859037399292,
+              "macro": 0.6213948130607605,
+              "priority_macro": 0.6159655451774597,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 48,
+          "score": 0.7203205138444901,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8142856955528259,
+              "historical": 0.8920187950134277,
+              "macro": 0.7383416891098022,
+              "priority_macro": 0.7581186890602112,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7185714244842529,
+              "historical": 0.8215962648391724,
+              "macro": 0.6136260628700256,
+              "priority_macro": 0.6200965642929077,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 49,
+          "score": 0.7222502589225769,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8185714483261108,
+              "historical": 0.9061033129692078,
+              "macro": 0.7404683232307434,
+              "priority_macro": 0.759543240070343,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7214285731315613,
+              "historical": 0.8262910842895508,
+              "macro": 0.6159968972206116,
+              "priority_macro": 0.609219491481781,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 50,
+          "score": 0.7185892343521119,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8114285469055176,
+              "historical": 0.8920187950134277,
+              "macro": 0.7339176535606384,
+              "priority_macro": 0.7494422793388367,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7214285731315613,
+              "historical": 0.8215962648391724,
+              "macro": 0.6301074624061584,
+              "priority_macro": 0.613584578037262,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 51,
+          "score": 0.7213949829339981,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8128571510314941,
+              "historical": 0.8873239159584045,
+              "macro": 0.7393080592155457,
+              "priority_macro": 0.7566941976547241,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.727142870426178,
+              "historical": 0.8262910842895508,
+              "macro": 0.6193169355392456,
+              "priority_macro": 0.6166269183158875,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 52,
+          "score": 0.7239389985799789,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8171428442001343,
+              "historical": 0.8967136144638062,
+              "macro": 0.7424048185348511,
+              "priority_macro": 0.7631692290306091,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7242857217788696,
+              "historical": 0.8309859037399292,
+              "macro": 0.6137380003929138,
+              "priority_macro": 0.6159655451774597,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 53,
+          "score": 0.7278457522392273,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8199999928474426,
+              "historical": 0.8920187950134277,
+              "macro": 0.748611569404602,
+              "priority_macro": 0.76679527759552,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7200000286102295,
+              "historical": 0.8122065663337708,
+              "macro": 0.6129609942436218,
+              "priority_macro": 0.6173252463340759,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 54,
+          "score": 0.7232060462236404,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8157142996788025,
+              "historical": 0.8826290965080261,
+              "macro": 0.7421908378601074,
+              "priority_macro": 0.7540718913078308,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7214285731315613,
+              "historical": 0.8215962648391724,
+              "macro": 0.6264750361442566,
+              "priority_macro": 0.6110713481903076,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 55,
+          "score": 0.7247628688812255,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8157142996788025,
+              "historical": 0.8967136144638062,
+              "macro": 0.7397366166114807,
+              "priority_macro": 0.759543240070343,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7285714149475098,
+              "historical": 0.8356807231903076,
+              "macro": 0.630206286907196,
+              "priority_macro": 0.6233729124069214,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 56,
+          "score": 0.7268273532390594,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8199999928474426,
+              "historical": 0.8967136144638062,
+              "macro": 0.74807208776474,
+              "priority_macro": 0.759543240070343,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7242857217788696,
+              "historical": 0.8215962648391724,
+              "macro": 0.621773898601532,
+              "priority_macro": 0.6147750020027161,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 57,
+          "score": 0.7193316847085953,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8142856955528259,
+              "historical": 0.8967136144638062,
+              "macro": 0.7382572889328003,
+              "priority_macro": 0.753489077091217,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7242857217788696,
+              "historical": 0.8309859037399292,
+              "macro": 0.6169736385345459,
+              "priority_macro": 0.6073676347732544,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 58,
+          "score": 0.718379482626915,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8142856955528259,
+              "historical": 0.8873239159584045,
+              "macro": 0.7402771711349487,
+              "priority_macro": 0.7494422793388367,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7228571176528931,
+              "historical": 0.8309859037399292,
+              "macro": 0.6147497892379761,
+              "priority_macro": 0.6159655451774597,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 59,
+          "score": 0.7225964277982712,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8171428442001343,
+              "historical": 0.9014084339141846,
+              "macro": 0.7393491268157959,
+              "priority_macro": 0.759543240070343,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7285714149475098,
+              "historical": 0.8356807231903076,
+              "macro": 0.6202459335327148,
+              "priority_macro": 0.6121054887771606,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 60,
+          "score": 0.7233240514993668,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8142856955528259,
+              "historical": 0.8920187950134277,
+              "macro": 0.7423043847084045,
+              "priority_macro": 0.753068208694458,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7257142663002014,
+              "historical": 0.8262910842895508,
+              "macro": 0.6285660266876221,
+              "priority_macro": 0.6178173422813416,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 61,
+          "score": 0.7235948324203492,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8171428442001343,
+              "historical": 0.8920187950134277,
+              "macro": 0.7428039312362671,
+              "priority_macro": 0.7631691694259644,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7185714244842529,
+              "historical": 0.8169013857841492,
+              "macro": 0.611119270324707,
+              "priority_macro": 0.6018962264060974,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 62,
+          "score": 0.7235419452190399,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8142856955528259,
+              "historical": 0.9014084339141846,
+              "macro": 0.7350555062294006,
+              "priority_macro": 0.7631692290306091,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7257142663002014,
+              "historical": 0.8356807231903076,
+              "macro": 0.6282886862754822,
+              "priority_macro": 0.6178414225578308,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 63,
+          "score": 0.7212542086839675,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8128571510314941,
+              "historical": 0.8920187950134277,
+              "macro": 0.7361007332801819,
+              "priority_macro": 0.7544927597045898,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.727142870426178,
+              "historical": 0.8309859037399292,
+              "macro": 0.6296820640563965,
+              "priority_macro": 0.6124181151390076,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 64,
+          "score": 0.7166231244802475,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8114285469055176,
+              "historical": 0.8873239159584045,
+              "macro": 0.7350394129753113,
+              "priority_macro": 0.753068208694458,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7200000286102295,
+              "historical": 0.8169013857841492,
+              "macro": 0.6114075779914856,
+              "priority_macro": 0.6023170948028564,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 65,
+          "score": 0.7175577044487,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8114285469055176,
+              "historical": 0.8873239159584045,
+              "macro": 0.7359845638275146,
+              "priority_macro": 0.7544927597045898,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7185714244842529,
+              "historical": 0.8169013857841492,
+              "macro": 0.6114609241485596,
+              "priority_macro": 0.6012348532676697,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 66,
+          "score": 0.7247888565063476,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8185714483261108,
+              "historical": 0.9014084339141846,
+              "macro": 0.7427335977554321,
+              "priority_macro": 0.7645937204360962,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7242857217788696,
+              "historical": 0.8356807231903076,
+              "macro": 0.6147546768188477,
+              "priority_macro": 0.6073676347732544,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 67,
+          "score": 0.7234068840742112,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8142856955528259,
+              "historical": 0.8920187950134277,
+              "macro": 0.7412442564964294,
+              "priority_macro": 0.7544927597045898,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7257142663002014,
+              "historical": 0.8403756022453308,
+              "macro": 0.6288725137710571,
+              "priority_macro": 0.6180818676948547,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 68,
+          "score": 0.7169683068990708,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8114285469055176,
+              "historical": 0.8920187950134277,
+              "macro": 0.7354597449302673,
+              "priority_macro": 0.7544927597045898,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7171428799629211,
+              "historical": 0.8215962648391724,
+              "macro": 0.60969477891922,
+              "priority_macro": 0.6078726649284363,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 69,
+          "score": 0.7232954442501068,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8157142996788025,
+              "historical": 0.8920187950134277,
+              "macro": 0.7421534657478333,
+              "priority_macro": 0.7631692290306091,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7214285731315613,
+              "historical": 0.8169013857841492,
+              "macro": 0.6110857725143433,
+              "priority_macro": 0.6062853336334229,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 70,
+          "score": 0.7252848237752915,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8185714483261108,
+              "historical": 0.8967136144638062,
+              "macro": 0.7459174394607544,
+              "priority_macro": 0.7631692290306091,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7200000286102295,
+              "historical": 0.8169013857841492,
+              "macro": 0.6125637292861938,
+              "priority_macro": 0.6074758768081665,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 71,
+          "score": 0.7249515354633331,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8185714483261108,
+              "historical": 0.8920187950134277,
+              "macro": 0.7468543648719788,
+              "priority_macro": 0.7631692290306091,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7157142758369446,
+              "historical": 0.8075117468833923,
+              "macro": 0.6087892055511475,
+              "priority_macro": 0.6002007722854614,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 72,
+          "score": 0.7248671293258667,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8185714483261108,
+              "historical": 0.8967136144638062,
+              "macro": 0.744541585445404,
+              "priority_macro": 0.7631692290306091,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7214285731315613,
+              "historical": 0.8215962648391724,
+              "macro": 0.6135709285736084,
+              "priority_macro": 0.6105727553367615,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 73,
+          "score": 0.7269207566976548,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8185714483261108,
+              "historical": 0.8967136144638062,
+              "macro": 0.7448670268058777,
+              "priority_macro": 0.7595431804656982,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7257142663002014,
+              "historical": 0.8262910842895508,
+              "macro": 0.6294524073600769,
+              "priority_macro": 0.6196997165679932,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 74,
+          "score": 0.7197744667530059,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8171428442001343,
+              "historical": 0.8920187950134277,
+              "macro": 0.7413050532341003,
+              "priority_macro": 0.7581186890602112,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7142857313156128,
+              "historical": 0.8122065663337708,
+              "macro": 0.6042282581329346,
+              "priority_macro": 0.5947534441947937,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 75,
+          "score": 0.7251412272453308,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8171428442001343,
+              "historical": 0.8967136144638062,
+              "macro": 0.7423028945922852,
+              "priority_macro": 0.7595431804656982,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7228571176528931,
+              "historical": 0.8262910842895508,
+              "macro": 0.6263240575790405,
+              "priority_macro": 0.6093277335166931,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 76,
+          "score": 0.7228601038455963,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8157142996788025,
+              "historical": 0.8920187950134277,
+              "macro": 0.7427399754524231,
+              "priority_macro": 0.7544927000999451,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7200000286102295,
+              "historical": 0.8215962648391724,
+              "macro": 0.6227733492851257,
+              "priority_macro": 0.5927156209945679,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 77,
+          "score": 0.7230784654617309,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8157142996788025,
+              "historical": 0.8967136144638062,
+              "macro": 0.7404714226722717,
+              "priority_macro": 0.759543240070343,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7128571271896362,
+              "historical": 0.8122065663337708,
+              "macro": 0.6201309561729431,
+              "priority_macro": 0.5917110443115234,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 78,
+          "score": 0.7227138489484787,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8128571510314941,
+              "historical": 0.8967136144638062,
+              "macro": 0.7382888793945312,
+              "priority_macro": 0.759543240070343,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7185714244842529,
+              "historical": 0.8215962648391724,
+              "macro": 0.6232185959815979,
+              "priority_macro": 0.6085340976715088,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 79,
+          "score": 0.7265611380338669,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8128571510314941,
+              "historical": 0.8920187950134277,
+              "macro": 0.7408838272094727,
+              "priority_macro": 0.768381655216217,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7214285731315613,
+              "historical": 0.8262910842895508,
+              "macro": 0.6211491823196411,
+              "priority_macro": 0.5963407158851624,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 80,
+          "score": 0.7348940521478653,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8214285969734192,
+              "historical": 0.9014084339141846,
+              "macro": 0.7504109740257263,
+              "priority_macro": 0.7720075845718384,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7300000190734863,
+              "historical": 0.8309859037399292,
+              "macro": 0.6350322961807251,
+              "priority_macro": 0.625224769115448,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 81,
+          "score": 0.7247868061065674,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8157142996788025,
+              "historical": 0.8967136144638062,
+              "macro": 0.7423028945922852,
+              "priority_macro": 0.7595431804656982,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7214285731315613,
+              "historical": 0.8262910842895508,
+              "macro": 0.6245519518852234,
+              "priority_macro": 0.6067062616348267,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 82,
+          "score": 0.7215115606784821,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8157142996788025,
+              "historical": 0.8967136144638062,
+              "macro": 0.7410610914230347,
+              "priority_macro": 0.756476879119873,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7214285731315613,
+              "historical": 0.8215962648391724,
+              "macro": 0.6163358092308044,
+              "priority_macro": 0.5992988348007202,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 83,
+          "score": 0.7208625823259354,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8128571510314941,
+              "historical": 0.8873239159584045,
+              "macro": 0.7402679920196533,
+              "priority_macro": 0.7577764391899109,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7200000286102295,
+              "historical": 0.8075117468833923,
+              "macro": 0.6126011610031128,
+              "priority_macro": 0.6156297922134399,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 84,
+          "score": 0.7268046438694,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8157142996788025,
+              "historical": 0.8920187950134277,
+              "macro": 0.7421534657478333,
+              "priority_macro": 0.7631692290306091,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.727142870426178,
+              "historical": 0.8309859037399292,
+              "macro": 0.6286317706108093,
+              "priority_macro": 0.6222906708717346,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 85,
+          "score": 0.7274203807115555,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8114285469055176,
+              "historical": 0.8920187950134277,
+              "macro": 0.7406243085861206,
+              "priority_macro": 0.768381655216217,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7228571176528931,
+              "historical": 0.8262910842895508,
+              "macro": 0.6260293126106262,
+              "priority_macro": 0.5979520678520203,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 86,
+          "score": 0.7269580751657486,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8142856955528259,
+              "historical": 0.8967136144638062,
+              "macro": 0.7402957677841187,
+              "priority_macro": 0.768381655216217,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7228571176528931,
+              "historical": 0.8309859037399292,
+              "macro": 0.6244570016860962,
+              "priority_macro": 0.6159655451774597,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 87,
+          "score": 0.725597494840622,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8128571510314941,
+              "historical": 0.8967136144638062,
+              "macro": 0.7401148676872253,
+              "priority_macro": 0.768381655216217,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7257142663002014,
+              "historical": 0.8356807231903076,
+              "macro": 0.6180611252784729,
+              "priority_macro": 0.6148832440376282,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 88,
+          "score": 0.727911451458931,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8142856955528259,
+              "historical": 0.8920187950134277,
+              "macro": 0.7413722276687622,
+              "priority_macro": 0.768381655216217,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7257142663002014,
+              "historical": 0.8309859037399292,
+              "macro": 0.6268018484115601,
+              "priority_macro": 0.6109150052070618,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 89,
+          "score": 0.7297492355108262,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8157142996788025,
+              "historical": 0.8967136144638062,
+              "macro": 0.7453498840332031,
+              "priority_macro": 0.768381655216217,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7228571176528931,
+              "historical": 0.8262910842895508,
+              "macro": 0.6270410418510437,
+              "priority_macro": 0.5979520678520203,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 90,
+          "score": 0.7310720145702362,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8157142996788025,
+              "historical": 0.9014084339141846,
+              "macro": 0.7415664792060852,
+              "priority_macro": 0.7784826159477234,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7214285731315613,
+              "historical": 0.8169013857841492,
+              "macro": 0.6244909167289734,
+              "priority_macro": 0.6041690111160278,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 91,
+          "score": 0.7161866813898088,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8128571510314941,
+              "historical": 0.8967136144638062,
+              "macro": 0.7357857823371887,
+              "priority_macro": 0.7410247325897217,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.727142870426178,
+              "historical": 0.8309859037399292,
+              "macro": 0.6286221146583557,
+              "priority_macro": 0.6020766496658325,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 92,
+          "score": 0.7286141335964204,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8142856955528259,
+              "historical": 0.8920187950134277,
+              "macro": 0.7424406409263611,
+              "priority_macro": 0.768381655216217,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7242857217788696,
+              "historical": 0.8262910842895508,
+              "macro": 0.6279113292694092,
+              "priority_macro": 0.6109150052070618,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 93,
+          "score": 0.7269775867462158,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8185714483261108,
+              "historical": 0.9014084339141846,
+              "macro": 0.7465153336524963,
+              "priority_macro": 0.759543240070343,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7228571176528931,
+              "historical": 0.8262910842895508,
+              "macro": 0.6260277628898621,
+              "priority_macro": 0.6013911962509155,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 94,
+          "score": 0.7235492527484894,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8142856955528259,
+              "historical": 0.9014084339141846,
+              "macro": 0.7399317026138306,
+              "priority_macro": 0.756476879119873,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7228571176528931,
+              "historical": 0.8169013857841492,
+              "macro": 0.6290653944015503,
+              "priority_macro": 0.6070549488067627,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 95,
+          "score": 0.7334407985210418,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8199999928474426,
+              "historical": 0.9014084339141846,
+              "macro": 0.7480721473693848,
+              "priority_macro": 0.7734321355819702,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7285714149475098,
+              "historical": 0.8309859037399292,
+              "macro": 0.6305354237556458,
+              "priority_macro": 0.626571536064148,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 96,
+          "score": 0.7205571413040162,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8171428442001343,
+              "historical": 0.9014084339141846,
+              "macro": 0.7393467426300049,
+              "priority_macro": 0.747638463973999,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.727142870426178,
+              "historical": 0.8309859037399292,
+              "macro": 0.6308882236480713,
+              "priority_macro": 0.6094128489494324,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 97,
+          "score": 0.7215531975030899,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8128571510314941,
+              "historical": 0.8920187950134277,
+              "macro": 0.7384007573127747,
+              "priority_macro": 0.7544927597045898,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7242857217788696,
+              "historical": 0.8169013857841492,
+              "macro": 0.6260019540786743,
+              "priority_macro": 0.5998039245605469,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 98,
+          "score": 0.7246048212051392,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8128571510314941,
+              "historical": 0.9014084339141846,
+              "macro": 0.7423182129859924,
+              "priority_macro": 0.7575591206550598,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7242857217788696,
+              "historical": 0.8262910842895508,
+              "macro": 0.6270796656608582,
+              "priority_macro": 0.5995393395423889,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 99,
+          "score": 0.7206803083419799,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8114285469055176,
+              "historical": 0.9014084339141846,
+              "macro": 0.7357378005981445,
+              "priority_macro": 0.7549135684967041,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7257142663002014,
+              "historical": 0.8215962648391724,
+              "macro": 0.6268927454948425,
+              "priority_macro": 0.6076321601867676,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        },
+        {
+          "epoch": 100,
+          "score": 0.7239637851715088,
+          "guard": true,
+          "private_training_fit": 1.0,
+          "metrics": {
+            "whole": {
+              "top1": 0.8128571510314941,
+              "historical": 0.8967136144638062,
+              "macro": 0.7395806312561035,
+              "priority_macro": 0.7544927597045898,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            },
+            "phone": {
+              "top1": 0.7314285635948181,
+              "historical": 0.8309859037399292,
+              "macro": 0.6354001760482788,
+              "priority_macro": 0.6273411512374878,
+              "confirmed": 0,
+              "correct_confirmed": 0,
+              "precision": 0.0
+            }
+          }
+        }
+      ],
+      "passed": true,
+      "selected_epoch": 80,
+      "private_training_fit": 1.0,
+      "metrics": {
+        "whole": {
+          "top1": 0.8100000023841858,
+          "historical": 0.8967136144638062,
+          "macro": 0.747360348701477,
+          "priority_macro": 0.7520942091941833,
+          "confirmed": 431,
+          "correct_confirmed": 426,
+          "precision": 0.988399088382721
+        },
+        "phone": {
+          "top1": 0.727142870426178,
+          "historical": 0.8450704216957092,
+          "macro": 0.6335448026657104,
+          "priority_macro": 0.6004171371459961,
+          "confirmed": 335,
+          "correct_confirmed": 330,
+          "precision": 0.9850746393203735
+        }
+      },
+      "checks": {
+        "whole": true,
+        "phone": true,
+        "historical": true,
+        "priority": true,
+        "precision_both": true,
+        "correct_confirmed_both": true,
+        "mandatory": true
+      }
+    }
+  ],
+  "selected_round": 2,
+  "selected_epoch": 80,
+  "test_used": false,
+  "seconds": 41.73112654685974,
+  "known_phone_errors_now_train": true
+}

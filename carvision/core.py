@@ -15,6 +15,15 @@ from torchvision.ops import nms
 ROOT = Path(sys.executable).parent if getattr(sys, 'frozen', False) else Path(__file__).resolve().parents[1]
 COLOURS = ['white', 'black', 'grey', 'red', 'blue', 'green', 'brown', 'yellow']
 BRANDS = ['Chevrolet', 'Daewoo', 'Lada', 'Kia', 'Hyundai', 'Toyota', 'Mercedes-Benz', 'BMW', 'Volkswagen', 'Nissan', 'BYD', 'Chery', 'Haval', 'Changan', 'Geely', 'Jetour', 'Li Auto', 'Zeekr', 'Exeed', 'Omoda', 'Jaecoo', 'Hongqi', 'Leapmotor', 'JAC']
+
+def annotation_brands():
+    """Suggestions for human labelling; the catalogue is never inference evidence."""
+    p=ROOT/'models/make_catalogue.json'
+    if not p.exists():return BRANDS
+    try:
+        values=json.loads(p.read_text(encoding='utf-8'))['requested_brands']
+        return sorted(set(BRANDS)|{b for b in values if isinstance(b,str) and 0<len(b)<=64})
+    except (ValueError,KeyError,TypeError):return BRANDS
 def make_preprocess(size=224,center_margin=0):
     steps=[transforms.Resize((size+center_margin,size+center_margin))]
     if center_margin:steps.append(transforms.CenterCrop(size))
@@ -148,11 +157,30 @@ class Pipeline:
                 self.detector = ssdlite320_mobilenet_v3_large(weights=None, weights_backbone=None,num_classes=91 if origin=='generic-coco-detector' else 2).eval()
                 self.detector.load_state_dict(detector_checkpoint['state'])
         self.classifier, self.brands = None, []
+        self.make_expert=None
+        if (self.directory/'dino_make.pt').exists():
+            from .dino_make import DinoMakeExpert
+            from .model_integrity import verify_clip_pair
+            clip_file=self.directory/'semantic_make.pt'
+            make_checkpoint=torch.load(self.directory/'dino_make.pt',map_location='cpu',weights_only=True)
+            self.paired_clip_sha256=verify_clip_pair(make_checkpoint,clip_file)
+            clip=torch.load(clip_file,map_location='cpu',weights_only=True) if clip_file.exists() else None
+            self.make_expert=DinoMakeExpert(make_checkpoint,clip)
+        elif (self.directory/'semantic_make.pt').exists():
+            from .semantic_make import SemanticMakeExpert
+            self.make_expert=SemanticMakeExpert(torch.load(self.directory/'semantic_make.pt',map_location='cpu',weights_only=True))
+        elif (self.directory/'make_expert.pt').exists():
+            from .make_expert import MakeExpert
+            self.make_expert=MakeExpert(torch.load(self.directory/'make_expert.pt',map_location='cpu',weights_only=True))
         self.colour_classifier=None
         self.vehicle_classifier=None
         calibration=self.directory/'colour_calibration.json'
         self.colour_reliability_threshold=json.loads(calibration.read_text(encoding='utf-8'))['threshold'] if calibration.exists() else .75
         self.masked_colour=None
+        self.illumination_colour=None
+        if (self.directory/'illumination_colour.pt').exists():
+            from .illumination_colour import IlluminationColour
+            self.illumination_colour=IlluminationColour(torch.load(self.directory/'illumination_colour.pt',map_location='cpu',weights_only=True))
         if (self.directory/'masked_colour.pt').exists():
             from .masked_colour import MaskedColourClassifier
             self.masked_colour=MaskedColourClassifier(torch.load(self.directory/'masked_colour.pt',map_location='cpu',weights_only=True))
@@ -175,12 +203,12 @@ class Pipeline:
                 self.colour_classifier=JointColourClassifier(self.classifier,self.preprocess);self.masked_colour=None;self.colour_reliability_threshold=.75
             if ck.get('colour_mode')=='body_histogram':self.colour_mode='heuristic'
         separate_colour=self.directory/'colour_model.pt'
-        if separate_colour.exists() and self.colour_mode!='trained' and self.colour_classifier is None:
+        if separate_colour.exists() and self.colour_classifier is None:
             from .colour_model import ColourClassifier
             self.colour_classifier=ColourClassifier(torch.load(separate_colour,map_location='cpu',weights_only=True))
 
         model_file=self.directory/'vehicle_model.pt'
-        if model_file.exists() and self.classifier is not None:
+        if model_file.exists() and self.classifier is not None and getattr(self.make_expert,'family',None) is None:
             from .vehicle_model import VehicleModelClassifier
             self.vehicle_classifier=VehicleModelClassifier(torch.load(model_file,map_location='cpu',weights_only=True))
             reference_file=self.directory/'visual_references.pt'
@@ -191,6 +219,17 @@ class Pipeline:
                 if reference['source_model_sha256']==hashlib.sha256(model_file.read_bytes()).hexdigest() and reference['labels']==self.vehicle_classifier.labels and reference['brands']==self.vehicle_classifier.brands:
                     self.vehicle_classifier.references=VisualReferences(reference)
             if self.vehicle_classifier.requires_references and self.vehicle_classifier.references is None:raise ValueError('Банк сравнения моделей отсутствует или не соответствует весам. Восстановите всю папку models из переносимого архива.')
+
+        import hashlib
+        active_file=next((self.directory/name for name in ('dino_make.pt','semantic_make.pt','make_expert.pt','classifier.pt') if (self.directory/name).is_file()),None)
+        version_file=self.directory/'model_version.json'
+        version=json.loads(version_file.read_text(encoding='utf-8')).get('version','unspecified') if version_file.exists() else 'unspecified'
+        from .version import BUILD_VERSION
+        self.runtime_identity=dict(build_version=BUILD_VERSION,weights_version=version,model_directory=str(self.directory.resolve()),active_head_file=active_file.name if active_file else None,active_head_sha256=hashlib.sha256(active_file.read_bytes()).hexdigest() if active_file else None,family_labels=len(getattr(getattr(self.make_expert,'family',None),'pairs',[])))
+        self.runtime_identity['paired_clip_sha256']=getattr(self,'paired_clip_sha256',None)
+        if version_file.exists():
+            declared=json.loads(version_file.read_text(encoding='utf-8'))
+            if declared.get('verify_active_head') and declared.get('selected_model_sha256')!=self.runtime_identity['active_head_sha256']:raise ValueError('Набор весов не соответствует сборке. Восстановите всю папку приложения или примените обновление целиком.')
 
     @torch.inference_mode()
     def predict(self, image, region=None, single=False):
@@ -232,6 +271,13 @@ class Pipeline:
             box = [max(0,min(im.width,box[0]*im.width/work.width)),max(0,min(im.height,box[1]*im.height/work.height)),max(0,min(im.width,box[2]*im.width/work.width)),max(0,min(im.height,box[3]*im.height/work.height))]
             if box[2]-box[0]<16 or box[3]-box[1]<16: continue
             crop = im.crop(box)
+            if getattr(self,'make_expert',None) is not None:
+                # Detector architecture must not silently select an older make model.
+                from .scene import classify
+                row=classify(self,crop,np.ones((crop.height,crop.width),dtype=bool))
+                global_box=[round(box[0]+offset[0]),round(box[1]+offset[1]),round(box[2]+offset[0]),round(box[3]+offset[1])]
+                result.append(dict(row,box=global_box,detection_confidence=None if single else float(scores[k]),box_source='user region without instance mask' if single else 'detector box without instance mask',approximate_mask=True,visual_limitations=['Анализ по прямоугольнику без маски: возможны фон и соседние машины.']))
+                continue
             brand, bp = 'unknown', 0.
             colour, cp = heuristic_colour(crop)
             colour_source = 'original HSV body histogram'
@@ -252,9 +298,10 @@ class Pipeline:
             result.append(dict(brand=brand,**model_result,colour=colour,colour_reliable=cp>=getattr(self,'colour_reliability_threshold',.75),brand_confidence=bp,colour_confidence=cp,colour_source=colour_source,detection_confidence=None if single else float(scores[k]),box_source='user region' if single else 'detector',box=global_box))
         result.sort(key=lambda r:(r['box'][1],r['box'][0]))
         for i,r in enumerate(result,1): r['id']=i
-        warnings=[] if self.classifier is not None else ['Brand classifier not trained; unknown is expected. Colour is an unvalidated HSV baseline.']
+        trained=self.classifier is not None or getattr(self,'make_expert',None) is not None
+        warnings=[] if trained else ['Brand classifier not trained; unknown is expected. Colour is an unvalidated HSV baseline.']
         if getattr(self,'public_prototype',False):warnings.append('Public-data prototype. Coverage is limited to supported_brands; full Tashkent-street accuracy has not been established. Colour uses a separately project-trained head.' if self.colour_classifier is not None else 'Public-data prototype. Coverage is limited to supported_brands; full Tashkent-street accuracy has not been established. Colour uses an original non-learned method.')
-        return dict(image=str(image),cars=result,seconds=round(time.perf_counter()-started,3),classifier_trained=self.classifier is not None,supported_brands=getattr(self,'brands',[]),mode=self.mode,region=region,single_car_region=single,detector_views=len(tiles)+(self.mode=='detail' and not single),warnings=warnings)
+        return dict(image=str(image),cars=result,seconds=round(time.perf_counter()-started,3),classifier_trained=trained,supported_brands=sorted(set(getattr(self,'brands',[]))|set(getattr(getattr(self,'make_expert',None),'brands',[]))),mode=self.mode,region=region,single_car_region=single,detector_views=len(tiles)+(self.mode=='detail' and not single),warnings=warnings,runtime_identity=getattr(self,'runtime_identity',{}))
 
 def save_prediction(source, result, output):
     out=Path(output); out.mkdir(parents=True,exist_ok=True)

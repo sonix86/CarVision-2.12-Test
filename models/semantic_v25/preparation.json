@@ -1,0 +1,45 @@
+{
+  "generic_backbone_only": true,
+  "automotive_classifier_downloaded": false,
+  "reference_max_absolute_error": 0.0,
+  "dataset_sha256": "422319bb418c29feac8f9d25feabbdddd9d59b6d1e9a3bb5589e9cb22045fae6",
+  "source": {
+    "repository": "laion/CLIP-ViT-B-32-laion2B-s34B-b79K",
+    "revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+    "license": "MIT (upstream model card)",
+    "generic_training": "LAION-2B English general image/text corpus",
+    "ready_made_car_classifier": false,
+    "records": [
+      {
+        "file": "README.md",
+        "source": "https://huggingface.co/laion/CLIP-ViT-B-32-laion2B-s34B-b79K/resolve/1a25a446712ba5ee05982a381eed697ef9b435cf/README.md",
+        "sha256": "d0600101ba66849bd84eeae14e0b1ccd56cd962ea94aec5d60c415d9ce4e5f28",
+        "bytes": 7464,
+        "revision": "1a25a446712ba5ee05982a381eed697ef9b435cf"
+      },
+      {
+        "file": "open_clip_config.json",
+        "source": "https://huggingface.co/laion/CLIP-ViT-B-32-laion2B-s34B-b79K/resolve/1a25a446712ba5ee05982a381eed697ef9b435cf/open_clip_config.json",
+        "sha256": "4302a891b495ad0966d1e7eeff102b5f34a3f1e647e57a9198933f862d5f8ba7",
+        "bytes": 604,
+        "revision": "1a25a446712ba5ee05982a381eed697ef9b435cf"
+      },
+      {
+        "file": "open_clip_model.safetensors",
+        "source": "https://huggingface.co/laion/CLIP-ViT-B-32-laion2B-s34B-b79K/resolve/1a25a446712ba5ee05982a381eed697ef9b435cf/open_clip_model.safetensors",
+        "sha256": "ac4f8c4b88af6d963118cbf40ad93176d092abbedfcb752601ae1866352656e6",
+        "bytes": 605143316,
+        "revision": "1a25a446712ba5ee05982a381eed697ef9b435cf"
+      }
+    ]
+  },
+  "initialization_only": "Text embeddings initialize our supervised head; untrained zero-shot predictions never become the application answer.",
+  "dependencies": {
+    "open_clip_torch": "3.2.0",
+    "timm": "1.0.30",
+    "ftfy": "6.3.1",
+    "regex": "2026.9.29",
+    "safetensors": "0.8.0",
+    "huggingface_hub": "0.36.2"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "records": [
+    {
+      "photo": 2,
+      "old_seconds": 0.6712198999885004,
+      "new_seconds": 0.2516268500039587,
+      "decision_preserved": true
+    },
+    {
+      "photo": 5,
+      "old_seconds": 0.8585358499985887,
+      "new_seconds": 0.4015042999963043,
+      "decision_preserved": true
+    },
+    {
+      "photo": 16,
+      "old_seconds": 0.6415814000065438,
+      "new_seconds": 0.24805695000395644,
+      "decision_preserved": true
+    }
+  ],
+  "scope": "Warm classification of three known owner-error crops; no detector/startup time; concurrent preparation may affect timings. Not a quality test."
+}

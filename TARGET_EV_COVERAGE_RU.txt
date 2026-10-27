@@ -1,0 +1,334 @@
+﻿ЦЕЛЕВОЕ ПОКРЫТИЕ ПО СПИСКУ ПОЛЬЗОВАТЕЛЯ
+Запрошено записей семейств: 325. Есть в классификаторе 2.2: 16.
+Это проверка наличия класса, не подтверждение хорошей точности на реальном телефоне.
+Наличие варианта двигателя/комплектации в описании не означает его различимость на фото.
+Названия и алиасы из запроса требуют проверки по источникам до включения в обучение.
+
+ЕСТЬ КЛАСС В КАНДИДАТЕ 2.2:
+BYD Seagull
+BYD Dolphin
+BYD Qin Plus
+Nissan Leaf
+BYD Song Plus
+BYD Yuan Plus
+BYD Seal
+Geely Galaxy E5
+Toyota bZ4X
+Hongqi E-QM5
+XPeng G6
+Weltmeister EX5
+Zeekr 001
+Zeekr X
+Li Auto L7
+BYD Han
+
+ЕЩЁ НЕ ОБУЧЕНЫ:
+Wuling Hongguang Mini EV
+Wuling Air EV
+Wuling Bingo
+Wuling Bingo Plus
+Wuling Nano EV
+Changan Lumin
+Changan BenBen E-Star
+Dongfeng EX1
+Dongfeng Nano Box
+Dongfeng Fengon Mini EV
+Nammi 01
+Chery eQ1
+Chery QQ Ice Cream
+Chery Wujie Pro
+Geely Panda Mini
+Geely Panda Knight
+Geometry E
+Geometry EX3
+BYD e1
+BYD S2
+Baojun Kiwi EV
+Baojun E100
+Baojun E200
+Baojun Yep
+Baojun Yep Plus
+Leapmotor T03
+Neta V
+Neta Aya
+JAC iEV6E
+JAC iEV7S
+BAIC EC3
+BAIC EC5
+BAIC Lite
+Bestune Pony
+Ora Black Cat
+Ora White Cat
+Pocco Meimei
+Pocco Duoduo
+Letin Mengo
+Hanteng X5 EV
+Zotye E200
+BYD e2
+BYD Yuan Up
+BYD Yuan Pro
+BYD Chazor
+BYD D1
+BYD e3
+BYD Qin EV
+GAC Aion S
+GAC Aion S Plus
+GAC Aion S Max
+GAC Aion Y
+GAC Aion Y Plus
+GAC Aion Y Younger
+GAC Aion UT
+Changan Eado EV
+Changan Qiyuan A05
+Changan Qiyuan Q05
+Changan CS15 E-Pro
+Changan CS55 E-Rock
+Geometry A
+Geometry A Pro
+Geometry C
+Geometry M6
+Geometry G6
+Geely Emgrand EV
+Geely GSE
+Geely Galaxy L6
+Geely Starwish
+BAIC EU5
+BAIC EU5 Plus
+BAIC EU7
+BAIC EX360
+Aeolus E70
+Aeolus Sky EV01
+Dongfeng Nammi 06
+Dongfeng Box
+Neta U
+Neta U-II
+Neta X
+Volkswagen ID.3
+Volkswagen e-Lavida
+Volkswagen e-Bora
+Volkswagen e-Golf
+Chevrolet Menlo
+Chevrolet Bolt EV
+Buick Velite 6
+Buick Velite 7
+MG MG4 EV
+MG ZS EV
+MG MG5 EV
+JAC iC5
+JAC Sehol E40X
+JAC Yiwei 3
+Wuling Starlight
+Wuling Starlight S
+Ora Good Cat
+Ora Good Cat GT
+Nissan Sylphy Zero Emission
+Everus VE-1
+Ciimo M-NV
+Ciimo X-NV
+BYD Song Pro
+BYD Seal 06 DM-i
+BYD Seal 06 GT
+BYD Qin L
+BYD Seal DM-i
+BYD Song L DM-i
+Deepal S07
+Deepal SL03
+Deepal L07
+Deepal S05
+Changan Nevo A07
+Changan UNI-K iDD
+Changan UNI-Z iDD
+Changan UNI-V iDD
+Changan UNI-E
+Leapmotor C11
+Leapmotor C10
+Leapmotor C16
+Leapmotor C01
+Leapmotor B10
+Volkswagen ID.4 Crozz
+Volkswagen ID.4 X
+Volkswagen ID.6 Crozz
+Volkswagen ID.6 X
+Volkswagen ID.7 Vizzion
+Volkswagen ID.UNYX
+Geely Galaxy L7
+Geely Galaxy E8
+Honda e:NS1
+Honda e:NP1
+Honda e:NS2
+Honda e:NP2
+Toyota bZ3
+Toyota bZ3X
+Dongfeng eπ 007
+Dongfeng eπ 008
+Forthing Friday
+Forthing Xinghai S7
+iCAR 03
+iCAR V23
+Chery eQ7
+Chery Fulwin A8
+Chery Fulwin T9
+Chery Fulwin T10
+Jetour Shanhai T2
+Jetour Shanhai L9
+Hongqi EHS3
+XPeng Mona M03
+XPeng P5
+XPeng G3
+XPeng G3i
+GAC Aion V
+GAC Aion V Plus
+GAC Aion LX
+GAC Aion i60
+Arcfox Kaola S
+Arcfox Alpha T5
+Arcfox Alpha S5
+Haval H6 PHEV
+Haval Xiaolong Max
+Haval Raptor
+Wey Mocha DHT-PHEV
+Skywell ET5
+Skywell HT-i
+Weltmeister W6
+Neta S
+Neta GT
+Rising Auto F7
+Rising Auto R7
+Roewe D7
+Roewe Marvel R
+Mazda EZ-6
+Zeekr 007
+Zeekr 7X
+Zeekr Mix
+Li Auto L6
+Li Auto L8
+Li Auto L9
+Li Auto One
+BYD Tang
+BYD Song L EV
+BYD Sealion 07 EV
+BYD Xia
+BYD Atto 8
+BYD Ti7
+FangChengBao Bao 5
+FangChengBao Bao 3
+Denza N7
+Denza N8
+Xiaomi SU7
+Xiaomi YU7
+Avatr 11
+Avatr 12
+Avatr 07
+Aito M5
+Aito M7
+Voyah Free
+Voyah Passion
+Voyah Courage
+Exlantix ES
+Exlantix ET
+Luxeed S7
+Luxeed R7
+IM Motors L6
+IM Motors L7
+IM Motors LS6
+IM Motors LS7
+Nio ET5
+Nio ET5T
+Nio ET7
+Nio ES6
+Nio EC6
+Nio ES7
+Nio EC7
+Nio ES8
+Onvo L60
+XPeng P7
+XPeng P7i
+XPeng G9
+XPeng X9
+Deepal G318
+Tank 400 Hi4-T
+Tank 500 Hi4-T
+Tank 700 Hi4-T
+Jiyue 01
+Jiyue 07
+Hyptec GT
+Hyptec HT
+Lynk & Co Z10
+Lynk & Co Z20
+Lynk & Co 08 EM-P
+Lynk & Co 09 EM-P
+Smart #1
+Smart #3
+Smart #5
+Polestar 2
+Polestar 4
+MG Cyberster
+Tesla Model 3
+Tesla Model Y
+BMW i3 Sedan
+BMW i4
+BMW iX3
+Kia EV5
+Kia EV6
+Kia EV9
+Hyundai Ioniq 5
+Hyundai Ioniq 6
+Audi Q4 e-tron
+Audi Q5 e-tron
+YangWang U8
+YangWang U9
+YangWang U7
+Zeekr 009
+Zeekr 009 Grand
+Zeekr 001 FR
+Zeekr 8X
+Denza Z9 GT
+Denza Z9
+Denza D9
+Denza N9
+FangChengBao Bao 8
+Li Auto Mega
+Aito M9
+Stelato S9
+Maextro S800
+M-Hero 917
+Voyah Dream
+Hongqi E-HS9
+Lotus Eletre
+Lotus Emeya
+HiPhi Z
+HiPhi X
+HiPhi Y
+Xiaomi SU7 Ultra
+Hyptec SSR
+Nio ET9
+Polestar 3
+LEVC L380
+Tesla Cybertruck
+Tesla Model S
+Tesla Model X
+Mercedes-Benz G 580 EQ
+Mercedes-Benz EQS
+Mercedes-Benz EQS SUV
+Mercedes-Benz EQE
+Mercedes-Benz EQE SUV
+Mercedes-Benz EQC
+Mercedes-Benz EQA
+Mercedes-Benz EQB
+Mercedes-Benz Maybach EQS SUV
+Porsche Taycan
+Porsche Macan Electric
+BMW i7
+BMW iX
+BMW i5
+Audi e-tron GT
+Audi RS e-tron GT
+Audi Q8 e-tron
+Audi e-tron S
+GMC Hummer EV
+Rivian R1T
+Rivian R1S
+Cadillac Lyriq
+Cadillac Escalade IQ
+Lucid Air
+Rolls-Royce Spectre

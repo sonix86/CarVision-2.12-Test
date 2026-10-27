@@ -6,6 +6,11 @@ import torch
 from PIL import Image,ImageOps
 from .segmentation import tight_box,encode_mask,polygons,isolate
 
+def model_visibility_limited(row,reasons,clipped):
+    """A validated visible-family decision may survive a border, not poor detail."""
+    clipping_accepted=clipped and row.get('model_clipping_validated',False) and row.get('model_family_accepted',False)
+    return bool(reasons) or (clipped and not clipping_accepted)
+
 def manual_foreground(image):
     import cv2
     a=np.asarray(image);labels=np.zeros(a.shape[:2],dtype=np.uint8)
@@ -17,18 +22,26 @@ def manual_foreground(image):
     return np.ones(a.shape[:2],dtype=bool)
 
 @torch.inference_mode()
-def classify(p,crop,mask):
+def classify(p,crop,mask,illumination_gains=None):
     from .core import COLOURS,heuristic_colour
     focused=isolate(crop,mask);brand='unknown';bp=0.;brand_alternatives=[];brand_source='own make classifier'
-    if p.classifier is not None:
+    # The independent make head owns this decision. Do it before the older
+    # model-name networks so an abstention does not spend CPU producing exact
+    # model guesses that the UI correctly refuses to show.
+    make_evidence=p.make_expert.predict(crop,mask,p.brand_threshold) if getattr(p,'make_expert',None) is not None else None
+    if p.classifier is not None and make_evidence is None:
         def brand_prob(im):
             views=[im,ImageOps.mirror(im)];logits=p.classifier(torch.stack([p.preprocess(v) for v in views]))[0]
             return (logits/p.brand_temperature).softmax(1).mean(0)
         weight=p.mask_fusion['brand_mask_weight'];prob=brand_prob(crop)*(1-weight)+brand_prob(focused)*weight;bp,index=prob.max(0);bp=float(bp);brand=p.brands[int(index)] if bp>=p.brand_threshold else 'unknown'
         brand_alternatives=[dict(brand=p.brands[int(i)],confidence=float(prob[i])) for i in prob.topk(min(3,len(p.brands))).indices]
-    model=dict(model='unknown',model_candidate='unknown',model_confidence=0.,model_alternatives=[])
+    fresh_model=make_evidence.get('model_evidence') if make_evidence else None
+    model=fresh_model if fresh_model is not None else dict(model='unknown',model_candidate='unknown',model_confidence=0.,model_alternatives=[])
     badge=None
-    if p.vehicle_classifier is not None:
+    prob=None
+    model_makes=getattr(p.vehicle_classifier,'brands',None) if p.vehicle_classifier is not None else None
+    model_supported=make_evidence is None or model_makes is None or make_evidence['brand'] in model_makes
+    if fresh_model is None and p.vehicle_classifier is not None and (make_evidence is None or make_evidence['accepted']) and model_supported:
         weight=p.mask_fusion['model_mask_weight'];prob=p.vehicle_classifier.probabilities(crop,p.classifier,p.preprocess)*(1-weight)+p.vehicle_classifier.probabilities(focused,p.classifier,p.preprocess)*weight
         badge_detector=getattr(p.vehicle_classifier,'badge_evidence',None)
         if badge_detector is not None:
@@ -62,12 +75,22 @@ def classify(p,crop,mask):
             brand=body_make;bp=body_make_confidence
             brand_alternatives=[dict(brand=b,confidence=score) for b,score in sorted(make_scores.items(),key=lambda item:item[1],reverse=True)[:3]]
             model=p.vehicle_classifier.describe(prob,brand);brand_source='own body-detail expert, high-confidence calibrated correction of older make head'
+    if make_evidence is not None:
+        brand=make_evidence['brand'];bp=make_evidence['confidence']
+        brand_alternatives=make_evidence['alternatives'];brand_source=make_evidence['source']
+        if p.vehicle_classifier is not None and prob is not None:model=p.vehicle_classifier.describe(prob,brand)
+        if make_evidence['accepted']:
+            from .make_expert import model_details_for_make
+            model=model_details_for_make(model,brand)
+        else:
+            model['model']='unknown';model['model_alternatives']=[]
+            model['model_reason']='Марка не подтверждена; точная модель не вычислялась. Показаны варианты марки.'
     # A make head and a model head have different score distributions. Never
     # present one make as settled while the displayed leading model disagrees.
     classifier_brand=brand;classifier_brand_confidence=bp
     conflict=bool(brand!='unknown' and model.get('model_candidate_brand')
                   and model['model_candidate_brand']!=brand)
-    if conflict:
+    if conflict and not (make_evidence and make_evidence['accepted']):
         brand='unknown';model['model']='unknown'
         brand_source='conflicting make and model evidence; abstained'
     colour,cp=heuristic_colour(focused);source='foreground HSV fallback';threshold=p.colour_reliability_threshold
@@ -75,9 +98,12 @@ def classify(p,crop,mask):
         prob=p.colour_classifier.probabilities(focused);source='own colour head on isolated visible instance'
         if p.masked_colour is not None:
             prob=p.masked_colour.blend(prob,p.masked_colour.probabilities(crop,mask));threshold=p.masked_colour.threshold;source='own source-labelled visible-paint head + isolated-instance colour evidence'
+        illumination=getattr(p,'illumination_colour',None)
+        if illumination is not None:
+            prob=illumination.blend(prob,illumination.probabilities(crop,mask,illumination_gains));threshold=illumination.threshold;source='own paint head with scene neutral-illumination evidence'
         cp,index=prob.max(0);cp=float(cp);colour=COLOURS[int(index)];alternatives=[dict(colour=COLOURS[int(i)],confidence=float(prob[i])) for i in prob.topk(2).indices]
     else:alternatives=[dict(colour=colour,confidence=cp)]
-    return dict(brand=brand,brand_confidence=bp,brand_alternatives=brand_alternatives,brand_source=brand_source,brand_model_conflict=conflict,classifier_brand=classifier_brand,classifier_brand_confidence=classifier_brand_confidence,badge_evidence=badge,**model,colour=colour,colour_confidence=cp,colour_reliable=cp>=threshold,colour_alternatives=alternatives,colour_source=source)
+    return dict(brand=brand,brand_confidence=bp,brand_alternatives=brand_alternatives,brand_source=brand_source,brand_model_conflict=conflict,classifier_brand=classifier_brand,classifier_brand_confidence=classifier_brand_confidence,badge_evidence=badge,make_evidence=make_evidence,make_first=make_evidence is not None,**model,colour=colour,colour_confidence=cp,colour_reliable=cp>=threshold,colour_alternatives=alternatives,colour_source=source)
 
 @torch.inference_mode()
 def predict_instances(p,original,path,region,single,started):
@@ -98,19 +124,28 @@ def predict_instances(p,original,path,region,single,started):
             if records:records=[max(records,key=lambda r:(lambda b:(b[2]-b[0])*(b[3]-b[1]))(tight_box(r['mask']))*r['score'])]
             else:
                 mask=manual_foreground(work);records=[dict(mask=mask,score=None,label=3,approximate=True)];warnings.append('No COCO car mask in selected region; approximate GrabCut foreground used. The selected object may not be a car.')
-    sx=image.width/work.width;sy=image.height/work.height;result=[]
+    sx=image.width/work.width;sy=image.height/work.height;result=[];illumination_gains=None
+    if getattr(p,'illumination_colour',None) is not None:
+        from .illumination_colour import scene_gains
+        union=np.zeros((work.height,work.width),dtype=bool)
+        for record in records:union|=record['mask']
+        illumination_gains=scene_gains(work,union)
     for record in records:
         mask=record['mask'];box=tight_box(mask)
         if box is None:continue
         x,y,r,b=box;global_box=[round(x*sx+offset[0]),round(y*sy+offset[1]),round(r*sx+offset[0]),round(b*sy+offset[1])]
-        local=mask[y:b,x:r];crop=original.crop(global_box);crop.thumbnail((640,640));cm=np.asarray(Image.fromarray(local).resize(crop.size,Image.Resampling.NEAREST));row=classify(p,crop,cm)
+        local=mask[y:b,x:r];crop=original.crop(global_box);crop.thumbnail((640,640));cm=np.asarray(Image.fromarray(local).resize(crop.size,Image.Resampling.NEAREST));row=classify(p,crop,cm,illumination_gains)
         from .visual_parts import quality_of_fragment
         reasons=quality_of_fragment(local)
-        if global_box[0]<=1 or global_box[1]<=1 or global_box[2]>=original.width-1 or global_box[3]>=original.height-1:
-            reasons.append('Машина обрезана границей фотографии: показаны варианты без подтверждения модели.')
-        row['visual_limitations']=reasons;row['model_limited']=bool(reasons)
-        if reasons:
-            row['brand_candidate']=row['brand'];row['brand']='unknown';row['model']='unknown'
+        clipped=global_box[0]<=1 or global_box[1]<=1 or global_box[2]>=original.width-1 or global_box[3]>=original.height-1
+        clipping_accepted=clipped and not reasons and row.get('model_clipping_validated',False) and row.get('model_family_accepted',False)
+        row['model_limited']=model_visibility_limited(row,reasons,clipped)
+        if clipped:reasons.append('Кузов частично обрезан границей фото; модель прошла проверку по видимой части.' if clipping_accepted else 'Машина обрезана границей фотографии: показаны варианты без подтверждения модели.')
+        row['visual_limitations']=reasons
+        if row['model_limited']:
+            row['model']='unknown'
+            if not (row.get('make_evidence') or {}).get('accepted'):
+                row['brand_candidate']=row['brand'];row['brand']='unknown'
         elif row.get('reference_comparison') and not row.get('model_reason') and row['brand']!='unknown' and row.get('model_candidate_brand')!=row['brand'] and row.get('model_confidence',0)>=.5:
             row['brand_candidate']=row['brand'];row['brand']='unknown';row['model']='unknown';row['visual_limitations']=['Классификатор марки и сравнение деталей расходятся: название не подтверждено.']
         encoded=encode_mask(local,global_box[:2]);encoded['scale']=[(global_box[2]-global_box[0])/local.shape[1],(global_box[3]-global_box[1])/local.shape[0]]
@@ -119,8 +154,8 @@ def predict_instances(p,original,path,region,single,started):
     result.sort(key=lambda r:(r['box'][1],r['box'][0]))
     for i,row in enumerate(result,1):row['id']=i
     warnings.append('Contours describe visible pixels, not reconstructed hidden vehicle parts. Unrepresented models and strong occlusion can still produce wrong candidates.')
-    supported=sorted(set(p.brands)|set(getattr(getattr(p,'vehicle_classifier',None),'brands',[])))
-    return dict(image=path,cars=result,seconds=round(time.perf_counter()-started,3),classifier_trained=p.classifier is not None,supported_brands=supported,mode=p.mode,region=region,single_car_region=single,detector_views=views,segmented=True,warnings=warnings)
+    supported=sorted(set(p.brands)|set(getattr(getattr(p,'vehicle_classifier',None),'brands',[]))|set(getattr(getattr(p,'make_expert',None),'brands',[])))
+    return dict(image=path,cars=result,seconds=round(time.perf_counter()-started,3),classifier_trained=p.classifier is not None,supported_brands=supported,mode=p.mode,region=region,single_car_region=single,detector_views=views,segmented=True,warnings=warnings,runtime_identity=getattr(p,'runtime_identity',None))
 
 def merge_prediction(p,original,prediction,ids):
     """Explicit user correction: union existing visible pixels, then reclassify.

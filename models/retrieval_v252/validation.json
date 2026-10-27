@@ -1,0 +1,134 @@
+{
+  "passed": false,
+  "selected": null,
+  "candidates": [
+    {
+      "k": 3,
+      "alpha": 0.5,
+      "beta": 50,
+      "metrics": {
+        "whole": {
+          "top1": 0.7653213739395142,
+          "historical": 0.8779342770576477,
+          "macro": 0.6940287947654724
+        },
+        "phone": {
+          "top1": 0.6517189741134644,
+          "historical": 0.7746478915214539,
+          "macro": 0.5792685151100159
+        }
+      },
+      "priority_macro": 0.9047626256942749,
+      "score": 0.7342968881130219,
+      "guard": true,
+      "priority_enabled": {
+        "BYD": true,
+        "Zeekr": true,
+        "Li Auto": false,
+        "Chevrolet": true,
+        "Toyota": true
+      },
+      "confirmed_views": 626,
+      "confirmed_precision": 0.9680511355400085,
+      "eligible": false
+    },
+    {
+      "k": 3,
+      "alpha": 0.75,
+      "beta": 50,
+      "metrics": {
+        "whole": {
+          "top1": 0.7473841309547424,
+          "historical": 0.8544601202011108,
+          "macro": 0.6802915930747986
+        },
+        "phone": {
+          "top1": 0.6203288435935974,
+          "historical": 0.7417840361595154,
+          "macro": 0.5422475934028625
+        }
+      },
+      "priority_macro": 0.8603147268295288,
+      "score": 0.7066897332668305,
+      "guard": true,
+      "priority_enabled": {
+        "BYD": true,
+        "Zeekr": true,
+        "Li Auto": false,
+        "Chevrolet": true,
+        "Toyota": true
+      },
+      "confirmed_views": 621,
+      "confirmed_precision": 0.9613526463508606,
+      "eligible": false
+    },
+    {
+      "k": 8,
+      "alpha": 0.5,
+      "beta": 50,
+      "metrics": {
+        "whole": {
+          "top1": 0.7742899656295776,
+          "historical": 0.8873239159584045,
+          "macro": 0.7057919502258301
+        },
+        "phone": {
+          "top1": 0.6591928005218506,
+          "historical": 0.8028169274330139,
+          "macro": 0.5774864554405212
+        }
+      },
+      "priority_macro": 0.9100257754325867,
+      "score": 0.7414009988307952,
+      "guard": true,
+      "priority_enabled": {
+        "BYD": true,
+        "Zeekr": true,
+        "Li Auto": false,
+        "Chevrolet": true,
+        "Toyota": true
+      },
+      "confirmed_views": 575,
+      "confirmed_precision": 0.9721739292144775,
+      "eligible": false
+    },
+    {
+      "k": 8,
+      "alpha": 0.75,
+      "beta": 50,
+      "metrics": {
+        "whole": {
+          "top1": 0.7668161392211914,
+          "historical": 0.8920187950134277,
+          "macro": 0.6946553587913513
+        },
+        "phone": {
+          "top1": 0.6412556171417236,
+          "historical": 0.7746478915214539,
+          "macro": 0.558870255947113
+        }
+      },
+      "priority_macro": 0.9141744375228882,
+      "score": 0.7333540618419647,
+      "guard": true,
+      "priority_enabled": {
+        "BYD": true,
+        "Zeekr": true,
+        "Li Auto": false,
+        "Chevrolet": true,
+        "Toyota": true
+      },
+      "confirmed_views": 563,
+      "confirmed_precision": 0.9715808033943176,
+      "eligible": false
+    }
+  ],
+  "source_model_sha256": "e551618022d002022b70dd36c45953b6b0854142b2d9f8ff5a1080b113510a93",
+  "gradient_training_rounds": 0,
+  "train_reference_images": 2072,
+  "train_reference_groups": 1462,
+  "validation_images": 669,
+  "user_errors_used": false,
+  "test_used_for_selection": false,
+  "seconds": 1.1750938892364502
+}

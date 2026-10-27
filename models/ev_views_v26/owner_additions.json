@@ -1,0 +1,122 @@
+[
+  {
+    "image": "798f90807dd627be1905.jpg",
+    "box": [
+      98,
+      210,
+      887,
+      929
+    ],
+    "brand": "GAC Aion",
+    "colour": "white",
+    "source": "D:\\машинки\\photo_79_2026-10-25_20-44-40.jpg",
+    "original_sha256": "798f90807dd627be190511d02d5ad582b5ba5c1689e51d446f029dfa9d89b43c",
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "label_source": "Assistant full-resolution visible-emblem review; not independently human-certified",
+    "status": "additional_v26_reviewed_make_only",
+    "exclude_from_independent_evaluation": true,
+    "model": "unknown",
+    "review": "Clear GAC emblem; Aion S exterior, exact variant not certified"
+  },
+  {
+    "image": "6ce7d5f3545edc23de6b.jpg",
+    "box": [
+      371,
+      462,
+      960,
+      1020
+    ],
+    "brand": "Li Auto",
+    "colour": "grey",
+    "source": "D:\\машинки\\photo_80_2026-10-25_20-44-40.jpg",
+    "original_sha256": "6ce7d5f3545edc23de6bdcfa849f521a6830b9d6d7585479b2f9c4d3f309dae7",
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "label_source": "Assistant full-resolution visible-emblem review; not independently human-certified",
+    "status": "additional_v26_reviewed_make_only",
+    "exclude_from_independent_evaluation": true,
+    "model": "unknown",
+    "review": "Li emblem on bonnet; foreground SUV only"
+  },
+  {
+    "image": "2e165cd91ee18410061c.jpg",
+    "box": [
+      259,
+      218,
+      875,
+      803
+    ],
+    "brand": "Leapmotor",
+    "colour": "white",
+    "source": "D:\\машинки\\photo_83_2026-10-25_20-44-40.jpg",
+    "original_sha256": "2e165cd91ee18410061c5f934ebe13fa9014c651323986296d6f86b79f35e28a",
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "label_source": "Assistant full-resolution visible-emblem review; not independently human-certified",
+    "status": "additional_v26_reviewed_make_only",
+    "exclude_from_independent_evaluation": true,
+    "model": "unknown",
+    "review": "Clear Leapmotor emblem on bonnet"
+  },
+  {
+    "image": "c0b64454b69567e5bdab.jpg",
+    "box": [
+      178,
+      142,
+      679,
+      729
+    ],
+    "brand": "BYD",
+    "colour": "grey",
+    "source": "D:\\машинки\\photo_90_2026-10-25_20-44-40.jpg",
+    "original_sha256": "c0b64454b69567e5bdab95fb1f51008c4c60766519cf9289e6048f883c4900dd",
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "label_source": "Assistant full-resolution visible-emblem review; not independently human-certified",
+    "status": "additional_v26_reviewed_make_only",
+    "exclude_from_independent_evaluation": true,
+    "model": "unknown",
+    "review": "BYD lettering across front trim"
+  },
+  {
+    "image": "c87367215fa9df7e1901.jpg",
+    "box": [
+      377,
+      340,
+      960,
+      1100
+    ],
+    "brand": "BYD",
+    "colour": "black",
+    "source": "D:\\машинки\\photo_93_2026-10-25_20-44-40.jpg",
+    "original_sha256": "c87367215fa9df7e1901c4881daa3b619caf7b44353d4eaa43df22687418d36a",
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "label_source": "Assistant full-resolution visible-emblem review; not independently human-certified",
+    "status": "additional_v26_reviewed_make_only",
+    "exclude_from_independent_evaluation": true,
+    "model": "unknown",
+    "review": "BYD lettering on rear; different vehicle from locked photo5"
+  },
+  {
+    "image": "fd1976bcf563a8c75c19.jpg",
+    "box": [
+      177,
+      330,
+      842,
+      925
+    ],
+    "brand": "BYD",
+    "colour": "white",
+    "source": "D:\\машинки\\photo_99_2026-10-25_20-44-40.jpg",
+    "original_sha256": "fd1976bcf563a8c75c192443f33c88916e18089b4fe4ab87ff203e4f80bdb3fc",
+    "group": "owner-phone-outing-2026-10-25",
+    "split": "train",
+    "label_source": "Assistant full-resolution visible-emblem review; not independently human-certified",
+    "status": "additional_v26_reviewed_make_only",
+    "exclude_from_independent_evaluation": true,
+    "model": "unknown",
+    "review": "BYD rear lettering in night photo; motion blur retained"
+  }
+]

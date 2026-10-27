@@ -1,0 +1,616 @@
+{
+  "selected": true,
+  "epochs": 150,
+  "baseline_whole": 0.9437500238418579,
+  "baseline_stress": 0.7124999761581421,
+  "history": [
+    {
+      "epoch": 1,
+      "selected_epoch": 1
+    },
+    {
+      "epoch": 2,
+      "selected_epoch": 2
+    },
+    {
+      "epoch": 3,
+      "selected_epoch": 3
+    },
+    {
+      "epoch": 4,
+      "selected_epoch": 4
+    },
+    {
+      "epoch": 5,
+      "selected_epoch": 4
+    },
+    {
+      "epoch": 6,
+      "selected_epoch": 4
+    },
+    {
+      "epoch": 7,
+      "selected_epoch": 4
+    },
+    {
+      "epoch": 8,
+      "selected_epoch": 8
+    },
+    {
+      "epoch": 9,
+      "selected_epoch": 8
+    },
+    {
+      "epoch": 10,
+      "selected_epoch": 8
+    },
+    {
+      "epoch": 11,
+      "selected_epoch": 8
+    },
+    {
+      "epoch": 12,
+      "selected_epoch": 8
+    },
+    {
+      "epoch": 13,
+      "selected_epoch": 8
+    },
+    {
+      "epoch": 14,
+      "selected_epoch": 8
+    },
+    {
+      "epoch": 15,
+      "selected_epoch": 8
+    },
+    {
+      "epoch": 16,
+      "selected_epoch": 8
+    },
+    {
+      "epoch": 17,
+      "selected_epoch": 8
+    },
+    {
+      "epoch": 18,
+      "selected_epoch": 8
+    },
+    {
+      "epoch": 19,
+      "selected_epoch": 8
+    },
+    {
+      "epoch": 20,
+      "selected_epoch": 8
+    },
+    {
+      "epoch": 21,
+      "selected_epoch": 8
+    },
+    {
+      "epoch": 22,
+      "selected_epoch": 8
+    },
+    {
+      "epoch": 23,
+      "selected_epoch": 8
+    },
+    {
+      "epoch": 24,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 25,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 26,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 27,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 28,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 29,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 30,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 31,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 32,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 33,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 34,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 35,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 36,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 37,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 38,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 39,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 40,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 41,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 42,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 43,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 44,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 45,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 46,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 47,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 48,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 49,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 50,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 51,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 52,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 53,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 54,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 55,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 56,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 57,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 58,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 59,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 60,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 61,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 62,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 63,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 64,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 65,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 66,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 67,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 68,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 69,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 70,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 71,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 72,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 73,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 74,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 75,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 76,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 77,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 78,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 79,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 80,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 81,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 82,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 83,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 84,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 85,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 86,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 87,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 88,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 89,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 90,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 91,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 92,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 93,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 94,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 95,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 96,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 97,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 98,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 99,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 100,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 101,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 102,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 103,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 104,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 105,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 106,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 107,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 108,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 109,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 110,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 111,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 112,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 113,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 114,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 115,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 116,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 117,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 118,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 119,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 120,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 121,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 122,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 123,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 124,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 125,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 126,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 127,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 128,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 129,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 130,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 131,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 132,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 133,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 134,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 135,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 136,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 137,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 138,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 139,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 140,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 141,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 142,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 143,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 144,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 145,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 146,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 147,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 148,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 149,
+      "selected_epoch": 24
+    },
+    {
+      "epoch": 150,
+      "selected_epoch": 24
+    }
+  ],
+  "test_used_for_selection": false,
+  "weight": 0.5,
+  "whole": 0.9312499761581421,
+  "stress": 0.8687499761581421,
+  "epoch": 24,
+  "temperature": 1.0,
+  "calibrated_whole": 0.9312499761581421,
+  "calibrated_stress": 0.8687499761581421
+}

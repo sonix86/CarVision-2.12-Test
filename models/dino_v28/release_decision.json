@@ -1,0 +1,12 @@
+{
+  "new_make_promoted": false,
+  "new_colour_promoted": false,
+  "finite_two_make_fits_complete": true,
+  "finite_two_colour_fits_complete": true,
+  "make_rejection": "Heldout confirmation-count guard failed on synthetic-phone (445 correct confirmations vs446 baseline), and known GAC Aion/Haval errors not fixed. No threshold relaxation or candidate reselection.",
+  "colour_rejection": "Neither fixed candidate satisfied whole-validation nonregression and >=2pp synthetic-stress gain.",
+  "app_unchanged": "outputs/CarVision-2.6-Full/CarVision",
+  "known_error_review_is_not_independent_test": true,
+  "all_requested_vehicles_solved": false,
+  "more_v28_fits_allowed": false
+}

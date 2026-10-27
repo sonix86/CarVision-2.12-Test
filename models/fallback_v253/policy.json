@@ -1,0 +1,14 @@
+{
+  "k": 8,
+  "alpha": 0.5,
+  "beta": 50.0,
+  "selection": "Fixed best prior validation-scoring reference mixture; only fills v25 abstentions",
+  "minimum_new_groups": 3,
+  "minimum_new_precision": 0.95,
+  "minimum_new_accepted": 20,
+  "minimum_overall_precision": 0.95,
+  "gradient_fits": 0,
+  "test_used_for_selection": false,
+  "user_diagnostics_used_for_selection": false,
+  "no_more_parameter_searches": true
+}

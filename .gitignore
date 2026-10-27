@@ -22,3 +22,27 @@ data/regional/images/
 dist-v18/
 dist-v19/
 /dist-v*/
+
+# Release payloads are served from GitHub Releases, not ordinary Git.
+.publication/
+.release-downloads/
+Development/
+datasets/
+*.exe
+*.dll
+*.download
+*.zip.*
+*.env
+.env*
+**/images/
+**/*.jpg
+**/*.jpeg
+**/*.png
+**/*.pt
+**/*.pth
+**/*.parquet
+**/*.bin
+
+!/outputs/
+/outputs/*
+!/outputs/.gitkeep

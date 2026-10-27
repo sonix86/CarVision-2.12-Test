@@ -1,0 +1,38 @@
+{
+  "rounds_max": 2,
+  "epochs_each": 3,
+  "encoder_learning_rates": [
+    1e-05,
+    3e-05
+  ],
+  "priority_makes": [
+    "BYD",
+    "Li Auto",
+    "Zeekr",
+    "GAC Aion",
+    "Haval",
+    "Geely",
+    "Geometry",
+    "Deepal",
+    "Leapmotor",
+    "Neta",
+    "XPeng",
+    "Changan",
+    "Weltmeister",
+    "Voyah",
+    "Nio",
+    "Honda",
+    "Toyota"
+  ],
+  "mandatory_makes": [
+    "BYD",
+    "Li Auto",
+    "Zeekr",
+    "Chevrolet",
+    "Toyota"
+  ],
+  "selection": "Validation only; historical tolerance 1pp, whole and synthetic-phone top1 nondecrease, priority macro +1pp, >=95% confirmation precision and correct confirmations nondecrease. Preserve existing groups/splits. Two fits of three epochs; no additional searches.",
+  "test": "Only after validation passes; one evaluation of the fixed candidate on reused public test. No blind-phone accuracy claim.",
+  "owner_corrections": "Known user error labels remain development diagnostics, never fit or select on them in this iteration.",
+  "production": "Do not modify sealed archives or running 2.6; promote only after gates and real error review. No claim of all requested vehicles supported."
+}

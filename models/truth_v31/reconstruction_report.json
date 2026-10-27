@@ -1,0 +1,33 @@
+{
+  "passed": false,
+  "baseline_public_validation": [
+    0.9308755993843079,
+    0.8847926259040833
+  ],
+  "rounds": [
+    {
+      "round": 1,
+      "passed": false,
+      "selected": null,
+      "final_training_fit": 1.0,
+      "final_training_min_confidence": 0.9626848697662354,
+      "final_public_validation": [
+        0.9308755993843079,
+        0.8801843523979187
+      ]
+    },
+    {
+      "round": 2,
+      "passed": false,
+      "selected": null,
+      "final_training_fit": 1.0,
+      "final_training_min_confidence": 0.9689323902130127,
+      "final_public_validation": [
+        0.9308755993843079,
+        0.8801843523979187
+      ]
+    }
+  ],
+  "owner_examples_are_train": true,
+  "test_used": false
+}

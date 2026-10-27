@@ -22,6 +22,11 @@ class Cars(Dataset):
         return self.transform(read_image(r['path']).crop(r['box'])),self.brands.index(r['brand']),COLOURS.index(r['colour'])
 
 def train(args):
+    # A new personal MobileNet head is not compatible with older specialist
+    # heads, which take priority during inference and would hide the new model.
+    directory=Path(args.output)
+    stale=[name for name in ('dino_make.pt','semantic_make.pt','make_expert.pt','vehicle_model.pt') if (directory/name).exists()]
+    if stale:raise ValueError('Папка результата содержит расширенные модели: '+', '.join(stale)+'. Выберите новую отдельную папку через --output; иначе прежние модели могут перекрыть результат обучения.')
     torch.set_num_threads(4)
     random.seed(args.seed); np.random.seed(args.seed); torch.manual_seed(args.seed)
     rows=load_records(args.labels); tr,va=split_records(rows,args.seed)

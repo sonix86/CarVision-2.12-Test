@@ -1,0 +1,5 @@
+{
+  "reason": "New calibration disabled some existing common classes because current validation support is limited. Evaluate exact original production gates and temperature, never lower gates; same two weight candidates, no extra training. Validation ablation declared after first validation failures, before any test. Not a predeclared success or independent result.",
+  "test_used": false,
+  "rounds": []
+}

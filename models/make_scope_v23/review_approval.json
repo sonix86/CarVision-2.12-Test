@@ -1,0 +1,6 @@
+{
+  "reviewed": true,
+  "dataset_sha256": "819a606a054891b1e56047d25d41d650ef80841cb59f6e30906b657266ab1005",
+  "source_model_sha256": "9c5ba7e381a4e9d8bfc0f704d6857c18a027e4a9882c01ceb83217c52ae443d5",
+  "review": "Stable-ID contact sheets visually inspected; 90 exclusions; exact family names provisional; no heldout accuracy inspected"
+}

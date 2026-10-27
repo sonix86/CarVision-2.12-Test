@@ -1,0 +1,11 @@
+{
+  "rows": 3837,
+  "replaced_private": 15,
+  "refreshed_private": 39,
+  "new_private": 24,
+  "public_records_unchanged": true,
+  "all_private_augmentation_train_only": true,
+  "known_errors_now_train": true,
+  "disputed_GAC_labels_excluded": true,
+  "dataset_sha256": "d96a8e3fdc0ba00d78be2fac2dae319548a66609974ba9f88064868d26f16a37"
+}

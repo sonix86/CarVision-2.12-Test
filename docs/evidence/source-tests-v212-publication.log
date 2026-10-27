@@ -1,0 +1,11 @@
+FINETUNE {"epoch": 1, "score": 0.5, "guard": true, "metrics": {"whole": {"all": {"top1": 0.5, "macro": 0.5}, "historical": {"top1": 0.5, "macro": 0.5}}, "phone": {"all": {"top1": 0.5, "macro": 0.5}, "historical": {"top1": 0.5, "macro": 0.5}}, "upper": {"all": {"top1": 0.5, "macro": 0.5}, "historical": {"top1": 0.5, "macro": 0.5}}}}
+FINETUNE {"epoch": 2, "score": 0.5, "guard": true, "metrics": {"whole": {"all": {"top1": 0.5, "macro": 0.5}, "historical": {"top1": 0.5, "macro": 0.5}}, "phone": {"all": {"top1": 0.5, "macro": 0.5}, "historical": {"top1": 0.5, "macro": 0.5}}, "upper": {"all": {"top1": 0.5, "macro": 0.5}, "historical": {"top1": 0.5, "macro": 0.5}}}}
+FINETUNE {"epoch": 3, "score": 0.5, "guard": true, "metrics": {"whole": {"all": {"top1": 0.5, "macro": 0.5}, "historical": {"top1": 0.5, "macro": 0.5}}, "phone": {"all": {"top1": 0.5, "macro": 0.5}, "historical": {"top1": 0.5, "macro": 0.5}}, "upper": {"all": {"top1": 0.5, "macro": 0.5}, "historical": {"top1": 0.5, "macro": 0.5}}}}
+FINETUNE {"epoch": 4, "score": 0.25, "guard": true, "metrics": {"whole": {"all": {"top1": 0.0, "macro": 0.0}, "historical": {"top1": 0.0, "macro": 0.0}}, "phone": {"all": {"top1": 0.5, "macro": 0.5}, "historical": {"top1": 0.5, "macro": 0.5}}, "upper": {"all": {"top1": 0.5, "macro": 0.5}, "historical": {"top1": 0.5, "macro": 0.5}}}}
+FINETUNE {"epoch": 5, "score": 0.5, "guard": true, "metrics": {"whole": {"all": {"top1": 0.5, "macro": 0.5}, "historical": {"top1": 0.5, "macro": 0.5}}, "phone": {"all": {"top1": 0.5, "macro": 0.5}, "historical": {"top1": 0.5, "macro": 0.5}}, "upper": {"all": {"top1": 0.5, "macro": 0.5}, "historical": {"top1": 0.5, "macro": 0.5}}}}
+FINETUNE {"epoch": 6, "score": 0.5, "guard": true, "metrics": {"whole": {"all": {"top1": 0.5, "macro": 0.5}, "historical": {"top1": 0.5, "macro": 0.5}}, "phone": {"all": {"top1": 0.5, "macro": 0.5}, "historical": {"top1": 0.5, "macro": 0.5}}, "upper": {"all": {"top1": 0.5, "macro": 0.5}, "historical": {"top1": 0.5, "macro": 0.5}}}}
+........................................................................................................................................................
+----------------------------------------------------------------------
+Ran 152 tests in 14.425s
+
+OK

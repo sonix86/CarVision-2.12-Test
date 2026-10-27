@@ -1,0 +1,132 @@
+{
+  "reason": "New calibration disabled some existing common classes because current validation support is limited. Evaluate exact original production gates and temperature, never lower gates; same two weight candidates, no extra training. Validation ablation declared after first validation failures, before any test. Not a predeclared success or independent result.",
+  "test_used": false,
+  "rounds": [
+    {
+      "round": 1,
+      "checks": {
+        "known_train_originals_correct": false,
+        "precision": false,
+        "confirmed": false,
+        "top1": true
+      },
+      "passed": false,
+      "metrics": {
+        "whole": {
+          "top1": 0.8053977489471436,
+          "historical": 0.9014084339141846,
+          "macro": 0.737401008605957,
+          "priority_macro": 0.7588046193122864,
+          "confirmed": 431,
+          "correct_confirmed": 424,
+          "precision": 0.9837586879730225
+        },
+        "phone": {
+          "top1": 0.7272727489471436,
+          "historical": 0.8497652411460876,
+          "macro": 0.6413334608078003,
+          "priority_macro": 0.6122926473617554,
+          "confirmed": 335,
+          "correct_confirmed": 327,
+          "precision": 0.9761193990707397
+        }
+      },
+      "train": [
+        {
+          "brand": "Zeekr",
+          "accepted": true,
+          "candidate": "Zeekr"
+        },
+        {
+          "brand": "Leapmotor",
+          "accepted": true,
+          "candidate": "Leapmotor"
+        },
+        {
+          "brand": "Chevrolet",
+          "accepted": true,
+          "candidate": "Chevrolet"
+        },
+        {
+          "brand": "Voyah",
+          "accepted": false,
+          "candidate": "Voyah"
+        },
+        {
+          "brand": "Chevrolet",
+          "accepted": true,
+          "candidate": "Chevrolet"
+        },
+        {
+          "brand": "BYD",
+          "accepted": true,
+          "candidate": "BYD"
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "checks": {
+        "known_train_originals_correct": false,
+        "precision": false,
+        "confirmed": false,
+        "top1": true
+      },
+      "passed": false,
+      "metrics": {
+        "whole": {
+          "top1": 0.8068181872367859,
+          "historical": 0.9014084339141846,
+          "macro": 0.7382041215896606,
+          "priority_macro": 0.750471293926239,
+          "confirmed": 430,
+          "correct_confirmed": 424,
+          "precision": 0.9860464930534363
+        },
+        "phone": {
+          "top1": 0.7230113744735718,
+          "historical": 0.8309859037399292,
+          "macro": 0.6423970460891724,
+          "priority_macro": 0.5880844593048096,
+          "confirmed": 336,
+          "correct_confirmed": 327,
+          "precision": 0.9732142686843872
+        }
+      },
+      "train": [
+        {
+          "brand": "Zeekr",
+          "accepted": true,
+          "candidate": "Zeekr"
+        },
+        {
+          "brand": "Leapmotor",
+          "accepted": true,
+          "candidate": "Leapmotor"
+        },
+        {
+          "brand": "Chevrolet",
+          "accepted": true,
+          "candidate": "Chevrolet"
+        },
+        {
+          "brand": "Voyah",
+          "accepted": false,
+          "candidate": "Voyah"
+        },
+        {
+          "brand": "Chevrolet",
+          "accepted": true,
+          "candidate": "Chevrolet"
+        },
+        {
+          "brand": "BYD",
+          "accepted": true,
+          "candidate": "BYD"
+        }
+      ]
+    }
+  ],
+  "passed": false,
+  "selected": null
+}

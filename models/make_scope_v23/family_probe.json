@@ -1,0 +1,7 @@
+{
+  "source_manifest_sha256": "b97fdf0582d5ae8b541b4d42670dfbbc6ddbf3cae7c41bab92291e3f098564f5",
+  "families": [],
+  "groups": [],
+  "family_annotation_requirement": "Explicit family_verified labels required. Make-only reviews cannot establish unseen-family generalization.",
+  "policy": "Conservative family groups by first model-name token, so sibling trims are not separately called unseen. Six supplementary Stanford makes excluded because their exact training families are unavailable. All new author/date sessions containing a chosen group held out across brands. No historical split moved. Fixed before fitting, never chosen by test accuracy."
+}
