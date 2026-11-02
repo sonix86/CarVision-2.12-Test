@@ -1,0 +1,6 @@
+[PASS] Included trained weights match the handoff manifest.
+[CHECK] help
+[CHECK] predict
+[CHECK] region
+PASS - EXE, trained weights, prediction, region and exports work on this computer.
+Result: D:\Projects\TashkentCarVision\outputs\phone-patch-check\CarVision\outputs\transfer-selfcheck\20261102-141937-605\SELF_CHECK_RESULT.json

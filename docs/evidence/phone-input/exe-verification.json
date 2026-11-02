@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "scope": "Windows EXE, PATH excludes Python, local HTTP upload, real offline model, preview, direct/phone answer parity on the identical normalised image. Known development photo; not independent accuracy or a physical phone/camera/USB test.",
+  "phone_seconds": 4.193,
+  "direct_seconds": 4.275,
+  "answers": [
+    [
+      1,
+      "unknown",
+      "black",
+      "unknown"
+    ],
+    [
+      2,
+      "Zeekr",
+      "grey",
+      "unknown"
+    ]
+  ],
+  "preview_bytes": 780335,
+  "weights_identity": {
+    "build_version": "2.12 PHONE",
+    "weights_version": "2.12 PHONE",
+    "model_directory": "D:\\Projects\\TashkentCarVision\\outputs\\phone-patch-check\\CarVision\\models",
+    "active_head_file": "dino_make.pt",
+    "active_head_sha256": "c1b01c33d55e163815734ba8c37810da97ac02bba0f9d042519635815d9fac14",
+    "family_labels": 43,
+    "paired_clip_sha256": "94a67eb9cc5f52e89cc309bdec66a027b2b7818219f121f4a0fe1023bf547f23"
+  }
+}

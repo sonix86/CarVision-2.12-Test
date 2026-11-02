@@ -27,6 +27,7 @@ class App:
         self.events=queue.Queue();self.pipeline=None;self.image=None;self.path=None;self.result=None;self.busy=False;self.process=None;self.closed=False;self.cancelled=False
         self.label_image=None;self.box=None;self.start=None;self.label_rows=[];self.undo_rows=[];self.transforms={};self.resize_job=None;self.buttons={}
         self.region=None;self.region_start=None;self.zoom_window=None;self.before_merge=None
+        self.phone_receiver=None;self.phone_window=None;self.phone_job=None
         style=ttk.Style();style.theme_use('clam');style.configure('.',font=('Segoe UI',10))
         style.configure('TFrame',background=BG);style.configure('TLabel',background=BG,foreground=INK)
         style.configure('Title.TLabel',font=('Segoe UI',24,'bold'));style.configure('Muted.TLabel',foreground=MUTED)
@@ -79,6 +80,7 @@ class App:
         view=self.views['infer'];bar=ttk.Frame(view);bar.pack(fill='x')
         self.button(bar,'open','Открыть фото',self.open_infer,True,side='left')
         self.button(bar,'samples','Примеры фото',lambda:self.open_infer(ROOT/'samples'),side='left',padx=7)
+        self.button(bar,'phone','С телефона',self.open_phone,side='left',padx=(0,7))
         self.button(bar,'choose_region','Выбрать зону мышью',self.choose_region,side='left')
         self.button(bar,'clear_region','Вся фотография',self.clear_region,side='left',padx=7)
         self.scope=tk.StringVar(value=SCOPES[0]);self.region_hint=tk.StringVar(value='Обведите нужную машину или распознайте всё фото. Цветные контуры различают машины; цвет кузова указан справа.')
@@ -361,6 +363,52 @@ class App:
             if selected and self.result:
                 row=next(r for r in self.result['cars'] if r['id']==selected);self.show_evidence(row)
         elif self.current=='labels':self.draw(self.canvas,self.label_image,self.label_rows);self.draw_selection()
+    def open_phone(self):
+        if self.phone_window is not None and self.phone_window.winfo_exists():
+            self.phone_window.lift();return
+        from .phone_input import PhoneReceiver
+        if self.phone_receiver is None:
+            try:
+                receiver=PhoneReceiver(ROOT/'outputs/phone_inbox',lambda ident,path:self.events.put(('phone_photo',(receiver,ident,path))))
+                self.phone_receiver=receiver
+            except OSError as exc:
+                messagebox.showerror('Подключение телефона','Не удалось открыть порт 8765. Закройте другой приёмник CarVision и повторите.\n'+str(exc));return
+        receiver=self.phone_receiver
+        window=tk.Toplevel(self.root);self.phone_window=window;window.title('CarVision — фото с телефона');window.geometry('1000x620')
+        body=ttk.Frame(window,padding=18);body.pack(fill='both',expand=True)
+        ttk.Label(body,text='Wi-Fi или USB-модем: откройте адрес в браузере телефона.',wraplength=700).pack(anchor='w')
+        ttk.Label(body,text='Компьютер и телефон должны быть в одной сети. В Windows разрешите CarVision доступ к частной сети. Если адресов несколько, попробуйте адрес Wi-Fi / USB-модема.',style='Muted.TLabel',wraplength=700).pack(anchor='w',pady=8)
+        connections=ttk.Frame(body);connections.pack(fill='x')
+        qr=ttk.Label(connections);qr.pack(side='right',padx=(10,0))
+        addresses=tk.Listbox(connections,height=8,font=('Segoe UI',9));addresses.pack(side='left',fill='both',expand=True)
+        for url in receiver.urls:addresses.insert('end',url)
+        addresses.insert('end',receiver.usb_url);addresses.selection_set(0)
+        def refresh_qr(event=None):
+            try:
+                import cv2
+                from PIL import ImageOps
+                selected=addresses.curselection()
+                if not selected:return
+                code=cv2.QRCodeEncoder_create().encode(addresses.get(selected[0]))
+                picture=ImageOps.expand(Image.fromarray(code),border=4,fill='white').resize((210,210),Image.Resampling.NEAREST)
+                qr.photo=ImageTk.PhotoImage(picture);qr.configure(image=qr.photo)
+            except Exception:qr.configure(text='Откройте ссылку вручную')
+        addresses.bind('<<ListboxSelect>>',refresh_qr);refresh_qr()
+        def copy_address():
+            selected=addresses.curselection()
+            if selected:self.root.clipboard_clear();self.root.clipboard_append(addresses.get(selected[0]))
+        ttk.Button(body,text='Копировать выбранную ссылку',command=copy_address).pack(anchor='w',pady=8)
+        ttk.Label(body,text='1. На телефоне выберите фото или нажмите «Снять камерой».\n2. Анализ запустится автоматически на компьютере.\n3. Контуры и ответы появятся в приложении и браузере телефона.',wraplength=700).pack(anchor='w',pady=8)
+        ttk.Label(body,text='USB без Wi-Fi (Android): включите «USB-модем» в настройках телефона. После подключения откройте это окно заново, чтобы обновить адреса. Непрерывная камера требует localhost через ADB; подробности в PHONE_INPUT_RU.txt. На Wi-Fi работает съёмка отдельных кадров.',style='Muted.TLabel',wraplength=700).pack(anchor='w',pady=8)
+        ttk.Button(body,text='Остановить приём',command=self.stop_phone).pack(anchor='w',pady=8)
+        window.protocol('WM_DELETE_WINDOW',window.destroy)
+
+    def stop_phone(self):
+        if self.phone_receiver is not None:
+            self.phone_receiver.stop();self.phone_receiver=None
+        if self.phone_window is not None and self.phone_window.winfo_exists():self.phone_window.destroy()
+        self.phone_window=None
+
     def predict(self):
         if self.busy or not self.path:return
         try:
@@ -370,11 +418,18 @@ class App:
         region=self.region.copy() if self.region is not None and self.scope.get()!=SCOPES[0] else None;single=self.scope.get()==SCOPES[2]
         if self.scope.get()!=SCOPES[0] and region is None:messagebox.showinfo('Выберите область','Обведите мышью машину или участок фотографии.');return
         self.before_merge=None;source=self.path;self.set_busy(True,'Анализ выделенной области…' if region else 'Анализ фотографии…')
+        phone_job=self.phone_job;self.phone_job=None
         def work():
             try:
                 if self.pipeline is None:self.pipeline=Pipeline()
-                self.pipeline.detection=d;self.pipeline.brand_threshold=b;self.pipeline.mode=mode;result=self.pipeline.predict(source,region=region,single=single);save_prediction(source,result,ROOT/'outputs');self.events.put(('prediction',result))
-            except Exception as e:self.events.put(('error',str(e)))
+                self.pipeline.detection=d;self.pipeline.brand_threshold=b;self.pipeline.mode=mode;result=self.pipeline.predict(source,region=region,single=single)
+                output=ROOT/'outputs/phone_results'/phone_job[1] if phone_job else ROOT/'outputs'
+                preview=save_prediction(source,result,output)
+                if phone_job:phone_job[0].complete(phone_job[1],result,preview)
+                self.events.put(('prediction',result))
+            except Exception as e:
+                if phone_job:phone_job[0].fail(phone_job[1],str(e))
+                self.events.put(('error',str(e)))
         threading.Thread(target=work,daemon=True).start()
     def scope_changed(self):
         self.preview.configure(cursor='arrow' if self.scope.get()==SCOPES[0] else 'crosshair')
@@ -538,7 +593,16 @@ class App:
         try:
             while True:
                 kind,data=self.events.get_nowait()
-                if kind=='prediction':
+                if kind=='phone_photo':
+                    receiver,ident,path=data
+                    if self.busy or receiver.stopped:
+                        receiver.fail(ident,'Приложение занято или приём остановлен. Повторите после завершения анализа.');continue
+                    self.load_photo(path)
+                    if self.path!=str(path):receiver.fail(ident,'Фото не удалось открыть.');continue
+                    self.phone_job=(receiver,ident);self.predict()
+                    if not self.busy:
+                        self.phone_job=None;receiver.fail(ident,'Проверьте настройки анализа на компьютере.')
+                elif kind=='prediction':
                     self.result=data;self.table.delete(*self.table.get_children());self.show_evidence()
                     for row in data['cars']:self.table.insert('','end',iid=str(row['id']),values=(row['id'],vehicle_name(row) if row.get('make_first') or row['brand']!='unknown' or row.get('model_candidate','unknown')!='unknown' else 'Не уверен',('≈ ' if not row.get('colour_reliable',True) else '')+('Серый' if row['colour']=='grey' else COLOUR_RU.get(row['colour'],row['colour']))))
                     scope='Одна выбранная машина' if data.get('single_car_region') else 'Машины в области' if data.get('region') else 'Весь кадр'
@@ -553,8 +617,11 @@ class App:
         self.root.after(80,self.poll)
     def close(self):
         self.closed=True;self.cancelled=True
+        self.stop_phone()
         if self.process is not None and self.process.poll() is None:self.process.terminate()
         self.root.destroy()
 
-def run():
-    root=tk.Tk();App(root);root.mainloop()
+def run(auto_phone=False):
+    root=tk.Tk();app=App(root)
+    if auto_phone:root.after(250,app.open_phone)
+    root.mainloop()

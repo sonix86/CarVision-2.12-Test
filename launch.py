@@ -6,7 +6,10 @@ from pathlib import Path
 def main():
     p=argparse.ArgumentParser(description='Tashkent CarVision — offline multi-car classifier')
     sub=p.add_subparsers(dest='command')
-    sub.add_parser('gui')
+    gu=sub.add_parser('gui');gu.add_argument('--phone',action='store_true',help='Open the phone connection dialog at startup')
+    ph=sub.add_parser('phone',help='Receive and analyse phone photos over a local network')
+    ph.add_argument('--host',default='0.0.0.0');ph.add_argument('--port',type=int,default=8765)
+    ph.add_argument('--models');ph.add_argument('--output',default='outputs');ph.add_argument('--ready-file')
     sub.add_parser('setup',help='Create local data/model directories; no pretrained weights are downloaded')
     pred=sub.add_parser('predict'); pred.add_argument('image'); pred.add_argument('--output',default='outputs'); pred.add_argument('--models'); pred.add_argument('--detection',type=float,default=.5); pred.add_argument('--threshold',type=float,default=.5); pred.add_argument('--mode',choices=['fast','balanced','detail'],default='fast');pred.add_argument('--region',nargs=4,type=int,metavar=('X','Y','RIGHT','BOTTOM'));pred.add_argument('--single',action='store_true',help='Classify exactly the selected car region, without detection')
     tr=sub.add_parser('train'); tr.add_argument('--labels',required=True); tr.add_argument('--output',default='models'); tr.add_argument('--epochs',type=int,default=25); tr.add_argument('--detector-epochs',type=int,default=25); tr.add_argument('--batch',type=int,default=16); tr.add_argument('--lr',type=float,default=.0003); tr.add_argument('--seed',type=int,default=3210)
@@ -26,7 +29,10 @@ def main():
             log=(ROOT/'outputs/gui.log').open('a',encoding='utf-8',buffering=1)
             sys.stdout=sys.stderr=log
         from carvision.gui import run
-        run()
+        run(auto_phone=getattr(args,'phone',False))
+    elif args.command=='phone':
+        from carvision.phone_input import serve
+        serve(args)
     elif args.command=='setup':
         for folder in ['models','data/images','outputs']:(ROOT/folder).mkdir(parents=True,exist_ok=True)
         print('Local directories ready. Use the included models for analysis, or label your own photographs to train new models. Setup does not download files.')

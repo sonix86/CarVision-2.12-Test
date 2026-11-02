@@ -5,6 +5,32 @@ and body colour in Tashkent phone photographs. Project owner: Sofia Rakhmankulov
 
 Repository: https://github.com/sonix86/CarVision-2.12-Test
 
+## Optional phone input patch
+
+The **2.12 PHONE** patch adds a local phone page, QR connection, automatic
+photo uploads into the GUI, and the same predictions and annotated image on
+both devices. The trained recognition weights are unchanged. The original
+`v2.12-test` release and `midterm` tag stay unchanged.
+
+Install the full 2.12 TEST application below first. Extract the phone patch
+separately, close CarVision, run `APPLY_PHONE_PATCH.cmd`, and choose its folder
+containing `CarVision.exe`. Then open the app and click **С телефона**, or run
+`START_PHONE.cmd`. Phone and PC need a shared local network; Android USB
+tethering is an alternative. Camera snapshots work through the phone's native
+camera. Continuous browser-camera frames require a secure browser context,
+for example Android `adb reverse` with the provided localhost URL.
+
+Full installation, Wi-Fi, USB, camera and troubleshooting guide:
+[PHONE_INPUT_RU.txt](docs/PHONE_INPUT_RU.txt).
+
+Source alternative: `python launch.py phone --port 8765`, or
+`python launch.py gui --phone`. The source needs the same model files and
+requirements as before. No extra Python package is required by this feature.
+The Windows patch bundles the changed runtime files, so the recipient still
+does not need Python. Local HTTP, GUI routing, the actual packaged model,
+result exports and direct/phone prediction parity were checked on this PC.
+Physical phone camera/USB drivers and the recipient's network need their own test.
+
 ## Download the exact portable application
 
 Open [release v2.12-test](https://github.com/sonix86/CarVision-2.12-Test/releases/tag/v2.12-test).
