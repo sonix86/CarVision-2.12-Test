@@ -109,6 +109,8 @@ def main():
     old=(ROOT/'.publication/assets/RESTORE_FULL.ps1').read_text('utf-8-sig')
     start=old.index("$taskManifest = @'");end=old.index("'@ | ConvertFrom-Json",start)
     new=old[:start]+"$taskManifest = @'\n"+json.dumps(manifest,indent=2)+'\n'+old[end:]
+    new=new.replace("$ErrorActionPreference = 'Stop'", "$ErrorActionPreference = 'Stop'\n$ProgressPreference = 'SilentlyContinue'")
+    new=new.replace('Expand-Archive -LiteralPath $taskZip -DestinationPath $taskDestination', 'Add-Type -AssemblyName System.IO.Compression.FileSystem\n[IO.Compression.ZipFile]::ExtractToDirectory($taskZip, $taskDestination)')
     (OUT/'RESTORE_FULL.ps1').write_text(new,encoding='utf-8-sig')
     shutil.copy2(ROOT/'.publication/assets/RESTORE_FULL.cmd',OUT/'RESTORE_FULL.cmd')
     files=[OUT/p['name'] for p in manifest['parts']]+[OUT/x for x in ('release_assets.json','RESTORE_FULL.cmd','RESTORE_FULL.ps1')]

@@ -1,0 +1,25 @@
+{
+  "repository": "https://github.com/sonix86/CarVision-2.12-Test",
+  "release_tag": "v2.12-phone",
+  "version": "2.12 PHONE",
+  "original_zip": {
+    "name": "CarVision-2.12-Phone-Full.zip",
+    "bytes": 2943409317,
+    "sha256": "b29c9e029d422a574c57c9ecde30e390289fd2dfb73380e7800b39943dc3f0f4"
+  },
+  "parts": [
+    {
+      "name": "CarVision-2.12-Phone-Full.zip.001",
+      "bytes": 1500000000,
+      "sha256": "15a4fd2024119f1a273704e3cba1e36ae775160210cad27ed1b2340f6e5ce6c9"
+    },
+    {
+      "name": "CarVision-2.12-Phone-Full.zip.002",
+      "bytes": 1443409317,
+      "sha256": "0b493793d0521f38b190dfbea6c898649a2cfa2c42624ca49156e9851dfeb713"
+    }
+  ],
+  "weights_sha256": "c1b01c33d55e163815734ba8c37810da97ac02bba0f9d042519635815d9fac14",
+  "exe_sha256": "bd4490c13d4e4ff3afa1177fc479a43f0037823c67edbd29402160c7526d517e",
+  "scope": "Self-contained full app including phone input; recognition weights unchanged; previous TEST release preserved"
+}

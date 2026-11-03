@@ -1,0 +1,47 @@
+{
+  "latest_tag": "v2.12-phone",
+  "url": "https://github.com/sonix86/CarVision-2.12-Test/releases/tag/v2.12-phone",
+  "full_assets_sha256_verified": true,
+  "assets": [
+    {
+      "name": "CarVision-2.12-Phone-Full.zip.001",
+      "bytes": 1500000000,
+      "digest": "sha256:15a4fd2024119f1a273704e3cba1e36ae775160210cad27ed1b2340f6e5ce6c9"
+    },
+    {
+      "name": "CarVision-2.12-Phone-Full.zip.002",
+      "bytes": 1443409317,
+      "digest": "sha256:0b493793d0521f38b190dfbea6c898649a2cfa2c42624ca49156e9851dfeb713"
+    },
+    {
+      "name": "CarVision-2.12-Phone-Patch.zip",
+      "bytes": 47928690,
+      "digest": "sha256:47448d1aa1d998d7ea3921fe7b131797b0b20d7441f4aa8289db6da10ad00cff"
+    },
+    {
+      "name": "CarVision-2.12-Phone-Patch.zip.sha256",
+      "bytes": 98,
+      "digest": "sha256:b49d5a1e0717b31b34b284af97a6d6651467942ec24aff0f87406d6750b59a57"
+    },
+    {
+      "name": "release_assets.json",
+      "bytes": 988,
+      "digest": "sha256:340f30ceaea8a423b4c0a15cd9bd8bccf661d44715b5d09ef19747722343f1c8"
+    },
+    {
+      "name": "RESTORE_FULL.cmd",
+      "bytes": 176,
+      "digest": "sha256:18df351cb1b780b4c37c4f79c4b4c4824ab783db82a17ed7db90cb826193c6eb"
+    },
+    {
+      "name": "RESTORE_FULL.ps1",
+      "bytes": 3146,
+      "digest": "sha256:204f565ec389af748abfdc84d0a38a2eedc517bb3979a1ebf24cff8a501f4735"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 457,
+      "digest": "sha256:5e4ba36da0e4d06031ae5abfa06e89ef8aa8b03fceae7e862aadd4126808eda6"
+    }
+  ]
+}
