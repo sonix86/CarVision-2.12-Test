@@ -1,0 +1,15 @@
+Status recorded on 3 November 2026 from the owner's test feedback.
+
+Confirmed by the owner on a real phone:
+- CarVision opened and showed the connection QR code.
+- The phone opened the local page by scanning that QR code.
+- Selecting a gallery photo triggered computer inference automatically.
+- Results appeared on both the phone and computer.
+- The native-camera button opened the phone camera.
+
+Not yet confirmed:
+- Taking and submitting a new camera photograph: the owner opened the camera
+  but did not take a photograph during this test.
+- Physical USB tethering or Android ADB camera mode.
+
+This confirms the gallery transport flow, not recognition accuracy over unseen cars.

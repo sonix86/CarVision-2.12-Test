@@ -1,11 +1,28 @@
-# CarVision 2.12 TEST
+# CarVision 2.12 PHONE
 
 Offline Windows application for detecting visible cars and predicting badge brand
 and body colour in Tashkent phone photographs. Project owner: Sofia Rakhmankulova.
 
 Repository: https://github.com/sonix86/CarVision-2.12-Test
 
-## Optional phone input patch
+## Download and run the latest full version
+
+Open the [latest release](https://github.com/sonix86/CarVision-2.12-Test/releases/latest).
+Download `CarVision-2.12-Phone-Full.zip.001`, `.002`, `RESTORE_FULL.cmd` and
+`RESTORE_FULL.ps1` into one empty folder. Run `RESTORE_FULL.cmd`, then open
+`CarVision/CarVision.exe`. The title should say **2.12 PHONE**. Phone input is
+already included; no old application or separate patch is needed.
+
+Click **С телефона**, connect the phone and PC to the same Wi-Fi network and
+scan the QR code for the PC's Wi-Fi address. **Выбрать фото** opens the gallery;
+**Снять камерой** opens the phone camera. Confirming an image sends it for
+automatic offline analysis. Results appear on both devices.
+
+The owner confirmed the real-phone gallery-to-PC-to-phone flow and that the
+native camera opens. Sending a newly captured camera image and physical USB
+connections have not yet been confirmed. Recognition weights remain unchanged.
+
+## Updating an existing 2.12 TEST installation
 
 The **2.12 PHONE** patch adds a local phone page, QR connection, automatic
 photo uploads into the GUI, and the same predictions and annotated image on
@@ -29,9 +46,9 @@ requirements as before. No extra Python package is required by this feature.
 The Windows patch bundles the changed runtime files, so the recipient still
 does not need Python. Local HTTP, GUI routing, the actual packaged model,
 result exports and direct/phone prediction parity were checked on this PC.
-Physical phone camera/USB drivers and the recipient's network need their own test.
+New-camera-shot uploads and physical USB connections still need a device test.
 
-## Download the exact portable application
+## Previous 2.12 TEST application
 
 Open [release v2.12-test](https://github.com/sonix86/CarVision-2.12-Test/releases/tag/v2.12-test).
 Download both `CarVision-2.12-Test-Full.zip.001` and `.002`, together with

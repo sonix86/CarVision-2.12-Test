@@ -1,4 +1,22 @@
-Phone input patch for the original CarVision 2.12 TEST Windows application.
+CarVision 2.12 PHONE — полный выпуск с приёмом фото с телефона.
+
+## Новая установка — телефон уже встроен
+
+Скачайте `CarVision-2.12-Phone-Full.zip.001`, `.002`, `RESTORE_FULL.cmd`
+и `RESTORE_FULL.ps1` в одну пустую папку. Запустите `RESTORE_FULL.cmd`,
+дождитесь распаковки, затем откройте `CarVision/CarVision.exe`.
+В заголовке будет **2.12 PHONE**. Старая версия и патчи не нужны.
+
+В приложении нажмите **С телефона**, подключите устройства к одной Wi-Fi-сети
+и откройте QR-ссылку адреса Wi-Fi компьютера. **Выбрать фото** открывает
+галерею, **Снять камерой** — камеру телефона. После выбора и подтверждения
+кадра анализ запускается автоматически. Результат виден на обоих устройствах.
+
+Владелец подтвердил работу галереи на реальном телефоне и отображение
+ответа на телефоне и компьютере. Камера открывается; отправку нового
+снимка ещё предстоит проверить. Физическое USB-подключение не проверено.
+
+## Обновление уже установленной 2.12 TEST
 
 Скачайте `CarVision-2.12-Phone-Patch.zip`, распакуйте отдельно, закройте
 CarVision и запустите `APPLY_PHONE_PATCH.cmd`. Выберите папку, в которой
@@ -20,9 +38,11 @@ from PATH; local HTTP upload and polling; result preview; identical direct/phone
 brand-colour-model outputs for the same normalised development image;
 the existing prediction, selected-region and export self-checks.
 The browser file picker also completed an upload and showed real results.
-Physical Android/iPhone cameras, USB drivers and the recipient's network
-still require a device test. This patch does not claim better recognition accuracy.
+Newly captured camera submissions, physical USB drivers and other recipient
+networks still require a device test. This release does not claim better recognition accuracy.
 
 Full Russian guide: `READ_FIRST_RU.txt` in the patch and `PHONE_INPUT_RU.txt`
 in the installed app. The original `v2.12-test` release and `midterm` tag
-are unchanged. This optional patch is published separately as a prerelease.
+are unchanged. This release includes both the self-contained full version and
+the optional update for existing 2.12 TEST installations. Training crops and the
+original local-photo archive remain available in the previous v2.12-test release.
